@@ -18,7 +18,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v1
 
 
 
-  Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_37C_READ_FIRST.txt"
-Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_34B_READ_FIRST.txt"
-Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md"
-Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_SHADOW_PORTFOLIO_FORWARD_BRIDGE.md"
+Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_38C_READ_FIRST.txt"
+Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_COMMAND_STATUS_NORMALIZATION.md"
+Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_FORWARD_EVIDENCE_DASHBOARD.md"
+Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_RESEARCH_EXPERIMENT_REGISTRY.md"

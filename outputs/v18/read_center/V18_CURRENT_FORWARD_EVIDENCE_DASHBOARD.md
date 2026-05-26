@@ -2,7 +2,7 @@
 
 ## 1. 今日结论
 - STATUS: OK_V18_38A_FORWARD_EVIDENCE_DASHBOARD_READY
-- RUN_ID: V18_38A_FORWARD_EVIDENCE_DASHBOARD_20260526_171212
+- RUN_ID: V18_38A_FORWARD_EVIDENCE_DASHBOARD_20260526_235405
 - 结论: 当前看板已生成；forward horizon 未成熟属于预期等待，不是系统失败。
 - ANY_FORWARD_OUTCOME_AVAILABLE: FALSE
 - READY_FOR_FACTOR_FORWARD_ATTRIBUTION: FALSE
@@ -24,7 +24,7 @@
 | V18.37C shadow forward readiness                 | TRUE     |           6 | 2026-05-26T17:12:11 | OK_USABLE          | usable evidence source |
 | shadow portfolio snapshot ledger                 | TRUE     |         744 | 2026-05-25T18:48:10 | OK_USABLE          | usable evidence source |
 | current Full318 candidates                       | TRUE     |         318 | 2026-05-25T18:48:08 | OK_USABLE          | usable evidence source |
-| current top candidates                           | TRUE     |          20 | 2026-05-26T17:12:08 | OK_USABLE          | usable evidence source |
+| current top candidates                           | TRUE     |          20 | 2026-05-26T23:54:03 | OK_USABLE          | usable evidence source |
 | signal freeze ledger                             | TRUE     |         570 | 2026-05-25T13:48:02 | OK_USABLE          | usable evidence source |
 
 ## 3. Forward horizon 成熟度

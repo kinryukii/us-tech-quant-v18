@@ -2,7 +2,7 @@
 
 ## 1. 今日结论
 - STATUS: OK_V18_38B_RESEARCH_EXPERIMENT_REGISTRY_READY
-- RUN_ID: V18_38B_RESEARCH_EXPERIMENT_REGISTRY_20260526_171213
+- RUN_ID: V18_38B_RESEARCH_EXPERIMENT_REGISTRY_20260526_235406
 - 结论: 实验总账已生成；当前主要状态是等待 forward outcome 成熟。
 - TOTAL_EXPERIMENT_COUNT: 29
 - ANY_FORWARD_OUTCOME_AVAILABLE: FALSE
@@ -108,10 +108,10 @@ _无可用记录。_
 ### Dependency Snapshot
 | dependency_name | exists | row_count | dependency_status | modified_time | notes |
 | --- | --- | --- | --- | --- | --- |
-| V18.38A READ_FIRST | TRUE |  | OK_USABLE | 2026-05-26T17:12:13 | usable dependency |
-| V18.38A forward evidence summary | TRUE | 1 | OK_USABLE | 2026-05-26T17:12:12 | usable dependency |
-| V18.38A forward evidence detail | TRUE | 31 | OK_USABLE | 2026-05-26T17:12:12 | usable dependency |
-| V18.38A forward evidence readiness | TRUE | 5 | OK_USABLE | 2026-05-26T17:12:12 | usable dependency |
+| V18.38A READ_FIRST | TRUE |  | OK_USABLE | 2026-05-26T23:54:05 | usable dependency |
+| V18.38A forward evidence summary | TRUE | 1 | OK_USABLE | 2026-05-26T23:54:05 | usable dependency |
+| V18.38A forward evidence detail | TRUE | 31 | OK_USABLE | 2026-05-26T23:54:05 | usable dependency |
+| V18.38A forward evidence readiness | TRUE | 5 | OK_USABLE | 2026-05-26T23:54:05 | usable dependency |
 | V18.36A READ_FIRST | TRUE |  | OK_USABLE | 2026-05-26T16:51:40 | usable dependency |
 | current paper trading forward attribution report | TRUE |  | OK_USABLE | 2026-05-26T16:51:40 | usable dependency |
 | V18.37A LEAN motif summary | TRUE | 10 | OK_USABLE | 2026-05-26T17:12:09 | usable dependency |
@@ -122,7 +122,7 @@ _无可用记录。_
 | V18.37C shadow snapshot summary | TRUE | 1 | OK_USABLE | 2026-05-26T17:12:11 | usable dependency |
 | V18.37C shadow forward readiness | TRUE | 6 | OK_USABLE | 2026-05-26T17:12:11 | usable dependency |
 | current Full318 candidates | TRUE | 318 | OK_USABLE | 2026-05-25T18:48:08 | usable dependency |
-| current top candidates | TRUE | 20 | OK_USABLE | 2026-05-26T17:12:08 | usable dependency |
+| current top candidates | TRUE | 20 | OK_USABLE | 2026-05-26T23:54:03 | usable dependency |
 | signal freeze ledger | TRUE | 570 | OK_USABLE | 2026-05-25T13:48:02 | usable dependency |
 | paper trading ledger | TRUE | 488 | OK_USABLE | 2026-05-25T15:16:37 | usable dependency |
 | paper positions | TRUE | 488 | OK_USABLE | 2026-05-25T15:16:37 | usable dependency |

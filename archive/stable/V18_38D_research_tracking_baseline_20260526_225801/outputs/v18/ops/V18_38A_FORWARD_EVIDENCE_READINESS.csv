@@ -1,0 +1,6 @@
+horizon,paper_trading_fillable_count,paper_trading_total_count,paper_trading_fillable_pct,shadow_portfolio_fillable_count,shadow_portfolio_total_count,shadow_portfolio_fillable_pct,benchmark_available,readiness_status,notes
+1D,0,488,0.00,0,744,0.00,FALSE,PENDING_NOT_ENOUGH_FUTURE_PRICES,EXPECTED_PENDING_FORWARD_HORIZON if fillable counts are zero before enough future prices exist
+3D,0,488,0.00,0,744,0.00,FALSE,PENDING_NOT_ENOUGH_FUTURE_PRICES,EXPECTED_PENDING_FORWARD_HORIZON if fillable counts are zero before enough future prices exist
+5D,0,488,0.00,0,744,0.00,FALSE,PENDING_NOT_ENOUGH_FUTURE_PRICES,EXPECTED_PENDING_FORWARD_HORIZON if fillable counts are zero before enough future prices exist
+10D,0,488,0.00,0,744,0.00,FALSE,PENDING_NOT_ENOUGH_FUTURE_PRICES,EXPECTED_PENDING_FORWARD_HORIZON if fillable counts are zero before enough future prices exist
+20D,0,488,0.00,0,744,0.00,FALSE,PENDING_NOT_ENOUGH_FUTURE_PRICES,EXPECTED_PENDING_FORWARD_HORIZON if fillable counts are zero before enough future prices exist

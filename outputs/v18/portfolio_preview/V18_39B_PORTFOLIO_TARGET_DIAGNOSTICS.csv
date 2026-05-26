@@ -1,0 +1,29 @@
+check_name,scenario_name,simulated_capital_usd,status,expected,observed,notes
+weight_sum_check,TOP20_EQUAL_WEIGHT,1000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_EQUAL_WEIGHT,2000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_EQUAL_WEIGHT,5000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_EQUAL_WEIGHT,10000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_CONFIDENCE_WEIGHTED,1000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_CONFIDENCE_WEIGHTED,2000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_CONFIDENCE_WEIGHTED,5000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP20_CONFIDENCE_WEIGHTED,10000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP50_EQUAL_WEIGHT_CAPPED,1000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP50_EQUAL_WEIGHT_CAPPED,2000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP50_EQUAL_WEIGHT_CAPPED,5000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP50_EQUAL_WEIGHT_CAPPED,10000,PASS,approximately 1.0 for investable scenarios,1.0000000000,
+weight_sum_check,TOP50_RANK_DECAY_WEIGHTED,1000,PASS,approximately 1.0 for investable scenarios,0.9999999999,
+weight_sum_check,TOP50_RANK_DECAY_WEIGHTED,2000,PASS,approximately 1.0 for investable scenarios,0.9999999999,
+weight_sum_check,TOP50_RANK_DECAY_WEIGHTED,5000,PASS,approximately 1.0 for investable scenarios,0.9999999999,
+weight_sum_check,TOP50_RANK_DECAY_WEIGHTED,10000,PASS,approximately 1.0 for investable scenarios,0.9999999999,
+weight_sum_check,WATCHLIST_RESEARCH_ONLY_FULL318,1000,PASS,approximately 1.0 for investable scenarios,1.0000000038,Research-only scenarios are excluded from investable weight-sum requirement.
+weight_sum_check,WATCHLIST_RESEARCH_ONLY_FULL318,2000,PASS,approximately 1.0 for investable scenarios,1.0000000038,Research-only scenarios are excluded from investable weight-sum requirement.
+weight_sum_check,WATCHLIST_RESEARCH_ONLY_FULL318,5000,PASS,approximately 1.0 for investable scenarios,1.0000000038,Research-only scenarios are excluded from investable weight-sum requirement.
+weight_sum_check,WATCHLIST_RESEARCH_ONLY_FULL318,10000,PASS,approximately 1.0 for investable scenarios,1.0000000038,Research-only scenarios are excluded from investable weight-sum requirement.
+input_signal_count,ALL,,PASS,>0,318,
+expected_signal_count,ALL,,PASS,318,318,Expected current full candidate universe size if available.
+row_count_matches_alpha_signal_count,WATCHLIST_RESEARCH_ONLY_FULL318,ALL,PASS,1272,1272,
+price_coverage_check,ALL,ALL,PASS,price available where investable,available=1832;missing=0,"Missing prices produce feasibility PRICE_MISSING, not failure."
+no_order_file_created_check,ALL,ALL,PASS,no orders/trades/execution files,only portfolio_preview/read_center/ops outputs are written,"Module does not create order tickets, broker instructions, or executable trade files."
+safety_marker_check,ALL,ALL,PASS,AUTO_TRADE DISABLED from alpha input,DISABLED,
+command_status_current_blocking_count,ALL,ALL,PASS,0 if discoverable,0,
+daily_run_usable,ALL,ALL,PASS,TRUE if discoverable,TRUE,

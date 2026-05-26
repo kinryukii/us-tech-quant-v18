@@ -30,11 +30,13 @@ outputs/v18/read_center/V18_8C_CURRENT_OFFICIAL_DAILY_FAST_WITH_SIMULATION.md,TR
 outputs/v18/read_center/V18_9C_CURRENT_OFFICIAL_DAILY_WITH_SIM_VALIDATION.md,TRUE,md,other_audit,audit_only,71,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_318_ALIGNED_BASELINE.md,TRUE,md,other_audit,audit_only,58,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_ACCOUNT_AWARE_MANUAL_TRADE_PLAN.md,TRUE,md,other_audit,audit_only,68,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
+outputs/v18/read_center/V18_CURRENT_ALPHA_SIGNAL_OBJECTS.md,TRUE,md,other_audit,audit_only,60,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_BUYABILITY_GATE.md,TRUE,md,other_audit,audit_only,33,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_CANDIDATE_SOURCE_DEPENDENCY_REVIEW.md,TRUE,md,other_audit,audit_only,110,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_CANDIDATE_SOURCE_NORMALIZATION.md,TRUE,md,other_audit,audit_only,122,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_CANDIDATE_THEME_CLASSIFICATION.md,TRUE,md,other_audit,audit_only,101,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md,TRUE,md,other_audit,audit_only,82,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
+outputs/v18/read_center/V18_CURRENT_COMMAND_STATUS_NORMALIZATION.md,TRUE,md,other_audit,audit_only,142,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_CONTEXT_CONSISTENCY.md,TRUE,md,other_audit,audit_only,24,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_COST_ADJUSTED_TRADE_PLAN.md,TRUE,md,other_audit,audit_only,94,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_DAILY_BRIEF.md,TRUE,md,other_audit,audit_only,72,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
@@ -55,6 +57,7 @@ outputs/v18/read_center/V18_CURRENT_ONLINE_BACKFILL_CANDIDATE_BRIDGE.md,TRUE,md,
 outputs/v18/read_center/V18_CURRENT_OPERATOR_CONTROL_CENTER.md,TRUE,md,other_audit,audit_only,113,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_PAPER_FORWARD_RETURN_FILLER.md,TRUE,md,other_audit,audit_only,106,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_PAPER_TRADING_FORWARD_ATTRIBUTION.md,TRUE,md,other_audit,audit_only,79,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
+outputs/v18/read_center/V18_CURRENT_PORTFOLIO_TARGET_PREVIEW.md,TRUE,md,other_audit,audit_only,65,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_POSITION_SIZING_POLICY.md,TRUE,md,other_audit,audit_only,54,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,md,other_audit,audit_only,92,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_READ_FIRST_WITH_TECHNICAL.md,TRUE,md,other_audit,audit_only,34,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
@@ -64,6 +67,7 @@ outputs/v18/read_center/V18_CURRENT_SAFE_DAILY_OPERATOR_SEQUENCE.md,TRUE,md,othe
 outputs/v18/read_center/V18_CURRENT_SHADOW_PORTFOLIO_CONSTRUCTION.md,TRUE,md,other_audit,audit_only,168,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_SHADOW_PORTFOLIO_FORWARD_BRIDGE.md,TRUE,md,other_audit,audit_only,47,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_SHADOW_RESEARCH_DAILY.md,TRUE,md,other_audit,audit_only,55,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
+outputs/v18/read_center/V18_CURRENT_SHADOW_RISK_MODEL_PREVIEW.md,TRUE,md,other_audit,audit_only,81,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_STORAGE_CLEANUP.md,TRUE,md,other_audit,audit_only,127,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_STRICT_FACTOR_IMPLEMENTATION_AUDIT.md,TRUE,md,other_audit,audit_only,172,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
 outputs/v18/read_center/V18_CURRENT_TRADING_DAY_SIGNAL_DATE_GUARD.md,TRUE,md,other_audit,audit_only,46,,,,FALSE,Markdown audit output.,Markdown read-center output audited; not selected for ticker ranking.
@@ -99,7 +103,7 @@ outputs/v18/factor_pack/V18_CURRENT_SHADOW_TOP30_OFFICIAL_OVERLAP.csv,TRUE,csv,o
 outputs/v18/promotion_merge/V18_4I_CURRENT_BACKTEST_FORWARD_PROMOTION_MERGE.csv,TRUE,csv,other_audit,audit_only,6,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
 outputs/v18/promotion_merge/V18_4I_CURRENT_PROMOTION_CLUSTER.csv,TRUE,csv,other_audit,audit_only,6,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
 outputs/v18/read_center/V18_12H_CURRENT_SELL_TIMING_READ_LINK_INPUT_AUDIT.csv,TRUE,csv,other_audit,audit_only,5,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
-outputs/v18/read_center/V18_13A_CURRENT_UNIFIED_DAILY_INPUT_AUDIT.csv,TRUE,csv,other_audit,audit_only,268,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
+outputs/v18/read_center/V18_13A_CURRENT_UNIFIED_DAILY_INPUT_AUDIT.csv,TRUE,csv,other_audit,audit_only,274,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
 outputs/v18/read_center/V18_13A_CURRENT_UNIFIED_DAILY_SUMMARY.csv,TRUE,csv,other_audit,audit_only,17,,,status,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
 outputs/v18/read_center/V18_13B_CURRENT_RANKED_CANDIDATE_SUMMARY.csv,TRUE,csv,other_audit,audit_only,16,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.
 outputs/v18/read_center/V18_13C_CURRENT_UNIFIED_DAILY_WITH_RANKED_CANDIDATES_INPUT_AUDIT.csv,TRUE,csv,other_audit,audit_only,14,,,,FALSE,Ticker column missing.,No ticker-level score/rank/status columns.

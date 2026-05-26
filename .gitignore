@@ -119,3 +119,16 @@ data/**/.yfinance_cache/
 
 # Deprecated archived legacy code
 archive/deprecated/
+
+# Local env
+.venv/
+__pycache__/
+*.pyc
+
+# Large compressed archives - do not upload to GitHub
+archive/stable_compressed/
+archive/generated_outputs_compressed/
+
+# Temporary/cache files
+*.tmp
+*.log

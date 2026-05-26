@@ -12,7 +12,7 @@ EVIDENCE_SOURCE,V18.37C shadow snapshot detail,outputs/v18/ops/V18_37C_SHADOW_PO
 EVIDENCE_SOURCE,V18.37C shadow forward readiness,outputs/v18/ops/V18_37C_SHADOW_PORTFOLIO_FORWARD_READINESS.csv,TRUE,6,2026-05-26T17:12:11,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
 EVIDENCE_SOURCE,shadow portfolio snapshot ledger,state/v18/shadow_portfolios/V18_SHADOW_PORTFOLIO_DAILY_SNAPSHOT_LEDGER.csv,TRUE,744,2026-05-25T18:48:10,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
 EVIDENCE_SOURCE,current Full318 candidates,outputs/v18/candidates/V18_CURRENT_FULL_RANKED_CANDIDATES.csv,TRUE,318,2026-05-25T18:48:08,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
-EVIDENCE_SOURCE,current top candidates,outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv,TRUE,20,2026-05-26T17:12:08,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,current top candidates,outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv,TRUE,20,2026-05-26T23:54:03,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
 EVIDENCE_SOURCE,signal freeze ledger,state/v18/forward_test/V18_DAILY_SIGNAL_FREEZE_LEDGER.csv,TRUE,570,2026-05-25T13:48:02,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
 COMPARISON_GROUP,,,,,,,Full318,PAPER_TOPN,318.0,318.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=FULL318_EQUAL_WEIGHT_OBSERVATION
 COMPARISON_GROUP,,,,,,,Top100,PAPER_TOPN,100.0,100.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=TOP100_EQUAL_WEIGHT

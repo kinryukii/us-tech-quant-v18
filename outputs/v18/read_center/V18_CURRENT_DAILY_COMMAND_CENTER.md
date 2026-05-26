@@ -24,10 +24,10 @@
 ## Run Log
 | timestamp | step | status | exit_code | script | note |
 | --- | --- | --- | --- | --- | --- |
-| 2026-05-26 17:12:07 | OFFICIAL_DAILY | SKIPPED | 0 | scripts\v18\run_v18_current_official_daily.ps1 | SKIP_OFFICIAL_DAILY |
-| 2026-05-26 17:12:07 | V18_13A | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13A_unified_daily_read_center_link.ps1 | OK |
-| 2026-05-26 17:12:08 | V18_13B | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13B_ranked_candidate_read_center.ps1 | OK |
-| 2026-05-26 17:12:08 | V18_13C | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13C_ranked_candidate_unified_link.ps1 | OK |
+| 2026-05-26 23:54:02 | OFFICIAL_DAILY | SKIPPED | 0 | scripts\v18\run_v18_current_official_daily.ps1 | SKIP_OFFICIAL_DAILY |
+| 2026-05-26 23:54:02 | V18_13A | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13A_unified_daily_read_center_link.ps1 | OK |
+| 2026-05-26 23:54:03 | V18_13B | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13B_ranked_candidate_read_center.ps1 | OK |
+| 2026-05-26 23:54:03 | V18_13C | PASS | 0 | D:\us-tech-quant\scripts\v18\run_v18_13C_ranked_candidate_unified_link.ps1 | OK |
 
 ## Top Ranked Candidates
 | rank | ticker | composite_candidate_score | final_action | technical_status | latest_price_date | latest_close |
