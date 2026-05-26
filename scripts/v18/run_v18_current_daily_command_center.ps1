@@ -35,6 +35,8 @@ param(
     [switch]$RunShadowPortfolioConstruction,
     [switch]$RunShadowPortfolioForwardBridge,
     [switch]$ApplyShadowPortfolioSnapshot,
+    [switch]$RunForwardEvidenceDashboard,
+    [switch]$RunResearchExperimentRegistry,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -276,6 +278,28 @@ function Invoke-V18_19AReadabilityRefresh {
         }
         Write-Host "V18_37C_SHADOW_PORTFOLIO_FORWARD_BRIDGE_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_SHADOW_PORTFOLIO_FORWARD_BRIDGE.md')"
     }
+    if ($RunForwardEvidenceDashboard) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.38A forward evidence dashboard"
+        $Run38A = Join-Path $Root "scripts\v18\run_v18_38A_forward_evidence_dashboard.ps1"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run38A -Root $Root
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_38A_FORWARD_EVIDENCE_DASHBOARD_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_38A_FORWARD_EVIDENCE_DASHBOARD_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_FORWARD_EVIDENCE_DASHBOARD.md')"
+    }
+    if ($RunResearchExperimentRegistry) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.38B research experiment registry"
+        $Run38B = Join-Path $Root "scripts\v18\run_v18_38B_research_experiment_registry.ps1"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run38B -Root $Root
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_38B_RESEARCH_EXPERIMENT_REGISTRY_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_38B_RESEARCH_EXPERIMENT_REGISTRY_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_RESEARCH_EXPERIMENT_REGISTRY.md')"
+    }
     Write-Host ""
     Write-Host "STEP FINAL: refresh V18.19A daily readability packet"
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run19A -Root $Root
@@ -343,6 +367,8 @@ Write-Host "RUN_LEAN_INSPIRED_STRATEGY_MOTIF_LAB: $RunLeanInspiredStrategyMotifL
 Write-Host "RUN_SHADOW_PORTFOLIO_CONSTRUCTION: $RunShadowPortfolioConstruction"
 Write-Host "RUN_SHADOW_PORTFOLIO_FORWARD_BRIDGE: $RunShadowPortfolioForwardBridge"
 Write-Host "APPLY_SHADOW_PORTFOLIO_SNAPSHOT: $ApplyShadowPortfolioSnapshot"
+Write-Host "RUN_FORWARD_EVIDENCE_DASHBOARD: $RunForwardEvidenceDashboard"
+Write-Host "RUN_RESEARCH_EXPERIMENT_REGISTRY: $RunResearchExperimentRegistry"
 
 if (-not $ValidateOnly) {
     $CommandInfo = Get-Command $Run13D

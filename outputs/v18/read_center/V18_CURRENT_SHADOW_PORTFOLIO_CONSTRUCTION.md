@@ -1,6 +1,6 @@
 # V18.37B Shadow Portfolio Construction Comparison
 
-生成时间：2026-05-25T18:48:09
+生成时间：2026-05-26T17:12:10
 
 本报告是受 LEAN/QuantConnect 组合构建思想启发的研究层，用当前 V18 候选排名和 V18.37A strategy motif 影子候选构造透明的影子组合。这里没有复制 LEAN 策略代码，也没有 broker、API、订单、账户或执行逻辑。
 

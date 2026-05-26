@@ -1,12 +1,12 @@
 # V18.37C Shadow Portfolio Forward Bridge
 
-生成时间：2026-05-25T18:48:10
-RUN_ID：V18_37C_20260525_184809
+生成时间：2026-05-26T17:12:11
+RUN_ID：V18_37C_20260526_171210
 状态：OK
 信号日期：2026-05-25
 日期来源：V18_14D_CURRENT_RANKED_CANDIDATE_FORWARD_PRICE_FILLER.csv:signal_date
-ApplySnapshot：TRUE
-Backup：D:\us-tech-quant\archive\v18\shadow_portfolio_snapshot_backups\V18_37C_20260525_184809
+ApplySnapshot：FALSE
+Backup：N/A
 
 本层是 V18.37B 影子组合的研究快照与未来归因桥。它只冻结影子组合持仓和权重到专用 research ledger，用于未来 1D/3D/5D/10D/20D 组合级 forward return 比较。
 

@@ -35,7 +35,7 @@ READ_ONLY: TRUE
 | 20 | ARM | -40.427238 | REVIEW_ONLY | TECH_TIMING_NEUTRAL | 2026-05-18 | 215.12 |
 
 ## DATA_SOURCE_AUDIT
-- scanned_input_count: 128
+- scanned_input_count: 130
 - selected_for_ranking_count: 2
 - ranking_source_files: 2
 
