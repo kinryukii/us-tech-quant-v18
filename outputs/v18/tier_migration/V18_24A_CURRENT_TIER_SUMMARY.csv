@@ -1,0 +1,7 @@
+﻿tier,count,notes
+TIER_1_CORE_CANDIDATE,16,Current read-only tier distribution.
+TIER_2_STRONG_WATCHLIST,11,Current read-only tier distribution.
+TIER_3_WATCHLIST,9,Current read-only tier distribution.
+TIER_4_REVIEW_ONLY,16,Current read-only tier distribution.
+TIER_5_WEAK_OR_BLOCKED,51,Current read-only tier distribution.
+TIER_0_DATA_NOT_READY,221,Current read-only tier distribution.

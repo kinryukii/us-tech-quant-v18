@@ -1,0 +1,11 @@
+﻿validation_item,status,expected_value,actual_value,reason
+selected_target_count,PASS,93,93,
+post_factor_target_present,PASS,93,93,
+post_technical_target_present,PASS,93,93,
+post_factor_duplicate_targets,PASS,0,0,
+post_technical_duplicate_targets,PASS,0,0,
+post_factor_score_missing,PASS,0,0,
+post_technical_score_missing,PASS,0,0,
+restore_script_exists,PASS,TRUE,TRUE,
+non_target_factor_rows_preserved_except_rank,PASS,TRUE,TRUE,
+non_target_technical_rows_preserved,PASS,TRUE,TRUE,

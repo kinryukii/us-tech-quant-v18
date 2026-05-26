@@ -1,0 +1,5 @@
+﻿future_step,unlocked,notes
+V18.25A-R10 Official Market Proxy Integration with backup,TRUE,Requires separate approval and execution.
+V18.25A-R11 Full-compatible technical timing refresh,TRUE,Depends on official market proxy availability.
+V18.25A-R12 targeted factor refresh for R6/R7 integrated tickers,TRUE,Depends on promoted official market proxy.
+V18.25A/R1/R3 downstream reruns,TRUE,Unlocked after official integration.

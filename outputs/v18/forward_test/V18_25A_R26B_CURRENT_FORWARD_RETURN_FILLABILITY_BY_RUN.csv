@@ -1,0 +1,7 @@
+﻿run_id,signal_date,top_n_requested,frozen_ticker_count,fillable_1d_count,fillable_3d_count,fillable_5d_count,fillable_10d_count,fillable_20d_count,not_yet_mature_1d_count,not_yet_mature_3d_count,not_yet_mature_5d_count,not_yet_mature_10d_count,not_yet_mature_20d_count,missing_price_cache_count,latest_available_price_date_min,latest_available_price_date_max
+V18_25A_R21_20260522_140438,2026-05-22,20,20,0,0,0,0,0,20,20,20,20,20,0,2026-05-15,2026-05-15
+V18_25A_R21_20260522_184530,2026-05-22,250,250,0,0,0,0,0,250,250,250,250,250,0,2026-05-14,2026-05-21
+V18_25A_R21_20260522_191554,2026-05-22,250,250,0,0,0,0,0,250,250,250,250,250,0,2026-05-14,2026-05-21
+V18_25A_R21_20260522_191703,2026-05-22,250,250,0,0,0,0,0,250,250,250,250,250,0,2026-05-14,2026-05-21
+V18_25A_R21_20260523_022515,2026-05-23,100,100,0,0,0,0,0,100,100,100,100,100,0,2026-05-15,2026-05-22
+V18_25A_R21_20260523_022643,2026-05-23,252,252,0,0,0,0,0,252,252,252,252,252,0,2026-05-14,2026-05-22

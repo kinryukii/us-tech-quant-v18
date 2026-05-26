@@ -1,0 +1,44 @@
+﻿section,rank,ticker,base_date,snapshot_date,metric_name,metric_value,status,note,mode,official_decision_impact,auto_weight_change,auto_promotion,auto_trade
+status,,,,,MODE,SHADOW_ONLY,OK,SHADOW_ONLY summary; no official trading impact.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+status,,,,,OFFICIAL_DECISION_IMPACT,NONE,OK,Official decisions unchanged.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+status,,,,,OFFICIAL_TRADING_IMPACT,NONE,OK,No buy/sell logic or factor weights changed.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+counts,,,,,raw_candidate_row_count,93,OK,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+counts,,,,,unique_ticker_count,31,OK,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+counts,,,,,unique_ticker_base_date_count,31,OK,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+duplicate_warning,,,,,duplicate_ticker_base_date_count,62,DUPLICATES_FOUND,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+calendar_opex,,,,,opex_pressure_active_raw_row_count,93,CALENDAR_PROXY_ONLY,No options chain / OI / IV used.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+calendar_opex,,,,,opex_pressure_active_unique_ticker_base_date_count,31,CALENDAR_PROXY_ONLY,No options chain / OI / IV used.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+calendar_opex,,,,,month_end_active_count,0,CALENDAR_AVAILABLE,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+calendar_opex,,,,,quarter_end_active_count,0,CALENDAR_AVAILABLE,,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+calendar_opex,,,,,post_opex_relief_active_count,0,CALENDAR_PROXY_ONLY,No options chain / OI / IV used.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,1,FLEX,2026-05-15,2026-05-16,realized_volatility_factor,1.450080,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,2,DDOG,2026-05-15,2026-05-16,realized_volatility_factor,1.142391,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,3,AEHR,2026-05-15,2026-05-16,realized_volatility_factor,0.981241,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,4,CRDO,2026-05-15,2026-05-16,realized_volatility_factor,0.934447,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,5,CRWV,2026-05-15,2026-05-16,realized_volatility_factor,0.902017,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,6,CAMT,2026-05-15,2026-05-16,realized_volatility_factor,0.855501,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,7,FLR,2026-05-15,2026-05-16,realized_volatility_factor,0.695077,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,8,ANET,2026-05-15,2026-05-16,realized_volatility_factor,0.672539,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,9,AMKR,2026-05-15,2026-05-16,realized_volatility_factor,0.628585,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_realized_volatility,10,ICHR,2026-05-15,2026-05-16,realized_volatility_factor,0.618708,COMPUTABLE_NOW,Daily close realized volatility.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,1,DDOG,2026-05-15,2026-05-16,vwap_deviation_factor,0.258517,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,2,PANW,2026-05-15,2026-05-16,vwap_deviation_factor,0.228775,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,3,CRWD,2026-05-15,2026-05-16,vwap_deviation_factor,0.209784,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,4,CSCO,2026-05-15,2026-05-16,vwap_deviation_factor,0.201870,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,5,FLEX,2026-05-15,2026-05-16,vwap_deviation_factor,0.167888,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,6,ZS,2026-05-15,2026-05-16,vwap_deviation_factor,0.121579,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,7,AEHR,2026-05-15,2026-05-16,vwap_deviation_factor,0.067651,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,8,AAPL,2026-05-15,2026-05-16,vwap_deviation_factor,0.066110,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,9,ICHR,2026-05-15,2026-05-16,vwap_deviation_factor,0.065429,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_positive_vwap_proxy_deviation,10,NTAP,2026-05-15,2026-05-16,vwap_deviation_factor,0.058400,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,1,CEG,2026-05-15,2026-05-16,vwap_deviation_factor,-0.101860,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,2,CAMT,2026-05-15,2026-05-16,vwap_deviation_factor,-0.097523,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,3,ACM,2026-05-15,2026-05-16,vwap_deviation_factor,-0.096543,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,4,VST,2026-05-15,2026-05-16,vwap_deviation_factor,-0.093436,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,5,ENTG,2026-05-15,2026-05-16,vwap_deviation_factor,-0.091451,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,6,APH,2026-05-15,2026-05-16,vwap_deviation_factor,-0.090046,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,7,CRWV,2026-05-15,2026-05-16,vwap_deviation_factor,-0.083370,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,8,ANET,2026-05-15,2026-05-16,vwap_deviation_factor,-0.082146,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,9,FLR,2026-05-15,2026-05-16,vwap_deviation_factor,-0.075635,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+top_10_negative_vwap_proxy_deviation,10,CRDO,2026-05-15,2026-05-16,vwap_deviation_factor,-0.071044,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED
+vwap_reclaim_support_candidates,1,ICHR,2026-05-15,2026-05-16,vwap_reclaim_support_factor,1.000000,PROXY_ONLY_DAILY_OHLCV,PROXY_ONLY_DAILY_OHLCV; not true intraday VWAP.,SHADOW_ONLY,NONE,DISABLED,DISABLED,DISABLED

@@ -1,0 +1,28 @@
+# V18.14C-R1 Stable Snapshot
+
+- STATUS: OK_V18_14C_R1_STABLE_SNAPSHOT_READY
+- SNAPSHOT_PATH: D:\us-tech-quant\archive\stable\V18_14C_R1_stable_ranked_candidate_forward_tracker_20260518_231241
+- COPIED_FILE_COUNT: 19
+- COPY_FAIL_COUNT: 0
+- MISSING_CRITICAL_COUNT: 0
+- VALIDATION_FAIL_COUNT: 0
+- TRACKER_ROWS: 20
+- NEW_SIGNAL_ROWS_ADDED: 0
+- FORWARD_COMPLETE_ROWS: 0
+- PENDING_FORWARD_ROWS: 20
+- TOP_5_TICKERS: APH,ACM,ASML,AMZN,CAMT
+- OFFICIAL_DECISION_IMPACT: NONE
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- SNAPSHOT_ONLY: TRUE
+- DANGEROUS_TOKEN_DETECTED: NO
+- DUPLICATE_PREVENTION_VALIDATED: YES
+- PROTECTED_STABLE_SNAPSHOTS_UNCHANGED: YES
+
+## Validation
+
+- VALIDATION: D:\us-tech-quant\archive\stable\V18_14C_R1_stable_ranked_candidate_forward_tracker_20260518_231241\VALIDATION.csv
+- MANIFEST: D:\us-tech-quant\archive\stable\V18_14C_R1_stable_ranked_candidate_forward_tracker_20260518_231241\MANIFEST.csv
+- RESTORE_SCRIPT: D:\us-tech-quant\archive\stable\V18_14C_R1_stable_ranked_candidate_forward_tracker_20260518_231241\RESTORE_V18_14C_R1.ps1
+
+Snapshot only. No trading impact.

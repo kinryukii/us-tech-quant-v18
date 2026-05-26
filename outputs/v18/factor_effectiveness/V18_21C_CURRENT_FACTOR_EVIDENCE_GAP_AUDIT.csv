@@ -1,0 +1,11 @@
+factor_name,available_signal_count,score_ready_count,forward_return_matched_count,missing_forward_return_count,usable_sample_count,minimum_sample_required,evidence_gap_status,next_data_needed
+factor_pack_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+composite_candidate_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+technical_timing_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+overheat_penalty,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+price_derived_total_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+relative_strength_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+buy_zone_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+volume_confirmation_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+volatility_risk_score,105,105,20,85,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.
+market_risk_coefficient,325,325,20,305,20,20,SUFFICIENT_EVIDENCE,Continue monitoring with larger samples.

@@ -1,0 +1,12 @@
+field_name,required_for_high_confidence_match,source_component,target_component,purpose,current_availability_status,recommended_action,migration_risk,notes
+signal_snapshot_id,TRUE,signal_snapshot,forward_tracker,Immutable high-confidence join key.,MISSING_FROM_FORWARD_SOURCES,ADD_IN_CONTROLLED_R1_APPLICATION,MEDIUM,Plan only; no schema migration applied.
+snapshot_date,TRUE,signal_snapshot,forward_tracker,Date anchor for signal state.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,LOW,Plan only; no schema migration applied.
+ticker,TRUE,signal_snapshot,forward_tracker,Ticker identity and fallback join key.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,LOW,Plan only; no schema migration applied.
+forward_tracker_link_key,TRUE,forward_tracker,forward_outcomes,Stable tracker-to-outcome join key.,MISSING_FROM_FORWARD_SOURCES,ADD_IN_CONTROLLED_R1_APPLICATION,MEDIUM,Plan only; no schema migration applied.
+simulation_link_key,TRUE,simulation_linker,forward_tracker,Tie simulation rows to signal/outcome rows.,MISSING_FROM_FORWARD_SOURCES,ADD_IN_CONTROLLED_R1_APPLICATION,MEDIUM,Plan only; no schema migration applied.
+manual_feedback_link_key,TRUE,manual_feedback,forward_tracker,Future manual review join key.,MISSING_FROM_FORWARD_SOURCES,ADD_IN_CONTROLLED_R1_APPLICATION,MEDIUM,Plan only; no schema migration applied.
+horizon,TRUE,forward_tracker,forward_outcomes,Normalize outcome horizon rows.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,MEDIUM,Plan only; no schema migration applied.
+outcome_date,TRUE,forward_outcomes,factor_effectiveness,Confirm forward return maturity date.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,MEDIUM,Plan only; no schema migration applied.
+forward_return,TRUE,forward_outcomes,factor_effectiveness,Actual realized forward return.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,MEDIUM,Plan only; no schema migration applied.
+source_signal_snapshot_path,TRUE,signal_snapshot,forward_tracker,Provenance to immutable snapshot source.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,LOW,Plan only; no schema migration applied.
+source_forward_tracker_path,TRUE,forward_tracker,factor_effectiveness,Provenance to tracker source.,AVAILABLE_SOMEWHERE,PRESERVE_AND_PROPAGATE,LOW,Plan only; no schema migration applied.

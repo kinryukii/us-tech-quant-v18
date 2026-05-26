@@ -1,0 +1,19 @@
+strategies:
+  aggressive:
+    name: V15.13 Default Main
+    config: configs/daily_signal_v15_default.yaml
+    role: default_main
+    note: Promoted from v15_11_defensive_target30_hard35. Keeps old key aggressive for compatibility.
+  defensive:
+    name: V15.13 Conservative Backup
+    config: configs/daily_signal_v15_conservative.yaml
+    role: conservative_backup
+    note: Promoted from v15_11_defensive_target25_hard30. Keeps old key defensive for compatibility.
+state_file: state/paper_positions_v15_4.yaml
+output:
+  dir: reports/daily
+v15_13_note:
+  description: Daily Full workflow now uses v15.13 default/conservative strategy aliases.
+  default_main_config: configs/daily_signal_v15_default.yaml
+  conservative_config: configs/daily_signal_v15_conservative.yaml
+  compatibility: Strategy keys remain aggressive/defensive to avoid breaking existing paper state and PnL history.

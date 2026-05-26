@@ -1,0 +1,32 @@
+# V18.25A-R27H Official Factor + Technical Merge
+
+- STATUS: OK_V18_25A_R27H_OFFICIAL_FACTOR_TECHNICAL_MERGE_READY
+- MODE: APPLY_OFFICIAL_FACTOR_TECHNICAL_MERGE_WITH_BACKUP
+- RUN_ID: V18_25A_R27H_20260523_015724
+- APPLY_REQUESTED: TRUE
+
+## Plan
+
+- RDDT: factor APPEND, technical APPEND, allowed TRUE
+- TLN: factor APPEND, technical APPEND, allowed TRUE
+
+## Backup
+
+- BACKUP_CREATED: TRUE
+- BACKUP_DIR: D:/us-tech-quant/archive/v18/factor_technical_merge_backups/V18_25A_R27H_20260523_015724
+- RESTORE_SCRIPT_CREATED: TRUE
+
+## Guardrails
+
+- FACTOR_PACK_MODIFIED: TRUE
+- TECHNICAL_TIMING_MODIFIED: TRUE
+- CANDIDATES_MODIFIED: FALSE
+- PRICE_CACHE_MODIFIED: FALSE
+- ROLLING_LEDGER_MODIFIED: FALSE
+- FORBIDDEN_MODIFIED: FALSE
+
+## Blockers
+
+- None.
+
+NEXT_RECOMMENDED_STEP: R27I: post-merge candidate-readiness audit for RDDT/TLN only; keep auto trade and auto sell disabled.

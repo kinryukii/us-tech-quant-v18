@@ -1,0 +1,5 @@
+﻿metric,value,notes
+canonical_universe_source,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,Selected current/fallback local source.
+unique_success_scanned_within_window_count,23,Calendar approximation from local ledger.
+true_5day_unique_coverage_met,FALSE,FALSE_PARTIAL_LOCAL_LEDGER_COVERAGE
+coverage_trust_level,MEDIUM,HIGH only when all canonical tickers have success evidence inside window.

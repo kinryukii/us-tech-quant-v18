@@ -1,0 +1,4 @@
+﻿metric,value,notes
+batch3_next_focus,C: Continue Batch3 staged backfill / remaining stale coverage expansion,Patched recommendation target.
+promotion_loop_completed,True,R6/R7 promoted and cleared.
+held_out_or_stale_work_remaining,103,Non-complete coverage backlog remains.

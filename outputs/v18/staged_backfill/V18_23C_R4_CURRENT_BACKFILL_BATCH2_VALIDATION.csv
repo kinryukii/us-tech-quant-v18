@@ -1,0 +1,27 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,Python compile.
+powershell_parse_check,PASS,0,PowerShell parse.
+required_outputs_exist_non_empty,PASS,0,Required outputs and staged files must exist and be non-empty.
+batch_count_gt_zero,PASS,0,Batch 2 ticker count must be greater than zero.
+fetch_result_one_row_per_ticker,PASS,0,Fetch result rows must match batch tickers.
+retest_one_row_per_ticker,PASS,0,Retest rows must match batch tickers.
+staged_manifest_lists_files,PASS,0,Staged manifest must list files.
+official_and_forbidden_files_unchanged,PASS,0,
+true_coverage_remains_false,PASS,0,Staged-only test.
+safety_official_price_cache_modified,PASS,0,Expected OFFICIAL_PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_official_price_history_modified,PASS,0,Expected OFFICIAL_PRICE_HISTORY_MODIFIED=FALSE; actual FALSE.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,0,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_ledger_modified,PASS,0,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_rolling_scan_executed,PASS,0,Expected ROLLING_SCAN_EXECUTED=FALSE; actual FALSE.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.
+safety_true_5day_unique_coverage_met,PASS,0,Expected TRUE_5DAY_UNIQUE_COVERAGE_MET=FALSE; actual FALSE.

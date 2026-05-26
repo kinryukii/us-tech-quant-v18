@@ -1,0 +1,2 @@
+﻿"RunName","StartedAt","EndedAt","TotalSeconds","FinalAction","BuyPermission","VixRegime","OfficialPermission","SimStatus","CandidateTrackerStatus","ForwardStatus","YFinanceStatus","TodayCandidateCount","PendingForwardRows","OfficialDecisionImpact"
+"V18.9C_OFFICIAL_DAILY_WITH_SIM_VALIDATION","2026-05-18 21:35:17","2026-05-18 21:39:51","274.309","BUY_CANDIDATES_REQUIRE_MANUAL_CONFIRMATION","UNKNOWN","VIX_CAUTION","OFFICIAL_UNKNOWN_CONSERVATIVE_BLOCK","OK_SIM_CABIN_READY","OK_SIM_CANDIDATE_TRACKER_READY","OK_FORWARD_RETURN_FILLER_READY","YFINANCE_NOT_USED","31","93","NONE"

@@ -1,0 +1,2 @@
+﻿status,generated_at,root,dry_run,apply_clean,total_repo_size_mb_before,total_repo_size_mb_after,delete_candidate_count,protected_item_count,estimated_reclaimable_mb,actual_reclaimed_mb,warning_count,fail_count,auto_trade,auto_sell,official_decision_impact,forbidden_modified
+OK_V18_34A_STORAGE_INVENTORY_READY,2026-05-25T00:50:54,D:\us-tech-quant,FALSE,FALSE,845.20,845.20,63,54,0.07,0.00,0,0,DISABLED,DISABLED,NONE,FALSE

@@ -1,0 +1,9 @@
+﻿source_name,source_path,exists,row_count,selected,notes
+factor_pack,D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,105,TRUE,"fields=factor_pack_rank,ticker,factor_pack_score,latest_price_date,latest_close,ret_5d,ret_20d,ret_60d,ret_120d,volume_ratio_5_20,F006_SHORT_REV_5D,F007_PULLBACK_IN_UPTREND"
+technical_timing,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,105,FALSE,"fields=ticker,yf_ticker,price_date,close,bb_mid_20,bb_upper_20_2,bb_lower_20_2,bb_percent_b,bb_bandwidth,bb_squeeze_flag,bb_status,rsi_14"
+ranking_score_explanation,D:\us-tech-quant\outputs\v18\ranking\V18_CURRENT_RANKED_CANDIDATE_SCORE_EXPLANATION.csv,TRUE,20,FALSE,"fields=ticker,rank,final_score,inferred_sort_score,score_source_file,score_source_status,universe_tier,data_sufficiency_status,scan_status,light_trend_status,promotion_score,demotion_score"
+read_center_ranked_summary,D:\us-tech-quant\outputs\v18\read_center\V18_13B_CURRENT_RANKED_CANDIDATE_SUMMARY.csv,TRUE,16,FALSE,"fields=metric,value"
+canonical_plan,D:\us-tech-quant\outputs\v18\rolling_coverage\V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TRUE,324,FALSE,supporting source
+ledger_snapshot,D:\us-tech-quant\outputs\v18\rolling_coverage\V18_23C_R3_CURRENT_SCAN_LEDGER_SNAPSHOT.csv,TRUE,324,FALSE,supporting source
+held_out,D:\us-tech-quant\outputs\v18\staged_backfill\V18_23C_R2_CURRENT_HELD_OUT_TICKERS.csv,TRUE,14,FALSE,supporting source
+v18_23c_r3_read_first,D:\us-tech-quant\outputs\v18\ops\V18_23C_R3_READ_FIRST.txt,TRUE,1,FALSE,supporting source

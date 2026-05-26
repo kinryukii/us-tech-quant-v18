@@ -1,0 +1,81 @@
+﻿{
+  "version": "V16.1-time-risk-final-decision",
+  "timezone": "Asia/Tokyo",
+  "account": {
+    "base_currency": "JPY",
+    "broker": "Rakuten / manual execution",
+    "fractional_us_shares_allowed": false,
+    "min_us_share": 1,
+    "default_today_action_when_no_trigger": "NO_TRADE_WAIT_PULLBACK"
+  },
+  "macro_events": [
+    {
+      "name": "US NFP",
+      "date": "2026-05-08",
+      "importance": "HIGH",
+      "pre_block_days": 1,
+      "post_cooldown_days": 1,
+      "note": "NFP 后一个交易日仍保留波动冷却。"
+    },
+    {
+      "name": "US CPI",
+      "date": "2026-05-12",
+      "importance": "EXTREME",
+      "pre_block_days": 3,
+      "post_cooldown_days": 1,
+      "note": "CPI 前 3 天禁止普通新仓，只允许观察或极小试探。"
+    },
+    {
+      "name": "US FOMC",
+      "date": "",
+      "importance": "EXTREME",
+      "pre_block_days": 3,
+      "post_cooldown_days": 1,
+      "note": "有具体日期后手动填写。"
+    },
+    {
+      "name": "US PCE",
+      "date": "",
+      "importance": "HIGH",
+      "pre_block_days": 2,
+      "post_cooldown_days": 1,
+      "note": "有具体日期后手动填写。"
+    }
+  ],
+  "earnings_events": {
+    "NET": "",
+    "MDB": "",
+    "ARM": "",
+    "ANET": "",
+    "ACM": "",
+    "SNOW": "",
+    "FLR": "",
+    "ZS": "",
+    "BE": "",
+    "CRWV": ""
+  },
+  "risk_rules": {
+    "ret20_medium": 15.0,
+    "ret20_high": 25.0,
+    "ret20_extreme": 40.0,
+    "pre_earnings_block_days": 3,
+    "pre_earnings_high_days": 7,
+    "post_earnings_cooldown_days": 2,
+    "friday_new_buy_policy": "DOWNGRADE",
+    "weekend_gap_policy": "DOWNGRADE",
+    "missing_confirmation_policy": "HOLD_REVIEW_ONLY",
+    "block_policy": "BLOCK_FREEZE_NEW_BUYS"
+  },
+  "manual_candidate_fallback": [
+    {"rank": 1, "ticker": "NET", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 2, "ticker": "MDB", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 3, "ticker": "ARM", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 4, "ticker": "ANET", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 5, "ticker": "ACM", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 6, "ticker": "SNOW", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 7, "ticker": "FLR", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 8, "ticker": "ZS", "event_confirmation_status": "MISSING_CONFIRMATION", "candidate_review_decision": "HOLD_REVIEW_ONLY"},
+    {"rank": 9, "ticker": "BE", "conclusion": "BLOCK", "restriction": "FREEZE_NEW_BUYS"},
+    {"rank": 10, "ticker": "CRWV", "conclusion": "BLOCK", "restriction": "FREEZE_NEW_BUYS"}
+  ]
+}

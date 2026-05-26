@@ -1,0 +1,6 @@
+﻿decision_item,value,notes
+promotion_gate_decision,PROMOTE_READY,Read-only gate decision.
+official_market_proxy_path,state/v18/market_proxy_cache/VIX.csv,Preferred future integration target.
+official_market_proxy_integration_required,TRUE,Promotion is not executed in R9.
+official_decision_impact,NONE,No official decision state touched.
+forbidden_file_modified,False,Must remain FALSE.

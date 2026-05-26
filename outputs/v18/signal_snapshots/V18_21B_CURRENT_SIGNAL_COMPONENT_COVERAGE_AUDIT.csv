@@ -1,0 +1,9 @@
+component_name,available_ticker_count,missing_ticker_count,coverage_ratio,source_path,component_status,notes
+factor_pack,105,220,0.323077,D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,PARTIAL,
+technical_timing,105,220,0.323077,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv,PARTIAL,
+price_derived_factors,325,0,1.000000,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R2_CURRENT_PRICE_DERIVED_FACTOR_SCORES.csv,OK,
+market_regime,325,0,1.000000,D:\us-tech-quant\outputs\v18\market_regime\V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv,OK,Global source applied to all snapshot rows.
+coverage_trust,325,0,1.000000,D:\us-tech-quant\outputs\v18\ops\V18_16K_R2_STABLE_READ_FIRST.txt,OK,Global source applied to all snapshot rows.
+simulation_reference,31,294,0.095385,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,PARTIAL,
+forward_tracker_reference,20,305,0.061538,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv,PARTIAL,
+manual_feedback_reference,0,325,0.000000,D:\us-tech-quant\outputs\v18\positions\V18_CURRENT_MANUAL_TRADE_FEEDBACK.csv,MISSING,

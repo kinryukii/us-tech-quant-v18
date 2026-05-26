@@ -1,0 +1,7 @@
+﻿candidate_source,exists,modified_time,parse_status,valid_daily_threshold_evidence,selected,today_scan_count,required_daily_scan_count,daily_threshold_met,daily_threshold_shortfall,stale_vs_selected,reason
+D:\us-tech-quant\outputs\v18\ops\V18_16F_READ_FIRST.txt,TRUE,2026-05-20T02:16:37,OK_READ_FIRST,TRUE,FALSE,65,65,TRUE,0,OLDER_THAN_SELECTED,Valid read-first daily-threshold evidence.
+D:\us-tech-quant\outputs\v18\ops\V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt,TRUE,2026-05-20T02:16:37,OK_READ_FIRST,TRUE,TRUE,65,65,TRUE,0,SELECTED_NEWEST_VALID,Valid read-first daily-threshold evidence.
+D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,TRUE,2026-05-20T02:16:27,OK_READ_FIRST,TRUE,FALSE,65,65,TRUE,0,OLDER_THAN_SELECTED,Valid read-first daily-threshold evidence.
+D:\us-tech-quant\outputs\v18\universe\V18_16J_CURRENT_POST_PATCH_COVERAGE_CHECK.csv,TRUE,2026-05-20T01:49:11,OK,TRUE,FALSE,65,65,TRUE,0,OLDER_THAN_SELECTED,Valid CSV daily-threshold evidence.
+D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,TRUE,2026-05-19T15:37:07,OK,TRUE,FALSE,45,65,FALSE,20,OLDER_THAN_SELECTED,Valid CSV daily-threshold evidence.
+D:\us-tech-quant\outputs\v18\universe\V18_CURRENT_ROLLING_SCAN_COVERAGE_AUDIT.csv,TRUE,2026-05-19T15:37:07,OK,TRUE,FALSE,45,65,FALSE,20,OLDER_THAN_SELECTED,Valid CSV daily-threshold evidence.

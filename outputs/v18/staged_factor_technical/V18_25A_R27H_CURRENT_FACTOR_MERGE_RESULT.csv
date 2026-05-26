@@ -1,0 +1,3 @@
+﻿ticker,merge_attempted,merge_success,merge_action,rows_before,rows_after,error_message
+RDDT,TRUE,TRUE,APPEND,250,252,
+TLN,TRUE,TRUE,APPEND,250,252,

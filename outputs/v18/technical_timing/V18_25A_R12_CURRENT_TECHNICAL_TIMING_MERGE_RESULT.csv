@@ -1,0 +1,7 @@
+﻿merge_item,value,notes
+merge_attempt_count,52,Unique staged target tickers.
+merge_update_count,0,Existing target rows replaced.
+merge_append_count,52,New target rows appended.
+merge_fail_count,0,Targets not merged.
+post_merge_current_row_count,157,Rows in current file after merge.
+target_rows_match_staged_aligned,52,Aligned current-schema target rows matching staged rows.

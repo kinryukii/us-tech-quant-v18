@@ -1,0 +1,2 @@
+﻿run_id,status,generated_at,source_rows,output_rows,current_cost_ok_candidate_count,current_small_only_cost_ok_count,current_blocked_min_notional_count,review_first_no_current_trade_count,watch_only_no_current_trade_count,wait_pullback_no_current_trade_count,true_cost_review_required_count,validation_fail_count,forbidden_modified,notes
+V18_31C_20260524_182841,FAIL_V18_31C_R1_COST_PLAN_READABILITY_PATCH_FAILED,2026-05-24T18:28:41,252,252,0,0,0,0,0,0,0,1,FALSE,Operator state blocked all rows.

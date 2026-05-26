@@ -1,0 +1,3 @@
+﻿ticker,current_last_scan_status,current_last_success_scan_date,would_set_last_scan_status,would_set_last_success_scan_date,would_set_last_attempt_scan_timestamp,dryrun_status
+RDDT,SKIPPED_NO_LOCAL_DATA,,SUCCESS_LOCAL_PRICE_FULL_HISTORY,2026-05-23,2026-05-23T00:49:15,DRYRUN_PASS
+TLN,SKIPPED_NO_LOCAL_DATA,,SUCCESS_LOCAL_PRICE_FULL_HISTORY,2026-05-23,2026-05-23T00:49:15,DRYRUN_PASS

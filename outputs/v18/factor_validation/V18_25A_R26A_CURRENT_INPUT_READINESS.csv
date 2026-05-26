@@ -1,0 +1,7 @@
+﻿input_name,exists,row_count,ticker_column,score_column,status,notes
+current_ranked_candidates,TRUE,250,ticker,composite_candidate_score,PASS,Current ranked candidates after R25G.
+signal_freeze_ledger,TRUE,770,ticker,composite_candidate_score,PASS,R21 freeze ledger should be refreshed after R25G.
+factor_pack,TRUE,250,ticker,factor_pack_score,PASS,Current official factor pack.
+technical_timing,TRUE,250,ticker,technical_timing_score,PASS,Current official technical timing.
+rolling_ledger,TRUE,324,ticker,,PASS,Rolling coverage ledger.
+price_cache,TRUE,301,filename,,PASS,Local price cache directory.

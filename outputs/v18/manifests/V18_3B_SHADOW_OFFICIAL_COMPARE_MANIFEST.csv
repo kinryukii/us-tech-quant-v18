@@ -1,0 +1,6 @@
+﻿version,path,length_bytes,generated_at,purpose
+V18.3B,D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_READ_FIRST.txt,890,2026-05-13 19:34:26,shadow_official_compare
+V18.3B,D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_SHADOW_OFFICIAL_COMPARE_REPORT.md,5485,2026-05-13 19:34:26,shadow_official_compare
+V18.3B,D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_SHADOW_OFFICIAL_COMPARE_CURRENT.csv,50407,2026-05-13 19:34:26,shadow_official_compare
+V18.3B,D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv,34699,2026-05-13 19:34:26,shadow_official_compare
+V18.3B,D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_SHADOW_OFFICIAL_COMPARE_AUDIT.csv,277,2026-05-13 19:34:26,shadow_official_compare

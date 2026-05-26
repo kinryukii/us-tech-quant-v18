@@ -1,0 +1,12 @@
+﻿item,before,after,notes
+source_missing_warning_count,0,0,Optional R3 read-first was available.
+high_trust_suspicious_count,0,0,No change to trust classification.
+needs_official_integration_count,13,13,Recommendation target only; underlying counts unchanged.
+partial_history_review_count,116,116,Recommendation target only; underlying counts unchanged.
+next_recommended_step,C: Continue Batch3 staged backfill / remaining stale coverage expansion,C: Continue Batch3 staged backfill / remaining stale coverage expansion,Patched only NEXT_RECOMMENDED_STEP logic.
+r1_rerun_returncode,,0,"=== V18.25A R1 DEGRADED DAILY OUTPUT REVIEW START ===
+ROOT: D:\us-tech-quant
+MODE: READ_ONLY_DEGRADED_DAILY_OUTPUT_REVIEW
+OFFICIAL_DECISION_IMPACT: NONE
+AUTO_TRADE: DISABLED
+AUTO_S"

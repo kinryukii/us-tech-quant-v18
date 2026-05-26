@@ -1,0 +1,32 @@
+# V18.13C-R1 Stable Snapshot
+
+- STATUS: `OK_V18_13C_R1_STABLE_SNAPSHOT_READY`
+- SNAPSHOT_PATH: `D:\us-tech-quant\archive\stable\V18_13C_R1_stable_unified_daily_with_ranked_candidates_20260518_202801`
+- COPIED_FILE_COUNT: `18`
+- COPY_FAIL_COUNT: `0`
+- MISSING_CRITICAL_COUNT: `0`
+- VALIDATION_FAIL_COUNT: `0`
+- V18_13A_STATUS: `OK_V18_13A_UNIFIED_DAILY_READ_CENTER_READY`
+- V18_13B_STATUS: `OK_V18_13B_RANKED_CANDIDATE_READ_CENTER_READY`
+- RANK_SOURCE_STATUS: `OK_SCORE_SOURCE_FOUND`
+- SECOND_STAGE_COUNT: `20`
+- SCORED_TICKER_COUNT: `20`
+- UNSCORED_TICKER_COUNT: `0`
+- TOP_5_TICKERS: `APH,ACM,ASML,AMZN,CAMT`
+- ranking_source_policy: `PRIMARY_CURRENT_ONLY`
+- fallback_used: `FALSE`
+- selected_for_ranking_count: `2`
+- OFFICIAL_DECISION_IMPACT: `NONE`
+- AUTO_TRADE: `DISABLED`
+- AUTO_SELL: `DISABLED`
+- READ_ONLY: `TRUE`
+- LINK_ONLY: `TRUE`
+- SNAPSHOT_ONLY: `TRUE`
+
+## Snapshot Scope
+
+The snapshot contains V18.13C link scripts and outputs, available linked V18.13A/V18.13B current source outputs, README, manifest, validation file, and restore tooling.
+
+## Safety
+
+This is a snapshot-only read-only artifact. It does not change official decisions and does not create live trading behavior.

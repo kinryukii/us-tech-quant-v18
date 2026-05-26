@@ -1,0 +1,4 @@
+﻿metric,value,notes
+force_stale_sweep_mode,TRUE,STALE_OR_NEVER_SUCCESS_TICKERS_PRESENT_FORCE_ATTEMPT_REQUIRED
+calendar_or_run_window_certification,APPROXIMATION_ONLY,No local exchange calendar certification applied.
+stale_or_overdue_ticker_count,301,Selected all stale rows in force mode.

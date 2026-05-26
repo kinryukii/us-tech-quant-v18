@@ -1,0 +1,28 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,Python compile.
+powershell_parse_check,PASS,0,PowerShell parse.
+required_outputs_exist_non_empty,PASS,0,All V18.24B outputs must exist and be non-empty.
+v18_24a_snapshot_readable,PASS,0,V18.24A tier snapshot must be readable.
+tier_summary_all_tiers,PASS,0,Operator tier summary must include all tiers.
+movement_highlights_exists,PASS,0,Movement highlights must exist even in baseline mode.
+top_tier_candidates_available,PASS,0,Top tier candidates should contain Tier 1/Tier 2 rows if available.
+data_not_ready_summary_available,PASS,0,Data-not-ready summary must contain count/sample rows.
+no_forbidden_files_modified,PASS,0,
+safety_official_decision_impact,PASS,0,Expected OFFICIAL_DECISION_IMPACT=NONE; actual NONE.
+safety_buy_permission_modified,PASS,0,Expected BUY_PERMISSION_MODIFIED=FALSE; actual FALSE.
+safety_auto_trade,PASS,0,Expected AUTO_TRADE=DISABLED; actual DISABLED.
+safety_auto_sell,PASS,0,Expected AUTO_SELL=DISABLED; actual DISABLED.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_staged_price_history_written,PASS,0,Expected STAGED_PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ledger_modified,PASS,0,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,0,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.

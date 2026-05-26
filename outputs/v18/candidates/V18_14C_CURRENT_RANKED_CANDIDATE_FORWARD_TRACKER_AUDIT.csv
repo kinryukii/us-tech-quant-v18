@@ -1,0 +1,7 @@
+﻿metric,value
+state_path,D:\us-tech-quant\state\v18\candidate_forward_tracker\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv
+output_path,D:\us-tech-quant\outputs\v18\candidates\V18_14C_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv
+dedup_key,signal_date+ticker+rank_source
+duplicate_count,0
+price_source_file_count,16
+use_yfinance,FALSE

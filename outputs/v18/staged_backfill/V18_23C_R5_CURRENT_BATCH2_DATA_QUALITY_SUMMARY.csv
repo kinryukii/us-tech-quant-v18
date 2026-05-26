@@ -1,0 +1,8 @@
+﻿metric,value,notes
+batch_ticker_count,65,Batch 2 staged-only audit rows.
+fetch_success_count,62,From V18.23C-R4.
+full_history_merge_candidate_count,52,Future R6 candidates.
+price_only_partial_history_candidate_count,5,Not factor-ready.
+hold_review_ticker_count,8,Excluded from R6.
+empty_fetch_ticker_count,3,"CDTX, CFLT, MPW expected."
+official_integration_allowed_next_step,TRUE,Dry run plan exists; explicit approval required.

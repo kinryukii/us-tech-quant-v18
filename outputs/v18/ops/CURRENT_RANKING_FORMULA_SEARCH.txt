@@ -1,0 +1,1039 @@
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:109: "current_weight": 0.25,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:110: "min_weight": 0.15,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:111: "max_weight": 0.35,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:125: "current_weight": 0.20,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:126: "min_weight": 0.10,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:127: "max_weight": 0.30,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:141: "current_weight": 0.20,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:142: "min_weight": 0.10,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:143: "max_weight": 0.30,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:157: "current_weight": 0.15,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:158: "min_weight": 0.05,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:159: "max_weight": 0.25,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:165: "black_box_guard": "Cannot dominate trend and pullback weights. Max weight capped.",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:169: "factor_name": "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:173: "current_weight": 0.10,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:174: "min_weight": 0.05,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:175: "max_weight": 0.20,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:182: "aliases": "overheat_penalty|overheat_score|overheat|old_overheat|overheat_unclassified|exhaustion_risk",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:189: "current_weight": 0.05,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:190: "min_weight": 0.00,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:191: "max_weight": 0.15,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:205: "current_weight": 0.05,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:206: "min_weight": 0.00,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:207: "max_weight": 0.10,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:222: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:223: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:224: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:226: "decision_impact": "hard_gate_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:238: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:239: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:240: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:242: "decision_impact": "hard_gate_or_downgrade_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:254: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:255: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:256: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:262: "black_box_guard": "Regime thresholds must be explicit before weight switching.",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:270: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:271: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:272: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:274: "decision_impact": "hard_gate_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:286: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:287: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:288: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:290: "decision_impact": "hard_gate_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:302: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:303: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:304: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:306: "decision_impact": "risk_cap_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:318: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:319: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:320: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:322: "decision_impact": "risk_cap_no_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:335: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:336: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:337: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:351: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:352: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:353: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:367: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:368: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:369: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:383: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:384: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:385: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:399: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:400: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:401: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:415: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:416: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:417: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:431: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:432: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:433: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:447: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:448: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:449: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:463: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:464: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:465: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:480: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:481: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:482: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:496: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:497: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:498: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:512: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:513: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:514: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:528: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:529: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:530: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:545: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:546: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:547: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:561: "current_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:562: "min_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:563: "max_weight": 0,
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:577: "current_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:578: "min_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:579: "max_weight": "",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:675: lines.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:693: lines.append("1. Hard gates are not weights.")
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:695: lines.append("3. Every official candidate factor needs explicit name, direction, weight range, source, and principle.")
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:701: lines.append("| factor_name | current_weight | range | coverage_status | matched_columns |")
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:704: rng = f"{r.get('min_weight','')} - {r.get('max_weight','')}"
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:706: f"| {r['factor_name']} | {r.get('current_weight','')} | {rng} | "
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:807: "current_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:808: "min_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:809: "max_weight",
+D:\us-tech-quant\scripts\v18\v18_10A_factor_registry_coverage_audit.py:884: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:230: weights = {20: 0.50, 60: 0.30, 120: 0.20}
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:235: for w, wt in weights.items():
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:399: weights = {20: 0.50, 60: 0.30, 120: 0.20}
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:402: for w, wt in weights.items():
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:411: method = f"YFINANCE_WEIGHTED_RELATIVE_RETURN_VS_{default_benchmark.upper()}_20D50_60D30_120D20"
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:562: report.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10A_R2_factor_daily_capture_patch.py:644: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:290: if nc.endswith("_score") or nc in ("execution_fit", "relative_strength_score", "volatility_penalty", "overheat_penalty"):
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:361: recommendation = "DO_NOT_ADJUST_WEIGHT"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:365: recommendation = "FACTOR_SUPPORTS_CURRENT_OR_UPWEIGHT_RESEARCH"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:367: recommendation = "FACTOR_NEEDS_REVIEW_OR_DOWNWEIGHT_RESEARCH"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:422: "weight_action": "HOLD_CURRENT_WEIGHT",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:431: action = "RESEARCH_UPWEIGHT_OR_KEEP"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:434: action = "RESEARCH_DOWNWEIGHT"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:437: action = "HOLD_CURRENT_WEIGHT"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:447: "weight_action": action,
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:518: "current_weight": f.get("current_weight", ""),
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:519: "min_weight": f.get("min_weight", ""),
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:520: "max_weight": f.get("max_weight", ""),
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:543: row["current_weight"] = f.get("current_weight", "")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:557: "current_weight",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:586: "weight_action",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:592: "current_weight",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:593: "min_weight",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:594: "max_weight",
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:624: report.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:645: report.append("| factor | current_weight | columns_used | method | nonnull |")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:649: f"| {r['factor_name']} | {r['current_weight']} | {r['captured_columns_used']} | "
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:660: f"{r['avg_spearman_corr']} | {r['summary_status']} | {r['weight_action']} |"
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:667: report.append("3. `INSUFFICIENT_SAMPLE` means the factor should not be used for weight changes yet.")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:668: report.append("4. This report does not change official weights. It only produces evidence.")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:684: report.append("Proceed to V18.10C Weight Research Engine after reviewing factor effectiveness.")
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:700: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10B_factor_effectiveness_backtest.py:783: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10B_R1_forward_return_maturity_monitor.py:498: report.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10B_R1_forward_return_maturity_monitor.py:565: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10B_R1_forward_return_maturity_monitor.py:626: If READY_HORIZON_COUNT is 0, do not adjust weights.
+D:\us-tech-quant\scripts\v18\v18_10B_R1_forward_return_maturity_monitor.py:640: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10B_R3_stable_snapshot.py:328: readme_lines.append("AUTO_WEIGHT_CHANGE:")
+D:\us-tech-quant\scripts\v18\v18_10B_R3_stable_snapshot.py:367: report_lines.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10B_R3_stable_snapshot.py:412: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10B_R3_stable_snapshot.py:473: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:126: "outputs\\v18\\weight_research",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:182: snapshot_name = f"V18_10C_R2_stable_factor_weight_research_chain_{stamp}"
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:204: "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:238: "scripts/v18/run_v18_10C_weight_research_engine.ps1",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:239: "scripts/v18/run_v18_10C_R1_factor_weight_research_daily_chain.ps1",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:249: "scripts/v18/v18_10C_weight_research_engine.py",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:292: root / "outputs/v18/weight_research/V18_10C_R1_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:293: root / "outputs/v18/weight_research/V18_10C_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:324: readme_lines.append("Stable restore point after V18.10C-R1 integrated factor + weight research daily chain became clean.")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:329: readme_lines.append("AUTO_WEIGHT_CHANGE:")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:366: report_lines.append("- MODE: `STABLE_RESTORE_POINT_FOR_FACTOR_WEIGHT_RESEARCH_CHAIN`")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:368: report_lines.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:408: STABLE_RESTORE_POINT_FOR_FACTOR_WEIGHT_RESEARCH_CHAIN
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:413: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:465: If STATUS is OK_STABLE_SNAPSHOT_READY, use V18.10C-R1 as the daily factor + weight research chain.
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:466: Do not promote or adjust weights until forward-return labels mature and evaluation rows become OK_EVALUATED.
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:473: print("MODE: STABLE_RESTORE_POINT_FOR_FACTOR_WEIGHT_RESEARCH_CHAIN")
+D:\us-tech-quant\scripts\v18\v18_10C_R2_stable_snapshot.py:475: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:250: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:272: def weight_candidates(baseline: Dict[str, float]) -> List[Dict[str, object]]:
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:278: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:294: "weight_set": "BASELINE_CURRENT",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:295: "description": "Current official candidate weights from factor registry.",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:296: "weights": base,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:299: "weight_set": "EQUAL_WEIGHT",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:300: "description": "Equal-weight research control.",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:301: "weights": clean({f: 1 for f in factors}),
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:304: "weight_set": "DEFENSIVE_CAUTION",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:306: "weights": clean({
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:311: "overheat_penalty": 0.18,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:317: "weight_set": "MOMENTUM_NORMAL",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:319: "weights": clean({
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:324: "overheat_penalty": 0.06,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:330: "weight_set": "PULLBACK_QUALITY",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:332: "weights": clean({
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:337: "overheat_penalty": 0.14,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:343: "weight_set": "LOW_VOL_DEFENSE",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:345: "weights": clean({
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:350: "overheat_penalty": 0.14,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:356: "weight_set": "EXECUTION_AWARE_SMALL_ACCOUNT",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:358: "weights": clean({
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:363: "overheat_penalty": 0.10,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:371: def combined_score_for_weightset(
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:373: weights: Dict[str, float],
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:380: for f, w in weights.items():
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:395: def evaluate_weightset_horizon(
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:396: weight_set: str,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:415: "weight_set": weight_set,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:419: "promotion_action": "HOLD_NO_WEIGHT_ACTION",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:438: action = "HOLD_NO_WEIGHT_ACTION"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:444: "weight_set": weight_set,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:473: out_dir = root / "outputs/v18/weight_research"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:488: baseline[r.get("factor_name", "")] = parse_float(r.get("current_weight")) or 0.0
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:518: "current_weight": f.get("current_weight", ""),
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:525: weight_sets = weight_candidates(baseline)
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:530: for ws in weight_sets:
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:531: name = str(ws["weight_set"])
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:533: weights = ws["weights"]
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:536: "weight_set": name,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:539: for f, w in weights.items():
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:543: combined = combined_score_for_weightset(
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:545: weights=weights,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:550: e = evaluate_weightset_horizon(
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:551: weight_set=name,
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:569: promotion_permission = "HOLD_NO_WEIGHT_ACTION"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:571: status = "OK_WEIGHT_RESEARCH_ENGINE_READY"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:573: candidates_path = out_dir / "V18_10C_CURRENT_WEIGHT_CANDIDATES.csv"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:574: eval_path = out_dir / "V18_10C_CURRENT_WEIGHT_RESEARCH_EVALUATION.csv"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:575: factor_audit_path = out_dir / "V18_10C_CURRENT_WEIGHT_RESEARCH_FACTOR_AUDIT.csv"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:576: source_audit_path = out_dir / "V18_10C_CURRENT_WEIGHT_RESEARCH_SOURCE_AUDIT.csv"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:577: report_path = out_dir / "V18_10C_CURRENT_WEIGHT_RESEARCH_REPORT.md"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:585: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:590: write_csv(candidates_path, candidate_rows, ["weight_set", "description"] + factor_names)
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:593: "weight_set",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:617: "current_weight",
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:632: report.append("# V18.10C Weight Research Engine")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:639: report.append("- MODE: `SHADOW_ONLY_NO_BLACK_BOX_WEIGHT_RESEARCH`")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:641: report.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:650: report.append(f"- WEIGHT_CANDIDATE_COUNT: `{len(weight_sets)}`")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:661: report.append("## 4. Weight candidates")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:663: report.append("| weight_set | trend | rs | pullback | momentum | overheat | volatility | execution |")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:667: f"| {row['weight_set']} | {row.get('trend_score','')} | {row.get('relative_strength_score','')} | "
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:669: f"{row.get('overheat_penalty','')} | {row.get('volatility_penalty','')} | {row.get('execution_fit','')} |"
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:680: report.append("No automatic weight changes are allowed. If forward labels are immature, the only valid action is HOLD_NO_WEIGHT_ACTION.")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:684: report.append(f"- WEIGHT_CANDIDATES: `{candidates_path}`")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:694: read_first = f"""V18.10C WEIGHT RESEARCH ENGINE READ FIRST
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:700: SHADOW_ONLY_NO_BLACK_BOX_WEIGHT_RESEARCH
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:705: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:723: WEIGHT_CANDIDATE_COUNT:
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:724: {len(weight_sets)}
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:753: WEIGHT_CANDIDATES:
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:772: If PROMOTION_PERMISSION is HOLD_NO_WEIGHT_ACTION, do not adjust weights.
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:778: print("=== V18.10C WEIGHT RESEARCH ENGINE READY ===")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:780: print("MODE: SHADOW_ONLY_NO_BLACK_BOX_WEIGHT_RESEARCH")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:782: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:788: print(f"WEIGHT_CANDIDATE_COUNT: {len(weight_sets)}")
+D:\us-tech-quant\scripts\v18\v18_10C_weight_research_engine.py:798: print(f"WEIGHT_CANDIDATES: {candidates_path}")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:126: "outputs\\v18\\weight_research",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:182: snapshot_name = f"V18_10D_R1_stable_official_daily_with_factor_weight_research_{stamp}"
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:204: "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:237: "scripts/v18/run_v18_10C_weight_research_engine.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:238: "scripts/v18/run_v18_10C_R1_factor_weight_research_daily_chain.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:239: "scripts/v18/run_v18_10D_official_daily_with_factor_weight_research.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:248: "scripts/v18/v18_10C_weight_research_engine.py",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:293: root / "outputs/v18/weight_research/V18_10C_R1_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:294: root / "outputs/v18/weight_research/V18_10C_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:326: readme_lines.append("Stable restore point after V18.10D official daily plus shadow factor/weight research wrapper passed light test.")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:331: readme_lines.append("AUTO_WEIGHT_CHANGE:")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:368: report_lines.append("- MODE: `STABLE_RESTORE_POINT_FOR_OFFICIAL_DAILY_WITH_SHADOW_FACTOR_WEIGHT_RESEARCH`")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:370: report_lines.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:410: STABLE_RESTORE_POINT_FOR_OFFICIAL_DAILY_WITH_SHADOW_FACTOR_WEIGHT_RESEARCH
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:415: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:469: Do not promote or adjust weights until forward-return labels mature and evaluation rows become OK_EVALUATED.
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:476: print("MODE: STABLE_RESTORE_POINT_FOR_OFFICIAL_DAILY_WITH_SHADOW_FACTOR_WEIGHT_RESEARCH")
+D:\us-tech-quant\scripts\v18\v18_10D_R1_stable_snapshot.py:478: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:126: "outputs\\v18\\weight_research",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:204: "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:232: "scripts/v18/run_v18_10D_official_daily_with_factor_weight_research.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:233: "scripts/v18/run_v18_10C_R1_factor_weight_research_daily_chain.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:234: "scripts/v18/run_v18_10C_weight_research_engine.ps1",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:244: "scripts/v18/v18_10C_weight_research_engine.py",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:294: root / "outputs/v18/weight_research/V18_10C_R1_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:295: root / "outputs/v18/weight_research/V18_10C_READ_FIRST.txt",
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:336: readme_lines.append("AUTO_WEIGHT_CHANGE:")
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:369: report_lines.append("- AUTO_WEIGHT_CHANGE: `DISABLED`")
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:414: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:477: Do not promote or adjust weights until forward-return labels mature and evaluation rows become OK_EVALUATED.
+D:\us-tech-quant\scripts\v18\v18_10D_R2_stable_snapshot.py:486: print("AUTO_WEIGHT_CHANGE: DISABLED")
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:15: AUTO_WEIGHT_CHANGE = "DISABLED"
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:20: FACTOR_WEIGHTS_MODIFIED = "False"
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:126: "auto_weight_change": AUTO_WEIGHT_CHANGE,
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:166: summary_row("status", metric_name="OFFICIAL_TRADING_IMPACT", metric_value=OFFICIAL_TRADING_IMPACT, status="OK", note="No buy/sell logic or factor weights changed."),
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:221: "auto_weight_change",
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:237: f"- AUTO_WEIGHT_CHANGE: `{AUTO_WEIGHT_CHANGE}`",
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:242: f"- FACTOR_WEIGHTS_MODIFIED: `{FACTOR_WEIGHTS_MODIFIED}`",
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:294: "This report is SHADOW_ONLY and has no official trading impact. It does not change official decisions, buy/sell logic, factor weights, or candidate tracker state.",
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:311: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:312: {AUTO_WEIGHT_CHANGE}
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:326: FACTOR_WEIGHTS_MODIFIED:
+D:\us-tech-quant\scripts\v18\v18_11E_shadow_factor_summary.py:327: {FACTOR_WEIGHTS_MODIFIED}
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:16: AUTO_WEIGHT_CHANGE = "DISABLED"
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:23: FACTOR_WEIGHTS_MODIFIED = "False"
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:263: shadow_expected = "run_v18_10D_official_daily_with_factor_weight_research.ps1"
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:271: ("AUTO_WEIGHT_CHANGE", AUTO_WEIGHT_CHANGE),
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:390: AUTO_WEIGHT_CHANGE={AUTO_WEIGHT_CHANGE}
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:397: FACTOR_WEIGHTS_MODIFIED={FACTOR_WEIGHTS_MODIFIED}
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:447: - AUTO_WEIGHT_CHANGE: `{AUTO_WEIGHT_CHANGE}`
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:454: - FACTOR_WEIGHTS_MODIFIED: `{FACTOR_WEIGHTS_MODIFIED}`
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:501: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:502: {AUTO_WEIGHT_CHANGE}
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:522: FACTOR_WEIGHTS_MODIFIED:
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:523: {FACTOR_WEIGHTS_MODIFIED}
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:549: print(f"AUTO_WEIGHT_CHANGE: {AUTO_WEIGHT_CHANGE}")
+D:\us-tech-quant\scripts\v18\v18_11F_R1_stable_snapshot.py:556: print(f"FACTOR_WEIGHTS_MODIFIED: {FACTOR_WEIGHTS_MODIFIED}")
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:17: AUTO_WEIGHT_CHANGE = "DISABLED"
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:393: "auto_weight_change": AUTO_WEIGHT_CHANGE,
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:431: "auto_weight_change": AUTO_WEIGHT_CHANGE,
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:459: "auto_weight_change": AUTO_WEIGHT_CHANGE,
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:505: "auto_weight_change",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:517: "auto_weight_change",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:528: "auto_weight_change",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:576: f"- AUTO_WEIGHT_CHANGE: `{AUTO_WEIGHT_CHANGE}`",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:596: f"- AUTO_WEIGHT_CHANGE: `{AUTO_WEIGHT_CHANGE}`",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:616: f"- AUTO_WEIGHT_CHANGE: `{AUTO_WEIGHT_CHANGE}`",
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:660: AUTO_WEIGHT_CHANGE:
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:661: {AUTO_WEIGHT_CHANGE}
+D:\us-tech-quant\scripts\v18\v18_11_calendar_vwap_rv_shadow_factors.py:686: print(f"AUTO_WEIGHT_CHANGE: {AUTO_WEIGHT_CHANGE}")
+D:\us-tech-quant\scripts\v18\v18_12A_sell_timing_shadow_engine.py:11: This module does not sell, trade, promote factors, change weights, or
+D:\us-tech-quant\scripts\v18\v18_12A_sell_timing_shadow_engine.py:608: "- It does not auto-sell, auto-trade, auto-promote, change weights, or modify official daily decision files.",
+D:\us-tech-quant\scripts\v18\v18_12B_sell_timing_technical_label_integration.py:9: change factor weights, or affect official decisions.
+D:\us-tech-quant\scripts\v18\v18_12B_sell_timing_technical_label_integration.py:197: root / "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_12B_sell_timing_technical_label_integration.py:520: "- This is not a sell order and does not affect official decisions, trading logic, or factor weights.",
+D:\us-tech-quant\scripts\v18\v18_12C_position_lifecycle_review.py:8: official daily scripts, alter factor weights, or affect official decisions.
+D:\us-tech-quant\scripts\v18\v18_12C_position_lifecycle_review.py:508: "- This is not a sell order and does not affect official decisions, official daily scripts, trading logic, or factor weights.",
+D:\us-tech-quant\scripts\v18\v18_12D_exit_signal_forward_validation.py:8: weights, or trading behavior.
+D:\us-tech-quant\scripts\v18\v18_12D_exit_signal_forward_validation.py:172: root / "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_12D_exit_signal_forward_validation.py:426: "- This is not a sell order and does not affect official decisions, official daily scripts, trading logic, or factor weights.",
+D:\us-tech-quant\scripts\v18\v18_12E_sell_timing_read_center.py:229: "- It does not affect official decisions, official daily scripts, trading logic, or factor weights.",
+D:\us-tech-quant\scripts\v18\v18_13A_unified_daily_read_center_link.py:47: "outputs/v18/weight_research",
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:54: "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:56: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:81: PENALTY_HINTS = ("penalty", "risk_penalty", "overheat_penalty")
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:105: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:351: if name in ("factor_pack_score", "factor_score"):
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:353: if name in ("technical_timing_score", "technical_score"):
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:371: category_weights = (
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:376: for values, weight in category_weights:
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:379: total += value * weight
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:789: "composite_candidate_score": "" if score is None else f"{score:.6f}",
+D:\us-tech-quant\scripts\v18\v18_13B_ranked_candidate_read_center.py:842: top_fields = ["rank", "ticker", "composite_candidate_score", "final_action", "technical_status", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_13C_ranked_candidate_unified_link.py:235: top_fields = ["rank", "ticker", "composite_candidate_score", "final_action", "technical_status", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_13D_daily_command_center.py:269: top_fields = ["rank", "ticker", "composite_candidate_score", "final_action", "technical_status", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_14A_full_daily_mode_validation.py:144: for key in ("composite_candidate_score", "score", "candidate_score"):
+D:\us-tech-quant\scripts\v18\v18_14A_full_daily_mode_validation.py:312: fields = [field for field in ("rank", "ticker", "composite_candidate_score", "final_action", "technical_status") if field in candidate_fields]
+D:\us-tech-quant\scripts\v18\v18_14B_current_daily_command_center.py:331: fields = [field for field in ("rank", "ticker", "composite_candidate_score", "final_action", "technical_status") if field in candidate_fields]
+D:\us-tech-quant\scripts\v18\v18_14C_ranked_candidate_forward_tracker.py:408: "score": pick(row, ["composite_candidate_score", "score", "candidate_score"]),
+D:\us-tech-quant\scripts\v18\v18_14C_ranked_candidate_forward_tracker.py:413: "factor_score": pick(row, ["factor_pack_score", "factor_score"]),
+D:\us-tech-quant\scripts\v18\v18_14C_ranked_candidate_forward_tracker.py:414: "technical_score": pick(row, ["technical_timing_score", "technical_score"]),
+D:\us-tech-quant\scripts\v18\v18_15A_manual_position_trade_feedback.py:354: "latest_score": signal.get("score", "") or ranked.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_15C_predevelopment_program_audit.py:390: if any(k in fl for k in ("score", "rank_score", "composite", "weighted", "confidence", "alpha")):
+D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py:458: tier_weighted_full = sum(math.ceil(tiers.get(tier, 0) / TIER_INTERVAL_DAYS[tier]) for tier in TIER_ORDER)
+D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py:513: add_audit(audit_rows, "tier_weighted_full_coverage_daily_count", today_scan, tier_weighted_full, "REVIEW_REQUIRED", "Full tier-aware unique coverage requires higher daily capacity because CORE/CANDIDATE repeat.", state_path, "MEDIUM")
+D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py:580: f"TIER_WEIGHTED_FULL_COVERAGE_DAILY_COUNT: {tier_weighted_full}",
+D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py:617: f"- TIER_WEIGHTED_FULL_COVERAGE_DAILY_COUNT: {tier_weighted_full}",
+D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py:645: f"The advisory next-step policy targets {recommended_daily} scans/day to close the current daily-threshold shortfall while preserving daily CORE_DAILY and CANDIDATE coverage first. This is not a true full-universe coverage fix. A stricter tier-aware full-coverage policy estimates {tier_weighted_full} scans/day, which should be reviewed separately because it may exceed current estimated cost limits.",
+D:\us-tech-quant\scripts\v18\v18_17A_ranking_factor_provenance_audit.py:252: final_score_col = "composite_candidate_score" if "composite_candidate_score" in ranked_fields else (score_cols[0] if score_cols else "")
+D:\us-tech-quant\scripts\v18\v18_17A_ranking_factor_provenance_audit.py:442: "- Add a machine-readable formula manifest for composite_candidate_score.",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:323: proposed_summary = slim_root / f"{p.stem}_LIGHTWEIGHT_SUMMARY.csv"
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:334: if args.keep_lightweight_summary and zip_ok:
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:342: if zip_ok and delete_after and args.keep_lightweight_summary:
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:357: "can_make_lightweight_summary": str(archive_candidate).upper(),
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:358: "proposed_lightweight_summary_path": rel(root, proposed_summary) if archive_candidate else "",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:370: "proposed_lightweight_summary_path": rel(root, proposed_summary),
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:373: "lightweight_summary_created": str(apply and zip_ok and args.keep_lightweight_summary).upper(),
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:393: "referenced_by_report", "can_make_lightweight_summary", "proposed_lightweight_summary_path",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:399: "proposed_archive_zip_path", "proposed_lightweight_summary_path", "archive_candidate",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:400: "apply", "archive_zip_created", "archive_zip_verified", "lightweight_summary_created",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:449: "LIGHTWEIGHT_SUMMARY_PROPOSED_COUNT": str(summary_proposed),
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:450: "LIGHTWEIGHT_SUMMARY_CREATED_COUNT": str(summary_created),
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:474: "- DRYRUN creates no archives, no lightweight summaries, and deletes nothing.",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:487: "ESTIMATED_SAVINGS_MB", "LIGHTWEIGHT_SUMMARY_PROPOSED_COUNT", "VALIDATION_FAIL_COUNT",
+D:\us-tech-quant\scripts\v18\v18_18F_technical_timing_current_detail_slimming.py:501: parser.add_argument("--keep-lightweight-summary", type=parse_bool, default=True)
+D:\us-tech-quant\scripts\v18\v18_19A_daily_readability_refactor.py:449: row.get("composite_candidate_score"),
+D:\us-tech-quant\scripts\v18\v18_19A_daily_readability_refactor.py:450: row.get("factor_pack_score"),
+D:\us-tech-quant\scripts\v18\v18_21A_price_derived_factor_pack.py:660: out_market = root / "outputs/v18/market_regime/V18_21A_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv"
+D:\us-tech-quant\scripts\v18\v18_21A_R1_data_coverage_scoring_patch.py:379: out_market = root / "outputs/v18/market_regime/V18_21A_R1_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv"
+D:\us-tech-quant\scripts\v18\v18_21A_R2_price_history_source_coverage_patch.py:540: out_market = root / "outputs/v18/market_regime/V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv"
+D:\us-tech-quant\scripts\v18\v18_21A_R3_ticker_price_source_mapping_patch.py:315: market_rows, _, _ = base.read_csv(root / "outputs/v18/market_regime/V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv")
+D:\us-tech-quant\scripts\v18\v18_21A_R4_stable_snapshot.py:49: "outputs/v18/market_regime/V18_21A_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv",
+D:\us-tech-quant\scripts\v18\v18_21A_R4_stable_snapshot.py:55: "outputs/v18/market_regime/V18_21A_R1_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv",
+D:\us-tech-quant\scripts\v18\v18_21A_R4_stable_snapshot.py:61: "outputs/v18/market_regime/V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv",
+D:\us-tech-quant\scripts\v18\v18_21B_R1_signal_snapshot_quality_patch.py:144: missing_factor = not present(row.get("factor_pack_score")) and not present(row.get("factor_pack_rank"))
+D:\us-tech-quant\scripts\v18\v18_21B_R1_signal_snapshot_quality_patch.py:145: missing_tech = not present(row.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:42: "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:43: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:44: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:46: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:84: "fields": ["factor_pack_rank", "ticker", "factor_pack_score", "overheat_penalty"],
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:90: "fields": ["ticker", "technical_timing_score", "technical_signal", "overheat_penalty"],
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:136: "path": "outputs/v18/market_regime/V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv",
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:418: "factor_pack_score": frow.get("factor_pack_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:419: "composite_candidate_score": first_nonblank(frow, ["composite_candidate_score", "candidate_score", "factor_pack_score"]),
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:420: "technical_timing_score": trow.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:422: "overheat_penalty": first_nonblank(trow, ["overheat_penalty"]) or frow.get("overheat_penalty", ""),
+D:\us-tech-quant\scripts\v18\v18_21B_signal_snapshot_research_linker.py:500: ready_forward = "TRUE" if row["price_derived_total_score"] or row["factor_pack_score"] or row["technical_timing_score"] else "FALSE"
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:54: ("v18_10c_weight_research_eval", "outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_RESEARCH_EVALUATION.csv"),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:67: "factor_pack_score": "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:68: "composite_candidate_score": "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:69: "technical_timing_score": "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:70: "overheat_penalty": "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:79: "FACTOR_PACK_USABLE_SAMPLE_COUNT": ["factor_pack_score"],
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:80: "TECHNICAL_TIMING_USABLE_SAMPLE_COUNT": ["technical_timing_score"],
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:84: "OVERHEAT_PENALTY_USABLE_SAMPLE_COUNT": ["overheat_penalty"],
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:109: "OVERHEAT_PENALTY_USABLE_SAMPLE_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:308: has_factor = bool(first_value(row, ["factor_pack_score"]))
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:310: has_tech = bool(first_value(row, ["technical_timing_score"]))
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:311: has_overheat = bool(first_value(row, ["overheat_penalty"]))
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:342: "factor_pack_score_available": str(has_factor).upper(),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:344: "technical_timing_score_available": str(has_tech).upper(),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:345: "overheat_penalty_available": str(has_overheat).upper(),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:441: ("FACTOR_PACK_EFFECTIVENESS", "factor_pack_score"),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:442: ("TECHNICAL_TIMING_EFFECTIVENESS", "technical_timing_score"),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:446: ("OVERHEAT_PENALTY_EFFECTIVENESS", "overheat_penalty"),
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:462: "recommended_next_step": "Review bucket summary cautiously." if enough else "Wait for more forward returns; do not change weights.",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:484: This module is advisory-only. It does not modify factor weights, rankings, technical timing, price-derived factors, signal snapshots, simulation positions, forward tracker state, price cache, broker execution, official decisions, auto-trade, or auto-sell. External data fetched: FALSE.
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:499: The evidence gap audit identifies missing forward-return samples per factor and the next data needed. No factor weights or production logic were changed.
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:508: Keep accumulating forward returns against immutable signal snapshots. Re-run this read center after more horizons mature before considering any separate research proposal for factor weight changes.
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:557: "snapshot_date", "ticker", "signal_snapshot_id", "factor_pack_score_available", "factor_pack_rank_available",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:558: "technical_timing_score_available", "overheat_penalty_available", "price_derived_score_available",
+D:\us-tech-quant\scripts\v18\v18_21C_factor_effectiveness_read_center.py:602: "RESEARCH_CONCLUSION_STATUS": "INSUFFICIENT_EVIDENCE_DO_NOT_CHANGE_WEIGHTS" if evidence_status == "INSUFFICIENT_FORWARD_RETURNS" else "PRELIMINARY_READ_ONLY_RESEARCH",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:69: "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:70: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:71: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:72: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:81: ("FACTOR_PACK_EFFECTIVENESS", "factor_pack_score"),
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:82: ("TECHNICAL_TIMING_EFFECTIVENESS", "technical_timing_score"),
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:86: ("OVERHEAT_PENALTY_EFFECTIVENESS", "overheat_penalty"),
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:102: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT", "RESEARCH_CONCLUSION_STATUS",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:395: "weight_change_allowed": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:446: This is advisory-only research. It does not change weights, ranking, promotion/demotion, signal snapshots, forward tracker state, simulation positions, price cache, broker execution, auto-trade, or auto-sell. External data fetched: FALSE.
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:461: Effect claims allowed: {values['EFFECT_CLAIM_ALLOWED_COUNT']}. Weight changes allowed: {values['WEIGHT_CHANGE_ALLOWED_COUNT']}. Production promotions allowed: {values['PRODUCTION_PROMOTION_ALLOWED_COUNT']}.
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:521: "weight_change_allowed", "production_promotion_allowed", "recommended_next_step",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:556: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:582: if values["WEIGHT_CHANGE_ALLOWED_COUNT"] != "0" or values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] != "0":
+D:\us-tech-quant\scripts\v18\v18_21C_R1_sample_maturity_forward_match_patch.py:592: "FACTOR_PRELIMINARY_ONLY_COUNT", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:60: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT", "RESEARCH_CONCLUSION_STATUS",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:365: "weight_change_allowed": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:396: No factor effectiveness claims are allowed. Weight changes and production promotions remain disallowed.
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:463: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:499: "effect_claim_allowed", "weight_change_allowed", "production_change_allowed", "summary", "recommended_next_step",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:511: if values["WEIGHT_CHANGE_ALLOWED_COUNT"] != "0" or values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] != "0":
+D:\us-tech-quant\scripts\v18\v18_21C_R2_forward_match_key_quality_plan.py:521: "FORWARD_KEY_UPGRADE_PLAN_READY", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:38: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:94: "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:221: - No weight change is allowed.
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:254: - Weight changes allowed: {metrics.get('WEIGHT_CHANGE_ALLOWED_COUNT')}
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:302: for key, expected in [("EFFECT_CLAIM_ALLOWED_COUNT", "0"), ("WEIGHT_CHANGE_ALLOWED_COUNT", "0"), ("PRODUCTION_PROMOTION_ALLOWED_COUNT", "0"), ("EXTERNAL_DATA_FETCHED", "FALSE")]:
+D:\us-tech-quant\scripts\v18\v18_21C_R2_stable_snapshot.py:330: for key in ["STATUS", "MODE", "SNAPSHOT_ONLY", "SNAPSHOT_PATH", "HIGH_CONFIDENCE_MATCH_COUNT", "LOW_CONFIDENCE_MATCH_COUNT", "MULTI_HORIZON_READINESS_STATUS", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT", "MANIFEST_ROW_COUNT", "VALIDATION_FAIL_COUNT", "READ_FIRST", "REPORT"]:
+D:\us-tech-quant\scripts\v18\v18_21D_forward_tracker_link_key_upgrade_plan.py:35: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_forward_tracker_link_key_upgrade_plan.py:79: "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21D_forward_tracker_link_key_upgrade_plan.py:469: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_forward_tracker_link_key_upgrade_plan.py:483: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT", "VALIDATION_FAIL_COUNT", "READ_FIRST", "REPORT",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_controlled_forward_tracker_link_key_application.py:37: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_controlled_forward_tracker_link_key_application.py:53: "POST_SHADOW_MATCH_PROJECTION_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_controlled_forward_tracker_link_key_application.py:295: Applied: a new shadow output file with upgraded link-key schema. Not applied: production replacement, return filling, historical backfill, price fetch, factor effect claim, weight change, or promotion.
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:43: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:103: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:332: - This snapshot does not enable factor effectiveness claims, weight changes, or production promotions.
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:368: No factor effect claims, weight changes, or production promotions are allowed by this snapshot.
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:499: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_R1_stable_snapshot.py:544: "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21D_stable_snapshot.py:40: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21D_stable_snapshot.py:79: "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21D_stable_snapshot.py:208: - No factor effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21D_stable_snapshot.py:234: No tracker upgrade, signal snapshot modification, simulation modification, external fetch, factor claim, weight change, or production promotion was applied.
+D:\us-tech-quant\scripts\v18\v18_21D_stable_snapshot.py:287: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:40: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:59: MARKET_REGIME_PATH = "outputs/v18/market_regime/V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv"
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:73: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT", "VALIDATION_FAIL_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:94: "asof_date", "ticker", "signal_snapshot_id", "raw_research_score", "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:95: "composite_candidate_score", "price_derived_total_score", "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:515: for key in ["composite_candidate_score", "factor_pack_score", "price_derived_total_score", "technical_timing_score", "raw_research_score"]:
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:539: "factor_pack_score": source.get("factor_pack_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:540: "composite_candidate_score": source.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_event_risk_coefficient_engine.py:542: "technical_timing_score": source.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:41: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:84: "asof_date", "ticker", "signal_snapshot_id", "raw_research_score", "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:85: "composite_candidate_score", "price_derived_total_score", "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:111: "EXTERNAL_DATA_FETCHED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:439: "factor_pack_score": source.get("factor_pack_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:440: "composite_candidate_score": source.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_R1_hard_lock_overlay_semantics_patch.py:442: "technical_timing_score": source.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_21E_R1_stable_snapshot.py:40: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_stable_snapshot.py:107: "EXTERNAL_DATA_FETCHED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21E_R1_stable_snapshot.py:285: - No effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21E_R1_stable_snapshot.py:449: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:43: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:95: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:221: - Weight changes are not allowed.
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:248: Factor effect claims: {metrics.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes: {metrics.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion: {metrics.get('PRODUCTION_PROMOTION_ALLOWED')}. Forward returns filled: {metrics.get('FORWARD_RETURN_FILLED_COUNT')}.
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:352: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_21F_stable_snapshot.py:384: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "OFFICIAL_DECISION_IMPACT",
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:42: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:74: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:284: {"decision_area": "FACTOR_WEIGHT_CHANGE", "allowed": "FALSE", "reason": "No factor effectiveness claims are allowed.", "required_before_allowed": "Validated effect evidence and explicit approval.", "current_status": "BLOCKED"},
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:312: This is a read-center only module. It does not modify official decisions, buy permission, rankings, price cache, signal snapshots, event calendars, simulation positions, forward tracker state, factor weights, broker execution, auto-trade, or auto-sell behavior.
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:321: Factor effectiveness claims, factor weight changes, production promotion, official buy permission changes, event-risk official application, and forward tracker production replacement are not allowed. Design work for forward outcome filling, history backfill, and unified backtest research is allowed as advisory/research-only.
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:397: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:427: validation_row("weight_changes_zero", values["WEIGHT_CHANGE_ALLOWED_COUNT"] == "0", 1, "No weight changes allowed."),
+D:\us-tech-quant\scripts\v18\v18_21F_unified_research_chain_read_center.py:447: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_21G_controlled_forward_outcome_filler_design.py:45: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21G_controlled_forward_outcome_filler_design.py:59: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21G_controlled_forward_outcome_filler_design.py:647: validation_check("claims_weights_promotions_zero", values["EFFECT_CLAIM_ALLOWED_COUNT"] == "0" and values["WEIGHT_CHANGE_ALLOWED_COUNT"] == "0" and values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] == "0", 1, "No claims, weights, or promotions allowed."),
+D:\us-tech-quant\scripts\v18\v18_21G_stable_snapshot.py:45: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21G_stable_snapshot.py:91: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21G_stable_snapshot.py:229: - No factor effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21G_stable_snapshot.py:351: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_full_history_backfill_design.py:43: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_full_history_backfill_design.py:69: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21H_full_history_backfill_design.py:341: Backfill is not applied, factor recomputation is not performed, and forward research remains immature. No effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21H_full_history_backfill_design.py:495: safety_row("VALIDATION_CLAIMS_WEIGHTS_PROMOTIONS_ZERO", values["EFFECT_CLAIM_ALLOWED_COUNT"] == "0" and values["WEIGHT_CHANGE_ALLOWED_COUNT"] == "0" and values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] == "0", "No claims, weight changes, or promotions."),
+D:\us-tech-quant\scripts\v18\v18_21H_R1_controlled_staged_backfill_batch1_design.py:45: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_R1_controlled_staged_backfill_batch1_design.py:70: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21H_R1_controlled_staged_backfill_batch1_design.py:310: No backfill was applied and no factors were recomputed. Effect claims, weight changes, and production promotions remain disallowed.
+D:\us-tech-quant\scripts\v18\v18_21H_R1_controlled_staged_backfill_batch1_design.py:489: safety_row("VALIDATION_CLAIMS_WEIGHTS_PROMOTIONS_ZERO", values["EFFECT_CLAIM_ALLOWED_COUNT"] == "0" and values["WEIGHT_CHANGE_ALLOWED_COUNT"] == "0" and values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] == "0", "No claims, weight changes, or promotions."),
+D:\us-tech-quant\scripts\v18\v18_21H_R1_stable_snapshot.py:46: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_R1_stable_snapshot.py:105: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21H_R1_stable_snapshot.py:241: - No factor effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21H_R1_stable_snapshot.py:404: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_stable_snapshot.py:43: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21H_stable_snapshot.py:81: "SAFETY_AUDIT_CREATED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21H_stable_snapshot.py:211: - No effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21I_stable_snapshot.py:46: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21I_stable_snapshot.py:101: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21I_stable_snapshot.py:238: - No factor effect claims, weight changes, or production promotions are allowed.
+D:\us-tech-quant\scripts\v18\v18_21I_stable_snapshot.py:401: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:47: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:100: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:118: "required_for_effect_claim", "required_for_weight_change", "leakage_risk",
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:350: ("factor_pack_score", "raw_scores", "V18.21B-R1", "V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv", "TRUE", "TRUE", "TRUE", "MEDIUM", "known_at_snapshot_date", "Candidate score input."),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:351: ("composite_candidate_score", "raw_scores", "V18.21B-R1", "V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv", "TRUE", "TRUE", "TRUE", "MEDIUM", "known_at_snapshot_date", "Composite candidate input."),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:357: ("technical_timing_score", "technical_timing_factors", "V18.6A/V18.21B-R1", "V18_6A_CURRENT_TECHNICAL_TIMING.csv", "TRUE", "TRUE", "TRUE", "MEDIUM", "known_at_snapshot_date", "Timing exposure."),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:358: ("overheat_penalty", "technical_timing_factors", "V18.6A/V18.21B-R1", "V18_6A_CURRENT_TECHNICAL_TIMING.csv", "TRUE", "TRUE", "TRUE", "MEDIUM", "known_at_snapshot_date", "Overheat risk exposure."),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:374: "required_for_weight_change": required_weight, "leakage_risk": risk,
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:377: for name, group, layer, source, required_backtest, required_effect, required_weight, risk, timing, notes in specs
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:409: (4, "Join technical timing fields", "technical_timing_score and timing labels.", "future_timing_join_panel.csv", ">= 300 rows", signal_rows, "Must freeze timing at snapshot_date.", "DESIGN_READY"),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:440: ("technical_timing_bucket_return", "technical_timing", "technical_timing_score buckets and returns", "all horizons", ">=20 per bucket", "Timing bucket return.", "NOT_COMPUTABLE_RETURNS_PENDING"),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:441: ("overheat_penalty_effect", "technical_timing", "overheat_penalty and returns", "all horizons", ">=100 per horizon", "Effect of overheat penalty.", "NOT_COMPUTABLE_RETURNS_PENDING"),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:482: (9, "Prohibit weight changes unless evidence gates pass", "Prevent premature production changes.", "evidence gate audit", "future_evidence_gate_decision.csv", "explicit approval and sample thresholds", "FALSE", "FALSE", "TRUE", "TRUE"),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:535: ## Why No Factor Claims, Weight Changes, Or Production Promotions Are Allowed
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:536: High-confidence forward matches are {values.get('HIGH_CONFIDENCE_FORWARD_MATCH_COUNT')}, forward returns filled are {values.get('FORWARD_RETURN_FILLED_COUNT')}, and multi-horizon readiness is {values.get('MULTI_HORIZON_READINESS_STATUS')}. Claims, weight changes, and promotions remain disabled.
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:626: ("claims_weights_promotions_zero", values["EFFECT_CLAIM_ALLOWED_COUNT"] == "0" and values["WEIGHT_CHANGE_ALLOWED_COUNT"] == "0" and values["PRODUCTION_PROMOTION_ALLOWED_COUNT"] == "0"),
+D:\us-tech-quant\scripts\v18\v18_21I_unified_backtest_research_design.py:647: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:49: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:99: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:286: {"gate_name": "FACTOR_WEIGHT_CHANGE", "gate_allowed": "FALSE", "current_status": "BLOCKED", "blocking_metric": "EFFECT_CLAIM_ALLOWED_COUNT=0", "required_to_unlock": "Validated effect claims and explicit approval.", "risk_level": "HIGH", "operator_action": "Do not change weights."},
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:338: Factor claims, weight changes, production promotion, official buy permission changes, forward return filling, backtest execution, price cache integration, and daily command center integration are blocked.
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:341: Factor claims allowed: {values.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes allowed: {values.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion allowed: {values.get('PRODUCTION_PROMOTION_ALLOWED')}.
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:379: Factor effect claims, weight changes, production promotion, official buy permission changes, event-risk official application, forward tracker production replacement, forward return filling, price cache integration, backtest execution, and daily command center integration remain blocked. H-R2 staged fetch/import requires explicit approval.
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:393: ## Why Factor Claims And Weight Changes Remain Disallowed
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:447: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:499: safety_row("VALIDATION_CLAIMS_WEIGHTS_PROMOTIONS_BLOCKED", values["FACTOR_EFFECT_CLAIM_ALLOWED"] == "FALSE" and values["WEIGHT_CHANGE_ALLOWED"] == "FALSE" and values["PRODUCTION_PROMOTION_ALLOWED"] == "FALSE", "Claims, weights, promotions blocked."),
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py:522: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:50: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:103: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:243: - Weight changes are not allowed.
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:262: Factor claims: {metrics.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes: {metrics.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion: {metrics.get('PRODUCTION_PROMOTION_ALLOWED')}. Staged fetch/import: {metrics.get('STAGED_BACKFILL_ACTUAL_FETCH_IMPORT_ALLOWED')}. Price cache integration: {metrics.get('PRICE_CACHE_INTEGRATION_ALLOWED')}. Daily command center integration: {metrics.get('DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED')}.
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:415: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_22A_stable_snapshot.py:446: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:52: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:91: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:103: "WEIGHT_CHANGE_ALLOWED_COUNT", "PRODUCTION_PROMOTION_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:237: Factor effect claims: {values.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes: {values.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion: {values.get('PRODUCTION_PROMOTION_ALLOWED')}. Price cache integration: {values.get('PRICE_CACHE_INTEGRATION_ALLOWED')}. Backtest execution allowed: {values.get('BACKTEST_EXECUTION_ALLOWED')}.
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:255: Do not fetch external data, write price history, write staged price history, modify price cache, fill forward returns, run backtests, apply backtest results, change factor weights, make factor effect claims, promote to production, modify buy permission, or change official decisions.
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:281: Factor claims, weight changes, production promotion, price cache integration, backtest execution, and forward return filling remain disallowed. Staged fetch/import requires explicit approval.
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:300: "FACTOR_WEIGHT_CHANGE": "No factor weights can be changed.",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:390: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:459: validation_row("claims_weights_promotions_blocked", values["FACTOR_EFFECT_CLAIM_ALLOWED"] == "FALSE" and values["WEIGHT_CHANGE_ALLOWED"] == "FALSE" and values["PRODUCTION_PROMOTION_ALLOWED"] == "FALSE", 1, "Claims, weights, promotions blocked."),
+D:\us-tech-quant\scripts\v18\v18_22B_daily_research_command_center_wrapper.py:483: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:52: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:109: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:121: "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:253: - Factor effect claims, weight changes, and production promotions remain disallowed.
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:422: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22B_stable_snapshot.py:456: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:52: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:102: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:112: "BACKTEST_RESULTS_APPLIED", "EFFECT_CLAIM_ALLOWED_COUNT", "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:241: Factor claims: {v.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes: {v.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion: {v.get('PRODUCTION_PROMOTION_ALLOWED')}. Backtest execution: {v.get('BACKTEST_EXECUTION_ALLOWED')}.
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:247: Do not fetch data, run backtests, fill forward returns, integrate price cache, change weights, promote to production, or connect to auto-trade/auto-sell.
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:285: Claims, weights, production promotion, backtest execution, price cache integration, and forward return filling remain blocked.
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:302: if gate in {"FACTOR_EFFECT_CLAIM", "FACTOR_WEIGHT_CHANGE", "PRODUCTION_PROMOTION", "STAGED_BACKFILL_ACTUAL_FETCH_IMPORT", "PRICE_CACHE_INTEGRATION", "BACKTEST_EXECUTION", "DAILY_COMMAND_CENTER_INTEGRATION", "FORWARD_RETURN_FILL_APPLICATION"}:
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:321: {"blocked_action": "DO_NOT_CHANGE_FACTOR_WEIGHTS", "block_reason": "No effect claims allowed", "current_metric": "WEIGHT_CHANGE_ALLOWED=FALSE", "unlock_condition": "Validated evidence and approval", "risk_if_done_now": "Unsupported scoring changes", "production_impact": "HIGH", "notes": "Weights unchanged."},
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:356: Factor claims, weight changes, production promotion, backtest execution, price cache integration, and forward return fills remain blocked.
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:362: Do not run H-R2 without approval, execute backtests, fill returns, change weights, promote to production, or connect auto-trade/auto-sell.
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:412: values["WEIGHT_CHANGE_ALLOWED"] = "FALSE"
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:483: validation_row("claims_weights_promotions_blocked", values["FACTOR_EFFECT_CLAIM_ALLOWED"] == "FALSE" and values["WEIGHT_CHANGE_ALLOWED"] == "FALSE" and values["PRODUCTION_PROMOTION_ALLOWED"] == "FALSE", 1, "Claims/weights/promotions blocked."),
+D:\us-tech-quant\scripts\v18\v18_22C_research_packet_writer.py:507: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:52: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:133: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:163: "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:327: Factor claims: {v.get('FACTOR_EFFECT_CLAIM_ALLOWED')}. Weight changes: {v.get('WEIGHT_CHANGE_ALLOWED')}. Production promotion: {v.get('PRODUCTION_PROMOTION_ALLOWED')}. Backtest execution: {v.get('BACKTEST_EXECUTION_ALLOWED')}.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:333: Do not fetch data, run backtests, fill forward returns, integrate price cache, change weights, promote to production, or connect to auto-trade/auto-sell.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:371: Claims, weights, production promotion, backtest execution, price cache integration, and forward return filling remain blocked.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:403: - Factor effect claims, weight changes, and production promotions remain disallowed.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:415: "WEIGHT_CHANGE",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:451: {"blocked_action": "DO_NOT_CHANGE_FACTOR_WEIGHTS", "block_reason": "No effect claims allowed", "current_metric": "WEIGHT_CHANGE_ALLOWED=FALSE", "unlock_condition": "Validated evidence and approval", "risk_if_done_now": "Unsupported scoring changes", "production_impact": "HIGH", "notes": "Weights unchanged."},
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:486: Factor claims, weight changes, production promotion, backtest execution, price cache integration, and forward return fills remain blocked.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:492: Do not run H-R2 without approval, execute backtests, fill returns, change weights, promote to production, or connect auto-trade/auto-sell.
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:650: "WEIGHT_CHANGE_ALLOWED_COUNT": "0",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:704: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22C_stable_snapshot.py:734: "WEIGHT_CHANGE_ALLOWED_COUNT",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:100: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:313: weight_allowed = factor_allowed and "BLOCKED" not in readiness.upper()
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:315: production_allowed = weight_allowed and explicit_production_integration_present
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:321: "WEIGHT_CHANGE_ALLOWED": truth(weight_allowed),
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:337: "gate_name": "weight_change_allowed",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:338: "allowed": truth(weight_allowed),
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:339: "status": "OPEN" if weight_allowed else "BLOCKED",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:340: "why_blocked": "" if weight_allowed else "Requires factor effect claim gate and non-blocked backtest execution readiness.",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:342: "operator_instruction": "Do not change factor weights today." if not weight_allowed else "Weight-change evidence gate is open.",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:348: "why_blocked": "" if production_allowed else "Requires weight-change gate plus explicit production integration that is present and safe.",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:349: "unlock_condition": "Weight-change allowed and explicit production integration approval/presence.",
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:421: This homepage is read-only. It summarizes current V18 research readiness after V18.22C and does not change trading decisions, rankings, factor weights, price history, state, event calendars, simulations, forward trackers, broker/manual execution state, or existing stable snapshots.
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:459: - Do not change factor weights.
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:492: Factor effect claims: {values['FACTOR_EFFECT_CLAIM_ALLOWED']}. Weight changes: {values['WEIGHT_CHANGE_ALLOWED']}. Production promotion: {values['PRODUCTION_PROMOTION_ALLOWED']}. Staged backfill apply: {values['STAGED_BACKFILL_APPLY_ALLOWED']}. Daily command center integration: {values['DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED']}.
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:552: validation_row("weight_change_gate_blocked", values["WEIGHT_CHANGE_ALLOWED"] == "FALSE", 1, "Weight changes remain blocked."),
+D:\us-tech-quant\scripts\v18\v18_22D_daily_research_operator_homepage.py:585: all_gates_open = all(values[key] == "TRUE" for key in ["FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED"])
+D:\us-tech-quant\scripts\v18\v18_22D_stable_snapshot.py:74: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_22D_stable_snapshot.py:118: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_22D_stable_snapshot.py:309: - Research gates remain blocked: factor effect claims, weight changes, production promotion, staged backfill apply, and daily command center integration are all FALSE.
+D:\us-tech-quant\scripts\v18\v18_22D_stable_snapshot.py:331: Factor effect claim allowed: {values['FACTOR_EFFECT_CLAIM_ALLOWED']}. Weight change allowed: {values['WEIGHT_CHANGE_ALLOWED']}. Production promotion allowed: {values['PRODUCTION_PROMOTION_ALLOWED']}. Staged backfill apply allowed: {values['STAGED_BACKFILL_APPLY_ALLOWED']}. Daily command center integration allowed: {values['DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED']}.
+D:\us-tech-quant\scripts\v18\v18_23A_R1_universe_count_drift_reconciliation.py:61: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23A_R1_universe_count_drift_reconciliation.py:113: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23A_rolling_research_coverage_controller.py:57: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23A_rolling_research_coverage_controller.py:106: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23A_rolling_research_coverage_controller.py:434: - Do not run backtests or apply factor effect, weight, promotion, staged backfill, or daily command center integration changes.
+D:\us-tech-quant\scripts\v18\v18_23A_stable_snapshot.py:77: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23A_stable_snapshot.py:139: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23A_stable_snapshot.py:331: - Factor effect claims, weight changes, daily command center integration, staged backfill apply, and production promotion remain blocked.
+D:\us-tech-quant\scripts\v18\v18_23B_R1_rolling_coverage_watchdog.py:53: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23B_R1_rolling_coverage_watchdog.py:71: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23B_R2_watchdog_force_eligibility_audit.py:52: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23B_R2_watchdog_force_eligibility_audit.py:72: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23B_R3_local_scan_skip_diagnostics.py:51: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23B_R3_local_scan_skip_diagnostics.py:74: "BACKTEST_RESULTS_APPLIED", "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23B_rolling_scan_executor.py:51: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23B_rolling_scan_executor.py:87: "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_controlled_staged_backfill_batch1.py:52: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_controlled_staged_backfill_batch1.py:72: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R1_staged_backfill_quality_audit.py:56: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R1_staged_backfill_quality_audit.py:76: "BACKTEST_RESULTS_APPLIED", "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R2_official_price_integration_full_history.py:49: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R2_official_price_integration_full_history.py:85: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R3_official_cache_rolling_ledger_retest.py:44: "BACKTEST_RESULTS_APPLIED", "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R3_official_cache_rolling_ledger_retest.py:92: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R4_controlled_staged_backfill_batch2.py:54: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R4_controlled_staged_backfill_batch2.py:89: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R5_batch2_staged_backfill_quality_audit.py:51: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R5_batch2_staged_backfill_quality_audit.py:99: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R5_batch2_staged_backfill_quality_audit.py:601: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_23C_R6_batch2_official_price_integration_full_history.py:49: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_23C_R6_batch2_official_price_integration_full_history.py:85: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:50: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:58: "ticker", "current_score", "current_score_source", "current_rank", "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:59: "technical_timing_score", "overheat_penalty", "event_risk_status", "local_price_available",
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:98: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:184: preferred = ["composite_candidate_score", "final_score", "total_score", "factor_pack_score", "score"]
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:355: overheat = to_float(tech.get("overheat_penalty", factor.get("overheat_penalty", "")))
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:391: "factor_pack_score": factor.get("factor_pack_score", ""),
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:392: "technical_timing_score": tech.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:393: "overheat_penalty": "" if overheat is None else overheat,
+D:\us-tech-quant\scripts\v18\v18_24A_dynamic_score_tier_migration_audit.py:553: "RECOMMENDED_NEXT_ACTION": "Use this read-only tier/movement report for operator review; do not modify official rankings or weights until score coverage, ledger coverage, and forward-return gates are ready.",
+D:\us-tech-quant\scripts\v18\v18_24B_stable_snapshot.py:73: "FACTOR_EFFECT_CLAIM_ALLOWED", "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_24B_stable_snapshot.py:101: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_24B_stable_snapshot.py:236: These are read-only tier candidates, not buy recommendations. Official ranking changes, factor effect claims, weight changes, production promotion, daily command center integration, backtests, auto-trade, and auto-sell remain blocked.
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:57: "WEIGHT_CHANGE_ALLOWED", "PRODUCTION_PROMOTION_ALLOWED", "DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED",
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:75: TOP_FIELDS = ["ticker", "current_tier", "current_score", "current_rank", "factor_pack_score", "technical_timing_score", "latest_success_scan_date", "current_tier_reason", "detail_path"]
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:96: "WEIGHT_CHANGE_ALLOWED": "FALSE",
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:261: Official ranking changes, factor effect claims, weight changes, production promotion, daily command center integration, backtests, auto-trade, and auto-sell remain blocked.
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:349: "factor_pack_score": row.get("factor_pack_score", ""),
+D:\us-tech-quant\scripts\v18\v18_24B_tier_migration_operator_homepage.py:350: "technical_timing_score": row.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_25A_degraded_daily_output_controller.py:270: score = get_first(factor_row, ["composite_score", "factor_pack_score", "score", "total_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_degraded_daily_output_controller.py:274: score = get_first(tier_row, ["current_score", "factor_pack_score", "technical_timing_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py:423: "overheat_penalty": overheat,
+D:\us-tech-quant\scripts\v18\v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py:426: "technical_timing_score": round(float(score), 4),
+D:\us-tech-quant\scripts\v18\v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py:533: "kdj_k", "kdj_d", "kdj_j", "kdj_status", "volume_ratio_5_20", "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py:534: "pullback_timing_bonus", "breakout_confirmation_bonus", "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py:543: out_df = out_df.sort_values(["technical_timing_score", "overheat_penalty", "ticker"], ascending=[False, True, True])
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:85: "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:101: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:106: RESULT_FIELDS = ["ticker", "refresh_attempted", "refresh_success", "blocker", "price_rows", "latest_price_date", "factor_pack_score", "vix_included", "vix_regime"]
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:354: df["overheat_penalty"] = pct_rank_high_good(overheat_raw) * 100
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:364: - 0.12 * df["overheat_penalty"].fillna(50.0)
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:367: df["factor_pack_score"] = df["F010_XSEC_COMPOSITE_RANK"].round(2)
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:368: df = df.sort_values(["factor_pack_score", "ticker"], ascending=[False, True]).reset_index(drop=True)
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:451: result_rows.append({"ticker": ticker, "refresh_attempted": "TRUE", "refresh_success": "FALSE", "blocker": blocker, "price_rows": len(price), "latest_price_date": "", "factor_pack_score": "", "vix_included": str(vix_usable).upper(), "vix_regime": vix_regime_latest})
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:455: result_rows.append({"ticker": ticker, "refresh_attempted": "TRUE", "refresh_success": "TRUE", "blocker": "NONE", "price_rows": len(price), "latest_price_date": row["latest_price_date"], "factor_pack_score": "", "vix_included": "TRUE", "vix_regime": vix_regime_latest})
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:459: score_map = dict(zip(staged_df["ticker"].astype(str), staged_df["factor_pack_score"].astype(str)))
+D:\us-tech-quant\scripts\v18\v18_25A_R13_targeted_factor_pack_refresh_staged.py:462: row["factor_pack_score"] = score_map[row["ticker"]]
+D:\us-tech-quant\scripts\v18\v18_25A_R14_factor_pack_current_merge_with_backup.py:245: if "factor_pack_rank" not in fields or "factor_pack_score" not in fields or "ticker" not in fields:
+D:\us-tech-quant\scripts\v18\v18_25A_R14_factor_pack_current_merge_with_backup.py:247: ordered = sorted(rows, key=lambda row: (-to_float(row.get("factor_pack_score")), norm_ticker(row.get("ticker"))))
+D:\us-tech-quant\scripts\v18\v18_25A_R14_factor_pack_current_merge_with_backup.py:484: {"plan_item": "rank_recompute", "path": str(current_path), "status": rank_status, "notes": "Recompute rank by factor_pack_score desc and ticker asc when ranking columns exist."},
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:45: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:46: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:257: first_col(fields, ["composite_candidate_score", "candidate_score", "score"]),
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:258: first_col(fields, ["factor_score", "factor_pack_score"]),
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:259: first_col(fields, ["technical_timing_score", "technical_score"]),
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:344: factor_score = first_value(row, fields, ["factor_score", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:346: factor_score = first_value(factor_row, factor_fields, ["factor_score", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:347: technical_score = first_value(row, fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:349: technical_score = first_value(tech_row, technical_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:350: composite_score = first_value(row, fields, ["composite_candidate_score", "candidate_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:380: "technical_timing_score": technical_score,
+D:\us-tech-quant\scripts\v18\v18_25A_R21_daily_signal_freeze_forward_test_ledger.py:381: "composite_candidate_score": composite_score,
+D:\us-tech-quant\scripts\v18\v18_25A_R24_factor_technical_tier_refresh_readiness_audit.py:45: TECH_FIELDS = ["ticker", "technical_timing_row_present", "technical_timing_score_present", "technical_status_present", "technical_missing_reason", "technical_refresh_needed", "technical_ready"]
+D:\us-tech-quant\scripts\v18\v18_25A_R24_factor_technical_tier_refresh_readiness_audit.py:310: factor_score_col = find_col(factor_fields, ["factor_pack_score", "score", "current_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R24_factor_technical_tier_refresh_readiness_audit.py:318: tech_score_col = find_col(tech_fields, ["technical_timing_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R24_factor_technical_tier_refresh_readiness_audit.py:323: tech_out.append({"ticker": ticker, "technical_timing_row_present": str(bool(tr)).upper(), "technical_timing_score_present": str(tech_score).upper(), "technical_status_present": str(tech_status).upper(), "technical_missing_reason": "" if tech_ready else "Missing current technical row/score/status.", "technical_refresh_needed": str(price_ready and not tech_ready).upper(), "technical_ready": str(tech_ready).upper()})
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:197: "factor_pack_score": round(composite, 6),
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:213: "overheat_penalty": "",
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:281: "overheat_penalty": 0,
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:284: "technical_timing_score": score,
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:384: factor_schema = bool(factor_fields) and all(c in factor_fields for c in ["ticker", "factor_pack_score", "factor_pack_rank", "latest_price_date", "latest_close"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25B_build_staged_factor_technical_rows.py:385: tech_schema = bool(tech_fields) and all(c in tech_fields for c in ["ticker", "price_date", "close", "technical_timing_score", "technical_signal"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25C_validate_staged_factor_technical_merge_plan.py:291: factor_score_col = score_column(factor_fields, ["factor_score", "factor_pack_score", "F010_XSEC_COMPOSITE_RANK"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25C_validate_staged_factor_technical_merge_plan.py:292: tech_score_col = score_column(tech_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:215: if "factor_pack_rank" not in fields or "factor_pack_score" not in fields:
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:217: if any(to_float(row.get("factor_pack_score")) is None for row in rows):
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:219: rows.sort(key=lambda row: (-float(row.get("factor_pack_score", "0")), norm_ticker(row.get("ticker"))))
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:222: return "RANK_RECOMPUTED_BY_FACTOR_PACK_SCORE_DESC_TICKER_ASC"
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:392: factor_score = score_col(factor_current_fields, ["factor_score", "factor_pack_score", "F010_XSEC_COMPOSITE_RANK"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25D_official_factor_technical_merge_with_backup.py:393: tech_score = score_col(tech_current_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25E_post_merge_validation_rerun.py:217: factor_score = score_col(factor_fields, ["factor_score", "factor_pack_score", "F010_XSEC_COMPOSITE_RANK"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25E_post_merge_validation_rerun.py:218: tech_score = score_col(tech_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:40: "rank", "ticker", "composite_candidate_score", "ranking_source_policy", "primary_score_source_files",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:50: "ticker", "factor_score", "technical_timing_score", "factor_rank", "technical_status",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:51: "overheat_penalty", "volatility_penalty", "composite_candidate_score", "rank_preview_eligible",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:57: "composite_candidate_score", "remaining_blocker_reason",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:61: "regenerated_rank", "factor_score", "technical_timing_score", "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:236: factor_score_col = score_col(factor_fields, ["factor_score", "factor_pack_score", "F010_XSEC_COMPOSITE_RANK"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:238: tech_score_col = score_col(tech_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:250: overheat = to_float(frow.get("overheat_penalty"))
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:255: overheat_status = str(trow.get("gamma_squeeze_risk_label") or frow.get("overheat_penalty") or "")
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:261: "composite_candidate_score": f"{comp:.6f}",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:267: "score_source_columns": f"{factor_score_col};{tech_score_col};factor_pack_rank;overheat_penalty;volatility_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:282: "technical_timing_score": tscore,
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:285: "overheat_penalty": "" if overheat is None else overheat,
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:287: "composite_candidate_score": f"{comp:.6f}",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:289: "ranking_logic": "factor_score*0.40 + technical_timing_score*0.30 - abs(overheat_penalty) - abs(volatility_penalty)",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:313: comp = to_float(preview.get("composite_candidate_score")) if preview else None
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:335: "composite_candidate_score": "" if comp is None else f"{comp:.6f}",
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:345: "technical_timing_score": tech_by.get(ticker, {}).get(tech_score_col, ""),
+D:\us-tech-quant\scripts\v18\v18_25A_R25F_safe_downstream_refresh_ranked_candidate_regeneration.py:346: "composite_candidate_score": "" if comp is None else f"{comp:.6f}",
+D:\us-tech-quant\scripts\v18\v18_25A_R25G_promote_ranked_candidates_preview_to_current.py:163: for candidate in ["composite_candidate_score", "candidate_score", "score"]:
+D:\us-tech-quant\scripts\v18\v18_25A_R25_factor_technical_refresh_build_plan.py:294: factor_required = ["ticker", "factor_pack_score", "factor_pack_rank", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_25A_R25_factor_technical_refresh_build_plan.py:295: tech_required = ["ticker", "price_date", "close", "technical_timing_score", "technical_signal"]
+D:\us-tech-quant\scripts\v18\v18_25A_R26A_forward_test_factor_effectiveness_readiness_audit.py:254: current_factor_score_col = score_column(current_fields, ["composite_candidate_score", "candidate_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R26A_forward_test_factor_effectiveness_readiness_audit.py:256: factor_score_col = score_column(factor_fields, ["factor_pack_score", "factor_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R26A_forward_test_factor_effectiveness_readiness_audit.py:257: tech_score_col = score_column(tech_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_25A_R26A_forward_test_factor_effectiveness_readiness_audit.py:278: input_rows.append({"input_name": "signal_freeze_ledger", "exists": str(signal_exists).upper(), "row_count": signal_row_count, "ticker_column": "ticker" if "ticker" in signal_fields else "", "score_column": "composite_candidate_score" if "composite_candidate_score" in signal_fields else "", "status": "PASS" if signal_exists else "FAIL", "notes": "R21 freeze ledger should be refreshed after R25G."})
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:489: or not non_null(row.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:490: or not non_null(row.get("composite_candidate_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:593: score_present_count = sum(1 for row in current_rows if non_null(row.get("composite_candidate_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:596: target_score_present_count = sum(1 for ticker in TARGET_TICKERS if non_null(current_by.get(ticker, {}).get("composite_candidate_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:676: "current_candidate_score": current_by.get(ticker, {}).get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_25A_R26B_forward_return_filler_readiness_audit.py:691: "current_candidate_score": current_by.get(ticker, {}).get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:303: "factor_pack_score": round(composite, 6),
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:319: "overheat_penalty": "",
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:374: "overheat_penalty": 0,
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:377: "technical_timing_score": score,
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:685: factor_score_present = non_null(fr.get("factor_pack_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:686: technical_score_present = non_null(tr.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27F_build_staged_factor_technical_rows_tln_rddt.py:710: staged_factor_rows.sort(key=lambda row: (-float(row.get("factor_pack_score") or 0.0), norm_ticker(row.get("ticker"))))
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:41: "factor_pack_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:57: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:80: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:83: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:324: score_missing = sum(1 for row in rows if not non_null(row.get("factor_pack_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:333: score_missing = sum(1 for row in rows if not non_null(row.get("technical_timing_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:430: factor_score = staged_factor_row.get("factor_pack_score", "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:431: technical_score = staged_technical_row.get("technical_timing_score", "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:588: factor_score_missing = sum(1 for row in factor_rows if not non_null(row.get("factor_pack_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:589: tech_score_missing = sum(1 for row in tech_rows if not non_null(row.get("technical_timing_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27G_validate_staged_factor_technical_merge_plan.py:643: validation_ok = bool(price_present and price_readable and ledger_success and factor_stage_row and tech_stage_row and non_null(factor_stage_row.get("factor_pack_score")) and non_null(tech_stage_row.get("technical_timing_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27H_official_factor_technical_merge.py:301: factor_score_present = non_null(factor_row.get("factor_pack_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27H_official_factor_technical_merge.py:302: tech_score_present = non_null(tech_row.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27H_official_factor_technical_merge.py:416: factor_score = factor_present and non_null(factor_by_ticker[ticker].get("factor_pack_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27H_official_factor_technical_merge.py:417: tech_score = technical_present and non_null(tech_by_ticker[ticker].get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27I_post_merge_candidate_readiness_audit.py:397: factor_score_present = non_null(factor_row.get("factor_pack_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27I_post_merge_candidate_readiness_audit.py:398: tech_score_present = non_null(tech_row.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:42: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:319: factor_score_col = "factor_pack_score" if "factor_pack_score" in factor_fields else ("factor_score" if "factor_score" in factor_fields else "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:321: tech_score_col = "technical_timing_score" if "technical_timing_score" in tech_fields else ("technical_score" if "technical_score" in tech_fields else "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:342: score = to_float(row.get("composite_candidate_score"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:358: overheat = to_float(factor_row.get("overheat_penalty"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:365: overheat_status = safe_str(tech_row.get("gamma_squeeze_risk_label") or factor_row.get("overheat_penalty"))
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:370: "composite_candidate_score": f"{comp:.6f}",
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:376: "score_source_columns": f"{factor_score_col};{tech_score_col};factor_pack_rank;overheat_penalty;volatility_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:452: row["preview_score"] = preview_row.get("composite_candidate_score", "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:458: row["preview_score"] = preview_row.get("composite_candidate_score", "")
+D:\us-tech-quant\scripts\v18\v18_25A_R27J_ranked_candidates_preview_refresh_tln_rddt.py:464: target_score_present_count = sum(1 for ticker in TARGET_TICKERS if non_null(preview_by_ticker.get(ticker, {}).get("composite_candidate_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27K_promote_ranked_candidates_preview_to_current.py:215: if ticker in tickers and non_null(row.get("composite_candidate_score")):
+D:\us-tech-quant\scripts\v18\v18_25A_R27L_post_promotion_validation_signal_freeze_readiness.py:362: score_present_count = sum(1 for row in current_rows if non_null(row.get("composite_candidate_score")))
+D:\us-tech-quant\scripts\v18\v18_25A_R27L_post_promotion_validation_signal_freeze_readiness.py:416: "score_present": str(non_null(row.get("composite_candidate_score"))).upper(),
+D:\us-tech-quant\scripts\v18\v18_25A_R27L_post_promotion_validation_signal_freeze_readiness.py:421: "validation_status": "PASS" if join_ready and rank_ok and non_null(row.get("composite_candidate_score")) else "FAIL",
+D:\us-tech-quant\scripts\v18\v18_25A_R27L_post_promotion_validation_signal_freeze_readiness.py:488: "TARGET_SCORE_PRESENT_COUNT": sum(1 for ticker in TARGET_TICKERS if non_null(current_by.get(ticker, {}).get("composite_candidate_score"))),
+D:\us-tech-quant\scripts\v18\v18_25A_R2_tier_migration_source_alias_repair.py:236: if any(name in lower for name in ("current_score", "composite_score", "factor_pack_score")):
+D:\us-tech-quant\scripts\v18\v18_25A_R2_tier_migration_source_alias_repair.py:266: has_score = any(field.lower() in {"current_score", "composite_score", "factor_pack_score", "score"} for field in fields)
+D:\us-tech-quant\scripts\v18\v18_25A_R2_tier_migration_source_alias_repair.py:358: current_score = get_first(row, ["current_score", "composite_score", "factor_pack_score", "score", "final_score"], "")
+D:\us-tech-quant\scripts\v18\v18_25A_R2_tier_migration_source_alias_repair.py:363: score_source = get_first(row, ["current_score_source", "score_source"], "factor_pack_score")
+D:\us-tech-quant\scripts\v18\v18_25A_R3_post_integration_promotion_blocker_audit.py:199: best_available_score = str(factor_row.get("factor_pack_score", "")).strip()
+D:\us-tech-quant\scripts\v18\v18_25A_R4_integrated_tickers_factor_technical_refresh_readiness_audit.py:85: "factor_pack_score_present_current",
+D:\us-tech-quant\scripts\v18\v18_25A_R4_integrated_tickers_factor_technical_refresh_readiness_audit.py:395: factor_pack_score_present_current = bool(str(factor_row.get("factor_pack_score", "")).strip())
+D:\us-tech-quant\scripts\v18\v18_25A_R4_integrated_tickers_factor_technical_refresh_readiness_audit.py:487: "factor_pack_score_present_current": bool_text(factor_pack_score_present_current),
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:89: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:92: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:124: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:330: "technical_timing_score": "",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:363: "technical_timing_score": "",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:396: "technical_timing_score": "",
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:503: "overheat_penalty": overheat,
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:506: "technical_timing_score": round(float(score), 4),
+D:\us-tech-quant\scripts\v18\v18_25A_R5_targeted_technical_timing_refresh_dryrun.py:785: "technical_timing_score": row.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_25A_R6_market_proxy_source_trace_policy_audit.py:225: ("overheat_penalty", "overheat_penalty"),
+D:\us-tech-quant\scripts\v18\v18_25A_R6_market_proxy_source_trace_policy_audit.py:483: "evidence_snippet": "Consumes technical_timing_score, overheat_penalty, vix_close, and vix_regime in read-center/forward outputs.",
+D:\us-tech-quant\scripts\v18\v18_28A_R1_theme_map_bootstrap_coverage_upgrade.py:87: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_28A_R1_theme_map_bootstrap_coverage_upgrade.py:542: "composite_candidate_score": rank_row.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_28A_R2_remaining_unknown_theme_patch.py:120: "RSP": p("Invesco S&P 500 Equal Weight ETF", "OTHER", "Broad-market equal-weight ETF", "ETF", "etf;sp500;equal_weight;broad_market", "NON_CORE", "HIGH_BETA_MACRO", "MEDIUM", "HIGH", "Non-single-stock instrument; exclude or separately bucket in single-stock factor backtests."),
+D:\us-tech-quant\scripts\v18\v18_28A_sector_theme_classification_audit.py:211: return (1, -to_float(row.get("composite_candidate_score")), norm_ticker(row.get("ticker")))
+D:\us-tech-quant\scripts\v18\v18_28A_sector_theme_classification_audit.py:372: ["rank", "ticker", "composite_candidate_score", "primary_theme", "role_bucket", "volatility_bucket", "theme_rank", "theme_percentile"],
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:70: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:80: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:81: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:191: technical_score = to_float(row.get("technical_timing_score"), 999.0)
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:192: if to_float(row.get("overheat_penalty")) > 0:
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:207: score = to_float(row.get("technical_timing_score"), 999.0)
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:350: "composite_candidate_score": candidate.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:360: "technical_timing_score": tech.get("technical_timing_score", ""),
+D:\us-tech-quant\scripts\v18\v18_28B_recommendation_tier_action_layer.py:361: "overheat_penalty": tech.get("overheat_penalty", candidate.get("overheat_penalty", "")),
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:44: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:49: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:50: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:191: overheat_penalty = to_float(row.get("overheat_penalty"))
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:206: if overheat_penalty > 0 or strong_markers:
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:396: table(flags["OVERHEAT_RULE_REVIEW"], ["rank", "ticker", "primary_theme", "role_bucket", "volatility_bucket", "technical_timing_score", "overheat_penalty", "recommendation_tier", "reason_codes", "audit_comment"], 50),
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:479: "composite_candidate_score": rec.get("composite_candidate_score", candidate.get("composite_candidate_score", "")),
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:484: "technical_timing_score": rec.get("technical_timing_score", tech.get("technical_timing_score", "")),
+D:\us-tech-quant\scripts\v18\v18_28C_recommendation_tier_calibration_audit.py:485: "overheat_penalty": rec.get("overheat_penalty", tech.get("overheat_penalty", "")),
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:427: score_present = bool(candidates and "composite_candidate_score" in candidates[0])
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:428: score_numeric = numeric_parse_count(candidates, "composite_candidate_score")
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:432: add_audit(audit_rows, "ranked_candidates", "composite_candidate_score_present", "PASS" if score_present else "FAIL", bool_text(score_present), "TRUE", "CRITICAL", "Composite score is required for score-bucket tests.")
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:454: timing_score_numeric = numeric_parse_count(timing_rows, "technical_timing_score") if timing_available else 0
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:455: overheat_numeric = numeric_parse_count(timing_rows, "overheat_penalty") if timing_available and timing_rows and "overheat_penalty" in timing_rows[0] else 0
+D:\us-tech-quant\scripts\v18\v18_29A_historical_backtest_readiness_audit.py:461: add_audit(audit_rows, "technical_timing", "overheat_penalty_numeric_parse_success", "PASS" if not timing_rows or overheat_numeric == len(timing_rows) else "WARN", overheat_numeric, len(timing_rows), "LOW", "Overheat penalty is optional but should parse when present.")
+D:\us-tech-quant\scripts\v18\v18_29B_limited_signal_freeze_backtest.py:350: for column in ["composite_candidate_score", "factor_score", "score"]:
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:78: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:88: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:89: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:116: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:126: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:127: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:396: "composite_candidate_score": norm(row.get("composite_candidate_score")),
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:406: "technical_timing_score": norm(row.get("technical_timing_score")),
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:407: "overheat_penalty": norm(row.get("overheat_penalty")),
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:435: "composite_candidate_score": norm(row.get("composite_candidate_score")),
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:445: "technical_timing_score": norm(row.get("technical_timing_score")),
+D:\us-tech-quant\scripts\v18\v18_29C_daily_recommendation_tier_snapshot_ledger.py:446: "overheat_penalty": norm(row.get("overheat_penalty")),
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:98: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:108: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:109: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:318: "composite_candidate_score": norm(row.get("composite_candidate_score")),
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:328: "technical_timing_score": norm(row.get("technical_timing_score")),
+D:\us-tech-quant\scripts\v18\v18_30B_daily_command_compatibility_guard.py:329: "overheat_penalty": "",
+D:\us-tech-quant\scripts\v18\v18_30D_same_day_signal_freeze_replace_policy.py:37: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_30D_same_day_signal_freeze_replace_policy.py:38: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:38: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:44: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:370: score = val(rec, rec_fields, ["composite_candidate_score", "final_score", "score"]) or val(ranked, ranked_fields, ["composite_candidate_score", "final_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:386: tech_score = val(tech, tech_fields, ["technical_timing_score"]) or val(rec, rec_fields, ["technical_timing_score"])
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:395: overheat_penalty = val(rec, rec_fields, ["overheat_penalty"]) or val(tech, tech_fields, ["overheat_penalty"])
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:399: "composite_candidate_score": score,
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:405: "technical_timing_score": tech_score,
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:406: "overheat_flag": bool_text(overheat_detected(overheat_text, overheat_penalty)),
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:414: tech = technical_class(norm(source.get("technical_timing_status")), source.get("technical_timing_score"))
+D:\us-tech-quant\scripts\v18\v18_31A_static_buyability_gate.py:564: fields = ["rank", "ticker", "recommendation_tier", "risk_bucket", "technical_timing_score", "buy_now_score", "entry_condition", "buy_block_reason"]
+D:\us-tech-quant\scripts\v18\v18_31B_manual_position_sizing_policy_layer.py:41: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31B_manual_position_sizing_policy_layer.py:494: "composite_candidate_score": row.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_31C_moomoo_cost_slippage_constraint_layer.py:50: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31C_moomoo_cost_slippage_constraint_layer.py:530: "composite_candidate_score": row.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_31D_account_aware_manual_trade_plan.py:66: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31D_account_aware_manual_trade_plan.py:680: "composite_candidate_score": source.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_31E_daily_trade_plan_snapshot_ledger.py:63: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_31E_daily_trade_plan_snapshot_ledger.py:377: "composite_candidate_score": row.get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:45: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:46: "composite_candidate_score",
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:333: factor_score = first_value(row, ranked_fields, ["factor_score", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:335: factor_score = first_value(factor_row, factor_fields, ["factor_score", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:336: technical_score = first_value(row, ranked_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:338: technical_score = first_value(tech_row, technical_fields, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:357: "technical_timing_score": technical_score,
+D:\us-tech-quant\scripts\v18\v18_32D_latest_supported_signal_date_freeze_repair.py:358: "composite_candidate_score": first_value(row, ranked_fields, ["composite_candidate_score", "candidate_score", "score"]),
+D:\us-tech-quant\scripts\v18\v18_33A_chinese_daily_operator_homepage.py:437: score = first_value(row, fields, ["composite_candidate_score"])
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:50: "technical_timing_score", "recomputed_composite_score", "recomputed_rank", "rank_eligible",
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:55: "rank", "ticker", "composite_candidate_score", "ranking_source_policy", "primary_score_source_files",
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:230: "factor_pack_score": round(composite, 6),
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:246: "overheat_penalty": "",
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:314: "overheat_penalty": 10 if pct_b > 0.9 else 0,
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:317: "technical_timing_score": score,
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:385: lines.append(f"| {row.get('rank')} | `{row.get('ticker')}` | {row.get('composite_candidate_score')} | {row.get('latest_price_date')} |")
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:438: factor_fields = list(factor_current[0].keys()) if factor_current else ["factor_pack_rank", "ticker", "factor_pack_score", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:440: tech_fields = list(tech_current[0].keys()) if tech_current else ["ticker", "yf_ticker", "price_date", "close", "technical_timing_score", "technical_signal"]
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:494: fscore = (existing_factor or {}).get("factor_pack_score", "")
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:495: tscore = (existing_tech or {}).get("technical_timing_score", "")
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:552: "technical_timing_score": tscore,
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:563: "_overheat_status": (existing_tech or {}).get("gamma_squeeze_risk_label") or (existing_tech or {}).get("overheat_penalty", ""),
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:576: "composite_candidate_score": row["recomputed_composite_score"],
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:582: "score_source_columns": "factor_pack_score;technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_35D_full_universe_factor_technical_recompute.py:608: factor_rows.sort(key=lambda r: to_float(r.get("factor_pack_score")) if to_float(r.get("factor_pack_score")) is not None else -1, reverse=True)
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:223: factor_fields = ["factor_pack_rank", "ticker", "factor_pack_score", "latest_price_date", "latest_close"]
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:225: tech_fields = ["ticker", "yf_ticker", "price_date", "close", "technical_timing_score", "technical_signal"]
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:266: fscore = (existing_factor or {}).get("factor_pack_score", "")
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:267: tscore = (existing_tech or {}).get("technical_timing_score", "")
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:304: "factor_score": fscore, "technical_timing_score": tscore,
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:312: "_overheat_status": (existing_tech or {}).get("gamma_squeeze_risk_label") or (existing_tech or {}).get("overheat_penalty", ""),
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:323: "composite_candidate_score": row["recomputed_composite_score"],
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:329: "score_source_columns": "factor_pack_score;technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:340: factor_rows.sort(key=lambda r: d35.to_float(r.get("factor_pack_score")) if d35.to_float(r.get("factor_pack_score")) is not None else -1, reverse=True)
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:402: "previous_score_if_available": current_idx.get(ticker, {}).get("composite_candidate_score") or d_idx.get(ticker, {}).get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:403: "recomputed_score_after_backfill": e_idx.get(ticker, {}).get("composite_candidate_score", ""),
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:575: write_csv(root / OUT_FACTOR, e_factor, factor_fields or ["factor_pack_rank", "ticker", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_35E_online_backfill_candidate_adoption_bridge.py:576: write_csv(root / OUT_TECH, e_tech, list(e_tech[0].keys()) if e_tech else ["ticker", "technical_timing_score"])
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:42: "factor_score", "technical_timing_score", "composite_candidate_score", "trust_level", "tier",
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:160: return bool(first(row, ["rank", "source_rank"]) and first(row, ["composite_candidate_score", "candidate_score", "score"]))
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:178: factor_score = first(row, ["factor_score", "factor_pack_score"]) or first(factor, ["factor_score", "factor_pack_score"])
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:179: tech_score = first(row, ["technical_timing_score", "technical_score"]) or first(tech, ["technical_timing_score", "technical_score"])
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:180: composite = first(row, ["composite_candidate_score", "candidate_score", "score"])
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:186: "factor_score": factor_score, "technical_timing_score": tech_score,
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:187: "composite_candidate_score": composite, "trust_level": first(row, ["trust_level"]),
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:253: "previous_score": first(prev, ["composite_candidate_score", "score"]),
+D:\us-tech-quant\scripts\v18\v18_35F_next_signal_freeze_expansion.py:254: "new_score": first(cur, ["composite_candidate_score", "score"]),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:5: ranked candidates, builds equal-weight simulated portfolios, and reports
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:25: ("TOP20_EQUAL_WEIGHT", 20),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:26: ("TOP50_EQUAL_WEIGHT", 50),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:27: ("TOP100_EQUAL_WEIGHT", 100),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:28: ("FULL318_EQUAL_WEIGHT_OBSERVATION", 318),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:210: if row.get("portfolio_name") == "FULL318_EQUAL_WEIGHT_OBSERVATION":
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:220: groups[("TECHNICAL_TIMING_BUCKET", score_bucket(c.get("technical_timing_score"), "TECHNICAL_TIMING"))].append(c)
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:341: "candidate_score": fmt_num(row.get("composite_candidate_score")),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:342: "factor_score": fmt_num(frow.get("factor_pack_score")),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:343: "technical_timing_score": fmt_num(trow.get("technical_timing_score")),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:373: weight = 1.0 / len(members)
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:379: "target_weight_method": "EQUAL_WEIGHT",
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:397: notional = args.paper_capital * weight
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:408: "technical_timing_score": c["technical_timing_score"],
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:412: "target_weight": fmt_num(weight, 8),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:498: "equal_weight_gross_return": average([g for g in gross if g is not None]),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:499: "equal_weight_net_return_after_cost": average([n for n in net if n is not None]),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:523: pnet = as_float(prow.get("equal_weight_net_return_after_cost")) if prow else None
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:594: "top20_entry_count": sum(1 for r in entry_rows if r["portfolio_name"] == "TOP20_EQUAL_WEIGHT"),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:595: "top50_entry_count": sum(1 for r in entry_rows if r["portfolio_name"] == "TOP50_EQUAL_WEIGHT"),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:596: "top100_entry_count": sum(1 for r in entry_rows if r["portfolio_name"] == "TOP100_EQUAL_WEIGHT"),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:597: "full318_observation_count": sum(1 for r in entry_rows if r["portfolio_name"] == "FULL318_EQUAL_WEIGHT_OBSERVATION"),
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:619: "factor_score", "technical_timing_score", "entry_price", "entry_price_date", "entry_price_source",
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:620: "target_weight", "paper_capital", "paper_notional", "paper_shares", "estimated_commission_bps",
+D:\us-tech-quant\scripts\v18\v18_36A_paper_trading_forward_attribution.py:658: if r["portfolio_name"] == "TOP20_EQUAL_WEIGHT"
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:23: PORTFOLIOS = ["TOP20_EQUAL_WEIGHT", "TOP50_EQUAL_WEIGHT", "TOP100_EQUAL_WEIGHT", "FULL318_EQUAL_WEIGHT_OBSERVATION"]
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:370: "gross_equal_weight_return": avg([v for v in gross_vals if v is not None]),
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:371: "net_equal_weight_return": fmt_num(net_avg, 8),
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:412: full_entries = [e for e in entries if e.get("portfolio_name") == "FULL318_EQUAL_WEIGHT_OBSERVATION"] or entries
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:413: full_forward = [r for r in forward_rows if r["portfolio_name"] == "FULL318_EQUAL_WEIGHT_OBSERVATION"] or forward_rows
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:419: groups[("TECHNICAL_TIMING_BUCKET", score_bucket(e.get("technical_timing_score"), "TECHNICAL_TIMING"))].append(e)
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:560: "pending_count", "gross_equal_weight_return", "net_equal_weight_return", "win_rate", "best_ticker",
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:583: f"| {r['portfolio_name']} | {r['horizon']} | {r['filled_count']} | {r['pending_count']} | {r['net_equal_weight_return']} | {r['performance_status']} |"
+D:\us-tech-quant\scripts\v18\v18_36B_paper_trading_forward_return_filler.py:618: | portfolio | horizon | filled | pending | net equal weight return | status |
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:324: df["overheat_penalty"] = pct_rank_high_good(overheat_raw) * 100
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:345: - 0.12 * df["overheat_penalty"].fillna(50.0)
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:349: df["factor_pack_score"] = df["F010_XSEC_COMPOSITE_RANK"].round(2)
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:350: df = df.sort_values(["factor_pack_score", "ticker"], ascending=[False, True]).reset_index(drop=True)
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:492: "factor_pack_rank", "ticker", "factor_pack_score", "latest_price_date", "latest_close",
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:497: "volatility_penalty", "overheat_penalty", "shadow_side_hint",
+D:\us-tech-quant\scripts\v18\v18_3D_factor_pack_shadow_extension.py:506: "score": fmt_num(r["factor_pack_score"], 2),
+D:\us-tech-quant\scripts\v18\v18_3D_R1_official_overlap_fix.py:360: composite = get_col(row, ["factor_pack_score", "composite_score", "score", "F010_XSEC_COMPOSITE_RANK"])
+D:\us-tech-quant\scripts\v18\v18_4A_factor_forward_outcome_tracker.py:218: "F010_XSEC_COMPOSITE_RANK", "factor_pack_score"
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:250: current_weights = pd.Series(dtype=float)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:251: previous_weights = pd.Series(dtype=float)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:268: current_weights = pd.Series(1.0 / len(selected), index=selected.index)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:276: "weight": float(current_weights[ticker]),
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:289: current_weights = pd.concat([long_w, short_w]).groupby(level=0).sum()
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:297: "weight": float(long_w[ticker]),
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:307: "weight": float(short_w[ticker]),
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:311: all_names = sorted(set(previous_weights.index).union(set(current_weights.index)))
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:312: prev = previous_weights.reindex(all_names).fillna(0.0)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:313: curr = current_weights.reindex(all_names).fillna(0.0)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:319: holding_counts.append(int((current_weights != 0).sum()))
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:320: previous_weights = current_weights.copy()
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:323: if not current_weights.empty:
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:324: r = daily_returns.loc[next_dt].reindex(current_weights.index)
+D:\us-tech-quant\scripts\v18\v18_4H_factor_rolling_backtest.py:328: w = current_weights.reindex(r.index).dropna()
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:317: "overheat_penalty": overheat,
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:320: "technical_timing_score": round(float(score), 4),
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:352: "ticker", "price_date", "close", "technical_timing_score", "technical_signal",
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:357: ["technical_timing_score", "pullback_timing_bonus", "breakout_confirmation_bonus"],
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:362: ["overheat_penalty", "technical_timing_score"],
+D:\us-tech-quant\scripts\v18\v18_6A_technical_timing_shadow.py:457: ["technical_timing_score", "overheat_penalty", "ticker"],
+D:\us-tech-quant\scripts\v18\v18_6B_R1_technical_timing_diagnostic_patch.py:59: x["technical_timing_score"] = pd.to_numeric(x.get("technical_timing_score", np.nan), errors="coerce")
+D:\us-tech-quant\scripts\v18\v18_6B_R1_technical_timing_diagnostic_patch.py:60: x["overheat_penalty"] = pd.to_numeric(x.get("overheat_penalty", np.nan), errors="coerce")
+D:\us-tech-quant\scripts\v18\v18_6B_R1_technical_timing_diagnostic_patch.py:149: needed = ["date", "ticker", "technical_timing_score", "overheat_penalty", ret_col]
+D:\us-tech-quant\scripts\v18\v18_6B_R1_technical_timing_diagnostic_patch.py:150: g0 = df.dropna(subset=[ret_col, "technical_timing_score"]).copy()
+D:\us-tech-quant\scripts\v18\v18_6B_R1_technical_timing_diagnostic_patch.py:155: ["technical_timing_score", "overheat_penalty"],
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:222: x["overheat_penalty"] = 0
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:223: x.loc[x["bb_near_upper"] | x["bb_above_upper"], "overheat_penalty"] += 10
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:224: x.loc[x["rsi_overheat"], "overheat_penalty"] += 10
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:225: x.loc[x["rsi_extreme_overheat"], "overheat_penalty"] += 5
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:226: x.loc[x["kdj_overheat"] | x["kdj_high_dead_cross"], "overheat_penalty"] += 10
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:227: x.loc[x["kdj_extreme_overheat"], "overheat_penalty"] += 5
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:238: x["technical_timing_score"] = (
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:239: 50 + x["pullback_timing_bonus"] + x["breakout_confirmation_bonus"] - x["overheat_penalty"]
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:242: x["signal_watch_positive"] = (x["technical_timing_score"] >= 65) & (x["overheat_penalty"] <= 10)
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:244: x["signal_overheat_avoid"] = x["overheat_penalty"] >= 25
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:291: x = df.dropna(subset=["technical_timing_score", f"ret_fwd_{hold_days}"]).copy()
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:295: g = g.sort_values(["technical_timing_score", "overheat_penalty"], ascending=[False, True]).head(topn)
+D:\us-tech-quant\scripts\v18\v18_6B_technical_timing_backtest.py:459: features = features.dropna(subset=["technical_timing_score"])
+D:\us-tech-quant\scripts\v18\v18_6C_R1_technical_timing_forward_tracker_freshness_guard.py:157: "technical_timing_score", "technical_signal",
+D:\us-tech-quant\scripts\v18\v18_6C_technical_timing_forward_tracker.py:46: x["technical_timing_score"] = pd.to_numeric(x.get("technical_timing_score", np.nan), errors="coerce")
+D:\us-tech-quant\scripts\v18\v18_6C_technical_timing_forward_tracker.py:47: x["overheat_penalty"] = pd.to_numeric(x.get("overheat_penalty", np.nan), errors="coerce")
+D:\us-tech-quant\scripts\v18\v18_6C_technical_timing_forward_tracker.py:100: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6C_technical_timing_forward_tracker.py:113: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:51: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:52: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:146: sort_cols = ["technical_timing_score", "volume_ratio_5_20"]
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:155: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:335: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:348: exhaustion = top_rows(fresh, "signal_exhaustion_risk", 15, sort_cols=["overheat_penalty", "technical_timing_score"])
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:349: squeeze = top_rows(fresh, "signal_bb_squeeze", 15, sort_cols=["technical_timing_score", "volume_ratio_5_20"])
+D:\us-tech-quant\scripts\v18\v18_6D_technical_timing_read_center.py:350: overheat_unclassified = top_rows(fresh, "signal_overheat_unclassified", 15, sort_cols=["technical_timing_score", "volume_ratio_5_20"])
+D:\us-tech-quant\scripts\v18\v18_6E_final_read_center_with_technical.py:116: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6E_final_read_center_with_technical.py:117: "overheat_penalty",
+D:\us-tech-quant\scripts\v18\v18_6E_final_read_center_with_technical.py:190: sort_cols = ["technical_timing_score", "volume_ratio_5_20"]
+D:\us-tech-quant\scripts\v18\v18_6E_final_read_center_with_technical.py:198: "technical_timing_score",
+D:\us-tech-quant\scripts\v18\v18_6E_final_read_center_with_technical.py:348: exhaustion = top_bucket(fresh, "signal_exhaustion_risk", 12, sort_cols=["overheat_penalty", "technical_timing_score"])
+D:\us-tech-quant\scripts\v18\v18_cleanup_audit.py:44: "run_v18_10D_official_daily_with_factor_weight_research.ps1",
+D:\us-tech-quant\scripts\v18\v18_cleanup_audit.py:45: "run_v18_10C_R1_factor_weight_research_daily_chain.ps1",
+D:\us-tech-quant\scripts\v18\v18_cleanup_audit.py:46: "run_v18_10C_weight_research_engine.ps1",
+D:\us-tech-quant\scripts\v18\v18_cleanup_audit.py:58: "v18_10C_weight_research_engine.py",
+D:\us-tech-quant\scripts\v18\v18_cleanup_audit.py:118: ROOT / "outputs" / "v18" / "weight_research",
+D:\us-tech-quant\scripts\v18\v18_cleanup_quarantine.py:34: "V18_10D_CURRENT_OFFICIAL_DAILY_WITH_FACTOR_WEIGHT_RESEARCH.md",

@@ -1,0 +1,6 @@
+﻿"factor_id","factor_name","factor_family","description","direction","status","official_weight","shadow_weight","benchmark","lookback_days","created_at","notes"
+"F001","REL_STRENGTH_20D","momentum","20 trading day return minus benchmark return","HIGHER_IS_BETTER","RESEARCH_ONLY","0","0","QQQ","20","2026-05-13 16:30:39","Research only. Not used in official decision."
+"F002","REL_STRENGTH_60D","momentum","60 trading day return minus benchmark return","HIGHER_IS_BETTER","RESEARCH_ONLY","0","0","QQQ","60","2026-05-13 16:30:39","Research only. Not used in official decision."
+"F003","VOL_ADJ_MOMENTUM_20D","risk_adjusted_momentum","20 trading day return divided by realized volatility","HIGHER_IS_BETTER","RESEARCH_ONLY","0","0","QQQ","20","2026-05-13 16:30:39","Designed to avoid pure high beta chasing."
+"F004","PULLBACK_REPAIR_20D","pullback_repair","Drawdown recovery and reclaim of short moving average","HIGHER_IS_BETTER","RESEARCH_ONLY","0","0","QQQ","20","2026-05-13 16:30:39","Matches left-side entry plus recovery confirmation style."
+"F005","DIST_TO_MA20","overheat_control","Distance from 20 day moving average","NEUTRAL_BAND_BETTER","RESEARCH_ONLY","0","0","QQQ","20","2026-05-13 16:30:39","Used to detect overheat or breakdown risk."

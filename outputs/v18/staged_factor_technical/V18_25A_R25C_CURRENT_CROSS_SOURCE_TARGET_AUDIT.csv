@@ -1,0 +1,9 @@
+﻿audit_item,status,expected_value,actual_value,reason
+expected_target_count,PASS,93,93,
+staged_factor_row_count,PASS,93,93,
+staged_technical_row_count,PASS,93,93,
+staged_factor_ticker_set_match_targets,PASS,TARGET_SET,TRUE,
+staged_technical_ticker_set_match_targets,PASS,TARGET_SET,TRUE,
+factor_technical_ticker_set_match,PASS,MATCH,TRUE,
+factor_schema_compatible,PASS,TRUE,TRUE,
+technical_schema_compatible,PASS,TRUE,TRUE,

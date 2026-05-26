@@ -1,0 +1,12 @@
+﻿V18_5C_STATUS: OK_ARCHIVE_ZERO_RUNTIME_CANDIDATES_READY
+MODE: APPLY
+INPUT: D:\us-tech-quant\outputs\v18\ops\V18_5B_CURRENT_DELETE_CANDIDATE_RUNTIME_AUDIT.csv
+CSV: D:\us-tech-quant\outputs\v18\ops\V18_5C_CURRENT_ARCHIVE_ZERO_RUNTIME_CANDIDATES.csv
+REPORT: D:\us-tech-quant\outputs\v18\ops\V18_5C_CURRENT_ARCHIVE_ZERO_RUNTIME_CANDIDATES.md
+CANDIDATE_COUNT: 1
+DRYRUN_WOULD_ARCHIVE_COUNT: 0
+ARCHIVED_COUNT: 1
+ALREADY_MISSING_COUNT: 0
+FAIL_COUNT: 0
+ARCHIVE_ROOT: D:\us-tech-quant\archive\deprecated\v18_5C_zero_runtime_archive_20260515_191705
+RESTORE_SCRIPT: D:\us-tech-quant\archive\deprecated\v18_5C_zero_runtime_archive_20260515_191705\restore_v18_5C_zero_runtime_archive.ps1

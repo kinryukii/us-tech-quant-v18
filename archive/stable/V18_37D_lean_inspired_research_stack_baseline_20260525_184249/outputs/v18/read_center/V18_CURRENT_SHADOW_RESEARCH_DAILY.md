@@ -1,0 +1,55 @@
+﻿# V18 Current Shadow Research Daily
+
+Generated: 
+2026-05-18 13:14:34
+
+## Status
+
+- STATUS: 
+OK_OFFICIAL_DAILY_WITH_FACTOR_WEIGHT_RESEARCH_READY
+- ENTRY_MODE: INDEPENDENT_SHADOW_RESEARCH_DAILY_ENTRY
+- TARGET: 
+D:\us-tech-quant\scripts\v18\run_v18_10D_official_daily_with_factor_weight_research.ps1
+- OFFICIAL_DECISION_IMPACT: 
+NONE
+- AUTO_WEIGHT_CHANGE: 
+DISABLED
+- AUTO_PROMOTION: 
+DISABLED
+- AUTO_TRADE: 
+DISABLED
+
+## Official decision
+
+- FINAL_ACTION: 
+BUY_CANDIDATES_REQUIRE_MANUAL_CONFIRMATION
+- BUY_PERMISSION: 
+UNKNOWN
+- VIX_REGIME: 
+VIX_CAUTION
+
+## Shadow research
+
+- RESEARCH_STATUS: 
+OK_FACTOR_WEIGHT_RESEARCH_DAILY_CHAIN_READY
+- RESEARCH_PERMISSION: 
+HOLD_NO_WEIGHT_ACTION
+- READY_HORIZON_COUNT: 
+0
+- FACTOR_OK_EVALUATED_ROWS: 
+0
+- WEIGHT_OK_EVALUATED_ROWS: 
+0
+- WEIGHT_PROMOTION_PERMISSION: 
+HOLD_NO_WEIGHT_ACTION
+
+## Guardrail
+
+This wrapper is an independent shadow research entry. It does not replace the official daily entry.
+
+## Outputs
+
+- SOURCE_READ_FIRST: 
+D:\us-tech-quant\outputs\v18\read_center\V18_10D_READ_FIRST.txt
+- CURRENT_READ_FIRST: 
+D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_SHADOW_RESEARCH_DAILY_READ_FIRST.txt

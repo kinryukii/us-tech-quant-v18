@@ -1,0 +1,11 @@
+﻿metric,value,notes
+total_universe_count,324,Rows in final rolling ledger.
+r20_target_ticker_count,59,Discovered from R19 successful integrations.
+scan_attempted_count,59,Local-only cache validation attempts.
+scan_success_count,59,SUCCESS_LOCAL_PRICE_FULL_HISTORY.
+scan_fail_count,0,Local validation failures.
+unique_success_within_5day_window,265,Window start 2026-05-18.
+true_5day_coverage_met,FALSE,All ledger tickers succeeded within current 5-day window.
+remaining_stale_overdue_count,59,Rows without success in current 5-day window.
+never_success_count,59,Rows with no last_success_scan_date.
+coverage_trust_level,PARTIAL_COVERAGE,Local coverage trust after R20 update.

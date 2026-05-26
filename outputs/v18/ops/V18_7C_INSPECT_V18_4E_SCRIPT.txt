@@ -1,0 +1,449 @@
+﻿=== V18.7C INSPECT V18.4E SCRIPT ===
+Generated: 2026-05-16 15:34:19
+Script: D:\us-tech-quant\scripts\v18\run_v18_4E_factor_output_forward_tracking_audit.ps1
+
+--- FIRST 320 LINES ---
+param(
+    [string]$Root = "D:\us-tech-quant",
+    [switch]$SkipRuntimeRefresh,
+    [switch]$SkipFactorPackRefresh
+)
+
+$ErrorActionPreference = "Stop"
+
+$Stamp = Get-Date -Format "yyyyMMdd_HHmmss"
+
+$OutDir = Join-Path $Root "outputs\v18\factor_audit"
+$OpsDir = Join-Path $Root "outputs\v18\ops"
+New-Item -ItemType Directory -Force -Path $OutDir | Out-Null
+
+$RuntimeAuditScript = Join-Path $Root "scripts\v18\run_v18_4C_runtime_dependency_audit.ps1"
+$FactorAuditScript = Join-Path $Root "scripts\v18\run_v18_4D_factor_pack_audit.ps1"
+
+Write-Host ""
+Write-Host "=== V18.4E FACTOR OUTPUT + FORWARD TRACKING AUDIT START ==="
+
+if (Test-Path $RuntimeAuditScript) {
+    if (-not $SkipRuntimeRefresh) {
+    Write-Host ""
+    Write-Host "STEP 1: refresh V18.4C runtime audit"
+    powershell -NoProfile -ExecutionPolicy Bypass -File $RuntimeAuditScript
+}
+else {
+    Write-Host ""
+    Write-Host "STEP 1 SKIPPED: refresh V18.4C runtime audit; use current runtime graph"
+}
+}
+
+if (Test-Path $FactorAuditScript) {
+    if (-not $SkipFactorPackRefresh) {
+    Write-Host ""
+    Write-Host "STEP 2: refresh V18.4D factor pack audit"
+    powershell -NoProfile -ExecutionPolicy Bypass -File $FactorAuditScript
+}
+else {
+    Write-Host ""
+    Write-Host "STEP 2 SKIPPED: refresh V18.4D factor pack audit; use current factor pack audit"
+}
+}
+
+$RuntimeGraph = Join-Path $OpsDir "V18_4C_CURRENT_RUNTIME_DEPENDENCY_GRAPH.csv"
+
+$runtimeCodeCount = ""
+$missingRefCount = ""
+
+if (Test-Path $RuntimeGraph) {
+    $runtimeRows = Import-Csv -LiteralPath $RuntimeGraph
+    $runtimeCodeCount = @(
+        $runtimeRows |
+            Where-Object { $_.exists -eq "True" -and $_.callee -match '\.(ps1|py|bat|cmd)$' } |
+            Select-Object -ExpandProperty callee -Unique
+    ).Count
+
+    $missingRefCount = @(
+        $runtimeRows |
+            Where-Object { $_.exists -eq "False" }
+    ).Count
+}
+
+$FactorDefs = @(
+    [pscustomobject]@{
+        code = "F006"
+        name = "SHORT_REV_5D"
+        aliases = @("F006_SHORT_REV_5D", "SHORT_REV_5D", "short_rev", "short_reversal", "rev_5d")
+    },
+    [pscustomobject]@{
+        code = "F007"
+        name = "PULLBACK_IN_UPTREND"
+        aliases = @("F007_PULLBACK_IN_UPTREND", "PULLBACK_IN_UPTREND", "pullback", "uptrend")
+    },
+    [pscustomobject]@{
+        code = "F008"
+        name = "VOLUME_ABNORMAL_5_20"
+        aliases = @("F008_VOLUME_ABNORMAL_5_20", "VOLUME_ABNORMAL_5_20", "volume_abnormal", "vol_abnormal", "volume_5_20")
+    },
+    [pscustomobject]@{
+        code = "F009"
+        name = "VOLUME_PRICE_CONFIRM"
+        aliases = @("F009_VOLUME_PRICE_CONFIRM", "VOLUME_PRICE_CONFIRM", "volume_price", "price_confirm")
+    },
+    [pscustomobject]@{
+        code = "F010"
+        name = "XSEC_COMPOSITE_RANK"
+        aliases = @("F010_XSEC_COMPOSITE_RANK", "XSEC_COMPOSITE_RANK", "xsec_composite", "composite_rank")
+    },
+    [pscustomobject]@{
+        code = "F011"
+        name = "TS_MOMENTUM_60_120"
+        aliases = @("F011_TS_MOMENTUM_60_120", "TS_MOMENTUM_60_120", "ts_momentum", "momentum_60_120")
+    }
+)
+
+$SearchDirs = @(
+    (Join-Path $Root "outputs\v18"),
+    (Join-Path $Root "state\v18")
+)
+
+$CsvFiles = @()
+
+foreach ($d in $SearchDirs) {
+    if (Test-Path $d) {
+        $CsvFiles += Get-ChildItem -LiteralPath $d -Recurse -File -Include "*.csv" -ErrorAction SilentlyContinue |
+            Where-Object {
+                $_.FullName -notmatch "\\archive\\" -and
+                $_.FullName -notmatch "\\deprecated\\"
+            }
+    }
+}
+
+$TextFiles = @()
+
+foreach ($d in $SearchDirs) {
+    if (Test-Path $d) {
+        $TextFiles += Get-ChildItem -LiteralPath $d -Recurse -File -Include "*.md","*.txt","*.json" -ErrorAction SilentlyContinue |
+            Where-Object {
+                $_.FullName -notmatch "\\archive\\" -and
+                $_.FullName -notmatch "\\deprecated\\"
+            }
+    }
+}
+
+function Get-CsvHeaderColumns {
+    param([string]$Path)
+
+    try {
+        $first = Get-Content -LiteralPath $Path -First 1
+        if ([string]::IsNullOrWhiteSpace($first)) {
+            return @()
+        }
+
+        return @(
+            $first -split "," |
+                ForEach-Object { $_.Trim().Trim('"') } |
+                Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+        )
+    } catch {
+        return @()
+    }
+}
+
+function Test-ColumnMatch {
+    param(
+        [string]$Column,
+        [object]$Factor
+    )
+
+    $c = $Column.ToLowerInvariant()
+
+    if ($c -like "*$($Factor.code.ToLowerInvariant())*") {
+        return $true
+    }
+
+    if ($c -like "*$($Factor.name.ToLowerInvariant())*") {
+        return $true
+    }
+
+    foreach ($a in $Factor.aliases) {
+        if ($c -like "*$($a.ToLowerInvariant())*") {
+            return $true
+        }
+    }
+
+    return $false
+}
+
+function Test-TextMatch {
+    param(
+        [string]$Text,
+        [object]$Factor
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Text)) {
+        return $false
+    }
+
+    $t = $Text.ToLowerInvariant()
+
+    if ($t -like "*$($Factor.code.ToLowerInvariant())*") {
+        return $true
+    }
+
+    if ($t -like "*$($Factor.name.ToLowerInvariant())*") {
+        return $true
+    }
+
+    foreach ($a in $Factor.aliases) {
+        if ($t -like "*$($a.ToLowerInvariant())*") {
+            return $true
+        }
+    }
+
+    return $false
+}
+
+function Get-NonNullStats {
+    param(
+        [string]$Path,
+        [string[]]$Columns
+    )
+
+    $nonNull = 0
+    $numeric = 0
+    $rowCount = 0
+
+    if ($Columns.Count -eq 0) {
+        return [pscustomobject]@{
+            rows = 0
+            non_null = 0
+            numeric = 0
+        }
+    }
+
+    try {
+        $rows = Import-Csv -LiteralPath $Path
+        foreach ($r in $rows) {
+            $rowCount += 1
+
+            foreach ($c in $Columns) {
+                if ($r.PSObject.Properties.Name -contains $c) {
+                    $v = [string]$r.$c
+
+                    if (-not [string]::IsNullOrWhiteSpace($v)) {
+                        $nonNull += 1
+
+                        $tmp = 0.0
+                        if ([double]::TryParse($v, [ref]$tmp)) {
+                            $numeric += 1
+                        }
+                    }
+                }
+            }
+        }
+    } catch {
+        # skip bad csv
+    }
+
+    return [pscustomobject]@{
+        rows = $rowCount
+        non_null = $nonNull
+        numeric = $numeric
+    }
+}
+
+$Rows = @()
+
+foreach ($factor in $FactorDefs) {
+    $columnHitFiles = @()
+    $columnHitDetails = @()
+    $textHitFiles = @()
+    $forwardHitFiles = @()
+    $topRankHitFiles = @()
+
+    $totalMatchedColumns = 0
+    $totalNonNull = 0
+    $totalNumeric = 0
+    $totalRowsScanned = 0
+
+    foreach ($csv in $CsvFiles) {
+        $cols = Get-CsvHeaderColumns -Path $csv.FullName
+
+        $matchedCols = @(
+            $cols |
+                Where-Object { Test-ColumnMatch -Column $_ -Factor $factor }
+        )
+
+        if ($matchedCols.Count -gt 0) {
+            $columnHitFiles += $csv.FullName
+            $totalMatchedColumns += $matchedCols.Count
+
+            $stats = Get-NonNullStats -Path $csv.FullName -Columns $matchedCols
+            $totalNonNull += $stats.non_null
+            $totalNumeric += $stats.numeric
+            $totalRowsScanned += $stats.rows
+
+            $columnHitDetails += "$($csv.FullName) => $($matchedCols -join '|')"
+        }
+
+        $pathLower = $csv.FullName.ToLowerInvariant()
+        $isForwardFile = (
+            $pathLower -like "*forward*" -or
+            $pathLower -like "*tracker*" -or
+            $pathLower -like "*outcome*" -or
+            $pathLower -like "*promotion*"
+        )
+
+        if ($isForwardFile) {
+            $hit = $false
+
+            foreach ($c in $cols) {
+                if (Test-ColumnMatch -Column $c -Factor $factor) {
+                    $hit = $true
+                    break
+                }
+            }
+
+            if (-not $hit) {
+                try {
+                    $sample = Get-Content -LiteralPath $csv.FullName -TotalCount 50 -ErrorAction SilentlyContinue
+                    foreach ($line in $sample) {
+                        if (Test-TextMatch -Text $line -Factor $factor) {
+                            $hit = $true
+                            break
+                        }
+                    }
+                } catch {}
+            }
+
+            if ($hit) {
+                $forwardHitFiles += $csv.FullName
+            }
+        }
+
+        $isRankFile = (
+            $pathLower -like "*factor_pack*" -or
+            $pathLower -like "*factor_shadow*" -or
+            $pathLower -like "*top*" -or
+
+--- KEY LINES ---
+L4:     [switch]$SkipFactorPackRefresh
+L11: $OutDir = Join-Path $Root "outputs\v18\factor_audit"
+L16: $FactorAuditScript = Join-Path $Root "scripts\v18\run_v18_4D_factor_pack_audit.ps1"
+L19: Write-Host "=== V18.4E FACTOR OUTPUT + FORWARD TRACKING AUDIT START ==="
+L29:     Write-Host "STEP 1 SKIPPED: refresh V18.4C runtime audit; use current runtime graph"
+L33: if (Test-Path $FactorAuditScript) {
+L34:     if (-not $SkipFactorPackRefresh) {
+L36:     Write-Host "STEP 2: refresh V18.4D factor pack audit"
+L37:     powershell -NoProfile -ExecutionPolicy Bypass -File $FactorAuditScript
+L41:     Write-Host "STEP 2 SKIPPED: refresh V18.4D factor pack audit; use current factor pack audit"
+L45: $RuntimeGraph = Join-Path $OpsDir "V18_4C_CURRENT_RUNTIME_DEPENDENCY_GRAPH.csv"
+L51:     $runtimeRows = Import-Csv -LiteralPath $RuntimeGraph
+L54:             Where-Object { $_.exists -eq "True" -and $_.callee -match '\.(ps1|py|bat|cmd)$' } |
+L55:             Select-Object -ExpandProperty callee -Unique
+L60:             Where-Object { $_.exists -eq "False" }
+L64: $FactorDefs = @(
+L104: foreach ($d in $SearchDirs) {
+L106:         $CsvFiles += Get-ChildItem -LiteralPath $d -Recurse -File -Include "*.csv" -ErrorAction SilentlyContinue |
+L107:             Where-Object {
+L116: foreach ($d in $SearchDirs) {
+L118:         $TextFiles += Get-ChildItem -LiteralPath $d -Recurse -File -Include "*.md","*.txt","*.json" -ErrorAction SilentlyContinue |
+L119:             Where-Object {
+L137:                 ForEach-Object { $_.Trim().Trim('"') } |
+L138:                 Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+L148:         [object]$Factor
+L153:     if ($c -like "*$($Factor.code.ToLowerInvariant())*") {
+L157:     if ($c -like "*$($Factor.name.ToLowerInvariant())*") {
+L161:     foreach ($a in $Factor.aliases) {
+L173:         [object]$Factor
+L182:     if ($t -like "*$($Factor.code.ToLowerInvariant())*") {
+L186:     if ($t -like "*$($Factor.name.ToLowerInvariant())*") {
+L190:     foreach ($a in $Factor.aliases) {
+L218:         $rows = Import-Csv -LiteralPath $Path
+L219:         foreach ($r in $rows) {
+L222:             foreach ($c in $Columns) {
+L250: foreach ($factor in $FactorDefs) {
+L254:     $forwardHitFiles = @()
+L262:     foreach ($csv in $CsvFiles) {
+L267:                 Where-Object { Test-ColumnMatch -Column $_ -Factor $factor }
+L283:         $isForwardFile = (
+L284:             $pathLower -like "*forward*" -or
+L285:             $pathLower -like "*tracker*" -or
+L290:         if ($isForwardFile) {
+L293:             foreach ($c in $cols) {
+L294:                 if (Test-ColumnMatch -Column $c -Factor $factor) {
+L303:                     foreach ($line in $sample) {
+L304:                         if (Test-TextMatch -Text $line -Factor $factor) {
+L313:                 $forwardHitFiles += $csv.FullName
+L318:             $pathLower -like "*factor_pack*" -or
+L319:             $pathLower -like "*factor_shadow*" -or
+L327:             foreach ($c in $cols) {
+L328:                 if (Test-ColumnMatch -Column $c -Factor $factor) {
+L337:                     foreach ($line in $sample2) {
+L338:                         if (Test-TextMatch -Text $line -Factor $factor) {
+L352:     foreach ($tf in $TextFiles) {
+L354:             $match = Select-String -LiteralPath $tf.FullName -Pattern $factor.code,$factor.name -SimpleMatch -ErrorAction SilentlyContinue | Select-Object -First 1
+L357:                 foreach ($a in $factor.aliases) {
+L358:                     $match = Select-String -LiteralPath $tf.FullName -Pattern $a -SimpleMatch -ErrorAction SilentlyContinue | Select-Object -First 1
+L367:                 if ($lower -like "*forward*" -or $lower -like "*tracker*" -or $lower -like "*outcome*" -or $lower -like "*promotion*") {
+L368:                     $forwardHitFiles += $tf.FullName
+L371:                 if ($lower -like "*factor_pack*" -or $lower -like "*factor_shadow*" -or $lower -like "*top*" -or $lower -like "*rank*") {
+L381:     if (($columnHitFiles | Select-Object -Unique).Count -gt 0) {
+L390:     $forwardStatus = "NOT_FOUND_IN_FORWARD_TRACKING"
+L391:     if (($forwardHitFiles | Select-Object -Unique).Count -gt 0) {
+L392:         $forwardStatus = "FOUND_IN_FORWARD_TRACKING_OR_OUTCOME_FILES"
+L396:     if (($topRankHitFiles | Select-Object -Unique).Count -gt 0) {
+L401:         factor_code = $factor.code
+L402:         factor_name = $factor.name
+L405:         forward_tracking_status = $forwardStatus
+L411:         column_hit_file_count = ($columnHitFiles | Select-Object -Unique).Count
+L412:         text_hit_file_count = ($textHitFiles | Select-Object -Unique).Count
+L413:         forward_hit_file_count = ($forwardHitFiles | Select-Object -Unique).Count
+L414:         top_rank_hit_file_count = ($topRankHitFiles | Select-Object -Unique).Count
+L415:         column_hit_files = (($columnHitFiles | Select-Object -Unique | Sort-Object) -join "; ")
+L416:         forward_hit_files = (($forwardHitFiles | Select-Object -Unique | Sort-Object) -join "; ")
+L417:         top_rank_hit_files = (($topRankHitFiles | Select-Object -Unique | Sort-Object) -join "; ")
+L422: $SelectedFactor = ""
+L423: $SelectedFactorFiles = @()
+L427:     (Join-Path $Root "outputs\v18\factor_shadow"),
+L428:     (Join-Path $Root "outputs\v18\factor_pack"),
+L429:     (Join-Path $Root "outputs\v18\outcome_summary")
+L432: foreach ($d in $SelectedSearchDirs) {
+L434:         $files = Get-ChildItem -LiteralPath $d -Recurse -File -Include "*.md","*.txt","*.csv" -ErrorAction SilentlyContinue
+L435:         foreach ($f in $files) {
+L437:                 $m = Select-String -LiteralPath $f.FullName -Pattern "SELECTED_FACTOR" -SimpleMatch -ErrorAction SilentlyContinue | Select-Object -First 1
+L439:                     $SelectedFactorFiles += $f.FullName
+L441:                     if ($m.Line -match 'SELECTED_FACTOR\s*[:=]\s*`?([A-Za-z0-9_]+)`?') {
+L442:                         $SelectedFactor = $matches[1]
+L450: $CsvOut = Join-Path $OutDir "V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_$Stamp.csv"
+L451: $MdOut = Join-Path $OutDir "V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_$Stamp.md"
+L452: $CurrentCsv = Join-Path $OutDir "V18_4E_CURRENT_FACTOR_OUTPUT_FORWARD_AUDIT.csv"
+L453: $CurrentMd = Join-Path $OutDir "V18_4E_CURRENT_FACTOR_OUTPUT_FORWARD_AUDIT.md"
+L455: $Rows | Export-Csv -NoTypeInformation -Encoding UTF8 -Path $CsvOut
+L456: Copy-Item -Force $CsvOut $CurrentCsv
+L458: $expectedCount = $FactorDefs.Count
+L459: $outputColumnFoundCount = @($Rows | Where-Object { $_.output_column_status -eq "OUTPUT_COLUMN_FOUND" }).Count
+L460: $nonNullFoundCount = @($Rows | Where-Object { $_.output_value_status -eq "HAS_NON_NULL_VALUES" }).Count
+L461: $forwardFoundCount = @($Rows | Where-Object { $_.forward_tracking_status -eq "FOUND_IN_FORWARD_TRACKING_OR_OUTCOME_FILES" }).Count
+L462: $rankFoundCount = @($Rows | Where-Object { $_.top_rank_output_status -eq "FOUND_IN_TOP_OR_RANK_OUTPUTS" }).Count
+L466: $md += "# V18.4E Factor Output + Forward Tracking Audit"
+L475: $md += "- WORLDQUANT_STYLE_FACTOR_COUNT_EXPECTED: ``$expectedCount``"
+L477: $md += "- NON_NULL_VALUE_FACTOR_COUNT: ``$nonNullFoundCount``"
+L479: $md += "- FORWARD_TRACKING_FOUND_COUNT: ``$forwardFoundCount``"
+L480: $md += "- CURRENT_SELECTED_FACTOR: ``$SelectedFactor``"
+L486: $md += "| factor | name | output column | non-null | top/rank output | forward tracking | matched cols | non-null values |"
+L489: foreach ($r in $Rows) {
+L490:     $md += "| $($r.factor_code) | $($r.factor_name) | $($r.output_column_status) | $($r.output_value_status) | $($r.top_rank_output_status) | $($r.forward_tracking_status) | $($r.matched_column_count) | $($r.output_non_null_value_count) |"
+L496: $md += "V18.4D 证明 F006-F011 在当前 runtime graph 里。V18.4E 进一步检查这些因子是否在输出 CSV / 文本 / forward outcome 相关文件里出现。"
+L500: $md += "如果某个因子是 FOUND_IN_FORWARD_TRACKING_OR_OUTCOME_FILES，说明它已经被 forward tracker / outcome / promotion 相关文件覆盖。"
+L502: $md += "如果某个因子只在代码里存在、没有输出列，那下一步需要修 V18.3D factor pack 的输出 CSV。"
+L504: $md += "如果某个因子有输出列但没有 forward tracking，下一步需要修 V18.4A forward tracker 的 factor capture 字段。"
+L507: $md += "## 4. Selected Factor 来源文件"
+L510: foreach ($f in ($SelectedFactorFiles | Select-Object -Unique | Sort-Object)) {
+L521: $md -join "`r`n" | Set-Content -Encoding UTF8 -Path $MdOut
+L522: Copy-Item -Force $MdOut $CurrentMd
+L525: Write-Host "=== V18.4E FACTOR OUTPUT + FORWARD TRACKING AUDIT READY ==="
+L528: Write-Host "WORLDQUANT_STYLE_FACTOR_COUNT_EXPECTED: $expectedCount"
+L530: Write-Host "NON_NULL_VALUE_FACTOR_COUNT: $nonNullFoundCount"
+L532: Write-Host "FORWARD_TRACKING_FOUND_COUNT: $forwardFoundCount"
+L533: Write-Host "CURRENT_SELECTED_FACTOR: $SelectedFactor"
+L536: Write-Host $CurrentMd
+L538: Write-Host $CurrentCsv

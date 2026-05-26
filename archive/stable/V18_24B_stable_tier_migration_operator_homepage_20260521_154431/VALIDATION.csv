@@ -1,0 +1,29 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,
+powershell_parse_check,PASS,0,OK
+snapshot_folder_created,PASS,0,D:\us-tech-quant\archive\stable\V18_24B_stable_tier_migration_operator_homepage_20260521_154431
+critical_files_copied,PASS,0,All V18.24A/B critical files must be copied.
+copy_fail_count_zero,PASS,0,No copy failures allowed.
+manifest_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_24B_stable_tier_migration_operator_homepage_20260521_154431\MANIFEST.csv
+readme_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_24B_stable_tier_migration_operator_homepage_20260521_154431\README_V18_24B_STABLE_SNAPSHOT.md
+restore_script_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_24B_stable_tier_migration_operator_homepage_20260521_154431\RESTORE_V18_24B.ps1
+v18_24a_outputs_present,PASS,0,Critical V18.24A outputs/scripts must be present.
+v18_24b_outputs_present,PASS,0,Critical V18.24B outputs/scripts must be present.
+safety_official_decision_impact,PASS,0,Expected OFFICIAL_DECISION_IMPACT=NONE; actual NONE.
+safety_buy_permission_modified,PASS,0,Expected BUY_PERMISSION_MODIFIED=FALSE; actual FALSE.
+safety_auto_trade,PASS,0,Expected AUTO_TRADE=DISABLED; actual DISABLED.
+safety_auto_sell,PASS,0,Expected AUTO_SELL=DISABLED; actual DISABLED.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_staged_price_history_written,PASS,0,Expected STAGED_PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ledger_modified,PASS,0,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,0,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.

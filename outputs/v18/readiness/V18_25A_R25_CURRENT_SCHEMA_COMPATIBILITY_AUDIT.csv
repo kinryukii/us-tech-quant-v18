@@ -1,0 +1,8 @@
+﻿audit_item,value,notes
+factor_pack_schema_available,TRUE,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv
+factor_pack_required_columns,ticker;factor_pack_score;factor_pack_rank;latest_price_date;latest_close,
+factor_pack_missing_required_columns,,
+technical_schema_available,TRUE,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv
+technical_required_columns,ticker;price_date;close;technical_timing_score;technical_signal,
+technical_missing_required_columns,,
+compatible_for_next_build_step,TRUE,

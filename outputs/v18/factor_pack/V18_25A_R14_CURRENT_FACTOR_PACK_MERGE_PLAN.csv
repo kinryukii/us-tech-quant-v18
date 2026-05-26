@@ -1,0 +1,5 @@
+﻿plan_item,path,status,notes
+backup_current_factor_pack,D:\us-tech-quant\archive\v18\factor_pack_backups\V18_25A_R14_20260522_002133\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.before_V18_25A_R14.csv,TRUE,Backup created before current factor pack modification.
+restore_script,D:\us-tech-quant\archive\v18\factor_pack_backups\V18_25A_R14_20260522_002133\RESTORE_V18_25A_R14_FACTOR_PACK.ps1,TRUE,Restores pre-R14 current factor pack ranking.
+merge_strategy,D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,REPLACE_OR_APPEND_BY_TICKER,Preserve schema and non-target rows.
+rank_recompute,D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,RANK_RECOMPUTED_BY_SCORE_DESC_TICKER_ASC,Recompute rank by factor_pack_score desc and ticker asc when ranking columns exist.

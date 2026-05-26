@@ -1,0 +1,9 @@
+﻿version,path,length_bytes,generated_at,purpose
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_READ_FIRST.txt,960,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_CORRELATION_AND_SECTOR_REPORT.md,5307,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_PROMOTION_REVIEW.csv,940,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_CORRELATION_SPEARMAN.csv,477,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_CORRELATION_PEARSON.csv,479,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_REDUNDANCY_FLAGS.csv,598,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_FACTOR_TOP20_SECTOR_EXPOSURE.csv,2883,2026-05-13 19:29:08,factor_correlation_sector_review
+V18.2B,D:\us-tech-quant\outputs\v18\factor_validation\V18_2B_AUDIT.csv,206,2026-05-13 19:29:08,factor_correlation_sector_review

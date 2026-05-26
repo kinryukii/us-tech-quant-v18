@@ -1,0 +1,2 @@
+﻿status,position_count,trade_log_rows,linked_signal_rows,unlinked_position_rows,current_price_available_rows,current_price_missing_rows,validation_fail_count,official_decision_impact,auto_trade,auto_sell,read_only,manual_input_only,position_feedback_only,read_first
+OK_V18_15A_MANUAL_POSITION_TRADE_FEEDBACK_READY,0,0,0,0,0,0,0,NONE,DISABLED,DISABLED,TRUE,TRUE,TRUE,outputs/v18/ops/V18_15A_READ_FIRST.txt

@@ -1,0 +1,156 @@
+# V18.20F Legacy Archive Plan Dryrun
+
+- STATUS: OK_V18_20F_LEGACY_ARCHIVE_PLAN_READY
+- MODE: DRYRUN
+- ROOT: D:\us-tech-quant
+- INPUT_ARCHIVE_CANDIDATE_COUNT: 479
+- INPUT_ARCHIVE_CANDIDATE_MB: 7.095
+- PLANNED_ARCHIVE_COUNT: 374
+- PLANNED_ARCHIVE_MB: 2.565
+- ARCHIVE_THEN_DELETE_AFTER_VERIFICATION_COUNT: 352
+- ARCHIVE_THEN_DELETE_AFTER_VERIFICATION_MB: 2.453
+- ARCHIVE_ONLY_COUNT: 22
+- ARCHIVE_ONLY_MB: 0.112
+- PROTECTED_EXCLUSIONS_COUNT: 105
+- PROTECTED_EXCLUSIONS_MB: 4.530
+- REVIEW_REQUIRED_COUNT: 0
+- REVIEW_REQUIRED_MB: 0.000
+- ARCHIVED_COUNT: 0
+- DELETED_COUNT: 0
+- MOVED_COUNT: 0
+- ZIP_CREATED_COUNT: 0
+- VALIDATION_FAIL_COUNT: 0
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- OFFICIAL_DECISION_IMPACT: NONE
+- CURRENT_DAILY_MODIFIED: FALSE
+- STABLE_SNAPSHOT_MODIFIED: FALSE
+- MANUAL_STATE_MODIFIED: FALSE
+- PRICE_CACHE_MODIFIED: FALSE
+- LATEST_STABLE_SNAPSHOT_NAME: V18_19A_R1_stable_daily_readability_refactor_20260519_171556
+
+## Count By Archive Group
+
+- DO_NOT_ARCHIVE_PROTECTED: 105 / 4.530 MB
+- OLD_GENERATED_REPORTS: 352 / 2.453 MB
+- OLD_EXPERIMENTAL_WRAPPERS: 18 / 0.077 MB
+- LEGACY_VERSIONED_SCRIPTS: 4 / 0.035 MB
+- OLD_RUN_LOGS: 0 / 0.000 MB
+
+## Top 50 Largest Archive Candidates
+
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_DETAIL.csv | 0.606 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260519_105611.csv | 0.062 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8A_raw105_full_decision_daily.csv | 0.060 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_213854.csv | 0.059 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_212518.csv | 0.057 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_164754.csv | 0.054 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_131254.csv | 0.052 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260519_105352.csv | 0.050 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_130825.csv | 0.050 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_213632.csv | 0.045 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw105_decision/v17_8A_raw105_full_decision_daily.csv | 0.043 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_212255.csv | 0.042 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_164556.csv | 0.038 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SECOND_STAGE.csv | 0.034 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_131117.csv | 0.034 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_130616.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_130842.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_131309.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_164814.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_212536.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_213915.csv | 0.031 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260519_105633.csv | 0.030 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8B_raw105_decision_readable_panel.csv | 0.028 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw105_decision/v17_8B_raw105_decision_readable_panel.csv | 0.027 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_SECOND_STAGE_WATCHLIST.csv | 0.026 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw_universe_audit/v17_7_raw_universe_full_screen_audit.csv | 0.026 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SCREENED.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7B_universe_semantic_audit.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v16/universe/V16_FULL_UNIVERSE_RAW.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v16/universe/V16_FULL_UNIVERSE_SCREENED.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v16/universe/V16_FULL_UNIVERSE_SELECTED_FOR_EXECUTION.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw_universe_audit/v17_7B_universe_semantic_audit.csv | 0.024 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7_raw_universe_full_screen_audit.csv | 0.021 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v18/ops/V18_7B_PREPATCH_MAIN_CHAIN_SCRIPT_INSPECTION.txt | 0.021 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw_universe_audit/v17_7D_main_compute_delta_audit.csv | 0.019 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7F_B_price_freshness_acceptance.csv | 0.018 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw_universe_audit/v17_7F_B_price_freshness_acceptance.csv | 0.018 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- scripts/run_v17_7_raw_universe_full_screen_audit.py | 0.016 MB | LEGACY_VERSIONED_SCRIPTS | ARCHIVE_ONLY
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SELECTED_FOR_EXECUTION.csv | 0.015 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_RAW.csv | 0.014 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/price/v17_6E_screened_universe_tickers.csv | 0.014 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- scripts/run_v17_7C_R1_manual_daily_with_raw105_audit.ps1 | 0.014 MB | OLD_EXPERIMENTAL_WRAPPERS | ARCHIVE_ONLY
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7F_raw105_latest_price_refresh.csv | 0.013 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/raw_universe_audit/v17_7F_raw105_latest_price_refresh.csv | 0.013 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- quant_git_hub_readme_v_18.md | 0.013 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7D_main_compute_delta_audit.csv | 0.012 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- outputs/v17/price/v17_6E_screened_universe_latest_prices.csv | 0.012 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_TOP_REVIEW.csv | 0.011 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+- archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v16_daily_auto_update_before_v17_4_dashboard_20260511_175841.ps1 | 0.010 MB | OLD_EXPERIMENTAL_WRAPPERS | ARCHIVE_ONLY
+- outputs/v17/raw105_decision/v17_8B_actionable_buy_candidates.csv | 0.010 MB | OLD_GENERATED_REPORTS | ARCHIVE_THEN_DELETE_AFTER_VERIFICATION
+
+## Top 50 Protected Exclusions
+
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/HPE.csv | 0.047 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/AAPL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ACM.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ACMR.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/AMAT.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/AMKR.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/AMZN.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/APH.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/AVGO.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/CAMT.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/COHU.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/CRM.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/CSCO.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/D.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/DELL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ECL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ENTG.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ETN.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ETR.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/FIX.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/FLEX.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/GLW.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/GNRC.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/GOOGL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/HUBB.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/INTC.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/IRDM.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/IYW.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/JBL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/KEYS.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/KLIC.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/LRCX.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/MKSI.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/MRVL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/MSFT.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/MU.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/NOW.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/NTAP.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/NVDA.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/NVT.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/NXPI.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/ORCL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/POWL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/PWR.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/QCOM.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/SMCI.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/SMH.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/SOXL.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/SOXX.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/prices/STX.csv | 0.046 MB | Versioned historical generated output is likely useful for debugging.
+
+## Recommendation
+
+- An archive-only apply step is worthwhile for the legacy scripts/wrappers and historical reports.
+- Keep the protected price-data and reference-tied material untouched.
+- Do not delete originals yet; archive verification should happen first for the generated reports.
+
+- READ_FIRST: outputs/v18/ops/V18_20F_READ_FIRST.txt
+- REPORT: outputs/v18/ops/V18_20F_CURRENT_LEGACY_ARCHIVE_PLAN_REPORT.md
+- PLAN_CSV: outputs/v18/ops/V18_20F_CURRENT_LEGACY_ARCHIVE_PLAN.csv
+- SUMMARY_CSV: outputs/v18/ops/V18_20F_CURRENT_ARCHIVE_GROUP_SUMMARY.csv
+- PROTECTED_EXCLUSIONS_CSV: outputs/v18/ops/V18_20F_CURRENT_ARCHIVE_PROTECTED_EXCLUSIONS.csv

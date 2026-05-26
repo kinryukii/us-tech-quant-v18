@@ -1,0 +1,3 @@
+﻿ticker,factor_merge_action,technical_merge_action,factor_schema_compatible,technical_schema_compatible,merge_allowed,blocker
+RDDT,APPEND,APPEND,TRUE,TRUE,TRUE,
+TLN,APPEND,APPEND,TRUE,TRUE,TRUE,

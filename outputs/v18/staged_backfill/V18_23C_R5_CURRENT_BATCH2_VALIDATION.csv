@@ -1,0 +1,34 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,Python compile.
+powershell_parse_check,PASS,0,PowerShell parse.
+required_outputs_exist_non_empty,PASS,0,Required outputs must exist and be non-empty.
+manifest_readable,PASS,0,Batch 2 staged manifest must be readable.
+combined_history_readable,PASS,0,Batch 2 staged combined file must be readable.
+batch_count_matches_fetch_rows,PASS,0,Quality audited ticker count must equal batch count.
+dry_run_plan_non_empty,PASS,0,Dry-run plan must exist and be non-empty.
+no_forbidden_files_modified,PASS,0,
+true_coverage_remains_false,PASS,0,Staged-only test.
+safety_external_data_fetched,PASS,0,Expected EXTERNAL_DATA_FETCHED=FALSE; actual FALSE.
+safety_staged_price_history_modified,PASS,0,Expected STAGED_PRICE_HISTORY_MODIFIED=FALSE; actual FALSE.
+safety_official_price_cache_modified,PASS,0,Expected OFFICIAL_PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_official_price_history_modified,PASS,0,Expected OFFICIAL_PRICE_HISTORY_MODIFIED=FALSE; actual FALSE.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,0,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_ledger_modified,PASS,0,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_rolling_scan_executed,PASS,0,Expected ROLLING_SCAN_EXECUTED=FALSE; actual FALSE.
+safety_staged_rolling_scan_retest_executed,PASS,0,Expected STAGED_ROLLING_SCAN_RETEST_EXECUTED=FALSE; actual FALSE.
+safety_official_decision_impact,PASS,0,Expected OFFICIAL_DECISION_IMPACT=NONE; actual NONE.
+safety_buy_permission_modified,PASS,0,Expected BUY_PERMISSION_MODIFIED=FALSE; actual FALSE.
+safety_auto_trade,PASS,0,Expected AUTO_TRADE=DISABLED; actual DISABLED.
+safety_auto_sell,PASS,0,Expected AUTO_SELL=DISABLED; actual DISABLED.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.
+safety_true_5day_unique_coverage_met,PASS,0,Expected TRUE_5DAY_UNIQUE_COVERAGE_MET=FALSE; actual FALSE.

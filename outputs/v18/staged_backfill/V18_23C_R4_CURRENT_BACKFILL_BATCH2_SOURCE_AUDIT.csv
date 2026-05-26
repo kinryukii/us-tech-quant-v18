@@ -1,0 +1,7 @@
+﻿source_name,source_path,exists,row_count,ticker_count,selected,notes
+R3_REMAINING_STALE,outputs/v18/rolling_coverage/V18_23C_R3_CURRENT_REMAINING_STALE_TICKERS.csv,TRUE,170,170,TRUE,Batch source priority scan.
+R3_COVERAGE_AUDIT,outputs/v18/rolling_coverage/V18_23C_R3_CURRENT_5DAY_COVERAGE_AUDIT.csv,TRUE,6,0,FALSE,Batch source priority scan.
+LEDGER,state/v18/rolling_coverage/V18_23B_ROLLING_SCAN_LEDGER.csv,TRUE,324,324,FALSE,Batch source priority scan.
+V24A_DATA_NOT_READY,outputs/v18/tier_migration/V18_24A_CURRENT_DATA_NOT_READY_OR_BLOCKED.csv,TRUE,221,221,FALSE,Batch source priority scan.
+V24B_DATA_NOT_READY,outputs/v18/tier_migration/V18_24B_CURRENT_OPERATOR_DATA_NOT_READY_SUMMARY.csv,TRUE,51,50,FALSE,Batch source priority scan.
+V23A_PLAN,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TRUE,324,324,FALSE,Batch source priority scan.

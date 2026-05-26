@@ -1,0 +1,7 @@
+﻿script_path,script_type,exists,parse_check_status,likely_usable_for_next_step,notes
+scripts/v18/v18_25A_R13_targeted_factor_pack_refresh_staged.py,FACTOR,TRUE,PY_AST_PARSE_OK,TRUE,Candidate source for R25B staged build planning; not executed by R25.
+scripts/v18/run_v18_25A_R13_targeted_factor_pack_refresh_staged.ps1,FACTOR,TRUE,PS_PARSE_NOT_CHECKED_IN_R25,TRUE,Candidate source for R25B staged build planning; not executed by R25.
+scripts/v18/v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py,TECHNICAL,TRUE,PY_AST_PARSE_OK,TRUE,Candidate source for R25B staged build planning; not executed by R25.
+scripts/v18/run_v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.ps1,TECHNICAL,TRUE,PS_PARSE_NOT_CHECKED_IN_R25,TRUE,Candidate source for R25B staged build planning; not executed by R25.
+scripts/v18/v18_21A_price_derived_factor_pack.py,FACTOR,TRUE,PY_AST_PARSE_OK,TRUE,Candidate source for R25B staged build planning; not executed by R25.
+scripts/v18/v18_6A_technical_timing_shadow.py,TECHNICAL,TRUE,PY_AST_PARSE_FAIL:SyntaxError,TRUE,Candidate source for R25B staged build planning; not executed by R25.

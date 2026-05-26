@@ -1,0 +1,2 @@
+﻿"CandidateRel","SourcePath","ArchivePath","ExistsBefore","Action","Status","Sha256","SizeBytes"
+"scripts\run_v17_7C_manual_daily_with_raw_universe_audit.ps1","D:\us-tech-quant\scripts\run_v17_7C_manual_daily_with_raw_universe_audit.ps1","D:\us-tech-quant\archive\deprecated\v18_5C_zero_runtime_archive_20260515_191705\scripts\run_v17_7C_manual_daily_with_raw_universe_audit.ps1","True","APPLY","ARCHIVED","6D347EE42C13BD3A48C522EDB44EDEB5A08CE5130CB67BA28F22781029A25576","7891"

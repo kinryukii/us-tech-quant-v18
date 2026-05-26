@@ -1,0 +1,44 @@
+param(
+    [string]$Root = "D:\us-tech-quant"
+)
+
+$ErrorActionPreference = "Stop"
+
+Write-Host ""
+Write-Host "=== V18.11E SHADOW FACTOR SUMMARY START ==="
+Write-Host "ROOT: $Root"
+Write-Host "MODE: SHADOW_ONLY"
+Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+Write-Host "AUTO_WEIGHT_CHANGE: DISABLED"
+Write-Host "AUTO_PROMOTION: DISABLED"
+Write-Host "AUTO_TRADE: DISABLED"
+Write-Host "OFFICIAL_TRADING_IMPACT: NONE"
+
+$Py = Join-Path $Root "scripts\v18\v18_11E_shadow_factor_summary.py"
+if (-not (Test-Path $Py)) {
+    throw "Missing Python script: $Py"
+}
+
+$VenvPy = Join-Path $Root ".venv\Scripts\python.exe"
+if (Test-Path $VenvPy) {
+    $Python = $VenvPy
+}
+else {
+    $Python = "python"
+}
+
+Write-Host "PYTHON: $Python"
+Write-Host "SCRIPT: $Py"
+
+& $Python -m py_compile $Py
+if ($LASTEXITCODE -ne 0) {
+    throw "PY_COMPILE_FAILED: $Py"
+}
+
+& $Python $Py --root $Root
+if ($LASTEXITCODE -ne 0) {
+    throw "V18_11E_SHADOW_FACTOR_SUMMARY_FAILED"
+}
+
+Write-Host ""
+Write-Host "=== V18.11E SHADOW FACTOR SUMMARY DONE ==="

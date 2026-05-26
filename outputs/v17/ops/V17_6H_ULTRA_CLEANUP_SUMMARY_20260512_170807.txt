@@ -1,0 +1,21 @@
+﻿V17.6H ULTRA CLEANUP SUMMARY
+Generated: 2026-05-12 17:08:09
+
+STATUS: OK
+DELETED_ITEM_COUNT: 10
+FAILED_DELETE_COUNT: 0
+APPROX_DELETED_MB: 20.17
+
+STABLE_SNAPSHOT_KEPT:
+D:\us-tech-quant\archive\stable\V17_6H_stable_manual_run_full_universe_latest_price_20260512_165345
+
+REPORT:
+D:\us-tech-quant\outputs\v17\ops\V17_6H_ULTRA_CLEANUP_REPORT_20260512_170807.csv
+
+NORMAL_MANUAL_COMMAND:
+Set-Location "D:\us-tech-quant"
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\run_v17_6F_manual_daily_full_universe_latest_price.ps1"
+
+NOTE:
+data\v16\prices and data\v16\prices_full were deleted as regenerable caches.
+The next manual run will refresh price data again.

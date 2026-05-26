@@ -1,0 +1,10 @@
+safety_check,status,notes
+FORWARD_TRACKER_UPGRADE_APPLIED is FALSE,PASS,Dry-run plan only; no protected files modified.
+FORWARD_TRACKER_MODIFIED is FALSE,PASS,Dry-run plan only; no protected files modified.
+SIGNAL_SNAPSHOT_MODIFIED is FALSE,PASS,Dry-run plan only; no protected files modified.
+SIMULATION_POSITION_MODIFIED is FALSE,PASS,Dry-run plan only; no protected files modified.
+PRICE_CACHE_MODIFIED is FALSE,PASS,Dry-run plan only; no protected files modified.
+EXTERNAL_DATA_FETCHED is FALSE,PASS,Dry-run plan only; no protected files modified.
+OFFICIAL_DECISION_IMPACT is NONE,PASS,Dry-run plan only; no protected files modified.
+AUTO_TRADE is DISABLED,PASS,Dry-run plan only; no protected files modified.
+AUTO_SELL is DISABLED,PASS,Dry-run plan only; no protected files modified.

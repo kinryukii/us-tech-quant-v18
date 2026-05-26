@@ -1,0 +1,11 @@
+﻿metric,value,notes
+status,WARN_V18_25A_R23C_ZERO_FULL_HISTORY_CANDIDATES,
+r23b_full_history_ready_expected,36,
+normalized_file_count,53,
+quality_gate_total_count,22,
+approved_full_history_candidate_count,0,
+partial_history_hold_count,17,
+empty_or_failed_hold_count,5,
+quality_review_needed_count,0,
+invalid_or_artifact_count,0,
+external_fetch_executed,FALSE,R23C is read-only.

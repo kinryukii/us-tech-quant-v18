@@ -1,0 +1,26 @@
+﻿field_name,field_group,source_layer,source_file,required_for_backtest,required_for_effect_claim,required_for_weight_change,leakage_risk,allowed_availability_timing,notes
+signal_snapshot_id,identity_keys,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,LOW,known_at_snapshot_date,Primary snapshot key.
+snapshot_date,timestamp_keys,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,HIGH,known_at_snapshot_date,Controls availability timing.
+ticker,identity_keys,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,LOW,known_at_snapshot_date,Security identifier.
+forward_tracker_link_key,identity_keys,V18.21D-R1,V18_21D_R1_CURRENT_UPGRADED_FORWARD_TRACKER_SHADOW.csv,TRUE,TRUE,TRUE,LOW,known_at_snapshot_date,Required for high-confidence outcome matching.
+planned_horizon,timestamp_keys,V18.21D-R1,V18_21D_R1_CURRENT_UPGRADED_FORWARD_TRACKER_SHADOW.csv,TRUE,TRUE,TRUE,LOW,defined_at_snapshot_date,Outcome horizon.
+planned_outcome_date,timestamp_keys,V18.21D-R1,V18_21D_R1_CURRENT_UPGRADED_FORWARD_TRACKER_SHADOW.csv,TRUE,TRUE,TRUE,HIGH,future_target_date_only,Must not reveal future price before maturity.
+factor_pack_score,raw_scores,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Candidate score input.
+composite_candidate_score,raw_scores,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Composite candidate input.
+price_derived_total_score,price_derived_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Price-derived summary.
+relative_strength_score,price_derived_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Factor exposure.
+buy_zone_score,price_derived_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Factor exposure.
+volume_confirmation_score,price_derived_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Factor exposure.
+volatility_risk_score,price_derived_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Factor exposure.
+technical_timing_score,technical_timing_factors,V18.6A/V18.21B-R1,V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Timing exposure.
+overheat_penalty,technical_timing_factors,V18.6A/V18.21B-R1,V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Overheat risk exposure.
+final_advisory_event_risk_coefficient,event_risk_factors,V18.21E-R1,V18_21E_R1_CURRENT_EVENT_ADJUSTED_CANDIDATES.csv,TRUE,FALSE,FALSE,HIGH,known_at_snapshot_date_and_advisory_only,Must remain advisory unless separately approved.
+market_regime_label,market_regime_factors,V18.21A-R4,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,TRUE,TRUE,MEDIUM,known_at_snapshot_date,Regime conditioning.
+forward_return_1d,forward_outcome_fields,V18.21D/G,future_research_dataset_only,TRUE,TRUE,TRUE,HIGH,available_after_outcome_date,Outcome field; currently unfilled.
+forward_return_3d,forward_outcome_fields,V18.21D/G,future_research_dataset_only,TRUE,TRUE,TRUE,HIGH,available_after_outcome_date,Outcome field; currently unfilled.
+forward_return_5d,forward_outcome_fields,V18.21D/G,future_research_dataset_only,TRUE,TRUE,TRUE,HIGH,available_after_outcome_date,Outcome field; currently unfilled.
+forward_return_10d,forward_outcome_fields,V18.21D/G,future_research_dataset_only,TRUE,TRUE,TRUE,HIGH,available_after_outcome_date,Outcome field; currently unfilled.
+forward_return_20d,forward_outcome_fields,V18.21D/G,future_research_dataset_only,TRUE,TRUE,TRUE,HIGH,available_after_outcome_date,Outcome field; currently unfilled.
+forward_return_status,forward_outcome_fields,V18.21D-R1,V18_21D_R1_CURRENT_UPGRADED_FORWARD_TRACKER_SHADOW.csv,TRUE,TRUE,TRUE,MEDIUM,known_after_fill_status_update,Must distinguish pending from filled.
+score_ready,eligibility_flags,V18.21B-R1,V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,FALSE,FALSE,LOW,known_at_snapshot_date,Eligibility flag.
+official_decision_impact,safety_flags,All,READ_FIRST outputs,TRUE,TRUE,TRUE,LOW,always_NONE_for_design,Must remain NONE.

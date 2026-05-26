@@ -1,0 +1,11 @@
+﻿metric,count,notes
+TARGET_TICKER_COUNT,52,Target tickers selected from R4 dry-run readiness source.
+TECHNICAL_REFRESH_ATTEMPT_COUNT,52,One dry-run refresh attempt per target ticker.
+TECHNICAL_REFRESH_SUCCESS_COUNT,52,Rows with no technical refresh blocker.
+TECHNICAL_REFRESH_FAIL_COUNT,0,Rows that carried a blocker or missing-data condition.
+FULL_COMPATIBLE_COUNT,0,"Rows using the exact current V18.6A formula set, including external overlay. Expected zero in local-only dry-run."
+PARTIAL_COMPATIBLE_COUNT,52,Rows using local V18.6A-compatible indicator logic without the external VIX overlay.
+INSUFFICIENT_HISTORY_COUNT,0,Rows with missing required price history or columns.
+OUTPUT_ROW_COUNT,52,Rows written to the staged dry-run technical output.
+FORMULA_COMPATIBILITY_STATUS,PARTIAL_COMPATIBLE,Local-only compatibility assessment for the staged dry-run.
+EXACT_V18_6A_FORMULA_REUSED,FALSE,False because the external VIX overlay was not fetched.

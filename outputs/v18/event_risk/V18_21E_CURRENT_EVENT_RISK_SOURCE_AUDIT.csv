@@ -1,0 +1,10 @@
+﻿source_name,source_path,source_exists,modified_time,parsed_row_count,parsed_event_count,parsed_ticker_count,fields_used,source_status,notes
+v16_event_calendar,D:\us-tech-quant\state\v16\event_calendar.csv,TRUE,2026-05-19T10:52:37,5,5,5,event_date;ticker;company;event_name;event_type;risk_level;action;source_quality;notes;updated_at,PARSED,
+v18_cloud_earnings_event_calendar,D:\us-tech-quant\state\v18\cloud_earnings_event_calendar.csv,TRUE,2026-05-19T10:52:37,5,5,5,event_date;ticker;company;event_name;event_type;risk_level;action;source_quality;notes;updated_at,PARSED,
+v18_risk_dashboard_dir,D:\us-tech-quant\outputs\v18\risk_dashboard,FALSE,,0,0,0,,MISSING,
+v18_read_center_risk_dashboard,D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_RISK_DASHBOARD.md,FALSE,,0,0,0,,MISSING,
+v18_daily_packet_risk_dashboard,D:\us-tech-quant\outputs\v18\read_center\daily_packet\V18_CURRENT_RISK_DASHBOARD.md,TRUE,2026-05-20T15:13:50,1,0,0,text_scan_hard_lock_patterns,FOUND_TEXT_SCANNED,Text source scanned for hard-lock context; no calendar rows fabricated.
+v18_19A_read_first,D:\us-tech-quant\outputs\v18\ops\V18_19A_READ_FIRST.txt,TRUE,2026-05-20T15:13:50,1,0,0,text_scan_hard_lock_patterns,FOUND_TEXT_SCANNED,Text source scanned for hard-lock context; no calendar rows fabricated.
+v18_16K_R2_stable_read_first,D:\us-tech-quant\outputs\v18\ops\V18_16K_R2_STABLE_READ_FIRST.txt,TRUE,2026-05-20T15:42:29,1,0,0,text_scan_hard_lock_patterns,FOUND_TEXT_SCANNED,Text source scanned for hard-lock context; no calendar rows fabricated.
+v18_21B_R1_stable_read_first,D:\us-tech-quant\outputs\v18\ops\V18_21B_R1_STABLE_READ_FIRST.txt,TRUE,2026-05-20T16:59:26,1,0,0,text_scan_hard_lock_patterns,FOUND_TEXT_SCANNED,Text source scanned for hard-lock context; no calendar rows fabricated.
+v18_21C_R2_stable_read_first,D:\us-tech-quant\outputs\v18\ops\V18_21C_R2_STABLE_READ_FIRST.txt,TRUE,2026-05-20T17:41:53,1,0,0,text_scan_hard_lock_patterns,FOUND_TEXT_SCANNED,Text source scanned for hard-lock context; no calendar rows fabricated.

@@ -1,0 +1,16 @@
+category,check_name,status,value,detail
+alignment,latest_recommendation_snapshot_date,PASS,2026-05-24,Latest snapshot from recommendation snapshot ledger
+alignment,snapshot_matches_latest_freeze_date,PASS,TRUE,snapshot=2026-05-24 freeze=2026-05-24
+alignment,latest_freeze_run_id,PASS,V18_25A_R21_20260524_170725,from R29A/R29B if available
+alignment,latest_full_freeze_run_id,PASS,V18_25A_R21_20260524_170725,directly selected from signal freeze ledger
+alignment,same_day_multiple_freeze_warning,PASS,FALSE,multiple full freezes on the same signal date
+backtest,forward_fillable_total,WARN,0,R29A/R29B forward-return fillability
+backtest,full_recommendation_tier_backtest_ready_now,PASS,TRUE,current system readiness
+forward,forward_1d_fillable_count,WARN,0,R29A
+forward,forward_3d_fillable_count,WARN,0,R29A
+forward,forward_5d_fillable_count,WARN,0,R29A
+forward,forward_10d_fillable_count,WARN,0,R29A
+forward,forward_20d_fillable_count,WARN,0,R29A
+safety,auto_trade,PASS,DISABLED,No trading actions are enabled.
+safety,auto_sell,PASS,DISABLED,No trading actions are enabled.
+safety,official_decision_impact,PASS,NONE,Read-only control center.

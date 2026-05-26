@@ -1,0 +1,44 @@
+﻿{
+    "version":  "V18.1A",
+    "created_at":  "2026-05-13 16:30:39",
+    "purpose":  "Control how research-only factors can move into official trading logic.",
+    "default_status_flow":  [
+                                "RESEARCH_ONLY",
+                                "BACKTEST_PASSED",
+                                "SHADOW_RUNNING",
+                                "PROMOTED",
+                                "WATCH_DEGRADING",
+                                "DISABLED",
+                                "REJECTED"
+                            ],
+    "hard_rules":  {
+                       "no_research_factor_affects_official_decision":  true,
+                       "no_factor_promotion_without_validation_report":  true,
+                       "no_factor_promotion_without_shadow_period":  true,
+                       "no_factor_promotion_without_manual_review":  true,
+                       "initial_official_weight_max":  0.1
+                   },
+    "validation_required":  {
+                                "rank_ic":  true,
+                                "quantile_forward_returns":  true,
+                                "top_vs_bottom_spread":  true,
+                                "top_vs_benchmark":  true,
+                                "drawdown_check":  true,
+                                "turnover_check":  true,
+                                "missing_data_audit":  true,
+                                "lookahead_audit":  true,
+                                "correlation_with_existing_factors":  true
+                            },
+    "shadow_required":  {
+                            "minimum_trading_days":  30,
+                            "preferred_trading_days":  60,
+                            "official_decision_impact":  "NONE"
+                        },
+    "benchmarks":  [
+                       "QQQ",
+                       "XLK",
+                       "SMH",
+                       "RAW105_EQUAL_WEIGHT",
+                       "CURRENT_V17_CANDIDATE_POOL"
+                   ]
+}

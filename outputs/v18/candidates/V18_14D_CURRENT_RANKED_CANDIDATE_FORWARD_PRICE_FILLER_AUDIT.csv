@@ -1,0 +1,7 @@
+﻿metric,value
+tracker_path,D:\us-tech-quant\state\v18\candidate_forward_tracker\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv
+max_rows,0
+use_yfinance,FALSE
+allow_local_price_only,TRUE
+duplicate_count,0
+price_source_count,106

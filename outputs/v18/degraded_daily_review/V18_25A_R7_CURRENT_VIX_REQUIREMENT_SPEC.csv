@@ -1,0 +1,2 @@
+﻿required_proxy_name,required_date_range,required_columns,minimum_history_days,must_be_exact_vix,substitute_allowed,qqq_spy_benchmark_only,vixy_vxx_uvxy_warning_only,source_trace
+VIX/^VIX,At least 120 trading days for the V18.6A overlay path; ~252 trading days preferred for factor proxy completeness.,date + close minimum; factor proxy_summary also uses high and volume; technical overlay needs OHLCV.,252,TRUE,WARNING_ONLY_FOR_STAGED_RESEARCH,TRUE,TRUE,scripts/v18/v18_21A_price_derived_factor_pack.py and scripts/v18/v18_6A_technical_timing_shadow.py

@@ -1,0 +1,7 @@
+﻿decision_key,decision_value,count,notes
+full_history_integration_candidates,FULL_HISTORY_INTEGRATION_CANDIDATE,59,Eligible for future official price cache integration.
+price_only_partial_holds,PRICE_ONLY_PARTIAL_HOLD,5,Hold out until full history is available.
+invalid_artifact_excludes,INVALID_ARTIFACT_EXCLUDE,1,Non-ticker artifact excluded.
+quality_review_holds,QUALITY_REVIEW_HOLD,0,Manual review needed.
+fetch_fail_holds,FETCH_FAIL_HOLD,0,Fetch failure.
+fetch_empty_holds,FETCH_EMPTY_HOLD,0,Empty fetch.

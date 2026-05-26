@@ -1,0 +1,4 @@
+﻿priority,repair_id,repair_recommendation,affected_count,rationale,allowed_now
+1,R4_SPLIT_SUCCESS_STATUS,split partial local scan success from full factor-ready success,0,Allows local price coverage to count separately from full factor readiness.,FALSE
+2,SOURCE_DETECTION_REPAIR,patch executor source detection,0,Some tickers may have local evidence but were skipped by strict price-cache criteria.,FALSE
+3,STAGED_BACKFILL_LATER,require staged backfill later,65,No local price evidence is available for these tickers.,FALSE

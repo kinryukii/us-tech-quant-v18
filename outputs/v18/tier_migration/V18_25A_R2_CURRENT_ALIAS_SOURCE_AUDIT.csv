@@ -1,0 +1,5 @@
+﻿candidate_name,candidate_path,exists,row_count,has_ticker,has_current_tier,has_previous_tier,has_movement_type,has_score,selected,selection_score,selection_reason,notes
+V18_24A_CURRENT_TIER_MOVEMENT_REPORT.csv,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_TIER_MOVEMENT_REPORT.csv,TRUE,324,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,39,selected:ticker_level_csv,
+V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv,TRUE,324,TRUE,TRUE,FALSE,FALSE,TRUE,FALSE,29,ticker_level_csv,
+V18_24A_CURRENT_DYNAMIC_SCORE_TIER_MIGRATION_AUDIT.md,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_DYNAMIC_SCORE_TIER_MIGRATION_AUDIT.md,TRUE,27,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,ticker_level_csv,
+V18_24B_CURRENT_TIER_MIGRATION_OPERATOR_HOMEPAGE.md,D:\us-tech-quant\outputs\v18\operator_homepage\V18_24B_CURRENT_TIER_MIGRATION_OPERATOR_HOMEPAGE.md,TRUE,82,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,0,ticker_level_csv,

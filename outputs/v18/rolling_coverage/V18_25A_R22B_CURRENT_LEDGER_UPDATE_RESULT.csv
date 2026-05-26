@@ -1,0 +1,66 @@
+﻿ticker,local_validation_passed,ledger_row_found,ledger_update_attempted,ledger_update_success,previous_last_success_scan_date,new_last_success_scan_date,previous_last_scan_status,new_last_scan_status,error_message
+AMC,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+APLD,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+BLSH,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+BW,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+BYND,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CAI,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CDTX,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CFLT,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CHYM,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+COG,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+COGT,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CRCL,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+CVNA,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+DBVT,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+FCNCA,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+FIGR,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+GEMI,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+HOOD,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+HTZ,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+INSM,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+JBS,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+JFROG,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+KLAR,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+LINE,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+MNTN,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+MPW,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+NVAX,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+PONY,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+RDDT,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+SOLS,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+STUB,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+TICKERS,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Invalid ticker-like symbol.
+TLN,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+UPST,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+USFD,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+V,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+VECO,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+VEEV,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+VIAV,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+VIST,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+VMC,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WAB,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WDAY,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WHR,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WING,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WLK,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WOLF,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WULF,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WVE,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WWD,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+WYFI,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+XENE,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+XLF,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+XLK,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+XPO,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+XYZ,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+YPF,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+Z,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+ZG,False,True,False,False,,,SKIPPED_NO_LOCAL_DATA,SKIPPED_NO_LOCAL_DATA,Local price cache file missing.
+AA,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+AAL,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+ABR,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+ADBE,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+ADMA,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+ADSK,True,True,True,True,2026-05-21,2026-05-22,SUCCESS_LOCAL_PRICE_FULL_HISTORY,SUCCESS_LOCAL_PRICE_FULL_HISTORY,

@@ -1,0 +1,4 @@
+﻿source_path,source_exists,modified_time,parsed_ticker_count,selected_as_current_universe_source,selected_reason,notes
+D:\us-tech-quant\outputs\v18\universe\V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TRUE,2026-05-20T15:13:40,325,TRUE,PRIMARY_V18_CURRENT_ROLLING_UNIVERSE_STATE,OK
+D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,TRUE,2026-05-20T15:13:40,325,FALSE,,OK
+D:\us-tech-quant\state\v18\raw105_universe_for_factor_lab.csv,TRUE,2026-05-13T16:36:09,105,FALSE,,OK

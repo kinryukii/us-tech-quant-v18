@@ -1,0 +1,7 @@
+﻿priority,action_id,action_name,recommended_now,preconditions,allowed_now,requires_explicit_approval,modifies_production,fetches_external_data,expected_benefit,risk_level,notes
+1,V18_22C_STABLE_SNAPSHOT,V18.22C stable snapshot,TRUE,V18.22C validation pass,TRUE,FALSE,FALSE,FALSE,Preserve packet writer state,LOW,Recommended immediate next step.
+2,V18_22D_DAILY_RESEARCH_README,Daily research README,OPTIONAL_AFTER_STABLE,V18.22C stable,TRUE,FALSE,FALSE,FALSE,Short daily summary,LOW,Read-only.
+3,V18_21H_R2_ACTUAL_STAGED_FETCH_IMPORT,Actual staged fetch/import,FALSE,Explicit approval,FALSE,TRUE,FALSE,TRUE,Improve coverage,MEDIUM,Do not run automatically.
+4,WAIT_FOR_FORWARD_HORIZON_MATURITY,Wait for forward horizon maturity,VALID_OPTION,None,TRUE,FALSE,FALSE,FALSE,Avoid premature fills,LOW,Safe pause.
+5,V18_21G_R1_FILLED_SHADOW_AFTER_MATURITY,Filled shadow after maturity,FALSE_WAIT,Matured horizons and approval,FALSE,TRUE,FALSE,FALSE,Enable outcome research,MEDIUM,Future only.
+6,PAUSE_AFTER_STABLE,Pause after stable,VALID_OPTION,Stable snapshot complete,TRUE,FALSE,FALSE,FALSE,Avoid premature changes,LOW,Safe stopping point.

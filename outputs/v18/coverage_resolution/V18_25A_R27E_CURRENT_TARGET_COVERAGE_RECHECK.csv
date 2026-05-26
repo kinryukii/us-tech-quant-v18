@@ -1,0 +1,3 @@
+﻿ticker,price_cache_present,price_cache_row_count,rolling_ledger_success,rolling_last_success_scan_date,coverage_recheck_status,notes
+RDDT,TRUE,545,TRUE,2026-05-23,PASS,
+TLN,TRUE,746,TRUE,2026-05-23,PASS,

@@ -1,0 +1,3 @@
+﻿primary_root_cause,count,total_mb,note
+STATE_CONFIG_CACHE_RISK,223,24.676,Price/cache-like rows remain medium pending a separate retention rule.
+MISSING_METADATA,1,0.002,One review item lacks sufficient certainty for automatic handling.

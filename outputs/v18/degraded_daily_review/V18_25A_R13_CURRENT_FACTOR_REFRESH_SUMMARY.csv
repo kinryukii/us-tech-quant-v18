@@ -1,0 +1,10 @@
+﻿metric,value,notes
+target_ticker_count,52,Discovered from R3 blocker audit.
+factor_refresh_success_count,52,Generated staged factor rows.
+factor_refresh_fail_count,0,Blocked staged rows.
+formula_compatibility_status,CURRENT_FACTOR_COMPATIBLE_LOCAL_REIMPLEMENTATION,Local reimplementation of current RAW105 price-derived ranking logic.
+exact_current_factor_formula_reused,FALSE,Original current script is not called; it has broad current-output side effects.
+vix_included,TRUE,VIX status=OK; regime=VIX_NORMAL.
+merge_ready_count,52,Ready for separate merge task.
+merge_blocked_count,0,Blocked from merge.
+forbidden_file_modified,FALSE,

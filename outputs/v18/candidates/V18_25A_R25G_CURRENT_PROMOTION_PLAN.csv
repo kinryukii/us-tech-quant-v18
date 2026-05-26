@@ -1,0 +1,9 @@
+﻿plan_item,status,expected_value,actual_value,promotion_allowed,reason
+preview_file_exists,PASS,TRUE,TRUE,TRUE,
+preview_row_count,PASS,250,250,TRUE,
+r25f_targets_present_in_preview,PASS,93,93,TRUE,
+r25f_downstream_blockers,PASS,0,0,TRUE,
+r25f_official_rank_allowed,PASS,93,93,TRUE,
+preview_schema_compatible_with_current,PASS,TRUE,TRUE,TRUE,
+preview_duplicate_tickers,PASS,0,0,TRUE,
+preview_score_numeric,PASS,0,0,TRUE,

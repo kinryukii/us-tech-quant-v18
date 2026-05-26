@@ -1,0 +1,12 @@
+﻿source_name,source_path,exists,row_count,ticker_count,required,notes
+r4_read_first,outputs/v18/ops/V18_23C_R4_READ_FIRST.txt,TRUE,1,0,TRUE,Batch 2 summary context.
+staged_manifest,data/v18/staged_backfill/V18_23C_BATCH2/MANIFEST.csv,TRUE,66,66,TRUE,Staged batch 2 manifest.
+staged_combined_history,data/v18/staged_backfill/V18_23C_BATCH2/V18_23C_BATCH2_STAGED_PRICE_HISTORY.csv,TRUE,72087,62,TRUE,Combined staged history.
+r4_fetch_result,outputs/v18/staged_backfill/V18_23C_R4_CURRENT_BACKFILL_BATCH2_FETCH_RESULT.csv,TRUE,65,65,TRUE,Batch 2 fetch summary.
+r4_scan_retest,outputs/v18/staged_backfill/V18_23C_R4_CURRENT_STAGED_BATCH2_SCAN_RETEST_RESULT.csv,TRUE,65,65,TRUE,Batch 2 staged retest summary.
+r3_remaining_stale,outputs/v18/rolling_coverage/V18_23C_R3_CURRENT_REMAINING_STALE_TICKERS.csv,TRUE,170,170,FALSE,Remaining stale source.
+r2_held_out,outputs/v18/staged_backfill/V18_23C_R2_CURRENT_HELD_OUT_TICKERS.csv,TRUE,14,14,FALSE,Held-out context.
+r3_ledger_snapshot,outputs/v18/rolling_coverage/V18_23C_R3_CURRENT_SCAN_LEDGER_SNAPSHOT.csv,TRUE,324,324,FALSE,Coverage evidence context.
+ledger,state/v18/rolling_coverage/V18_23B_ROLLING_SCAN_LEDGER.csv,TRUE,324,324,FALSE,Read-only evidence context.
+v24a_data_not_ready,outputs/v18/tier_migration/V18_24A_CURRENT_DATA_NOT_READY_OR_BLOCKED.csv,TRUE,221,221,FALSE,Tier migration context.
+v24b_data_not_ready,outputs/v18/tier_migration/V18_24B_CURRENT_OPERATOR_DATA_NOT_READY_SUMMARY.csv,TRUE,51,51,FALSE,Operator homepage context.

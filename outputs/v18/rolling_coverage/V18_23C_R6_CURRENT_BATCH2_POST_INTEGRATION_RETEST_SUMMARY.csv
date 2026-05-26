@@ -1,0 +1,4 @@
+﻿metric,value,notes
+post_integration_local_price_success_count,52,Read from official cache only.
+post_integration_full_history_ready_count,52,Row-count threshold >= 500.
+post_integration_retest_success_ratio,1.000000,Local price success over attempted tickers.

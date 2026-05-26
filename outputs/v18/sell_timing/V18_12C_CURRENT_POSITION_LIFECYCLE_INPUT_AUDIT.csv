@@ -1,0 +1,11 @@
+﻿snapshot_date,search_root,source_file,exists,file_type,row_count,column_count,parse_status,position_like,open_position_count,used_for_lifecycle_context,note
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_PAPER_POSITIONS.csv,YES,csv,0,10,OK,YES,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_PAPER_TRADE_LOG.csv,YES,csv,4,10,OK,YES,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_ACCOUNT.csv,YES,csv,1,5,OK,NO,0,NO,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,YES,csv,93,57,OK,NO,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_9A_CURRENT_SIM_CANDIDATE_TRACKER.md,YES,md,0,0,SKIPPED_NON_CSV,NO,0,NO,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_PAPER_PNL.csv,YES,csv,3,11,OK,NO,0,NO,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_PAPER_POSITIONS.csv,YES,csv,0,10,OK,YES,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_PAPER_TRADE_LOG.csv,YES,csv,4,10,OK,YES,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,YES,csv,93,57,OK,NO,0,YES,POSITION_LIFECYCLE_DISCOVERY
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv,YES,csv,31,44,OK,NO,0,YES,POSITION_LIFECYCLE_DISCOVERY

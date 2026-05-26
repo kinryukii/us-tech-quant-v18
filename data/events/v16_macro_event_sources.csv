@@ -1,0 +1,6 @@
+﻿source_id,event_type,source_name,url,enabled,auto_merge,notes
+BLS_CPI,CPI,BLS CPI schedule,https://www.bls.gov/schedule/news_release/cpi.htm,TRUE,FALSE,best-effort staging only in V16.17.0
+BLS_NFP,NFP,BLS Employment Situation schedule,https://www.bls.gov/schedule/news_release/empsit.htm,TRUE,FALSE,best-effort staging only in V16.17.0
+BLS_PPI,PPI,BLS PPI schedule,https://www.bls.gov/schedule/news_release/ppi.htm,TRUE,FALSE,best-effort staging only in V16.17.0
+FED_FOMC,FOMC,Federal Reserve FOMC calendars,https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm,TRUE,FALSE,best-effort staging only in V16.17.0
+BEA_PCE,PCE,BEA news release schedule,https://www.bea.gov/news/schedule,TRUE,FALSE,best-effort staging only in V16.17.0

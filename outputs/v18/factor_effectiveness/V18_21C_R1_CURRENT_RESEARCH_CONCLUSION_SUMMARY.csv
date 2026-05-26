@@ -1,0 +1,12 @@
+conclusion_area,conclusion_status,evidence_level,effect_claim_allowed,production_change_allowed,summary,recommended_next_step
+FACTOR_PACK_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+TECHNICAL_TIMING_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+PRICE_DERIVED_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+RELATIVE_STRENGTH_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+BUY_ZONE_DISTANCE_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+OVERHEAT_PENALTY_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+VOLUME_CONFIRMATION_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+MARKET_REGIME_EFFECTIVENESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,20 matched forward samples; effect claim remains disallowed.,Increase matched forward-return coverage and bucket balance.
+FORWARD_OUTCOME_MATCH_QUALITY,PRELIMINARY_ONLY,LOW,FALSE,FALSE,"High=0, medium=0, low=20.",Add signal_snapshot_id or signal-date links to forward outcome sources.
+SAMPLE_MATURITY,PRELIMINARY_ONLY,LOW,FALSE,FALSE,"Mature horizons=0, preliminary=1.",Wait for more 3D/5D/10D/20D outcomes.
+SIMULATION_RESEARCH_READINESS,PRELIMINARY_ONLY,LOW,FALSE,FALSE,31 rows are simulation-analysis ready.,Use readiness filters; do not alter simulation state.

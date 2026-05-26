@@ -1,0 +1,7 @@
+﻿check,status,value,notes
+plan_exists,PASS,D:\us-tech-quant\outputs\v18\rolling_coverage\V18_25A_R22_CURRENT_MULTI_RUN_REFRESH_PLAN.csv,
+ledger_exists,PASS,D:\us-tech-quant\state\v18\rolling_coverage\V18_23B_ROLLING_SCAN_LEDGER.csv,
+selected_tickers_in_continuation_state,PASS,0,
+all_eligible_never_success_in_plan,PASS,59/59,
+bucket_inference,PASS,0,
+plan_priority_integrity_status,PASS,,

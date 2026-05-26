@@ -1,0 +1,253 @@
+﻿ticker,rank,composite_candidate_score,company_name,primary_theme,secondary_theme,role_bucket,manual_review_required,notes
+BLTE,34,34.247077,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+TEVA,46,32.389117,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+COGT,53,31.722303,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+RSP,63,29.841267,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+INSM,71,28.991239,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+WVE,80,27.544222,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+PSIX,84,26.917594,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+RERE,91,24.683748,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+STG,95,22.577206,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+RBLX,96,22.031738,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+OLMA,98,20.556595,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+ARGT,112,-5.767693,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+APG,113,-6.092308,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+ALM,212,-100.800308,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+NAMS,247,-155.000923,,UNKNOWN,,,TRUE,Seeded by V18.28A without external data; manual classification required.
+VIAV,1,51.800559,Viavi Solutions Inc.,DATA_INFRASTRUCTURE,Network test and optical technology,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SITM,2,51.403528,SiTime Corporation,SEMICONDUCTOR,Precision timing semiconductors,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TSEM,3,50.428133,Tower Semiconductor Ltd.,SEMICONDUCTOR,Specialty semiconductor foundry,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+STM,4,49.556907,STMicroelectronics N.V.,SEMICONDUCTOR,Auto and industrial semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BW,5,47.521200,Babcock & Wilcox Enterprises Inc.,POWER_INFRASTRUCTURE,Power and environmental equipment,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PLUG,6,46.199608,Plug Power Inc.,ENERGY,Hydrogen fuel cells,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TTMI,7,43.509206,TTM Technologies Inc.,ELECTRONICS_SUPPLY_CHAIN,Printed circuit boards,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TWLO,8,41.763811,Twilio Inc.,SOFTWARE,Cloud communications software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+HTZ,9,40.914843,Hertz Global Holdings Inc.,TRANSPORTATION,Car rental,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PUMP,10,40.669884,ProPetro Holding Corp.,ENERGY,Oilfield services,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+OLPX,11,40.593772,Olaplex Holdings Inc.,CONSUMER,Beauty products,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+APLD,12,40.362536,Applied Digital Corporation,AI_INFRASTRUCTURE,AI data centers,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+U,13,39.897302,Unity Software Inc.,SOFTWARE,Game engine and real-time 3D software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SMTC,14,39.742207,Semtech Corporation,SEMICONDUCTOR,Analog and mixed-signal semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SEI,15,39.144581,SolarEdge Technologies Inc.,ENERGY,Solar power electronics,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SATS,16,38.622888,EchoStar Corporation,DATA_INFRASTRUCTURE,Satellite communications,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RVMD,17,38.438059,Revolution Medicines Inc.,HEALTHCARE,Oncology biotechnology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+XYZ,18,38.326374,Block Inc.,FINTECH,Payments and financial software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WULF,19,38.015944,TeraWulf Inc.,CRYPTO_BETA,Bitcoin mining,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+QSR,20,37.694858,Restaurant Brands International Inc.,CONSUMER,Restaurants,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+XENE,21,37.636994,Xenon Pharmaceuticals Inc.,HEALTHCARE,Neurology biotechnology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TWST,22,37.448987,Twist Bioscience Corporation,HEALTHCARE,Synthetic biology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RIOT,23,36.503542,Riot Platforms Inc.,CRYPTO_BETA,Bitcoin mining,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ROKU,24,36.420390,Roku Inc.,INTERNET_PLATFORM,Streaming platform,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+UNH,25,36.332522,UnitedHealth Group Incorporated,HEALTHCARE,Managed care,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VIST,26,36.042571,Vista Energy S.A.B. de C.V.,ENERGY,Oil and gas exploration,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+DBVT,27,35.851684,DBV Technologies S.A.,HEALTHCARE,Biotechnology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+XPO,28,35.726432,XPO Inc.,TRANSPORTATION,Freight transportation,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WLK,29,35.644882,Westlake Corporation,INDUSTRIAL,Chemicals and building products,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PTON,30,34.719287,Peloton Interactive Inc.,CONSUMER,Connected fitness,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PCT,31,34.600968,PureCycle Technologies Inc.,INDUSTRIAL,Recycled plastics,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+UPST,32,34.519048,Upstart Holdings Inc.,FINTECH,AI lending platform,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CVNA,33,34.321612,Carvana Co.,ECOMMERCE,Online used autos,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BYND,35,33.941802,Beyond Meat Inc.,CONSUMER,Plant-based food,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RNG,36,33.774110,RingCentral Inc.,SOFTWARE,Cloud communications,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PTGX,37,33.581955,Protagonist Therapeutics Inc.,HEALTHCARE,Biotechnology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+USFD,38,33.542380,US Foods Holding Corp.,CONSUMER,Food distribution,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SFIX,39,33.536378,Stitch Fix Inc.,ECOMMERCE,Online apparel retail,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WAB,40,33.445361,Westinghouse Air Brake Technologies Corporation,TRANSPORTATION,Rail equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SNPS,41,32.881778,Synopsys Inc.,SOFTWARE,Electronic design automation,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VMC,42,32.809491,Vulcan Materials Company,INDUSTRIAL,Construction aggregates,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PYPL,43,32.785338,PayPal Holdings Inc.,FINTECH,Digital payments,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SHW,44,32.689895,Sherwin-Williams Company,CONSUMER,Paint and coatings,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RDDT,45,32.457146,Reddit Inc.,INTERNET_PLATFORM,Social platform,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SFM,47,32.322369,Sprouts Farmers Market Inc.,CONSUMER,Grocery retail,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WWD,48,32.304956,Woodward Inc.,INDUSTRIAL,Aerospace and industrial controls,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ECL,49,32.264952,Ecolab Inc.,INDUSTRIAL,Water hygiene and services,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+UBER,50,32.166154,Uber Technologies Inc.,TRANSPORTATION,Mobility and delivery platform,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PINS,51,32.146805,Pinterest Inc.,INTERNET_PLATFORM,Social discovery advertising,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VEEV,52,31.947966,Veeva Systems Inc.,SOFTWARE,Life sciences cloud software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PCOR,54,31.292054,Procore Technologies Inc.,SOFTWARE,Construction management software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+QS,55,31.180681,QuantumScape Corporation,ENERGY,Solid-state batteries,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PI,56,30.652828,Impinj Inc.,SEMICONDUCTOR,RFID semiconductors,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NVAX,57,30.438120,Novavax Inc.,HEALTHCARE,Vaccines,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TTD,58,30.316083,The Trade Desk Inc.,SOFTWARE,Adtech platform,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+YPF,59,30.133517,YPF Sociedad Anonima,ENERGY,Oil and gas,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PDD,60,30.086842,PDD Holdings Inc.,ECOMMERCE,China e-commerce,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PFGC,61,30.020483,Performance Food Group Company,CONSUMER,Food distribution,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ZG,62,30.005827,Zillow Group Inc.,INTERNET_PLATFORM,Real estate marketplace,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+Z,64,29.761568,Zillow Group Inc.,INTERNET_PLATFORM,Real estate marketplace,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FCNCA,65,29.737042,First Citizens BancShares Inc.,FINTECH,Banking,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AMC,66,29.608772,AMC Entertainment Holdings Inc.,CONSUMER,Movie theaters,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+V,67,29.501591,Visa Inc.,FINTECH,Payments network,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TIGR,68,29.475559,UP Fintech Holding Limited,FINTECH,Online brokerage,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+XLF,69,29.281688,Financial Select Sector SPDR Fund,FINTECH,Financial sector ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SCCO,70,29.162130,Southern Copper Corporation,INDUSTRIAL,Copper mining,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TTWO,72,28.820733,Take-Two Interactive Software Inc.,CONSUMER,Video games,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SCHW,73,28.545088,Charles Schwab Corporation,FINTECH,Brokerage and wealth,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SHOP,74,28.523376,Shopify Inc.,ECOMMERCE,Merchant commerce platform,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TLN,75,28.181930,Talen Energy Corporation,POWER_INFRASTRUCTURE,Power generation,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+HUBB,76,28.077904,Hubbell Incorporated,POWER_INFRASTRUCTURE,Electrical and utility products,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RTX,77,28.051253,RTX Corporation,INDUSTRIAL,Aerospace and defense,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TEAM,78,27.925391,Atlassian Corporation,SOFTWARE,Collaboration and developer software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PM,79,27.646466,Philip Morris International Inc.,DEFENSIVE,Tobacco,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RKT,81,27.347766,Rocket Companies Inc.,FINTECH,Mortgage origination,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WHR,82,27.321762,Whirlpool Corporation,CONSUMER,Home appliances,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+UAL,83,27.184506,United Airlines Holdings Inc.,TRANSPORTATION,Airlines,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PATH,85,26.690265,UiPath Inc.,SOFTWARE,Automation software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+HOOD,86,26.689519,Robinhood Markets Inc.,FINTECH,Brokerage and crypto trading,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PGNY,87,26.025378,Progyny Inc.,HEALTHCARE,Fertility benefits,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WDAY,88,25.641569,Workday Inc.,SOFTWARE,Human capital and finance software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SE,89,25.111539,Sea Limited,INTERNET_PLATFORM,"Gaming, e-commerce and fintech",SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+OKTA,90,24.779580,Okta Inc.,CYBERSECURITY,Identity security,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+RH,92,24.578681,RH,CONSUMER,Luxury home furnishings,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WING,93,22.868124,Wingstop Inc.,CONSUMER,Restaurants,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+OPCH,94,22.641466,Option Care Health Inc.,HEALTHCARE,Home infusion services,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SPOT,97,21.079522,Spotify Technology S.A.,INTERNET_PLATFORM,Audio streaming,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VST,99,17.980000,Vistra Corp.,POWER_INFRASTRUCTURE,Power generation,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ETR,100,17.294857,Entergy Corporation,DEFENSIVE,Regulated utility,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+APH,101,12.645714,Amphenol Corporation,ELECTRONICS_SUPPLY_CHAIN,Connectors and interconnect,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+META,102,7.007619,Meta Platforms Inc.,INTERNET_PLATFORM,Social platform and AI,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ACM,103,6.876190,AECOM,INDUSTRIAL,Infrastructure engineering,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BALL,104,6.216308,Ball Corporation,CONSUMER,Packaging,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SPY,105,5.284000,SPDR S&P 500 ETF Trust,DEFENSIVE,Broad market ETF,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NU,106,4.244307,Nu Holdings Ltd.,FINTECH,Digital banking,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MSFT,107,3.381714,Microsoft Corporation,SOFTWARE,Cloud and software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MCK,108,1.508616,McKesson Corporation,HEALTHCARE,Drug distribution,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ETN,109,1.485143,Eaton Corporation plc,POWER_INFRASTRUCTURE,Electrical equipment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TSLA,110,-2.714095,Tesla Inc.,CONSUMER,Electric vehicles and energy,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MKSI,111,-5.000953,MKS Instruments Inc.,SEMICONDUCTOR_EQUIPMENT,Process control and photonics,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+QQQ,114,-6.522095,Invesco QQQ Trust,SOFTWARE,Nasdaq 100 ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ASML,115,-7.094285,ASML Holding N.V.,SEMICONDUCTOR_EQUIPMENT,Lithography equipment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BAC,116,-7.552308,Bank of America Corporation,FINTECH,Large bank,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NI,117,-7.986154,NiSource Inc.,DEFENSIVE,Regulated utility,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LYFT,118,-9.893230,Lyft Inc.,TRANSPORTATION,Rideshare,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CEG,119,-10.646667,Constellation Energy Corporation,POWER_INFRASTRUCTURE,Nuclear and power generation,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MPLX,120,-11.152000,MPLX LP,ENERGY,Midstream energy,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+IGV,121,-12.571619,iShares Expanded Tech-Software Sector ETF,SOFTWARE,Software ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ENTG,122,-12.608000,Entegris Inc.,SEMICONDUCTOR_EQUIPMENT,Semiconductor materials and filtration,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+XLK,123,-13.323429,Technology Select Sector SPDR Fund,SOFTWARE,Technology sector ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BKNG,124,-13.400923,Booking Holdings Inc.,INTERNET_PLATFORM,Online travel,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CRM,125,-13.456762,Salesforce Inc.,SOFTWARE,Enterprise CRM software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PLTR,126,-14.980761,Palantir Technologies Inc.,SOFTWARE,AI analytics software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LPLA,127,-15.801231,LPL Financial Holdings Inc.,FINTECH,Wealth management platform,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+IYW,128,-15.858286,iShares U.S. Technology ETF,SOFTWARE,Technology ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+OC,129,-17.245846,Owens Corning,INDUSTRIAL,Building materials,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TSM,130,-20.429334,Taiwan Semiconductor Manufacturing Company Limited,SEMICONDUCTOR,Semiconductor foundry,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AMAT,131,-20.705143,Applied Materials Inc.,SEMICONDUCTOR_EQUIPMENT,Wafer fabrication equipment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+D,132,-23.014285,Dominion Energy Inc.,DEFENSIVE,Regulated utility,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CARR,133,-23.093524,Carrier Global Corporation,INDUSTRIAL,HVAC and building systems,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+KEYS,134,-24.638857,Keysight Technologies Inc.,SEMICONDUCTOR_EQUIPMENT,Electronic test and measurement,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AMZN,135,-24.999048,Amazon.com Inc.,ECOMMERCE,E-commerce and cloud,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CMG,136,-25.000000,Chipotle Mexican Grill Inc.,CONSUMER,Restaurants,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LRCX,137,-25.763429,Lam Research Corporation,SEMICONDUCTOR_EQUIPMENT,Wafer fabrication equipment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MA,138,-27.308308,Mastercard Incorporated,FINTECH,Payments network,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MOD,139,-27.552762,Modine Manufacturing Company,POWER_INFRASTRUCTURE,Thermal management,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BSX,140,-28.460923,Boston Scientific Corporation,HEALTHCARE,Medical devices,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AAPL,141,-28.716000,Apple Inc.,CONSUMER,Consumer devices and services,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+KLAC,142,-28.887047,KLA Corporation,SEMICONDUCTOR_EQUIPMENT,Process control and inspection,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SMH,143,-32.181714,VanEck Semiconductor ETF,SEMICONDUCTOR,Semiconductor ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MPWR,144,-32.312381,Monolithic Power Systems Inc.,SEMICONDUCTOR,Power semiconductors,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+JBL,145,-34.027238,Jabil Inc.,ELECTRONICS_SUPPLY_CHAIN,Electronics manufacturing services,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NTAP,146,-35.893333,NetApp Inc.,DATA_INFRASTRUCTURE,Enterprise storage,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FIX,147,-36.046286,Comfort Systems USA Inc.,POWER_INFRASTRUCTURE,Mechanical and electrical contracting,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NFLX,148,-36.184923,Netflix Inc.,INTERNET_PLATFORM,Streaming entertainment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CAMT,149,-36.932190,Camtek Ltd.,SEMICONDUCTOR_EQUIPMENT,Inspection and metrology,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FLR,150,-38.515810,Fluor Corporation,INDUSTRIAL,Engineering and construction,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NVDA,151,-40.000762,NVIDIA Corporation,AI_INFRASTRUCTURE,AI accelerators and platform,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ANET,152,-41.638476,Arista Networks Inc.,DATA_INFRASTRUCTURE,Cloud networking,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AVGO,153,-42.903429,Broadcom Inc.,SEMICONDUCTOR,Networking semiconductors and software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NRG,154,-43.015077,NRG Energy Inc.,POWER_INFRASTRUCTURE,Power generation and retail energy,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AEIS,155,-43.063077,Advanced Energy Industries Inc.,SEMICONDUCTOR_EQUIPMENT,Power and control systems,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BN,156,-43.076308,Brookfield Corporation,FINTECH,Alternative assets,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CLH,157,-43.105846,Clean Harbors Inc.,INDUSTRIAL,Environmental services,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SOXX,158,-45.952572,iShares Semiconductor ETF,SEMICONDUCTOR,Semiconductor ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+GEV,159,-46.599809,GE Vernova Inc.,POWER_INFRASTRUCTURE,Power generation and grid equipment,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CHPT,160,-46.830461,ChargePoint Holdings Inc.,POWER_INFRASTRUCTURE,EV charging,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LYB,161,-49.524000,LyondellBasell Industries N.V.,INDUSTRIAL,Chemicals,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TER,162,-51.275619,Teradyne Inc.,SEMICONDUCTOR_EQUIPMENT,Automated test equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FORM,163,-51.276190,FormFactor Inc.,SEMICONDUCTOR_EQUIPMENT,Probe cards and test interfaces,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+APO,164,-56.152615,Apollo Global Management Inc.,FINTECH,Alternative asset management,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+KLIC,165,-56.379238,Kulicke and Soffa Industries Inc.,SEMICONDUCTOR_EQUIPMENT,Semiconductor assembly equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AA,166,-56.540308,Alcoa Corporation,INDUSTRIAL,Aluminum materials,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MCHP,167,-56.998857,Microchip Technology Inc.,SEMICONDUCTOR,Microcontrollers and analog chips,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ADBE,168,-57.309538,Adobe Inc.,SOFTWARE,Creative and digital media software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BABA,169,-58.847693,Alibaba Group Holding Limited,ECOMMERCE,China e-commerce and cloud,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CRWV,170,-59.275429,CoreWeave Inc.,AI_INFRASTRUCTURE,AI cloud infrastructure,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CLS,171,-59.277142,Celestica Inc.,AI_INFRASTRUCTURE,AI server and electronics manufacturing,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+COHU,172,-59.744572,Cohu Inc.,SEMICONDUCTOR_EQUIPMENT,Semiconductor test equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+GOOGL,173,-60.761714,Alphabet Inc.,INTERNET_PLATFORM,"Search, ads, cloud and AI",CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ORCL,174,-62.334286,Oracle Corporation,SOFTWARE,Database and cloud software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SNOW,175,-62.880381,Snowflake Inc.,SOFTWARE,Cloud data platform,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CHRW,176,-64.183385,C.H. Robinson Worldwide Inc.,TRANSPORTATION,Freight brokerage,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MELI,177,-64.813538,MercadoLibre Inc.,ECOMMERCE,Latin America e-commerce and fintech,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AMKR,178,-65.267238,Amkor Technology Inc.,SEMICONDUCTOR,Outsourced semiconductor assembly and test,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NVT,179,-66.524762,nVent Electric plc,POWER_INFRASTRUCTURE,Electrical enclosures and systems,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ICHR,180,-68.268000,Ichor Holdings Ltd.,SEMICONDUCTOR_EQUIPMENT,Semiconductor fluid delivery subsystems,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ADSK,181,-70.384000,Autodesk Inc.,SOFTWARE,Design software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ADMA,182,-70.416615,ADMA Biologics Inc.,HEALTHCARE,Biologics,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+HPE,183,-70.607619,Hewlett Packard Enterprise Co.,AI_INFRASTRUCTURE,Servers and enterprise infrastructure,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PSTG,184,-70.714858,Pure Storage Inc.,DATA_INFRASTRUCTURE,Enterprise storage,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TQQQ,185,-71.858666,ProShares UltraPro QQQ,SOFTWARE,Leveraged Nasdaq 100 ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ABR,186,-71.863077,Arbor Realty Trust Inc.,OTHER,Mortgage REIT,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CDNS,187,-72.692615,Cadence Design Systems Inc.,SOFTWARE,Electronic design automation,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CRDO,188,-73.561905,Credo Technology Group Holding Ltd.,AI_INFRASTRUCTURE,High-speed connectivity semiconductors,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NOW,189,-74.501333,ServiceNow Inc.,SOFTWARE,Workflow automation software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NUVB,190,-74.524923,Nuvation Bio Inc.,HEALTHCARE,Oncology biotechnology,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VRT,191,-76.191619,Vertiv Holdings Co.,AI_INFRASTRUCTURE,Data center power and cooling,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+WDC,192,-77.763428,Western Digital Corporation,DATA_INFRASTRUCTURE,Data storage,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+GLW,193,-79.427809,Corning Incorporated,ELECTRONICS_SUPPLY_CHAIN,Glass and optical materials,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AXON,194,-81.060000,Axon Enterprise Inc.,SOFTWARE,Public safety hardware and software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+POWL,195,-81.455239,Powell Industries Inc.,POWER_INFRASTRUCTURE,Electrical power equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LITE,196,-82.027619,Lumentum Holdings Inc.,DATA_INFRASTRUCTURE,Optical components,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+GNRC,197,-84.046476,Generac Holdings Inc.,POWER_INFRASTRUCTURE,Backup power equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PWR,198,-85.761905,Quanta Services Inc.,POWER_INFRASTRUCTURE,Utility and infrastructure contracting,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ACMR,199,-87.182666,ACM Research Inc.,SEMICONDUCTOR_EQUIPMENT,Wafer cleaning equipment,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MTZ,200,-89.521847,MasTec Inc.,POWER_INFRASTRUCTURE,Infrastructure construction,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NET,201,-90.028191,Cloudflare Inc.,CYBERSECURITY,Edge network and security,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NTRA,202,-91.062769,Natera Inc.,HEALTHCARE,Genetic testing,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CIEN,203,-91.476000,Ciena Corporation,DATA_INFRASTRUCTURE,Optical networking,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+STX,204,-92.809143,Seagate Technology Holdings plc,DATA_INFRASTRUCTURE,Data storage,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FN,205,-96.237523,Fabrinet,DATA_INFRASTRUCTURE,Optical and precision manufacturing,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CRWD,206,-97.322286,CrowdStrike Holdings Inc.,CYBERSECURITY,Endpoint cybersecurity,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CART,207,-98.075077,Maplebear Inc.,ECOMMERCE,Grocery delivery marketplace,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AGX,208,-98.369230,Argan Inc.,POWER_INFRASTRUCTURE,Power plant construction,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+PANW,209,-99.420191,Palo Alto Networks Inc.,CYBERSECURITY,Network and cloud security,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AAL,210,-99.615385,American Airlines Group Inc.,TRANSPORTATION,Airlines,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SMCI,211,-100.238857,Super Micro Computer Inc.,AI_INFRASTRUCTURE,AI servers,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+IREN,213,-101.760000,IREN Limited,CRYPTO_BETA,Bitcoin mining and AI data centers,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+COHR,214,-102.476762,Coherent Corp.,DATA_INFRASTRUCTURE,Optical components,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MDB,215,-104.119239,MongoDB Inc.,SOFTWARE,Database software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CSCO,216,-105.156000,Cisco Systems Inc.,DATA_INFRASTRUCTURE,Networking equipment,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CORZ,217,-106.144762,Core Scientific Inc.,CRYPTO_BETA,Bitcoin mining and HPC hosting,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SANM,218,-107.477143,Sanmina Corporation,ELECTRONICS_SUPPLY_CHAIN,Electronics manufacturing services,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BIDU,219,-109.231385,Baidu Inc.,INTERNET_PLATFORM,China search and AI,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MOH,220,-111.447385,Molina Healthcare Inc.,HEALTHCARE,Managed care,DEFENSIVE_HEDGE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ON,221,-111.855619,ON Semiconductor Corporation,SEMICONDUCTOR,Power and sensing semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MRVL,222,-112.047809,Marvell Technology Inc.,SEMICONDUCTOR,Data infrastructure semiconductors,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+IRDM,223,-115.094477,Iridium Communications Inc.,DATA_INFRASTRUCTURE,Satellite communications,NON_CORE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CIFR,224,-116.951047,Cipher Mining Inc.,CRYPTO_BETA,Bitcoin mining,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AFRM,225,-117.690769,Affirm Holdings Inc.,FINTECH,Buy-now-pay-later,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MU,226,-118.524952,Micron Technology Inc.,SEMICONDUCTOR,Memory semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ZS,227,-119.300571,Zscaler Inc.,CYBERSECURITY,Cloud security,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+DELL,228,-120.999238,Dell Technologies Inc.,AI_INFRASTRUCTURE,Servers and enterprise hardware,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+MTSI,229,-122.614769,MACOM Technology Solutions Holdings Inc.,SEMICONDUCTOR,RF and optical semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ACLS,230,-123.287048,Axcelis Technologies Inc.,SEMICONDUCTOR_EQUIPMENT,Ion implantation equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SNDK,231,-131.285143,SanDisk Corporation,SEMICONDUCTOR,Flash storage,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+APP,232,-133.077231,AppLovin Corporation,SOFTWARE,Adtech software,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+VECO,233,-133.190096,Veeco Instruments Inc.,SEMICONDUCTOR_EQUIPMENT,Process equipment,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BE,234,-135.284762,Bloom Energy Corporation,POWER_INFRASTRUCTURE,Fuel cells and distributed power,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+TXN,235,-136.522666,Texas Instruments Incorporated,SEMICONDUCTOR,Analog semiconductors,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CLF,236,-136.538154,Cleveland-Cliffs Inc.,INDUSTRIAL,Steel,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ALAB,237,-137.190857,Astera Labs Inc.,AI_INFRASTRUCTURE,AI connectivity semiconductors,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+QCOM,238,-138.334476,QUALCOMM Incorporated,SEMICONDUCTOR,Mobile and edge semiconductors,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AEHR,239,-141.217333,Aehr Test Systems,SEMICONDUCTOR_EQUIPMENT,Semiconductor test and burn-in,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AMD,240,-142.144762,Advanced Micro Devices Inc.,SEMICONDUCTOR,AI and compute processors,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+NXPI,241,-143.096762,NXP Semiconductors N.V.,SEMICONDUCTOR,Auto and industrial semiconductors,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+SOXL,242,-143.666857,Direxion Daily Semiconductor Bull 3X Shares,SEMICONDUCTOR,Leveraged semiconductor ETF,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BTDR,243,-143.801333,Bitdeer Technologies Group,CRYPTO_BETA,Bitcoin mining and hash infrastructure,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+INTC,244,-144.998476,Intel Corporation,SEMICONDUCTOR,Processors and foundry,TACTICAL_BETA,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+FLEX,245,-146.525714,Flex Ltd.,ELECTRONICS_SUPPLY_CHAIN,Electronics manufacturing services,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+LSCC,246,-152.269846,Lattice Semiconductor Corporation,SEMICONDUCTOR,Low-power FPGAs,CYCLICAL_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+ARM,248,-156.617714,Arm Holdings plc,SEMICONDUCTOR,CPU IP and architecture,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+BITF,249,-157.692923,Bitfarms Ltd.,CRYPTO_BETA,Bitcoin mining,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+CLSK,250,-169.537538,CleanSpark Inc.,CRYPTO_BETA,Bitcoin mining,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+AEVA,251,-174.921846,Aeva Technologies Inc.,AI_INFRASTRUCTURE,Lidar and sensing,SPECULATIVE_SATELLITE,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.
+DDOG,252,-185.453333,Datadog Inc.,SOFTWARE,Observability software,CORE_GROWTH,FALSE,V18.28A-R1 high-confidence local ticker rulebook classification; no external fetch.

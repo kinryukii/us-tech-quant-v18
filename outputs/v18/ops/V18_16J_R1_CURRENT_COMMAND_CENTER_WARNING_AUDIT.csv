@@ -1,0 +1,2 @@
+﻿wrapper,warning_or_failure,old_behavior,new_behavior,status,reason,safety_condition
+D:\us-tech-quant\scripts\v18\run_v18_13D_daily_command_center.ps1,V18.13A missing old optional sell-timing read-first,WARN from V18.13A propagated to command-center nonzero through V18.13D.,V18.13A uses current fallback read-first files when old shadow paths are absent.,PASS,"Old paths exist: 12F=False, 12E=False; fallback paths exist: 12F=True, 12E=True.",AUTO_SELL DISABLED and OFFICIAL_DECISION_IMPACT NONE; read-center linking only.

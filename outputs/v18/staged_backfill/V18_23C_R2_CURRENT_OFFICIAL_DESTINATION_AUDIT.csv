@@ -1,0 +1,2 @@
+﻿destination_role,destination_path,exists,confidence,selection_reason,file_count
+official_price_cache,D:\us-tech-quant\state\v18\price_cache,TRUE,HIGH,V18.23B local scan executor reads state/v18/price_cache/<ticker>.csv.,103

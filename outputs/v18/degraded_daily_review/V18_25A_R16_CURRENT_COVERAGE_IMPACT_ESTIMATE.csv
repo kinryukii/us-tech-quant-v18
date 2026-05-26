@@ -1,0 +1,8 @@
+﻿metric,value,notes
+current_data_not_ready_count,103,Authoritative controller read-first.
+batch3_candidate_count,65,Selected from 103 unresolved rows.
+batch3_candidate_coverage_pct,63.11,Candidate share of unresolved data-not-ready backlog.
+held_out_manual_review_count,14,Prior batch held-out names excluded from final plan.
+remaining_non_candidate_data_not_ready_count,38,Unselected non-held-out unresolved rows.
+remaining_total_after_plan,52,Non-candidate unresolved rows plus held-out review items.
+top20_candidates,"OKTA, OLMA, OLPX, OPCH, PATH, PCOR, PCT, PDD, PFGC, PGNY, PI, PINS, PLUG, PM, PONY, PSIX, PTGX, PTON, PUMP, PYPL",Deterministic priority order after held-out exclusions.

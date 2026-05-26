@@ -1,0 +1,6 @@
+﻿plan_day,planned_total_scan_count,core_daily_count,candidate_count,strong_watch_count,watchlist_count,research_count,cumulative_expected_coverage,expected_uncovered_remaining,meets_target,notes
+DAY_1,65,30,14,5,4,12,65,260,TRUE,Meets current daily scan-count threshold; full unique coverage remains constrained by repeated high-tier scans.
+DAY_2,65,30,14,4,4,13,86,239,TRUE,Meets current daily scan-count threshold; full unique coverage remains constrained by repeated high-tier scans.
+DAY_3,65,30,14,4,4,13,107,218,TRUE,Meets current daily scan-count threshold; full unique coverage remains constrained by repeated high-tier scans.
+DAY_4,65,30,14,4,4,13,128,197,TRUE,Meets current daily scan-count threshold; full unique coverage remains constrained by repeated high-tier scans.
+DAY_5,65,30,14,4,4,13,149,176,TRUE,Meets current daily scan-count threshold; full unique coverage remains constrained by repeated high-tier scans.

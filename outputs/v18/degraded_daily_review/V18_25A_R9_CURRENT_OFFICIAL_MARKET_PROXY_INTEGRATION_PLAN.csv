@@ -1,0 +1,4 @@
+﻿plan_item,path,status,notes
+recommended_official_storage,state/v18/market_proxy_cache/VIX.csv,RECOMMENDED,Separate market_proxy_cache from price_cache.
+why_separate_storage,state/v18/market_proxy_cache,EXPLAINED,"VIX is a regime proxy, not a stock price cache input."
+why_not_price_cache,state/v18/price_cache,AVOID,Keeps stock cache uncontaminated.

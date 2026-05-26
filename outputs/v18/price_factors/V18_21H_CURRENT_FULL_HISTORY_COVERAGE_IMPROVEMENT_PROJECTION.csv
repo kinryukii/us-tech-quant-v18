@@ -1,0 +1,6 @@
+﻿scenario_name,added_history_ticker_count,projected_local_price_data_available_count,projected_full_history_factor_ready_count,projected_score_ready_ratio,projected_missing_history_ticker_count,projected_research_coverage_status,assumptions,limitations
+CURRENT,0,105,104,0.320000,220,PARTIAL_COVERAGE_PROJECTED,Projection only; no data fetched or written.,Actual coverage depends on future approved staged backfill quality.
+BACKFILL_BATCH_1,25,130,129,0.396923,195,PARTIAL_COVERAGE_PROJECTED,Projection only; no data fetched or written.,Actual coverage depends on future approved staged backfill quality.
+BACKFILL_TOP_50,50,155,154,0.473846,170,PARTIAL_COVERAGE_PROJECTED,Projection only; no data fetched or written.,Actual coverage depends on future approved staged backfill quality.
+BACKFILL_TOP_100,100,205,204,0.627692,120,PARTIAL_COVERAGE_PROJECTED,Projection only; no data fetched or written.,Actual coverage depends on future approved staged backfill quality.
+BACKFILL_ALL_MISSING,221,325,325,1.000000,0,FULL_COVERAGE_PROJECTED,Projection only; no data fetched or written.,Actual coverage depends on future approved staged backfill quality.

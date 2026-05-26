@@ -1,0 +1,7 @@
+﻿tier,count,operator_note,detail_path
+TIER_1_CORE_CANDIDATE,16,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv
+TIER_2_STRONG_WATCHLIST,11,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv
+TIER_3_WATCHLIST,9,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv
+TIER_4_REVIEW_ONLY,16,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv
+TIER_5_WEAK_OR_BLOCKED,51,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv
+TIER_0_DATA_NOT_READY,221,Read-only tier migration category.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv

@@ -1,0 +1,15 @@
+﻿V17.6H-R1 REPAIR MISSING BASE SCRIPT
+Generated: 2026-05-12 17:15:10
+
+RECREATED_BASE_SCRIPT:
+D:\us-tech-quant\scripts\run_v16_daily_auto_update_before_v17_2_factor_tracker_20260511_154526.ps1
+
+UPDATED_BASE_PATH_FILE:
+D:\us-tech-quant\state\v17_2_base_official_daily_path.txt
+
+STABLE_SNAPSHOT_PROTECTED:
+D:\us-tech-quant\archive\stable\V17_6H_stable_manual_run_full_universe_latest_price_20260512_165345
+
+NEXT_TEST_COMMAND:
+Set-Location "D:\us-tech-quant"
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\run_v17_6F_manual_daily_full_universe_latest_price.ps1"

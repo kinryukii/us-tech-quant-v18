@@ -1,0 +1,7 @@
+﻿action_id,action_name,recommended_now,priority,reason,risk_level,requires_explicit_approval,modifies_production,fetches_external_data,operator_note
+V18.22B_STABLE_SNAPSHOT,V18.22B stable snapshot,TRUE,1,Preserve wrapper state after validation.,LOW,FALSE,FALSE,FALSE,Recommended immediate next step.
+V18.22C_RESEARCH_PACKET_WRITER,Research Packet Writer,OPTIONAL_AFTER_STABLE,2,Can package read-only evidence.,LOW,FALSE,FALSE,FALSE,Safe after stable snapshot.
+V18.21H_R2_ACTUAL_STAGED_FETCH_IMPORT,Actual staged fetch/import,FALSE,3,Requires explicit approval and external data/import.,MEDIUM,TRUE,FALSE,TRUE,Do not run automatically.
+WAIT_FOR_FORWARD_HORIZON_MATURITY,Wait for forward horizons to mature,VALID_OPTION,4,Most forward returns remain pending.,LOW,FALSE,FALSE,FALSE,No action required now.
+V18.21G_R1_FILLED_SHADOW_AFTER_MATURITY,Filled-shadow after maturity,FALSE_WAIT,5,Requires matured outcomes and explicit apply approval.,MEDIUM,TRUE,FALSE,FALSE,Future only.
+PAUSE_AFTER_STABLE,Pause after stable,VALID_OPTION,6,Avoid premature changes.,LOW,FALSE,FALSE,FALSE,Safe stopping point.

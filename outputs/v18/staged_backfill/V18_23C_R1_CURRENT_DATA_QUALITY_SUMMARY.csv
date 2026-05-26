@@ -1,0 +1,5 @@
+﻿metric,value,notes
+quality_audited_ticker_count,65,Batch tickers audited.
+merge_candidate_full_history_count,51,Potential future official integration candidates.
+merge_candidate_price_only_partial_history_count,5,"Price-only, not factor-ready."
+hold_review_ticker_count,9,Not merge candidates.

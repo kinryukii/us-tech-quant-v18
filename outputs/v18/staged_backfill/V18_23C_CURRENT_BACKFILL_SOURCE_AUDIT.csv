@@ -1,0 +1,4 @@
+﻿source_name,source_path,exists,row_count,ticker_count,selected,notes
+R3_SKIPPED_DIAGNOSTICS,outputs/v18/rolling_coverage/V18_23B_R3_CURRENT_SKIPPED_TICKER_DIAGNOSTICS.csv,TRUE,65,65,TRUE,ticker_column=ticker
+R2_SELECTED_SCAN_LIST,outputs/v18/rolling_coverage/V18_23B_R2_CURRENT_WATCHDOG_SELECTED_SCAN_LIST.csv,TRUE,65,65,FALSE,ticker_column=ticker
+R2_SCAN_RESULT,outputs/v18/rolling_coverage/V18_23B_R2_CURRENT_SCAN_RESULT.csv,TRUE,65,65,FALSE,ticker_column=ticker

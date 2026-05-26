@@ -1,0 +1,23 @@
+﻿{
+  "version": "V16.14.0",
+  "module_name": "auto_event_confirmation_and_calendar_ingestion",
+  "use_yfinance": true,
+  "earnings_freeze_days_before": 3,
+  "earnings_freeze_days_after": 1,
+  "earnings_watch_days_before": 7,
+  "macro_freeze_days_before": 3,
+  "macro_freeze_days_after": 1,
+  "fallback_candidate_tickers": ["NET", "ANET", "ACM", "FLR", "MDB", "ARM", "SNOW", "ZS", "BE", "CRWV"],
+  "known_tier_map": {
+    "NET": "B_PENDING_MANUAL_CONFIRMATION",
+    "ANET": "B_PENDING_MANUAL_CONFIRMATION",
+    "ACM": "B_PENDING_MANUAL_CONFIRMATION",
+    "FLR": "B_PENDING_MANUAL_CONFIRMATION",
+    "MDB": "C_WATCH_ONLY_WAIT_PULLBACK",
+    "ARM": "C_WATCH_ONLY_WAIT_PULLBACK",
+    "SNOW": "C_WATCH_ONLY_WAIT_PULLBACK",
+    "ZS": "C_WATCH_ONLY_WAIT_PULLBACK",
+    "BE": "D_BLOCKED_OR_EXCLUDED",
+    "CRWV": "D_BLOCKED_OR_EXCLUDED"
+  }
+}

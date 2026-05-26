@@ -1,0 +1,133 @@
+# V18.20D Safe Delete Confidence Upgrade Audit
+
+- STATUS: OK_V18_20D_SAFE_DELETE_CONFIDENCE_UPGRADE_AUDIT_READY
+- MODE: DRYRUN
+- ROOT: D:\us-tech-quant
+- INPUT_SKIPPED_COUNT: 267
+- INPUT_SKIPPED_MB: 24.766
+- UPGRADED_TO_HIGH_COUNT: 43
+- UPGRADED_TO_HIGH_MB: 0.088
+- STILL_MEDIUM_COUNT: 223
+- STILL_MEDIUM_MB: 24.676
+- REVIEW_REQUIRED_COUNT: 1
+- REVIEW_REQUIRED_MB: 0.002
+- DELETED_COUNT: 0
+- MOVED_COUNT: 0
+- ARCHIVED_COUNT: 0
+- VALIDATION_FAIL_COUNT: 0
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- OFFICIAL_DECISION_IMPACT: NONE
+- CURRENT_DAILY_MODIFIED: FALSE
+- STABLE_SNAPSHOT_MODIFIED: FALSE
+- MANUAL_STATE_MODIFIED: FALSE
+- PRICE_CACHE_MODIFIED: FALSE
+- LATEST_STABLE_SNAPSHOT_NAME: V18_19A_R1_stable_daily_readability_refactor_20260519_171556
+
+## Top 50 Upgraded Candidates By Size
+
+- outputs/v18/ops/V18_3D_R2_upstream_R1_run.log | 0.004 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260518_130454.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260518_131004.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260518_164440.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260518_212143.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260518_213521.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step2_v18_3C_shadow_20260519_105238.log | 0.003 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260518_130454.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260518_131004.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260518_164440.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260518_212143.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260518_213521.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step3_v18_3D_R2_factor_pack_20260519_105238.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260518_130453.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260518_131003.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260518_164440.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260518_212142.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260518_213520.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_R1_daily_integrated_20260519_105238.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260518_130454.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260518_131003.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260518_164440.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260518_212143.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260518_213520.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4A_upstream_cockpit_20260519_105238.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260518_130453.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260518_131003.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260518_164439.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260518_212142.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260518_213520.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_R1_final_daily_20260519_105238.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260518_130453.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260518_131003.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260518_164440.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260518_212142.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260518_213520.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_4B_upstream_integrated_20260519_105238.log | 0.002 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260518_130454.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260518_131004.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260518_164440.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260518_212143.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260518_213521.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+- outputs/v18/ops/V18_3E_R2_step1_v17_8D_official_20260519_105238.log | 0.001 MB | Unreferenced generated log with no protected-role signals.
+
+## Top 50 Still-Medium-Or-Review Candidates By Size
+
+- data/v16/prices/NVDA.csv | 0.189 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/NVDA.csv | 0.189 MB | Price-data path remains conservative medium.
+- data/v16/prices/TQQQ.csv | 0.188 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/TQQQ.csv | 0.188 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/FLEX.csv | 0.187 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/HPE.csv | 0.187 MB | Price-data path remains conservative medium.
+- data/v16/prices/SOXL.csv | 0.186 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AAPL.csv | 0.186 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/SOXL.csv | 0.186 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/WDC.csv | 0.186 MB | Price-data path remains conservative medium.
+- data/v16/prices/AVGO.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices/SOXX.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AVGO.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/GOOGL.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/INTC.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/SMCI.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/SOXX.csv | 0.185 MB | Price-data path remains conservative medium.
+- data/v16/prices/AMD.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices/QQQ.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices/SMH.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices/XLK.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AMD.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AMKR.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AMZN.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/CSCO.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/DELL.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/LRCX.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/QCOM.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/QQQ.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/SMH.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/TSLA.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/TXN.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/XLK.csv | 0.184 MB | Price-data path remains conservative medium.
+- data/v16/prices/SPY.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/ACMR.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/AMAT.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/APH.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/ECL.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/GLW.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/IGV.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/IRDM.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/MSFT.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/NOW.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/NXPI.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/POWL.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/SPY.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/VST.csv | 0.183 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/COHU.csv | 0.182 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/ENTG.csv | 0.182 MB | Price-data path remains conservative medium.
+- data/v16/prices_full/ETN.csv | 0.182 MB | Price-data path remains conservative medium.
+
+## Recommended Next Step
+
+- Use the HIGH-confidence log subset only for the next apply gate. Keep price-data CSVs and the config-shaped JSON below the threshold until a separate review confirms they are disposable.
+
+- READ_FIRST: outputs/v18/ops/V18_20D_READ_FIRST.txt
+- AUDIT_CSV: outputs/v18/ops/V18_20D_CURRENT_CONFIDENCE_UPGRADE_AUDIT.csv
+- HIGH_CONFIDENCE_CSV: outputs/v18/ops/V18_20D_CURRENT_HIGH_CONFIDENCE_SAFE_DELETE.csv
+- STILL_MEDIUM_OR_REVIEW_CSV: outputs/v18/ops/V18_20D_CURRENT_STILL_MEDIUM_OR_REVIEW.csv

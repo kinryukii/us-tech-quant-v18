@@ -1,0 +1,6 @@
+﻿ticker,normalized_file,file_exists,readable,required_columns_present,row_count,min_date,max_date,latest_close,latest_volume,date_parse_ok,duplicate_date_count,null_close_count,r23b_quality_status,quality_status,integration_candidate_status,reason,provider,fetch_run_id
+CDTX,data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/CDTX.csv,FALSE,FALSE,FALSE,0,,,,,FALSE,0,0,EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,,
+CFLT,data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/CFLT.csv,FALSE,FALSE,FALSE,0,,,,,FALSE,0,0,EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,,
+COG,data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/COG.csv,FALSE,FALSE,FALSE,0,,,,,FALSE,0,0,EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,,
+JFROG,data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/JFROG.csv,FALSE,FALSE,FALSE,0,,,,,FALSE,0,0,EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,,
+MPW,data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/MPW.csv,FALSE,FALSE,FALSE,0,,,,,FALSE,0,0,EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,,

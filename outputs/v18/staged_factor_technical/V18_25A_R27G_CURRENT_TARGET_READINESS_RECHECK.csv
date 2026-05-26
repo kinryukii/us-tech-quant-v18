@@ -1,0 +1,3 @@
+﻿ticker,price_cache_present,price_cache_row_count,price_cache_min_date,price_cache_max_date,price_cache_latest_close,price_cache_latest_volume,rolling_ledger_present,rolling_ledger_success,rolling_last_scan_status,rolling_last_success_scan_date,official_factor_present,official_technical_present,official_ranked_candidate_present,readiness_status,recommended_next_action
+RDDT,TRUE,545,2024-03-21,2026-05-22,141.48739624023438,3067017,TRUE,TRUE,SUCCESS_LOCAL_PRICE_FULL_HISTORY,2026-05-23,FALSE,FALSE,FALSE,READY_FOR_OFFICIAL_MERGE,R27H_OFFICIAL_MERGE_WITH_BACKUP
+TLN,TRUE,746,2023-06-02,2026-05-22,366.2513122558594,162644,TRUE,TRUE,SUCCESS_LOCAL_PRICE_FULL_HISTORY,2026-05-23,FALSE,FALSE,FALSE,READY_FOR_OFFICIAL_MERGE,R27H_OFFICIAL_MERGE_WITH_BACKUP

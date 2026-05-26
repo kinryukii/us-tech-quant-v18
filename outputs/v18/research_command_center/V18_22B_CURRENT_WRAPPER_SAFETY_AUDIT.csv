@@ -1,0 +1,16 @@
+﻿checked_path,file_exists,modified_before_run,modified_after_run,modified_by_this_run,protection_status,notes
+D:\us-tech-quant\scripts\v18\run_v18_current_daily_command_center.ps1,TRUE,2026-05-19T16:07:21,2026-05-19T16:07:21,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\scripts\v18\run_v18_22A_research_command_center.ps1,TRUE,2026-05-20T23:04:24,2026-05-20T23:04:24,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\scripts\v18\v18_22A_research_command_center.py,TRUE,2026-05-20T23:04:40,2026-05-20T23:04:40,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\ops\V18_22A_READ_FIRST.txt,TRUE,2026-05-21T00:59:50,2026-05-21T00:59:50,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\ops\V18_22A_STABLE_READ_FIRST.txt,TRUE,2026-05-20T23:20:54,2026-05-20T23:20:54,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,2026-05-19T10:53:51,2026-05-19T10:53:51,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\signal_snapshots\V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,TRUE,2026-05-20T16:51:23,2026-05-20T16:51:23,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\forward_tracker\V18_21D_R1_CURRENT_UPGRADED_FORWARD_TRACKER_SHADOW.csv,TRUE,2026-05-20T18:01:44,2026-05-20T18:01:44,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\state\v18\price_cache\QQQ.csv,TRUE,2026-05-19T11:56:07,2026-05-19T11:56:07,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\state\v18\price_cache\SPY.csv,TRUE,2026-05-19T11:56:18,2026-05-19T11:56:18,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\state\v16\event_calendar.csv,TRUE,2026-05-19T10:52:37,2026-05-19T10:52:37,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\state\v18\cloud_earnings_event_calendar.csv,TRUE,2026-05-19T10:52:37,2026-05-19T10:52:37,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,TRUE,2026-05-18T21:39:51,2026-05-18T21:39:51,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R1_CURRENT_PRICE_DERIVED_FACTOR_SCORES.csv,TRUE,2026-05-20T16:06:31,2026-05-20T16:06:31,FALSE,UNCHANGED,Protected source for wrapper safety audit.
+D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,2026-05-19T10:57:07,2026-05-19T10:57:07,FALSE,UNCHANGED,Protected source for wrapper safety audit.

@@ -1,0 +1,300 @@
+# V18.20J Verified Archived Generated Originals Delete Report
+
+- STATUS: OK_V18_20J_VERIFIED_ORIGINAL_DELETE_READY
+- MODE: APPLY
+- ROOT: D:\us-tech-quant
+- WOULD_DELETE_COUNT: 0
+- WOULD_DELETE_MB: 0.000
+- DELETED_COUNT: 268
+- DELETED_MB: 2.242
+- SKIPPED_COUNT: 4
+- SKIPPED_MB: 0.015
+- MISSING_COUNT: 0
+- DELETE_FAIL_COUNT: 0
+- VALIDATION_FAIL_COUNT: 0
+- ZIP_ARCHIVES_MODIFIED: FALSE
+- ARCHIVE_METADATA_MODIFIED: FALSE
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- OFFICIAL_DECISION_IMPACT: NONE
+- CURRENT_DAILY_MODIFIED: FALSE
+- STABLE_SNAPSHOT_MODIFIED: FALSE
+- MANUAL_STATE_MODIFIED: FALSE
+- PRICE_CACHE_MODIFIED: FALSE
+
+## Candidates
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_DETAIL.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260519_105611.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8A_raw105_full_decision_daily.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_213854.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_212518.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_164754.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_131254.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260519_105352.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_130825.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_213632.csv | DELETED | OK | 
+- outputs/v17/raw105_decision/v17_8A_raw105_full_decision_daily.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_212255.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_164556.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SECOND_STAGE.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_131117.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_130616.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_130842.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_131309.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_164814.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_212536.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260518_213915.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_TECHNICAL_TIMING_20260519_105633.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8B_raw105_decision_readable_panel.csv | DELETED | OK | 
+- outputs/v17/raw105_decision/v17_8B_raw105_decision_readable_panel.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_SECOND_STAGE_WATCHLIST.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7_raw_universe_full_screen_audit.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7B_universe_semantic_audit.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7B_universe_semantic_audit.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SCREENED.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7_raw_universe_full_screen_audit.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7F_B_price_freshness_acceptance.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7D_main_compute_delta_audit.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7F_B_price_freshness_acceptance.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_SELECTED_FOR_EXECUTION.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_RAW.csv | DELETED | OK | 
+- outputs/v17/price/v17_6E_screened_universe_tickers.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7F_raw105_latest_price_refresh.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7F_raw105_latest_price_refresh.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7D_main_compute_delta_audit.csv | DELETED | OK | 
+- outputs/v17/price/v17_6E_screened_universe_latest_prices.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_FULL_UNIVERSE_TOP_REVIEW.csv | DELETED | OK | 
+- archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v16_daily_auto_update_before_v17_4_dashboard_20260511_175841.ps1 | SKIPPED | BLOCKED | Not an OLD_GENERATED_REPORTS archive-group original.
+- outputs/v17/raw105_decision/v17_8B_actionable_buy_candidates.csv | DELETED | OK | 
+- outputs/v17/raw105_decision/v17_8A_today_buy_candidates.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_1B_factor_group_performance.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_factor_group_performance.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8B_worth_review_but_locked.csv | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8B_RAW105_FULL_DECISION_READABLE_PANEL.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_UNIVERSE_COVERAGE_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/price/v17_6E_screened_universe_latest_prices.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8A_today_watch_candidates.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7D_MAIN_COMPUTE_DELTA_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/V16_22_5_READABLE_DAILY_CONTROL_PANEL.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/price/v17_6E_screened_universe_tickers.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8B_RAW105_FULL_DECISION_READABLE_PANEL.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/v17_cleanup_generated_outputs_20260512_233751.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_CORRELATION_AND_SECTOR_REPORT.md | DELETED | OK | 
+- outputs/v17/ops/v17_cleanup_generated_outputs_20260512_233751.csv | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_REPORT.md | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2B_FACTOR_CORRELATION_AND_SECTOR_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_SECOND_STAGE_TOP_CANDIDATES.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8A_RAW105_FULL_DECISION_DAILY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_R2_SHADOW_OFFICIAL_COMPARE_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_SUMMARY.csv | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_130616.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_131117.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_164556.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_212255.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260518_213632.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4D_FACTOR_PACK_AUDIT_20260519_105352.md | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_R2_SHADOW_OFFICIAL_COMPARE_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v16_daily_auto_update_before_v17_2_factor_tracker_20260511_154526.ps1 | SKIPPED | BLOCKED | Not an OLD_GENERATED_REPORTS archive-group original.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/v16_22_5_universe_script_proof.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/review/V16_FULL_CANDIDATE_REVIEW.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/review/V16_FULL_CANDIDATE_REVIEW.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_DAILY_FULL_UNIVERSE_GATE.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/universe/V16_SECOND_STAGE_REVIEW.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_1B_FACTOR_PERFORMANCE_DASHBOARD.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_FACTOR_PERFORMANCE_DASHBOARD.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7C_R1_MANUAL_DAILY_WITH_RAW105_AUDIT_SUMMARY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7D_MAIN_COMPUTE_DELTA_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_TOP20_SECTOR_EXPOSURE.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7C_R1_MANUAL_DAILY_WITH_RAW105_AUDIT_SUMMARY.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_130825.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_131254.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_164754.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_212518.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260518_213854.md | DELETED | OK | 
+- outputs/v18/factor_audit/V18_4E_FACTOR_OUTPUT_FORWARD_AUDIT_20260519_105611.md | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_REPORT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/V16_24_2B_CLASSIC_DAILY_BRIEF.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/v16_22_5_readable_read_index.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/v16_22_5_universe_rescreen_proof.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/risk/V16_FULL_CANDIDATE_EVENT_WORKFLOW.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_1_1_FACTOR_EFFECTIVENESS_TRACKER_SUMMARY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_2D_OFFICIAL_DAILY_INTEGRATION_SUMMARY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_4_OFFICIAL_DAILY_WITH_DASHBOARD_SUMMARY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/V17_6H_ULTRA_CLEANUP_REPORT_20260512_170807.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/price/V17_6E_SCREENED_UNIVERSE_LATEST_PRICE_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7B_UNIVERSE_SEMANTIC_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7E_REMOVED_MAIN_COMPUTE_INSPECTION.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7_RAW_UNIVERSE_FULL_SCREEN_AUDIT.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1A_QUANT_FRAMEWORK_ARCHITECTURE.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_DAILY_REPORT.md | DELETED | OK | 
+- outputs/v17/ops/V17_6H_ULTRA_CLEANUP_REPORT_20260512_170807.csv | DELETED | OK | 
+- outputs/v17/price/V17_6E_SCREENED_UNIVERSE_LATEST_PRICE_AUDIT.md | DELETED | OK | 
+- outputs/v17/price/v17_6E_second_stage_tickers.csv | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8A_RAW105_FULL_DECISION_DAILY.md | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7B_UNIVERSE_SEMANTIC_AUDIT.md | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7_RAW_UNIVERSE_FULL_SCREEN_AUDIT.md | DELETED | OK | 
+- outputs/v18/factor_lab/V18_1A_QUANT_FRAMEWORK_ARCHITECTURE.md | DELETED | OK | 
+- outputs/v18/factor_research/V18_10B_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_10B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_DAILY_REPORT.md | DELETED | OK | 
+- outputs/v18/weight_research/V18_10C_R1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v17_6A_full_universe_latest_price_audit.ps1 | SKIPPED | BLOCKED | Not an OLD_GENERATED_REPORTS archive-group original.
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/events/v16_macro_event_sources.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/V16_22_5_CLICKABLE_READ_PATHS.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/v16_22_5_system_file_check.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/risk/V16_EVENT_CONFIRMATION_WORKFLOW.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_1_1_FACTOR_EFFECTIVENESS_VALIDATION.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_2D_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_1B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_4_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_1_1_factor_effectiveness_validation.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_1B_factor_bucket_counts.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_factor_bucket_counts.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/manual_daily/V17_7G_R1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/V17_6H_R1_REPAIR_MISSING_BASE_SCRIPT_20260512_171509.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/V17_6H_ULTRA_CLEANUP_SUMMARY_20260512_170807.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/V17_8C_cleanup_overwrite_report.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/price/v17_6E_second_stage_tickers.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8A_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8C_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8D_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8A_today_buy_candidates.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7C_MANUAL_DAILY_WITH_RAW_UNIVERSE_AUDIT_SUMMARY.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7C_R1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7C_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7D_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7E_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7F_B_PRICE_FRESHNESS_ACCEPTANCE.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7F_B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7F_RAW105_LATEST_PRICE_REFRESH.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7C_R1_manual_daily_steps.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7E_removed_main_compute_inspection.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/cockpit/V18_3E_R1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/cockpit/V18_3E_R2_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1A_FACTOR_LAB_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3A_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_R2_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3C_R1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3C_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_PROMOTION_REVIEW.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_REDUNDANCY_FLAGS.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_1A_STRUCTURE_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_1B_FACTOR_VALUE_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_2A_FACTOR_VALIDATION_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_2B_FACTOR_CORRELATION_SECTOR_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_3A_FACTOR_SHADOW_DAILY_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/manifests/V18_3B_SHADOW_OFFICIAL_COMPARE_MANIFEST.csv | DELETED | OK | 
+- archive/deprecated/v18_5C_zero_runtime_archive_20260515_191705/restore_v18_5C_zero_runtime_archive.ps1 | SKIPPED | BLOCKED | Not an OLD_GENERATED_REPORTS archive-group original.
+- outputs/v17/manual_daily/V17_7G_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw105_decision/V17_8D_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw105_decision/v17_8A_today_watch_candidates.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7C_MANUAL_DAILY_WITH_RAW_UNIVERSE_AUDIT_SUMMARY.md | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7C_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7D_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7E_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7E_REMOVED_MAIN_COMPUTE_INSPECTION.md | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7F_B_PRICE_FRESHNESS_ACCEPTANCE.md | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7F_B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7F_RAW105_LATEST_PRICE_REFRESH.md | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7C_R1_manual_daily_steps.csv | DELETED | OK | 
+- outputs/v18/cockpit/V18_3E_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/cockpit/V18_3E_R2_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/daily_integrated/V18_4A_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/daily_integrated/V18_4J_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_lab/V18_1A_FACTOR_LAB_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_lab/V18_1B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_registry/V18_10A_R2_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_registry/V18_10A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_10B_R2_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_11D_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_11E_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_11F_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_R2_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3C_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/forward_outcome/V18_4A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/outcome_summary/V18_4B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12D_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12E_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/sell_timing/V18_12F_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/simulation/V18_8B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/simulation/V18_9A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/technical_timing_backtest/V18_6B_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/technical_timing_forward/V18_6C_R1_LOW_COVERAGE_SNAPSHOT_QUARANTINE.csv | DELETED | OK | 
+- outputs/v18/technical_timing_forward/V18_6C_R1_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/technical_timing_forward/V18_6C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/technical_timing_read_center/V18_6D_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/weight_research/V18_10C_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/events/v16_earnings_overrides.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/data/events/v16_macro_events.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/health/V16_11D_FULL_CANDIDATE_EVENT_HEALTH.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/migration_audit/v16_24_2B_classic_daily_brief_validation.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v16/read_center/V16_24_2B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_1_1_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_2D_OFFICIAL_DAILY_INTEGRATION_STEPS.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_1B_FACTOR_PERFORMANCE_DASHBOARD_VALIDATION.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_3_FACTOR_PERFORMANCE_DASHBOARD_VALIDATION.md | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/V17_4_OFFICIAL_DAILY_WITH_DASHBOARD_STEPS.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_1B_factor_dashboard_validation.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_1B_factor_score_snapshot.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_1B_top_bottom_realized_returns.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_factor_dashboard_validation.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_factor_score_snapshot.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/factor_effectiveness/v17_3_top_bottom_realized_returns.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/manual_daily/V17_6F_E_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/price/V17_6E_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8B_actionable_buy_candidates.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7B_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7F_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/V17_7_READ_FIRST.txt | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw_universe_audit/v17_7C_manual_daily_with_raw_universe_audit_steps.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1B_FACTOR_COMPUTE_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_R2_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3C_R1_LAST_RUN.json | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_AUDIT.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_CORRELATION_PEARSON.csv | DELETED | OK | 
+- archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_validation/V18_2B_FACTOR_CORRELATION_SPEARMAN.csv | DELETED | OK | 
+- outputs/v17/manual_daily/V17_6F_E_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/price/V17_6E_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw105_decision/v17_8B_worth_review_but_locked.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7F_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/V17_7_READ_FIRST.txt | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7C_manual_daily_with_raw_universe_audit_steps.csv | DELETED | OK | 
+- outputs/v17/raw_universe_audit/v17_7E_removed_main_compute_inspection.csv | DELETED | OK | 
+- outputs/v18/factor_lab/V18_1B_FACTOR_COMPUTE_AUDIT.csv | DELETED | OK | 
+- outputs/v18/factor_registry/V18_11A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_registry/V18_11B_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_research/V18_11C_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_AUDIT.csv | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_R2_AUDIT.csv | DELETED | OK | 
+- outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_AUDIT.csv | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2A_FACTOR_VALIDATION_AUDIT.csv | DELETED | OK | 
+- outputs/v18/factor_validation/V18_2B_AUDIT.csv | DELETED | OK | 
+- outputs/v18/technical_timing/V18_6A_READ_FIRST.txt | DELETED | OK | 
+- outputs/v18/technical_timing_backtest/V18_6B_READ_FIRST.txt | DELETED | OK | 
+
+- READ_FIRST: outputs/v18/ops/V18_20J_READ_FIRST.txt
+- REPORT: outputs/v18/ops/V18_20J_CURRENT_VERIFIED_ORIGINAL_DELETE_REPORT.md

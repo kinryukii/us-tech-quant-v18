@@ -1,0 +1,87 @@
+﻿{
+    "version":  "V16.17.0",
+    "module_name":  "event_calendar_and_risk_coefficient",
+    "enable_online_macro_fetch":  false,
+    "auto_merge_online_macro_events":  false,
+    "macro_lookback_days":  7,
+    "macro_lookahead_days":  180,
+    "risk_bands":  {
+                       "LOW_PASS":  [
+                                        0,
+                                        24
+                                    ],
+                       "MEDIUM_REDUCE_SIZE":  [
+                                                  25,
+                                                  49
+                                              ],
+                       "HIGH_HOLD_REVIEW":  [
+                                                50,
+                                                74
+                                            ],
+                       "EXTREME_NO_NEW_BUYS":  [
+                                                   75,
+                                                   100
+                                               ]
+                   },
+    "macro_event_base_scores":  {
+                                    "FOMC":  95,
+                                    "CPI":  90,
+                                    "PCE":  82,
+                                    "NFP":  78,
+                                    "PPI":  65,
+                                    "FED_SPEECH":  55,
+                                    "GDP":  50,
+                                    "OTHER_HIGH":  60
+                                },
+    "macro_phase_multipliers":  {
+                                    "EVENT_DAY":  1.00,
+                                    "PRE_1D":  0.92,
+                                    "PRE_2D":  0.82,
+                                    "PRE_3D":  0.72,
+                                    "PRE_4D_TO_7D":  0.45,
+                                    "POST_1D":  0.62,
+                                    "POST_2D":  0.42,
+                                    "POST_3D_TO_5D":  0.25,
+                                    "OUTSIDE":  0.00
+                                },
+    "earnings_base_scores":  {
+                                 "EARNINGS_DAY":  88,
+                                 "EARNINGS_PRE_1D":  82,
+                                 "EARNINGS_PRE_2D_TO_3D":  72,
+                                 "EARNINGS_PRE_4D_TO_7D":  45,
+                                 "EARNINGS_POST_1D":  58,
+                                 "EARNINGS_POST_2D":  35,
+                                 "EARNINGS_OUTSIDE":  0,
+                                 "EARNINGS_MISSING":  42
+                             },
+    "data_quality_scores":  {
+                                "YFINANCE_OK":  0,
+                                "OVERRIDE_ACTIVE":  0,
+                                "HAS_DATE_WEAK_QUALITY":  12,
+                                "MISSING_EARNINGS_DATE":  35,
+                                "UNKNOWN":  18
+                            },
+    "candidate_layer_scores":  {
+                                   "A_PULLBACK_READY":  0,
+                                   "B_PENDING_MANUAL_CONFIRMATION":  12,
+                                   "C_WAIT_PULLBACK":  8,
+                                   "C_WATCH_ONLY_WAIT_PULLBACK":  15,
+                                   "D_BLOCKED_OR_EXCLUDED":  100,
+                                   "Z_REVIEW_REQUIRED":  70,
+                                   "UNKNOWN":  35
+                               },
+    "score_combination":  {
+                              "macro_weight":  1.00,
+                              "earnings_weight":  1.00,
+                              "data_quality_weight":  0.75,
+                              "candidate_layer_weight":  1.00,
+                              "combination_method":  "max_plus_small_addon",
+                              "addon_cap":  18
+                          },
+    "position_size_multiplier_by_band":  {
+                                             "LOW_PASS":  1.00,
+                                             "MEDIUM_REDUCE_SIZE":  0.50,
+                                             "HIGH_HOLD_REVIEW":  0.00,
+                                             "EXTREME_NO_NEW_BUYS":  0.00
+                                         }
+}

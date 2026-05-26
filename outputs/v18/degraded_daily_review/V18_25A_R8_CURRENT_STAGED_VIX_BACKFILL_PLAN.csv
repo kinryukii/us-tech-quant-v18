@@ -1,0 +1,35 @@
+﻿item,status,path_or_value,notes
+r7_read_first,TRUE,D:\us-tech-quant\outputs\v18\ops\V18_25A_R7_READ_FIRST.txt,R7 READ_FIRST context.
+r7_vix_requirement_spec,TRUE,D:\us-tech-quant\outputs\v18\degraded_daily_review\V18_25A_R7_CURRENT_VIX_REQUIREMENT_SPEC.csv,Exact VIX requirement and threshold context.
+r7_proxy_storage_policy,TRUE,D:\us-tech-quant\outputs\v18\degraded_daily_review\V18_25A_R7_CURRENT_PROXY_STORAGE_POLICY.csv,Staged storage policy.
+r7_repair_options,TRUE,D:\us-tech-quant\outputs\v18\degraded_daily_review\V18_25A_R7_CURRENT_MARKET_PROXY_REPAIR_OPTIONS.csv,Controlled staged VIX backfill recommendation.
+r7_recommends_controlled_staged_vix_backfill,TRUE,CONTROLLED_STAGED_VIX_BACKFILL,External fetch required but must be explicitly approved.
+expected_staged_path,READY,D:\us-tech-quant\data\v18\staged_market_proxy\V18_25A_R8_VIX,Not created in PLAN_ONLY mode.
+fetch_scope,LOCKED,"^VIX,VIX","Only ^VIX first, then VIX fallback."
+python_compile_check,PASS,,D:\us-tech-quant\scripts\v18\v18_25A_R8_controlled_staged_vix_backfill.py
+powershell_parse_check,PASS,,D:\us-tech-quant\scripts\v18\run_v18_25A_R8_controlled_staged_vix_backfill.ps1
+r7_context_files_exist,PASS,,"outputs/v18/ops/V18_25A_R7_READ_FIRST.txt,outputs/v18/degraded_daily_review/V18_25A_R7_CURRENT_VIX_REQUIREMENT_SPEC.csv,outputs/v18/degraded_daily_review/V18_25A_R7_CURRENT_PROXY_STORAGE_POLICY.csv,outputs/v18/degraded_daily_review/V18_25A_R7_CURRENT_MARKET_PROXY_REPAIR_OPTIONS.csv"
+r7_requires_external_fetch,PASS,,R7 recommended controlled staged VIX backfill.
+auto_trade_disabled,PASS,,AUTO_TRADE must remain DISABLED.
+auto_sell_disabled,PASS,,AUTO_SELL must remain DISABLED.
+official_decision_impact_none,PASS,,OFFICIAL_DECISION_IMPACT must remain NONE.
+fetch_scope_vix_only,PASS,,^VIX
+fetch_success,PASS,,At least one of ^VIX or VIX must fetch.
+normalized_rows_positive,PASS,,9164
+close_column_available,PASS,,close required.
+quality_not_fail,PASS,,OK
+forbidden_files_unchanged,PASS,,
+safety_official_price_cache_modified,PASS,,Expected OFFICIAL_PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_modified,PASS,,Expected PRICE_HISTORY_MODIFIED=FALSE; actual FALSE.
+safety_staged_stock_backfill_modified,PASS,,Expected STAGED_STOCK_BACKFILL_MODIFIED=FALSE; actual FALSE.
+safety_ledger_modified,PASS,,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_tier_migration_modified,PASS,,Expected TIER_MIGRATION_MODIFIED=FALSE; actual FALSE.
+safety_degraded_daily_modified,PASS,,Expected DEGRADED_DAILY_MODIFIED=FALSE; actual FALSE.
+safety_official_daily_decision_modified,PASS,,Expected OFFICIAL_DAILY_DECISION_MODIFIED=FALSE; actual FALSE.
+safety_official_decision_impact,PASS,,Expected OFFICIAL_DECISION_IMPACT=NONE; actual NONE.
+safety_buy_permission_modified,PASS,,Expected BUY_PERMISSION_MODIFIED=FALSE; actual FALSE.
+safety_auto_trade,PASS,,Expected AUTO_TRADE=DISABLED; actual DISABLED.
+safety_auto_sell,PASS,,Expected AUTO_SELL=DISABLED; actual DISABLED.
+safety_backtest_executed,PASS,,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.

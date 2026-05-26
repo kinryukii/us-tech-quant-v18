@@ -1,0 +1,2 @@
+﻿status,tracker_rows,updated_forward_rows,forward_complete_rows,partial_forward_filled_rows,pending_forward_rows,pending_signal_price_rows,price_source_count,price_source_status,min_signal_date,max_signal_date,top_5_tickers,validation_fail_count,official_decision_impact,auto_trade,auto_sell,read_only,forward_price_filler_only,read_first
+OK_V18_14D_RANKED_CANDIDATE_FORWARD_PRICE_FILLER_READY,57,57,0,37,0,20,106,LOCAL_PRICE_AVAILABLE,2026-05-18,2026-05-25,"APH,VIAV,FORM,ACM,SITM",0,NONE,DISABLED,DISABLED,TRUE,TRUE,outputs/v18/ops/V18_14D_READ_FIRST.txt

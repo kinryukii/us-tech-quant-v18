@@ -1,0 +1,10 @@
+﻿metric,value,status,reason,source_file
+TOTAL_UNIVERSE_COUNT,325,INFO,Read from rolling universe state.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv
+REQUIRED_DAILY_SCAN_COUNT,65,PASS,ceil(total universe / 5).,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py
+TARGET_DAILY_SCAN_COUNT,65,PASS,Scheduler output after patch.,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt
+EXPECTED_DAILY_SCAN_COUNT,65,PASS,Expected daily threshold target.,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt
+DAILY_THRESHOLD_TARGET_MET_EXPECTED,TRUE,PASS,Daily threshold only.,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt
+TRUE_5DAY_UNIQUE_COVERAGE_MET,FALSE,PASS,True unique coverage was not fixed by V18.16J.,D:\us-tech-quant\outputs\v18\ops\V18_16I_READ_FIRST.txt
+TRUE_5DAY_UNIQUE_COVERAGE_COUNT,149,INFO,Preserved from V18.16I optimizer.,D:\us-tech-quant\outputs\v18\ops\V18_16I_READ_FIRST.txt
+TRUE_5DAY_UNIQUE_SHORTFALL_COUNT,176,PASS,Warning must remain until V18.16K.,D:\us-tech-quant\outputs\v18\ops\V18_16I_READ_FIRST.txt
+TRUE_5DAY_UNIQUE_WARNING_PRESERVED,TRUE,PASS,Daily Trust must not become HIGH solely from daily threshold.,D:\us-tech-quant\outputs\v18\ops\V18_16I_READ_FIRST.txt

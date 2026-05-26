@@ -1,0 +1,2 @@
+﻿run_id,step_order,step_name,command,started_at,ended_at,duration_seconds,exit_code,read_first_path,parsed_status,required_status,action,is_critical,continue_allowed,result,notes
+V18_30E_20260524_182839,1,R30B guard,powershell -NoProfile -ExecutionPolicy Bypass -File D:\us-tech-quant\scripts\v18\run_v18_30B_daily_command_compatibility_guard.ps1 -Root D:\us-tech-quant,2026-05-24T18:28:39,2026-05-24T18:28:40,0.407,0,D:\us-tech-quant\outputs\v18\ops\V18_30B_READ_FIRST.txt,WARN_V18_30B_DAILY_COMMAND_COMPATIBILITY_GUARD_REVIEW_NEEDED,OK,EXECUTED,TRUE,FALSE,FAIL,

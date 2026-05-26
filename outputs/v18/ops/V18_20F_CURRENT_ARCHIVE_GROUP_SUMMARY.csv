@@ -1,0 +1,6 @@
+﻿archive_group,count,total_mb,planned_later_action,proposed_archive_zip,note
+DO_NOT_ARCHIVE_PROTECTED,105,4.530,KEEP_PROTECTED,,"Protected by path, reference, or role policy."
+OLD_GENERATED_REPORTS,352,2.453,ARCHIVE_THEN_DELETE_AFTER_VERIFICATION,V18_20F_old_generated_reports.zip,Historical generated output can be archived and later deleted after verification.
+OLD_EXPERIMENTAL_WRAPPERS,18,0.077,ARCHIVE_ONLY,V18_20F_old_experimental_wrappers.zip,Archive-only wrappers are superseded by current entrypoints.
+LEGACY_VERSIONED_SCRIPTS,4,0.035,ARCHIVE_ONLY,V18_20F_legacy_versioned_scripts.zip,Archive-only source code; do not delete after first archive pass.
+OLD_RUN_LOGS,0,0.000,ARCHIVE_THEN_DELETE_AFTER_VERIFICATION,V18_20F_old_run_logs.zip,"Logs are safe to archive first, then delete after verification."

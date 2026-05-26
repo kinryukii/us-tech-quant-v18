@@ -1,0 +1,11 @@
+﻿rule_id,rule_name,rule_description,applies_to_field_group,failure_mode_prevented,required_validation,current_status,notes
+L001,Snapshot values only,Use only signal snapshot values known at snapshot_date.,raw_scores;factor_fields,Lookahead from recalculated signals.,Column availability timestamp <= snapshot_date.,DESIGN_READY,Read-only design rule.
+L002,No historical recomputation,Do not recompute historical signal snapshots using current formulas.,raw_scores,Formula drift contamination.,Use archived snapshots only.,DESIGN_READY,Read-only design rule.
+L003,Outcome date gate,Do not use outcome prices before planned_outcome_date.,forward_outcome_fields,Future price leakage.,Outcome price date >= planned_outcome_date.,BLOCKED_RETURNS_PENDING,Read-only design rule.
+L004,Event knowledge gate,Do not use future event information not known at snapshot_date.,event_risk_factors,Future calendar leakage.,Event record availability <= snapshot_date.,DESIGN_READY,Read-only design rule.
+L005,Ranking freeze,Do not use post-snapshot ranking changes.,raw_scores,Post-snapshot ranking leakage.,Join only snapshot-dated ranking fields.,DESIGN_READY,Read-only design rule.
+L006,Backfill availability tagging,Do not use backfilled history unless tagged with availability timestamp.,price_derived_factors,Backfilled data availability leakage.,Availability timestamp audit.,BLOCKED_BACKFILL_NOT_APPLIED,Read-only design rule.
+L007,Event coefficient separation,Separate calendar-only event score from hard-lock advisory overlay.,event_risk_factors,Misstated event risk semantics.,Use R1 separated coefficient fields.,DESIGN_READY,Read-only design rule.
+L008,Shadow tracker isolation,Keep shadow tracker separate from production tracker.,forward_outcome_fields,Production state contamination.,Use shadow paths only.,DESIGN_READY,Read-only design rule.
+L009,High-confidence key requirement,Require signal_snapshot_id or forward_tracker_link_key for high-confidence matching.,identity_keys,Weak outcome matching.,Reject rows missing core keys.,DESIGN_READY,Read-only design rule.
+L010,Sample maturity gate,Require multi-horizon sample maturity before effect claims.,forward_outcome_fields,False factor evidence.,Minimum per-horizon sample counts.,BLOCKED_SAMPLE_IMMATURE,Read-only design rule.

@@ -1,0 +1,3 @@
+﻿run_id,ledger_name,ledger_path,ledger_exists,date_column_used,ticker_column_used,date_value,is_weekend,is_after_latest_supported_signal_date,is_unsupported,row_count,unique_ticker_count,duplicate_date_ticker_count,cleanup_eligible,cleanup_applied,removed_rows,notes
+V18_31G_R1_20260524_174236,SIGNAL_FREEZE,D:\us-tech-quant\state\v18\forward_test\V18_DAILY_SIGNAL_FREEZE_LEDGER.csv,TRUE,signal_date,ticker,2026-05-22,FALSE,FALSE,FALSE,250,250,0,FALSE,FALSE,0,
+V18_31G_R1_20260524_174236,TRADE_PLAN,D:\us-tech-quant\state\v18\trade_plan_snapshots\V18_DAILY_TRADE_PLAN_LEDGER.csv,TRUE,signal_date,ticker,2026-05-22,FALSE,FALSE,FALSE,252,252,0,FALSE,FALSE,0,

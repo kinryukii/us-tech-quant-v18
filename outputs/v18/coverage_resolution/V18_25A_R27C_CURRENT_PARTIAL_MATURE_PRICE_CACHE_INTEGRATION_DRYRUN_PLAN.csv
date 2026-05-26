@@ -1,0 +1,3 @@
+﻿ticker,source_normalized_file,target_price_cache_file,action,row_count,min_date,max_date,latest_close,latest_volume,dryrun_status,blocker
+RDDT,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/RDDT.csv,D:/us-tech-quant/state/v18/price_cache/RDDT.csv,WOULD_CREATE,545,2024-03-21,2026-05-22,141.48739624023438,3067017,DRYRUN_PASS,
+TLN,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/normalized/TLN.csv,D:/us-tech-quant/state/v18/price_cache/TLN.csv,WOULD_CREATE,746,2023-06-02,2026-05-22,366.2513122558594,162644,DRYRUN_PASS,

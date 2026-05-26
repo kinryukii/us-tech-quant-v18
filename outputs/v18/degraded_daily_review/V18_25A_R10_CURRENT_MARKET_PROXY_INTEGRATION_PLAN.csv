@@ -1,0 +1,5 @@
+﻿plan_item,path,status,notes
+precondition_r9_gate,D:\us-tech-quant\outputs\v18\ops\V18_25A_R9_READ_FIRST.txt,TRUE,R9 gate=PROMOTE_READY.
+backup_existing_official_vix,D:\us-tech-quant\archive\v18\market_proxy_backups\V18_25A_R10_20260521_234228\VIX.csv.before_V18_25A_R10,MISSING_BEFORE_INTEGRATION,No existing official VIX.csv before integration.
+restore_script,D:\us-tech-quant\archive\v18\market_proxy_backups\V18_25A_R10_20260521_234228\RESTORE_V18_25A_R10_MARKET_PROXY.ps1,TRUE,Generated before integration.
+official_market_proxy_write,D:\us-tech-quant\state\v18\market_proxy_cache\VIX.csv,TRUE,Copy staged normalized VIX into official market proxy cache.

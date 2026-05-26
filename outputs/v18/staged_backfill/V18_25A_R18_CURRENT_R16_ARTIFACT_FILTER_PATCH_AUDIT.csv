@@ -1,0 +1,4 @@
+﻿patch_item,before_value,after_value,notes
+r16_artifact_filter_patch,TICKERS_PRESENT_IN_ORIGINAL_PLAN,TICKERS_EXCLUDED_FROM_CURRENT_PLAN,Artifact filter blocks obvious non-ticker artifacts and market proxy symbols.
+artifact_excluded_count,1,1,One invalid artifact was excluded after patch validation.
+r16_rerun_executed,FALSE,TRUE,R16 read-only rerun already confirmed the artifact is absent from the current plan.

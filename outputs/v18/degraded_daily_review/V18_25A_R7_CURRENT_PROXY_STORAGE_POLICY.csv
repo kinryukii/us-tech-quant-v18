@@ -1,0 +1,4 @@
+﻿policy_item,recommended_path,usage,rationale
+primary_staged_storage,D:\us-tech-quant\data\v18\staged_market_proxy,Stage exact VIX / market proxy history here first.,Keeps repair data separate from official caches and allows validation before promotion.
+promotion_target_after_validation,D:\us-tech-quant\state\v18\market_proxy_cache,Promote validated proxy history here after staged checks pass.,Provides a stable local cache for downstream factor and technical consumers without touching official price cache.
+avoid_immediate_official_cache_write,D:\us-tech-quant\state\v18\price_cache,Do not write proxy repair data here in this step.,Official price cache must remain untouched during the audit and staged repair planning.

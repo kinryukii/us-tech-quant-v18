@@ -1,0 +1,6 @@
+﻿metric,value,notes
+batch_ticker_count,65,Input tickers.
+fetch_success_count,63,Successful yfinance staged downloads.
+staged_local_price_scan_success_count,63,Staged file exists and has rows.
+staged_full_history_ready_count,58,>=500 rows and >=700 days span.
+true_5day_unique_coverage_met,FALSE,Staged-only test does not update official ledger.

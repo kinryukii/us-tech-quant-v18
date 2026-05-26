@@ -1,0 +1,3 @@
+﻿file_name,relative_path,exists,row_count,notes
+V18_25A_R8_VIX_RAW.csv,data/v18/staged_market_proxy/V18_25A_R8_VIX/V18_25A_R8_VIX_RAW.csv,TRUE,9164,"raw fetch fields=date,adj_close,close,high,low,open,volume"
+V18_25A_R8_VIX_NORMALIZED.csv,data/v18/staged_market_proxy/V18_25A_R8_VIX/V18_25A_R8_VIX_NORMALIZED.csv,TRUE,9164,normalized VIX staged history

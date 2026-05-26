@@ -1,0 +1,9 @@
+﻿metric,value
+ledger_path,D:\us-tech-quant\state\v18\forward_test\V18_DAILY_SIGNAL_FREEZE_LEDGER.csv
+dry_run,FALSE
+pre_ledger_rows,754
+current_rows,252
+appended_rows,252
+post_ledger_rows,754
+duplicate_run_ticker_skipped,0
+status,WARN_V18_25A_R21_SAME_DAY_FREEZE_REPLACED

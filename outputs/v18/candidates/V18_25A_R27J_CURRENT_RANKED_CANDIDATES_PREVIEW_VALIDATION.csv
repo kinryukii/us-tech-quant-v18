@@ -1,0 +1,3 @@
+﻿ticker,current_present,preview_present,factor_score_present,technical_score_present,preview_rank,preview_score,validation_status,error_message
+RDDT,FALSE,TRUE,TRUE,TRUE,45,32.457146,PASS,
+TLN,FALSE,TRUE,TRUE,TRUE,75,28.181930,PASS,

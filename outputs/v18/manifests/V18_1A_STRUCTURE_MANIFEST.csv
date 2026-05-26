@@ -1,0 +1,7 @@
+﻿"version","created_at","path","length_bytes","purpose"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\state\v18\factor_registry.csv","1257","factor_lab_bootstrap"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\state\v18\factor_promotion_policy.json","2083","factor_lab_bootstrap"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\configs\v18\v18_module_map.json","2467","factor_lab_bootstrap"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\outputs\v18\factor_lab\V18_1A_QUANT_FRAMEWORK_ARCHITECTURE.md","2067","factor_lab_bootstrap"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\outputs\v18\factor_lab\V18_1A_FACTOR_LAB_READ_FIRST.txt","1166","factor_lab_bootstrap"
+"V18.1A","2026-05-13 16:30:39","D:\us-tech-quant\scripts\v18\run_v18_1A_factor_lab_check.ps1","1289","factor_lab_bootstrap"

@@ -1,0 +1,9 @@
+﻿factor_name,coverage_class,factor_data_status,candidate_count,use_yfinance,official_decision_impact,auto_weight_change,auto_promotion,auto_trade,note
+month_end_rebalance_factor,COMPUTABLE_NOW,CALENDAR_AVAILABLE,93,True,NONE,DISABLED,DISABLED,DISABLED,Computed from candidate base date using weekday trading-day approximation.
+quarter_end_rebalance_factor,COMPUTABLE_NOW,CALENDAR_AVAILABLE,93,True,NONE,DISABLED,DISABLED,DISABLED,Computed from candidate base date using weekday trading-day approximation.
+options_expiry_pressure_factor,PROXY_ONLY,CALENDAR_PROXY_ONLY,93,True,NONE,DISABLED,DISABLED,DISABLED,"Calendar-only OPEX proxy; no options chain, open interest, or flow data used."
+opex_relief_factor,PROXY_ONLY,CALENDAR_PROXY_ONLY,93,True,NONE,DISABLED,DISABLED,DISABLED,"Calendar-only OPEX proxy; no options chain, open interest, or flow data used."
+realized_volatility_factor,COMPUTABLE_NOW,DAILY_CLOSE_HISTORY_AVAILABLE,93,True,NONE,DISABLED,DISABLED,DISABLED,Uses yfinance daily close history only when -UseYFinance is supplied.
+vwap_position_factor,PROXY_ONLY,PROXY_ONLY_DAILY_OHLCV,93,True,NONE,DISABLED,DISABLED,DISABLED,Daily OHLCV proxy only; not true intraday VWAP.
+vwap_deviation_factor,PROXY_ONLY,PROXY_ONLY_DAILY_OHLCV,93,True,NONE,DISABLED,DISABLED,DISABLED,Daily OHLCV proxy only; not true intraday VWAP.
+vwap_reclaim_support_factor,PROXY_ONLY,PROXY_ONLY_DAILY_OHLCV,93,True,NONE,DISABLED,DISABLED,DISABLED,Daily OHLCV proxy only; not true intraday VWAP.

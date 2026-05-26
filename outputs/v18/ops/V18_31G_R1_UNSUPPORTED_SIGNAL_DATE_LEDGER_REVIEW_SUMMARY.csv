@@ -1,0 +1,2 @@
+﻿run_id,status,generated_at,mode,latest_supported_signal_date,cleanup_date,apply_cleanup,ledger_count_checked,ledger_count_existing,unsupported_date_count,unsupported_row_count,cleanup_eligible_row_count,cleanup_removed_row_count,post_cleanup_duplicate_date_ticker_count,backup_dir,validation_fail_count,forbidden_modified,notes
+V18_31G_R1_20260524_174236,OK_V18_31G_R1_UNSUPPORTED_SIGNAL_DATE_LEDGER_CLEAN,2026-05-24T17:42:36,UNSUPPORTED_SIGNAL_DATE_LEDGER_REVIEW,2026-05-22,,FALSE,3,3,0,0,0,0,0,,0,FALSE,Audit only.

@@ -1,0 +1,7 @@
+﻿validation_item,status,expected_value,actual_value,reason
+current_row_count_after,PASS,252,252,
+targets_present_after_count,PASS,2,2,
+duplicate_ticker_count_after,PASS,0,0,
+schema_still_matches_pre_apply,PASS,TRUE,TRUE,
+existing_current_tickers_preserved,PASS,TRUE,TRUE,
+target_score_present_count_after,PASS,2,2,

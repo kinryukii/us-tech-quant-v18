@@ -1,0 +1,14 @@
+﻿metric,count,notes
+R6_R7_INTEGRATED_TICKER_COUNT,52,R6 success rows joined to R7 ledger updates.
+CURRENT_HIGH_TRUST_COUNT_FOR_R6_R7,52,High-trust names among integrated tickers.
+CURRENT_MEDIUM_TRUST_COUNT_FOR_R6_R7,0,Medium-trust names among integrated tickers.
+CURRENT_LOW_TRUST_COUNT_FOR_R6_R7,0,Low-trust names among integrated tickers.
+CURRENT_DATA_NOT_READY_COUNT_FOR_R6_R7,0,Data-not-ready names among integrated tickers.
+FACTOR_PRESENT_COUNT_FOR_R6_R7,52,Integrated tickers present in factor pack ranking.
+FACTOR_MISSING_COUNT_FOR_R6_R7,0,Integrated tickers absent from factor pack ranking.
+TECHNICAL_PRESENT_COUNT_FOR_R6_R7,52,Integrated tickers present in technical timing output.
+TECHNICAL_MISSING_COUNT_FOR_R6_R7,0,Integrated tickers absent from technical timing output.
+TIER_MIGRATION_PRESENT_COUNT_FOR_R6_R7,52,Integrated tickers present in tier migration audit.
+TIER_MIGRATION_MISSING_COUNT_FOR_R6_R7,0,Integrated tickers absent from tier migration audit.
+BLOCKER_PRIMARY::BLOCKED_UNKNOWN,52,Promotion blocker primary count.
+NEXT_FIX::CONTINUE_BATCH3_STAGED_BACKFILL,52,Recommended next fix count.

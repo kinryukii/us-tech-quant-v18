@@ -1,0 +1,2 @@
+﻿provider,symbol_attempted,fetch_status,failure_reason,raw_row_count,normalized_row_count,raw_path,normalized_path
+yfinance,^VIX,SUCCESS,,9164,9164,D:\us-tech-quant\data\v18\staged_market_proxy\V18_25A_R8_VIX\V18_25A_R8_VIX_RAW.csv,D:\us-tech-quant\data\v18\staged_market_proxy\V18_25A_R8_VIX\V18_25A_R8_VIX_NORMALIZED.csv

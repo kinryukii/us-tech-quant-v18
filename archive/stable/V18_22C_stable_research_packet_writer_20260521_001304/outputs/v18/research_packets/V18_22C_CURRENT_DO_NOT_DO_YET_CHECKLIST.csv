@@ -1,0 +1,11 @@
+﻿blocked_action,block_reason,current_metric,unlock_condition,risk_if_done_now,production_impact,notes
+DO_NOT_CLAIM_FACTOR_EFFECTIVENESS,High-confidence matches are zero,HIGH_CONFIDENCE_FORWARD_MATCH_COUNT=0,High-confidence multi-horizon samples,False research claim,NONE,Claims disabled.
+DO_NOT_CHANGE_FACTOR_WEIGHTS,No effect claims allowed,WEIGHT_CHANGE_ALLOWED=FALSE,Validated evidence and approval,Unsupported scoring changes,HIGH,Weights unchanged.
+DO_NOT_PROMOTE_TO_PRODUCTION,Blockers remain,PRODUCTION_PROMOTION_ALLOWED=FALSE,Evidence gates pass,Production regression,HIGH,Promotion disabled.
+DO_NOT_APPLY_EVENT_RISK_TO_OFFICIAL_DECISION,Advisory only,EVENT_RISK_COEFFICIENT_APPLIED_TO_OFFICIAL_DECISION=FALSE,Explicit integration approval,Decision behavior change,HIGH,Event risk remains advisory.
+DO_NOT_INTEGRATE_PRICE_CACHE,Integration disallowed,PRICE_CACHE_INTEGRATION_ALLOWED=FALSE,Validated staged data and approval,Cache contamination,HIGH,Cache unchanged.
+DO_NOT_EXECUTE_BACKTEST,Forward returns pending,BLOCKED_DESIGN_ONLY_FORWARD_RETURNS_PENDING,Filled outcomes and sample gates,Misleading research,NONE,Backtest not executed.
+DO_NOT_FILL_FORWARD_RETURNS_UNTIL_MATURE,Returns pending/maturity incomplete,FORWARD_RETURN_PENDING_COUNT=525,Matured horizons and approved apply,Invalid returns,MEDIUM,No fills.
+DO_NOT_RUN_H_R2_WITHOUT_EXPLICIT_APPROVAL,External fetch/import,STAGED_BACKFILL_ACTUAL_FETCH_IMPORT_ALLOWED=REQUIRES_EXPLICIT_APPROVAL,Explicit approval,Unauthorized data fetch,NONE,Do not auto-fetch.
+DO_NOT_CONNECT_TO_AUTO_TRADE,Research-only,AUTO_TRADE=DISABLED,Separate production approval,Unauthorized trading,HIGH,Disabled.
+DO_NOT_CONNECT_TO_AUTO_SELL,Research-only,AUTO_SELL=DISABLED,Separate production approval,Unauthorized selling,HIGH,Disabled.

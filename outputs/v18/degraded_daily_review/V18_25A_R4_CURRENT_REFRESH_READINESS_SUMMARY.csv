@@ -1,0 +1,17 @@
+﻿metric,count,notes
+R6_R7_INTEGRATED_TICKER_COUNT,52,R6 integration successes joined to R7 ledger updates.
+OFFICIAL_PRICE_CACHE_AVAILABLE_COUNT,52,Integrated tickers with local official price cache files.
+FULL_HISTORY_READY_COUNT,52,Official cache rows >= 252 and close column present.
+FACTOR_PRESENT_CURRENT_COUNT,0,Integrated tickers present in current factor pack ranking.
+FACTOR_MISSING_CURRENT_COUNT,52,Integrated tickers absent from current factor pack ranking.
+FACTOR_REFRESH_INPUT_READY_COUNT,0,Official history and required columns are sufficient for factor refresh.
+FACTOR_REFRESH_INPUT_BLOCKED_COUNT,52,Integrated tickers blocked from factor refresh input readiness.
+TECHNICAL_PRESENT_CURRENT_COUNT,0,Integrated tickers present in current technical timing output.
+TECHNICAL_MISSING_CURRENT_COUNT,52,Integrated tickers absent from current technical timing output.
+TECHNICAL_REFRESH_INPUT_READY_COUNT,52,Official history and required columns are sufficient for technical refresh.
+TECHNICAL_REFRESH_INPUT_BLOCKED_COUNT,0,Integrated tickers blocked from technical refresh input readiness.
+READY_FOR_TARGETED_FACTOR_AND_TECHNICAL_REFRESH_COUNT,0,Both factor and technical inputs are ready.
+READY_FOR_TECHNICAL_REFRESH_ONLY_COUNT,52,"Technical ready, factor not ready."
+READY_FOR_FACTOR_REFRESH_ONLY_COUNT,0,"Factor ready, technical not ready."
+NEEDS_REQUIREMENT_TRACE_COUNT,0,Refresh requirements still need source trace.
+HOLD_REVIEW_COUNT,0,Residual hold-review rows after conservative checks.

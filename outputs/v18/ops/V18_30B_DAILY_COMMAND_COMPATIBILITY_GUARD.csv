@@ -1,0 +1,11 @@
+﻿category,item,status,value,details
+check,current_ranked_candidate_row_count,PASS,252,expected 252
+check,current_theme_classification_row_count,PASS,252,expected 252
+check,current_recommendation_row_count,PASS,252,expected 252
+check,rddt_present,PASS,1,RDDT should be present once in ranked candidates
+check,tln_present,PASS,1,TLN should be present once in ranked candidates
+check,latest_snapshot_row_count,WARN,0,
+check,latest_signal_freeze_ticker_count,WARN,250,V18_25A_R21_20260522_191703
+check,duplicate_signal_date_ticker_count_in_freeze_ledger,PASS,0,Run V18.30D cleanup if nonzero
+check,legacy_daily_overwrite_detected,PASS,FALSE,20-row current files with 252-row snapshot available
+check,correct_r21_wrapper_found,PASS,TRUE,scripts/v18/run_v18_25A_R21_daily_signal_freeze_forward_test_ledger.ps1

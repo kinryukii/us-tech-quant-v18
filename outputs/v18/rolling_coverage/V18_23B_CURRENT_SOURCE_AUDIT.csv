@@ -1,0 +1,5 @@
+﻿source_name,source_path,exists,row_count,ticker_count,selected,notes
+V18_23A_PLAN,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TRUE,324,324,TRUE,ticker_column=ticker
+V18_UNIVERSE_ROLLING_STATE,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TRUE,327,324,FALSE,ticker_column=ticker
+FACTOR_PACK,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,,105,FALSE,Read-only local factor availability source.
+TECHNICAL_TIMING,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,,105,FALSE,Read-only local technical timing availability source.

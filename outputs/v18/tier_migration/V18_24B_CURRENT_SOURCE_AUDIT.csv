@@ -1,0 +1,12 @@
+﻿source_name,source_path,exists,row_count,required,notes
+v18_24a_read_first,outputs/v18/ops/V18_24A_READ_FIRST.txt,TRUE,1,TRUE,V18.24A source consumed read-only.
+v18_24a_audit,outputs/v18/tier_migration/V18_24A_CURRENT_DYNAMIC_SCORE_TIER_MIGRATION_AUDIT.md,TRUE,1,FALSE,V18.24A source consumed read-only.
+v18_24a_snapshot,outputs/v18/tier_migration/V18_24A_CURRENT_SCORE_TIER_SNAPSHOT.csv,TRUE,324,TRUE,V18.24A source consumed read-only.
+v18_24a_movement,outputs/v18/tier_migration/V18_24A_CURRENT_TIER_MOVEMENT_REPORT.csv,TRUE,324,TRUE,V18.24A source consumed read-only.
+v18_24a_upgrades,outputs/v18/tier_migration/V18_24A_CURRENT_UPGRADES.csv,TRUE,0,FALSE,V18.24A source consumed read-only.
+v18_24a_downgrades,outputs/v18/tier_migration/V18_24A_CURRENT_DOWNGRADES.csv,TRUE,0,FALSE,V18.24A source consumed read-only.
+v18_24a_large,outputs/v18/tier_migration/V18_24A_CURRENT_LARGE_SCORE_MOVES.csv,TRUE,0,FALSE,V18.24A source consumed read-only.
+v18_24a_new_score,outputs/v18/tier_migration/V18_24A_CURRENT_NEWLY_SCORE_READY.csv,TRUE,0,FALSE,V18.24A source consumed read-only.
+v18_24a_blocked,outputs/v18/tier_migration/V18_24A_CURRENT_DATA_NOT_READY_OR_BLOCKED.csv,TRUE,221,FALSE,V18.24A source consumed read-only.
+v18_24a_tier_summary,outputs/v18/tier_migration/V18_24A_CURRENT_TIER_SUMMARY.csv,TRUE,6,TRUE,V18.24A source consumed read-only.
+v18_23c_r3_read_first,outputs/v18/ops/V18_23C_R3_READ_FIRST.txt,TRUE,1,FALSE,Coverage/trust context.

@@ -1,0 +1,13 @@
+﻿plan_item,required,path_or_value,notes
+factor pack current file backup required,TRUE,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,R25D must copy before modifying.
+technical timing current file backup required,TRUE,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,R25D must copy before modifying.
+restore script required,TRUE,archive/v18/factor_technical_backups/V18_25A_R25D_YYYYMMDD_HHMMSS/restore_v18_25A_R25D_factor_technical.ps1,R25D must generate restore instructions before merge.
+expected backup directory,TRUE,archive/v18/factor_technical_backups/V18_25A_R25D_YYYYMMDD_HHMMSS,Timestamp must be resolved by R25D at execution time.
+R25D would modify,TRUE,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,
+R25D would modify,TRUE,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,
+R25D must not modify,TRUE,state/v18/price_cache,Official price cache remains read-only.
+R25D must not modify,TRUE,state/v18/rolling_coverage/V18_23B_ROLLING_SCAN_LEDGER.csv,Rolling ledger remains read-only.
+R25D must not modify,TRUE,outputs/v18/tier_migration,
+R25D must not modify,TRUE,outputs/v18/daily_decision,
+R25D must not modify,TRUE,outputs/v18/market_regime,No official market proxy changes.
+R25D must not modify,TRUE,outputs/v18/staged_backfill,No staged backfill price changes.

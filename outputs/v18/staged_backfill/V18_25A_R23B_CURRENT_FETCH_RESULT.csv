@@ -1,0 +1,23 @@
+﻿ticker,priority_rank,provider,fetch_attempted,fetch_success,fetch_empty,fetch_failed,raw_row_count,raw_path,fetch_timestamp,error_message
+BLSH,3,yfinance,TRUE,TRUE,FALSE,FALSE,196,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/BLSH.csv,2026-05-23T00:09:17,
+CAI,6,yfinance,TRUE,TRUE,FALSE,FALSE,234,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/CAI.csv,2026-05-23T00:09:17,
+CDTX,7,yfinance,TRUE,FALSE,TRUE,FALSE,0,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/CDTX.csv,2026-05-23T00:09:17,Provider returned empty history.
+CFLT,8,yfinance,TRUE,FALSE,TRUE,FALSE,0,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/CFLT.csv,2026-05-23T00:09:17,Provider returned empty history.
+CHYM,9,yfinance,TRUE,TRUE,FALSE,FALSE,238,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/CHYM.csv,2026-05-23T00:09:17,
+COG,10,yfinance,TRUE,FALSE,TRUE,FALSE,0,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/COG.csv,2026-05-23T00:09:17,Provider returned empty history.
+CRCL,12,yfinance,TRUE,TRUE,FALSE,FALSE,243,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/CRCL.csv,2026-05-23T00:09:17,
+FIGR,16,yfinance,TRUE,TRUE,FALSE,FALSE,176,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/FIGR.csv,2026-05-23T00:09:17,
+GEMI,17,yfinance,TRUE,TRUE,FALSE,FALSE,175,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/GEMI.csv,2026-05-23T00:09:17,
+JBS,21,yfinance,TRUE,TRUE,FALSE,FALSE,237,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/JBS.csv,2026-05-23T00:09:17,
+JFROG,22,yfinance,TRUE,FALSE,TRUE,FALSE,0,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/JFROG.csv,2026-05-23T00:09:17,Provider returned empty history.
+KLAR,23,yfinance,TRUE,TRUE,FALSE,FALSE,176,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/KLAR.csv,2026-05-23T00:09:17,
+LINE,24,yfinance,TRUE,TRUE,FALSE,FALSE,459,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/LINE.csv,2026-05-23T00:09:17,
+MNTN,25,yfinance,TRUE,TRUE,FALSE,FALSE,252,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/MNTN.csv,2026-05-23T00:09:17,
+MPW,26,yfinance,TRUE,FALSE,TRUE,FALSE,0,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/MPW.csv,2026-05-23T00:09:17,Provider returned empty history.
+PONY,28,yfinance,TRUE,TRUE,FALSE,FALSE,371,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/PONY.csv,2026-05-23T00:09:17,
+RDDT,29,yfinance,TRUE,TRUE,FALSE,FALSE,545,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/RDDT.csv,2026-05-23T00:09:17,
+SOLS,30,yfinance,TRUE,TRUE,FALSE,FALSE,149,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/SOLS.csv,2026-05-23T00:09:17,
+STUB,31,yfinance,TRUE,TRUE,FALSE,FALSE,172,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/STUB.csv,2026-05-23T00:09:17,
+TLN,32,yfinance,TRUE,TRUE,FALSE,FALSE,746,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/TLN.csv,2026-05-23T00:09:17,
+WOLF,46,yfinance,TRUE,TRUE,FALSE,FALSE,164,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/WOLF.csv,2026-05-23T00:09:17,
+WYFI,50,yfinance,TRUE,TRUE,FALSE,FALSE,200,D:/us-tech-quant/data/v18/staged_backfill/V18_25A_R23B_MISSING_CACHE/raw/WYFI.csv,2026-05-23T00:09:17,

@@ -1,0 +1,5 @@
+﻿"ticker","row_count","min_date","max_date","latest_close","latest_volume","r23b_quality_status","quality_status","manual_review_tier","reason","provider","fetch_run_id"
+"TLN","746","2023-06-02","2026-05-22","366.2513122558594","162644","PARTIAL_HISTORY_HOLD","HELD_OUT_PARTIAL_HISTORY","MATURE_REVIEW_PRIORITY","Partial history remains held out for separate policy handling.","yfinance","V18_25A_R23B_20260523_000917"
+"RDDT","545","2024-03-21","2026-05-22","141.48739624023438","3067017","PARTIAL_HISTORY_HOLD","HELD_OUT_PARTIAL_HISTORY","MATURE_REVIEW_PRIORITY","Partial history remains held out for separate policy handling.","yfinance","V18_25A_R23B_20260523_000917"
+"LINE","459","2024-07-25","2026-05-22","40.2400016784668","128015","PARTIAL_HISTORY_HOLD","HELD_OUT_PARTIAL_HISTORY","NEAR_MATURE_WATCH","Partial history remains held out for separate policy handling.","yfinance","V18_25A_R23B_20260523_000917"
+"PONY","371","2024-11-27","2026-05-22","8.789999961853027","3153944","PARTIAL_HISTORY_HOLD","HELD_OUT_PARTIAL_HISTORY","NEAR_MATURE_WATCH","Partial history remains held out for separate policy handling.","yfinance","V18_25A_R23B_20260523_000917"

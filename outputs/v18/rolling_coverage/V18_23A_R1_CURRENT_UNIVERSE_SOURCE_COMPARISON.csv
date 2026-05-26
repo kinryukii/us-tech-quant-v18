@@ -1,0 +1,14 @@
+﻿source_id,source_path,source_unique_count,baseline_unique_count,intersection_count,in_source_not_in_v18_23a_count,in_v18_23a_not_in_source_count,source_with_325_or_more,reference_candidate,source_trust_level,notes
+V18_23A_TODAY_SCAN_LIST,outputs/v18/rolling_coverage/V18_23A_CURRENT_TODAY_PLANNED_SCAN_LIST.csv,65,324,65,0,259,FALSE,FALSE,MEDIUM,Comparison source.
+V18_CURRENT_UNIVERSE_ROLLING_STATE,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,324,324,324,0,0,FALSE,TRUE,HIGH,Broader reference candidate.
+V18_CURRENT_RAW105_FACTOR_PACK_RANKING,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,105,324,105,0,219,FALSE,FALSE,MEDIUM,Comparison source.
+V18_6A_CURRENT_TECHNICAL_TIMING,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,105,324,105,0,219,FALSE,FALSE,MEDIUM,Comparison source.
+V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT,outputs/v18/signal_snapshots/V18_21B_R1_CURRENT_SIGNAL_SNAPSHOT.csv,324,324,324,0,0,FALSE,FALSE,HIGH,Comparison source.
+V18_21B_CURRENT_SIGNAL_SNAPSHOT,outputs/v18/signal_snapshots/V18_21B_CURRENT_SIGNAL_SNAPSHOT.csv,324,324,324,0,0,FALSE,FALSE,MEDIUM,Comparison source.
+V18_CURRENT_RANKED_CANDIDATE_SCORE_EXPLANATION,outputs/v18/ranking/V18_CURRENT_RANKED_CANDIDATE_SCORE_EXPLANATION.csv,20,324,20,0,304,FALSE,FALSE,MEDIUM,Comparison source.
+STATE_V18_UNIVERSE_ROLLING_STATE,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,324,324,324,0,0,FALSE,FALSE,HIGH,Comparison source.
+STATE_V18_MANUAL_UNIVERSE_ADDITIONS,state/v18/universe/V18_MANUAL_UNIVERSE_ADDITIONS.csv,275,324,275,0,49,FALSE,FALSE,MEDIUM,Comparison source.
+STATE_RAW105_UNIVERSE_FOR_FACTOR_LAB,state/v18/raw105_universe_for_factor_lab.csv,105,324,105,0,219,FALSE,FALSE,LOW,Comparison source.
+CONFIG_V16_FULL_SCREENED,configs/v16/universe/us_full_screened_generated.yaml,105,324,105,0,219,FALSE,FALSE,LOW,Comparison source.
+CONFIG_V16_SECOND_STAGE,configs/v16/universe/us_full_second_stage_generated.yaml,20,324,20,0,304,FALSE,FALSE,LOW,Comparison source.
+EVENT_CALENDAR,state/v16/event_calendar.csv,5,324,5,0,319,FALSE,FALSE,LOW,Comparison source.

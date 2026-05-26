@@ -1,0 +1,4 @@
+﻿backup_item,ticker,source_path,backup_path,backup_status,notes
+ROLLING_LEDGER,,D:/us-tech-quant/state/v18/rolling_coverage/V18_23B_ROLLING_SCAN_LEDGER.csv,D:/us-tech-quant/archive/v18/partial_mature_integration_backups/V18_25A_R27D_20260523_010108/V18_23B_ROLLING_SCAN_LEDGER.csv,BACKED_UP,
+PRICE_CACHE,RDDT,D:/us-tech-quant/state/v18/price_cache/RDDT.csv,,MISSING_BEFORE_APPLY,Restore removes target file if it was created by R27D.
+PRICE_CACHE,TLN,D:/us-tech-quant/state/v18/price_cache/TLN.csv,,MISSING_BEFORE_APPLY,Restore removes target file if it was created by R27D.

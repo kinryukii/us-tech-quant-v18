@@ -1,0 +1,5 @@
+﻿source_name,source_path,exists,row_count,notes
+staged_manifest,data/v18/staged_backfill/V18_23C_BATCH1/MANIFEST.csv,TRUE,66,Read-only staged manifest.
+combined_staged_history,data/v18/staged_backfill/V18_23C_BATCH1/V18_23C_BATCH1_STAGED_PRICE_HISTORY.csv,TRUE,72335,Read-only combined staged file.
+fetch_result,outputs/v18/staged_backfill/V18_23C_CURRENT_BACKFILL_FETCH_RESULT.csv,TRUE,65,V18.23C fetch results.
+staged_retest,outputs/v18/staged_backfill/V18_23C_CURRENT_STAGED_SCAN_RETEST_RESULT.csv,TRUE,65,V18.23C staged retest results.
