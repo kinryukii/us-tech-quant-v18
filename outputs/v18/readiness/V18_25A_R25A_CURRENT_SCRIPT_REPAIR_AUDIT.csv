@@ -1,0 +1,2 @@
+﻿script_path,initial_parse_status,reference_count,active_mainline_dependency,patch_attempted,patch_applied,backup_path,final_parse_status,decision,notes
+scripts/v18/v18_6A_technical_timing_shadow.py,"PY_AST_PARSE_FAIL:SyntaxError:invalid non-printable character U+FEFF (<unknown>, line 1)",12,FALSE,FALSE,FALSE,,"PY_AST_PARSE_FAIL:SyntaxError:invalid non-printable character U+FEFF (<unknown>, line 1)",EXCLUDE_FROM_R25B_SELECTION,Broken strict UTF-8 AST parse is caused by a BOM at file start; R25B selects the parse-clean R11 technical builder instead.

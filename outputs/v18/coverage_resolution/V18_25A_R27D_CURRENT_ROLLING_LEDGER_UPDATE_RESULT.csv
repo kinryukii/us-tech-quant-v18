@@ -1,0 +1,3 @@
+﻿ticker,ledger_row_found,ledger_update_attempted,ledger_update_success,previous_last_success_scan_date,new_last_success_scan_date,previous_last_scan_status,new_last_scan_status,error_message
+RDDT,TRUE,TRUE,TRUE,,2026-05-23,SKIPPED_NO_LOCAL_DATA,SUCCESS_LOCAL_PRICE_FULL_HISTORY,
+TLN,TRUE,TRUE,TRUE,,2026-05-23,SKIPPED_NO_LOCAL_DATA,SUCCESS_LOCAL_PRICE_FULL_HISTORY,

@@ -1,0 +1,6 @@
+﻿backup_item,source_path,backup_path,required,created,size_bytes,notes
+official_factor_pack,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,D:\us-tech-quant\archive\v18\factor_technical_backups\V18_25A_R25D_20260522_180350\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,TRUE,28697,
+official_technical_timing,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,D:\us-tech-quant\archive\v18\factor_technical_backups\V18_25A_R25D_20260522_180350\V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,TRUE,46720,
+restore_script,,D:\us-tech-quant\archive\v18\factor_technical_backups\V18_25A_R25D_20260522_180350\RESTORE_V18_25A_R25D_FACTOR_TECHNICAL.ps1,TRUE,TRUE,634,
+restore_readme,,D:\us-tech-quant\archive\v18\factor_technical_backups\V18_25A_R25D_20260522_180350\README_RESTORE_V18_25A_R25D.txt,TRUE,TRUE,245,
+manifest,,D:\us-tech-quant\archive\v18\factor_technical_backups\V18_25A_R25D_20260522_180350\MANIFEST.csv,TRUE,TRUE,838,

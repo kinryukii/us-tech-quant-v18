@@ -1,0 +1,2 @@
+﻿section,ticker,movement_type,previous_tier,current_tier,previous_score,current_score,score_delta,movement_reason,detail_path
+BASELINE,,BASELINE_NO_PRIOR_TIER,,,,,,V18.24A baseline mode; no prior snapshot.,D:\us-tech-quant\outputs\v18\tier_migration\V18_24A_CURRENT_TIER_MOVEMENT_REPORT.csv

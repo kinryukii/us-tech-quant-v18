@@ -1,0 +1,11 @@
+﻿metric,value,notes
+total_universe_count,324,
+pre_unique_success_within_lookback_window,265,
+post_unique_success_within_lookback_window,265,
+pre_remaining_stale_or_never_success_count,59,
+post_remaining_stale_or_never_success_count,59,
+pre_never_success_count,59,
+post_never_success_count,59,
+refreshed_success_count,6,DryRun reports locally valid refreshes; apply reports ledger updates.
+refreshed_fail_count,59,
+true_lookback_coverage_met_after_update,FALSE,

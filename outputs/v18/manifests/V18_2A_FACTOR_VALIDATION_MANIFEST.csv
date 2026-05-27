@@ -1,0 +1,6 @@
+﻿version,path,length_bytes,generated_at,purpose
+V18.2A,D:\us-tech-quant\outputs\v18\factor_validation\V18_2A_FACTOR_VALIDATION_REPORT.md,3399,2026-05-13 16:55:43,factor_validation
+V18.2A,D:\us-tech-quant\outputs\v18\factor_validation\V18_2A_FACTOR_VALIDATION_SUMMARY.csv,3996,2026-05-13 16:55:43,factor_validation
+V18.2A,D:\us-tech-quant\outputs\v18\factor_validation\V18_2A_FACTOR_VALIDATION_DETAIL.csv,635158,2026-05-13 16:55:43,factor_validation
+V18.2A,D:\us-tech-quant\outputs\v18\factor_validation\V18_2A_READ_FIRST.txt,872,2026-05-13 16:55:43,factor_validation
+V18.2A,D:\us-tech-quant\outputs\v18\factor_validation\V18_2A_FACTOR_VALIDATION_AUDIT.csv,251,2026-05-13 16:55:43,factor_validation

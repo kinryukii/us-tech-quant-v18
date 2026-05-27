@@ -1,0 +1,5 @@
+﻿path,parent,category,mode,action,skip_reason,existed_before,exists_after,validation_status
+archive/deprecated/v18_5C_zero_runtime_archive_20260515_191705/scripts,archive/deprecated/v18_5C_zero_runtime_archive_20260515_191705,EMPTY_DIR_DELETE_CANDIDATE,APPLY,DELETED,,TRUE,FALSE,OK
+outputs/v16/health,outputs/v16,EMPTY_DIR_DELETE_CANDIDATE,APPLY,DELETED,,TRUE,FALSE,OK
+outputs/v16/stable,outputs/v16,EMPTY_DIR_DELETE_CANDIDATE,APPLY,DELETED,,TRUE,FALSE,OK
+outputs/v18/logs,outputs/v18,EMPTY_DIR_DELETE_CANDIDATE,APPLY,DELETED,,TRUE,FALSE,OK

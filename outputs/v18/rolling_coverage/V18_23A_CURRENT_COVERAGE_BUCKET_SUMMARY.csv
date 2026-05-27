@@ -1,0 +1,6 @@
+﻿bucket,bucket_index,ticker_count,planned_today,coverage_ratio
+bucket_1,1,65,FALSE,0.200617
+bucket_2,2,65,FALSE,0.200617
+bucket_3,3,65,TRUE,0.200617
+bucket_4,4,65,FALSE,0.200617
+bucket_5,5,64,FALSE,0.197531

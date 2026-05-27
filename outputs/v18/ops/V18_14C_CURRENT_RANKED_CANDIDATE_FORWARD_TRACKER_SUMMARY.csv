@@ -1,0 +1,2 @@
+﻿status,signal_date,rank_source,tracker_rows,new_signal_rows_added,updated_forward_rows,forward_complete_rows,pending_forward_rows,top_5_tickers,validation_fail_count,official_decision_impact,auto_trade,auto_sell,read_only,forward_validation_only,read_first
+OK_V18_14C_RANKED_CANDIDATE_FORWARD_TRACKER_READY,2026-05-18,V18_CURRENT_RANKED_CANDIDATES,57,0,37,0,57,"APH,ACM,CAMT,ASML,CEG",0,NONE,DISABLED,DISABLED,TRUE,TRUE,outputs/v18/ops/V18_14C_READ_FIRST.txt

@@ -1,0 +1,5 @@
+﻿plan_item,path,status,notes
+backup_current_technical,D:\us-tech-quant\archive\v18\technical_timing_backups\V18_25A_R12_20260521_235627\V18_6A_CURRENT_TECHNICAL_TIMING.before_V18_25A_R12.csv,TRUE,Backup created before current file modification.
+restore_script,D:\us-tech-quant\archive\v18\technical_timing_backups\V18_25A_R12_20260521_235627\RESTORE_V18_25A_R12_TECHNICAL_TIMING.ps1,TRUE,Restores pre-R12 current technical timing file.
+merge_strategy,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv,REPLACE_OR_APPEND_BY_TICKER,Preserve current schema and non-target rows.
+schema_extra_fields,D:\us-tech-quant\outputs\v18\technical_timing\V18_25A_R11_FULL_COMPATIBLE_TECHNICAL_TIMING_STAGED.csv,DOCUMENTED_NOT_MERGED,"close_column_available,duplicate_date_count,formula_compatibility,input_history_rows,refresh_scope,technical_refresh_blocker,technical_status"

@@ -1,0 +1,3 @@
+﻿blocker_reason,affected_row_count,affected_ticker_count,affected_horizon_count,example_tickers,recommended_resolution,can_be_resolved_without_external_data,requires_price_backfill,requires_waiting_for_horizon_maturity
+NOT_MATURED,515,103,5,"AAPL,ACLS,ACM,ACMR,AEHR,ALAB,AMAT,AMD,AMKR,AMZN",Wait for horizon maturity or later local price availability.,TRUE,FALSE,TRUE
+PRICE_SOURCE_DEGRADED,10,2,5,"VECO,XLK",Add/repair local ticker price history source.,FALSE,TRUE,FALSE

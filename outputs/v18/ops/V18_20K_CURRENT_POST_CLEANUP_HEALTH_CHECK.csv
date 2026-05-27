@@ -1,0 +1,17 @@
+﻿metric,value,status,details
+repo_size_mb,581.398,OK,Workspace size excluding .git and .venv.
+repo_file_count,2317,OK,Workspace file count excluding .git and .venv.
+v18g_zip_verified_count,3,OK,Verified V18.20G zip archives remain readable.
+v18g_zip_validation_fail_count,0,OK,Zip validation must remain clean.
+v18j_deleted_missing_count,268,OK,Deleted verified-original count should remain missing.
+v18j_skipped_existing_count,4,OK,Skipped archived wrappers/scripts should still exist.
+critical_file_missing_count,0,OK,Critical files should remain in place.
+current_alias_missing_count,0,OK,Current aliases should remain present.
+broken_active_reference_count,0,OK,No active script or current read-center output should reference deleted originals.
+stable_snapshot_missing_count,0,OK,Latest stable snapshot should remain present.
+manual_state_modified_count,0,OK,Verification is read-only and does not modify state.
+price_cache_modified_count,0,OK,Verification is read-only and does not modify price cache.
+validation_fail_count,0,OK,Aggregate verification failures must stay at zero.
+v18_19a_status,WARN_V18_19A_DAILY_READABILITY_READY,OK,Post-cleanup V18.19A must still run.
+daily_command_center_wrapper,EXISTS,OK,Current daily command center wrapper must still exist.
+current_alias_catalog_count,469,OK,Catalog of current alias files observed during verification.

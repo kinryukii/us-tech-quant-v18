@@ -1,0 +1,11 @@
+﻿upper_rank,lower_rank,upper_ticker,lower_ticker,upper_score,lower_score,absolute_score_gap,relative_score_gap,reason_close
+3,4,AGX,BLTE,57.4000,57.3240,0.0760,0.001324,rank: 3 vs 4; technical_status: TECH_TIMING_NEUTRAL vs TECH_TIMING_WATCH_POSITIVE; composite_candidate_score: 57.4 vs 57.324
+4,5,BLTE,LITE,57.3240,57.0200,0.3040,0.005303,rank: 4 vs 5; technical_status: TECH_TIMING_WATCH_POSITIVE vs TECH_TIMING_NEUTRAL; composite_candidate_score: 57.324 vs 57.02
+5,6,LITE,ALM,57.0200,56.8920,0.1280,0.002245,rank: 5 vs 6; technical_status: TECH_TIMING_NEUTRAL vs TECH_TIMING_PULLBACK_WATCH; composite_candidate_score: 57.02 vs 56.892
+6,7,ALM,POWL,56.8920,56.6400,0.2520,0.004429,rank: 6 vs 7; technical_status: TECH_TIMING_PULLBACK_WATCH vs TECH_TIMING_NEUTRAL; composite_candidate_score: 56.892 vs 56.64
+7,8,POWL,MTZ,56.6400,56.6320,0.0080,0.000141,rank: 7 vs 8; composite_candidate_score: 56.64 vs 56.632
+10,11,OC,MU,53.9080,53.8560,0.0520,0.000965,rank: 10 vs 11; technical_status: TECH_TIMING_WATCH_POSITIVE vs TECH_TIMING_NEUTRAL; composite_candidate_score: 53.908 vs 53.856
+12,13,CAMT,SOXL,53.5440,53.4760,0.0680,0.001270,rank: 12 vs 13; technical_status: TECH_TIMING_WATCH_POSITIVE vs TECH_TIMING_NEUTRAL; composite_candidate_score: 53.544 vs 53.476
+14,15,CLH,AMKR,53.0480,52.8280,0.2200,0.004147,rank: 14 vs 15; technical_status: TECH_TIMING_PULLBACK_WATCH vs TECH_TIMING_NEUTRAL; composite_candidate_score: 53.048 vs 52.828
+18,19,VIAV,ICHR,51.8006,51.7320,0.0686,0.001324,rank: 18 vs 19; technical_status: TECH_TIMING_STAGED_REFRESH vs TECH_TIMING_NEUTRAL; composite_candidate_score: 51.800559 vs 51.732
+19,20,ICHR,COHU,51.7320,51.6840,0.0480,0.000928,rank: 19 vs 20; composite_candidate_score: 51.732 vs 51.684

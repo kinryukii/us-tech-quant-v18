@@ -1,0 +1,17 @@
+﻿created_at: 2026-05-07
+active_main_strategy:
+  name: v15_13_default_main
+  config: configs/daily_signal_v15_default.yaml
+  source_config: configs/daily_signal_v15_11_defensive_target30_hard35.yaml
+  logic: target single-position cap 30%, hard drift cap 35%, excess to cash
+  role: normal daily default
+conservative_backup_strategy:
+  name: v15_13_conservative_backup
+  config: configs/daily_signal_v15_conservative.yaml
+  source_config: configs/daily_signal_v15_11_defensive_target25_hard30.yaml
+  logic: target single-position cap 25%, hard drift cap 30%, excess to cash
+  role: high event risk or extra defensive mode
+research_reference:
+  name: v15_7_defensive_low_drawdown
+  config: configs/daily_signal_v15_7_defensive_low_drawdown.yaml
+  note: higher return but single-position drift can approach 50%, so not default

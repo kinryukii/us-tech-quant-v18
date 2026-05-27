@@ -1,0 +1,476 @@
+﻿path,item_type,size_mb,reason,reference_count,referenced_by_sample,current_alias_related,stable_snapshot_related,manual_state_related,price_cache_related,source_code_related,generated_output_related
+archive/stable_compressed/V18_8E_R3_stable_current_official_daily_with_simulation_20260516_191846.zip,FILE,90.3826,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_7D_R2_stable_fast_official_daily_with_technical_20260516_174922.zip,FILE,90.2813,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_6F_R2_stable_official_daily_with_technical_20260516_025712.zip,FILE,89.4992,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/generated_outputs_compressed/technical_timing_backtest_current_details/V18_6B_R1_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC_DETAIL.csv_20260519_151425.zip,FILE,62.0636,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/generated_outputs_compressed/technical_timing_backtest_current_details/V18_6B_R1_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC_DETAIL.csv_20260519_152439.zip,FILE,62.0636,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/generated_outputs_compressed/technical_timing_backtest_current_details/V18_6B_CURRENT_TECHNICAL_TIMING_BACKTEST_DETAIL.csv_20260519_151422.zip,FILE,26.3893,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/generated_outputs_compressed/technical_timing_backtest_current_details/V18_6B_CURRENT_TECHNICAL_TIMING_BACKTEST_DETAIL.csv_20260519_152433.zip,FILE,26.3893,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/factor_backtest/V18_4H_CURRENT_FACTOR_BACKTEST_HOLDINGS.csv,FILE,2.404,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_4J_R2_stable_final_daily_read_center_20260515_164730.zip,FILE,1.7958,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_10D_R2_stable_current_shadow_research_daily_20260517_020553.zip,FILE,1.3655,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_10D_R1_stable_official_daily_with_factor_weight_research_20260517_015842.zip,FILE,1.3413,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/technical_timing_backtest/V18_6B_CURRENT_TECHNICAL_TOPN_BACKTEST_MATRIX.csv,FILE,1.317,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_10C_R2_stable_factor_weight_research_chain_20260517_012209.zip,FILE,1.2458,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_10B_R3_stable_factor_research_chain_20260517_010140.zip,FILE,1.1858,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_11F_R1_stable_shadow_factor_research_chain_20260518_000500.zip,FILE,0.9112,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_3E_R4_stable_cockpit_after_legacy_cleanup_20260514_153532.zip,FILE,0.3335,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/price_cache/NVDA.csv,FILE,0.2553,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/TSLA.csv,FILE,0.2537,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AAPL.csv,FILE,0.2535,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/GOOGL.csv,FILE,0.2535,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AMZN.csv,FILE,0.2534,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SOXL.csv,FILE,0.2534,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AVGO.csv,FILE,0.2532,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AMD.csv,FILE,0.2530,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/HPE.csv,FILE,0.2530,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/NOW.csv,FILE,0.2530,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/FLEX.csv,FILE,0.2529,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/INTC.csv,FILE,0.2529,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SMCI.csv,FILE,0.2529,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/QCOM.csv,FILE,0.2528,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SOXX.csv,FILE,0.2527,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/WDC.csv,FILE,0.2527,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CSCO.csv,FILE,0.2526,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/LRCX.csv,FILE,0.2526,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MSFT.csv,FILE,0.2524,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SPY.csv,FILE,0.2523,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/BE.csv,FILE,0.2521,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/DELL.csv,FILE,0.2521,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/QQQ.csv,FILE,0.2521,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CRM.csv,FILE,0.2520,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/TXN.csv,FILE,0.2520,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ANET.csv,FILE,0.2519,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/PANW.csv,FILE,0.2519,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SMH.csv,FILE,0.2519,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/TSM.csv,FILE,0.2519,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AMAT.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/META.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MU.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ORCL.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/PLTR.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/TER.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/VRT.csv,FILE,0.2518,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/FLR.csv,FILE,0.2517,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/KEYS.csv,FILE,0.2517,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/NXPI.csv,FILE,0.2517,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/VST.csv,FILE,0.2517,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ZS.csv,FILE,0.2517,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AMKR.csv,FILE,0.2516,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/APH.csv,FILE,0.2516,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/IGV.csv,FILE,0.2516,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CRWD.csv,FILE,0.2515,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MRVL.csv,FILE,0.2515,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ETN.csv,FILE,0.2514,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ACMR.csv,FILE,0.2513,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/JBL.csv,FILE,0.2513,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ON.csv,FILE,0.2513,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SNOW.csv,FILE,0.2513,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/DDOG.csv,FILE,0.2512,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ECL.csv,FILE,0.2512,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/GLW.csv,FILE,0.2512,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/GNRC.csv,FILE,0.2511,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/PSTG.csv,FILE,0.2511,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ETR.csv,FILE,0.2510,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/IRDM.csv,FILE,0.2510,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/AEHR.csv,FILE,0.2509,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ENTG.csv,FILE,0.2509,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/NET.csv,FILE,0.2509,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/NTAP.csv,FILE,0.2508,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/POWL.csv,FILE,0.2508,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/COHR.csv,FILE,0.2507,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/IYW.csv,FILE,0.2507,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/STX.csv,FILE,0.2507,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CIEN.csv,FILE,0.2506,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/COHU.csv,FILE,0.2506,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/NVT.csv,FILE,0.2506,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CARR.csv,FILE,0.2505,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CLS.csv,FILE,0.2505,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/PWR.csv,FILE,0.2505,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/D.csv,FILE,0.2504,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MOD.csv,FILE,0.2504,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ACLS.csv,FILE,0.2503,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ICHR.csv,FILE,0.2503,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MKSI.csv,FILE,0.2503,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MDB.csv,FILE,0.2502,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MCHP.csv,FILE,0.2500,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/FORM.csv,FILE,0.2499,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/KLIC.csv,FILE,0.2499,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/LITE.csv,FILE,0.2498,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/SANM.csv,FILE,0.2498,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/HUBB.csv,FILE,0.2497,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CAMT.csv,FILE,0.2496,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/KLAC.csv,FILE,0.2496,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ACM.csv,FILE,0.2495,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/FN.csv,FILE,0.2494,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/MPWR.csv,FILE,0.2490,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/ASML.csv,FILE,0.2489,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/FIX.csv,FILE,0.2489,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CIFR.csv,FILE,0.2475,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/BTDR.csv,FILE,0.2113,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+outputs/v18/factor_backtest/V18_4H_CURRENT_FACTOR_BACKTEST_DAILY_RETURNS.csv,FILE,0.209,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_R1_CURRENT_ROBUSTNESS_MATRIX.csv,FILE,0.206,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v18/price_cache/IREN.csv,FILE,0.1993,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CRDO.csv,FILE,0.1914,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CEG.csv,FILE,0.1912,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,FILE,0.1622,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,FILE,0.1622,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,FILE,0.1622,Always protected by policy or current-line status.,2,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V17_6H_R2_stable_repair_health_compat_manual_daily_20260512_214624.zip,FILE,0.1334,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V17_6H_stable_manual_run_full_universe_latest_price_20260512_165345.zip,FILE,0.1330,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/price_cache/ARM.csv,FILE,0.1191,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260518_130936.bak,FILE,0.112,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260518_131419.bak,FILE,0.112,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,FILE,0.108,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v18/price_cache/CORZ.csv,FILE,0.1032,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_210713.bak,FILE,0.097,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_212019.bak,FILE,0.097,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v18/price_cache/ALAB.csv,FILE,0.0957,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/GEV.csv,FILE,0.0942,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_014422.bak,FILE,0.074,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_014958.bak,FILE,0.074,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_020200.bak,FILE,0.074,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260517_220436.bak,FILE,0.074,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_lab/V18_1B_FACTOR_VALUES_CURRENT.csv,FILE,0.072,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1B_FACTOR_VALUES_CURRENT.csv,FILE,0.071,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R1_CURRENT_FORWARD_RETURN_PENDING_ROWS.csv,FILE,0.063,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_audit/V18_4E_CURRENT_FACTOR_OUTPUT_FORWARD_AUDIT.csv,FILE,0.062,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8C_current_raw105_full_decision.csv,FILE,0.060,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/scripts/v18/v18_19A_daily_readability_refactor.py,FILE,0.0576,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/v18_19A_daily_readability_refactor.py,FILE,0.0576,Always protected by policy or current-line status.,3,scripts/v18/run_v18_19A_daily_readability_refactor.ps1 | scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/factor_audit/V18_4F_CURRENT_FORWARD_FACTOR_COVERAGE.csv,FILE,0.056,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v18/price_cache/SNDK.csv,FILE,0.0558,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/price_cache/CRWV.csv,FILE,0.0505,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+outputs/v18/factor_audit/V18_4D_CURRENT_FACTOR_PACK_AUDIT.csv,FILE,0.050,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_CURRENT.csv,FILE,0.048,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_shadow/V18_3B_SHADOW_OFFICIAL_COMPARE_CURRENT.csv,FILE,0.048,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_210713.bak,FILE,0.047,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_212019.bak,FILE,0.047,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_14E_R1_stable_current_daily_with_forward_tracker_20260518_234221.zip,FILE,0.0460,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v17/raw105_decision/v17_8C_current_raw105_full_decision.csv,FILE,0.043,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_14D_R1_stable_ranked_candidate_forward_price_filler_20260518_233007.zip,FILE,0.0386,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_14D_R1_stable_ranked_candidate_forward_price_filler_20260518_233032.zip,FILE,0.0385,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260516_235953.bak,FILE,0.037,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11C_CURRENT_CALENDAR_VWAP_RV_SHADOW_FACTORS.csv,FILE,0.036,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_read_center/V18_6D_CURRENT_TECHNICAL_TIMING_DASHBOARD.csv,FILE,0.036,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260516_235953.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_014422.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_014958.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_020200.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260517_220436.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260518_130936.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260518_131419.bak,FILE,0.035,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/data/V18_16C_P3_LOCAL_PRICE_SOURCE_DISCOVERY.csv,FILE,0.0329,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_14B_R1_stable_current_daily_command_center_20260518_230007.zip,FILE,0.0322,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,FILE,0.030,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FILE,0.0292,Always protected by policy or current-line status.,2,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | scripts/v18/run_v18_20A_deep_legacy_cleanup_audit.ps1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_13C_R1_stable_unified_daily_with_ranked_candidates_20260518_202801.zip,FILE,0.0288,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_14C_R1_stable_ranked_candidate_forward_tracker_20260518_231241.zip,FILE,0.0286,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_13B_R1_stable_ranked_candidate_read_center_source_dedup_20260518_182047.zip,FILE,0.0280,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_13D_R1_stable_daily_command_center_read_center_refresh_20260518_211135.zip,FILE,0.0276,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_15A_R1_stable_manual_position_trade_feedback_20260518_235126.zip,FILE,0.0264,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/factor_backtest/V18_4H_CURRENT_FACTOR_LATEST_SCORES.csv,FILE,0.025,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_14A_R1_stable_full_daily_mode_validation_parser_only_20260518_224716.zip,FILE,0.0233,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/factor_registry/V18_10A_CURRENT_FACTOR_COVERAGE_AUDIT.csv,FILE,0.023,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_read_center/V18_6D_CURRENT_TECHNICAL_TIMING_READ_CENTER.md,FILE,0.021,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_read_center/V18_CURRENT_TECHNICAL_TIMING_READ_CENTER.md,FILE,0.021,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/state/v18/universe/V18_MANUAL_UNIVERSE_ADDITIONS.csv,FILE,0.0198,Always protected by policy or current-line status.,0,,FALSE,TRUE,TRUE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/scripts/v18/v18_19A_R1_stable_snapshot.py,FILE,0.0191,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/v18_19A_R1_stable_snapshot.py,FILE,0.0191,Always protected by policy or current-line status.,3,scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/run_v18_19A_R1_stable_snapshot.ps1 | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3B_R2_SHADOW_OFFICIAL_COMPARE_CURRENT.csv,FILE,0.019,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_shadow/V18_3B_R2_SHADOW_OFFICIAL_COMPARE_CURRENT.csv,FILE,0.019,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/data/V18_16C_P1_SCOPED_YFINANCE_SMOKE_PRICE_AUDIT.csv,FILE,0.0188,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/data/V18_16C_P2_YFINANCE_CACHE_REPAIR_PRICE_AUDIT.csv,FILE,0.0188,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,FILE,0.0186,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/technical_timing_backtest_current_slim/V18_6B_CURRENT_TECHNICAL_TIMING_BACKTEST_DETAIL_LIGHTWEIGHT_SUMMARY.md,FILE,0.018,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest_current_slim/V18_6B_R1_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC_DETAIL_LIGHTWEIGHT_SUMMARY.md,FILE,0.018,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/data/V18_16C_P3_LOCAL_CACHE_BOOTSTRAP_AUDIT.csv,FILE,0.0172,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/candidates/V18_13B_CURRENT_RANKED_CANDIDATES.csv,FILE,0.017,Current alias or active output should be preserved.,2,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md | outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_13B_CURRENT_RANKED_CANDIDATES_INPUT_AUDIT.csv,FILE,0.017,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv,FILE,0.017,Current alias or active output should be preserved.,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/forward_outcome/V18_4A_CURRENT_FACTOR_SNAPSHOT.csv,FILE,0.017,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable_compressed/V18_12D_R1_stable_exit_signal_forward_validation_20260518_145213.zip,FILE,0.0163,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12D_R1_stable_exit_signal_forward_validation_20260518_145345.zip,FILE,0.0163,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12A_R1_stable_sell_timing_shadow_engine_20260518_140101.zip,FILE,0.0162,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/universe/V18_16E_CURRENT_PROMOTION_DEMOTION_AUDIT.csv,FILE,0.0156,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/universe/V18_CURRENT_PROMOTION_DEMOTION_AUDIT.csv,FILE,0.0156,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12B_R1_stable_sell_timing_technical_label_integration_20260518_141656.zip,FILE,0.0155,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12B_R1_stable_sell_timing_technical_label_integration_20260518_141759.zip,FILE,0.0155,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12F_R2_stable_shadow_research_daily_with_sell_timing_hard_fail_guard_20260518_160834.zip,FILE,0.0146,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12F_R2_stable_shadow_research_daily_with_sell_timing_hard_fail_guard_20260518_161047.zip,FILE,0.0146,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12F_R1_stable_shadow_research_daily_with_sell_timing_fast_safe_20260518_155221.zip,FILE,0.0142,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12F_R1_stable_shadow_research_daily_with_sell_timing_fast_safe_20260518_155450.zip,FILE,0.0142,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/v18_14B_current_daily_command_center.py,FILE,0.0142,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12C_R1_stable_position_lifecycle_review_20260518_143729.zip,FILE,0.0140,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12C_R1_stable_position_lifecycle_review_20260518_143825.zip,FILE,0.0140,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/sell_timing/V18_12B_CURRENT_TECHNICAL_LABEL_INPUT_AUDIT.csv,FILE,0.014,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_R1_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC_REPORT.md,FILE,0.014,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC.md,FILE,0.014,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+scripts/v18/v18_14E_current_daily_with_forward_tracker.py,FILE,0.0131,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/MANIFEST.csv,FILE,0.0130,Always protected by policy or current-line status.,3,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | outputs/v18/ops/V18_19A_R1_READ_FIRST.txt | outputs/v18/ops/V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_13A_R1_stable_unified_daily_read_center_link_20260518_163906.zip,FILE,0.0128,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_13A_R1_stable_unified_daily_read_center_link_20260518_164003.zip,FILE,0.0128,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12H_R1_stable_sell_timing_read_center_link_20260518_162546.zip,FILE,0.0118,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12H_R1_stable_sell_timing_read_center_link_20260518_162758.zip,FILE,0.0118,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12E_R1_stable_sell_timing_daily_wrapper_20260518_150304.zip,FILE,0.0117,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable_compressed/V18_12E_R1_stable_sell_timing_daily_wrapper_20260518_150522.zip,FILE,0.0117,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/sell_timing/V18_12D_CURRENT_EXIT_SIGNAL_FORWARD_VALIDATION_INPUT_AUDIT.csv,FILE,0.011,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/data/V18_16C_CURRENT_SCAN_SCOPED_PRICE_UPDATE_AUDIT.csv,FILE,0.0107,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/data/V18_CURRENT_SCAN_SCOPED_PRICE_UPDATE_AUDIT.csv,FILE,0.0107,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/risk/V18_16C_CURRENT_SCAN_SCOPED_EVENT_UPDATE_AUDIT.csv,FILE,0.0105,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/risk/V18_CURRENT_SCAN_SCOPED_EVENT_UPDATE_AUDIT.csv,FILE,0.0105,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ranking/V18_17A_CURRENT_RANKED_CANDIDATE_SCORE_EXPLANATION.csv,FILE,0.0104,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ranking/V18_CURRENT_RANKED_CANDIDATE_SCORE_EXPLANATION.csv,FILE,0.0104,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v16_daily_auto_update_before_v17_4_dashboard_20260511_175841.ps1,FILE,0.010,Archived in V18.20G but not a generated-report original.,0,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+outputs/v17/raw105_decision/v17_8C_current_actionable_buy_candidates.csv,FILE,0.010,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_9B_CURRENT_FORWARD_RETURN_FILLER_AUDIT.csv,FILE,0.010,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8C_current_worth_review_but_locked.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_DAILY_CURRENT.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v17/raw105_decision/V17_8C_CURRENT_RAW105_DECISION_PANEL.md,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v17/raw105_decision/V17_8D_CURRENT_RAW105_DECISION_PANEL.md,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_14C_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_14D_CURRENT_RANKED_CANDIDATE_FORWARD_PRICE_FILLER.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_10A_CURRENT_FACTOR_REGISTRY_REPORT.md,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11E_CURRENT_SHADOW_FACTOR_SUMMARY.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_shadow/V18_3A_FACTOR_SHADOW_DAILY_CURRENT.csv,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING_REPORT.md,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing/V18_CURRENT_TECHNICAL_TIMING.md,FILE,0.008,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v18/provider_cache/yfinance/tz/cookies.db,FILE,0.0078,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/provider_cache/yfinance/tz/tkr-tz.db,FILE,0.0078,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+scripts/v18/run_v18_4I_R1_final_daily_promotion_merge_wrapper.ps1,FILE,0.0065,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8C_CURRENT_RAW105_DECISION_PANEL.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8D_CURRENT_RAW105_DECISION_PANEL.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_CURRENT_FACTOR_EFFECTIVENESS.csv,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_9B_CURRENT_FORWARD_RETURN_FILLER.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_CURRENT_TECHNICAL_TIMING_BACKTEST_REPORT.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_CURRENT_TECHNICAL_TIMING_BACKTEST.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_6C_CURRENT_TECHNICAL_TIMING_FORWARD_REPORT.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_CURRENT_TECHNICAL_TIMING_FORWARD.md,FILE,0.006,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/scripts/v18/run_v18_current_daily_command_center.ps1,FILE,0.0059,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_current_daily_command_center.ps1,FILE,0.0059,Always protected by policy or current-line status.,2,scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_13D_daily_command_center.ps1,FILE,0.0056,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/simulation/V18_9A_CURRENT_SIM_CANDIDATE_TRACKER.md,FILE,0.005,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/read_center/V18_13C_CURRENT_UNIFIED_DAILY_WITH_RANKED_CANDIDATES.md,FILE,0.0045,Referenced by 2 active source file(s).,2,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md | outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/factor_lab/V18_1B_FACTOR_VALUES_CURRENT.md,FILE,0.004,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_audit/V18_4D_CURRENT_FACTOR_PACK_AUDIT.md,FILE,0.004,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_CURRENT_FACTOR_BACKTEST_SUMMARY.csv,FILE,0.004,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_lab/V18_1B_FACTOR_VALUES_CURRENT.md,FILE,0.004,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11E_CURRENT_SHADOW_FACTOR_SUMMARY.md,FILE,0.004,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/V18_CURRENT_DAILY_BRIEF.md,FILE,0.0037,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/V18_CURRENT_DAILY_BRIEF.md,FILE,0.0037,Always protected by policy or current-line status.,5,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/run_v18_19A_daily_readability_refactor.ps1 | scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/scripts/v18/run_v18_19A_daily_readability_refactor.ps1,FILE,0.0033,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_19A_daily_readability_refactor.ps1,FILE,0.0033,Always protected by policy or current-line status.,3,scripts/v18/run_v18_current_daily_command_center.ps1 | scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v16_daily_auto_update_before_v17_2_factor_tracker_20260511_154526.ps1,FILE,0.003,Archived in V18.20G but not a generated-report original.,0,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,FILE,0.0030,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FILE,0.0030,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v17/raw105_decision/V17_8C_CURRENT_RAW105_DECISION_PANEL.txt,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v17/raw105_decision/V17_8D_CURRENT_RAW105_DECISION_PANEL.txt,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_audit/V18_4E_CURRENT_FACTOR_OUTPUT_FORWARD_AUDIT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_R1A_CURRENT_FACTOR_ROBUSTNESS_INTERPRETATION.csv,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_R1A_CURRENT_FACTOR_ROBUSTNESS_INTERPRETATION.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_CURRENT_FACTOR_ROBUSTNESS_INTERPRETATION.md,FILE,0.003,Current alias or active output should be preserved.,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_10A_R2_CURRENT_FACTOR_DAILY_CAPTURE_PATCH_REPORT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_CURRENT_FACTOR_EFFECTIVENESS_REPORT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/outcome_summary/V18_4B_CURRENT_PROMOTION_RULES.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/outcome_summary/V18_CURRENT_FACTOR_OUTCOME_PROMOTION.md,FILE,0.003,Current alias or active output should be preserved.,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/promotion_merge/V18_4I_CURRENT_BACKTEST_FORWARD_PROMOTION_MERGE.csv,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/promotion_merge/V18_4I_CURRENT_BACKTEST_FORWARD_PROMOTION_REPORT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/promotion_merge/V18_4I_CURRENT_PROMOTION_CLUSTER.csv,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/promotion_merge/V18_CURRENT_BACKTEST_FORWARD_PROMOTION.md,FILE,0.003,Current alias or active output should be preserved.,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/read_center/V18_13D_CURRENT_DAILY_COMMAND_CENTER.md,FILE,0.0030,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,FILE,0.0030,Always protected by policy or current-line status.,2,scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FILE,0.0030,Always protected by policy or current-line status.,2,scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/sell_timing/V18_12A_CURRENT_SELL_TIMING_SHADOW_REPORT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12B_CURRENT_SELL_TIMING_TECHNICAL_LABEL_REPORT.md,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_R1_CURRENT_SIGNAL_EXCESS_SUMMARY.csv,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_RESEARCH_EVALUATION.csv,FILE,0.003,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN_INPUT_AUDIT.csv,FILE,0.0026,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/daily_packet/V18_CURRENT_RISK_DASHBOARD.md,FILE,0.0026,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN_INPUT_AUDIT.csv,FILE,0.0026,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/daily_packet/V18_CURRENT_RISK_DASHBOARD.md,FILE,0.0026,Always protected by policy or current-line status.,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/RESTORE_V18_19A_R1.ps1,FILE,0.0024,Always protected by policy or current-line status.,3,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | outputs/v18/ops/V18_19A_R1_READ_FIRST.txt | outputs/v18/ops/V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_15B_current_daily_with_manual_feedback.ps1,FILE,0.0024,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/VALIDATION.csv,FILE,0.0021,Always protected by policy or current-line status.,2,outputs/v18/ops/V18_19A_R1_READ_FIRST.txt | outputs/v18/ops/V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/daily_integrated/V18_4B_R1_READ_FIRST.txt,FILE,0.0021,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8C_CURRENT_RAW105_DECISION_PANEL.txt,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/V17_8D_CURRENT_RAW105_DECISION_PANEL.txt,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_4B_R1_CURRENT_FINAL_DAILY.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_4B_R1_CURRENT_FINAL_DAILY.txt,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_CURRENT_FINAL_DAILY.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_audit/V18_4F_CURRENT_FORWARD_FACTOR_COVERAGE.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_CURRENT_FACTOR_BACKTEST_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_R1_CURRENT_FACTOR_ROBUSTNESS_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_4H_R1_CURRENT_FACTOR_ROBUSTNESS_SUMMARY.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_backtest/V18_CURRENT_FACTOR_ROBUSTNESS.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_11A_CURRENT_FACTOR_REGISTRY_EXTENSION.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_CURRENT_FACTOR_EFFECTIVENESS_AUDIT.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R1_CURRENT_FORWARD_RETURN_MATURITY_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R2_CURRENT_FACTOR_RESEARCH_DAILY_CHAIN_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11F_CURRENT_SHADOW_FACTOR_RESEARCH_CHAIN.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/forward_outcome/V18_4A_CURRENT_FORWARD_OUTCOME_SUMMARY.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/forward_outcome/V18_CURRENT_FORWARD_OUTCOME_SUMMARY.md,FILE,0.002,Current alias or active output should be preserved.,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/outcome_summary/V18_4B_CURRENT_FACTOR_OUTCOME_SUMMARY.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12A_CURRENT_SELL_TIMING_INPUT_AUDIT.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12C_CURRENT_POSITION_LIFECYCLE_INPUT_AUDIT.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12C_CURRENT_POSITION_LIFECYCLE_REVIEW_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12D_CURRENT_EXIT_SIGNAL_FORWARD_VALIDATION_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12E_CURRENT_SELL_TIMING_DAILY_SUMMARY.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12F_CURRENT_SHADOW_RESEARCH_WITH_SELL_TIMING_SUMMARY.csv,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_SIM_CABIN.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_6C_R1_CURRENT_FRESHNESS_GUARD_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_CURRENT_TECHNICAL_TIMING_FORWARD_FRESHNESS_GUARD.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_RESEARCH_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_R1_CURRENT_FACTOR_WEIGHT_RESEARCH_DAILY_CHAIN_REPORT.md,FILE,0.002,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_19A_DAILY_READABILITY_AUDIT.csv,FILE,0.0019,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/daily_packet/V18_CURRENT_TOP_RANKED_CANDIDATES.md,FILE,0.0019,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/daily_integrated/V18_4G_R1_READ_FIRST.txt,FILE,0.0019,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_19A_DAILY_READABILITY_AUDIT.csv,FILE,0.0019,Always protected by policy or current-line status.,3,scripts/v18/run_v18_19A_daily_readability_refactor.ps1 | scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/daily_packet/V18_CURRENT_TOP_RANKED_CANDIDATES.md,FILE,0.0019,Always protected by policy or current-line status.,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_16F_current_daily_with_rolling_universe_scan.ps1,FILE,0.0019,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_13C_ranked_candidate_unified_link.ps1,FILE,0.0018,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_14D_ranked_candidate_forward_price_filler.ps1,FILE,0.0018,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_16F_READ_FIRST.txt,FILE,0.0017,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt,FILE,0.0017,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_16F_READ_FIRST.txt,FILE,0.0017,Referenced by 2 active source file(s).,2,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/v18_19A_R1_stable_snapshot.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt,FILE,0.0017,Referenced by 2 active source file(s).,2,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN_SUMMARY.csv,FILE,0.0016,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN_SUMMARY.csv,FILE,0.0016,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_14C_ranked_candidate_forward_tracker.ps1,FILE,0.0016,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/daily_integrated/V18_4I_R1_READ_FIRST.txt,FILE,0.0015,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md,FILE,0.0015,Always protected by policy or current-line status.,2,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | outputs/v18/ops/V18_19A_R1_READ_FIRST.txt,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_current_official_daily.ps1,FILE,0.0015,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/daily_packet/V18_CURRENT_DATA_FRESHNESS.md,FILE,0.0014,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/daily_packet/V18_CURRENT_DATA_FRESHNESS.md,FILE,0.0014,Always protected by policy or current-line status.,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_13B_ranked_candidate_read_center.ps1,FILE,0.0014,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_16H_READ_FIRST.txt,FILE,0.0012,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_16H_READ_FIRST.txt,FILE,0.0012,Referenced by 2 active source file(s).,2,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/v18_19A_R1_stable_snapshot.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_13A_unified_daily_read_center_link.ps1,FILE,0.0011,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_DAILY_COMMAND_CENTER.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4C_event_price_merge_20260514_223322/scripts/run_v17_6A_full_universe_latest_price_audit.ps1,FILE,0.001,Archived in V18.20G but not a generated-report original.,0,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/ops/V17_8D_current_only_daily_summary.txt,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/cockpit/V18_3E_CURRENT_DAILY_COCKPIT.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/cockpit/V18_3E_CURRENT_DAILY_COCKPIT.txt,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v18/cockpit/V18_CURRENT_DAILY_COCKPIT.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/deprecated/v18_5C_zero_runtime_archive_20260515_191705/restore_v18_5C_zero_runtime_archive.ps1,FILE,0.001,Archived in V18.20G but not a generated-report original.,0,,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE
+outputs/v17/ops/V17_8D_current_only_daily_summary.txt,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/cockpit/V18_3E_CURRENT_DAILY_COCKPIT.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/cockpit/V18_3E_CURRENT_DAILY_COCKPIT.txt,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/cockpit/V18_CURRENT_DAILY_COCKPIT.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_4A_R1_CURRENT_DAILY_INTEGRATED.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_4A_R1_CURRENT_DAILY_INTEGRATED.txt,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_CURRENT_DAILY_INTEGRATED.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/daily_integrated/V18_CURRENT_FINAL_DAILY_PROMOTION_MERGE.md,FILE,0.001,Current alias or active output should be preserved.,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_10A_R2_CURRENT_FACTOR_DAILY_CAPTURE_PATCH_AUDIT.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_11B_CURRENT_FACTOR_COVERAGE_AUDIT.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_CURRENT_FACTOR_EFFECTIVENESS_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R1_CURRENT_FORWARD_RETURN_MATURITY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11D_CURRENT_SHADOW_FACTOR_DAILY.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/ops/V18_19A_R1_READ_FIRST.txt,FILE,0.0010,Always protected by policy or current-line status.,2,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | outputs/v18/ops/V18_19A_R1_READ_FIRST.txt,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/sell_timing/V18_12B_CURRENT_SELL_TIMING_TECHNICAL_LABEL.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12C_CURRENT_POSITION_LIFECYCLE_REVIEW.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12D_CURRENT_EXIT_SIGNAL_FORWARD_VALIDATION.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12E_CURRENT_SELL_TIMING_DAILY_INPUT_AUDIT.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12E_CURRENT_SELL_TIMING_DAILY_READ_CENTER.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12F_CURRENT_SHADOW_RESEARCH_WITH_SELL_TIMING_INPUT_AUDIT.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12F_CURRENT_SHADOW_RESEARCH_WITH_SELL_TIMING_READ_CENTER.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_CURRENT_EXIT_SIGNAL_FORWARD_TRACKER.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_PAPER_PNL.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_PAPER_TRADE_LOG.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_CURRENT_TECHNICAL_SIGNAL_FORWARD_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_CURRENT_TECHNICAL_TOPN_STRATEGY_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest/V18_6B_R1_CURRENT_TOPN_EXCESS_STRATEGY_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest_current_slim/V18_6B_CURRENT_TECHNICAL_TIMING_BACKTEST_DETAIL_LIGHTWEIGHT_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_backtest_current_slim/V18_6B_R1_CURRENT_TECHNICAL_TIMING_DIAGNOSTIC_DETAIL_LIGHTWEIGHT_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_6C_CURRENT_TECHNICAL_TIMING_FORWARD_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_6C_R1_CURRENT_TECHNICAL_TIMING_FORWARD_SUMMARY.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_read_center/V18_CURRENT_TECHNICAL_TIMING_READ_FIRST.md,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_CANDIDATES.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_RESEARCH_FACTOR_AUDIT.csv,FILE,0.001,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_17A_READ_FIRST.txt,FILE,0.0009,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_19A_READ_FIRST.txt,FILE,0.0009,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/ops/V18_CURRENT_RANKING_PROVENANCE_READ_FIRST.txt,FILE,0.0009,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_17A_READ_FIRST.txt,FILE,0.0009,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_R1_stable_snapshot.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_19A_READ_FIRST.txt,FILE,0.0009,Always protected by policy or current-line status.,3,scripts/v18/run_v18_19A_daily_readability_refactor.ps1 | scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_CURRENT_RANKING_PROVENANCE_READ_FIRST.txt,FILE,0.0009,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt,FILE,0.0008,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt,FILE,0.0008,Always protected by policy or current-line status.,6,scripts/v18/v18_19A_daily_readability_refactor.py | scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/scripts/v18/run_v18_19A_R1_stable_snapshot.ps1,FILE,0.0006,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/promotion_merge/V18_4I_READ_FIRST.txt,FILE,0.0006,Referenced by 1 active source file(s).,1,outputs/v18/read_center/V18_CURRENT_READ_FIRST.md,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_19A_R1_stable_snapshot.ps1,FILE,0.0006,Always protected by policy or current-line status.,2,scripts/v18/v18_19A_R1_stable_snapshot.py | scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_20A_deep_legacy_cleanup_audit.ps1,FILE,0.0006,Always protected by policy or current-line status.,1,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/daily_packet/V18_CURRENT_COVERAGE_STATUS.md,FILE,0.0005,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/outputs/v18/read_center/daily_packet/V18_CURRENT_UNIVERSE_CHANGES.md,FILE,0.0005,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/daily_packet/V18_CURRENT_COVERAGE_STATUS.md,FILE,0.0005,Always protected by policy or current-line status.,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/read_center/daily_packet/V18_CURRENT_UNIVERSE_CHANGES.md,FILE,0.0005,Always protected by policy or current-line status.,1,scripts/v18/v18_19A_R1_stable_snapshot.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+scripts/v18/run_v18_14A_full_daily_mode_validation.ps1,FILE,0.0004,Referenced by 1 active source file(s).,1,scripts/v18/run_v18_current_daily_command_center.ps1,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/README_V18_19A_R1_STABLE_SNAPSHOT.md,FILE,0.0003,Always protected by policy or current-line status.,3,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py | outputs/v18/ops/V18_19A_R1_READ_FIRST.txt | outputs/v18/ops/V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+archive/stable/V18_19A_R1_stable_daily_readability_refactor_20260519_171556/state/v18/universe/V18_ROLLING_SCAN_RUN_STATE.json,FILE,0.0003,Always protected by policy or current-line status.,0,,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/universe/V18_16H_CURRENT_COVERAGE_AUDIT.csv,FILE,0.0003,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/universe/V18_CURRENT_ROLLING_SCAN_COVERAGE_AUDIT.csv,FILE,0.0003,Referenced by 1 active source file(s).,1,scripts/v18/v18_19A_daily_readability_refactor.py,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/universe/V18_ROLLING_SCAN_RUN_STATE.json,FILE,0.0003,Always protected by policy or current-line status.,1,scripts/v18/v18_20A_deep_legacy_cleanup_audit.py,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/price_cache/TQQQ.csv,FILE,0.0002,Always protected by policy or current-line status.,0,,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE
+state/v18/manual/V18_MANUAL_POSITIONS.csv,FILE,0.0001,Always protected by policy or current-line status.,0,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+state/v18/manual/V18_MANUAL_TRADE_LOG.csv,FILE,0.0001,Always protected by policy or current-line status.,0,,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+archive/deprecated/v18_4K_workspace_cleanup_20260515_172036/outputs/v17/raw105_decision/v17_8C_current_actionable_buy_candidates.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v17/raw105_decision/v17_8C_current_worth_review_but_locked.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_14C_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/candidates/V18_14D_CURRENT_RANKED_CANDIDATE_FORWARD_PRICE_FILLER_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_11A_CURRENT_FACTOR_REGISTRY_EXTENSION_REPORT.md,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_registry/V18_11B_CURRENT_FACTOR_COVERAGE_AUDIT_REPORT.md,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_CURRENT_SOURCE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R1_CURRENT_FORWARD_RETURN_SOURCE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_10B_R2_CURRENT_FACTOR_RESEARCH_DAILY_CHAIN_STEPS.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/factor_research/V18_11C_CURRENT_CALENDAR_VWAP_RV_SHADOW_FACTOR_REPORT.md,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/ops/V18_4G_R1_20260514_225830,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260514_232302,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_020346,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_143253,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_154850,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_155640,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_172059,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_172827,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_183142,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_183850,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_191853,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_233311,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_233835,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260515_235405,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_013039,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_014437,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_015037,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_015602,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_021225,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_133557,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_140802,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_142408,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_144328,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_153303,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_154028,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260516_155242,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260517_215628,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260517_220334,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260517_221802,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260518_130838,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260518_131307,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260518_164812,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260518_212534,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260518_213913,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_R1_20260519_105631,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/V18_4G_error_diag_20260514_230632,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/ops/legacy_cleanup,DIR,0.000,Protected or active directory; keep empty folder.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+outputs/v18/positions/V18_15A_CURRENT_MANUAL_POSITION_LIFECYCLE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/positions/V18_15A_CURRENT_MANUAL_POSITION_REVIEW.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/positions/V18_15A_CURRENT_MANUAL_TRADE_FEEDBACK.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/positions/V18_CURRENT_MANUAL_POSITION_LIFECYCLE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/positions/V18_CURRENT_MANUAL_POSITION_REVIEW.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/positions/V18_CURRENT_MANUAL_TRADE_FEEDBACK.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/sell_timing/V18_12A_CURRENT_SELL_TIMING_SHADOW.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/simulation/V18_CURRENT_PAPER_POSITIONS.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/technical_timing_forward/V18_6C_R1_CURRENT_STALE_PRICE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_CURRENT_WEIGHT_RESEARCH_SOURCE_AUDIT.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+outputs/v18/weight_research/V18_10C_R1_CURRENT_FACTOR_WEIGHT_RESEARCH_DAILY_CHAIN_STEPS.csv,FILE,0.000,Current alias or active output should be preserved.,0,,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE
+state/v17,DIR,0.000,Protected or active directory; keep empty folder.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/event_cache,DIR,0.000,Protected or active directory; keep empty folder.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/provider_cache/yfinance/logs,DIR,0.000,Protected or active directory; keep empty folder.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+state/v18/provider_cache/yfinance/tmp,DIR,0.000,Protected or active directory; keep empty folder.,0,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE

@@ -1,0 +1,9 @@
+rule_id,rule_name,match_pattern,normalized_status,severity,description
+R1_001,Source scope controls overall impact,CURRENT_CRITICAL/CURRENT_SUPPORTING vs HISTORICAL_LEGACY/UNKNOWN_LEGACY,SCOPE_APPLIED,INFO,Only current critical and selected current supporting evidence can affect today's overall operator status.
+R1_002,Current safety invariant,"AUTO_TRADE not DISABLED, AUTO_SELL not DISABLED, BROKER_API_USED TRUE, ORDER_EXECUTION_USED TRUE, OFFICIAL_DECISION_IMPACT not NONE",FAIL_BLOCKING,BLOCKING,Current critical/supporting sources with active safety violations are true blocking failures.
+R1_003,Historical fail isolation,STATUS begins with FAIL_ in HISTORICAL_LEGACY or UNKNOWN_LEGACY,LEGACY_FAIL,WARN,Old historical failures are retained as evidence but do not make today's daily run unusable.
+R1_004,Forward pending is expected,"PENDING_FORWARD, ANY_FORWARD_OUTCOME_AVAILABLE FALSE, READY_FOR_FACTOR_FORWARD_ATTRIBUTION FALSE",EXPECTED_PENDING_FORWARD_OUTCOME,INFO,Forward outcome waiting is expected until future price horizons mature.
+R1_005,Provider warning scope split,"yfinance, historical provider, price cache, preflight",DATA_PROVIDER_WARN or LEGACY_DATA_PROVIDER_WARN,WARN,Provider warnings are split into current and legacy buckets by source scope.
+R1_006,Stale warning scope split,stale current report or historical stale report,REPORT_STALE_WARN or LEGACY_REPORT_STALE_WARN,WARN,Stale warnings in legacy files are not current blocking issues.
+R1_007,Missing current critical review,CURRENT_CRITICAL source missing,MISSING_CURRENT_CRITICAL_REVIEW,WARN,"Missing current critical sources need review, but do not automatically block if the module was not run."
+R1_008,Missing current supporting,CURRENT_SUPPORTING source missing,MISSING_SUPPORTING,WARN,Missing supporting current reports are non-blocking warnings.

@@ -1,0 +1,6 @@
+﻿version,path,length_bytes,generated_at,purpose
+V18.1B,D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_VALUES_CURRENT.csv,75711,2026-05-19 10:53:45,factor_value_compute_shadow_only
+V18.1B,D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_VALUES_CURRENT.md,4361,2026-05-19 10:53:45,factor_value_compute_shadow_only
+V18.1B,D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_READ_FIRST.txt,930,2026-05-19 10:53:45,factor_value_compute_shadow_only
+V18.1B,D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_COMPUTE_AUDIT.csv,276,2026-05-19 10:53:45,factor_value_compute_shadow_only
+V18.1B,D:\us-tech-quant\state\v18\raw105_universe_for_factor_lab.csv,594,2026-05-19 10:53:45,factor_value_compute_shadow_only

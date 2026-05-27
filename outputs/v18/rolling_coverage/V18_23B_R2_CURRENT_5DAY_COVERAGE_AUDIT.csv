@@ -1,0 +1,5 @@
+﻿metric,value,notes
+canonical_universe_source,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,Current/fallback local source.
+completed_rolling_scan_run_count,2,Distinct ledger last_scan_run_id values before this R2 run.
+bootstrap_grace_active,TRUE,Never-success tickers are not force eligible while TRUE.
+true_5day_unique_coverage_met,FALSE,FALSE_STALE_OR_SKIPPED_TICKERS_REMAIN

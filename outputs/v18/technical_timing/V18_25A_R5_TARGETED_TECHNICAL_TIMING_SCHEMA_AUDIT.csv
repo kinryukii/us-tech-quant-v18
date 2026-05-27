@@ -1,0 +1,41 @@
+﻿field_name,present_in_current_schema,present_in_dryrun_schema,compatibility_status,notes
+ticker,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+yf_ticker,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+price_date,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+close,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_mid_20,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_upper_20_2,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_lower_20_2,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_percent_b,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_bandwidth,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_squeeze_flag,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+bb_status,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+rsi_14,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+rsi_status,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+kdj_k,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+kdj_d,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+kdj_j,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+kdj_status,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+volume_ratio_5_20,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+overheat_penalty,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+pullback_timing_bonus,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+breakout_confirmation_bonus,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+technical_timing_score,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+technical_signal,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+technical_warning_label,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+option_data_status,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+put_call_ratio,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+iv_rank_proxy,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+gamma_squeeze_status,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+gamma_squeeze_risk_label,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+official_decision_impact,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+vix_date,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+vix_close,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+vix_regime,TRUE,TRUE,SUPPORTED,Current V18.6A schema field
+formula_compatibility,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+technical_status,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+technical_refresh_blocker,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+input_history_rows,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+duplicate_date_count,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+close_column_available,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field
+dryrun_scope,FALSE,TRUE,DRYRUN_EXTENSION,Extended dry-run field

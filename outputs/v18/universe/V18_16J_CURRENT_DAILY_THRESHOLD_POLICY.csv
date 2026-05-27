@@ -1,0 +1,6 @@
+﻿policy_field,value,source_file,applied,reason
+DAILY_MIN_SCAN_COUNT,65,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,TRUE,Computed as ceil(total_universe_count / 5).
+TARGET_DAILY_SCAN_COUNT,65,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,TRUE,Generated scheduler target after patch.
+CONFIGURED_MAX_ESTIMATED_PLAN_COST,300,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,TRUE,Legacy configured cap retained for traceability.
+DAILY_THRESHOLD_COST_FLOOR,438,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,TRUE,Computed budget floor required to reach daily threshold.
+EFFECTIVE_MAX_ESTIMATED_PLAN_COST,438,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,TRUE,"max(configured cap, daily threshold cost floor)."

@@ -1,0 +1,11 @@
+﻿warning_key,source,severity,status_text,operator_meaning_cn,recommended_action_cn,blocking_flag
+V18_41A_STATUS,V18_41A_READ_FIRST,REVIEW,WARN_V18_41A_DAILY_CLEAN_OPERATOR_PIPELINE_REVIEW_NEEDED,状态为 WARN，通常表示非阻塞但建议阅读。,阅读对应报告的 warning/provenance 段落。,FALSE
+TOPN_STATUS,TopN READ_FIRST,REVIEW,WARN_V18_43A_SUPPORTING_INPUTS_PARTIAL,状态为 WARN，通常表示非阻塞但建议阅读。,阅读对应报告的 warning/provenance 段落。,FALSE
+SINGLE_STATUS,V18_42A_READ_FIRST,REVIEW,WARN_V18_42A_SUPPORTING_INPUTS_PARTIAL,状态为 WARN，通常表示非阻塞但建议阅读。,阅读对应报告的 warning/provenance 段落。,FALSE
+RISK_PREVIEW_REVIEW_NEEDED,outputs/v18/read_center/V18_CURRENT_SHADOW_RISK_MODEL_PREVIEW.md,REVIEW,V18.39C risk preview review needed,发现非阻塞 review 信号。,阅读对应 supporting 报告确认上下文。,FALSE
+AUTO_TRADE_DISABLED_EXPECTED,V18.44A safety guard,EXPECTED,DISABLED,这是预期安全边界，不是故障。,无需修复。,FALSE
+AUTO_SELL_DISABLED_EXPECTED,V18.44A safety guard,EXPECTED,DISABLED,这是预期安全边界，不是故障。,无需修复。,FALSE
+TRADING_EXECUTION_ALLOWED_FALSE_EXPECTED,V18.44A safety guard,EXPECTED,FALSE,这是预期安全边界，不是故障。,无需修复。,FALSE
+OFFICIAL_DECISION_IMPACT_NONE_EXPECTED,V18.44A safety guard,EXPECTED,NONE,这是预期安全边界，不是故障。,无需修复。,FALSE
+FORWARD_EVIDENCE_PENDING_EXPECTED,research-only daily process,EXPECTED,EXPECTED,前向证据等待未来价格是研究流程中的预期状态。,继续按 research-only 阅读。,FALSE
+SHADOW_RESEARCH_ONLY_EXPECTED,shadow/read-only reports,EXPECTED,EXPECTED,shadow/research-only warning 不代表可交易。,保持人工审阅。,FALSE

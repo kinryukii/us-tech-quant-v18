@@ -1,0 +1,2 @@
+﻿ticker,priority_rank,classification,exclude_reason,r22b_validation_result,r22b_error_message,local_price_available,never_success,continuation_eligible,ledger_row_found
+TICKERS,32,HELD_OUT_INVALID_OR_ARTIFACT,"Ticker is empty, an artifact literal, contains invalid path characters, or is not ticker-like.",FAIL,Invalid ticker-like symbol.,False,True,True,True

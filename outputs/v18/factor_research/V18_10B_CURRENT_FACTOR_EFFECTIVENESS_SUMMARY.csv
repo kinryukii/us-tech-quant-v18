@@ -1,0 +1,8 @@
+﻿factor_name,evaluated_horizon_count,total_pairs_across_horizons,avg_top_minus_bottom,avg_spearman_corr,summary_status,weight_action
+trend_score,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+relative_strength_score,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+pullback_quality_score,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+momentum_continuation_score,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+overheat_penalty,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+volatility_penalty,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT
+execution_fit,0,0,,,INSUFFICIENT_MATURE_DATA,HOLD_CURRENT_WEIGHT

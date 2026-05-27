@@ -1,0 +1,8 @@
+﻿factor_name,direction,current_weight,columns_used,method,nonnull_raw_count,nonnull_score_count
+trend_score,higher_is_better,0.25,,NO_CAPTURED_COLUMN,0,0
+relative_strength_score,higher_is_better,0.2,relative_strength_score | relative_strength_raw | relative_strength_benchmark | relative_strength_method | relative_strength_status | relative_strength_return_20d | relative_strength_benchmark_return_20d | relative_strength_return_60d | relative_strength_benchmark_return_60d | relative_strength_return_120d | relative_strength_benchmark_return_120d,DIRECT_COLUMN:relative_strength_score,93,93
+pullback_quality_score,higher_is_better,0.2,,NO_CAPTURED_COLUMN,0,0
+momentum_continuation_score,higher_is_better,0.15,,NO_CAPTURED_COLUMN,0,0
+overheat_penalty,lower_is_better,0.1,,NO_CAPTURED_COLUMN,0,0
+volatility_penalty,lower_is_better,0.05,,NO_CAPTURED_COLUMN,0,0
+execution_fit,higher_is_better,0.05,execution_fit | execution_fit_score | execution_fit_status,DIRECT_COLUMN:execution_fit,93,93

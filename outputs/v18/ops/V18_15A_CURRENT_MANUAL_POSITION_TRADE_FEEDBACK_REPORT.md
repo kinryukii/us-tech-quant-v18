@@ -1,0 +1,30 @@
+# V18.15A Manual Position And Trade Feedback
+
+Manual input review only. No trading, selling, broker integration, or official decision impact.
+
+## Status
+
+- STATUS: OK_V18_15A_MANUAL_POSITION_TRADE_FEEDBACK_READY
+- POSITION_COUNT: 0
+- TRADE_LOG_ROWS: 0
+- LINKED_SIGNAL_ROWS: 0
+- UNLINKED_POSITION_ROWS: 0
+- CURRENT_PRICE_AVAILABLE_ROWS: 0
+- CURRENT_PRICE_MISSING_ROWS: 0
+- VALIDATION_FAIL_COUNT: 0
+- OFFICIAL_DECISION_IMPACT: NONE
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- READ_ONLY: TRUE
+- MANUAL_INPUT_ONLY: TRUE
+- POSITION_FEEDBACK_ONLY: TRUE
+- FAIL_REASONS: NONE
+- DANGEROUS_TOKEN_DETECTED: NO
+
+## Position Review
+
+No manual positions provided.
+
+## Trade Feedback
+
+No manual trades provided.

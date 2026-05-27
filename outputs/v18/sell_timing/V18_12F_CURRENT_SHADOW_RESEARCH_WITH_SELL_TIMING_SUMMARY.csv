@@ -1,0 +1,15 @@
+﻿section,metric,value,status,source_file,official_decision_impact,auto_sell,auto_trade
+run_status,SHADOW_RESEARCH_STATUS,SKIPPED_USE_EXISTING_OUTPUTS,OK,D:\us-tech-quant\scripts\v18\run_v18_current_shadow_research_daily.ps1,NONE,DISABLED,DISABLED
+run_status,SELL_TIMING_STATUS,OK_V18_12E_SELL_TIMING_DAILY_WRAPPER_READY,OK,D:\us-tech-quant\scripts\v18\run_v18_12E_sell_timing_daily_wrapper.ps1,NONE,DISABLED,DISABLED
+run_status,SHADOW_RESEARCH_READ_FIRST_STATUS,OK_OFFICIAL_DAILY_WITH_FACTOR_WEIGHT_RESEARCH_READY,OK,D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_SHADOW_RESEARCH_DAILY_READ_FIRST.txt,NONE,DISABLED,DISABLED
+run_status,SELL_TIMING_READ_FIRST_STATUS,OK_V18_12E_SELL_TIMING_DAILY_WRAPPER_READY,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,POSITION_COUNT,0,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,ACTIONABLE_EXIT_COUNT,0,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,TECHNICAL_LABEL_SOURCE_COUNT,17,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,LIFECYCLE_STAGE_COUNT,1,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,TRACKER_ROWS,1,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,FORWARD_COMPLETE_ROWS,0,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+daily_summary,PENDING_FORWARD_ROWS,0,OK,D:\us-tech-quant\outputs\v18\sell_timing\V18_12E_READ_FIRST.txt,NONE,DISABLED,DISABLED
+guardrails,OFFICIAL_DECISION_IMPACT,NONE,OK,V18.12F,NONE,DISABLED,DISABLED
+guardrails,AUTO_SELL,DISABLED,OK,V18.12F,NONE,DISABLED,DISABLED
+guardrails,AUTO_TRADE,DISABLED,OK,V18.12F,NONE,DISABLED,DISABLED

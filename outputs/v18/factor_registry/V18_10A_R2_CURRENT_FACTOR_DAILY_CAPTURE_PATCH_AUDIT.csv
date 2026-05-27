@@ -1,0 +1,4 @@
+﻿path,rows,status,ticker_col,price_col,relative_strength_populated,execution_fit_populated,backup,note
+D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,93,OK_PATCHED,ticker,latest_price_usd,93,93,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260518_131419.bak,YFINANCE_OK
+D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,93,OK_PATCHED,ticker,latest_price_usd,93,93,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv.before_v18_10A_R2_factor_capture_20260518_131419.bak,YFINANCE_OK
+D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv,31,OK_PATCHED,ticker,latest_price_usd,31,31,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv.before_v18_10A_R2_factor_capture_20260518_131419.bak,YFINANCE_OK

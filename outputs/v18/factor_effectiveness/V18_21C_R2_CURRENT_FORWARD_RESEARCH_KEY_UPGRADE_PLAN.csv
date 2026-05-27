@@ -1,0 +1,6 @@
+target_component,current_key_status,required_new_field,expected_benefit,implementation_scope,safety_requirement,recommended_priority
+signal_snapshot,signal_snapshot_id exists and is unique,none,Stable source of truth for research joins.,plan_only_no_change,Do not modify existing snapshots in this patch.,LOW
+forward_tracker,ticker/date fields present but signal_snapshot_id absent,signal_snapshot_id,Convert low-confidence ticker-only matches to high-confidence signal matches.,future_controlled_patch,Must not alter historical returns without explicit approval.,HIGH
+simulation_linker,simulation_link_key present for subset,signal_snapshot_id passthrough,Tie simulation rows to immutable signal snapshots.,future_controlled_patch,Must not modify simulation positions.,MEDIUM
+factor_effectiveness_read_center,read-only ticker/date fallback,match_confidence_threshold,Exclude low-confidence matches from effect claims by default.,future_read_center_patch,Research outputs only.,HIGH
+manual_feedback,no populated manual feedback link keys,signal_snapshot_id optional reference,Enable later manual outcome review by signal.,future_optional_patch,Must not modify manual state in this patch.,LOW

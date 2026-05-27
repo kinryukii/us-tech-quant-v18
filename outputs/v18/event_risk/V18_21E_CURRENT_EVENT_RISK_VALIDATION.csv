@@ -1,0 +1,14 @@
+﻿validation_check,status,fail_count,notes
+powershell_parse_wrapper,PASS,0,Wrapper parses as PowerShell.
+python_compile_engine,PASS,0,Engine compiles.
+required_outputs_exist,PASS,0,All required V18.21E outputs exist.
+required_read_first_fields_exist,PASS,0,READ_FIRST contains all required fields.
+all_coefficients_in_bounds,PASS,0,"All market/ticker/final coefficients are in [0, 1]."
+event_adjusted_file_created,PASS,0,Event-adjusted candidates output exists.
+source_audit_created,PASS,0,Source audit output exists.
+read_first_created,PASS,0,READ_FIRST exists.
+report_created,PASS,0,Report exists.
+no_protected_files_modified,PASS,0,Changed protected files: 
+no_external_data_fetched,PASS,0,No network or external fetch performed.
+official_decision_impact_none,PASS,0,Official decision impact remains NONE.
+event_risk_not_applied_to_official_decision,PASS,0,Advisory-only coefficient.

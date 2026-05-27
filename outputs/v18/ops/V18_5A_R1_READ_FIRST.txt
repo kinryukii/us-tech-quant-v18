@@ -1,0 +1,10 @@
+﻿V18_5A_R1_STATUS: OK_DECOUPLING_PLAN_READY
+INPUT: D:\us-tech-quant\outputs\v18\ops\V18_5A_CURRENT_RUNTIME_DECOUPLING_AUDIT.csv
+CSV: D:\us-tech-quant\outputs\v18\ops\V18_5A_R1_CURRENT_RUNTIME_DECOUPLING_PLAN.csv
+REPORT: D:\us-tech-quant\outputs\v18\ops\V18_5A_R1_CURRENT_RUNTIME_DECOUPLING_PLAN.md
+
+READ THIS FIRST:
+D:\us-tech-quant\outputs\v18\ops\V18_5A_R1_CURRENT_RUNTIME_DECOUPLING_PLAN.md
+
+NEXT:
+Patch direct legacy script dependencies first. Do not delete yet.

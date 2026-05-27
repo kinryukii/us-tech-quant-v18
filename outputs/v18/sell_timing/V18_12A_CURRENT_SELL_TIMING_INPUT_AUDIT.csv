@@ -1,0 +1,10 @@
+﻿snapshot_date,search_root,source_file,candidate_reason,exists,file_type,row_count,column_count,parse_status,position_like,open_position_count,selected_for_positions,note
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_PAPER_POSITIONS.csv,positions|paper_positions,YES,csv,0,10,OK,YES,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_ACCOUNT.csv,account,YES,csv,1,5,OK,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\state\v18\simulation,D:\us-tech-quant\state\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,candidate_tracker,YES,csv,93,57,OK,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_9A_CURRENT_SIM_CANDIDATE_TRACKER.md,candidate_tracker,YES,md,0,0,SKIPPED_NON_CSV,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_PAPER_PNL.csv,paper_pnl,YES,csv,3,11,OK,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_PAPER_POSITIONS.csv,positions|paper_positions,YES,csv,0,10,OK,YES,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CABIN.md,sim_cabin,YES,md,0,0,SKIPPED_NON_CSV,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,candidate_tracker,YES,csv,93,57,OK,NO,0,NO,CURRENT_DISCOVERED_INPUT
+2026-05-18,D:\us-tech-quant\outputs\v18\simulation,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv,candidate_tracker,YES,csv,31,44,OK,NO,0,NO,CURRENT_DISCOVERED_INPUT

@@ -1,0 +1,2 @@
+﻿script_path,exclusion_status,reason,reference_count,active_mainline_dependency
+scripts/v18/v18_6A_technical_timing_shadow.py,EXCLUDED_FROM_R25B_SELECTION,Not an active V18.25A R25B dependency; parse-clean R11 technical builder selected.,12,FALSE

@@ -1,0 +1,18 @@
+﻿metric,current_value,recommended_value,status,reason,source_file,confidence
+total_universe_count,325,325,INFO,Universe size read from rolling state.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,HIGH
+current_daily_scan_count,45,65,IMPROVE,Current scan count is below the daily 5-day coverage threshold.,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,HIGH
+required_daily_scan_count,65,65,INFO,ceil(total universe / 5 trading days).,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,HIGH
+tier_weighted_full_coverage_daily_count,45,110,REVIEW_REQUIRED,Full tier-aware unique coverage requires higher daily capacity because CORE/CANDIDATE repeat.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,MEDIUM
+recommended_daily_scan_count,45,65,ADVISORY_ONLY,Closest next-step target to satisfy current daily trust threshold; no policy applied.,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,MEDIUM
+projected_daily_threshold_met,FALSE,TRUE,IMPROVE,Daily threshold only; this does not imply full unique five-day universe coverage.,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,MEDIUM
+projected_daily_threshold_shortfall_after,20,0,IMPROVE,Daily threshold shortfall closes if future policy reaches recommended daily quota.,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,MEDIUM
+projected_true_5day_unique_coverage_met,FALSE,FALSE,REVIEW_REQUIRED,True unique five-day coverage remains insufficient under the 65/day advisory plan.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,MEDIUM
+projected_true_5day_unique_coverage_count,135,149,PARTIAL_IMPROVE,Daily threshold can improve while full unique tier coverage remains short.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,MEDIUM
+projected_true_5day_unique_shortfall_count,190,176,REVIEW_REQUIRED,Full unique coverage likely needs a separate budget/runtime policy decision.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,MEDIUM
+projected_coverage_target_met_legacy_daily_threshold,FALSE,TRUE,LEGACY_DAILY_THRESHOLD_ONLY,Backward-compatible daily-threshold metric; not true full coverage.,D:\us-tech-quant\outputs\v18\universe\V18_16H_CURRENT_COVERAGE_AUDIT.csv,MEDIUM
+scan_limit_reason,ESTIMATED_PLAN_COST_LIMIT,REVIEW_COST_LIMIT_BEFORE_APPLY,REVIEW_REQUIRED,Existing scheduler reported cost limit pressure.,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,HIGH
+runtime_confidence,HIGH,HIGH,INFO,ACTUAL_RUNTIME_SECONDS=9.656; SOFT_STOP_SECONDS=270.0; MAX_RUNTIME_SECONDS=300.0,D:\us-tech-quant\outputs\v18\ops\V18_16F_READ_FIRST.txt,HIGH
+estimated_plan_cost,330,NEEDS_RECALC_IN_APPLY_DESIGN,REVIEW_REQUIRED,MAX_ESTIMATED_PLAN_COST=300; current scheduler estimate=330.,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,HIGH
+daily_trust_degrader,coverage_shortfall_active,daily_threshold_reduced_but_keep_warn_until_true_unique_coverage_improves,ADVISORY_ONLY,V18.19A trust logic was not modified and should not infer HIGH trust solely from daily-threshold coverage.,D:\us-tech-quant\outputs\v18\ops\V18_19A_READ_FIRST.txt,MEDIUM
+policy_applied,FALSE,FALSE,PASS,Dry-run optimizer only.,D:\us-tech-quant\scripts\v18\v18_16I_rolling_scan_coverage_policy_optimizer.py,HIGH
+state_modified,FALSE,FALSE,PASS,State hashes are checked after output generation.,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,HIGH

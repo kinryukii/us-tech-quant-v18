@@ -1,0 +1,5 @@
+key_type,row_count,non_empty_key_count,unique_key_count,duplicate_key_count,missing_key_count,key_quality_status,notes
+signal_snapshot_id,325,325,325,0,0,OK,Signal snapshot IDs must be populated and unique for every row.
+simulation_link_key,325,31,31,0,294,WARN_MISSING_KEYS,Missing optional link keys are expected when the source component is absent.
+forward_tracker_link_key,325,20,20,0,305,WARN_MISSING_KEYS,Missing optional link keys are expected when the source component is absent.
+manual_feedback_link_key,325,0,0,0,325,WARN_MISSING_KEYS,Missing optional link keys are expected when the source component is absent.

@@ -1,0 +1,6 @@
+﻿priority,next_step_id,next_step_name,recommended_model,reason,risk_level,modifies_production,requires_explicit_approval
+1,V18.21F-R1,Stable snapshot if V18.21F validates cleanly,gpt-5.5,Preserve unified read center before new design work.,LOW,FALSE,FALSE
+2,V18.21G,Controlled Forward Outcome Filler Design,gpt-5.5,Forward returns are pending across shadow rows.,MEDIUM,FALSE,FALSE
+3,V18.21H,Full History Backfill Design,gpt-5.5,221 tickers are missing full history.,MEDIUM,FALSE,FALSE
+4,V18.21I,Unified Backtest Research Design,gpt-5.5,Research-only backtest design can unify A-E outputs.,MEDIUM,FALSE,FALSE
+5,LATER,Controlled daily command center integration,gpt-5.5,Production behavior requires explicit approval.,HIGH,TRUE,TRUE

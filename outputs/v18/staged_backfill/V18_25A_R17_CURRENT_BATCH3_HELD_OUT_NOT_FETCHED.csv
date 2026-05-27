@@ -1,0 +1,15 @@
+﻿ticker,hold_reason,classification,not_fetched_reason
+COG,Empty provider response.,HOLD_EMPTY_FETCH,R17 fetch is restricted to R16 selected Batch3 candidates only.
+COGT,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+CRCL,Not full factor-ready.,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,R17 fetch is restricted to R16 selected Batch3 candidates only.
+CVNA,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+DBVT,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+FCNCA,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+FIGR,Not full factor-ready.,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,R17 fetch is restricted to R16 selected Batch3 candidates only.
+GEMI,Not full factor-ready.,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,R17 fetch is restricted to R16 selected Batch3 candidates only.
+HOOD,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+HTZ,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+INSM,Suspicious staged data quality issue.,HOLD_SUSPICIOUS_PRICE_DATA,R17 fetch is restricted to R16 selected Batch3 candidates only.
+JBS,Not full factor-ready.,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,R17 fetch is restricted to R16 selected Batch3 candidates only.
+JFROG,Empty provider response.,HOLD_EMPTY_FETCH,R17 fetch is restricted to R16 selected Batch3 candidates only.
+KLAR,Not full factor-ready.,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,R17 fetch is restricted to R16 selected Batch3 candidates only.

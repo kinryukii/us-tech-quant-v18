@@ -1,0 +1,3 @@
+﻿builder_role,builder_script,wrapper_script_if_any,parse_status,selection_status,selection_reason,can_use_for_R25B,notes
+FACTOR,scripts/v18/v18_25A_R13_targeted_factor_pack_refresh_staged.py,scripts/v18/run_v18_25A_R13_targeted_factor_pack_refresh_staged.ps1,PY_AST_PARSE_OK,SELECTED,R25 primary factor staged refresh builder.,TRUE,No execution in R25A.
+TECHNICAL,scripts/v18/v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py,scripts/v18/run_v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.ps1,PY_AST_PARSE_OK,SELECTED,Parse-clean V18.25A technical refresh builder; supersedes legacy v18_6A for R25B selection.,TRUE,No execution in R25A.

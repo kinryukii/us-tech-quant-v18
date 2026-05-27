@@ -1,0 +1,46 @@
+factor_name,horizon,bucket_count,non_empty_bucket_count,min_bucket_sample_count,max_bucket_sample_count,total_usable_sample_count,bucket_balance_status,maturity_status,notes
+buy_zone_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+buy_zone_score,1D,3,3,5,9,20,BALANCED_ENOUGH_FOR_PRELIMINARY_READ,PRELIMINARY_ONLY,"Balanced enough for a read-only preliminary view, not a production claim."
+buy_zone_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+buy_zone_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+buy_zone_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+composite_candidate_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+composite_candidate_score,1D,3,3,6,8,20,BALANCED_ENOUGH_FOR_PRELIMINARY_READ,PRELIMINARY_ONLY,"Balanced enough for a read-only preliminary view, not a production claim."
+composite_candidate_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+composite_candidate_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+composite_candidate_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+factor_pack_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+factor_pack_score,1D,3,3,6,8,20,BALANCED_ENOUGH_FOR_PRELIMINARY_READ,PRELIMINARY_ONLY,"Balanced enough for a read-only preliminary view, not a production claim."
+factor_pack_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+factor_pack_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+factor_pack_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+overheat_penalty,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+overheat_penalty,1D,3,2,4,16,20,TOO_FEW_BUCKETS,PRELIMINARY_ONLY,Not all buckets have usable samples.
+overheat_penalty,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+overheat_penalty,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+overheat_penalty,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+price_derived_total_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+price_derived_total_score,1D,3,3,6,7,20,BALANCED_ENOUGH_FOR_PRELIMINARY_READ,PRELIMINARY_ONLY,"Balanced enough for a read-only preliminary view, not a production claim."
+price_derived_total_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+price_derived_total_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+price_derived_total_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+relative_strength_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+relative_strength_score,1D,3,3,5,8,20,BALANCED_ENOUGH_FOR_PRELIMINARY_READ,PRELIMINARY_ONLY,"Balanced enough for a read-only preliminary view, not a production claim."
+relative_strength_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+relative_strength_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+relative_strength_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+technical_timing_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+technical_timing_score,1D,3,2,7,13,20,TOO_FEW_BUCKETS,PRELIMINARY_ONLY,Not all buckets have usable samples.
+technical_timing_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+technical_timing_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+technical_timing_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volatility_risk_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volatility_risk_score,1D,3,3,2,11,20,UNEVEN_BUCKET_DISTRIBUTION,PRELIMINARY_ONLY,Bucket distribution is too uneven for effect claims.
+volatility_risk_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volatility_risk_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volatility_risk_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volume_confirmation_score,10D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volume_confirmation_score,1D,3,1,20,20,20,TOO_FEW_BUCKETS,PRELIMINARY_ONLY,Not all buckets have usable samples.
+volume_confirmation_score,20D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volume_confirmation_score,3D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.
+volume_confirmation_score,5D,3,0,0,0,0,INSUFFICIENT_SAMPLE,INSUFFICIENT_EVIDENCE,Total usable sample is below minimum.

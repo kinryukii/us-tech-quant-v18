@@ -1,0 +1,10 @@
+rule_id,rule_name,threshold,triggered_level,description
+CONC_MAX_GT_10,Max single-name weight watch,max_single_name_weight > 0.10,WATCH_CONCENTRATED,Single-name target weight above 10% should be reviewed for concentration.
+CONC_MAX_GT_20,Max single-name weight high,max_single_name_weight > 0.20,HIGH_CONCENTRATION,Single-name target weight above 20% is high concentration in this preview.
+CONC_TOP5_GT_50,Top5 concentration watch,top5_weight_sum > 0.50,WATCH_CONCENTRATED,Top five names above 50% should be reviewed.
+CONC_TOP5_GT_70,Top5 concentration high,top5_weight_sum > 0.70,HIGH_CONCENTRATION,Top five names above 70% is high concentration in this preview.
+FEAS_TOO_SMALL_GT_30,Small capital whole-share constraint,too_small_pct > 0.30,SMALL_CAPITAL_CONSTRAINT,More than 30% too-small whole-share rows indicates small simulated capital constraints.
+FEAS_PRICE_MISSING,Missing price risk,price_missing_count > 0,PRICE_MISSING_RISK,Missing prices make share feasibility unknown but do not create a trading failure.
+SIG_FORWARD_PENDING,Forward evidence pending,pending_forward_outcome_count > 0,FORWARD_EVIDENCE_PENDING,Pending forward evidence is expected research state and does not block output generation.
+DATA_TAG_REVIEW,Risk or data tag review,risk_tag_count > 0 or data_quality_warning_count > 0 or freeze_missing_count > 0,REVIEW_NEEDED,"Risk, data-quality, or freeze gaps should be reviewed before interpreting the preview."
+SAFETY_NO_EXECUTION,No execution safety,AUTO_TRADE DISABLED; ORDER_EXECUTION_USED FALSE; BROKER_API_USED FALSE,PASS_REQUIRED,"This module is report-only and must not create orders, broker instructions, or account-aware plans."

@@ -1,0 +1,134 @@
+﻿# Python / virtualenv
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+*.secret
+secrets/
+credentials/
+api_keys/
+broker/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+tmp/
+temp/
+.cache/
+
+# Large compressed archives
+*.zip
+*.7z
+*.tar
+*.gz
+archive/stable_compressed/
+
+# Potentially sensitive account / manual state
+state/v18/account/
+state/v18/manual/
+
+# Heavy cache/data folders, if present
+data/cache/
+price_cache/
+outputs/**/cache/
+outputs/**/tmp/
+
+# Generated / compressed historical outputs
+archive/generated_outputs_compressed/
+archive/**/generated_outputs_compressed/
+
+# Large historical backup folders
+archive/v18/*backups*/
+archive/v18/**/*backups*/
+archive/v18/**/backup*/
+archive/v18/**/backups/
+
+# Optional historical logs
+archive/**/logs/
+
+# Sensitive scan results
+outputs/v18/ops/*TOKEN_SCAN*.csv
+outputs/v18/ops/*DANGEROUS_TOKEN*.csv
+
+# Manual account state / potentially private portfolio data
+state/v18/manual_account/
+
+# Provider / cache databases
+state/v18/provider_cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Private or semi-private trading/account simulation state
+state/v18/paper_trading/
+state/v18/simulation/
+state/v18/trade_plan_snapshots/
+
+# Historical backup files
+*.bak
+*.before_*
+
+# Historical before-snapshots
+*.before_*
+*.before*
+
+# Token/security scan outputs
+outputs/v18/ops/*TOKEN_SCAN*.csv
+outputs/v18/ops/*DANGEROUS_TOKEN*.csv
+
+# Simulation / paper trading outputs and states
+outputs/v18/simulation/
+outputs/v18/paper_trading/
+state/v18/simulation/
+state/v18/paper_trading/
+state/v18/trade_plan_snapshots/
+state/v18/manual_account/
+
+# Provider cache / local DB
+state/v18/provider_cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Broker / account / private trade files
+state/v18/account/
+outputs/v18/account/
+outputs/v18/trade_plan/
+outputs/v18/trading/
+
+# YFinance local cache folders
+**/.yfinance_cache/
+data/**/.yfinance_cache/
+
+# Deprecated archived legacy code
+archive/deprecated/
+
+# Local env
+.venv/
+__pycache__/
+*.pyc
+
+# Large compressed archives - do not upload to GitHub
+archive/stable_compressed/
+archive/generated_outputs_compressed/
+
+# Temporary/cache files
+*.tmp
+*.log

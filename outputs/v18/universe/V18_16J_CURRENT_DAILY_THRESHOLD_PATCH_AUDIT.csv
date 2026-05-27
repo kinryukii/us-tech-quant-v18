@@ -1,0 +1,7 @@
+﻿metric,before_value,after_value,status,source_file,reason
+total_universe_count,325,325,INFO,D:\us-tech-quant\state\v18\universe\V18_UNIVERSE_ROLLING_STATE.csv,OK
+daily_scan_target,45,65,PATCHED,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,Scheduler plan count after conservative threshold patch.
+daily_min_scan_count,65,65,COMPUTED,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,ceil(total_universe_count / 5).
+coverage_target_met,FALSE,TRUE,EXPECTED_IMPROVE,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,Daily threshold expectation only; true unique coverage remains separate.
+coverage_shortfall,20,0,EXPECTED_IMPROVE,D:\us-tech-quant\outputs\v18\ops\V18_16B_READ_FIRST.txt,Daily threshold shortfall after scheduler patch.
+quota_source,configured_max_estimated_plan_cost=438,"effective_max_estimated_plan_cost=max(300,438)",PATCHED,D:\us-tech-quant\scripts\v18\v18_16B_rolling_scan_scheduler.py,Cost cap now floors to the computed daily threshold budget.

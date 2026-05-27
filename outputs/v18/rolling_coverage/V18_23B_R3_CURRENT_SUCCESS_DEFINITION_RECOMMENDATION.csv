@@ -1,0 +1,4 @@
+﻿success_status,definition,projected_count,recommended_for_r4
+LOCAL_PRICE_SCAN_SUCCESS,"Local price evidence exists, regardless of factor-pack/full-history readiness.",0,TRUE
+FULL_FACTOR_SCAN_SUCCESS,Local price plus factor-pack/full-history readiness exists.,0,TRUE
+SKIPPED_NO_LOCAL_PRICE,No local price evidence found; do not count as local coverage.,65,TRUE

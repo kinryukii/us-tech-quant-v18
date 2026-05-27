@@ -1,0 +1,25 @@
+﻿V18.8E-R3 STABLE SNAPSHOT
+
+STATUS: OK_STABLE_SNAPSHOT_READY
+SNAPSHOT:
+D:\us-tech-quant\archive\stable\V18_8E_R3_stable_current_official_daily_with_simulation_20260516_191846
+
+COPIED_FILE_COUNT: 789
+MISSING_LAYER_COUNT: 0
+MISSING_CRITICAL_COUNT: 0
+PARSE_FAIL_COUNT: 0
+PY_COMPILE_FAIL_COUNT: 0
+ACTIVE_LEGACY_REMAIN_COUNT: 0
+
+README:
+D:\us-tech-quant\archive\stable\V18_8E_R3_stable_current_official_daily_with_simulation_20260516_191846\V18_8E_R3_STABLE_SNAPSHOT_README.txt
+
+MANIFEST:
+D:\us-tech-quant\archive\stable\V18_8E_R3_stable_current_official_daily_with_simulation_20260516_191846\V18_8E_R3_STABLE_MANIFEST.csv
+
+RESTORE_SCRIPT:
+D:\us-tech-quant\archive\stable\V18_8E_R3_stable_current_official_daily_with_simulation_20260516_191846\restore_v18_8E_R3_stable_snapshot.ps1
+
+REPORT:
+D:\us-tech-quant\outputs\v18\ops\V18_8E_CURRENT_STABLE_SNAPSHOT_REPORT.md
+

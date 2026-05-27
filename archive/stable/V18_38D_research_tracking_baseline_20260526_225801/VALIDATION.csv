@@ -1,0 +1,16 @@
+check_name,status,detail,required,expected,observed
+archive_root_exists,PASS,Snapshot root: D:/us-tech-quant/archive/stable/V18_38D_research_tracking_baseline_20260526_225801,TRUE,exists,True
+manifest_exists,PASS,MANIFEST.csv present in archive root,TRUE,exists,True
+validation_exists,PASS,VALIDATION.csv present in archive root,TRUE,exists,True
+readme_exists,PASS,README present in archive root,TRUE,exists,True
+restore_script_exists,PASS,Restore script generated,TRUE,exists,True
+read_first_exists,PASS,Workspace READ_FIRST generated,TRUE,exists,True
+v18_38a_read_first_status,PASS,STATUS=OK_V18_38A_FORWARD_EVIDENCE_DASHBOARD_READY,TRUE,OK or WARN,OK_V18_38A_FORWARD_EVIDENCE_DASHBOARD_READY
+v18_38b_read_first_status,PASS,STATUS=OK_V18_38B_RESEARCH_EXPERIMENT_REGISTRY_READY,TRUE,OK or WARN,OK_V18_38B_RESEARCH_EXPERIMENT_REGISTRY_READY
+v18_38c_r1_current_fail_blocking,PASS,CURRENT_FAIL_BLOCKING_COUNT=0,TRUE,0,0
+v18_38c_r1_daily_run_usable,PASS,DAILY_RUN_USABLE=TRUE,TRUE,TRUE,TRUE
+v18_38c_r1_safety_markers,PASS,Required safety markers intact,TRUE,all markers present,checked
+current_full_candidate_count,PASS,CURRENT_FULL_CANDIDATE_COUNT=318,FALSE,318 if discoverable,318
+latest_signal_freeze_count,PASS,LATEST_SIGNAL_FREEZE_COUNT=318,FALSE,318 if discoverable,318
+restore_script_generated,PASS,Restore script was generated,TRUE,TRUE,True
+restore_script_executed,PASS,Restore script was generated but not executed,TRUE,FALSE,FALSE

@@ -1,0 +1,32 @@
+record_type,source_name,expected_path,exists,row_count,modified_time,usability_status,group_name,group_type,entry_count,entry_price_available_count,entry_price_missing_count,available_forward_horizons,matured_forward_horizon_count,comparison_ready_status,horizon,avg_forward_return,median_forward_return,win_rate,benchmark_excess_return,count_used,notes
+EVIDENCE_SOURCE,V18.36A paper forward returns,outputs/v18/paper_trading/V18_36A_PAPER_FORWARD_RETURNS.csv,TRUE,2440,2026-05-26T16:51:40,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.36B paper forward returns filled,outputs/v18/paper_trading/V18_36B_PAPER_FORWARD_RETURNS_FILLED.csv,TRUE,2440,2026-05-25T15:19:45,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.36A benchmark comparison,outputs/v18/paper_trading/V18_36A_BENCHMARK_COMPARISON.csv,TRUE,40,2026-05-26T16:51:40,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.36B benchmark comparison updated,outputs/v18/paper_trading/V18_36B_BENCHMARK_COMPARISON_UPDATED.csv,TRUE,40,2026-05-25T15:19:45,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,paper trading ledger,state/v18/paper_trading/V18_PAPER_TRADING_LEDGER.csv,TRUE,488,2026-05-25T15:16:37,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,paper portfolio state,state/v18/paper_trading/V18_PAPER_PORTFOLIO_STATE.csv,TRUE,20,2026-05-25T15:16:37,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.36A READ_FIRST,outputs/v18/ops/V18_36A_READ_FIRST.txt,TRUE,,2026-05-26T16:51:40,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,current paper trading forward attribution report,outputs/v18/read_center/V18_CURRENT_PAPER_TRADING_FORWARD_ATTRIBUTION.md,TRUE,,2026-05-26T16:51:40,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.37C shadow snapshot summary,outputs/v18/ops/V18_37C_SHADOW_PORTFOLIO_SNAPSHOT_SUMMARY.csv,TRUE,1,2026-05-26T17:12:11,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.37C shadow snapshot detail,outputs/v18/ops/V18_37C_SHADOW_PORTFOLIO_SNAPSHOT_DETAIL.csv,TRUE,744,2026-05-26T17:12:11,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,V18.37C shadow forward readiness,outputs/v18/ops/V18_37C_SHADOW_PORTFOLIO_FORWARD_READINESS.csv,TRUE,6,2026-05-26T17:12:11,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,shadow portfolio snapshot ledger,state/v18/shadow_portfolios/V18_SHADOW_PORTFOLIO_DAILY_SNAPSHOT_LEDGER.csv,TRUE,744,2026-05-25T18:48:10,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,current Full318 candidates,outputs/v18/candidates/V18_CURRENT_FULL_RANKED_CANDIDATES.csv,TRUE,318,2026-05-25T18:48:08,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,current top candidates,outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv,TRUE,20,2026-05-26T23:54:03,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+EVIDENCE_SOURCE,signal freeze ledger,state/v18/forward_test/V18_DAILY_SIGNAL_FREEZE_LEDGER.csv,TRUE,570,2026-05-25T13:48:02,OK_USABLE,,,,,,,,,,,,,,,usable evidence source
+COMPARISON_GROUP,,,,,,,Full318,PAPER_TOPN,318.0,318.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=FULL318_EQUAL_WEIGHT_OBSERVATION
+COMPARISON_GROUP,,,,,,,Top100,PAPER_TOPN,100.0,100.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=TOP100_EQUAL_WEIGHT
+COMPARISON_GROUP,,,,,,,Top20,PAPER_TOPN,20.0,20.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=TOP20_EQUAL_WEIGHT
+COMPARISON_GROUP,,,,,,,Top50,PAPER_TOPN,50.0,50.0,0.0,10D;1D;20D;3D;5D,0.0,PARTIAL_READY,,,,,,,paper source portfolio_name=TOP50_EQUAL_WEIGHT
+COMPARISON_GROUP,,,,,,,SPY,BENCHMARK,1.0,0.0,1.0,10D;1D;20D;3D;5D,0.0,PENDING_NOT_ENOUGH_FUTURE_PRICES,,,,,,,benchmark evidence from paper/shadow outputs if available
+COMPARISON_GROUP,,,,,,,QQQ,BENCHMARK,1.0,0.0,1.0,10D;1D;20D;3D;5D,0.0,PENDING_NOT_ENOUGH_FUTURE_PRICES,,,,,,,benchmark evidence from paper/shadow outputs if available
+COMPARISON_GROUP,,,,,,,FULL318_EQUAL_WEIGHT,SHADOW_PORTFOLIO,318.0,318.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,LOW_VOL_ADJUSTED_TOP50,SHADOW_PORTFOLIO,50.0,50.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,MOTIF_READY_EQUAL_WEIGHT,SHADOW_PORTFOLIO,18.0,18.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,MOTIF_READY_TOPN_BLEND,SHADOW_PORTFOLIO,18.0,18.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP100_EQUAL_WEIGHT,SHADOW_PORTFOLIO,100.0,100.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP100_SCORE_WEIGHTED,SHADOW_PORTFOLIO,100.0,100.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP20_EQUAL_WEIGHT,SHADOW_PORTFOLIO,20.0,20.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP20_SCORE_WEIGHTED,SHADOW_PORTFOLIO,20.0,20.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP50_EQUAL_WEIGHT,SHADOW_PORTFOLIO,50.0,50.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence
+COMPARISON_GROUP,,,,,,,TOP50_SCORE_WEIGHTED,SHADOW_PORTFOLIO,50.0,50.0,0.0,1D;3D;5D;10D;20D,0.0,PARTIAL_READY,,,,,,,shadow portfolio snapshot evidence

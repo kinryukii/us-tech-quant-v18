@@ -1,0 +1,9 @@
+﻿blocker_name,blocker_status,affected_layer,severity,current_metric,why_it_matters,recommended_resolution
+PRICE_HISTORY_COVERAGE_INCOMPLETE,ACTIVE,V18.21A-R4,HIGH,missing_history_tickers=221; score_ready_ratio=0.320000,Full factor scores cannot be computed for all tickers.,Design and review full-history backfill before applying.
+SIGNAL_SNAPSHOT_DEGRADED_ROWS,ACTIVE,V18.21B-R1,HIGH,row_only_degraded=221; full_research_ready=0,Rows are present but many are not research-ready.,"Resolve missing factor, simulation, and forward references."
+FACTOR_EFFECTIVENESS_LOW_MATCH_CONFIDENCE,ACTIVE,V18.21C-R2,HIGH,high=0; low=20,Effect conclusions require reliable signal/outcome matching.,Use upgraded link keys and controlled outcome filler design.
+MULTI_HORIZON_FORWARD_RETURNS_MISSING,ACTIVE,V18.21C-R2/V18.21D-R1,HIGH,multi_horizon=NOT_READY_MULTI_HORIZON; pending=525,Multi-horizon effect research cannot proceed without returns.,Design V18.21G controlled forward outcome filler.
+FORWARD_TRACKER_SHADOW_NOT_PRODUCTION,ACTIVE,V18.21D-R1,MEDIUM,production_replaced=FALSE,Shadow schema is not official tracker state.,Keep shadow-only until explicit production replacement approval.
+EVENT_RISK_ADVISORY_ONLY,ACTIVE,V18.21E-R1,MEDIUM,applied_to_official=FALSE,Event coefficients must not be interpreted as official trade logic.,Review separately before any official integration.
+TRUE_5DAY_COVERAGE_NOT_MET,ACTIVE,V18.21B-R1/V18.21C-R2,MEDIUM,true_5day=FALSE,Coverage limits confidence in short-window research.,Continue coverage maturation and outcome collection.
+DAILY_TRUST_MEDIUM,ACTIVE,V18.21B-R1/V18.21C-R2,MEDIUM,daily_trust=MEDIUM,Medium trust prevents production-grade claims.,Improve data completeness before production decisions.

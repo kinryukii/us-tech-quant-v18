@@ -1,0 +1,11 @@
+validation_check,status,fail_count,notes
+upgraded shadow output exists,PASS,0,Shadow output file must exist.
+upgraded shadow row count equals dry-run template row count,PASS,0,dryrun=525; shadow=525
+no forward_return values filled,PASS,0,Forward returns must remain NA/blank.
+all rows apply_status = APPLIED_TO_SHADOW_OUTPUT_ONLY,PASS,0,No row may be production-applied.
+no rows apply_status = PRODUCTION_APPLIED,PASS,0,Production application is disallowed.
+core keys non-empty where available,PASS,0,Core key completeness is audited per row.
+no existing forward tracker production file modified,PASS,0,Protected files should not change.
+signal snapshot not modified,PASS,0,Signal snapshot is included in protected-file diff.
+simulation positions not modified,PASS,0,Simulation files are included in protected-file diff.
+external data not fetched,PASS,0,No network/external fetch is performed.

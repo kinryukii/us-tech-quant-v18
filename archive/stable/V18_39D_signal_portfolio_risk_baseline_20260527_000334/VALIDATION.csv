@@ -1,0 +1,47 @@
+check_name,status,detail,required,expected,observed
+critical_source_missing_count,PASS,,TRUE,0,0
+copy_fail_count,PASS,,TRUE,0,0
+optional_source_missing_count,PASS,,FALSE,0,0
+v39a_status_ok_or_warn,PASS,,TRUE,OK or WARN,OK_V18_39A_ALPHA_SIGNAL_OBJECT_LAYER_READY
+v39a_total_signal_count,PASS,,TRUE,318,318
+v39b_status_ok_or_warn,PASS,,TRUE,OK or WARN,OK_V18_39B_PORTFOLIO_TARGET_PREVIEW_READY
+v39b_total_preview_row_count,PASS,,TRUE,1832,1832
+v39c_status_ok_or_warn,PASS,,TRUE,OK or WARN,WARN_V18_39C_SHADOW_RISK_MODEL_PREVIEW_REVIEW_NEEDED
+v39c_total_scenario_capital_rows,PASS,,TRUE,20,20
+v39a_auto_trade,PASS,,TRUE,DISABLED,DISABLED
+v39a_auto_sell,PASS,,TRUE,DISABLED,DISABLED
+v39a_official_decision_impact,PASS,,TRUE,NONE,NONE
+v39a_ranking_modified,PASS,,TRUE,FALSE,FALSE
+v39a_factor_weights_modified,PASS,,TRUE,FALSE,FALSE
+v39a_signal_freeze_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39a_paper_trading_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39a_shadow_portfolio_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39a_account_state_modified,PASS,,TRUE,FALSE,FALSE
+v39a_broker_api_used,PASS,,TRUE,FALSE,FALSE
+v39a_order_execution_used,PASS,,TRUE,FALSE,FALSE
+v39b_auto_trade,PASS,,TRUE,DISABLED,DISABLED
+v39b_auto_sell,PASS,,TRUE,DISABLED,DISABLED
+v39b_official_decision_impact,PASS,,TRUE,NONE,NONE
+v39b_ranking_modified,PASS,,TRUE,FALSE,FALSE
+v39b_factor_weights_modified,PASS,,TRUE,FALSE,FALSE
+v39b_signal_freeze_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39b_paper_trading_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39b_shadow_portfolio_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39b_account_state_modified,PASS,,TRUE,FALSE,FALSE
+v39b_broker_api_used,PASS,,TRUE,FALSE,FALSE
+v39b_order_execution_used,PASS,,TRUE,FALSE,FALSE
+v39c_auto_trade,PASS,,TRUE,DISABLED,DISABLED
+v39c_auto_sell,PASS,,TRUE,DISABLED,DISABLED
+v39c_official_decision_impact,PASS,,TRUE,NONE,NONE
+v39c_ranking_modified,PASS,,TRUE,FALSE,FALSE
+v39c_factor_weights_modified,PASS,,TRUE,FALSE,FALSE
+v39c_signal_freeze_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39c_paper_trading_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39c_shadow_portfolio_ledger_modified,PASS,,TRUE,FALSE,FALSE
+v39c_account_state_modified,PASS,,TRUE,FALSE,FALSE
+v39c_broker_api_used,PASS,,TRUE,FALSE,FALSE
+v39c_order_execution_used,PASS,,TRUE,FALSE,FALSE
+v38c_r1_current_fail_blocking_count_zero,PASS,,TRUE,0,0
+daily_run_usable_true,PASS,,TRUE,TRUE,TRUE
+restore_script_not_executed,PASS,,TRUE,FALSE,FALSE
+generated_rows_count,PASS,,TRUE,3,3

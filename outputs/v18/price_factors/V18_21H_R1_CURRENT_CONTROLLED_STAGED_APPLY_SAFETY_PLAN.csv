@@ -1,0 +1,10 @@
+﻿step_index,step_name,purpose,required_inputs,safety_gate,validation_required,rollback_requirement,modifies_price_cache,writes_staged_history,external_data_required,allowed_in_r1,notes
+1,Validate Batch 1 request manifest,Confirm ticker/date/field requirements.,request manifest,25 expected tickers or degraded warning.,Schema and required date checks.,Discard manifest.,FALSE,FALSE,FALSE,TRUE,Allowed in R1.
+2,Confirm explicit user approval before external fetch,Prevent unapproved data access.,approval record,Approval must be explicit.,Approval captured before fetch.,Do nothing if absent.,FALSE,FALSE,FALSE,TRUE,R1 does not fetch.
+3,Fetch/import data into staged output only,Acquire future OHLCV data safely.,approved manifest,Staged output only.,Provider/import row counts and dates.,Delete staged files.,FALSE,TRUE,TRUE,FALSE,Future only.
+4,Validate OHLCV schema and date coverage,Ensure complete staged history.,staged output,Required columns and date range pass.,OHLCV schema/date validation.,Discard invalid staged file.,FALSE,FALSE,FALSE,FALSE,Future only.
+5,Compare staged data to existing local sources,Detect conflicts.,staged + local sources,No unexpected conflicts.,Diff audit.,Discard staged file.,FALSE,FALSE,FALSE,FALSE,Future only.
+6,Recompute price-derived factors in shadow mode only,Estimate score-ready impact.,staged validated output,Shadow output only.,Score-ready audit.,Discard shadow output.,FALSE,FALSE,FALSE,FALSE,Future only.
+7,Produce post-backfill coverage audit,Quantify coverage change.,shadow factors,Audit created.,Coverage projection validation.,Discard audit.,FALSE,FALSE,FALSE,FALSE,Future only.
+8,Stable snapshot before price cache integration,Preserve staged evidence.,all staged artifacts,Validation fail count zero.,Snapshot validation.,Restore from snapshot.,FALSE,FALSE,FALSE,FALSE,Future only.
+9,Only later consider price cache integration,Protect production cache.,approved staged evidence,Explicit approval required.,Production safety diff.,Restore cache backup.,TRUE,FALSE,FALSE,FALSE,Not allowed in R1.

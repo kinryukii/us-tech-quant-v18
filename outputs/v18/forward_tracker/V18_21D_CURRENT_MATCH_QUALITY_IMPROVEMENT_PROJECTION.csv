@@ -1,0 +1,6 @@
+scenario_name,high_confidence_match_count_projected,medium_confidence_match_count_projected,low_confidence_match_count_projected,unmatched_or_ambiguous_count_projected,multi_horizon_readiness_projected,assumptions,limitations
+CURRENT,0,0,20,305,NOT_READY_MULTI_HORIZON,No changes applied.,Ticker-only/partial matches remain unreliable.
+ADD_SIGNAL_SNAPSHOT_ID_ONLY,20,0,0,220,NOT_READY_MULTI_HORIZON,Signal IDs are propagated for ready forward-research rows only.,Does not create 3D/5D/10D/20D returns.
+ADD_SIGNAL_SNAPSHOT_ID_AND_HORIZON,105,0,0,220,STRUCTURE_READY_OUTCOMES_PENDING,One row per signal/horizon can be represented.,Forward returns still mature over time.
+ADD_FULL_LINK_KEY_SET,105,0,0,220,KEY_READY_OUTCOMES_PENDING,All link keys and provenance fields are added in a future controlled patch.,No return values are fabricated.
+ADD_FULL_LINK_KEY_SET_AND_OUTCOME_ACCUMULATION,105,0,0,220,POTENTIALLY_READY_AFTER_HORIZONS_MATURE,Future local outcomes mature for all planned horizons.,Requires time and future controlled outcome capture; not applied here.

@@ -1,0 +1,2 @@
+total_experiment_count,paper_experiment_count,shadow_portfolio_experiment_count,motif_experiment_count,benchmark_experiment_count,pending_research_experiment_count,ready_experiment_count,partial_ready_experiment_count,pending_forward_outcome_count,missing_input_experiment_count,any_forward_outcome_available,ready_for_factor_forward_attribution,ready_for_shadow_portfolio_league_table,recommended_next_development_step
+29,4,10,10,2,3,0,0,18,3,FALSE,FALSE,FALSE,"Wait for forward outcome maturity, then rerun V18.38A and V18.38B."

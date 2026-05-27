@@ -1,0 +1,5 @@
+﻿schema_item,status,value,notes
+factor_schema_compatible,PASS,TRUE,
+technical_schema_compatible,PASS,TRUE,
+factor_output_tickers_subset_of_targets,PASS,93,
+technical_output_tickers_subset_of_targets,PASS,93,

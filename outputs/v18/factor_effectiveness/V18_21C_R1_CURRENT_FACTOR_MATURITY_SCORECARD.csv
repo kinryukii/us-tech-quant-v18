@@ -1,0 +1,11 @@
+factor_name,signal_available_count,matched_forward_count,mature_horizon_count,preliminary_horizon_count,insufficient_horizon_count,bucket_distribution_status,sample_maturity_status,effect_claim_allowed,weight_change_allowed,production_promotion_allowed,recommended_next_step
+factor_pack_score,105,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+composite_candidate_score,105,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+technical_timing_score,105,20,0,1,4,UNEVEN_BUCKET_DISTRIBUTION,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+overheat_penalty,105,20,0,1,4,UNEVEN_BUCKET_DISTRIBUTION,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+price_derived_total_score,105,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+relative_strength_score,105,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+buy_zone_score,105,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+volume_confirmation_score,105,20,0,1,4,UNEVEN_BUCKET_DISTRIBUTION,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+volatility_risk_score,105,20,0,1,4,UNEVEN_BUCKET_DISTRIBUTION,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.
+market_risk_coefficient,325,20,0,1,4,UNEVEN_OR_SINGLE_HORIZON,PRELIMINARY_ONLY,FALSE,FALSE,FALSE,Increase matched forward-return coverage and bucket balance.

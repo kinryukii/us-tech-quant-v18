@@ -1,0 +1,10 @@
+﻿ticker,fetch_status,staged_file_exists,staged_row_count,staged_min_date,staged_max_date,latest_date_age_days,has_required_ohlcv_columns,close_non_null_count,volume_non_null_count,duplicate_date_count,missing_date_or_parse_issue_count,non_positive_close_count,suspicious_large_gap_count,suspicious_return_outlier_count,full_history_ready_from_v18_23C,staged_local_price_scan_success_from_v18_23C,insufficient_history_flag_from_v18_23C,official_price_overlap_found,existing_official_latest_date,staged_newer_than_official,recommended_integration_action,integration_block_reason,quality_score,quality_grade,classification
+COG,EMPTY,FALSE,0,,,,FALSE,0,0,0,0,0,0,0,FALSE,FALSE,FALSE,FALSE,,UNKNOWN,HOLD_REVIEW,Empty provider response.,35,HOLD,HOLD_EMPTY_FETCH
+COGT,SUCCESS,TRUE,1262,2021-05-12,2026-05-20,1,TRUE,1262,1262,0,0,0,0,4,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,70,C,HOLD_SUSPICIOUS_PRICE_DATA
+CVNA,SUCCESS,TRUE,1262,2021-05-12,2026-05-20,1,TRUE,1262,1262,0,0,0,0,1,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,90,A,HOLD_SUSPICIOUS_PRICE_DATA
+DBVT,SUCCESS,TRUE,1262,2021-05-12,2026-05-20,1,TRUE,1262,1262,0,0,0,0,3,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,70,C,HOLD_SUSPICIOUS_PRICE_DATA
+FCNCA,SUCCESS,TRUE,1262,2021-05-12,2026-05-20,1,TRUE,1262,1262,0,0,0,0,1,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,90,A,HOLD_SUSPICIOUS_PRICE_DATA
+HOOD,SUCCESS,TRUE,1208,2021-07-29,2026-05-20,1,TRUE,1208,1208,0,0,0,0,1,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,90,A,HOLD_SUSPICIOUS_PRICE_DATA
+HTZ,SUCCESS,TRUE,1227,2021-07-01,2026-05-20,1,TRUE,1227,1227,0,0,0,0,1,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,90,A,HOLD_SUSPICIOUS_PRICE_DATA
+INSM,SUCCESS,TRUE,1262,2021-05-12,2026-05-20,1,TRUE,1262,1262,0,0,0,0,1,TRUE,TRUE,FALSE,FALSE,,TRUE,HOLD_REVIEW,Suspicious staged data quality issue.,90,A,HOLD_SUSPICIOUS_PRICE_DATA
+JFROG,EMPTY,FALSE,0,,,,FALSE,0,0,0,0,0,0,0,FALSE,FALSE,FALSE,FALSE,,UNKNOWN,HOLD_REVIEW,Empty provider response.,35,HOLD,HOLD_EMPTY_FETCH

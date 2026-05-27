@@ -1,0 +1,14 @@
+﻿category,value,count,expected_count,matches_read_first,notes
+OUTPUT_BUCKET,HIGH_TRUST_OFFICIAL_RANK_CANDIDATE,155,155,TRUE,Derived from V18.25A current output review.
+OUTPUT_BUCKET,DATA_NOT_READY,103,103,TRUE,Derived from V18.25A current output review.
+OUTPUT_BUCKET,LOW_TRUST_PRICE_ONLY_OR_STAGED_WATCH,64,64,TRUE,Derived from V18.25A current output review.
+OUTPUT_BUCKET,MEDIUM_TRUST_PARTIAL_WATCH,2,2,TRUE,Derived from V18.25A current output review.
+TRUST_LEVEL,HIGH,155,,,Derived from V18.25A current output review.
+TRUST_LEVEL,NONE,103,,,Derived from V18.25A current output review.
+TRUST_LEVEL,LOW,64,,,Derived from V18.25A current output review.
+TRUST_LEVEL,MEDIUM,2,,,Derived from V18.25A current output review.
+OFFICIAL_RANK_ALLOWED,FALSE,169,,,Derived from V18.25A current output review.
+OFFICIAL_RANK_ALLOWED,TRUE,155,155,TRUE,Derived from V18.25A current output review.
+WATCH_ONLY,FALSE,258,,,Derived from V18.25A current output review.
+WATCH_ONLY,TRUE,66,66,TRUE,Derived from V18.25A current output review.
+TRADE_ALLOWED,FALSE,324,,,Derived from V18.25A current output review.

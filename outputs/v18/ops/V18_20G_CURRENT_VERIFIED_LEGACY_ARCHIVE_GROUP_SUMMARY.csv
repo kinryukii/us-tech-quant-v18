@@ -1,0 +1,6 @@
+﻿archive_group,count,total_mb,planned_later_action,proposed_archive_zip,note
+OLD_GENERATED_REPORTS,352,2.453,ARCHIVE_THEN_DELETE_AFTER_VERIFICATION,V18_20G_old_generated_reports.zip,Verified archive group
+OLD_EXPERIMENTAL_WRAPPERS,18,0.077,ARCHIVE_ONLY,V18_20G_old_experimental_wrappers.zip,Verified archive group
+LEGACY_VERSIONED_SCRIPTS,4,0.035,ARCHIVE_ONLY,V18_20G_legacy_versioned_scripts.zip,Verified archive group
+OLD_RUN_LOGS,0,0.000,ARCHIVE_THEN_DELETE_AFTER_VERIFICATION,V18_20G_old_run_logs.zip,Verified archive group
+DO_NOT_ARCHIVE_PROTECTED,105,4.530,KEEP_PROTECTED,,Protected exclusions were not archived.

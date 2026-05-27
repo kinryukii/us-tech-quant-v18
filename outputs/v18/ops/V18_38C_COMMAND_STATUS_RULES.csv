@@ -1,0 +1,13 @@
+rule_id,rule_name,match_pattern,normalized_status,severity,description
+R001,Safety disabled invariant,AUTO_TRADE/AUTO_SELL must be DISABLED; OFFICIAL_DECISION_IMPACT must be NONE,FAIL_BLOCKING,BLOCKING,"Any trading, sell automation, or official decision impact marker outside the read-only contract is a true blocking safety failure."
+R002,Explicit fail status,STATUS begins with FAIL_,FAIL_BLOCKING,BLOCKING,Explicit module failure is treated as blocking unless a future manual mode defines a narrower exception.
+R003,Expected forward horizon pending,"PENDING_FORWARD, ANY_FORWARD_OUTCOME_AVAILABLE FALSE, READY_FOR_FACTOR_FORWARD_ATTRIBUTION FALSE",EXPECTED_PENDING_FORWARD_OUTCOME,INFO,Forward evidence can be unavailable because future price horizons have not matured; this is expected and not fatal.
+R004,Account template warning,"WARN_TEMPLATE_EMPTY_ACCOUNT, ACCOUNT_STATE quality/template warnings",ACCOUNT_TEMPLATE_WARN,WARN,"Template or incomplete account-state warnings are operator warnings, not trading failures in this read-only flow."
+R005,Data provider warning,"yfinance, historical provider, price cache, preflight warning/failure",DATA_PROVIDER_WARN,WARN,Provider or price-cache issues are warnings unless they prevented output generation or produced an explicit fail.
+R006,Stale current report,Current report missing today generated date and older file timestamp,REPORT_STALE_WARN,WARN,"Current operator-facing reports that appear old should be reviewed, but this does not change ranking or weights."
+R007,Research not ready,"MISSING_FACTOR, MISSING_INPUT_EXPERIMENT, READY count zero, research pending",RESEARCH_NOT_READY,INFO,Research and experiment evidence may be registered but not yet mature enough for forward attribution.
+R008,Warn reason review,STATUS begins with WARN_ and no more specific rule matched,REVIEW_NEEDED_NON_BLOCKING,WARN,WARN statuses are not automatically fatal; classify by reason and surface unresolved warnings for review.
+R009,Missing optional source,Optional historical READ_FIRST file does not exist,MISSING_OPTIONAL,INFO,Missing older or optional module outputs are recorded and do not fail the command center.
+R010,Missing expected current output,Critical current read-center output does not exist,MISSING_EXPECTED,BLOCKING,Missing critical current operator outputs are blocking because the command center cannot be judged reliably.
+R011,OK status,STATUS begins with OK_ or equals OK and no safety issue,OK_READY,OK,OK statuses with intact read-only safety markers are ready from the operator status perspective.
+R012,Unknown status,No recognized status or parseable signal,UNKNOWN_REVIEW,UNKNOWN,Unrecognized sources are surfaced for human review without assuming a fabricated status.

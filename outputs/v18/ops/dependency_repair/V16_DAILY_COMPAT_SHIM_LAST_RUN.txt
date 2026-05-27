@@ -1,0 +1,9 @@
+﻿=== V16 DAILY COMPATIBILITY SHIM ===
+
+RUN_TIME: 2026-05-16 15:48:59
+STATUS: OK_COMPAT_SHIM_ONLY
+PURPOSE: satisfy legacy V17 upstream dependency only
+DECISION_IMPACT: NONE
+PROMOTION_ACTION: NONE
+
+NOTE: This is not the old V16 research/backtest framework. V15/V16 legacy was intentionally cleaned. Current decisions come from V17/V18.

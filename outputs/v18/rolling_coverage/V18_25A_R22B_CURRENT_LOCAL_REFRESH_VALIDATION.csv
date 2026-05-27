@@ -1,0 +1,66 @@
+﻿priority_rank,ticker,priority_bucket,local_price_path,local_price_available,readable,row_count,latest_price_date,latest_close_available,valid_ticker_symbol,validation_result,error_message
+1,AMC,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/AMC.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+2,APLD,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/APLD.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+3,BLSH,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/BLSH.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+4,BW,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/BW.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+5,BYND,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/BYND.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+6,CAI,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CAI.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+7,CDTX,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CDTX.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+8,CFLT,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CFLT.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+9,CHYM,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CHYM.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+10,COG,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/COG.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+11,COGT,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/COGT.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+12,CRCL,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CRCL.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+13,CVNA,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/CVNA.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+14,DBVT,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/DBVT.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+15,FCNCA,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/FCNCA.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+16,FIGR,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/FIGR.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+17,GEMI,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/GEMI.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+18,HOOD,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/HOOD.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+19,HTZ,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/HTZ.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+20,INSM,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/INSM.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+21,JBS,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/JBS.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+22,JFROG,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/JFROG.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+23,KLAR,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/KLAR.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+24,LINE,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/LINE.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+25,MNTN,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/MNTN.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+26,MPW,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/MPW.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+27,NVAX,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/NVAX.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+28,PONY,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/PONY.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+29,RDDT,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/RDDT.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+30,SOLS,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/SOLS.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+31,STUB,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/STUB.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+32,TICKERS,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/TICKERS.csv,False,False,0,,False,False,FAIL,Invalid ticker-like symbol.
+33,TLN,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/TLN.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+34,UPST,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/UPST.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+35,USFD,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/USFD.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+36,V,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/V.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+37,VECO,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/VECO.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+38,VEEV,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/VEEV.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+39,VIAV,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/VIAV.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+40,VIST,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/VIST.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+41,VMC,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/VMC.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+42,WAB,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WAB.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+43,WDAY,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WDAY.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+44,WHR,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WHR.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+45,WING,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WING.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+46,WLK,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WLK.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+47,WOLF,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WOLF.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+48,WULF,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WULF.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+49,WVE,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WVE.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+50,WWD,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WWD.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+51,WYFI,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/WYFI.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+52,XENE,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/XENE.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+53,XLF,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/XLF.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+54,XLK,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/XLK.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+55,XPO,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/XPO.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+56,XYZ,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/XYZ.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+57,YPF,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/YPF.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+58,Z,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/Z.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+59,ZG,01_NEVER_SUCCESS,D:/us-tech-quant/state/v18/price_cache/ZG.csv,False,False,0,,False,True,FAIL,Local price cache file missing.
+60,AA,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/AA.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,
+61,AAL,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/AAL.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,
+62,ABR,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/ABR.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,
+63,ADBE,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/ADBE.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,
+64,ADMA,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/ADMA.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,
+65,ADSK,03_OLDEST_SUCCESS_REFRESH,D:/us-tech-quant/state/v18/price_cache/ADSK.csv,True,True,1262,2026-05-20,True,True,PASS_LOCAL_PRICE_AVAILABLE,

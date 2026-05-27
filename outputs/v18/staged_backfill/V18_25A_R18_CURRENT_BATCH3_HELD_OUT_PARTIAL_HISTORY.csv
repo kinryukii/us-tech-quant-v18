@@ -1,0 +1,6 @@
+﻿ticker,normalized_row_count,min_date,max_date,latest_date,quality_status,integration_gate_decision,recommended_next_action
+PONY,370,2024-11-27,2026-05-21,2026-05-21,FETCH_SUCCESS_PARTIAL_HISTORY,PRICE_ONLY_PARTIAL_HOLD,Hold out of official integration until full-history coverage is available.
+RDDT,544,2024-03-21,2026-05-21,2026-05-21,FETCH_SUCCESS_PARTIAL_HISTORY,PRICE_ONLY_PARTIAL_HOLD,Hold out of official integration until full-history coverage is available.
+SOLS,148,2025-10-20,2026-05-21,2026-05-21,FETCH_SUCCESS_PARTIAL_HISTORY,PRICE_ONLY_PARTIAL_HOLD,Hold out of official integration until full-history coverage is available.
+STUB,171,2025-09-17,2026-05-21,2026-05-21,FETCH_SUCCESS_PARTIAL_HISTORY,PRICE_ONLY_PARTIAL_HOLD,Hold out of official integration until full-history coverage is available.
+TLN,745,2023-06-02,2026-05-21,2026-05-21,FETCH_SUCCESS_PARTIAL_HISTORY,PRICE_ONLY_PARTIAL_HOLD,Hold out of official integration until full-history coverage is available.

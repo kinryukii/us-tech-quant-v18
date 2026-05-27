@@ -1,0 +1,3 @@
+﻿ticker,target_price_cache_file,write_attempted,write_success,target_action,rows_written,error_message
+RDDT,D:/us-tech-quant/state/v18/price_cache/RDDT.csv,TRUE,TRUE,CREATE_NEW_FILE,545,
+TLN,D:/us-tech-quant/state/v18/price_cache/TLN.csv,TRUE,TRUE,CREATE_NEW_FILE,746,

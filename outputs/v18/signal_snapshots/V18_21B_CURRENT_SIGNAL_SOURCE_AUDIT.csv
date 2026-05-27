@@ -1,0 +1,18 @@
+source_name,source_path,source_exists,modified_time,parsed_row_count,parsed_ticker_count,fields_used,source_status,notes
+factor_pack,D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,2026-05-19T10:53:51,105,105,factor_pack_rank;ticker;factor_pack_score;overheat_penalty,OK_PARSED,
+technical_timing,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,2026-05-19T10:57:07,105,105,ticker;technical_timing_score;technical_signal;overheat_penalty,OK_PARSED,
+price_derived_scores,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R2_CURRENT_PRICE_DERIVED_FACTOR_SCORES.csv,TRUE,2026-05-20T16:06:37,325,325,ticker;price_derived_total_score;price_derived_status;relative_strength_score;trend_structure_score;buy_zone_score;volume_confirmation_score;volatility_risk_score;score_ready;score_scope,OK_PARSED,
+price_derived_factor_details,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_CURRENT_PRICE_DERIVED_FACTORS.csv,TRUE,2026-05-20T16:06:30,325,325,ticker;buy_zone_label;nearest_buy_zone_distance;breakout_volume_confirmed,OK_PARSED,
+price_factor_scope,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R3_CURRENT_FACTOR_SCOPE_SUMMARY.csv,TRUE,2026-05-20T16:06:47,325,325,ticker;factor_scope_class;score_scope;full_factor_score_ready;light_factor_score_ready,OK_PARSED,
+backfill_priority_plan,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R4_CURRENT_BACKFILL_PRIORITY_PLAN.csv,TRUE,2026-05-20T16:14:15,221,221,ticker;planned_batch_index;priority_tier;priority_score,OK_PARSED,
+backfill_coverage_projection,D:\us-tech-quant\outputs\v18\price_factors\V18_21A_R4_CURRENT_COVERAGE_PROJECTION.csv,TRUE,2026-05-20T16:14:15,5,0,scenario_name;projected_score_ready_ratio,OK_PARSED,
+market_regime,D:\us-tech-quant\outputs\v18\market_regime\V18_21A_R2_CURRENT_LIGHTWEIGHT_MARKET_REGIME.csv,TRUE,2026-05-20T16:06:37,1,0,market_regime_label;market_risk_coefficient;market_regime_confidence;vix_proxy_status,OK_PARSED,
+price_backfill_read_first,D:\us-tech-quant\outputs\v18\ops\V18_21A_R4_READ_FIRST.txt,TRUE,2026-05-20T16:14:15,31,0,MARKET_REGIME_STATUS;MARKET_RISK_COEFFICIENT,OK_READ_FIRST_PARSED,
+coverage_stable_read_first,D:\us-tech-quant\outputs\v18\ops\V18_16K_R2_STABLE_READ_FIRST.txt,TRUE,2026-05-20T15:42:29,30,0,TRUE_5DAY_UNIQUE_COVERAGE_MET;COVERAGE_WINDOW_COMPLETE,OK_READ_FIRST_PARSED,
+coverage_current_read_first,D:\us-tech-quant\outputs\v18\ops\V18_16K_R2_READ_FIRST.txt,TRUE,2026-05-20T15:37:08,46,0,TRUE_5DAY_UNIQUE_COVERAGE_MET;COVERAGE_WINDOW_COMPLETE,OK_READ_FIRST_PARSED,
+daily_trust_read_first,D:\us-tech-quant\outputs\v18\ops\V18_19A_READ_FIRST.txt,TRUE,2026-05-20T15:13:50,27,0,DAILY_TRUST_LEVEL;TRUE_5DAY_UNIQUE_COVERAGE_MET,OK_READ_FIRST_PARSED,
+current_daily_read_first,D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_READ_FIRST.txt,TRUE,2026-05-20T15:13:44,19,0,BUY_PERMISSION;EVENT_STATUS,OK_READ_FIRST_PARSED,
+simulation_tracker,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER.csv,TRUE,2026-05-18T21:39:51,93,31,ticker;snapshot_date;buy_permission;candidate_bucket;forward_status,OK_PARSED,
+simulation_tracker_today,D:\us-tech-quant\outputs\v18\simulation\V18_CURRENT_SIM_CANDIDATE_TRACKER_TODAY.csv,TRUE,2026-05-18T21:39:51,31,31,ticker;snapshot_date;buy_permission;candidate_bucket;forward_status,OK_PARSED,
+forward_tracker,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv,TRUE,2026-05-20T15:13:48,20,20,ticker,OK_PARSED,
+manual_trade_feedback,D:\us-tech-quant\outputs\v18\positions\V18_CURRENT_MANUAL_TRADE_FEEDBACK.csv,TRUE,2026-05-20T15:13:49,0,0,ticker,WARN_NO_ROWS,CSV had no parsed rows or was unreadable.

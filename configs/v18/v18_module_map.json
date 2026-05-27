@@ -1,0 +1,36 @@
+﻿{
+    "version":  "V18.1A",
+    "created_at":  "2026-05-13 16:30:39",
+    "architecture":  {
+                         "universe":  {
+                                          "inspiration":  "Lean Universe Selection",
+                                          "our_module":  "RAW105 plus dynamic main compute universe plus second stage candidates",
+                                          "official_source":  "V17.8D current RAW105 daily pipeline"
+                                      },
+                         "data_layer":  {
+                                            "inspiration":  "Qlib Data Layer",
+                                            "our_module":  "price refresh plus latest price date audit plus provenance checks"
+                                        },
+                         "factor_lab":  {
+                                            "inspiration":  "Qlib research workflow",
+                                            "our_module":  "factor registry plus factor calculation plus validation artifacts"
+                                        },
+                         "alpha_layer":  {
+                                             "inspiration":  "Lean Alpha Model",
+                                             "our_module":  "official score plus promoted factor score plus shadow factor signal"
+                                         },
+                         "portfolio_layer":  {
+                                                 "inspiration":  "Lean Portfolio Construction",
+                                                 "our_module":  "Rakuten executable route basket and cash budget allocator"
+                                             },
+                         "risk_layer":  {
+                                            "inspiration":  "Lean Risk Management",
+                                            "our_module":  "event gate plus behavior guard plus future position lifecycle risk"
+                                        },
+                         "execution_layer":  {
+                                                 "inspiration":  "Lean Execution Model",
+                                                 "our_module":  "manual order plan only. No automatic live trading."
+                                             }
+                     },
+    "compatibility_rule":  "V18 Factor Lab must not change V17.8D official outputs until a factor is promoted."
+}

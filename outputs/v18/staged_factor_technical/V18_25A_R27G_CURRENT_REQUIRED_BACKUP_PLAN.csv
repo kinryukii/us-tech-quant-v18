@@ -1,0 +1,4 @@
+﻿backup_item,path,required_for_r27h,backup_status,notes
+OFFICIAL_FACTOR_CURRENT,outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,TRUE,REQUIRED_FOR_R27H,Backup before any official factor pack merge.
+OFFICIAL_TECHNICAL_CURRENT,outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,TRUE,REQUIRED_FOR_R27H,Backup before any official technical timing merge.
+OFFICIAL_RANKED_CANDIDATES_CURRENT,outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv,FALSE,NOT_REQUIRED_FOR_R27H,No official candidate file changes are planned in R27G.

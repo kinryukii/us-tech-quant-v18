@@ -1,0 +1,2 @@
+﻿step_name,status,seconds,output_path,note
+"RUN_V18_11_SHADOW_FACTOR_LAYER","OK","2.632","D:\us-tech-quant\outputs\v18\factor_research\V18_11C_READ_FIRST.txt","Ran V18.11 calendar/OPEX/RV/VWAP-proxy shadow factor layer."

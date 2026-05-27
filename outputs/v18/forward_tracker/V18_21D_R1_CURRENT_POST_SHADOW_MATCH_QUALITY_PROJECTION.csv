@@ -1,0 +1,5 @@
+scenario_name,projected_high_confidence_rows,projected_medium_confidence_rows,projected_low_confidence_rows,projected_invalid_rows,projected_multi_horizon_rows,assumptions,limitations
+CURRENT_LOW_CONFIDENCE_BASELINE,0,0,20,305,0,Existing production files only.,Low-confidence matches and incomplete horizon maturity remain.
+SHADOW_SCHEMA_CREATED_NO_OUTCOMES_FILLED,0,525,0,0,525,"Shadow rows can carry strong keys, but returns remain pending.",No forward returns are filled in this task.
+SHADOW_SCHEMA_WITH_FUTURE_1D_OUTCOMES,0,525,0,0,105,Future local 1D outcome filler populates shadow rows without changing production.,Theoretical readiness only; no filler applied.
+SHADOW_SCHEMA_WITH_FUTURE_1D_3D_5D_10D_20D_OUTCOMES,0,525,0,0,525,All planned horizons mature in future local outcome processes.,"No outcomes are fetched, computed, or backfilled here."

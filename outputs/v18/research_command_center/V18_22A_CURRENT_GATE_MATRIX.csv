@@ -1,0 +1,12 @@
+﻿gate_name,gate_allowed,current_status,blocking_metric,required_to_unlock,risk_level,operator_action
+FACTOR_EFFECT_CLAIM,FALSE,BLOCKED,high_confidence=0,High-confidence multi-horizon outcomes.,HIGH,Do not make factor claims.
+FACTOR_WEIGHT_CHANGE,FALSE,BLOCKED,EFFECT_CLAIM_ALLOWED_COUNT=0,Validated effect claims and explicit approval.,HIGH,Do not change weights.
+PRODUCTION_PROMOTION,FALSE,BLOCKED,PRODUCTION_PROMOTION_ALLOWED_COUNT=0,Evidence gates and explicit approval.,HIGH,Do not promote to production.
+OFFICIAL_BUY_PERMISSION_CHANGE,FALSE,BLOCKED,BUY_PERMISSION_MODIFIED=FALSE,Separate approved production patch.,HIGH,Do not modify buy permission.
+EVENT_RISK_OFFICIAL_APPLICATION,FALSE,BLOCKED,EVENT_RISK_COEFFICIENT_APPLIED_TO_OFFICIAL_DECISION=FALSE,Explicit event-risk integration approval.,HIGH,Keep event risk advisory.
+FORWARD_TRACKER_PRODUCTION_REPLACEMENT,FALSE,BLOCKED,shadow_output_only,Controlled production replacement approval.,HIGH,Keep shadow tracker separate.
+FORWARD_RETURN_FILL_APPLICATION,FALSE,BLOCKED,filled=0; pending=525,Matured horizons and approved filler apply.,HIGH,Do not fill returns.
+STAGED_BACKFILL_ACTUAL_FETCH_IMPORT,REQUIRES_EXPLICIT_APPROVAL,APPROVAL_REQUIRED,STAGED_BACKFILL_APPLIED=FALSE,Explicit approval for staged-output-only fetch/import.,MEDIUM,Do not auto-fetch.
+PRICE_CACHE_INTEGRATION,FALSE,BLOCKED,PRICE_CACHE_MODIFIED=FALSE,Validated staged data and explicit cache integration approval.,HIGH,Do not write price cache.
+BACKTEST_EXECUTION,FALSE,BLOCKED_DESIGN_ONLY_FORWARD_RETURNS_PENDING,forward_returns_pending; sample_history_limited,"Filled returns, leakage checks, enough samples.",MEDIUM,Do not run backtest.
+DAILY_COMMAND_CENTER_INTEGRATION,FALSE,BLOCKED,read-center only,Separate read-only integration approval.,MEDIUM,Keep wrapper separate for now.

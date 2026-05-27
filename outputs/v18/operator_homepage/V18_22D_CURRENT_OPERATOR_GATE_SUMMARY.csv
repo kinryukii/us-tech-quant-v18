@@ -1,0 +1,7 @@
+﻿gate_name,allowed,status,why_blocked,unlock_condition,operator_instruction
+factor_effect_claim_allowed,FALSE,BLOCKED,"Requires forward return filled count > 0, high-confidence forward match count > 0, and multi-horizon readiness not NOT_READY_MULTI_HORIZON.","Filled forward returns, high-confidence matches, and multi-horizon readiness.",Do not claim factor effectiveness today.
+weight_change_allowed,FALSE,BLOCKED,Requires factor effect claim gate and non-blocked backtest execution readiness.,Validated factor effect evidence plus unblocked backtest readiness.,Do not change factor weights today.
+production_promotion_allowed,FALSE,BLOCKED,Requires weight-change gate plus explicit production integration that is present and safe.,Weight-change allowed and explicit production integration approval/presence.,Do not promote to production today.
+backtest_execution_allowed,FALSE,BLOCKED,Forward returns are pending or readiness contains BLOCKED.,No pending forward returns and readiness not blocked.,Do not execute backtests today.
+staged_backfill_apply_allowed,FALSE,REQUIRES_EXPLICIT_APPROVAL,Disabled by default for V18.22D; explicit approval required before staged fetch/import/apply.,Explicit operator approval for staged backfill apply.,Do not run staged backfill apply today without explicit approval.
+daily_command_center_integration_allowed,FALSE,BLOCKED,Disabled by default for this read-only operator homepage step.,Separate approved integration step.,Do not integrate V18.22D into the daily command center today.

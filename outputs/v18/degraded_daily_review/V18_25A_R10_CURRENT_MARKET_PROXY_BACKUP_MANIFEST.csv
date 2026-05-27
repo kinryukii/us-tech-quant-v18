@@ -1,0 +1,4 @@
+﻿backup_item,path,status,notes
+backup_dir,D:\us-tech-quant\archive\v18\market_proxy_backups\V18_25A_R10_20260521_234228,CREATED,Timestamped R10 backup directory.
+official_vix_before,D:\us-tech-quant\state\v18\market_proxy_cache\VIX.csv,MISSING_BEFORE_INTEGRATION,No existing official VIX.csv before integration.
+restore_script,D:\us-tech-quant\archive\v18\market_proxy_backups\V18_25A_R10_20260521_234228\RESTORE_V18_25A_R10_MARKET_PROXY.ps1,CREATED,Restores previous VIX.csv or removes new file if none existed before.

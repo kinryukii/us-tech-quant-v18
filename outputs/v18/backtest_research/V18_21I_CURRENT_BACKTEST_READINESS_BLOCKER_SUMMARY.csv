@@ -1,0 +1,10 @@
+﻿blocker_name,blocker_status,affected_backtest_stage,severity,current_metric,why_it_matters,required_resolution,recommended_next_step
+FULL_HISTORY_COVERAGE_INCOMPLETE,ACTIVE,price factor join,HIGH,score_ready_ratio=0.320000; missing=221,Incomplete factor coverage limits sample size and comparability.,Apply approved staged/full backfill later.,Continue H-R2 only with explicit approval.
+FORWARD_RETURNS_NOT_FILLED,ACTIVE,outcome join,HIGH,filled=0,Backtest metrics require realized outcomes.,Wait for maturity and apply controlled filler later.,Return to G-R1 when horizons mature.
+MULTI_HORIZON_RETURNS_MISSING,ACTIVE,cross-horizon validation,HIGH,NOT_READY_MULTI_HORIZON,Effect evidence must generalize across horizons.,Collect filled 1D/3D/5D/10D/20D returns.,Keep multi-horizon claims disabled.
+HIGH_CONFIDENCE_MATCH_COUNT_ZERO,ACTIVE,signal/outcome matching,HIGH,high_confidence=0,Weak matching can create false conclusions.,Use link-key shadow tracker with filled returns.,No effect claims.
+ONLY_TWO_SIGNAL_SNAPSHOT_DATES_OR_LIMITED_HISTORY,ACTIVE,historical snapshot panel,MEDIUM,snapshot_history_count=1,Time-series validation needs more periods.,Accumulate more frozen snapshots.,Design only.
+EVENT_RISK_ADVISORY_ONLY,ACTIVE,event factor join,MEDIUM,applied_official=FALSE,Event coefficients cannot be interpreted as official logic.,Separate advisory fields from official outcomes.,Keep event factor advisory.
+BACKFILL_NOT_APPLIED,ACTIVE,price factor coverage,MEDIUM,FULL_HISTORY_BACKFILL_APPLIED=FALSE,Design projections are not actual data.,Approved staged backfill and shadow factor recompute.,No production use.
+STAGED_BACKFILL_NOT_APPLIED,ACTIVE,price history availability,MEDIUM,STAGED_BACKFILL_APPLIED=FALSE,Batch 1 is only a request design.,Explicit future staged apply approval.,Stable snapshot before any fetch.
+DAILY_TRUST_MEDIUM,ACTIVE,production evidence gate,MEDIUM,DAILY_TRUST_LEVEL=MEDIUM,Medium trust prevents production-grade claims.,Raise data quality and outcome confidence.,No production promotion.

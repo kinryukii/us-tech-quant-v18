@@ -1,0 +1,28 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,Python compile.
+powershell_parse_check,PASS,0,PowerShell parse.
+required_outputs_exist_non_empty,PASS,0,All V18.23C outputs must exist and be non-empty.
+input_batch_count_positive,PASS,0,Input batch must be non-empty.
+fetch_result_one_row_per_batch_ticker,PASS,0,Fetch result must have one row per ticker.
+staged_scan_retest_one_row_per_batch_ticker,PASS,0,Retest result must have one row per ticker.
+staged_manifest_has_rows,PASS,0,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\MANIFEST.csv
+official_forbidden_files_unchanged,PASS,0,
+true_coverage_remains_false,PASS,0,Staged-only test must not claim true coverage.
+staged_files_written,PASS,0,At least one staged row must be written.
+not_all_fetch_failed,PASS,0,At least one ticker must fetch successfully.
+safety_official_price_cache_modified,PASS,0,Expected OFFICIAL_PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_official_price_history_modified,PASS,0,Expected OFFICIAL_PRICE_HISTORY_MODIFIED=FALSE; actual FALSE.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_factor_pack_modified,PASS,0,Expected FACTOR_PACK_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_ledger_modified,PASS,0,Expected LEDGER_MODIFIED=FALSE; actual FALSE.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.
+safety_true_5day_unique_coverage_met,PASS,0,Expected TRUE_5DAY_UNIQUE_COVERAGE_MET=FALSE; actual FALSE.

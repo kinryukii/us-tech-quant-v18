@@ -1,0 +1,6 @@
+horizon,matched_signal_count,usable_forward_return_count,unique_ticker_count,unique_snapshot_date_count,average_forward_return,median_forward_return,hit_rate,minimum_sample_required,maturity_status,notes
+1D,20,20,20,1,0.008824,0.010156,0.700000,20,PRELIMINARY_SMALL_SAMPLE,Meets count threshold but lacks snapshot-date diversity.
+3D,0,0,0,0,,,,20,NO_USABLE_FORWARD_RETURNS,No matched numeric forward returns for this horizon.
+5D,0,0,0,0,,,,20,NO_USABLE_FORWARD_RETURNS,No matched numeric forward returns for this horizon.
+10D,0,0,0,0,,,,20,NO_USABLE_FORWARD_RETURNS,No matched numeric forward returns for this horizon.
+20D,0,0,0,0,,,,20,NO_USABLE_FORWARD_RETURNS,No matched numeric forward returns for this horizon.

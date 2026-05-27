@@ -1,0 +1,15 @@
+﻿ticker,classification,hold_reason,source_path
+COG,HOLD_EMPTY_FETCH,Empty provider response.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\COG.csv
+COGT,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\COGT.csv
+CRCL,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not full factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\CRCL.csv
+CVNA,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\CVNA.csv
+DBVT,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\DBVT.csv
+FCNCA,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\FCNCA.csv
+FIGR,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not full factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\FIGR.csv
+GEMI,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not full factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\GEMI.csv
+HOOD,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\HOOD.csv
+HTZ,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\HTZ.csv
+INSM,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\INSM.csv
+JBS,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not full factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\JBS.csv
+JFROG,HOLD_EMPTY_FETCH,Empty provider response.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\JFROG.csv
+KLAR,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not full factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH1\KLAR.csv

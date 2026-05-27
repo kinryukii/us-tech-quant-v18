@@ -1,0 +1,23 @@
+﻿ticker,source,hold_status,reason,next_action
+BLSH,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+CAI,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+CHYM,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+CRCL,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+FIGR,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+GEMI,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+JBS,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+KLAR,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+LINE,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+MNTN,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+PONY,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+RDDT,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+SOLS,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+STUB,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+TLN,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+WOLF,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+WYFI,R23C_PARTIAL_HISTORY_HOLDS,HELD_OUT_PARTIAL_HISTORY,Partial history remains held out for separate policy handling.,Handle under separate partial-history policy.
+CDTX,R23C_EMPTY_OR_FAILED_HOLDS,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,Review provider symbol/status before retry.
+CFLT,R23C_EMPTY_OR_FAILED_HOLDS,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,Review provider symbol/status before retry.
+COG,R23C_EMPTY_OR_FAILED_HOLDS,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,Review provider symbol/status before retry.
+JFROG,R23C_EMPTY_OR_FAILED_HOLDS,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,Review provider symbol/status before retry.
+MPW,R23C_EMPTY_OR_FAILED_HOLDS,HELD_OUT_EMPTY_FETCH,R23B classified ticker as EMPTY_FETCH.,Review provider symbol/status before retry.

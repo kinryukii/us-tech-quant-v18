@@ -1,0 +1,21 @@
+scenario_name,simulated_capital_usd,included_ticker_count,long_candidate_count,watch_count,excluded_count,target_weight_sum,max_target_weight,min_target_weight,concentration_top5_weight,price_available_count,price_missing_count,whole_share_feasible_count,too_small_for_one_share_count,research_only_count,pending_forward_outcome_count,status,notes
+TOP20_EQUAL_WEIGHT,1000,20,20,0,298,1.0000000000,0.0500000000,0.0500000000,0.2500000000,20,0,3,17,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_EQUAL_WEIGHT,2000,20,20,0,298,1.0000000000,0.0500000000,0.0500000000,0.2500000000,20,0,6,14,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_EQUAL_WEIGHT,5000,20,20,0,298,1.0000000000,0.0500000000,0.0500000000,0.2500000000,20,0,12,8,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_EQUAL_WEIGHT,10000,20,20,0,298,1.0000000000,0.0500000000,0.0500000000,0.2500000000,20,0,17,3,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_CONFIDENCE_WEIGHTED,1000,20,20,0,298,1.0000000000,0.0540729835,0.0472079068,0.2647055224,20,0,2,18,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_CONFIDENCE_WEIGHTED,2000,20,20,0,298,1.0000000000,0.0540729835,0.0472079068,0.2647055224,20,0,6,14,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_CONFIDENCE_WEIGHTED,5000,20,20,0,298,1.0000000000,0.0540729835,0.0472079068,0.2647055224,20,0,12,8,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP20_CONFIDENCE_WEIGHTED,10000,20,20,0,298,1.0000000000,0.0540729835,0.0472079068,0.2647055224,20,0,17,3,0,20,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_EQUAL_WEIGHT_CAPPED,1000,50,20,30,268,1.0000000000,0.0200000000,0.0200000000,0.1000000000,50,0,3,47,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_EQUAL_WEIGHT_CAPPED,2000,50,20,30,268,1.0000000000,0.0200000000,0.0200000000,0.1000000000,50,0,4,46,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_EQUAL_WEIGHT_CAPPED,5000,50,20,30,268,1.0000000000,0.0200000000,0.0200000000,0.1000000000,50,0,16,34,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_EQUAL_WEIGHT_CAPPED,10000,50,20,30,268,1.0000000000,0.0200000000,0.0200000000,0.1000000000,50,0,29,21,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_RANK_DECAY_WEIGHTED,1000,50,20,30,268,0.9999999999,0.0500000000,0.0068319166,0.2500000000,50,0,2,48,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_RANK_DECAY_WEIGHTED,2000,50,20,30,268,0.9999999999,0.0500000000,0.0068319166,0.2500000000,50,0,3,47,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_RANK_DECAY_WEIGHTED,5000,50,20,30,268,0.9999999999,0.0500000000,0.0068319166,0.2500000000,50,0,15,35,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+TOP50_RANK_DECAY_WEIGHTED,10000,50,20,30,268,0.9999999999,0.0500000000,0.0068319166,0.2500000000,50,0,26,24,0,50,OK_WEIGHT_SUM_READY,Investable preview under simulated capital only; no order generation.
+WATCHLIST_RESEARCH_ONLY_FULL318,1000,318,20,298,0,1.0000000038,0.0031446541,0.0031446541,0.0157232705,318,0,0,0,318,318,OK_RESEARCH_ONLY,Research-only watchlist; not investable target
+WATCHLIST_RESEARCH_ONLY_FULL318,2000,318,20,298,0,1.0000000038,0.0031446541,0.0031446541,0.0157232705,318,0,0,0,318,318,OK_RESEARCH_ONLY,Research-only watchlist; not investable target
+WATCHLIST_RESEARCH_ONLY_FULL318,5000,318,20,298,0,1.0000000038,0.0031446541,0.0031446541,0.0157232705,318,0,0,0,318,318,OK_RESEARCH_ONLY,Research-only watchlist; not investable target
+WATCHLIST_RESEARCH_ONLY_FULL318,10000,318,20,298,0,1.0000000038,0.0031446541,0.0031446541,0.0157232705,318,0,0,0,318,318,OK_RESEARCH_ONLY,Research-only watchlist; not investable target

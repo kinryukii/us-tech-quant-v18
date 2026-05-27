@@ -1,0 +1,2 @@
+﻿row_count,min_date,max_date,latest_date,close_non_null_count,duplicate_date_count_before_cleaning,duplicate_date_count_after_cleaning,negative_or_zero_close_count,suspicious_gap_count,full_history_ready,usable_for_factor_refresh,usable_for_technical_overlay,quality_status,assumed_threshold
+9164,1990-01-02,2026-05-21,2026-05-21,9164,0,0,0,0,TRUE,TRUE,TRUE,OK,minimum=120_rows;preferred=252_rows;latest_stale_days>10

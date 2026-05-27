@@ -1,0 +1,11 @@
+﻿validation_check,status,notes
+r1_script_compiles,PASS,D:\us-tech-quant\scripts\v18\v18_25A_R1_degraded_daily_output_review.py
+r1_wrapper_parses,PASS,D:\us-tech-quant\scripts\v18\run_v18_25A_R1_degraded_daily_output_review.ps1
+r1_rerun_executed,PASS,R15 reruns patched R1 wrapper.
+r6_r7_promotion_complete,PASS,integrated=52; high=52; factor_missing=0; technical_missing=0
+global_state_counts,PASS,TOTAL=324;HIGH=155;MEDIUM=2;LOW=64;DATA_NOT_READY=103;OFFICIAL_RANK_ALLOWED=155;WATCH_ONLY=66;TRADE_ALLOWED=0
+safety_flags,PASS,Current safety flags are unchanged.
+forbidden_files_unchanged_before_patch,PASS,R15 only patches R1 recommendation logic and writes R15 outputs.
+r1_rerun_success,PASS,R1 wrapper rerun after patch.
+recommendation_patched,PASS,before=C: Continue Batch3 staged backfill / remaining stale coverage expansion;after=C: Continue Batch3 staged backfill / remaining stale coverage expansion
+forbidden_files_unchanged,PASS,Sensitive production paths only.

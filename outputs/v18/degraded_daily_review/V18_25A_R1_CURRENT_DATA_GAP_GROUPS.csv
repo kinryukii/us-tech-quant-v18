@@ -1,0 +1,6 @@
+﻿recommendation_group,source_recommendation_types,count,top_examples,sample_reasons
+NEEDS_OFFICIAL_INTEGRATION,NEEDS_OFFICIAL_INTEGRATION,13,"AMC, APLD, BLSH, BW, BYND, CAI, CDTX, CFLT",Staged evidence exists but official price cache is unavailable.
+NEEDS_STAGED_BACKFILL,NEEDS_STAGED_BACKFILL,0,,
+PARTIAL_HISTORY_REVIEW,PARTIAL_HISTORY,116,"AMC, APLD, BLSH, BW, BYND, CAI, CDTX, CFLT",History is partial or full-history readiness is not confirmed.
+EMPTY_FETCH_OR_HOLD_REVIEW,EMPTY_FETCH_OR_HOLD_REVIEW,8,"AMC, APLD, BW, BYND, CDTX, CFLT, MPW, NVAX",Staged status requires review: HOLD_EMPTY_FETCH; Staged status requires review: HOLD_SUSPICIOUS_PRICE_DATA
+UNKNOWN_OR_OTHER_GAP,OTHER,0,,

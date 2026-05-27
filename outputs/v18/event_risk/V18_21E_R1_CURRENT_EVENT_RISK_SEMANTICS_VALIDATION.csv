@@ -1,0 +1,18 @@
+﻿validation_check,status,fail_count,notes
+powershell_parse_wrapper,PASS,0,Wrapper parses.
+python_compile_base_engine,PASS,0,Base engine compiles.
+python_compile_r1_patch,PASS,0,R1 patch compiles.
+required_outputs_exist,PASS,0,All R1 output files exist.
+required_read_first_fields_exist,PASS,0,All required READ_FIRST fields exist.
+calendar_coefficient_in_bounds,PASS,0,"Calendar coefficients are in [0, 1]."
+hard_lock_overlay_coefficient_in_bounds,PASS,0,"Overlay coefficient is in [0, 1]."
+final_advisory_coefficient_in_bounds,PASS,0,"Final advisory coefficients are in [0, 1]."
+hard_lock_final_coefficient_not_one,PASS,0,"If hard-lock overlay is detected, final advisory coefficient must not remain 1.0."
+official_decision_impact_none,PASS,0,Official decision impact remains NONE.
+buy_permission_not_modified,PASS,0,Buy permission not modified.
+ranking_not_modified,PASS,0,Ranking not modified.
+signal_snapshot_not_modified,PASS,0,Signal snapshot not modified.
+event_calendar_not_modified,PASS,0,Event calendars not modified.
+external_data_not_fetched,PASS,0,No external data fetched.
+event_risk_not_applied_to_official_decision,PASS,0,Advisory only.
+no_protected_files_modified,PASS,0,Changed protected files: 

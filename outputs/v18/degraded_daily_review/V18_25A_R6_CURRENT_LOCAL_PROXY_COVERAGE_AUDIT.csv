@@ -1,0 +1,7 @@
+﻿proxy_name,source_path,row_count,min_date,max_date,close_column_available,full_history_ready,usable_for_factor_refresh,usable_for_technical_overlay,notes
+IYW,D:\us-tech-quant\state\v18\price_cache\IYW.csv,1420,2020-09-21,2026-05-15,TRUE,TRUE,FALSE,FALSE,"Available benchmark proxy, but not directly required by the traced current factor/technical generators."
+QQQ,D:\us-tech-quant\state\v18\price_cache\QQQ.csv,1420,2020-09-21,2026-05-15,TRUE,TRUE,TRUE,FALSE,Directly referenced by traced scripts.
+SMH,D:\us-tech-quant\state\v18\price_cache\SMH.csv,1420,2020-09-21,2026-05-15,TRUE,TRUE,FALSE,FALSE,"Available benchmark proxy, but not directly required by the traced current factor/technical generators."
+SOXX,D:\us-tech-quant\state\v18\price_cache\SOXX.csv,1420,2020-09-21,2026-05-15,TRUE,TRUE,FALSE,FALSE,"Available benchmark proxy, but not directly required by the traced current factor/technical generators."
+SPY,D:\us-tech-quant\state\v18\price_cache\SPY.csv,1420,2020-09-21,2026-05-15,TRUE,TRUE,TRUE,FALSE,Directly referenced by traced scripts.
+XLK,D:\us-tech-quant\data\v16\prices\XLK.csv,1760,2019-05-14,2026-05-13,TRUE,TRUE,FALSE,FALSE,"Available benchmark proxy, but not directly required by the traced current factor/technical generators."

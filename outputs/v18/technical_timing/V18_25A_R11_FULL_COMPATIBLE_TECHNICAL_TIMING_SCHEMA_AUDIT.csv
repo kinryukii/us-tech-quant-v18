@@ -1,0 +1,7 @@
+﻿schema_check,value,notes
+current_field_count,33,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv
+staged_field_count,40,D:\us-tech-quant\outputs\v18\technical_timing\V18_25A_R11_FULL_COMPATIBLE_TECHNICAL_TIMING_STAGED.csv
+fields_matched,33,"bb_bandwidth,bb_lower_20_2,bb_mid_20,bb_percent_b,bb_squeeze_flag,bb_status,bb_upper_20_2,breakout_confirmation_bonus,close,gamma_squeeze_risk_label,gamma_squeeze_status,iv_rank_proxy,kdj_d,kdj_j,kdj_k,kdj_status,official_decision_impact,option_data_status,overheat_penalty,price_date,pullback_timing_bonus,put_call_ratio,rsi_14,rsi_status,technical_signal,technical_timing_score,technical_warning_label,ticker,vix_close,vix_date,vix_regime,volume_ratio_5_20,yf_ticker"
+fields_missing,0,
+extra_fields,7,"close_column_available,duplicate_date_count,formula_compatibility,input_history_rows,refresh_scope,technical_refresh_blocker,technical_status"
+compatibility_status,MERGE_SCHEMA_COMPATIBLE,R11 staged output must contain all current technical fields.

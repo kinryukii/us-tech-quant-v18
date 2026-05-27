@@ -1,0 +1,6 @@
+﻿option_name,safety_level,requires_external_fetch,modifies_official_cache,staged_first_required,expected_downstream_unlock,risks,recommended_or_not
+USE_EXISTING_LOCAL_VIX_IF_FOUND,HIGH,FALSE,FALSE,FALSE,"Full factor refresh and full V18.6A compatibility, but only if an exact local VIX history exists.",Not available in this audit; no exact local VIX was found.,NO
+CONTROLLED_STAGED_VIX_BACKFILL,HIGH,TRUE,FALSE,TRUE,Exact VIX-backed factor refresh and exact V18.6A technical overlay compatibility after validation.,"Requires controlled provenance, validation, and later promotion; do not write official cache first.",YES
+CONTROLLED_STAGED_VOLATILITY_ETF_BACKFILL,MEDIUM,TRUE,FALSE,TRUE,"A warning-only volatility surrogate for staged analysis, but not exact VIX compatibility.","Substitute mismatch: VIXY/VXX/UVXY track vol exposure, not the VIX index itself.",NO
+SPLIT_LOCAL_ONLY_TECH_FROM_FULL_VIX_TECH,HIGH,FALSE,FALSE,FALSE,Keeps the staged local-only technical layer isolated while the full VIX layer remains blocked.,Dual-track maintenance if merged without a clean policy boundary.,NO
+KEEP_FACTOR_REFRESH_BLOCKED_UNTIL_VIX_READY,HIGH,FALSE,FALSE,FALSE,No new unlock; preserves conservative guardrails until exact VIX coverage is repaired.,Leaves factor refresh blocked and delays full compatibility.,NO

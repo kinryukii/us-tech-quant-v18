@@ -1,0 +1,37 @@
+﻿validation_check,status,fail_count,notes
+snapshot_folder_created,PASS,0,D:\us-tech-quant\archive\stable\V18_22D_stable_daily_research_operator_homepage_20260521_134044
+all_critical_files_copied,PASS,0,All critical V18.22D files must be copied.
+copy_fail_count_zero,PASS,0,No copy failures allowed.
+manifest_exists_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_22D_stable_daily_research_operator_homepage_20260521_134044\MANIFEST.csv
+readme_exists_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_22D_stable_daily_research_operator_homepage_20260521_134044\README_V18_22D_STABLE_SNAPSHOT.md
+restore_script_exists_non_empty,PASS,0,D:\us-tech-quant\archive\stable\V18_22D_stable_daily_research_operator_homepage_20260521_134044\RESTORE_V18_22D.ps1
+python_compile_check,PASS,0,PASS
+powershell_parse_check,PASS,0,PASS
+operator_homepage_ready_preserved,PASS,0,V18.22D homepage must have been ready.
+safety_official_decision_impact,PASS,0,Expected OFFICIAL_DECISION_IMPACT=NONE; actual NONE.
+safety_buy_permission_modified,PASS,0,Expected BUY_PERMISSION_MODIFIED=FALSE; actual FALSE.
+safety_auto_trade,PASS,0,Expected AUTO_TRADE=DISABLED; actual DISABLED.
+safety_auto_sell,PASS,0,Expected AUTO_SELL=DISABLED; actual DISABLED.
+safety_current_daily_modified,PASS,0,Expected CURRENT_DAILY_MODIFIED=FALSE; actual FALSE.
+safety_state_modified,PASS,0,Expected STATE_MODIFIED=FALSE; actual FALSE.
+safety_price_cache_modified,PASS,0,Expected PRICE_CACHE_MODIFIED=FALSE; actual FALSE.
+safety_price_history_written,PASS,0,Expected PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_staged_price_history_written,PASS,0,Expected STAGED_PRICE_HISTORY_WRITTEN=FALSE; actual FALSE.
+safety_ranking_modified,PASS,0,Expected RANKING_MODIFIED=FALSE; actual FALSE.
+safety_signal_snapshot_modified,PASS,0,Expected SIGNAL_SNAPSHOT_MODIFIED=FALSE; actual FALSE.
+safety_event_calendar_modified,PASS,0,Expected EVENT_CALENDAR_MODIFIED=FALSE; actual FALSE.
+safety_simulation_position_modified,PASS,0,Expected SIMULATION_POSITION_MODIFIED=FALSE; actual FALSE.
+safety_forward_tracker_modified,PASS,0,Expected FORWARD_TRACKER_MODIFIED=FALSE; actual FALSE.
+safety_price_factor_modified,PASS,0,Expected PRICE_FACTOR_MODIFIED=FALSE; actual FALSE.
+safety_technical_timing_modified,PASS,0,Expected TECHNICAL_TIMING_MODIFIED=FALSE; actual FALSE.
+safety_promotion_demotion_modified,PASS,0,Expected PROMOTION_DEMOTION_MODIFIED=FALSE; actual FALSE.
+safety_manual_state_modified,PASS,0,Expected MANUAL_STATE_MODIFIED=FALSE; actual FALSE.
+safety_broker_execution_modified,PASS,0,Expected BROKER_EXECUTION_MODIFIED=FALSE; actual FALSE.
+safety_external_data_fetched,PASS,0,Expected EXTERNAL_DATA_FETCHED=FALSE; actual FALSE.
+safety_backtest_executed,PASS,0,Expected BACKTEST_EXECUTED=FALSE; actual FALSE.
+safety_backtest_results_applied,PASS,0,Expected BACKTEST_RESULTS_APPLIED=FALSE; actual FALSE.
+safety_factor_effect_claim_allowed,PASS,0,Expected FACTOR_EFFECT_CLAIM_ALLOWED=FALSE; actual FALSE.
+safety_weight_change_allowed,PASS,0,Expected WEIGHT_CHANGE_ALLOWED=FALSE; actual FALSE.
+safety_production_promotion_allowed,PASS,0,Expected PRODUCTION_PROMOTION_ALLOWED=FALSE; actual FALSE.
+safety_staged_backfill_apply_allowed,PASS,0,Expected STAGED_BACKFILL_APPLY_ALLOWED=FALSE; actual FALSE.
+safety_daily_command_center_integration_allowed,PASS,0,Expected DAILY_COMMAND_CENTER_INTEGRATION_ALLOWED=FALSE; actual FALSE.

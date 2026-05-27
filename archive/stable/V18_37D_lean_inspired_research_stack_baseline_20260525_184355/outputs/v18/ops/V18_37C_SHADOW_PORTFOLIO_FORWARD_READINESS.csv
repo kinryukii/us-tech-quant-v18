@@ -1,0 +1,7 @@
+metric,count,total_snapshot_rows,status
+entry_price_available_count,744,744,OK
+forward_1d_fillable_count,0,744,WARN_WAITING_FOR_FUTURE_LOCAL_PRICES
+forward_3d_fillable_count,0,744,WARN_WAITING_FOR_FUTURE_LOCAL_PRICES
+forward_5d_fillable_count,0,744,WARN_WAITING_FOR_FUTURE_LOCAL_PRICES
+forward_10d_fillable_count,0,744,WARN_WAITING_FOR_FUTURE_LOCAL_PRICES
+forward_20d_fillable_count,0,744,WARN_WAITING_FOR_FUTURE_LOCAL_PRICES

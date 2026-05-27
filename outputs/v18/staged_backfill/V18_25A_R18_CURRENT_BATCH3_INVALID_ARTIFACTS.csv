@@ -1,0 +1,2 @@
+﻿ticker,normalized_row_count,min_date,max_date,latest_date,quality_status,integration_gate_decision,recommended_next_action,artifact_reason
+TICKERS,0,,,,QUALITY_REVIEW_NEEDED,INVALID_ARTIFACT_EXCLUDE,Keep excluded from future Batch3 stock backfill plans.,Non-ticker artifact from R16 candidate selection.

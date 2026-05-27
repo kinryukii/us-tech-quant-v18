@@ -1,0 +1,27 @@
+# V18.15B-R1 Current Stable Snapshot Report
+
+- STATUS: OK_V18_15B_R1_STABLE_SNAPSHOT_READY
+- SNAPSHOT_PATH: D:\us-tech-quant\archive\stable\V18_15B_R1_stable_current_daily_forward_tracker_manual_feedback_predev_audited_20260519_110803
+- COPIED_FILE_COUNT: 41
+- COPY_FAIL_COUNT: 0
+- MISSING_CRITICAL_COUNT: 0
+- POWERSHELL_PARSE_PASS_COUNT: 8
+- POWERSHELL_PARSE_FAIL_COUNT: 0
+- PYTHON_COMPILE_PASS_COUNT: 7
+- PYTHON_COMPILE_FAIL_COUNT: 0
+- RUNTIME_VALIDATION_RUN_COUNT: 2
+- RUNTIME_VALIDATION_FAIL_COUNT: 0
+- V18_15C_READY_FOR_V18_16: TRUE
+- RANK_SOURCE_STATUS: FOUND
+- TOP_5_TICKERS: APH,ACM,CAMT,ASML,CEG
+- DANGEROUS_TOKEN_FINDING_COUNT: 0
+- STABLE_SNAPSHOT_PROTECTION_STATUS: PASS
+- VALIDATION_FAIL_COUNT: 0
+- AUTO_TRADE: DISABLED
+- AUTO_SELL: DISABLED
+- OFFICIAL_DECISION_IMPACT: NONE
+- SNAPSHOT_ONLY: TRUE
+
+- MANIFEST: D:\us-tech-quant\archive\stable\V18_15B_R1_stable_current_daily_forward_tracker_manual_feedback_predev_audited_20260519_110803\MANIFEST.csv
+- VALIDATION: D:\us-tech-quant\archive\stable\V18_15B_R1_stable_current_daily_forward_tracker_manual_feedback_predev_audited_20260519_110803\VALIDATION.csv
+- RESTORE_SCRIPT: D:\us-tech-quant\archive\stable\V18_15B_R1_stable_current_daily_forward_tracker_manual_feedback_predev_audited_20260519_110803\RESTORE_V18_15B_R1.ps1

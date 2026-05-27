@@ -1,0 +1,13 @@
+﻿metric_name,metric_value,explanation
+TICKER_INPUT_COUNT,325,Current universe ticker count.
+PRICE_HISTORY_SOURCE_COUNT,350,"Discovered candidate local files, not unique usable universe ticker mappings."
+DISCOVERED_SOURCE_COUNT,350,Same as price history source count.
+DISCOVERED_SOURCE_WITH_UNIVERSE_OVERLAP_COUNT,344,Sources containing at least one current universe ticker or matching file stem.
+DISCOVERED_SOURCE_SELECTED_COUNT,105,Sources selected for at least one current universe ticker.
+MAPPED_FULL_HISTORY_COUNT,104,Universe tickers mapped to full OHLCV history.
+MAPPED_PARTIAL_HISTORY_COUNT,0,Universe tickers mapped to partial history.
+MAPPED_LATEST_ONLY_COUNT,1,Universe tickers mapped to latest-only local evidence.
+CANDIDATE_SOURCES_REJECTED_COUNT,0,Candidate files exist but were unusable.
+NO_CANDIDATE_SOURCE_FOUND_COUNT,220,No local candidate source found for ticker.
+NO_LOCAL_PRICE_DATA_COUNT,220,Rejected plus no-candidate tickers.
+WHY_SOURCE_COUNT_DIFFERS_FROM_TICKER_AVAILABILITY,FILES_NOT_UNIQUE_TICKER_MAPPINGS,"Discovery includes summaries, duplicates, non-universe symbols, and lower-priority copies."

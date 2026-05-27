@@ -1,0 +1,10 @@
+conclusion_area,conclusion_status,evidence_level,summary,recommended_next_step
+FACTOR_PACK_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for factor_pack_score.,Review bucket summary cautiously.
+TECHNICAL_TIMING_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for technical_timing_score.,Review bucket summary cautiously.
+PRICE_DERIVED_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for price_derived_total_score.,Review bucket summary cautiously.
+BUY_ZONE_DISTANCE_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for buy_zone_score.,Review bucket summary cautiously.
+RELATIVE_STRENGTH_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for relative_strength_score.,Review bucket summary cautiously.
+OVERHEAT_PENALTY_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for overheat_penalty.,Review bucket summary cautiously.
+VOLUME_CONFIRMATION_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for volume_confirmation_score.,Review bucket summary cautiously.
+MARKET_REGIME_EFFECTIVENESS,PRELIMINARY_SAMPLE_AVAILABLE,LOW,20 matched forward-return samples are available for market_risk_coefficient.,Review bucket summary cautiously.
+SIMULATION_RESEARCH_READINESS,DEGRADED_READY_SUBSET_ONLY,LOW,31 rows are simulation-analysis ready; 20 rows have any matched local forward-return evidence.,Use readiness filters and preserve snapshots before drawing conclusions.

@@ -1,0 +1,326 @@
+﻿ticker,tier,last_scan_date,current_priority,recommended_scan_day,recommended_reason,stale_risk_level,confidence
+AAPL,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ACLS,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ACM,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AEHR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ALAB,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AMAT,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AMD,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+APH,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ARM,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ASML,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AVGO,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+BE,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+BTDR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CAMT,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CARR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CEG,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CIEN,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CIFR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+COHR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CORZ,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CRWD,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+CSCO,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+DDOG,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+FLEX,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+FN,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+GLW,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+GNRC,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+GOOGL,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+HPE,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ICHR,CORE_DAILY,2026-05-19,800,EVERY_DAY,CORE_DAILY receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ACMR,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AMKR,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+AMZN,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+INTC,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+IREN,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+KLAC,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+LITE,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+LRCX,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+MDB,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+MKSI,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+MU,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+NTAP,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+NVDA,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ON,CANDIDATE,2026-05-19,600,EVERY_DAY,CANDIDATE receives daily/near-daily coverage before lower tiers.,LOW,HIGH
+ANET,STRONG_WATCH,2026-05-19,400,DAY_1,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+COHU,STRONG_WATCH,2026-05-19,400,DAY_2,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CRDO,STRONG_WATCH,2026-05-19,400,DAY_3,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GEV,STRONG_WATCH,2026-05-19,400,DAY_4,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+JBL,STRONG_WATCH,2026-05-19,400,DAY_5,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+MSFT,STRONG_WATCH,2026-05-19,400,DAY_1,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+ORCL,STRONG_WATCH,2026-05-19,400,DAY_2,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+PANW,STRONG_WATCH,2026-05-19,400,DAY_3,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+QCOM,STRONG_WATCH,2026-05-19,400,DAY_4,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+QQQ,STRONG_WATCH,2026-05-19,400,DAY_5,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SMH,STRONG_WATCH,2026-05-19,400,DAY_1,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SNDK,STRONG_WATCH,2026-05-19,400,DAY_2,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SNOW,STRONG_WATCH,2026-05-19,400,DAY_3,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SPY,STRONG_WATCH,2026-05-19,400,DAY_4,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+STX,STRONG_WATCH,2026-05-19,400,DAY_5,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+TSLA,STRONG_WATCH,2026-05-19,400,DAY_1,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+TSM,STRONG_WATCH,2026-05-19,400,DAY_2,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+TXN,STRONG_WATCH,2026-05-19,400,DAY_3,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+VRT,STRONG_WATCH,2026-05-19,400,DAY_4,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+WDC,STRONG_WATCH,2026-05-19,400,DAY_5,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+ZS,STRONG_WATCH,2026-05-19,400,DAY_1,STRONG_WATCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DELL,WATCHLIST,2026-05-19,250,DAY_1,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FIX,WATCHLIST,2026-05-19,250,DAY_2,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+IGV,WATCHLIST,2026-05-19,250,DAY_3,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+IRDM,WATCHLIST,2026-05-19,250,DAY_4,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+IYW,WATCHLIST,2026-05-19,250,DAY_5,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+KEYS,WATCHLIST,2026-05-19,250,DAY_1,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+KLIC,WATCHLIST,2026-05-19,250,DAY_2,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+MCHP,WATCHLIST,2026-05-19,250,DAY_3,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+MOD,WATCHLIST,2026-05-19,250,DAY_4,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+MPWR,WATCHLIST,2026-05-19,250,DAY_5,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+MRVL,WATCHLIST,2026-05-19,250,DAY_1,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+NVT,WATCHLIST,2026-05-19,250,DAY_2,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+NXPI,WATCHLIST,2026-05-19,250,DAY_3,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+POWL,WATCHLIST,2026-05-19,250,DAY_4,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+PSTG,WATCHLIST,2026-05-19,250,DAY_5,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+PWR,WATCHLIST,2026-05-19,250,DAY_1,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SANM,WATCHLIST,2026-05-19,250,DAY_2,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SMCI,WATCHLIST,2026-05-19,250,DAY_3,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SOXL,WATCHLIST,2026-05-19,250,DAY_4,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+SOXX,WATCHLIST,2026-05-19,250,DAY_5,WATCHLIST rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CAI,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CART,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CDNS,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CDTX,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CFLT,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CHPT,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CHRW,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CHYM,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CLF,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CLH,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CLSK,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CMG,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CNM,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+COF,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+COG,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+COGT,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CPAY,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CPNG,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CRCL,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CRH,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CRS,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CSGP,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+CVNA,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DAKT,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DAL,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DASH,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DB,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DBVT,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DIS,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DOCU,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+DUOL,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+EEM,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+ENPH,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+EQIX,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+EQT,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+ET,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+EWY,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+EWZ,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FCNCA,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FIGR,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FLS,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FLUT,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+FWONK,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GEHC,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GEMI,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GOOG,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GRAB,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GS,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GSG,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+GT,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HIVE,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HLT,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HOOD,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HTZ,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HUBS,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HUM,RESEARCH,,100,DAY_1,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+HUT,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+IBIT,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+INFY,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+INSM,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+ISRG,RESEARCH,,100,DAY_2,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+IWM,RESEARCH,,100,DAY_3,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+JBS,RESEARCH,,100,DAY_4,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+JCI,RESEARCH,,100,DAY_5,RESEARCH rotated by stale date and priority within available daily quota.,LOW,MEDIUM
+JD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+JFROG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+JHX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KKR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KLAR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KNX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KRC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KVYO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+KWEB,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LBRT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LCID,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LHX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LIN,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LINE,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LPLA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LSCC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LYB,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+LYFT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MCK,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MELI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MNTN,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MOH,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MPLX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MPW,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MTSI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+MTZ,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NAMS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NFLX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NRG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NTRA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NU,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NUVB,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NVAX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+OC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+OKTA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+OLMA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+OLPX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+OPCH,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PATH,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PCOR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PCT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PDD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PFGC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PGNY,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PINS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PLUG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PONY,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PSIX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PTGX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PTON,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PUMP,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PYPL,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+QS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+QSR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RBLX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RDDT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RERE,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RH,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RIOT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RKT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RNG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ROKU,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RSP,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RTX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+RVMD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SATS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SCCO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SCHW,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SE,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SEI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SFIX,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SFM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SHOP,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SHW,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SITM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SMTC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SNPS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SOLS,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+SPOT,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+STG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+STM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+STUB,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TEAM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TEVA,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TIGR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TLN,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TSEM,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TTD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TTMI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TTWO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TWLO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TWST,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+U,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+UAL,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+UBER,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+UNH,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+UPST,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+USFD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+V,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VECO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VEEV,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VIAV,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VIST,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VMC,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WAB,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WDAY,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WHR,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WING,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WLK,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WOLF,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WULF,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WVE,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WWD,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+WYFI,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+XENE,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+XLF,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+XLK,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+XPO,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+XYZ,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+YPF,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+Z,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ZG,RESEARCH,,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AA,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AAL,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ABR,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ADBE,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ADMA,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ADSK,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AEIS,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AEVA,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AFRM,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AGX,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ALM,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AMC,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+APG,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+APLD,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+APO,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+APP,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ARGT,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+AXON,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BABA,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BAC,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BALL,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BIDU,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BITF,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BKNG,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BLSH,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BLTE,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BN,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BSX,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BW,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+BYND,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+CLS,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+CRM,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+CRWV,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+D,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ECL,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ENTG,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ETN,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+ETR,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+FLR,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+FORM,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+HUBB,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+META,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NET,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+NOW,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+PLTR,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TER,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TICKER,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TICKERS,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+TQQQ,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM
+VST,RESEARCH,2026-05-19,100,UNSCHEDULED_REQUIRES_POLICY_REVIEW,RESEARCH remains outside the 5-day advisory plan because the dry-run target preserves the daily cap.,LOW,MEDIUM

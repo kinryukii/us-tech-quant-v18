@@ -1,0 +1,6 @@
+horizon,current_usable_count,target_minimum_count,current_maturity_status,required_additional_samples,earliest_possible_maturity_status,blocking_reason,recommended_next_step
+1D,20,20,PRELIMINARY_SMALL_SAMPLE,0,PRELIMINARY_SMALL_SAMPLE,NEEDS_MORE_SNAPSHOT_DATE_DIVERSITY,Add direct keys and collect another snapshot date before effect claims.
+3D,0,20,NO_USABLE_FORWARD_RETURNS,20,INSUFFICIENT_SAMPLE,NEEDS_MORE_FORWARD_RETURN_SAMPLES,Preserve signal IDs and wait for this horizon to mature.
+5D,0,20,NO_USABLE_FORWARD_RETURNS,20,INSUFFICIENT_SAMPLE,NEEDS_MORE_FORWARD_RETURN_SAMPLES,Preserve signal IDs and wait for this horizon to mature.
+10D,0,20,NO_USABLE_FORWARD_RETURNS,20,INSUFFICIENT_SAMPLE,NEEDS_MORE_FORWARD_RETURN_SAMPLES,Preserve signal IDs and wait for this horizon to mature.
+20D,0,20,NO_USABLE_FORWARD_RETURNS,20,INSUFFICIENT_SAMPLE,NEEDS_MORE_FORWARD_RETURN_SAMPLES,Preserve signal IDs and wait for this horizon to mature.

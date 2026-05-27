@@ -1,0 +1,29 @@
+﻿{
+  "version": "V16.17.3",
+  "module_name": "enhanced_macro_calendar_sources",
+  "lookback_days": 10,
+  "lookahead_days": 240,
+  "auto_merge_high_confidence_bls_ics": true,
+  "auto_merge_fomc": false,
+  "canonical_macro_path": "data/events/v16_macro_events.csv",
+  "official_sources": {
+    "BLS_ICS": {
+      "url": "https://www.bls.gov/schedule/news_release/bls.ics",
+      "enabled": true,
+      "auto_merge": true,
+      "confidence": "HIGH"
+    },
+    "FED_FOMC": {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "enabled": true,
+      "auto_merge": false,
+      "confidence": "MEDIUM_PARSE_REVIEW"
+    },
+    "BEA_SCHEDULE": {
+      "url": "https://www.bea.gov/news/schedule",
+      "enabled": true,
+      "auto_merge": false,
+      "confidence": "MEDIUM_PARSE_REVIEW"
+    }
+  }
+}

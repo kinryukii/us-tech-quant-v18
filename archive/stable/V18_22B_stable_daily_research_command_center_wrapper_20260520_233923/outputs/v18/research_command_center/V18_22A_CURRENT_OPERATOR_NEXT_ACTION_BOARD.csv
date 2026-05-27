@@ -1,0 +1,8 @@
+﻿priority,action_id,action_name,recommended_now,reason,risk_level,modifies_production,fetches_external_data,requires_explicit_approval,expected_benefit,command_or_future_module
+1,V18.22A_STABLE,V18.22A stable snapshot,TRUE,Preserve command center state after validation.,LOW,FALSE,FALSE,FALSE,Stable operator-facing research read center.,V18.22A stable snapshot
+2,V18.22B,"Daily Research Command Center Wrapper Integration, read-only",TRUE_AFTER_STABLE,Can expose read center without production behavior changes.,LOW,FALSE,FALSE,FALSE,Daily operator access to research state.,V18.22B
+3,V18.21H_R2,"Actual staged fetch/import, staged-output only",FALSE,Requires explicit approval because it fetches/imports data.,MEDIUM,FALSE,TRUE,TRUE,Improve score-ready coverage.,V18.21H-R2
+4,V18.21G_R1,Wait for forward horizons to mature then G-R1,FALSE_WAIT,Most forward rows are pending and not mature.,MEDIUM,FALSE,FALSE,TRUE,Enable controlled outcome fill after maturity.,V18.21G-R1
+5,V18.22C,Research Packet Writer,OPTIONAL_AFTER_STABLE,Can package read-only evidence for review.,LOW,FALSE,FALSE,FALSE,Portable research review packet.,V18.22C
+6,V18.22D,Daily Research Summary README,OPTIONAL_AFTER_STABLE,Can summarize command center daily.,LOW,FALSE,FALSE,FALSE,Short daily research summary.,V18.22D
+7,PAUSE,Do nothing / pause after stable snapshot,VALID_OPTION,No production action is required.,LOW,FALSE,FALSE,FALSE,Avoid premature changes.,none

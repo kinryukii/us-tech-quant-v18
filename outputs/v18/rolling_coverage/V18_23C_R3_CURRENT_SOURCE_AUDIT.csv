@@ -1,0 +1,7 @@
+﻿source_name,source_path,exists,row_count,notes
+v18_23c_r2_merge_result,outputs/v18/staged_backfill/V18_23C_R2_CURRENT_MERGE_RESULT.csv,TRUE,51,R2 successful merge source.
+v18_23c_r2_post_retest,outputs/v18/rolling_coverage/V18_23C_R2_CURRENT_POST_INTEGRATION_RETEST.csv,TRUE,51,R2 read-only post-integration retest source.
+v18_23c_r2_read_first,outputs/v18/ops/V18_23C_R2_READ_FIRST.txt,TRUE,1,R2 operator status.
+canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TRUE,324,Canonical universe for coverage audit.
+rolling_scan_ledger,state/v18/rolling_coverage/V18_23B_ROLLING_SCAN_LEDGER.csv,TRUE,324,Only allowed state modification in R3.
+official_price_cache,state/v18/price_cache,TRUE,154,Read-only evidence source in R3.

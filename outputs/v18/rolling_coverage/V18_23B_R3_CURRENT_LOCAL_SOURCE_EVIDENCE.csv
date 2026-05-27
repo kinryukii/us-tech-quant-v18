@@ -1,0 +1,261 @@
+﻿ticker,source_name,source_path,evidence_type,present,notes
+CNM,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CNM,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CNM,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CNM,price_cache,state/v18/price_cache/CNM.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+COF,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COF,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COF,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COF,price_cache,state/v18/price_cache/COF.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+COG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COG,price_cache,state/v18/price_cache/COG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+COGT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COGT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COGT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+COGT,price_cache,state/v18/price_cache/COGT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CPAY,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPAY,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPAY,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPAY,price_cache,state/v18/price_cache/CPAY.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CPNG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPNG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPNG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CPNG,price_cache,state/v18/price_cache/CPNG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CRCL,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRCL,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRCL,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRCL,price_cache,state/v18/price_cache/CRCL.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CRH,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRH,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRH,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRH,price_cache,state/v18/price_cache/CRH.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CRS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CRS,price_cache,state/v18/price_cache/CRS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CSGP,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CSGP,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CSGP,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CSGP,price_cache,state/v18/price_cache/CSGP.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+CVNA,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CVNA,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CVNA,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+CVNA,price_cache,state/v18/price_cache/CVNA.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DAKT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAKT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAKT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAKT,price_cache,state/v18/price_cache/DAKT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DAL,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAL,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAL,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DAL,price_cache,state/v18/price_cache/DAL.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DASH,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DASH,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DASH,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DASH,price_cache,state/v18/price_cache/DASH.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DB,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DB,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DB,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DB,price_cache,state/v18/price_cache/DB.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DBVT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DBVT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DBVT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DBVT,price_cache,state/v18/price_cache/DBVT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DIS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DIS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DIS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DIS,price_cache,state/v18/price_cache/DIS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DOCU,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DOCU,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DOCU,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DOCU,price_cache,state/v18/price_cache/DOCU.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+DUOL,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DUOL,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DUOL,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+DUOL,price_cache,state/v18/price_cache/DUOL.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+EEM,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EEM,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EEM,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EEM,price_cache,state/v18/price_cache/EEM.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+ENPH,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ENPH,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ENPH,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ENPH,price_cache,state/v18/price_cache/ENPH.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+EQIX,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQIX,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQIX,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQIX,price_cache,state/v18/price_cache/EQIX.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+EQT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EQT,price_cache,state/v18/price_cache/EQT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+ET,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ET,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ET,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ET,price_cache,state/v18/price_cache/ET.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+EWY,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWY,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWY,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWY,price_cache,state/v18/price_cache/EWY.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+EWZ,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWZ,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWZ,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+EWZ,price_cache,state/v18/price_cache/EWZ.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+FCNCA,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FCNCA,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FCNCA,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FCNCA,price_cache,state/v18/price_cache/FCNCA.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+FIGR,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FIGR,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FIGR,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FIGR,price_cache,state/v18/price_cache/FIGR.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+FLS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLS,price_cache,state/v18/price_cache/FLS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+FLUT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLUT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLUT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FLUT,price_cache,state/v18/price_cache/FLUT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+FWONK,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FWONK,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FWONK,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+FWONK,price_cache,state/v18/price_cache/FWONK.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GEHC,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEHC,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEHC,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEHC,price_cache,state/v18/price_cache/GEHC.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GEMI,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEMI,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEMI,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GEMI,price_cache,state/v18/price_cache/GEMI.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GOOG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GOOG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GOOG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GOOG,price_cache,state/v18/price_cache/GOOG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GRAB,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GRAB,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GRAB,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GRAB,price_cache,state/v18/price_cache/GRAB.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GS,price_cache,state/v18/price_cache/GS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GSG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GSG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GSG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GSG,price_cache,state/v18/price_cache/GSG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+GT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+GT,price_cache,state/v18/price_cache/GT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HIVE,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HIVE,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HIVE,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HIVE,price_cache,state/v18/price_cache/HIVE.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HLT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HLT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HLT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HLT,price_cache,state/v18/price_cache/HLT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HOOD,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HOOD,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HOOD,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HOOD,price_cache,state/v18/price_cache/HOOD.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HTZ,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HTZ,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HTZ,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HTZ,price_cache,state/v18/price_cache/HTZ.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HUBS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUBS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUBS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUBS,price_cache,state/v18/price_cache/HUBS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HUM,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUM,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUM,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUM,price_cache,state/v18/price_cache/HUM.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+HUT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+HUT,price_cache,state/v18/price_cache/HUT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+IBIT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IBIT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IBIT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IBIT,price_cache,state/v18/price_cache/IBIT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+INFY,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INFY,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INFY,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INFY,price_cache,state/v18/price_cache/INFY.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+INSM,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INSM,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INSM,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+INSM,price_cache,state/v18/price_cache/INSM.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+ISRG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ISRG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ISRG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+ISRG,price_cache,state/v18/price_cache/ISRG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+IWM,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IWM,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IWM,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+IWM,price_cache,state/v18/price_cache/IWM.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+JBS,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JBS,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JBS,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JBS,price_cache,state/v18/price_cache/JBS.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+JCI,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JCI,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JCI,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JCI,price_cache,state/v18/price_cache/JCI.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+JD,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JD,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JD,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JD,price_cache,state/v18/price_cache/JD.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+JFROG,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JFROG,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JFROG,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JFROG,price_cache,state/v18/price_cache/JFROG.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+JHX,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JHX,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JHX,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+JHX,price_cache,state/v18/price_cache/JHX.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KKR,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KKR,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KKR,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KKR,price_cache,state/v18/price_cache/KKR.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KLAR,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KLAR,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KLAR,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KLAR,price_cache,state/v18/price_cache/KLAR.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KNX,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KNX,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KNX,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KNX,price_cache,state/v18/price_cache/KNX.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KRC,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KRC,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KRC,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KRC,price_cache,state/v18/price_cache/KRC.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KVYO,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KVYO,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KVYO,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KVYO,price_cache,state/v18/price_cache/KVYO.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+KWEB,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KWEB,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KWEB,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+KWEB,price_cache,state/v18/price_cache/KWEB.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+LBRT,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LBRT,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LBRT,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LBRT,price_cache,state/v18/price_cache/LBRT.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+LCID,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LCID,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LCID,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LCID,price_cache,state/v18/price_cache/LCID.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+LHX,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LHX,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LHX,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LHX,price_cache,state/v18/price_cache/LHX.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.
+LIN,canonical_plan,outputs/v18/rolling_coverage/V18_23A_CURRENT_ROLLING_COVERAGE_PLAN.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LIN,universe_state,outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LIN,state_universe,state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,TICKER_COLUMN,TRUE,Ticker present in local source.
+LIN,price_cache,state/v18/price_cache/LIN.csv,LOCAL_PRICE_CACHE,FALSE,Read-only existence/line-count check.

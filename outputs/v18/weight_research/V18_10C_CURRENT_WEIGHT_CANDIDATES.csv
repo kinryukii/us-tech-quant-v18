@@ -1,0 +1,8 @@
+﻿weight_set,description,trend_score,relative_strength_score,pullback_quality_score,momentum_continuation_score,overheat_penalty,volatility_penalty,execution_fit
+BASELINE_CURRENT,Current official candidate weights from factor registry.,0.250000,0.200000,0.200000,0.150000,0.100000,0.050000,0.050000
+EQUAL_WEIGHT,Equal-weight research control.,0.142857,0.142857,0.142857,0.142857,0.142857,0.142857,0.142857
+DEFENSIVE_CAUTION,"Higher pullback, overheat, and volatility control; lower momentum.",0.200000,0.180000,0.240000,0.080000,0.180000,0.080000,0.040000
+MOMENTUM_NORMAL,"More aggressive trend, RS, and momentum profile for normal markets.",0.260000,0.240000,0.140000,0.220000,0.060000,0.040000,0.040000
+PULLBACK_QUALITY,Prioritizes strong assets with better entry quality.,0.200000,0.180000,0.320000,0.080000,0.140000,0.050000,0.030000
+LOW_VOL_DEFENSE,Higher volatility penalty and overheat control.,0.200000,0.180000,0.200000,0.080000,0.140000,0.160000,0.040000
+EXECUTION_AWARE_SMALL_ACCOUNT,Higher execution fit for small-account practical tradability.,0.200000,0.180000,0.200000,0.100000,0.100000,0.070000,0.150000

@@ -1,0 +1,7 @@
+﻿gate_check,status,value,notes
+r25_combined_plan_93_targets,PASS,93,
+schema_compatibility_true,PASS,TRUE,
+factor_builder_parses,PASS,PY_AST_PARSE_OK,scripts/v18/v18_25A_R13_targeted_factor_pack_refresh_staged.py
+technical_builder_parses,PASS,PY_AST_PARSE_OK,scripts/v18/v18_25A_R11_full_compatible_technical_timing_refresh_with_vix.py
+broken_script_patched_or_excluded,PASS,"PY_AST_PARSE_FAIL:SyntaxError:invalid non-printable character U+FEFF (<unknown>, line 1)",Excluded from R25B selection.
+r25b_input_gate,PASS,PASS,

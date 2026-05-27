@@ -1,0 +1,2 @@
+total_scenario_capital_rows,low_risk_count,medium_risk_count,high_risk_count,research_only_count,unknown_risk_count,concentration_watch_count,high_concentration_count,small_capital_constraint_count,price_missing_risk_count,forward_evidence_pending_count,data_quality_review_count,command_status_current_blocking_count,daily_run_usable,overall_risk_preview_status,next_recommended_step
+20,0,16,0,4,0,0,0,14,0,8,20,0,TRUE,WARN_V18_39C_SHADOW_RISK_MODEL_PREVIEW_REVIEW_NEEDED,"Preview is usable for research, but wait for forward evidence and review feasibility/data tags."

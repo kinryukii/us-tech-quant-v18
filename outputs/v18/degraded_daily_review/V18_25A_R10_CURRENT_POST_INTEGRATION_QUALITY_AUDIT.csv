@@ -1,0 +1,13 @@
+﻿metric,value,notes
+row_count,9164,Post-integration official VIX audit.
+min_date,1990-01-02,Post-integration official VIX audit.
+max_date,2026-05-21,Post-integration official VIX audit.
+latest_date,2026-05-21,Post-integration official VIX audit.
+close_column_available,TRUE,Post-integration official VIX audit.
+close_non_null_count,9164,Post-integration official VIX audit.
+duplicate_date_count,0,Post-integration official VIX audit.
+negative_or_zero_close_count,0,Post-integration official VIX audit.
+full_history_ready,TRUE,Post-integration official VIX audit.
+usable_for_factor_refresh,TRUE,Post-integration official VIX audit.
+usable_for_technical_overlay,TRUE,Post-integration official VIX audit.
+quality_status,OK,Post-integration official VIX audit.

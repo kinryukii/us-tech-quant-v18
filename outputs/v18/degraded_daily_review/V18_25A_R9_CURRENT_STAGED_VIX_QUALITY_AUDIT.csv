@@ -1,0 +1,19 @@
+﻿metric,value,notes
+row_count,9164,Normalized staged VIX rows.
+min_date,1990-01-02,Earliest staged VIX date.
+max_date,2026-05-21,Latest staged VIX date.
+latest_date,2026-05-21,Same as max_date for this file.
+close_column_available,True,Close column present in normalized file.
+close_non_null_count,9164,Rows with a populated close.
+missing_close_count,0,Rows without close values.
+duplicate_date_count,0,Duplicate dates in normalized file.
+negative_or_zero_close_count,0,Non-positive close values.
+suspicious_gap_count,0,Gaps greater than 10 calendar days.
+date_sorted_ascending,True,Chronological order check.
+symbol_consistency,True,proxy_symbol should be constant.
+source_consistency,True,source should be constant.
+full_history_ready,True,Conservative readiness threshold met.
+latest_date_fresh_enough,True,Latest date is current or near-current.
+usable_for_factor_refresh,True,Safe for factor/regime consumers.
+usable_for_technical_overlay,True,Safe for technical overlay consumers.
+quality_status,OK,Overall staged VIX audit result.

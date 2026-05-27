@@ -1,0 +1,7 @@
+﻿metric,value,notes
+target_window_days,5,Calendar-day approximation.
+total_universe_count,324,Canonical V18.23A plan tickers.
+unique_success_scanned_within_window_before,103,Before R3 ledger update.
+unique_success_scanned_within_window_after,154,After R3 ledger update.
+remaining_stale_or_never_success_count,170,Still not covered by successful ledger evidence in current window.
+true_5day_unique_coverage_met,FALSE,FALSE_PARTIAL_LEDGER_COVERAGE_AFTER_R3

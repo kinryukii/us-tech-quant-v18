@@ -1,0 +1,5 @@
+﻿metric,value,notes
+batch_ticker_count,65,Batch 2 selected tickers.
+staged_local_price_scan_success_count,62,Staged-only success count.
+staged_full_history_ready_count,57,Potential future quality audit candidates.
+projected_remaining_stale_after_batch2_if_integrated,113,Projection only; ledger not updated.

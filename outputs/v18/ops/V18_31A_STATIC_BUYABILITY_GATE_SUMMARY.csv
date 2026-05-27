@@ -1,0 +1,2 @@
+﻿run_id,status,mode,generated_at,source_recommendation_rows,source_ranked_candidate_rows,source_technical_rows,output_rows,buy_now_allowed_count,buy_small_only_count,watch_for_entry_count,wait_for_pullback_count,review_first_count,do_not_buy_now_count,blocked_count,validation_fail_count,forbidden_modified,notes
+V18_31A_20260524_182840,WARN_V18_31A_STATIC_BUYABILITY_GATE_REVIEW_NEEDED,STATIC_MANUAL_BUYABILITY_GATE,2026-05-24T18:28:40,252,252,252,252,0,0,0,0,0,0,252,1,FALSE,Operator state blocked all rows.

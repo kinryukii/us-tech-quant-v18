@@ -1,0 +1,3 @@
+﻿event_date,event_time_et,event_name,event_type,importance,source,status,notes
+2026-05-08,08:30,NFP / Nonfarm Payrolls,MACRO,HIGH,manual_seed,ACTIVE,Seeded from V16 discussion. Update this file when new macro dates are known.
+2026-05-12,08:30,CPI,MACRO,HIGH,manual_seed,ACTIVE,Seeded from V16 discussion. Update this file when new macro dates are known.

@@ -1,0 +1,6 @@
+﻿result_item,value,notes
+integration_attempted,TRUE,Attempted only after all preconditions passed.
+integration_success,TRUE,Official VIX.csv write result.
+row_count_staged,9164,Normalized staged source rows.
+row_count_official,9164,Official market proxy rows after integration.
+forbidden_file_modified,FALSE,Forbidden file signature check.

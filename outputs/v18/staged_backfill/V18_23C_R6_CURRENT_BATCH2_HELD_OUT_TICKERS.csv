@@ -1,0 +1,14 @@
+﻿ticker,classification,hold_reason,source_path
+AMC,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\AMC.csv
+APLD,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\APLD.csv
+BLSH,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\BLSH.csv
+BW,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\BW.csv
+BYND,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\BYND.csv
+CAI,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\CAI.csv
+CDTX,HOLD_EMPTY_FETCH,Empty provider response.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\CDTX.csv
+CFLT,HOLD_EMPTY_FETCH,Empty provider response.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\CFLT.csv
+CHYM,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\CHYM.csv
+LINE,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\LINE.csv
+MNTN,MERGE_CANDIDATE_PRICE_ONLY_PARTIAL_HISTORY,Not factor-ready.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\MNTN.csv
+MPW,HOLD_EMPTY_FETCH,Empty provider response.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\MPW.csv
+NVAX,HOLD_SUSPICIOUS_PRICE_DATA,Suspicious staged data quality issue.,D:\us-tech-quant\data\v18\staged_backfill\V18_23C_BATCH2\NVAX.csv

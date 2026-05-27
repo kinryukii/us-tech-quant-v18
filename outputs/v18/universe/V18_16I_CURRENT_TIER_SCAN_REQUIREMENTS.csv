@@ -1,0 +1,6 @@
+﻿tier,current_count,current_scan_frequency,recommended_scan_frequency,recommended_daily_quota,five_day_target_count,reason,confidence
+CORE_DAILY,30,30/30_SELECTED_THIS_RUN,EVERY_TRADING_DAY,30,30,High-trust tier receives daily coverage.,HIGH
+CANDIDATE,14,15/14_SELECTED_THIS_RUN,EVERY_TRADING_DAY_OR_NEAR_DAILY,14,14,High-trust tier receives daily coverage.,HIGH
+STRONG_WATCH,21,NONE_SELECTED,EVERY_2_TRADING_DAYS,5,21,Rotated after high-trust daily tiers to reduce permanent staleness.,HIGH
+WATCHLIST,20,NONE_SELECTED,EVERY_3_TRADING_DAYS,4,20,Rotated after high-trust daily tiers to reduce permanent staleness.,HIGH
+RESEARCH,240,NONE_SELECTED,EVERY_5_TRADING_DAYS_ROTATION,12,64,Constrained rotation after high-trust daily tiers; full tier target needs higher capacity.,MEDIUM

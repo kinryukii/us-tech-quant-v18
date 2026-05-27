@@ -1,0 +1,6 @@
+﻿scenario_name,eligible_preview_count,projected_filled_shadow_rows,projected_pending_rows,projected_high_confidence_match_count,projected_medium_confidence_match_count,projected_low_confidence_match_count,projected_multi_horizon_readiness_status,assumptions,limitations
+CURRENT_ALL_PENDING,0,0,525,0,0,20,NOT_READY_MULTI_HORIZON,No returns filled.,Current state only.
+DRYRUN_PREVIEW_ONLY,0,0,525,0,0,20,NOT_READY_MULTI_HORIZON,Preview values are not applied.,No effect claims allowed.
+FUTURE_FILL_MATURED_1D_ONLY,0,0,525,0,0,20,PARTIAL_1D_ONLY_IF_ELIGIBLE,Only matured 1D local prices are applied later.,Requires explicit approval.
+FUTURE_FILL_ALL_MATURED_LOCAL_PRICE_AVAILABLE,0,0,525,0,0,20,PARTIAL_LOCAL_PRICE_LIMITED,All locally matured eligible rows applied to new shadow only.,Blocked rows remain pending.
+FUTURE_AFTER_PRICE_BACKFILL_AND_HORIZON_MATURITY,0,525,0,525,0,0,READY_AFTER_FUTURE_BACKFILL_AND_MATURITY,All horizons mature and local price history exists.,Design projection only; no fetch or fill now.

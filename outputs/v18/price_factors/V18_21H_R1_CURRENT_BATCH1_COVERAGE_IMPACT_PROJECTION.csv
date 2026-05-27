@@ -1,0 +1,5 @@
+﻿scenario_name,batch1_ticker_count,projected_added_full_history_ready_count,projected_full_history_factor_ready_count,projected_missing_history_ticker_count,projected_score_ready_ratio,projected_research_coverage_status,assumptions,limitations
+CURRENT,25,0,104,221,0.320000,CURRENT_DEGRADED,No staged backfill applied.,Current state only.
+BATCH1_DESIGN_ONLY_NO_BACKFILL,25,0,104,221,0.320000,DESIGN_ONLY_NO_CHANGE,R1 writes no price history.,No coverage improvement until future approved apply.
+BATCH1_FULLY_BACKFILLED_LATER,25,25,129,196,0.396923,PARTIAL_IMPROVEMENT_PROJECTED,All valid Batch 1 tickers are successfully staged and later accepted.,Requires explicit approval and staged validation.
+BATCH1_PLUS_TOP50_LATER,25,50,154,171,0.473846,TOP50_IMPROVEMENT_PROJECTED,Top 50 missing-history tickers are backfilled later.,Requires future staged apply approvals.

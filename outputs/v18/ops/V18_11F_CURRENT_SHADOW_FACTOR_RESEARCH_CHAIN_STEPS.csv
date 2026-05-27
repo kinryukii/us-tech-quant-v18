@@ -1,0 +1,3 @@
+﻿step_name,status,seconds,output_path,note
+"RUN_V18_11D_SHADOW_FACTOR_DAILY","OK","2.968","D:\us-tech-quant\outputs\v18\factor_research\V18_11D_READ_FIRST.txt","Ran V18.11D shadow factor daily with -UseYFinance."
+"RUN_V18_11E_SHADOW_FACTOR_SUMMARY","OK","0.432","D:\us-tech-quant\outputs\v18\factor_research\V18_11E_READ_FIRST.txt","Ran V18.11E shadow factor summary."

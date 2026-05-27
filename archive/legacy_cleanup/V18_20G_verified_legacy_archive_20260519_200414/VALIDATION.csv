@@ -1,0 +1,4 @@
+﻿zip_path,archive_group,expected_count,expected_mb,zip_exists,zip_size_bytes,zip_openable,members_present,member_count_ok,source_files_still_exist,protected_exclusion_included,current_alias_included,validation_status,reason
+archive/legacy_cleanup/V18_20G_verified_legacy_archive_20260519_200414/V18_20G_old_generated_reports.zip,OLD_GENERATED_REPORTS,126,1.162,TRUE,358112,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,OK,Zip verified successfully.
+archive/legacy_cleanup/V18_20G_verified_legacy_archive_20260519_200414/V18_20G_old_experimental_wrappers.zip,OLD_EXPERIMENTAL_WRAPPERS,18,0.077,TRUE,29656,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,OK,Zip verified successfully.
+archive/legacy_cleanup/V18_20G_verified_legacy_archive_20260519_200414/V18_20G_legacy_versioned_scripts.zip,LEGACY_VERSIONED_SCRIPTS,4,0.035,TRUE,10183,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,OK,Zip verified successfully.

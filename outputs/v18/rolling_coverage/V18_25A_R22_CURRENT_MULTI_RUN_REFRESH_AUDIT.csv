@@ -1,0 +1,20 @@
+﻿metric,value,notes
+total_universe_count,324,
+unique_success_within_lookback_window,265,
+remaining_stale_or_never_success_count,59,
+never_success_count,59,
+stale_overdue_count,0,
+today_success_count,59,
+eligible_pending_after_today_exclusion,265,
+planned_refresh_count,65,
+true_lookback_coverage_met,FALSE,
+lookback_days,5,
+batch_size,65,
+same_day_continuation_enabled,TRUE,
+exclude_today_success,TRUE,
+status,OK_V18_25A_R22_ROLLING_MULTI_RUN_CONTINUATION_PLAN_READY,
+optional_inputs_loaded_count,2,outputs/v18/rolling_coverage/V18_25A_R20_CURRENT_REMAINING_STALE_TICKERS.csv;outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv
+external_fetch_executed,FALSE,Scheduler is local planning only.
+backtest_executed,FALSE,No backtest execution in R22.
+validation_fail_count,0,
+forbidden_modified,FALSE,R22 writes only its declared outputs.

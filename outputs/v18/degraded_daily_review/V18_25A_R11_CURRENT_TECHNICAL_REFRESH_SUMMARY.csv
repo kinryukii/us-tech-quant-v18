@@ -1,0 +1,10 @@
+﻿metric,value,notes
+target_ticker_count,52,Discovered from R4 readiness audit.
+technical_refresh_success_count,52,Rows generated in R11 staged output.
+technical_refresh_fail_count,0,Blocked or failed tickers.
+formula_compatibility_status,FULL_COMPATIBLE_WITH_LOCAL_REIMPLEMENTATION,V18.6A formulas locally reimplemented with official VIX overlay.
+exact_v18_6a_formula_reused,FALSE,"Original script fetches externally and overwrites current output, so not called directly."
+vix_row_count,9164,1990-01-02..2026-05-21
+merge_ready_count,52,Schema-compatible staged rows ready for later merge task.
+merge_blocked_count,0,Rows blocked from later merge.
+forbidden_file_modified,FALSE,

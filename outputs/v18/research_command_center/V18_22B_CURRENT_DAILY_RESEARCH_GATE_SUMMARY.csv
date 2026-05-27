@@ -1,0 +1,9 @@
+﻿gate_name,allowed_status,current_blocker,operator_meaning,next_required_action,production_impact
+FACTOR_EFFECT_CLAIM,FALSE,high_confidence=0,No factor effectiveness claims can be made.,High-confidence multi-horizon outcomes.,NONE
+FACTOR_WEIGHT_CHANGE,FALSE,EFFECT_CLAIM_ALLOWED_COUNT=0,No factor weights can be changed.,Validated effect claims and explicit approval.,NONE
+PRODUCTION_PROMOTION,FALSE,PRODUCTION_PROMOTION_ALLOWED_COUNT=0,No research output can be promoted to production.,Evidence gates and explicit approval.,NONE
+STAGED_BACKFILL_ACTUAL_FETCH_IMPORT,REQUIRES_EXPLICIT_APPROVAL,STAGED_BACKFILL_APPLIED=FALSE,Requires explicit approval; do not auto-fetch.,Explicit approval for staged-output-only fetch/import.,NONE
+PRICE_CACHE_INTEGRATION,FALSE,PRICE_CACHE_MODIFIED=FALSE,Price cache writes are disallowed.,Validated staged data and explicit cache integration approval.,NONE
+DAILY_COMMAND_CENTER_INTEGRATION,FALSE,read-center only,Production daily integration is disallowed.,Separate read-only integration approval.,NONE
+BACKTEST_EXECUTION,FALSE,forward_returns_pending; sample_history_limited,Backtest execution is blocked.,"Filled returns, leakage checks, enough samples.",NONE
+FORWARD_RETURN_FILL_APPLICATION,FALSE,filled=0; pending=525,Forward returns must remain unfilled.,Matured horizons and approved filler apply.,NONE

@@ -1,0 +1,10 @@
+﻿decision_area,allowed,reason,required_before_allowed,current_status
+FACTOR_EFFECTIVENESS_CLAIM,FALSE,High-confidence matches are zero and multi-horizon returns are immature.,High-confidence multi-horizon matched returns.,BLOCKED
+FACTOR_WEIGHT_CHANGE,FALSE,No factor effectiveness claims are allowed.,Validated effect evidence and explicit approval.,BLOCKED
+PRODUCTION_PROMOTION,FALSE,Research chain remains advisory/degraded.,"Clean evidence, stable validation, explicit approval.",BLOCKED
+OFFICIAL_BUY_PERMISSION_CHANGE,FALSE,Read center does not modify official behavior.,Separate approved production integration.,BLOCKED
+EVENT_RISK_OFFICIAL_APPLICATION,FALSE,Event risk coefficient remains advisory-only.,Explicit integration approval and validation.,BLOCKED
+FORWARD_TRACKER_PRODUCTION_REPLACEMENT,FALSE,V18.21D-R1 is shadow-output only.,Approved production replacement plan.,BLOCKED
+CONTROLLED_FORWARD_OUTCOME_FILLER_DESIGN,TRUE,Shadow schema exists and returns remain pending.,Keep advisory-only design constraints.,READY_FOR_DESIGN
+FULL_HISTORY_BACKFILL_DESIGN,TRUE,Coverage gaps are quantified.,Design-only; no external fetch without approval.,READY_FOR_DESIGN
+UNIFIED_BACKTEST_RESEARCH_DESIGN,TRUE,Read-only design can proceed without production impact.,Research-only constraints and no claims.,READY_RESEARCH_ONLY

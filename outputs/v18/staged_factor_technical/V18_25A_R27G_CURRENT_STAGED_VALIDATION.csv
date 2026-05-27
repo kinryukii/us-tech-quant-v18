@@ -1,0 +1,3 @@
+﻿ticker,price_cache_present,price_cache_row_count,rolling_ledger_success,staged_factor_present,staged_technical_present,official_factor_present,official_technical_present,official_ranked_candidate_present,factor_score_present,technical_score_present,validation_status,error_message
+RDDT,TRUE,545,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,PASS,
+TLN,TRUE,746,TRUE,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,PASS,

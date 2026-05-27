@@ -1,0 +1,2 @@
+﻿run_id,generated_at,apply_universe_invalid_ticker_prune,target_exclusion_count,found_in_active_universe_count,expected_total_universe_count_after,current_full_candidate_count,latest_signal_date,latest_freeze_count,targets_in_current_full_candidates_count,targets_in_latest_freeze_count
+V18_35G_20260525_141052,2026-05-25T14:10:52,TRUE,15,15,318,318,2026-05-25,318,0,0

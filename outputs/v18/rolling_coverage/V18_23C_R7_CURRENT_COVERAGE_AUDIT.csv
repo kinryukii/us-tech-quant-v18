@@ -1,0 +1,7 @@
+﻿metric,value,notes
+total_universe_count,324,Ticker rows in rolling ledger.
+unique_success_within_5day_window,206,Window start 2026-05-17.
+true_5day_coverage_met,FALSE,Requires all ledger tickers successful in current 5-day window.
+remaining_stale_overdue_count,118,No success date in current 5-day window.
+never_success_count,118,Missing last_success_scan_date.
+coverage_trust_level,MEDIUM,Read-only coverage summary after R7 ledger update.

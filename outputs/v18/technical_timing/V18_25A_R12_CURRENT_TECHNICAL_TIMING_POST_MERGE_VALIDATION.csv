@@ -1,0 +1,25 @@
+﻿validation_check,status,fail_count,notes
+python_compile_check,PASS,0,D:\us-tech-quant\scripts\v18\v18_25A_R12_technical_timing_current_merge_with_backup.py
+powershell_parse_check,PASS,0,D:\us-tech-quant\scripts\v18\run_v18_25A_R12_technical_timing_current_merge_with_backup.ps1
+target_ticker_count_52,PASS,0,52
+backup_file_exists,PASS,0,D:\us-tech-quant\archive\v18\technical_timing_backups\V18_25A_R12_20260521_235627\V18_6A_CURRENT_TECHNICAL_TIMING.before_V18_25A_R12.csv
+restore_script_exists,PASS,0,D:\us-tech-quant\archive\v18\technical_timing_backups\V18_25A_R12_20260521_235627\RESTORE_V18_25A_R12_TECHNICAL_TIMING.ps1
+backup_manifest_exists,PASS,0,D:\us-tech-quant\archive\v18\technical_timing_backups\V18_25A_R12_20260521_235627\BACKUP_MANIFEST.csv
+post_current_exists,PASS,0,D:\us-tech-quant\outputs\v18\technical_timing\V18_6A_CURRENT_TECHNICAL_TIMING.csv
+post_row_count_gte_pre,PASS,0,pre=105 post=157
+all_targets_present,PASS,0,52
+no_target_duplicates,PASS,0,0
+target_rows_match_staged_aligned,PASS,0,52
+non_target_rows_preserved,PASS,0,before=105 after=105
+no_external_fetch,PASS,0,R12 does not fetch external data.
+forbidden_files_unchanged,PASS,0,
+precondition_r11_status_ok,PASS,0,True
+precondition_r11_merge_ready_52,PASS,0,True
+precondition_r11_merge_blocked_0,PASS,0,True
+precondition_staged_exists,PASS,0,True
+precondition_staged_row_count_52,PASS,0,True
+precondition_current_exists,PASS,0,True
+precondition_staged_has_ticker,PASS,0,True
+precondition_current_has_ticker,PASS,0,True
+precondition_formula_compatible,PASS,0,True
+precondition_vix_overlay_included,PASS,0,True
