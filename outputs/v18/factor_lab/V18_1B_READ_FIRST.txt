@@ -1,0 +1,28 @@
+=== V18.1B FACTOR VALUE COMPUTE READ FIRST ===
+
+STATUS:
+V18_1B_STATUS: OK_FACTOR_VALUES_COMPUTED_SHADOW_ONLY
+
+OFFICIAL_DECISION_IMPACT:
+NONE
+
+UNIVERSE:
+UNIVERSE_COUNT: 105
+UNIVERSE_SOURCE: SNAPSHOT:D:\us-tech-quant\state\v18\raw105_universe_for_factor_lab.csv
+
+FACTOR SUMMARY:
+FACTOR_COUNT: 5
+FACTOR_VALUE_OK_COUNT: 525
+FACTOR_VALUE_FAIL_OR_WARN_COUNT: 0
+
+OUTPUTS:
+D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_VALUES_CURRENT.csv
+D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_VALUES_CURRENT.md
+D:\us-tech-quant\outputs\v18\factor_lab\V18_1B_FACTOR_COMPUTE_AUDIT.csv
+D:\us-tech-quant\outputs\v18\manifests\V18_1B_FACTOR_VALUE_MANIFEST.csv
+
+NEXT_STEP:
+V18.2A should validate factor effectiveness using forward returns, IC, quantile spreads, and benchmark comparison.
+
+IMPORTANT:
+This version computes research/shadow factors only. It does not modify V17.8D official daily decision outputs.

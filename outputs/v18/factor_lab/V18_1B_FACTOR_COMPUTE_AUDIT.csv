@@ -1,0 +1,2 @@
+﻿version,status,official_decision_impact,universe_count,universe_source,factor_rows,ok_rows,non_ok_rows,generated_at
+V18.1B,OK_FACTOR_VALUES_COMPUTED_SHADOW_ONLY,NONE,105,SNAPSHOT:D:\us-tech-quant\state\v18\raw105_universe_for_factor_lab.csv,525,525,0,2026-05-27 22:23:01

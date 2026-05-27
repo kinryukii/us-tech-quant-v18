@@ -25,31 +25,31 @@
 - outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv
 
 ## 今日人工候选池 tickers
-FORM, AEIS, AGX, BLTE, LITE, ALM, POWL, MTZ, MOD, OC, MU, CAMT, SOXL, CLH, AMKR, KEYS, AEHR, VIAV, ICHR, COHU
+KEYS, VRT, ICHR, NVDA, D, AMKR, GOOGL, FIX, MCHP, LITE, VIAV, CARR, ENTG, SITM, CRWV, ETR, TSEM, COHU, HUT, GEV
 
 ## LONG_CANDIDATE 明细
 | rank | ticker | confidence | score |
 | ---: | --- | --- | ---: |
-| 1 | FORM | MEDIUM | 59.2000 |
-| 2 | AEIS | MEDIUM | 58.8600 |
-| 3 | AGX | MEDIUM | 57.4000 |
-| 4 | BLTE | MEDIUM | 57.3240 |
-| 5 | LITE | MEDIUM | 57.0200 |
-| 6 | ALM | MEDIUM | 56.8920 |
-| 7 | POWL | MEDIUM | 56.6400 |
-| 8 | MTZ | MEDIUM | 56.6320 |
-| 9 | MOD | MEDIUM | 54.3520 |
-| 10 | OC | MEDIUM | 53.9080 |
-| 11 | MU | MEDIUM | 53.8560 |
-| 12 | CAMT | MEDIUM | 53.5440 |
-| 13 | SOXL | MEDIUM | 53.4760 |
-| 14 | CLH | MEDIUM | 53.0480 |
-| 15 | AMKR | MEDIUM | 52.8280 |
-| 16 | KEYS | MEDIUM | 52.5040 |
-| 17 | AEHR | MEDIUM | 52.1160 |
-| 18 | VIAV | MEDIUM | 51.8006 |
-| 19 | ICHR | MEDIUM | 51.7320 |
-| 20 | COHU | MEDIUM | 51.6840 |
+| 1 | KEYS | MEDIUM | 57.4560 |
+| 2 | VRT | MEDIUM | 57.4000 |
+| 3 | ICHR | MEDIUM | 56.6400 |
+| 4 | NVDA | MEDIUM | 54.6200 |
+| 5 | D | MEDIUM | 53.9160 |
+| 6 | AMKR | MEDIUM | 53.5920 |
+| 7 | GOOGL | MEDIUM | 53.4760 |
+| 8 | FIX | MEDIUM | 53.0960 |
+| 9 | MCHP | MEDIUM | 52.4480 |
+| 10 | LITE | MEDIUM | 52.3320 |
+| 11 | VIAV | MEDIUM | 51.8006 |
+| 12 | CARR | MEDIUM | 51.6840 |
+| 13 | ENTG | MEDIUM | 51.5720 |
+| 14 | SITM | MEDIUM | 51.4035 |
+| 15 | CRWV | MEDIUM | 50.9240 |
+| 16 | ETR | MEDIUM | 50.5440 |
+| 17 | TSEM | MEDIUM | 50.4281 |
+| 18 | COHU | MEDIUM | 50.4280 |
+| 19 | HUT | MEDIUM | 49.7110 |
+| 20 | GEV | MEDIUM | 49.6680 |
 
 ## 下一步
-Candidate report is usable; review nonblocking warnings in detail reports if desired.
+Candidate report is usable; review nonblocking warnings and freshness audit before any buy-timing use.

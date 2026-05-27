@@ -1,0 +1,2 @@
+﻿source_path,source_type,raw_token_count,accepted_ticker_count,rejected_token_count,rejected_token_sample
+state/v18/universe/V18_UNIVERSE_ROLLING_STATE.csv,STRUCTURED_CSV_TICKER_COLUMN,335,323,12,"0, 105, 11, 20, 250, 252, 303, 318, 325, TICKER, TICKERS, TRUE"

@@ -32,6 +32,22 @@
 
 > 旧中文首页候选数与当前 pipeline 口径不一致，V18.44A 以 V18.41A 当前口径为准。
 
+## 2A. Refresh Mode And Freshness
+
+| Machine field | Value |
+| --- | --- |
+| REFRESH_MODE | `Full` |
+| FULL_RANKING_RECOMPUTE_COMPLETE | `TRUE` |
+| FULL_PRICE_REFRESH_COMPLETE | `TRUE` |
+| STALE_TOPN_COUNT | `0` |
+| STALE_TOPN_TICKERS | `` |
+| BUY_CANDIDATE_REPORT_TRUST | `MEDIUM` |
+
+> If TopN contains stale price rows, do not use those stale rows for buy timing.
+
+- Freshness audit: `outputs/v18/read_center/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_AUDIT.md`
+- Freshness READ_FIRST: `outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt`
+
 ## 3. TopN 排名解释摘要
 
 | Machine field | Value |
@@ -151,3 +167,4 @@
 | `residual_action_warning_resolver` | `TRUE` | `OPTIONAL` | `OK` |
 | `alpha_signal_objects` | `TRUE` | `OPTIONAL` | `OK` |
 | `candidate_top_full_sync` | `TRUE` | `OPTIONAL` | `OK` |
+| `ranked_candidate_freshness` | `TRUE` | `IMPORTANT` | `OK` |

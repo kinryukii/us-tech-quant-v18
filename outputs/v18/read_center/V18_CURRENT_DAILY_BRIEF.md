@@ -3,8 +3,8 @@
 ## 1. Today's Decision
 - Today Action: Read-only daily refresh; coverage is acceptable but other warnings remain.
 - Trade Permission: DISABLED / DISABLED
-- Daily Trust Level: LOW
-- Main Reason: Validation failures or missing ranking source were detected. True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.
+- Daily Trust Level: MEDIUM
+- Main Reason: Current authoritative full-refresh chain is clean; true 5-day coverage remains nonblocking. True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.
 
 ## 2. Top Candidates
 
@@ -22,25 +22,25 @@
 | 10 | CARR | CORE_DAILY | 6.112825 | Rank 10 uses score composite_candidate_score=6.112825; source columns=factor_pack_rank;factor_pack_score;ov... | FULL_HISTORY_AVAILABLE |
 
 ## 3. Risk Dashboard
-- Data Freshness: Current data is cache-backed and safe-mode oriented; yfinance preflight did not present a clean pass.
+- Data Freshness: Current data appears operationally usable from the available audits.
 - Event Risk: Primary event audit was found at outputs/v18/risk/V18_CURRENT_SCAN_SCOPED_EVENT_UPDATE_AUDIT.csv.
 - Command Center Source: outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt (OK)
 - Current Mode Source: outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt (OK)
 - Coverage Risk: Daily threshold coverage target was met from fresh rolling scan evidence.
 - Same-Day Promotion Guard: TRUE
-- Validation Status: 1
+- Validation Status: 0
 - Auto Trade / Auto Sell Status: DISABLED / DISABLED
 
 ## 4. Universe Changes
 - Promotions: 0
-- Demotions: 128
-- Core Daily count: 40
-- Candidate count: 150
+- Demotions: 127
+- Core Daily count: 44
+- Candidate count: 147
 - Watchlist count: 0
-- Research count: 16
+- Research count: 17
 
 ## 5. What Changed Today
-0 promotion(s), 128 demotion(s), 92 unchanged row(s).
+0 promotion(s), 127 demotion(s), 96 unchanged row(s).
 
 ## 6. What To Read Next
 - [V18_CURRENT_TOP_RANKED_CANDIDATES.md](daily_packet/V18_CURRENT_TOP_RANKED_CANDIDATES.md)
@@ -54,11 +54,11 @@
 AUTO_TRADE: DISABLED
 AUTO_SELL: DISABLED
 OFFICIAL_DECISION_IMPACT: NONE
-VALIDATION_FAIL_COUNT: 1
+VALIDATION_FAIL_COUNT: 0
 COVERAGE_TARGET_MET: TRUE
 DAILY_THRESHOLD_COVERAGE_SOURCE: outputs/v18/ops/V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt
 DAILY_THRESHOLD_COVERAGE_SOURCE_STATUS: OK_FRESH_DAILY_SCAN_SOURCE
-DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME: 2026-05-27T12:59:02
+DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME: 2026-05-27T22:48:39
 DAILY_THRESHOLD_COVERAGE_SOURCE_SELECTION_REASON: Valid current-run read-first daily threshold evidence.
 DAILY_THRESHOLD_TARGET_MET: TRUE
 DAILY_THRESHOLD_SHORTFALL_COUNT: 0

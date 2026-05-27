@@ -1,15 +1,15 @@
 STATUS: WARN_V18_19A_DAILY_READABILITY_READY
-DAILY_TRUST_LEVEL: LOW
+DAILY_TRUST_LEVEL: MEDIUM
 TODAY_ACTION: Read-only daily refresh; coverage is acceptable but other warnings remain.
-MAIN_REASON: Validation failures or missing ranking source were detected. True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.
+MAIN_REASON: Current authoritative full-refresh chain is clean; true 5-day coverage remains nonblocking. True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.
 AUTO_TRADE: DISABLED
 AUTO_SELL: DISABLED
 OFFICIAL_DECISION_IMPACT: NONE
-VALIDATION_FAIL_COUNT: 1
+VALIDATION_FAIL_COUNT: 0
 COVERAGE_TARGET_MET: TRUE
 DAILY_THRESHOLD_COVERAGE_SOURCE: outputs/v18/ops/V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt
 DAILY_THRESHOLD_COVERAGE_SOURCE_STATUS: OK_FRESH_DAILY_SCAN_SOURCE
-DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME: 2026-05-27T12:59:02
+DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME: 2026-05-27T22:48:39
 DAILY_THRESHOLD_COVERAGE_SOURCE_SELECTION_REASON: Valid current-run read-first daily threshold evidence.
 DAILY_THRESHOLD_TARGET_MET: TRUE
 DAILY_THRESHOLD_SHORTFALL_COUNT: 0
@@ -18,7 +18,7 @@ TRUE_5DAY_UNIQUE_WARNING_PRESERVED: TRUE
 TODAY_ROLLING_SCAN_COUNT: 318
 DAILY_MIN_SCAN_COUNT: 67
 COVERAGE_SHORTFALL_COUNT: 0
-WARNINGS: True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.; Validation failures reported: 1.; Historical yfinance preflight failed.
+WARNINGS: True 5-day unique universe coverage remains unresolved; trust level is capped below HIGH.
 COMMAND_CENTER_SOURCE: outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt
 COMMAND_CENTER_SOURCE_STATUS: OK
 CURRENT_MODE_SOURCE: outputs/v18/read_center/V18_CURRENT_READ_FIRST.txt

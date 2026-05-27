@@ -1,5 +1,5 @@
 ﻿V17.8D RAW105 CURRENT-ONLY DAILY SUMMARY
-Generated: 2026-05-19 10:52:39
+Generated: 2026-05-27 22:22:01
 
 UPSTREAM_EXIT_CODE: 0
 
@@ -32,7 +32,7 @@ D:\us-tech-quant\outputs\v17\ops\V17_8D_upstream_8C_run.log
 CLEANUP REPORT:
 D:\us-tech-quant\outputs\v17\ops\V17_8C_cleanup_overwrite_report.csv
 
-TIMESTAMP_FILES_DELETED: 19
+TIMESTAMP_FILES_DELETED: 8
 TIMESTAMP_DELETE_FAILED: 0
 
 NOTE:

@@ -4,54 +4,54 @@
 
 - V18_6A_STATUS: `OK_TECHNICAL_TIMING_SHADOW_READY`
 - TOTAL_TICKER_COUNT: `105`
-- TECH_TIMING_WATCH_POSITIVE_COUNT: `8`
-- TECH_TIMING_PULLBACK_WATCH_COUNT: `10`
-- TECH_TIMING_OVERHEAT_AVOID_CHASE_COUNT: `6`
+- TECH_TIMING_WATCH_POSITIVE_COUNT: `1`
+- TECH_TIMING_PULLBACK_WATCH_COUNT: `1`
+- TECH_TIMING_OVERHEAT_AVOID_CHASE_COUNT: `17`
 - BB_SQUEEZE_COUNT: `9`
-- VIX_DATE: `2026-05-18`
-- VIX_CLOSE: `17.82`
+- VIX_DATE: `2026-05-27`
+- VIX_CLOSE: `16.86`
 - VIX_REGIME: `VIX_NORMAL`
 - OFFICIAL_DECISION_IMPACT: `NONE`
 
 ## 2. 技术择时分数靠前
 
-| ticker   | price_date   |   close |   technical_timing_score | technical_signal           | bb_status      | rsi_status   | kdj_status           |   volume_ratio_5_20 | technical_warning_label   |
-|:---------|:-------------|--------:|-------------------------:|:---------------------------|:---------------|:-------------|:---------------------|--------------------:|:--------------------------|
-| ANET     | 2026-05-18   |  141.71 |                       72 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF  | RSI_WEAK     | KDJ_LOW_GOLDEN_CROSS |              0.9989 | NONE                      |
-| APH      | 2026-05-18   |  121.72 |                       72 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF  | RSI_WEAK     | KDJ_OVERSOLD         |              1.0932 | NONE                      |
-| ECL      | 2026-05-18   |  249.21 |                       72 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF  | RSI_WEAK     | KDJ_LOW_GOLDEN_CROSS |              1.0846 | NONE                      |
-| HUBB     | 2026-05-18   |  470.87 |                       72 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF  | RSI_OVERSOLD | KDJ_OVERSOLD         |              0.9808 | NONE                      |
-| VST      | 2026-05-18   |  136.75 |                       72 | TECH_TIMING_WATCH_POSITIVE | BB_NEAR_LOWER  | RSI_WEAK     | KDJ_OVERSOLD         |              1.1279 | NONE                      |
-| ACM      | 2026-05-18   |   71.49 |                       68 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF  | RSI_OVERSOLD | KDJ_NEUTRAL          |              1.5309 | NONE                      |
-| CAMT     | 2026-05-18   |  155.74 |                       68 | TECH_TIMING_WATCH_POSITIVE | BB_BELOW_LOWER | RSI_WEAK     | KDJ_NEUTRAL          |              1.7349 | NONE                      |
-| CEG      | 2026-05-18   |  262    |                       68 | TECH_TIMING_WATCH_POSITIVE | BB_NEAR_LOWER  | RSI_WEAK     | KDJ_NEUTRAL          |              1.2911 | NONE                      |
-| CLS      | 2026-05-18   |  342.67 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_BELOW_LOWER | RSI_WEAK     | KDJ_NEUTRAL          |              0.7645 | NONE                      |
-| CRDO     | 2026-05-18   |  156.27 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_BELOW_LOWER | RSI_WEAK     | KDJ_NEUTRAL          |              1.0451 | NONE                      |
-| CRWV     | 2026-05-18   |  103.77 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_LOWER_HALF  | RSI_WEAK     | KDJ_NEUTRAL          |              0.9791 | NONE                      |
-| ENTG     | 2026-05-18   |  127.21 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_BELOW_LOWER | RSI_WEAK     | KDJ_NEUTRAL          |              0.8672 | NONE                      |
-| ETN      | 2026-05-18   |  381.87 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_BELOW_LOWER | RSI_WEAK     | KDJ_NEUTRAL          |              0.9033 | NONE                      |
-| ETR      | 2026-05-18   |  109.58 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_LOWER_HALF  | RSI_WEAK     | KDJ_NEUTRAL          |              0.9033 | NONE                      |
-| FLR      | 2026-05-18   |   44.35 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_LOWER_HALF  | RSI_WEAK     | KDJ_NEUTRAL          |              1.0508 | NONE                      |
+| ticker   | price_date   |   close |   technical_timing_score | technical_signal           | bb_status     | rsi_status   | kdj_status           |   volume_ratio_5_20 | technical_warning_label   |
+|:---------|:-------------|--------:|-------------------------:|:---------------------------|:--------------|:-------------|:---------------------|--------------------:|:--------------------------|
+| ACM      | 2026-05-26   |   72.47 |                       68 | TECH_TIMING_WATCH_POSITIVE | BB_LOWER_HALF | RSI_WEAK     | KDJ_NEUTRAL          |              1.3273 | NONE                      |
+| HUBB     | 2026-05-26   |  478.05 |                       64 | TECH_TIMING_PULLBACK_WATCH | BB_LOWER_HALF | RSI_WEAK     | KDJ_NEUTRAL          |              1.0536 | NONE                      |
+| KEYS     | 2026-05-26   |  355.74 |                       62 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_NEUTRAL  | KDJ_LOW_GOLDEN_CROSS |              1.6231 | NONE                      |
+| AMKR     | 2026-05-26   |   73.46 |                       58 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_NEUTRAL  | KDJ_LOW_GOLDEN_CROSS |              0.983  | NONE                      |
+| AMZN     | 2026-05-26   |  265.29 |                       58 | TECH_TIMING_NEUTRAL        | BB_LOWER_HALF | RSI_NEUTRAL  | KDJ_NEUTRAL          |              0.8152 | NONE                      |
+| CARR     | 2026-05-26   |   64.89 |                       58 | TECH_TIMING_NEUTRAL        | BB_MID        | RSI_NEUTRAL  | KDJ_LOW_GOLDEN_CROSS |              1.0457 | NONE                      |
+| CRWV     | 2026-05-26   |  105.89 |                       58 | TECH_TIMING_NEUTRAL        | BB_LOWER_HALF | RSI_NEUTRAL  | KDJ_NEUTRAL          |              0.8602 | NONE                      |
+| ETR      | 2026-05-26   |  111.97 |                       58 | TECH_TIMING_NEUTRAL        | BB_LOWER_HALF | RSI_NEUTRAL  | KDJ_NEUTRAL          |              0.8404 | NONE                      |
+| ICHR     | 2026-05-26   |   72.73 |                       58 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_NEUTRAL  | KDJ_LOW_GOLDEN_CROSS |              0.9894 | NONE                      |
+| MCHP     | 2026-05-26   |   98.05 |                       58 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_STRONG   | KDJ_LOW_GOLDEN_CROSS |              0.8402 | NONE                      |
+| POWL     | 2026-05-26   |  291.97 |                       58 | TECH_TIMING_NEUTRAL        | BB_MID        | RSI_NEUTRAL  | KDJ_LOW_GOLDEN_CROSS |              0.646  | NONE                      |
+| VRT      | 2026-05-26   |  323.91 |                       58 | TECH_TIMING_NEUTRAL        | BB_LOWER_HALF | RSI_NEUTRAL  | KDJ_NEUTRAL          |              1.0947 | NONE                      |
+| D        | 2026-05-26   |   67.28 |                       54 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_STRONG   | KDJ_NEUTRAL          |              1.3198 | NONE                      |
+| MOD      | 2026-05-26   |  295.88 |                       52 | TECH_TIMING_NEUTRAL        | BB_NEAR_UPPER | RSI_STRONG   | KDJ_LOW_GOLDEN_CROSS |              1.4341 | BB_UPPER_CHASE_RISK       |
+| ACLS     | 2026-05-26   |  164.27 |                       50 | TECH_TIMING_NEUTRAL        | BB_UPPER_HALF | RSI_STRONG   | KDJ_NEUTRAL          |              0.6645 | NONE                      |
 
 ## 3. 过热/追高风险靠前
 
 | ticker   | price_date   |   close |   technical_timing_score | technical_signal                 | bb_status      | rsi_status           | kdj_status           |   volume_ratio_5_20 | technical_warning_label                                       |
 |:---------|:-------------|--------:|-------------------------:|:---------------------------------|:---------------|:---------------------|:---------------------|--------------------:|:--------------------------------------------------------------|
-| CRWD     | 2026-05-18   |  618.83 |                       14 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_EXTREME_OVERHEAT |              1.2131 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_EXTREME_OVERHEAT |
-| PANW     | 2026-05-18   |  247.55 |                       14 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_EXTREME_OVERHEAT |              1.29   | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_EXTREME_OVERHEAT |
-| CSCO     | 2026-05-18   |  118.88 |                       19 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              1.6833 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT         |
-| ZS       | 2026-05-18   |  174.69 |                       29 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_OVERHEAT         | KDJ_OVERHEAT         |              1.4569 | BB_UPPER_CHASE_RISK;RSI_OVERHEAT;KDJ_OVERHEAT                 |
-| MDB      | 2026-05-18   |  330    |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_OVERHEAT         | KDJ_OVERHEAT         |              1.1882 | BB_UPPER_CHASE_RISK;RSI_OVERHEAT;KDJ_OVERHEAT                 |
-| DDOG     | 2026-05-18   |  208.82 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              0.7486 | RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT                             |
-| NTAP     | 2026-05-18   |  120.6  |                       34 | TECH_TIMING_NEUTRAL              | BB_NEAR_UPPER  | RSI_OVERHEAT         | KDJ_NEUTRAL          |              1.2785 | BB_UPPER_CHASE_RISK;RSI_OVERHEAT                              |
-| AAPL     | 2026-05-18   |  297.84 |                       30 | TECH_TIMING_NEUTRAL              | BB_UPPER_HALF  | RSI_OVERHEAT         | KDJ_HIGH_DEAD_CROSS  |              0.9234 | RSI_OVERHEAT;KDJ_HIGH_DEAD_CROSS                              |
-| TXN      | 2026-05-18   |  300.6  |                       30 | TECH_TIMING_NEUTRAL              | BB_UPPER_HALF  | RSI_OVERHEAT         | KDJ_OVERHEAT         |              0.7278 | RSI_OVERHEAT;KDJ_OVERHEAT                                     |
-| D        | 2026-05-18   |   67.56 |                       49 | TECH_TIMING_NEUTRAL              | BB_ABOVE_UPPER | RSI_STRONG           | KDJ_NEUTRAL          |              1.7841 | BB_UPPER_CHASE_RISK                                           |
-| AEHR     | 2026-05-18   |   83.57 |                       48 | TECH_TIMING_NEUTRAL              | BB_LOWER_HALF  | RSI_NEUTRAL          | KDJ_HIGH_DEAD_CROSS  |              0.9751 | KDJ_HIGH_DEAD_CROSS                                           |
-| ICHR     | 2026-05-18   |   66.6  |                       48 | TECH_TIMING_NEUTRAL              | BB_LOWER_HALF  | RSI_NEUTRAL          | KDJ_HIGH_DEAD_CROSS  |              0.8458 | KDJ_HIGH_DEAD_CROSS                                           |
-| NOW      | 2026-05-18   |  103.42 |                       45 | TECH_TIMING_NEUTRAL              | BB_ABOVE_UPPER | RSI_STRONG           | KDJ_NEUTRAL          |              1.0377 | BB_UPPER_CHASE_RISK                                           |
-| SNOW     | 2026-05-18   |  164.24 |                       45 | TECH_TIMING_NEUTRAL              | BB_ABOVE_UPPER | RSI_STRONG           | KDJ_NEUTRAL          |              1.019  | BB_UPPER_CHASE_RISK                                           |
-| ACMR     | 2026-05-18   |   63.25 |                       44 | TECH_TIMING_NEUTRAL              | BB_UPPER_HALF  | RSI_STRONG           | KDJ_HIGH_DEAD_CROSS  |              1.5598 | KDJ_HIGH_DEAD_CROSS                                           |
+| ALAB     | 2026-05-26   |  318.72 |                       14 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_EXTREME_OVERHEAT |              1.3068 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_EXTREME_OVERHEAT |
+| ACMR     | 2026-05-26   |   86.46 |                       10 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_EXTREME_OVERHEAT |              1.1252 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_EXTREME_OVERHEAT |
+| NTAP     | 2026-05-26   |  138.95 |                       19 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              1.4368 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT         |
+| HPE      | 2026-05-26   |   38.06 |                       15 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              0.998  | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT         |
+| IRDM     | 2026-05-26   |   50.16 |                       15 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              1.1027 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT         |
+| ZS       | 2026-05-26   |  184.6  |                       24 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_NEAR_UPPER  | RSI_OVERHEAT         | KDJ_OVERHEAT         |              1.3633 | BB_UPPER_CHASE_RISK;RSI_OVERHEAT;KDJ_OVERHEAT                 |
+| ARM      | 2026-05-26   |  321.22 |                       29 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_NEUTRAL          |              1.2812 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT                      |
+| DELL     | 2026-05-26   |  305.08 |                       29 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_NEUTRAL          |              1.201  | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT                      |
+| AAPL     | 2026-05-26   |  308.33 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_HIGH_DEAD_CROSS  |              0.8828 | RSI_EXTREME_OVERHEAT;KDJ_HIGH_DEAD_CROSS                      |
+| AMD      | 2026-05-26   |  503.89 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_NEAR_UPPER  | RSI_EXTREME_OVERHEAT | KDJ_NEUTRAL          |              0.8386 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT                      |
+| CRWD     | 2026-05-26   |  671.55 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              1.0833 | RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT                             |
+| CSCO     | 2026-05-26   |  118.33 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              0.973  | RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT                             |
+| DDOG     | 2026-05-26   |  223.65 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_OVERHEAT         |              0.7346 | RSI_EXTREME_OVERHEAT;KDJ_OVERHEAT                             |
+| MRVL     | 2026-05-26   |  208.26 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_ABOVE_UPPER | RSI_EXTREME_OVERHEAT | KDJ_NEUTRAL          |              1.1488 | BB_UPPER_CHASE_RISK;RSI_EXTREME_OVERHEAT                      |
+| PANW     | 2026-05-26   |  256.75 |                       25 | TECH_TIMING_OVERHEAT_AVOID_CHASE | BB_UPPER_HALF  | RSI_EXTREME_OVERHEAT | KDJ_HIGH_DEAD_CROSS  |              1.017  | RSI_EXTREME_OVERHEAT;KDJ_HIGH_DEAD_CROSS                      |
 
 ## 4. 说明
 

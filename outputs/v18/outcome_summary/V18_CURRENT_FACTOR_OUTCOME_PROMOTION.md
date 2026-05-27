@@ -1,10 +1,10 @@
 # V18.4B Factor Outcome Summary and Promotion Rules
 
 - V18_4B_STATUS: `OK_PROMOTION_RULES_UPDATED_NO_PROMOTION`
-- RUN_TIME: `2026-05-19 10:53:52`
-- TRACKER_TOTAL_ROWS: `420`
-- SNAPSHOT_DATE_COUNT: `4`
-- LATEST_SNAPSHOT_PRICE_DATE: `2026-05-18`
+- RUN_TIME: `2026-05-27 22:23:08`
+- TRACKER_TOTAL_ROWS: `525`
+- SNAPSHOT_DATE_COUNT: `5`
+- LATEST_SNAPSHOT_PRICE_DATE: `2026-05-26`
 
 ## Current Decision Context
 
@@ -17,8 +17,8 @@
 
 | horizon | completed_count |
 |---:|---:|
-| 1obs | 315 |
-| 3obs | 105 |
+| 1obs | 420 |
+| 3obs | 210 |
 | 5obs | 0 |
 | 10obs | 0 |
 | 20obs | 0 |
@@ -27,28 +27,28 @@
 
 | group | horizon | completed | avg % | median % | win rate % | min n | eval |
 |---|---:|---:|---:|---:|---:|---:|---|
-| factor_top10 | 1obs | 30 | 0.0936 | -0.3029 | 46.6667 | 20 | NEUTRAL_KEEP_WATCHING |
-| factor_top10 | 3obs | 10 | 0.5958 | -1.6422 | 30.0000 | 20 | WATCH_DATA_INSUFFICIENT |
+| factor_top10 | 1obs | 40 | 3.2124 | 1.8987 | 57.5000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top10 | 3obs | 20 | 4.8425 | 2.4923 | 55.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
 | factor_top10 | 5obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | factor_top10 | 10obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | factor_top10 | 20obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
-| factor_top30 | 1obs | 91 | -0.2884 | 0.0617 | 51.6484 | 40 | NEUTRAL_KEEP_WATCHING |
-| factor_top30 | 3obs | 30 | -0.1184 | -1.0573 | 40.0000 | 40 | WATCH_DATA_INSUFFICIENT |
+| factor_top30 | 1obs | 121 | 1.7006 | 0.5668 | 57.8512 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top30 | 3obs | 61 | 2.3301 | 1.7035 | 55.7377 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
 | factor_top30 | 5obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
 | factor_top30 | 10obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
 | factor_top30 | 20obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
-| official_review | 1obs | 30 | 0.1999 | 0.3411 | 50.0000 | 20 | KEEP_WATCHING_POSITIVE |
-| official_review | 3obs | 10 | 0.5847 | -1.9524 | 40.0000 | 20 | WATCH_DATA_INSUFFICIENT |
+| official_review | 1obs | 40 | 4.1712 | 1.8457 | 62.5000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| official_review | 3obs | 20 | 7.9614 | 5.8203 | 65.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
 | official_review | 5obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | official_review | 10obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | official_review | 20obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
-| factor_pack_overlap | 1obs | 13 | -0.8135 | -1.1261 | 46.1538 | 8 | NEUTRAL_KEEP_WATCHING |
-| factor_pack_overlap | 3obs | 4 | -3.3579 | -2.5739 | 0.0000 | 8 | WATCH_DATA_INSUFFICIENT |
+| factor_pack_overlap | 1obs | 14 | -0.6094 | -0.2107 | 50.0000 | 8 | NEUTRAL_KEEP_WATCHING |
+| factor_pack_overlap | 3obs | 10 | 4.5496 | 0.7508 | 50.0000 | 8 | KEEP_WATCHING_POSITIVE |
 | factor_pack_overlap | 5obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
 | factor_pack_overlap | 10obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
 | factor_pack_overlap | 20obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
-| v18_3c_overlap | 1obs | 6 | -0.7812 | 0.0060 | 50.0000 | 6 | NEUTRAL_KEEP_WATCHING |
-| v18_3c_overlap | 3obs | 2 | -2.5739 | -2.5739 | 0.0000 | 6 | WATCH_DATA_INSUFFICIENT |
+| v18_3c_overlap | 1obs | 8 | 9.1004 | 2.2489 | 62.5000 | 6 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| v18_3c_overlap | 3obs | 4 | 14.6252 | 10.3380 | 50.0000 | 6 | WATCH_DATA_INSUFFICIENT |
 | v18_3c_overlap | 5obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |
 | v18_3c_overlap | 10obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |
 | v18_3c_overlap | 20obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |

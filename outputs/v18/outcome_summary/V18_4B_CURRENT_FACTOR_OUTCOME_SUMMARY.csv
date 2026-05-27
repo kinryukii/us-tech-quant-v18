@@ -1,26 +1,26 @@
 ﻿group_key,group_label,horizon_obs,completed_count,unique_ticker_count,avg_return_pct,median_return_pct,win_rate_pct,best_return_pct,worst_return_pct,min_required_samples,promotion_eval
-factor_top10,Factor pack top10,1,30,17,0.0936,-0.3029,46.6667,8.7830,-8.7932,20,NEUTRAL_KEEP_WATCHING
-factor_top10,Factor pack top10,3,10,10,0.5958,-1.6422,30.0000,18.8053,-7.9233,20,WATCH_DATA_INSUFFICIENT
+factor_top10,Factor pack top10,1,40,21,3.2124,1.8987,57.5000,49.3213,-8.7932,20,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
+factor_top10,Factor pack top10,3,20,14,4.8425,2.4923,55.0000,39.3982,-7.9233,20,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
 factor_top10,Factor pack top10,5,0,0,,,,,,20,NO_COMPLETED_OBS_YET
 factor_top10,Factor pack top10,10,0,0,,,,,,20,NO_COMPLETED_OBS_YET
 factor_top10,Factor pack top10,20,0,0,,,,,,20,NO_COMPLETED_OBS_YET
-factor_top30,Factor pack top30,1,91,48,-0.2884,0.0617,51.6484,8.7830,-9.0505,40,NEUTRAL_KEEP_WATCHING
-factor_top30,Factor pack top30,3,30,30,-0.1184,-1.0573,40.0000,18.8053,-19.0605,40,WATCH_DATA_INSUFFICIENT
+factor_top30,Factor pack top30,1,121,52,1.7006,0.5668,57.8512,49.3213,-9.0505,40,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
+factor_top30,Factor pack top30,3,61,41,2.3301,1.7035,55.7377,39.3982,-19.0605,40,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
 factor_top30,Factor pack top30,5,0,0,,,,,,40,NO_COMPLETED_OBS_YET
 factor_top30,Factor pack top30,10,0,0,,,,,,40,NO_COMPLETED_OBS_YET
 factor_top30,Factor pack top30,20,0,0,,,,,,40,NO_COMPLETED_OBS_YET
-official_review,Official review 10,1,30,10,0.1999,0.3411,50.0000,8.4694,-8.4639,20,KEEP_WATCHING_POSITIVE
-official_review,Official review 10,3,10,10,0.5847,-1.9524,40.0000,14.6034,-6.7739,20,WATCH_DATA_INSUFFICIENT
+official_review,Official review 10,1,40,10,4.1712,1.8457,62.5000,49.3213,-8.4639,20,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
+official_review,Official review 10,3,20,10,7.9614,5.8203,65.0000,40.5777,-7.2889,20,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
 official_review,Official review 10,5,0,0,,,,,,20,NO_COMPLETED_OBS_YET
 official_review,Official review 10,10,0,0,,,,,,20,NO_COMPLETED_OBS_YET
 official_review,Official review 10,20,0,0,,,,,,20,NO_COMPLETED_OBS_YET
-factor_pack_overlap,Official review ∩ factor pack top30,1,13,7,-0.8135,-1.1261,46.1538,3.2955,-6.0544,8,NEUTRAL_KEEP_WATCHING
-factor_pack_overlap,Official review ∩ factor pack top30,3,4,4,-3.3579,-2.5739,0.0000,-1.5101,-6.7739,8,WATCH_DATA_INSUFFICIENT
+factor_pack_overlap,Official review ∩ factor pack top30,1,14,7,-0.6094,-0.2107,50.0000,3.2955,-6.0544,8,NEUTRAL_KEEP_WATCHING
+factor_pack_overlap,Official review ∩ factor pack top30,3,10,7,4.5496,0.7508,50.0000,24.3603,-7.2889,8,KEEP_WATCHING_POSITIVE
 factor_pack_overlap,Official review ∩ factor pack top30,5,0,0,,,,,,8,NO_COMPLETED_OBS_YET
 factor_pack_overlap,Official review ∩ factor pack top30,10,0,0,,,,,,8,NO_COMPLETED_OBS_YET
 factor_pack_overlap,Official review ∩ factor pack top30,20,0,0,,,,,,8,NO_COMPLETED_OBS_YET
-v18_3c_overlap,Official review ∩ V18.3C shadow,1,6,2,-0.7812,0.0060,50.0000,3.2955,-8.4639,6,NEUTRAL_KEEP_WATCHING
-v18_3c_overlap,Official review ∩ V18.3C shadow,3,2,2,-2.5739,-2.5739,0.0000,-2.3947,-2.7530,6,WATCH_DATA_INSUFFICIENT
+v18_3c_overlap,Official review ∩ V18.3C shadow,1,8,2,9.1004,2.2489,62.5000,49.3213,-8.4639,6,POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET
+v18_3c_overlap,Official review ∩ V18.3C shadow,3,4,2,14.6252,10.3380,50.0000,40.5777,-2.7530,6,WATCH_DATA_INSUFFICIENT
 v18_3c_overlap,Official review ∩ V18.3C shadow,5,0,0,,,,,,6,NO_COMPLETED_OBS_YET
 v18_3c_overlap,Official review ∩ V18.3C shadow,10,0,0,,,,,,6,NO_COMPLETED_OBS_YET
 v18_3c_overlap,Official review ∩ V18.3C shadow,20,0,0,,,,,,6,NO_COMPLETED_OBS_YET

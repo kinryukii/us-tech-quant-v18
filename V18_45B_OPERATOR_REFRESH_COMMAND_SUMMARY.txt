@@ -1,0 +1,322 @@
+V18.45B OPERATOR REFRESH COMMAND SUMMARY
+========================================
+
+目的
+----
+本文档用于记录 V18.45B 之后的日常操作指令。
+
+当前系统支持两种刷新模式：
+
+1. Rolling Refresh
+   - 日常省时间刷新
+   - 适合每天观察候选
+   - 速度更快
+   - 可能保留部分 stale price rows
+
+2. Full Refresh
+   - 严谨全量刷新
+   - 适合买入前、大行情后、重大事件后
+   - 会执行 full universe recompute + freshness audit
+   - 如果价格没有全部刷新到最新，会明确标出 stale tickers
+
+安全状态
+--------
+以下状态必须保持不变：
+
+AUTO_TRADE: DISABLED
+AUTO_SELL: DISABLED
+TRADING_EXECUTION_ALLOWED: FALSE
+BROKER_API_USED: FALSE
+ORDER_EXECUTION_USED: FALSE
+
+V18.45B 当前确认：
+
+RANKING_LOGIC_CHANGED: FALSE
+FACTOR_WEIGHTS_CHANGED: FALSE
+
+
+0. 进入环境
+-----------
+
+每次打开 PowerShell 后先执行：
+
+Set-Location "D:\us-tech-quant"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
+.\.venv\Scripts\Activate.ps1
+
+
+1. 日常省时间刷新：Rolling
+-------------------------
+
+适合：
+- 每天看盘
+- 只是观察候选
+- 不准备马上买入
+- 想节省时间
+
+推荐命令：
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_daily_rolling_refresh.ps1"
+
+等价命令：
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_current_daily_command_center.ps1" -RefreshMode Rolling
+
+
+2. 严谨全量刷新：Full
+--------------------
+
+适合：
+- 准备买入前
+- 大跌大涨后
+- 财报、FOMC、CPI、NVDA 等重大事件后
+- TopN 里 stale 太多时
+- 想重新全量重算候选池时
+
+推荐命令：
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_daily_full_refresh.ps1"
+
+等价命令：
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_current_daily_command_center.ps1" -RefreshMode Full
+
+
+3. 跑完后第一眼看什么
+---------------------
+
+先看 V18.45B 总状态：
+
+Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_45B_READ_FIRST.txt"
+
+再看当前 freshness：
+
+Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
+
+重点检查字段：
+
+REFRESH_MODE
+FULL_RANKING_RECOMPUTE_COMPLETE
+FULL_PRICE_REFRESH_COMPLETE
+STALE_TOPN_COUNT
+STALE_TOPN_TICKERS
+BUY_CANDIDATE_REPORT_TRUST
+BUY_CANDIDATE_REPORT_USABLE
+TRADING_EXECUTION_ALLOWED
+AUTO_TRADE
+AUTO_SELL
+
+
+4. 查看今天 TopN
+----------------
+
+查看 TopN 全表：
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv" |
+    Select-Object rank,ticker,latest_price_date,composite_candidate_score,final_action,freshness_status,stale_price_data_flag,actionable_allowed_by_freshness |
+    Format-Table -AutoSize
+
+判断规则：
+
+actionable_allowed_by_freshness = TRUE
+    可以参考，可进入实际观察名单。
+
+actionable_allowed_by_freshness = FALSE
+    不用于买点，不作为可行动候选。
+
+stale_price_data_flag = TRUE
+    价格数据不是最新，不用于买入判断。
+
+
+5. 只看可行动候选
+-----------------
+
+每天最推荐看的列表：
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv" |
+    Where-Object { $_.actionable_allowed_by_freshness -eq "TRUE" } |
+    Select-Object rank,ticker,latest_price_date,composite_candidate_score,final_action |
+    Format-Table -AutoSize
+
+
+6. 只看 stale 候选
+------------------
+
+这些票可以观察，但不能按系统当前 rank 直接买：
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv" |
+    Where-Object { $_.stale_price_data_flag -eq "TRUE" } |
+    Select-Object rank,ticker,latest_price_date,composite_candidate_score,final_action,freshness_status |
+    Format-Table -AutoSize
+
+当前常见 stale TopN 示例：
+
+VIAV
+SITM
+TSEM
+HUT
+
+只要它们显示：
+
+stale_price_data_flag = TRUE
+actionable_allowed_by_freshness = FALSE
+
+就不作为买入依据。
+
+
+7. 查看全池 freshness 分布
+-------------------------
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv" |
+    Group-Object latest_price_date |
+    Sort-Object Name |
+    Select-Object Name, Count |
+    Format-Table -AutoSize
+
+如果出现多个日期，例如：
+
+2026-05-20
+2026-05-21
+2026-05-22
+2026-05-26
+
+说明全池仍是混合新鲜度。
+
+如果全部集中在最新完整交易日，例如：
+
+2026-05-26  318
+
+说明 full price refresh 比较理想。
+
+
+8. 查看 Homepage
+----------------
+
+查看当前操作首页：
+
+Get-Content "D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_HOMEPAGE_V2.md"
+
+确认关键文件是否刚更新：
+
+Get-Item @(
+"D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_HOMEPAGE_V2.md",
+"D:\us-tech-quant\outputs\v18\ops\V18_CURRENT_DAILY_OPERATOR_HOMEPAGE_READ_FIRST.txt",
+"D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_BRIEF.md",
+"D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv",
+"D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv"
+) |
+Select-Object LastWriteTime, Length, FullName |
+Sort-Object LastWriteTime -Descending |
+Format-Table -AutoSize
+
+
+9. V18.45B 后的系统理解
+-----------------------
+
+Rolling:
+- 日常快速观察
+- 省时间
+- 可接受部分数据不是最新
+- 系统会用 freshness gate 标出 stale rows
+
+Full:
+- 买入前或重大行情后使用
+- 执行 full universe recompute
+- 执行 freshness audit
+- 如果仍存在 stale rows，会明确报告
+
+当前规则：
+- stale TopN 不会被当作 actionable
+- Homepage 会显示 refresh mode、stale TopN、trust level
+- 交易仍然完全关闭
+
+
+10. 最简每日流程
+----------------
+
+日常：
+
+Set-Location "D:\us-tech-quant"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
+.\.venv\Scripts\Activate.ps1
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_daily_rolling_refresh.ps1"
+
+Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv" |
+    Select-Object rank,ticker,latest_price_date,composite_candidate_score,final_action,freshness_status,stale_price_data_flag,actionable_allowed_by_freshness |
+    Format-Table -AutoSize
+
+
+买入前：
+
+Set-Location "D:\us-tech-quant"
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned -Force
+.\.venv\Scripts\Activate.ps1
+
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_daily_full_refresh.ps1"
+
+Get-Content "D:\us-tech-quant\outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
+
+Import-Csv "D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv" |
+    Select-Object rank,ticker,latest_price_date,composite_candidate_score,final_action,freshness_status,stale_price_data_flag,actionable_allowed_by_freshness |
+    Format-Table -AutoSize
+
+
+11. 当前已知状态
+----------------
+
+V18.45B 已修复：
+- Full / Rolling 入口清楚
+- Full wrapper 正确显示 REFRESH_MODE: Full
+- Rolling wrapper 正确显示 REFRESH_MODE: Rolling
+- Homepage current aliases 可以从 wrapper run 更新
+- V18.35D 会排除 pseudo tickers
+- stale TopN 会被 freshness gate 拦截
+- stale rows 的 actionable_allowed_by_freshness 为 FALSE
+
+V18.45B 仍需观察：
+- FULL_PRICE_REFRESH_COMPLETE 可能仍为 FALSE
+- yfinance 可能仍对部分真实 ticker 失败
+- stale TopN 仍可能存在
+
+当前已知 yfinance failed ticker-like symbols：
+
+CDTX
+CFLT
+COG
+JFROG
+MPW
+
+当前已知 stale TopN 示例：
+
+VIAV
+SITM
+TSEM
+HUT
+
+
+12. 使用原则
+------------
+
+只要看到：
+
+BUY_CANDIDATE_REPORT_TRUST: HIGH 或 MEDIUM
+BUY_CANDIDATE_REPORT_USABLE: TRUE
+TRADING_EXECUTION_ALLOWED: FALSE
+AUTO_TRADE: DISABLED
+AUTO_SELL: DISABLED
+
+则系统可以用于观察和研究。
+
+但实际买入前必须满足：
+
+1. 使用 Full Refresh。
+2. 查看 freshness audit。
+3. 只看 actionable_allowed_by_freshness = TRUE 的票。
+4. 不使用 stale_price_data_flag = TRUE 的票做买点判断。
+5. 最终仍需人工确认行情、财报、宏观事件和仓位风险。
+
+
+END OF V18.45B OPERATOR REFRESH COMMAND SUMMARY

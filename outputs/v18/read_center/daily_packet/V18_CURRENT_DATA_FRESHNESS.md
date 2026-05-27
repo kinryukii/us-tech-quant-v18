@@ -17,9 +17,9 @@
 
 ## Provider Condition
 
-- yfinance cache preflight pass/fail: FAIL
-- yfinance preflight failures: 20
-- cache repair failures: 20
+- yfinance cache preflight pass/fail: PASS
+- yfinance preflight failures: 0
+- cache repair failures: 0
 - local cache bootstrap rows already present: 102
 - local cache bootstrap rows with cache after: 103
 - event provider safe-mode rows: 318

@@ -20,12 +20,12 @@
 ## 4. Top20 Equal Weight 预览
 - 10000 USD included tickers: 20
 - Weight sum: 1.0000000000
-- Whole-share feasible: 17
+- Whole-share feasible: 16
 
 ## 5. Top20 Confidence Weighted 预览
 - 10000 USD included tickers: 20
 - Weight sum: 1.0000000000
-- Whole-share feasible: 17
+- Whole-share feasible: 16
 
 ## 6. Top50 capped / rank decay 预览
 - TOP50 capped weight sum: 1.0000000000

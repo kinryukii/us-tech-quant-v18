@@ -185,8 +185,23 @@ def build(root: Path) -> tuple[dict[str, object], list[dict[str, str]]]:
         and buy_usable == "TRUE"
         and trading_allowed == "FALSE"
     )
+    clean_operator_ready = (
+        blocking == 0
+        and daily_usable == "TRUE"
+        and buy_usable == "TRUE"
+        and remaining_action == 0
+        and mismatch == 0
+        and current_top_count > 0
+        and trading_allowed == "FALSE"
+    )
     nonblocking_warn = any(str(s).startswith("WARN_") for s in required_statuses)
-    if required_failed or not candidate_usable:
+    if required_failed:
+        status = "FAIL_V18_41A_DAILY_CLEAN_OPERATOR_PIPELINE_FAILED"
+        next_step = "Review required step READ_FIRST files before using today's candidate report."
+    elif clean_operator_ready and (nonblocking_warn or not candidate_usable):
+        status = "WARN_V18_41A_DAILY_CLEAN_OPERATOR_PIPELINE_REVIEW_NEEDED"
+        next_step = "Candidate report is usable; review nonblocking warnings and freshness audit before any buy-timing use."
+    elif not candidate_usable:
         status = "FAIL_V18_41A_DAILY_CLEAN_OPERATOR_PIPELINE_FAILED"
         next_step = "Review required step READ_FIRST files before using today's candidate report."
     elif nonblocking_warn:

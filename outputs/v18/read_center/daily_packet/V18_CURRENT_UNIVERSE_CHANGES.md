@@ -3,14 +3,14 @@
 - Source file: outputs/v18/universe/V18_CURRENT_PROMOTION_DEMOTION_AUDIT.csv
 - Audit rows: 318
 - Promotions: 0
-- Demotions: 128
-- Unchanged: 92
+- Demotions: 127
+- Unchanged: 96
 - Same-day guard: TRUE
 - Core promotion allowed this run: TRUE
-- Core Daily count: 40
-- Candidate count: 150
+- Core Daily count: 44
+- Candidate count: 147
 - Watchlist count: 0
-- Research count: 16
+- Research count: 17
 
 ## Notable Changes
 

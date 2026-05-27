@@ -7,7 +7,9 @@ param(
     [switch]$RunTopNRankingExplainer,
     [int]$TopNRankingExplainerCount = 20,
     [int]$TopNRankingExplainerNeighborWindow = 2,
-    [switch]$RunDailyOperatorHomepageV2
+    [switch]$RunDailyOperatorHomepageV2,
+    [ValidateSet("Rolling", "Full")]
+    [string]$RefreshMode = "Rolling"
 )
 
 $ErrorActionPreference = "Stop"
@@ -59,6 +61,7 @@ Write-Host "AUTO_TRADE: DISABLED"
 Write-Host "AUTO_SELL: DISABLED"
 Write-Host "BROKER_API_USED: FALSE"
 Write-Host "ORDER_EXECUTION_USED: FALSE"
+Write-Host "REFRESH_MODE: $RefreshMode"
 
 if (-not $SkipBaseCommandCenter) {
     Invoke-PipelineStep `
@@ -82,6 +85,7 @@ if ($RunSingleTickerExplainer) {
 if ($RunTopNRankingExplainer) {
     Invoke-PipelineStep -Name "Optional V18.43A Top-N ranking explainer packet" -Script (Join-Path $Root "scripts\v18\run_v18_43A_topn_ranking_explainer_packet.ps1") -Arguments @("-Root", $Root, "-TopN", [string]$TopNRankingExplainerCount, "-NeighborWindow", [string]$TopNRankingExplainerNeighborWindow, "-WriteCurrent", "-IncludeSingleTickerHints") -Required $false
 }
+Invoke-PipelineStep -Name "V18.45A ranked candidate freshness audit" -Script (Join-Path $Root "scripts\v18\run_v18_45A_current_ranked_candidate_freshness_audit.ps1") -Arguments @("-Root", $Root, "-RefreshMode", $RefreshMode) -Required $false
 Invoke-PipelineStep -Name "V18.39B portfolio target preview" -Script (Join-Path $Root "scripts\v18\run_v18_39B_portfolio_target_preview.ps1") -Arguments @("-Root", $Root) -Required $false
 Invoke-PipelineStep -Name "V18.39C shadow risk model preview" -Script (Join-Path $Root "scripts\v18\run_v18_39C_shadow_risk_model_preview.ps1") -Arguments @("-Root", $Root) -Required $false
 Invoke-PipelineStep -Name "V18.38C-R1 command status normalization" -Script (Join-Path $Root "scripts\v18\run_v18_38C_command_center_status_normalization.ps1") -Arguments @("-Root", $Root) -Required $false

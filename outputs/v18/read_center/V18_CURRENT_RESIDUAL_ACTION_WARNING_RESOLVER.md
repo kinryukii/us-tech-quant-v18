@@ -2,9 +2,12 @@
 
 ## Status
 - STATUS: OK_V18_40D_RESIDUAL_ACTION_WARNING_RESOLVER_CLEAN
-- RUN_ID: V18_40D_RESIDUAL_ACTION_WARNING_RESOLVER_20260527_143001
+- RUN_ID: V18_40D_RESIDUAL_ACTION_WARNING_RESOLVER_20260527_213511
 - APPLY_RESIDUAL_ACTION_WARNING_RESOLVER: TRUE
-- INPUT_RESIDUAL_ACTION_REQUIRED_COUNT: 4
+- INPUT_RESIDUAL_ACTION_REQUIRED_COUNT: 5
+- READABILITY_TRUST_WARNING_NONBLOCKING_COUNT: 1
+- V18_19A_READABILITY_WARNING_CLASSIFIED_NONBLOCKING: TRUE
+- UNKNOWN_REVIEW_REQUIRED_COUNT: 0
 - EXPECTED_REMAINING_ACTION_REQUIRED_COUNT: 0
 - DAILY_RUN_USABLE: TRUE
 - BUY_CANDIDATE_REPORT_USABLE: TRUE
@@ -13,6 +16,7 @@
 ## Detail
 | source | status | classification | remaining | reason |
 | --- | --- | --- | ---: | --- |
+| V18_19A_READ_FIRST.txt | WARN_V18_19A_DAILY_READABILITY_READY | READABILITY_TRUST_WARNING_NONBLOCKING | 0 | Daily readability trust warning caps operator trust level but does not block current candidate report usability when current candidate/top/full consistency is already proven. |
 | V18_34B_READ_FIRST.txt | WARN_V18_34B_DAILY_OUTPUT_FRESHNESS_REVIEW_NEEDED | STALE_BUT_NONCRITICAL_SUPPORTING_MODULE | 0 | Freshness/readability warning does not block current candidate report usability. |
 | V18_34C_READ_FIRST.txt | WARN_V18_34C_TRADE_READINESS_REFRESH_REVIEW_NEEDED | EXPECTED_NO_REAL_TRADING_MODE | 0 | Trade-readiness warning is expected in no-real-trading mode; freeze refresh evidence is full match. |
 | V18_35B_READ_FIRST.txt | WARN_V18_35B_CANDIDATE_SOURCE_NORMALIZATION_REVIEW_NEEDED | STALE_BUT_NONCRITICAL_SUPPORTING_MODULE | 0 | Candidate source normalization has warning count but current full/top/freeze consistency is proven by V18.39A/V18.40A. |

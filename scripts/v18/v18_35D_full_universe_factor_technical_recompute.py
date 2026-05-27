@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import math
+import re
 import shutil
 from collections import Counter
 from datetime import datetime
@@ -40,6 +41,8 @@ OUT_SUMMARY = "outputs/v18/ops/V18_35D_FULL_UNIVERSE_RECOMPUTE_SUMMARY.csv"
 OUT_REPORT = "outputs/v18/read_center/V18_35D_FULL_UNIVERSE_RECOMPUTE_REPORT.md"
 OUT_CURRENT_REPORT = "outputs/v18/read_center/V18_CURRENT_FULL_UNIVERSE_RECOMPUTE.md"
 OUT_READ_FIRST = "outputs/v18/ops/V18_35D_READ_FIRST.txt"
+OUT_SOURCE_AUDIT = "outputs/v18/ops/V18_46A_UNIVERSE_SOURCE_AUDIT.csv"
+QUARANTINE = "state/v18/excluded_or_unavailable_tickers.csv"
 
 STATUS_FIELDS = [
     "ticker", "in_total_universe", "in_current_full_candidates_before", "in_current_top_candidates_before",
@@ -49,6 +52,19 @@ STATUS_FIELDS = [
     "technical_calculation_success", "ranking_merge_attempted", "ranking_merge_success", "factor_score",
     "technical_timing_score", "recomputed_composite_score", "recomputed_rank", "rank_eligible",
     "calculation_status", "failure_bucket", "failure_reason", "evidence_sources",
+    "raw_universe_token_count", "sanitized_universe_count", "invalid_pseudo_ticker_count",
+    "invalid_pseudo_tickers", "yfinance_failed_ticker_count", "yfinance_failed_tickers",
+    "yfinance_failed_ticker_count_raw", "price_unavailable_excluded_count",
+    "price_unavailable_excluded_tickers", "current_price_refresh_blocking_failed_ticker_count",
+]
+
+SOURCE_AUDIT_FIELDS = [
+    "source_path", "source_type", "raw_token_count", "accepted_ticker_count",
+    "rejected_token_count", "rejected_token_sample",
+]
+
+QUARANTINE_FIELDS = [
+    "ticker", "reason", "first_seen_run_id", "last_seen_run_id", "provider", "last_error", "active",
 ]
 
 RANK_FIELDS = [
@@ -112,6 +128,90 @@ def ticker_set(rows: list[dict[str, str]]) -> set[str]:
     return {norm(r.get("ticker") or r.get("yf_ticker")) for r in rows if norm(r.get("ticker") or r.get("yf_ticker"))}
 
 
+HEADER_TOKENS = {"TICKER", "TICKERS", "SYMBOL", "SYMBOLS"}
+CONTROL_TOKENS = {"TRUE", "FALSE", "NONE", "NULL", "NAN"}
+TICKER_PATTERN = re.compile(r"^[A-Z][A-Z0-9]*(?:[.-][A-Z0-9]+)?$")
+
+
+def is_valid_ticker_token(token: str) -> bool:
+    token = norm(token)
+    if not token:
+        return False
+    if token.isdigit() or token in HEADER_TOKENS or token in CONTROL_TOKENS:
+        return False
+    if any(ch in token for ch in ("\\", "/", ";", ":", "|", "\t", "\n", "\r", " ")):
+        return False
+    if len(token) > 12:
+        return False
+    if token.startswith((".", "-")) or token.endswith((".", "-")):
+        return False
+    return bool(TICKER_PATTERN.match(token))
+
+
+def sanitize_ticker_tokens(tokens: Iterable[str]) -> tuple[list[str], list[str]]:
+    valid: list[str] = []
+    invalid: list[str] = []
+    for token in sorted({norm(t) for t in tokens if norm(t)}):
+        if is_valid_ticker_token(token):
+            valid.append(token)
+        else:
+            invalid.append(token)
+    return valid, invalid
+
+
+def structured_ticker_tokens(rows: list[dict[str, str]], fields: Sequence[str]) -> list[str]:
+    allowed = {"ticker", "symbol"}
+    cols = [field for field in fields if field.strip().lower() in allowed]
+    if not cols:
+        return []
+    out: list[str] = []
+    for row in rows:
+        for col in cols:
+            token = norm(row.get(col))
+            if token:
+                out.append(token)
+                break
+    return out
+
+
+def load_universe_tokens(root: Path, universe_rows: list[dict[str, str]], universe_fields: Sequence[str]) -> tuple[list[str], list[str], list[dict[str, object]], list[str]]:
+    raw_tokens = structured_ticker_tokens(universe_rows, universe_fields)
+    accepted, rejected = sanitize_ticker_tokens(raw_tokens)
+    audit_rows = [{
+        "source_path": UNIVERSE,
+        "source_type": "STRUCTURED_CSV_TICKER_COLUMN",
+        "raw_token_count": len(raw_tokens),
+        "accepted_ticker_count": len(accepted),
+        "rejected_token_count": len(rejected),
+        "rejected_token_sample": ", ".join(rejected[:50]),
+    }]
+    return accepted, raw_tokens, audit_rows, rejected
+
+
+def read_quarantine(path: Path) -> dict[str, dict[str, str]]:
+    rows, _ = read_csv(path)
+    out: dict[str, dict[str, str]] = {}
+    for row in rows:
+        ticker = norm(row.get("ticker"))
+        if ticker:
+            out[ticker] = row
+    return out
+
+
+def write_quarantine(path: Path, existing: dict[str, dict[str, str]], failed: dict[str, str], run_id: str) -> None:
+    for ticker, error in failed.items():
+        row = dict(existing.get(ticker, {}))
+        row["ticker"] = ticker
+        row["reason"] = "UNAVAILABLE_PRICE_DATA"
+        row["first_seen_run_id"] = row.get("first_seen_run_id") or run_id
+        row["last_seen_run_id"] = run_id
+        row["provider"] = "YFINANCE"
+        row["last_error"] = error
+        row["active"] = "TRUE"
+        existing[ticker] = row
+    write_csv(path, [existing[t] for t in sorted(existing)], QUARANTINE_FIELDS)
+
+
 def index_by_ticker(rows: list[dict[str, str]]) -> dict[str, dict[str, str]]:
     out: dict[str, dict[str, str]] = {}
     for row in rows:
@@ -130,6 +230,12 @@ def to_float(v: object) -> float | None:
         return None if math.isnan(x) or math.isinf(x) else x
     except Exception:
         return None
+
+
+def numeric_rank_valid(rows: list[dict[str, str]]) -> bool:
+    if not rows or "rank" not in rows[0]:
+        return False
+    return all(to_float(row.get("rank")) is not None for row in rows)
 
 
 def latest_freeze(rows: list[dict[str, str]]) -> set[str]:
@@ -360,6 +466,19 @@ def make_report(summary: dict[str, object], failure_counts: Counter, failures: l
         "缺价格或历史数据的 ticker 不会被伪造分数，只会写入失败原因。",
         "",
         "## 汇总",
+        f"- raw universe token count: `{summary['raw_universe_token_count']}`",
+        f"- sanitized universe count: `{summary['sanitized_universe_count']}`",
+        f"- invalid pseudo ticker count: `{summary['invalid_pseudo_ticker_count']}`",
+        f"- invalid pseudo tickers: `{summary['invalid_pseudo_tickers']}`",
+        f"- universe source rejected token count: `{summary['universe_source_rejected_token_count']}`",
+        f"- universe source rejected token sample: `{summary['universe_source_rejected_token_sample']}`",
+        f"- yfinance failed ticker count raw: `{summary['yfinance_failed_ticker_count_raw']}`",
+        f"- yfinance failed tickers: `{summary['yfinance_failed_tickers']}`",
+        f"- price unavailable excluded count: `{summary['price_unavailable_excluded_count']}`",
+        f"- price unavailable excluded tickers: `{summary['price_unavailable_excluded_tickers']}`",
+        f"- current price refresh blocking failed ticker count: `{summary['current_price_refresh_blocking_failed_ticker_count']}`",
+        f"- targeted stale retry attempted/success/still stale: `{summary['targeted_stale_retry_attempted_count']}` / `{summary['targeted_stale_retry_success_count']}` / `{summary['targeted_stale_retry_still_stale_count']}`",
+        f"- targeted stale retry still stale tickers: `{summary['targeted_stale_retry_still_stale_tickers']}`",
         f"- 总池数量: `{summary['total_universe_count']}`",
         f"- 实际尝试计算数量: `{summary['calculation_attempted_count']}`",
         f"- price data available/missing: `{summary['price_data_available_count']}` / `{summary['price_data_missing_count']}`",
@@ -409,7 +528,7 @@ def main() -> int:
     run_id = "V18_35D_" + stamp()
     generated_at = iso_now()
 
-    universe_rows, _ = read_csv(root / UNIVERSE)
+    universe_rows, universe_fields = read_csv(root / UNIVERSE)
     factor_current, factor_fields = read_csv(root / CURRENT_FACTOR)
     tech_current, tech_fields = read_csv(root / CURRENT_TECH)
     full_current, _ = read_csv(root / CURRENT_FULL)
@@ -419,7 +538,8 @@ def main() -> int:
     scan_plan, _ = read_csv(root / SCAN_PLAN)
     rolling_ledger, _ = read_csv(root / ROLLING_LEDGER)
 
-    universe = sorted(ticker_set(universe_rows))
+    universe, raw_universe_tokens, source_audit_rows, source_rejected_tokens = load_universe_tokens(root, universe_rows, universe_fields)
+    invalid_pseudo_tickers: list[str] = []
     full_set_before = ticker_set(full_current)
     ranked_set_before = ticker_set(ranked_current)
     top_set_before = ticker_set(top_current)
@@ -429,6 +549,20 @@ def main() -> int:
     universe_idx = index_by_ticker(universe_rows)
     factor_idx = index_by_ticker(factor_current)
     tech_idx = index_by_ticker(tech_current)
+    ranked_for_retry = [dict(row) for row in ranked_current if norm(row.get("ticker"))]
+    if numeric_rank_valid(ranked_for_retry):
+        ranked_for_retry.sort(key=lambda row: (to_float(row.get("rank")) or 10**9, norm(row.get("ticker"))))
+    else:
+        ranked_for_retry.sort(key=lambda row: (to_float(row.get("composite_candidate_score")) is None, -(to_float(row.get("composite_candidate_score")) or -10**9), norm(row.get("ticker"))))
+    ranked_dates = [str(row.get("latest_price_date", "")).strip() for row in ranked_for_retry if str(row.get("latest_price_date", "")).strip()]
+    max_ranked_price_date = max(ranked_dates) if ranked_dates else ""
+    targeted_stale_retry_tickers = {
+        norm(row.get("ticker"))
+        for row in ranked_for_retry[:50]
+        if max_ranked_price_date and str(row.get("latest_price_date", "")).strip() and str(row.get("latest_price_date", "")).strip() < max_ranked_price_date
+    }
+    targeted_stale_retry_success: set[str] = set()
+    targeted_stale_retry_still_stale: set[str] = set()
 
     fail_reasons: list[str] = []
     warnings: list[str] = []
@@ -442,6 +576,7 @@ def main() -> int:
     status_rows: list[dict[str, object]] = []
     factor_rows: list[dict[str, object]] = []
     tech_rows: list[dict[str, object]] = []
+    yfinance_failed_errors: dict[str, str] = {}
     evidence_factor = rel(root, root / CURRENT_FACTOR)
     evidence_tech = rel(root, root / CURRENT_TECH)
 
@@ -453,8 +588,11 @@ def main() -> int:
         price_source = ""
         prices: list[dict[str, object]] = []
         price_error = ""
-        existing_factor = factor_idx.get(ticker)
-        existing_tech = tech_idx.get(ticker)
+        targeted_retry = ticker in targeted_stale_retry_tickers
+        existing_factor_original = factor_idx.get(ticker)
+        existing_tech_original = tech_idx.get(ticker)
+        existing_factor = None if targeted_retry else existing_factor_original
+        existing_tech = None if targeted_retry else existing_tech_original
 
         if existing_factor:
             frow = dict(existing_factor)
@@ -465,7 +603,7 @@ def main() -> int:
             tech_rows.append(trow)
             evidence.append(evidence_tech)
 
-        if not existing_factor or not existing_tech:
+        if targeted_retry or not existing_factor or not existing_tech:
             cache_path = root / PRICE_CACHE / f"{ticker}.csv"
             prices, price_error = load_prices(cache_path)
             price_source = rel(root, cache_path)
@@ -473,6 +611,8 @@ def main() -> int:
                 prices, yf_error = download_prices_yf(ticker)
                 price_source = "YFINANCE_IN_MEMORY"
                 price_error = yf_error
+                if yf_error:
+                    yfinance_failed_errors[ticker] = yf_error
             if prices:
                 evidence.append(price_source)
                 if len(prices) >= 120:
@@ -490,6 +630,22 @@ def main() -> int:
                             existing_tech = {k: str(v) for k, v in trow.items()}
                         except Exception as exc:
                             price_error = f"technical calculation error: {type(exc).__name__}"
+                if targeted_retry:
+                    refreshed_date = str(prices[-1].get("date", "")).strip()
+                    if max_ranked_price_date and refreshed_date >= max_ranked_price_date and existing_factor and existing_tech:
+                        targeted_stale_retry_success.add(ticker)
+                    else:
+                        targeted_stale_retry_still_stale.add(ticker)
+            elif targeted_retry:
+                targeted_stale_retry_still_stale.add(ticker)
+
+        if targeted_retry:
+            if not existing_factor and existing_factor_original:
+                factor_rows.append(dict(existing_factor_original))
+                existing_factor = existing_factor_original
+            if not existing_tech and existing_tech_original:
+                tech_rows.append(dict(existing_tech_original))
+                existing_tech = existing_tech_original
 
         fscore = (existing_factor or {}).get("factor_pack_score", "")
         tscore = (existing_tech or {}).get("technical_timing_score", "")
@@ -508,7 +664,7 @@ def main() -> int:
             calc_status = "OK_COMPUTED"
             reason = "factor and technical calculations available"
         elif not price_available:
-            bucket = "PRICE_DATA_UNAVAILABLE"
+            bucket = "UNAVAILABLE_PRICE_DATA_EXCLUDED" if ticker in yfinance_failed_errors else "PRICE_DATA_UNAVAILABLE"
             calc_status = "CALCULATION_FAILED"
             reason = price_error or "no factor/technical row and no local price cache"
         elif prices and len(prices) < 120:
@@ -557,6 +713,16 @@ def main() -> int:
             "failure_bucket": bucket,
             "failure_reason": reason,
             "evidence_sources": ";".join(dict.fromkeys(evidence)),
+            "raw_universe_token_count": "",
+            "sanitized_universe_count": "",
+            "invalid_pseudo_ticker_count": "",
+            "invalid_pseudo_tickers": "",
+            "yfinance_failed_ticker_count": "",
+            "yfinance_failed_tickers": "",
+            "yfinance_failed_ticker_count_raw": "",
+            "price_unavailable_excluded_count": "",
+            "price_unavailable_excluded_tickers": "",
+            "current_price_refresh_blocking_failed_ticker_count": "",
             "_latest_close": latest_close,
             "_technical_status": (existing_tech or {}).get("technical_signal") or (existing_tech or {}).get("technical_warning_label", ""),
             "_pullback_status": (existing_tech or {}).get("bb_status", ""),
@@ -613,8 +779,64 @@ def main() -> int:
     write_csv(root / OUT_TECH, tech_rows, tech_fields)
     write_csv(root / OUT_RANKED, ranked_rows, RANK_FIELDS)
     write_csv(root / OUT_STATUS, status_rows, STATUS_FIELDS)
-    failures = [r for r in status_rows if r["failure_bucket"] != "OK_COMPUTED"]
+    yfinance_failed_tickers = sorted(yfinance_failed_errors)
+    price_unavailable_excluded_tickers = sorted(yfinance_failed_errors)
+    current_price_refresh_blocking_failed_tickers: list[str] = []
+    write_quarantine(root / QUARANTINE, read_quarantine(root / QUARANTINE), yfinance_failed_errors, run_id)
+    invalid_pseudo_failure_rows = [{
+        "ticker": ticker,
+        "in_total_universe": "FALSE",
+        "in_current_full_candidates_before": "FALSE",
+        "in_current_top_candidates_before": "FALSE",
+        "in_latest_signal_freeze": "FALSE",
+        "calculation_attempted": "FALSE",
+        "price_data_attempted": "FALSE",
+        "price_data_available": "FALSE",
+        "price_data_source": "SANITIZER_EXCLUDED_BEFORE_PRICE_LOOKUP",
+        "latest_price_date": "",
+        "history_row_count": "",
+        "history_start_date": "",
+        "history_end_date": "",
+        "factor_calculation_attempted": "FALSE",
+        "factor_calculation_success": "FALSE",
+        "technical_calculation_attempted": "FALSE",
+        "technical_calculation_success": "FALSE",
+        "ranking_merge_attempted": "FALSE",
+        "ranking_merge_success": "FALSE",
+        "factor_score": "",
+        "technical_timing_score": "",
+        "recomputed_composite_score": "",
+        "recomputed_rank": "",
+        "rank_eligible": "FALSE",
+        "calculation_status": "INPUT_REJECTED",
+        "failure_bucket": "INVALID_PSEUDO_TICKER",
+        "failure_reason": "Pseudo ticker removed before cache/yfinance lookup.",
+        "evidence_sources": UNIVERSE,
+        "raw_universe_token_count": len(raw_universe_tokens),
+        "sanitized_universe_count": len(universe),
+        "invalid_pseudo_ticker_count": len(invalid_pseudo_tickers),
+        "invalid_pseudo_tickers": ", ".join(invalid_pseudo_tickers),
+        "yfinance_failed_ticker_count": len(yfinance_failed_tickers),
+        "yfinance_failed_tickers": ", ".join(yfinance_failed_tickers),
+        "yfinance_failed_ticker_count_raw": len(yfinance_failed_tickers),
+        "price_unavailable_excluded_count": len(price_unavailable_excluded_tickers),
+        "price_unavailable_excluded_tickers": ", ".join(price_unavailable_excluded_tickers),
+        "current_price_refresh_blocking_failed_ticker_count": len(current_price_refresh_blocking_failed_tickers),
+    } for ticker in invalid_pseudo_tickers]
+    failures = invalid_pseudo_failure_rows + [r for r in status_rows if r["failure_bucket"] != "OK_COMPUTED"]
+    for row in failures:
+        row["raw_universe_token_count"] = row.get("raw_universe_token_count") or len(raw_universe_tokens)
+        row["sanitized_universe_count"] = row.get("sanitized_universe_count") or len(universe)
+        row["invalid_pseudo_ticker_count"] = row.get("invalid_pseudo_ticker_count") or len(invalid_pseudo_tickers)
+        row["invalid_pseudo_tickers"] = row.get("invalid_pseudo_tickers") or ", ".join(invalid_pseudo_tickers)
+        row["yfinance_failed_ticker_count"] = row.get("yfinance_failed_ticker_count") or len(yfinance_failed_tickers)
+        row["yfinance_failed_tickers"] = row.get("yfinance_failed_tickers") or ", ".join(yfinance_failed_tickers)
+        row["yfinance_failed_ticker_count_raw"] = row.get("yfinance_failed_ticker_count_raw") or len(yfinance_failed_tickers)
+        row["price_unavailable_excluded_count"] = row.get("price_unavailable_excluded_count") or len(price_unavailable_excluded_tickers)
+        row["price_unavailable_excluded_tickers"] = row.get("price_unavailable_excluded_tickers") or ", ".join(price_unavailable_excluded_tickers)
+        row["current_price_refresh_blocking_failed_ticker_count"] = row.get("current_price_refresh_blocking_failed_ticker_count") or len(current_price_refresh_blocking_failed_tickers)
     write_csv(root / OUT_FAILURES, failures, STATUS_FIELDS)
+    write_csv(root / OUT_SOURCE_AUDIT, source_audit_rows, SOURCE_AUDIT_FIELDS)
     write_csv(root / OUT_PREVIEW, ranked_rows, RANK_FIELDS)
 
     backup_path = "NONE"
@@ -639,6 +861,22 @@ def main() -> int:
         "generated_at": generated_at,
         "use_yfinance_for_full_universe_recompute": str(args.use_yfinance_for_full_universe_recompute).upper(),
         "apply_full_universe_recomputed_candidates": str(args.apply_full_universe_recomputed_candidates).upper(),
+        "raw_universe_token_count": len(raw_universe_tokens),
+        "sanitized_universe_count": len(universe),
+        "invalid_pseudo_ticker_count": len(invalid_pseudo_tickers),
+        "invalid_pseudo_tickers": ", ".join(invalid_pseudo_tickers),
+        "yfinance_failed_ticker_count": len(yfinance_failed_tickers),
+        "yfinance_failed_tickers": ", ".join(yfinance_failed_tickers),
+        "yfinance_failed_ticker_count_raw": len(yfinance_failed_tickers),
+        "price_unavailable_excluded_count": len(price_unavailable_excluded_tickers),
+        "price_unavailable_excluded_tickers": ", ".join(price_unavailable_excluded_tickers),
+        "current_price_refresh_blocking_failed_ticker_count": len(current_price_refresh_blocking_failed_tickers),
+        "targeted_stale_retry_attempted_count": len(targeted_stale_retry_tickers),
+        "targeted_stale_retry_success_count": len(targeted_stale_retry_success),
+        "targeted_stale_retry_still_stale_count": len(targeted_stale_retry_still_stale),
+        "targeted_stale_retry_still_stale_tickers": ", ".join(sorted(targeted_stale_retry_still_stale)),
+        "universe_source_rejected_token_count": len(source_rejected_tokens),
+        "universe_source_rejected_token_sample": ", ".join(source_rejected_tokens[:50]),
         "total_universe_count": len(universe),
         "calculation_attempted_count": sum(1 for r in status_rows if r["calculation_attempted"] == "TRUE"),
         "price_data_available_count": sum(1 for r in status_rows if r["price_data_available"] == "TRUE"),
@@ -670,6 +908,10 @@ def main() -> int:
 
     if failures:
         warnings.append("some total universe tickers failed computation")
+    if invalid_pseudo_tickers:
+        warnings.append("invalid pseudo tickers were removed before price lookup")
+    if yfinance_failed_tickers:
+        warnings.append("some ticker-like symbols were quarantined as unavailable price data")
     if len(ranked_rows) < len(universe):
         warnings.append("some total universe tickers remain rank_ineligible")
     if not args.apply_full_universe_recomputed_candidates:
@@ -692,6 +934,22 @@ def main() -> int:
         f"RUN_ID: {run_id}",
         f"USE_YFINANCE_FOR_FULL_UNIVERSE_RECOMPUTE: {summary['use_yfinance_for_full_universe_recompute']}",
         f"APPLY_FULL_UNIVERSE_RECOMPUTED_CANDIDATES: {summary['apply_full_universe_recomputed_candidates']}",
+        f"RAW_UNIVERSE_TOKEN_COUNT: {summary['raw_universe_token_count']}",
+        f"SANITIZED_UNIVERSE_COUNT: {summary['sanitized_universe_count']}",
+        f"INVALID_PSEUDO_TICKER_COUNT: {summary['invalid_pseudo_ticker_count']}",
+        f"INVALID_PSEUDO_TICKERS: {summary['invalid_pseudo_tickers']}",
+        f"UNIVERSE_SOURCE_REJECTED_TOKEN_COUNT: {summary['universe_source_rejected_token_count']}",
+        f"UNIVERSE_SOURCE_REJECTED_TOKEN_SAMPLE: {summary['universe_source_rejected_token_sample']}",
+        f"YFINANCE_FAILED_TICKER_COUNT: {summary['yfinance_failed_ticker_count']}",
+        f"YFINANCE_FAILED_TICKERS: {summary['yfinance_failed_tickers']}",
+        f"YFINANCE_FAILED_TICKER_COUNT_RAW: {summary['yfinance_failed_ticker_count_raw']}",
+        f"PRICE_UNAVAILABLE_EXCLUDED_COUNT: {summary['price_unavailable_excluded_count']}",
+        f"PRICE_UNAVAILABLE_EXCLUDED_TICKERS: {summary['price_unavailable_excluded_tickers']}",
+        f"CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKER_COUNT: {summary['current_price_refresh_blocking_failed_ticker_count']}",
+        f"TARGETED_STALE_RETRY_ATTEMPTED_COUNT: {summary['targeted_stale_retry_attempted_count']}",
+        f"TARGETED_STALE_RETRY_SUCCESS_COUNT: {summary['targeted_stale_retry_success_count']}",
+        f"TARGETED_STALE_RETRY_STILL_STALE_COUNT: {summary['targeted_stale_retry_still_stale_count']}",
+        f"TARGETED_STALE_RETRY_STILL_STALE_TICKERS: {summary['targeted_stale_retry_still_stale_tickers']}",
         f"TOTAL_UNIVERSE_COUNT: {summary['total_universe_count']}",
         f"CALCULATION_ATTEMPTED_COUNT: {summary['calculation_attempted_count']}",
         f"PRICE_DATA_AVAILABLE_COUNT: {summary['price_data_available_count']}",
@@ -722,6 +980,8 @@ def main() -> int:
         f"RECOMPUTED_RANKED_CANDIDATES_CSV: {OUT_RANKED}",
         f"FAILURES_CSV: {OUT_FAILURES}",
         f"SUMMARY_CSV: {OUT_SUMMARY}",
+        f"UNIVERSE_SOURCE_AUDIT_CSV: {OUT_SOURCE_AUDIT}",
+        f"EXCLUDED_OR_UNAVAILABLE_TICKERS_CSV: {QUARANTINE}",
         "OFFICIAL_DECISION_IMPACT: NONE",
         "AUTO_TRADE: DISABLED",
         "AUTO_SELL: DISABLED",
@@ -730,7 +990,7 @@ def main() -> int:
     ]
     write_text(root / OUT_READ_FIRST, "\n".join(read_first_lines))
 
-    for key in ["status", "run_id", "total_universe_count", "calculation_attempted_count", "rank_eligible_count", "rank_ineligible_count", "backup_path", "warning_count", "fail_count"]:
+    for key in ["status", "run_id", "raw_universe_token_count", "sanitized_universe_count", "invalid_pseudo_ticker_count", "yfinance_failed_ticker_count", "total_universe_count", "calculation_attempted_count", "rank_eligible_count", "rank_ineligible_count", "backup_path", "warning_count", "fail_count"]:
         print(f"{key.upper()}: {summary[key]}")
     print(f"REPORT: {root / OUT_CURRENT_REPORT}")
     print(f"READ_FIRST: {root / OUT_READ_FIRST}")

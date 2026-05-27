@@ -2,7 +2,7 @@
 
 ## Status
 - STATUS: OK_V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_FIXED
-- RUN_ID: V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_20260527_142955
+- RUN_ID: V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_20260527_234153
 - APPLY_CANDIDATE_TOP_FULL_CANONICAL_SYNC: TRUE
 
 ## Comparison
@@ -14,7 +14,7 @@
 - Only current top count: 0
 - Only full top20 count: 0
 - Order matches full top20: TRUE
-- Backup path: D:/us-tech-quant/archive/v18/candidate_top_full_sync_backups/V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_20260527_142955
+- Backup path: D:/us-tech-quant/archive/v18/candidate_top_full_sync_backups/V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_20260527_234153
 
 ## Diff
 | bucket | position | ticker | current_top_position | full_top20_position | notes |

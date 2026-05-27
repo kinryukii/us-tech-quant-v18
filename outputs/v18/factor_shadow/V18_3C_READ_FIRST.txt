@@ -1,0 +1,22 @@
+﻿=== V18.3C FACTOR SHADOW DAILY READ FIRST ===
+
+STATUS:
+V18_3C_STATUS: OK_FACTOR_SHADOW_DAILY_WRAPPER_READY
+
+OFFICIAL_DECISION_IMPACT:
+NONE
+
+PROMOTION_ACTION:
+NONE
+
+READ:
+D:\us-tech-quant\outputs\v18\factor_shadow\V18_3A_READ_FIRST.txt
+D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_R2_READ_FIRST.txt
+D:\us-tech-quant\outputs\v18\factor_shadow\V18_3B_R2_SHADOW_OFFICIAL_COMPARE_REPORT.md
+D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv
+
+NEXT_STEP:
+Run this wrapper after each V17.8D official daily run. Run V18.4A only after forward trading days are available.
+
+IMPORTANT:
+This wrapper refreshes shadow factors only. It does not promote factors and does not change official BUY / NO_BUY.

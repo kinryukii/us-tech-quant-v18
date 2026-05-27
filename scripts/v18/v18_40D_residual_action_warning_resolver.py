@@ -44,6 +44,7 @@ CLASSIFICATIONS = [
     "RESOLVED_BY_LATEST_SUCCESSFUL_RERUN",
     "EXPECTED_NO_REAL_TRADING_MODE",
     "EXPECTED_FORWARD_PENDING_OR_IMMATURE_HORIZON",
+    "READABILITY_TRUST_WARNING_NONBLOCKING",
     "STALE_BUT_NONCRITICAL_SUPPORTING_MODULE",
     "TRUE_ACTION_REQUIRED_REFRESH",
     "TRUE_ACTION_REQUIRED_CODE_FIX",
@@ -58,6 +59,8 @@ SUMMARY_FIELDS = [
     "resolved_by_latest_successful_rerun_count",
     "expected_no_real_trading_mode_count",
     "expected_forward_pending_or_immature_horizon_count",
+    "readability_trust_warning_nonblocking_count",
+    "v18_19a_readability_warning_classified_nonblocking",
     "stale_but_noncritical_supporting_module_count",
     "true_action_required_refresh_count",
     "true_action_required_code_fix_count",
@@ -193,6 +196,16 @@ def classify_source(source_name: str, read: dict[str, str], read39a: dict[str, s
     if "ERROR" in status.upper() or "TRACEBACK" in status.upper() or "RUNTIME" in status.upper():
         return "TRUE_ACTION_REQUIRED_CODE_FIX", 1, "Source status indicates a code/runtime failure.", common_evidence
 
+    if source_name == "V18_19A_READ_FIRST.txt" and status == "WARN_V18_19A_DAILY_READABILITY_READY":
+        if daily_usable and buy_usable and top_full_clean:
+            return (
+                "READABILITY_TRUST_WARNING_NONBLOCKING",
+                0,
+                "Daily readability trust warning caps operator trust level but does not block current candidate report usability when current candidate/top/full consistency is already proven.",
+                common_evidence,
+            )
+        return "TRUE_ACTION_REQUIRED_REFRESH", 1, "V18.19A readability warning remains action-required because current candidate usability or top/full consistency is not proven.", common_evidence
+
     if source_name == "V18_35F_READ_FIRST.txt":
         ok = (
             status.startswith("OK")
@@ -306,6 +319,12 @@ def build_summary(run_id: str, apply: bool, status: str, input_count: int, detai
         "resolved_by_latest_successful_rerun_count": counts["RESOLVED_BY_LATEST_SUCCESSFUL_RERUN"],
         "expected_no_real_trading_mode_count": counts["EXPECTED_NO_REAL_TRADING_MODE"],
         "expected_forward_pending_or_immature_horizon_count": counts["EXPECTED_FORWARD_PENDING_OR_IMMATURE_HORIZON"],
+        "readability_trust_warning_nonblocking_count": counts["READABILITY_TRUST_WARNING_NONBLOCKING"],
+        "v18_19a_readability_warning_classified_nonblocking": str(any(
+            str(row.get("source_name")) == "V18_19A_READ_FIRST.txt"
+            and str(row.get("classification")) == "READABILITY_TRUST_WARNING_NONBLOCKING"
+            for row in detail
+        )).upper(),
         "stale_but_noncritical_supporting_module_count": counts["STALE_BUT_NONCRITICAL_SUPPORTING_MODULE"],
         "true_action_required_refresh_count": counts["TRUE_ACTION_REQUIRED_REFRESH"],
         "true_action_required_code_fix_count": counts["TRUE_ACTION_REQUIRED_CODE_FIX"],
@@ -348,6 +367,8 @@ def render_read_first(summary: dict[str, object]) -> str:
         "RESOLVED_BY_LATEST_SUCCESSFUL_RERUN_COUNT",
         "EXPECTED_NO_REAL_TRADING_MODE_COUNT",
         "EXPECTED_FORWARD_PENDING_OR_IMMATURE_HORIZON_COUNT",
+        "READABILITY_TRUST_WARNING_NONBLOCKING_COUNT",
+        "V18_19A_READABILITY_WARNING_CLASSIFIED_NONBLOCKING",
         "STALE_BUT_NONCRITICAL_SUPPORTING_MODULE_COUNT",
         "TRUE_ACTION_REQUIRED_REFRESH_COUNT",
         "TRUE_ACTION_REQUIRED_CODE_FIX_COUNT",
@@ -384,6 +405,9 @@ def render_report(summary: dict[str, object], detail: list[dict[str, object]]) -
         f"- RUN_ID: {summary.get('run_id')}",
         f"- APPLY_RESIDUAL_ACTION_WARNING_RESOLVER: {summary.get('apply_residual_action_warning_resolver')}",
         f"- INPUT_RESIDUAL_ACTION_REQUIRED_COUNT: {summary.get('input_residual_action_required_count')}",
+        f"- READABILITY_TRUST_WARNING_NONBLOCKING_COUNT: {summary.get('readability_trust_warning_nonblocking_count')}",
+        f"- V18_19A_READABILITY_WARNING_CLASSIFIED_NONBLOCKING: {summary.get('v18_19a_readability_warning_classified_nonblocking')}",
+        f"- UNKNOWN_REVIEW_REQUIRED_COUNT: {summary.get('unknown_review_required_count')}",
         f"- EXPECTED_REMAINING_ACTION_REQUIRED_COUNT: {summary.get('expected_remaining_action_required_count')}",
         f"- DAILY_RUN_USABLE: {summary.get('daily_run_usable')}",
         f"- BUY_CANDIDATE_REPORT_USABLE: {summary.get('buy_candidate_report_usable')}",

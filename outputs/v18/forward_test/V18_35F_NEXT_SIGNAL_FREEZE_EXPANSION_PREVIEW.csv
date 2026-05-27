@@ -1,2 +1,2 @@
 ﻿run_id,generated_at,signal_date,latest_signal_date_before,freeze_expansion_mode,apply_next_signal_freeze_expansion,latest_freeze_count_before,current_full_candidate_count,planned_new_freeze_count,new_ready_candidate_count,add_new_ready_candidate_count,keep_existing_freeze_count
-V18_35F_20260527_142955,2026-05-27T14:29:55,2026-05-27,2026-05-27,SAME_DAY_REPLACE_252_TO_318,TRUE,318,318,318,0,0,318
+V18_35F_20260527_175227,2026-05-27T17:52:27,2026-05-27,2026-05-27,SAME_DAY_REPLACE_252_TO_318,TRUE,318,318,318,0,0,318
