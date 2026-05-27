@@ -1,4 +1,6 @@
 param(
+    [ValidateSet("Rolling", "Full")]
+    [string]$RefreshMode = "Rolling",
     [switch]$UseYFinance,
     [switch]$FullDaily,
     [switch]$ReadCenterRefreshOnly,
@@ -8,6 +10,8 @@ param(
     [switch]$RunTradeReadinessRefresh,
     [switch]$RunChineseHomepage,
     [switch]$RunFreshnessGuard,
+    [switch]$RunLegacyChineseHomepage,
+    [switch]$RunLegacyDailyOutputFreshnessGuard,
     [switch]$RunCandidateSourceNormalization,
     [switch]$ApplyCandidateCanonicalAliasRepair,
     [switch]$RunCandidateSourceDependencyReview,
@@ -80,6 +84,86 @@ if ($RunManualFeedback -and -not (Test-Path $Run15B)) { throw "Missing V18.15B w
 if ($RunUniverseRollingScan -and -not (Test-Path $Run16F)) { throw "Missing V18.16F wrapper: $Run16F" }
 if (-not (Test-Path $Run19A)) { throw "Missing V18.19A wrapper: $Run19A" }
 
+$RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
+$ManualModeExplicit = (
+    $FullDaily -or $ReadCenterRefreshOnly -or $ValidateOnly -or
+    $RunUniverseRollingScan -or $RunForwardTracker -or $RunManualFeedback -or
+    $RunFullUniverseFactorTechnicalRecompute -or $ApplyFullUniverseRecomputedCandidates -or
+    $RunCandidateTopFullCanonicalSync -or $ApplyCandidateTopFullCanonicalSync
+)
+$ApplyRefreshModePreset = $RefreshModeExplicit -or -not $ManualModeExplicit
+if ($ApplyRefreshModePreset) {
+    $FullDaily = $true
+    if ($RefreshMode -eq "Full") {
+        $UseYFinance = $true
+        $RunFullUniverseFactorTechnicalRecompute = $true
+        $UseYFinanceForFullUniverseRecompute = $true
+        $ApplyFullUniverseRecomputedCandidates = $true
+        $RunCandidateTopFullCanonicalSync = $true
+        $ApplyCandidateTopFullCanonicalSync = $true
+    }
+    else {
+        $RunForwardTracker = $true
+        $RunManualFeedback = $true
+        $RunUniverseRollingScan = $true
+        $RunChineseHomepage = $true
+        $RunFreshnessGuard = $true
+    }
+}
+
+function Read-V18KeyValueFile {
+    param([string]$Path)
+    $Map = @{}
+    if (Test-Path $Path) {
+        foreach ($Line in (Get-Content $Path)) {
+            if ($Line -match "^\s*([^:]+):\s*(.*)\s*$") {
+                $Map[$Matches[1].Trim()] = $Matches[2].Trim()
+            }
+        }
+    }
+    return $Map
+}
+
+function Get-V18CurrentAuthoritativeChainStatus {
+    $Read35D = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_35D_READ_FIRST.txt")
+    $Read40A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_40A_READ_FIRST.txt")
+    $Read41A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_41A_READ_FIRST.txt")
+    $Read44A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_44A_READ_FIRST.txt")
+    $Read45A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt")
+
+    $Reasons = @()
+    if ($RefreshMode -ne "Full") { $Reasons += "REFRESH_MODE_NOT_FULL" }
+    if (-not $Read35D.ContainsKey("STATUS") -or $Read35D["STATUS"].StartsWith("FAIL_")) { $Reasons += "FULL_UNIVERSE_RECOMPUTE_NOT_READY" }
+    if ($Read45A["FULL_RANKING_RECOMPUTE_COMPLETE"] -ne "TRUE") { $Reasons += "FULL_RANKING_RECOMPUTE_NOT_COMPLETE" }
+    if ($Read40A["MISMATCH_COUNT"] -ne "0" -or $Read40A["ORDER_MATCHES_FULL_TOP20"] -ne "TRUE") { $Reasons += "TOP_FULL_SYNC_NOT_READY" }
+    if ($Read45A["TOPN_CURRENT_READY"] -ne "TRUE" -or $Read45A["FRESH_TOPN_COUNT"] -ne "20" -or $Read45A["STALE_TOPN_COUNT"] -ne "0") { $Reasons += "CURRENT_TOPN_NOT_READY" }
+    if ($Read45A["FULL_PRICE_REFRESH_COMPLETE"] -ne "TRUE") { $Reasons += "FULL_PRICE_REFRESH_NOT_COMPLETE" }
+    if ($Read45A["CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKER_COUNT"] -ne "0") { $Reasons += "CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKERS_PRESENT" }
+    if (-not $Read44A.ContainsKey("STATUS") -or $Read44A["STATUS"].StartsWith("FAIL_")) { $Reasons += "HOMEPAGE_CONSOLIDATION_NOT_READY" }
+    if ($Read41A["TOP_FULL_MISMATCH_COUNT"] -ne "0") { $Reasons += "TOP_FULL_MISMATCH_EXISTS" }
+    if ($Read41A["BLOCKING_CURRENT_FAILURE_COUNT"] -ne "0") { $Reasons += "BLOCKING_CURRENT_FAILURE_EXISTS" }
+    if (
+        $Read41A["TRADING_EXECUTION_ALLOWED"] -ne "FALSE" -or
+        $Read41A["AUTO_TRADE"] -ne "DISABLED" -or
+        $Read41A["AUTO_SELL"] -ne "DISABLED" -or
+        $Read41A["BROKER_API_USED"] -ne "FALSE" -or
+        $Read41A["ORDER_EXECUTION_USED"] -ne "FALSE"
+    ) {
+        $Reasons += "TRADING_SAFETY_FIELDS_MISSING"
+    }
+
+    $Ready = $Reasons.Count -eq 0
+    return @{
+        Ready = $Ready
+        BlockedReason = if ($Ready) { "NONE" } else { ($Reasons -join ";") }
+        Read35D = $Read35D
+        Read40A = $Read40A
+        Read41A = $Read41A
+        Read44A = $Read44A
+        Read45A = $Read45A
+    }
+}
+
 function Invoke-V18_19AReadabilityRefresh {
     if ($RunTradeReadinessRefresh) {
         Write-Host ""
@@ -92,7 +176,7 @@ function Invoke-V18_19AReadabilityRefresh {
         }
         Write-Host "V18_34C_TRADE_READINESS_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_DAILY_TRADE_READINESS.md')"
     }
-    if ($RunChineseHomepage) {
+    if ($RunChineseHomepage -or $RunLegacyChineseHomepage) {
         Write-Host ""
         Write-Host "STEP FINAL: refresh V18.33A Chinese daily operator homepage"
         $Run33A = Join-Path $Root "scripts\v18\run_v18_33A_chinese_daily_operator_homepage.ps1"
@@ -103,7 +187,7 @@ function Invoke-V18_19AReadabilityRefresh {
         }
         Write-Host "V18_33A_CHINESE_HOME_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md')"
     }
-    if ($RunFreshnessGuard) {
+    if ($RunFreshnessGuard -or $RunLegacyDailyOutputFreshnessGuard) {
         Write-Host ""
         Write-Host "STEP FINAL: run V18.34B daily output freshness guard"
         $Run34B = Join-Path $Root "scripts\v18\run_v18_34B_daily_output_freshness_guard.ps1"
@@ -420,10 +504,101 @@ function Invoke-V18_19AReadabilityRefresh {
         Write-Host "V18_40A_KDJ_MACD_SHADOW_LAYER_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_KDJ_MACD_SHADOW_REPORT.md')"
     }
     Write-Host ""
+    Write-Host "STEP FINAL: run V18.45A current ranked candidate freshness audit"
+    $Run45A = Join-Path $Root "scripts\v18\run_v18_45A_current_ranked_candidate_freshness_audit.ps1"
+    & powershell -NoProfile -ExecutionPolicy Bypass -File $Run45A -Root $Root -RefreshMode $RefreshMode
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "V18_45A_RANKED_CANDIDATE_FRESHNESS_AUDIT_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+    }
+    Write-Host "V18_45A_FRESHNESS_AUDIT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_AUDIT.md')"
+    if ($RefreshMode -eq "Full") {
+        $Read45A = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
+        $Map45A = @{}
+        if (Test-Path $Read45A) {
+            foreach ($Line45A in (Get-Content $Read45A)) {
+                if ($Line45A -match "^\s*([^:]+):\s*(.*)\s*$") {
+                    $Map45A[$Matches[1].Trim()] = $Matches[2].Trim()
+                }
+            }
+        }
+        if (
+            $Map45A["FULL_RANKING_RECOMPUTE_COMPLETE"] -eq "TRUE" -and
+            $Map45A["TOPN_CURRENT_READY"] -eq "TRUE"
+        ) {
+            Write-Host "CURRENT_FULL_REFRESH_VALIDATION_STATUS: CURRENT_AUTHORITATIVE_CHAIN_READY"
+        }
+        else {
+            Write-Host "CURRENT_FULL_REFRESH_VALIDATION_STATUS: CURRENT_AUTHORITATIVE_CHAIN_REVIEW_NEEDED"
+        }
+    }
+    Write-Host ""
     Write-Host "STEP FINAL: refresh V18.19A daily readability packet"
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run19A -Root $Root
     if ($LASTEXITCODE -ne 0) {
         Write-Host "V18_19A_READABILITY_REFRESH_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+    }
+    if ($ApplyRefreshModePreset) {
+        Write-Host ""
+        Write-Host "STEP FINAL: refresh V18.41A summary and V18.44A operator homepage current aliases"
+        $Summary41A = Join-Path $Root "scripts\v18\v18_41A_daily_clean_operator_pipeline_summary.py"
+        & $Python $Summary41A --root $Root
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_41A_SUMMARY_REFRESH_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+        }
+        $Run44A = Join-Path $Root "scripts\v18\run_v18_44A_daily_operator_homepage_consolidation.ps1"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run44A -Root $Root -WriteCurrent -IncludeFileChecklist -IncludeWarningDetails -RequireTopNCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_44A_OPERATOR_HOMEPAGE_REFRESH_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+        }
+        $ChainStatus = Get-V18CurrentAuthoritativeChainStatus
+        $CurrentAuthoritativeChainReady = $ChainStatus["Ready"]
+        if ($Legacy14AFailReasonsRecognized -and $CurrentAuthoritativeChainReady) {
+            $Legacy14AStatus = "LEGACY_READ_CENTER_VALIDATION_NONBLOCKING"
+            $Legacy14ASuppressionAllowed = "TRUE"
+            $Legacy14ASuppressionBlockedReason = "NONE"
+            $CurrentFullRefreshValidationStatus = "CURRENT_AUTHORITATIVE_CHAIN_READY"
+        }
+        elseif ($Legacy14AFailReasonsRecognized) {
+            $Legacy14AStatus = "LEGACY_READ_CENTER_VALIDATION_PENDING_AUTHORITATIVE_CHAIN"
+            $Legacy14ASuppressionAllowed = "FALSE"
+            $Legacy14ASuppressionBlockedReason = $ChainStatus["BlockedReason"]
+            $CurrentFullRefreshValidationStatus = "CURRENT_AUTHORITATIVE_CHAIN_REVIEW_NEEDED"
+        }
+        $Read19A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_19A_READ_FIRST.txt")
+        $Out46B = Join-Path $Root "outputs\v18\ops\V18_46B_READ_FIRST.txt"
+        $Lines46B = @(
+            "PATCH_VERSION: V18.46B",
+            "PATCH_NAME: STRICT_AUTHORITATIVE_CHAIN_GATE_FOR_LEGACY_NONBLOCKING_WARNINGS",
+            "CURRENT_AUTHORITATIVE_CHAIN_READY: $($CurrentAuthoritativeChainReady.ToString().ToUpper())",
+            "LEGACY_V18_14A_SUPPRESSION_ALLOWED: $Legacy14ASuppressionAllowed",
+            "LEGACY_V18_14A_SUPPRESSION_BLOCKED_REASON: $Legacy14ASuppressionBlockedReason",
+            "OLD_HOMEPAGE_CANDIDATE_COUNT_SUPPRESSION_ALLOWED: $($ChainStatus['Read44A']['OLD_HOMEPAGE_CANDIDATE_COUNT_SUPPRESSION_ALLOWED'])",
+            "OLD_HOMEPAGE_CANDIDATE_COUNT_SUPPRESSION_BLOCKED_REASON: $($ChainStatus['Read44A']['OLD_HOMEPAGE_CANDIDATE_COUNT_SUPPRESSION_BLOCKED_REASON'])",
+            "FULL_RANKING_RECOMPUTE_COMPLETE: $($ChainStatus['Read45A']['FULL_RANKING_RECOMPUTE_COMPLETE'])",
+            "FULL_PRICE_REFRESH_COMPLETE: $($ChainStatus['Read45A']['FULL_PRICE_REFRESH_COMPLETE'])",
+            "TOPN_CURRENT_READY: $($ChainStatus['Read45A']['TOPN_CURRENT_READY'])",
+            "FRESH_TOPN_COUNT: $($ChainStatus['Read45A']['FRESH_TOPN_COUNT'])",
+            "STALE_TOPN_COUNT: $($ChainStatus['Read45A']['STALE_TOPN_COUNT'])",
+            "TOP_FULL_MISMATCH_COUNT: $($ChainStatus['Read41A']['TOP_FULL_MISMATCH_COUNT'])",
+            "BLOCKING_CURRENT_FAILURE_COUNT: $($ChainStatus['Read41A']['BLOCKING_CURRENT_FAILURE_COUNT'])",
+            "VALIDATION_FAIL_COUNT: $($Read19A['VALIDATION_FAIL_COUNT'])",
+            "BUY_CANDIDATE_REPORT_TRUST: $($ChainStatus['Read45A']['BUY_CANDIDATE_REPORT_TRUST'])",
+            "DAILY_TRUST_LEVEL: $($Read19A['DAILY_TRUST_LEVEL'])",
+            "OFFICIAL_DECISION_IMPACT: NONE",
+            "AUTO_TRADE: DISABLED",
+            "AUTO_SELL: DISABLED",
+            "BROKER_API_USED: $($ChainStatus['Read41A']['BROKER_API_USED'])",
+            "ORDER_EXECUTION_USED: $($ChainStatus['Read41A']['ORDER_EXECUTION_USED'])",
+            "RANKING_LOGIC_CHANGED: FALSE",
+            "FACTOR_WEIGHTS_CHANGED: FALSE"
+        )
+        Set-Content -Path $Out46B -Value $Lines46B -Encoding UTF8
+        Write-Host "CURRENT_AUTHORITATIVE_CHAIN_READY: $($CurrentAuthoritativeChainReady.ToString().ToUpper())"
+        Write-Host "LEGACY_V18_14A_VALIDATION_STATUS: $Legacy14AStatus"
+        Write-Host "LEGACY_V18_14A_SUPPRESSION_ALLOWED: $Legacy14ASuppressionAllowed"
+        Write-Host "LEGACY_V18_14A_SUPPRESSION_BLOCKED_REASON: $Legacy14ASuppressionBlockedReason"
+        Write-Host "CURRENT_FULL_REFRESH_VALIDATION_STATUS: $CurrentFullRefreshValidationStatus"
+        Write-Host "V18_46B_READ_FIRST_PATH: $Out46B"
     }
 }
 
@@ -442,6 +617,9 @@ else {
     Write-Host "To run real full daily mode, use -FullDaily -UseYFinance"
 }
 
+Write-Host "REFRESH_MODE: $RefreshMode"
+Write-Host "REFRESH_MODE_PRESET_APPLIED: $($ApplyRefreshModePreset.ToString().ToUpper())"
+
 if ($RunUniverseRollingScan) {
     Write-Host "DELEGATING_TO: V18.16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN"
     $Args16F = @()
@@ -456,7 +634,18 @@ if ($RunUniverseRollingScan) {
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run16F @Args16F
     $DelegateExit = $LASTEXITCODE
     Invoke-V18_19AReadabilityRefresh
-    exit $DelegateExit
+    if ($DelegateExit -ne 0) {
+        $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
+        $Status16F = ""
+        if (Test-Path $Read16F) {
+            $Status16F = (Get-Content $Read16F | Where-Object { $_ -like "STATUS:*" } | Select-Object -First 1)
+        }
+        if ($Status16F -like "STATUS: FAIL_*") {
+            exit $DelegateExit
+        }
+        Write-Host "V18_16F_DELEGATE_NONZERO_TREATED_AS_WARN: $DelegateExit"
+    }
+    exit 0
 }
 
 if ($RunManualFeedback) {
@@ -470,11 +659,25 @@ if ($RunManualFeedback) {
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run15B @Args15B
     $DelegateExit = $LASTEXITCODE
     Invoke-V18_19AReadabilityRefresh
+    if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
+        $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
+        $FreshnessStatus = ""
+        if (Test-Path $FreshnessRead) {
+            $FreshnessStatus = (Get-Content $FreshnessRead | Where-Object { $_ -like "STATUS:*" } | Select-Object -First 1)
+        }
+        if ($FreshnessStatus -like "STATUS: FAIL_*") {
+            exit $DelegateExit
+        }
+        Write-Host "V18_15B_DELEGATE_NONZERO_TREATED_AS_WARN: $DelegateExit"
+        exit 0
+    }
     exit $DelegateExit
 }
 
 Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
 Write-Host "MODE: $Mode"
+Write-Host "REFRESH_MODE: $RefreshMode"
+Write-Host "REFRESH_MODE_PRESET_APPLIED: $($ApplyRefreshModePreset.ToString().ToUpper())"
 Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
 Write-Host "AUTO_TRADE: DISABLED"
 Write-Host "AUTO_SELL: DISABLED"
@@ -500,6 +703,8 @@ Write-Host "RUN_FIXABLE_CURRENT_WARNING_REDUCER: $RunFixableCurrentWarningReduce
 Write-Host "APPLY_FIXABLE_CURRENT_WARNING_REDUCER: $ApplyFixableCurrentWarningReducer"
 Write-Host "RUN_RESIDUAL_ACTION_WARNING_RESOLVER: $RunResidualActionWarningResolver"
 Write-Host "APPLY_RESIDUAL_ACTION_WARNING_RESOLVER: $ApplyResidualActionWarningResolver"
+Write-Host "RUN_LEGACY_CHINESE_HOMEPAGE: $RunLegacyChineseHomepage"
+Write-Host "RUN_LEGACY_DAILY_OUTPUT_FRESHNESS_GUARD: $RunLegacyDailyOutputFreshnessGuard"
 
 if (-not $ValidateOnly) {
     $CommandInfo = Get-Command $Run13D
@@ -507,20 +712,86 @@ if (-not $ValidateOnly) {
     if ($Mode -eq "READ_CENTER_REFRESH_ONLY") {
         $Args13D += "-SkipOfficialDaily"
     }
+    if ($ApplyRefreshModePreset) {
+        $Args13D += "-SkipOfficialDaily"
+    }
     if ($UseYFinance -and $FullDaily -and $CommandInfo.Parameters.ContainsKey("UseYFinance")) {
         $Args13D += "-UseYFinance"
     }
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run13D @Args13D
     if ($LASTEXITCODE -ne 0) {
+        $CanTreatOfficialDailyAsWarn = $false
+        if ($ApplyRefreshModePreset) {
+            $Read40B = Join-Path $Root "outputs\v18\ops\V18_40B_READ_FIRST.txt"
+            if (Test-Path $Read40B) {
+                $Map40B = @{}
+                Get-Content $Read40B | ForEach-Object {
+                    if ($_ -match "^\s*([^:]+):\s*(.*)\s*$") {
+                        $Map40B[$Matches[1].Trim()] = $Matches[2].Trim()
+                    }
+                }
+                $CanTreatOfficialDailyAsWarn = (
+                    $Map40B["DAILY_RUN_USABLE"] -eq "TRUE" -and
+                    $Map40B["BUY_CANDIDATE_REPORT_USABLE"] -eq "TRUE" -and
+                    $Map40B["BLOCKING_CURRENT_FAILURE_COUNT"] -eq "0" -and
+                    $Map40B["TRADING_EXECUTION_ALLOWED"] -eq "FALSE"
+                )
+            }
+        }
+        if ($CanTreatOfficialDailyAsWarn) {
+            Write-Host "V18_13D_OFFICIAL_DAILY_NONZERO_TREATED_AS_WARN: $LASTEXITCODE"
+        }
+        else {
         throw "V18_13D_DAILY_COMMAND_CENTER_FAILED"
+        }
     }
 }
 
 & powershell -NoProfile -ExecutionPolicy Bypass -File $Run14A
 $V14AExitCode = $LASTEXITCODE
+$Legacy14AStatus = "OK_OR_NOT_RUN"
+$Legacy14ANonblockingReason = "NONE"
+$Legacy14AFailReasonsRecognized = $false
+$Legacy14ASuppressionAllowed = "FALSE"
+$Legacy14ASuppressionBlockedReason = "LEGACY_FAIL_REASONS_NOT_RECOGNIZED"
+$CurrentFullRefreshValidationStatus = "LEGACY_VALIDATION_NOT_APPLICABLE"
 if ($V14AExitCode -ne 0) {
-    Write-Host "V18_14A_VALIDATION_STATUS: NONZERO_EXIT_$V14AExitCode"
+    $Read14A = Join-Path $Root "outputs\v18\ops\V18_14A_READ_FIRST.txt"
+    $Reason14A = ""
+    if (Test-Path $Read14A) {
+        foreach ($Line14A in (Get-Content $Read14A)) {
+            if ($Line14A -match "^\s*(FAIL_REASONS|FAILURE_REASONS|VALIDATION_FAIL_REASONS|VALIDATION_FAILURE_REASONS|REASON|FAIL_REASON):\s*(.*)\s*$") {
+                $Reason14A = $Matches[2].Trim()
+            }
+        }
+    }
+    $LegacyReadCenterOnly = (
+        $ApplyRefreshModePreset -and
+        $RefreshMode -eq "Full" -and
+        $Reason14A.ToUpper().Contains("READ_CENTER_REFRESH_ONLY") -and
+        $Reason14A.ToUpper().Contains("OFFICIAL_DAILY_STATUS_SKIPPED")
+    )
+    $Legacy14AFailReasonsRecognized = $LegacyReadCenterOnly
+    if ($LegacyReadCenterOnly) {
+        $Legacy14AStatus = "LEGACY_READ_CENTER_VALIDATION_PENDING_AUTHORITATIVE_CHAIN"
+        $Legacy14ANonblockingReason = "READ_CENTER_REFRESH_ONLY;OFFICIAL_DAILY_STATUS_SKIPPED"
+        $CurrentFullRefreshValidationStatus = "PENDING_AUTHORITATIVE_CHAIN"
+        $Legacy14ASuppressionBlockedReason = "CURRENT_AUTHORITATIVE_CHAIN_NOT_READY"
+        Write-Host "V18_14A_VALIDATION_STATUS: LEGACY_READ_CENTER_VALIDATION_PENDING_AUTHORITATIVE_CHAIN"
+    }
+    else {
+        $Legacy14AStatus = "NONZERO_EXIT_$V14AExitCode"
+        $Legacy14ANonblockingReason = $Reason14A
+        $CurrentFullRefreshValidationStatus = "LEGACY_VALIDATION_REVIEW_NEEDED"
+        $Legacy14ASuppressionBlockedReason = "LEGACY_FAIL_REASONS_NOT_RECOGNIZED"
+        Write-Host "V18_14A_VALIDATION_STATUS: NONZERO_EXIT_$V14AExitCode"
+    }
 }
+Write-Host "LEGACY_V18_14A_VALIDATION_STATUS: $Legacy14AStatus"
+Write-Host "LEGACY_V18_14A_NONBLOCKING_REASON: $Legacy14ANonblockingReason"
+Write-Host "LEGACY_V18_14A_SUPPRESSION_ALLOWED: $Legacy14ASuppressionAllowed"
+Write-Host "LEGACY_V18_14A_SUPPRESSION_BLOCKED_REASON: $Legacy14ASuppressionBlockedReason"
+Write-Host "CURRENT_FULL_REFRESH_VALIDATION_STATUS: $CurrentFullRefreshValidationStatus"
 
 & $Python $Script14B --root $Root --mode $Mode
 $V14BExitCode = $LASTEXITCODE

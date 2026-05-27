@@ -59,11 +59,13 @@ INPUTS = [
     ("residual_action_warning_resolver", "outputs/v18/read_center/V18_CURRENT_RESIDUAL_ACTION_WARNING_RESOLVER.md", "residual action warning resolver", "OPTIONAL"),
     ("alpha_signal_objects", "outputs/v18/read_center/V18_CURRENT_ALPHA_SIGNAL_OBJECTS.md", "alpha signal objects", "OPTIONAL"),
     ("candidate_top_full_sync", "outputs/v18/read_center/V18_CURRENT_CANDIDATE_TOP_FULL_CANONICAL_SYNC.md", "candidate top/full canonical sync", "OPTIONAL"),
+    ("ranked_candidate_freshness", "outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt", "ranked candidate freshness audit", "IMPORTANT"),
 ]
 
 SUMMARY_FIELDS = [
     "status", "patch_version", "patch_fix_version", "patch_name", "run_id", "generated_at",
     "write_current_requested", "current_alias_written", "current_read_first_written",
+    "current_homepage_write_skipped_reason", "summary_exit",
     "require_topn_current", "topn_current_required", "topn_current_ready", "topn_current_blocking_reason",
     "homepage_path", "current_homepage_path", "current_read_first_path",
     "daily_run_usable", "buy_candidate_report_usable", "trading_execution_allowed",
@@ -72,9 +74,14 @@ SUMMARY_FIELDS = [
     "current_top_candidate_count", "long_candidate_count", "top_full_mismatch_count",
     "blocking_current_failure_count", "expected_remaining_action_required_count",
     "topn_effective", "topn_close_gap_count", "topn_score_spread",
+    "refresh_mode", "full_ranking_recompute_complete", "full_price_refresh_complete",
+    "freshness_topn_stale_count", "freshness_topn_stale_tickers", "buy_candidate_report_trust",
+    "current_authoritative_chain_ready",
     "single_ticker", "single_ticker_found", "single_ticker_rank", "single_ticker_score",
     "warning_classification_row_count", "file_checklist_row_count",
     "missing_optional_count", "nonblocking_warning_count", "old_homepage_candidate_count_mismatch",
+    "old_homepage_candidate_count_mismatch_legacy_only", "old_homepage_candidate_count_current_blocking",
+    "old_homepage_candidate_count_suppression_allowed", "old_homepage_candidate_count_suppression_blocked_reason",
     "old_homepage_candidate_count", "old_homepage_candidate_count_source", "official_decision_impact", "ranking_logic_changed",
     "factor_weights_changed", "signal_freeze_ledger_modified", "trading_execution_allowed_guard",
 ]
@@ -276,6 +283,7 @@ def classify_warnings(
     daily: dict[str, str],
     topn: dict[str, str],
     single: dict[str, str],
+    freshness: dict[str, str],
     checklist: list[dict[str, object]],
     root: Path,
     require_topn_current: bool,
@@ -299,10 +307,18 @@ def classify_warnings(
         add_warning(rows, "TOPN_CURRENT_REQUIRED_NOT_READY", "TopN current requirement", "BLOCKING", topn_blocking_reason, "本次运行明确要求 TopN current 文件可用，但检查未通过。", "先重跑 V18.43A TopN explainer，带 -WriteCurrent。")
     elif topn and topn.get("CURRENT_ALIAS_WRITTEN", "").upper() != "TRUE":
         add_warning(rows, "TOPN_CURRENT_ALIAS_NOT_WRITTEN", "TopN READ_FIRST", "REVIEW", topn.get("CURRENT_ALIAS_WRITTEN", ""), "TopN current alias 未确认写入。", "重跑 V18.43A TopN explainer，带 -WriteCurrent。")
+    if int_value(freshness.get("STALE_TOPN_COUNT")) > 0:
+        add_warning(rows, "STALE_TOPN_PRICE_ROWS", "V18.45A freshness audit", "REVIEW", freshness.get("STALE_TOPN_TICKERS", ""), "TopN contains stale price rows; those rows are not actionable for buy timing.", "Use only rows with actionable_allowed_by_freshness=TRUE; rerun Full refresh if buying is being considered.")
+    authoritative_topn_ready = (
+        freshness.get("TOPN_CURRENT_READY", "").upper() == "TRUE"
+        and freshness.get("FULL_RANKING_RECOMPUTE_COMPLETE", "").upper() == "TRUE"
+        and int_value(freshness.get("STALE_TOPN_COUNT")) == 0
+    )
     for label, data, source in (
         ("V18_41A_STATUS", daily, "V18_41A_READ_FIRST"),
         ("TOPN_STATUS", topn, "TopN READ_FIRST"),
         ("SINGLE_STATUS", single, "V18_42A_READ_FIRST"),
+        ("FRESHNESS_STATUS", freshness, "V18.45A freshness audit"),
     ):
         status = data.get("STATUS", "")
         if status.startswith("WARN_"):
@@ -318,6 +334,8 @@ def classify_warnings(
         ("RISK_PREVIEW_REVIEW_NEEDED", "outputs/v18/read_center/V18_CURRENT_SHADOW_RISK_MODEL_PREVIEW.md", "V18.39C risk preview review needed"),
         ("FIXABLE_WARNINGS_ZERO_ACTION_REQUIRED", "outputs/v18/read_center/V18_CURRENT_FIXABLE_WARNING_REDUCER.md", "action-required zero"),
     ):
+        if authoritative_topn_ready and key in {"DAILY_TRUST_LOW", "HISTORICAL_YFINANCE_PREFLIGHT_FAILED"}:
+            continue
         text, status = read_text(root / rel_path)
         up = text.upper()
         if status == "OK" and (label.upper() in up or ("LOW" in up and "TRUST" in up and key == "DAILY_TRUST_LOW") or ("REVIEW" in up and "RISK" in up and key == "RISK_PREVIEW_REVIEW_NEEDED")):
@@ -346,11 +364,47 @@ def status_level(status: str) -> str:
     return "WARN"
 
 
+def current_authoritative_chain_status(root: Path, daily: dict[str, str], freshness: dict[str, str]) -> tuple[bool, str]:
+    read35d, _ = parse_read_first(root / "outputs/v18/ops/V18_35D_READ_FIRST.txt")
+    read40a, _ = parse_read_first(root / "outputs/v18/ops/V18_40A_READ_FIRST.txt")
+    reasons: list[str] = []
+    if read35d.get("STATUS", "").startswith("FAIL_") or not read35d.get("STATUS"):
+        reasons.append("FULL_UNIVERSE_RECOMPUTE_NOT_READY")
+    if freshness.get("FULL_RANKING_RECOMPUTE_COMPLETE") != "TRUE":
+        reasons.append("FULL_RANKING_RECOMPUTE_NOT_COMPLETE")
+    if freshness.get("FULL_PRICE_REFRESH_COMPLETE") != "TRUE":
+        reasons.append("FULL_PRICE_REFRESH_NOT_COMPLETE")
+    if (
+        freshness.get("TOPN_CURRENT_READY") != "TRUE"
+        or freshness.get("FRESH_TOPN_COUNT") != "20"
+        or int_value(freshness.get("STALE_TOPN_COUNT")) != 0
+    ):
+        reasons.append("CURRENT_TOPN_NOT_READY")
+    if int_value(freshness.get("CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKER_COUNT")) != 0:
+        reasons.append("CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKERS_PRESENT")
+    if read40a.get("MISMATCH_COUNT") != "0" or read40a.get("ORDER_MATCHES_FULL_TOP20") != "TRUE":
+        reasons.append("TOP_FULL_SYNC_NOT_READY")
+    if int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) != 0:
+        reasons.append("TOP_FULL_MISMATCH_EXISTS")
+    if int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) != 0:
+        reasons.append("BLOCKING_CURRENT_FAILURE_EXISTS")
+    if (
+        daily.get("TRADING_EXECUTION_ALLOWED") != "FALSE"
+        or daily.get("AUTO_TRADE") != AUTO_TRADE
+        or daily.get("AUTO_SELL") != AUTO_SELL
+        or daily.get("BROKER_API_USED") != "FALSE"
+        or daily.get("ORDER_EXECUTION_USED") != "FALSE"
+    ):
+        reasons.append("TRADING_SAFETY_FIELDS_MISSING")
+    return not reasons, "NONE" if not reasons else ";".join(reasons)
+
+
 def build_homepage(
     summary: dict[str, object],
     daily: dict[str, str],
     topn: dict[str, str],
     single: dict[str, str],
+    freshness: dict[str, str],
     warning_rows: list[dict[str, object]],
     include_checklist: bool,
     include_warning_details: bool,
@@ -398,6 +452,24 @@ def build_homepage(
         lines.append(f"| {field} | `{daily.get(field, summary.get(field.lower(), ''))}` |")
     if mismatch_note:
         lines.append(mismatch_note)
+    lines += [
+        "",
+        "## 2A. Refresh Mode And Freshness",
+        "",
+        "| Machine field | Value |",
+        "| --- | --- |",
+        f"| REFRESH_MODE | `{summary.get('refresh_mode', '')}` |",
+        f"| FULL_RANKING_RECOMPUTE_COMPLETE | `{summary.get('full_ranking_recompute_complete', '')}` |",
+        f"| FULL_PRICE_REFRESH_COMPLETE | `{summary.get('full_price_refresh_complete', '')}` |",
+        f"| STALE_TOPN_COUNT | `{summary.get('freshness_topn_stale_count', '')}` |",
+        f"| STALE_TOPN_TICKERS | `{summary.get('freshness_topn_stale_tickers', '')}` |",
+        f"| BUY_CANDIDATE_REPORT_TRUST | `{summary.get('buy_candidate_report_trust', '')}` |",
+        "",
+        "> If TopN contains stale price rows, do not use those stale rows for buy timing.",
+        "",
+        "- Freshness audit: `outputs/v18/read_center/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_AUDIT.md`",
+        "- Freshness READ_FIRST: `outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt`",
+    ]
     lines += [
         "",
         "## 3. TopN 排名解释摘要",
@@ -495,16 +567,23 @@ def build_homepage(
 def build_read_first(summary: dict[str, object]) -> str:
     order = [
         "status", "patch_version", "patch_fix_version", "patch_name", "write_current_requested", "current_alias_written",
-        "current_read_first_written", "require_topn_current", "topn_current_required", "topn_current_ready",
+        "current_read_first_written", "current_homepage_write_skipped_reason", "summary_exit",
+        "require_topn_current", "topn_current_required", "topn_current_ready",
         "topn_current_blocking_reason", "homepage_path", "current_homepage_path", "current_read_first_path",
         "daily_run_usable", "buy_candidate_report_usable", "trading_execution_allowed", "auto_trade",
         "auto_sell", "broker_api_used", "order_execution_used", "latest_signal_date",
         "latest_signal_freeze_count", "current_full_candidate_count", "current_top_candidate_count",
         "long_candidate_count", "top_full_mismatch_count", "blocking_current_failure_count",
         "expected_remaining_action_required_count", "topn_effective", "topn_close_gap_count",
-        "topn_score_spread", "single_ticker", "single_ticker_found", "single_ticker_rank",
+        "topn_score_spread", "refresh_mode", "full_ranking_recompute_complete", "full_price_refresh_complete",
+        "freshness_topn_stale_count", "freshness_topn_stale_tickers", "buy_candidate_report_trust",
+        "current_authoritative_chain_ready",
+        "single_ticker", "single_ticker_found", "single_ticker_rank",
         "single_ticker_score", "warning_classification_row_count", "file_checklist_row_count",
-        "old_homepage_candidate_count", "old_homepage_candidate_count_mismatch", "old_homepage_candidate_count_source",
+        "old_homepage_candidate_count", "old_homepage_candidate_count_mismatch",
+        "old_homepage_candidate_count_mismatch_legacy_only", "old_homepage_candidate_count_current_blocking",
+        "old_homepage_candidate_count_suppression_allowed", "old_homepage_candidate_count_suppression_blocked_reason",
+        "old_homepage_candidate_count_source",
         "official_decision_impact", "ranking_logic_changed", "factor_weights_changed",
         "signal_freeze_ledger_modified", "trading_execution_allowed_guard",
     ]
@@ -580,7 +659,12 @@ def main() -> int:
             "file_checklist_row_count": "0",
             "old_homepage_candidate_count": "",
             "old_homepage_candidate_count_mismatch": "UNKNOWN",
+            "old_homepage_candidate_count_mismatch_legacy_only": "FALSE",
+            "old_homepage_candidate_count_current_blocking": "FALSE",
+            "old_homepage_candidate_count_suppression_allowed": "FALSE",
+            "old_homepage_candidate_count_suppression_blocked_reason": "CURRENT_AUTHORITATIVE_CHAIN_NOT_READY",
             "old_homepage_candidate_count_source": "",
+            "current_authoritative_chain_ready": "FALSE",
             "official_decision_impact": OFFICIAL_DECISION_IMPACT,
             "ranking_logic_changed": "FALSE",
             "factor_weights_changed": "FALSE",
@@ -596,9 +680,11 @@ def main() -> int:
 
     topn, _ = parse_read_first(root / "outputs/v18/ops/V18_CURRENT_TOPN_RANKING_EXPLAINER_READ_FIRST.txt")
     single, _ = parse_read_first(root / "outputs/v18/ops/V18_42A_READ_FIRST.txt")
+    freshness, _ = parse_read_first(root / "outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt")
+    current_authoritative_ready, current_authoritative_blocked_reason = current_authoritative_chain_status(root, daily, freshness)
     checklist = file_checklist(root)
     topn_ready, topn_blocking_reason = topn_current_status(topn, checklist, args.require_topn_current)
-    warning_rows = classify_warnings(daily, topn, single, checklist, root, args.require_topn_current, topn_ready, topn_blocking_reason)
+    warning_rows = classify_warnings(daily, topn, single, freshness, checklist, root, args.require_topn_current, topn_ready, topn_blocking_reason)
     missing_optional_count = sum(1 for r in checklist if r["required_level"] == "OPTIONAL" and r["exists"] != "TRUE")
     blocking_warning_count = sum(1 for r in warning_rows if r["severity"] == "BLOCKING")
     review_warning_count = sum(1 for r in warning_rows if r["severity"] == "REVIEW")
@@ -624,6 +710,8 @@ def main() -> int:
         "write_current_requested": "TRUE" if args.write_current else "FALSE",
         "current_alias_written": "FALSE",
         "current_read_first_written": "FALSE",
+        "current_homepage_write_skipped_reason": "",
+        "summary_exit": "",
         "require_topn_current": "TRUE" if args.require_topn_current else "FALSE",
         "topn_current_required": "TRUE" if args.require_topn_current else "FALSE",
         "topn_current_ready": topn_ready,
@@ -649,6 +737,13 @@ def main() -> int:
         "topn_effective": topn.get("TOP_N_EFFECTIVE", topn.get("TOPN_EFFECTIVE", "")),
         "topn_close_gap_count": topn.get("CLOSE_GAP_COUNT", ""),
         "topn_score_spread": topn.get("TOPN_SCORE_SPREAD", ""),
+        "refresh_mode": freshness.get("REFRESH_MODE", ""),
+        "full_ranking_recompute_complete": freshness.get("FULL_RANKING_RECOMPUTE_COMPLETE", ""),
+        "full_price_refresh_complete": freshness.get("FULL_PRICE_REFRESH_COMPLETE", ""),
+        "freshness_topn_stale_count": freshness.get("STALE_TOPN_COUNT", ""),
+        "freshness_topn_stale_tickers": freshness.get("STALE_TOPN_TICKERS", ""),
+        "buy_candidate_report_trust": freshness.get("BUY_CANDIDATE_REPORT_TRUST", ""),
+        "current_authoritative_chain_ready": "TRUE" if current_authoritative_ready else "FALSE",
         "single_ticker": single.get("TICKER", ""),
         "single_ticker_found": bool_text(single.get("TICKER_FOUND")),
         "single_ticker_rank": single.get("TARGET_RANK", ""),
@@ -658,6 +753,10 @@ def main() -> int:
         "missing_optional_count": str(missing_optional_count),
         "nonblocking_warning_count": str(review_warning_count),
         "old_homepage_candidate_count_mismatch": old_mismatch,
+        "old_homepage_candidate_count_mismatch_legacy_only": "TRUE" if old_mismatch == "TRUE" and current_authoritative_ready else "FALSE",
+        "old_homepage_candidate_count_current_blocking": "TRUE" if old_mismatch == "TRUE" and not current_authoritative_ready else "FALSE",
+        "old_homepage_candidate_count_suppression_allowed": "TRUE" if old_mismatch == "TRUE" and current_authoritative_ready else "FALSE",
+        "old_homepage_candidate_count_suppression_blocked_reason": "NONE" if old_mismatch != "TRUE" or current_authoritative_ready else current_authoritative_blocked_reason,
         "old_homepage_candidate_count": old_count,
         "old_homepage_candidate_count_source": old_count_source,
         "official_decision_impact": OFFICIAL_DECISION_IMPACT,
@@ -667,7 +766,36 @@ def main() -> int:
         "trading_execution_allowed_guard": "FALSE",
     }
 
-    homepage = build_homepage(summary, daily, topn, single, warning_rows, args.include_file_checklist, args.include_warning_details, checklist)
+    if freshness.get("TOPN_CURRENT_READY", "").upper() == "TRUE":
+        current_topn_ready, current_topn_blocking_reason = "TRUE", "NONE"
+    else:
+        current_topn_ready, current_topn_blocking_reason = topn_current_status(topn, checklist, True)
+    v41_status = daily.get("STATUS", "")
+    current_write_allowed = (
+        args.write_current
+        and not v41_status.startswith("FAIL_")
+        and current_topn_ready == "TRUE"
+        and int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) == 0
+        and int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) == 0
+    )
+    if not args.write_current:
+        skipped_reason = "NOT_REQUESTED"
+    elif v41_status.startswith("FAIL_"):
+        skipped_reason = "V18_41A_STATUS_FAIL"
+    elif current_topn_ready != "TRUE":
+        skipped_reason = current_topn_blocking_reason
+    elif int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) != 0:
+        skipped_reason = "TOP_FULL_MISMATCH_EXISTS"
+    elif int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) != 0:
+        skipped_reason = "BLOCKING_CURRENT_FAILURE_EXISTS"
+    else:
+        skipped_reason = "NONE"
+    summary["topn_current_ready"] = current_topn_ready if args.write_current else topn_ready
+    summary["topn_current_blocking_reason"] = current_topn_blocking_reason if args.write_current else topn_blocking_reason
+    summary["current_homepage_write_skipped_reason"] = skipped_reason
+    summary["summary_exit"] = "1" if status.startswith("FAIL_") else "0"
+
+    homepage = build_homepage(summary, daily, topn, single, freshness, warning_rows, args.include_file_checklist, args.include_warning_details, checklist)
     read_first = build_read_first(summary)
     try:
         write_text(root / OUT_HOMEPAGE, homepage)
@@ -675,7 +803,7 @@ def main() -> int:
         write_csv(root / OUT_FILE_CHECKLIST, checklist, CHECKLIST_FIELDS)
         write_csv(root / OUT_WARNING_CLASSIFICATION, warning_rows, WARNING_FIELDS)
         write_text(root / OUT_READ_FIRST, read_first)
-        if args.write_current:
+        if current_write_allowed:
             shutil.copyfile(root / OUT_HOMEPAGE, root / CUR_HOMEPAGE)
             shutil.copyfile(root / OUT_SUMMARY, root / CUR_SUMMARY)
             shutil.copyfile(root / OUT_FILE_CHECKLIST, root / CUR_FILE_CHECKLIST)
