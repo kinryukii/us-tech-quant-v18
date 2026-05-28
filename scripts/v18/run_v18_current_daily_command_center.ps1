@@ -58,6 +58,7 @@ param(
     [switch]$RunTop20EventEarningsRisk,
     [switch]$RunTop20EventCoverageRepair,
     [switch]$RunTop20RiskEventAutoFetch,
+    [switch]$RunTop20OptionsDataCollector,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -82,6 +83,7 @@ $Run47B = Join-Path $Root "scripts\v18\run_v18_47B_top20_priority_tracker.ps1"
 $Run47C = Join-Path $Root "scripts\v18\run_v18_47C_top20_event_earnings_risk_layer.ps1"
 $Run47CR1 = Join-Path $Root "scripts\v18\run_v18_47C_R1_event_source_coverage_repair.ps1"
 $Run47CR2 = Join-Path $Root "scripts\v18\run_v18_47C_R2_top20_90d_risk_event_auto_fetcher.ps1"
+$Run48A = Join-Path $Root "scripts\v18\run_v18_48A_top20_options_data_collector.ps1"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
 if (-not (Test-Path $Run13D)) { throw "Missing V18.13D wrapper: $Run13D" }
@@ -98,6 +100,7 @@ if ($RunTop20PriorityTracker -and -not (Test-Path $Run47B)) { throw "Missing V18
 if ($RunTop20EventEarningsRisk -and -not (Test-Path $Run47C)) { throw "Missing V18.47C wrapper: $Run47C" }
 if ($RunTop20EventCoverageRepair -and -not (Test-Path $Run47CR1)) { throw "Missing V18.47C-R1 wrapper: $Run47CR1" }
 if ($RunTop20RiskEventAutoFetch -and -not (Test-Path $Run47CR2)) { throw "Missing V18.47C-R2 wrapper: $Run47CR2" }
+if ($RunTop20OptionsDataCollector -and -not (Test-Path $Run48A)) { throw "Missing V18.48A wrapper: $Run48A" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
 $ManualModeExplicit = (
@@ -687,6 +690,20 @@ function Invoke-V18_47CR2Top20RiskEventAutoFetch {
     }
 }
 
+function Invoke-V18_48ATop20OptionsDataCollector {
+    if ($RunTop20OptionsDataCollector) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.48A Top20 options data collector"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run48A -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_48A_TOP20_OPTIONS_DATA_COLLECTOR_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_48A_TOP20_OPTIONS_SNAPSHOT_PATH: $(Join-Path $Root 'outputs\v18\options\V18_48A_TOP20_OPTIONS_SNAPSHOT.csv')"
+        Write-Host "V18_48A_TOP20_OPTIONS_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_TOP20_OPTIONS_DATA_STATUS.md')"
+    }
+}
+
 $Mode = "READ_CENTER_REFRESH_ONLY"
 if ($ValidateOnly) {
     $Mode = "VALIDATE_ONLY"
@@ -724,6 +741,7 @@ if ($RunUniverseRollingScan) {
     Invoke-V18_47CTop20EventEarningsRisk
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
+    Invoke-V18_48ATop20OptionsDataCollector
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -754,6 +772,7 @@ if ($RunManualFeedback) {
     Invoke-V18_47CTop20EventEarningsRisk
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
+    Invoke-V18_48ATop20OptionsDataCollector
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -917,6 +936,7 @@ if ($RunForwardTracker) {
     Invoke-V18_47CTop20EventEarningsRisk
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
+    Invoke-V18_48ATop20OptionsDataCollector
     exit $ExitCode
 }
 
@@ -926,4 +946,5 @@ Invoke-V18_47BTop20PriorityTracker
 Invoke-V18_47CTop20EventEarningsRisk
 Invoke-V18_47CR1Top20EventCoverageRepair
 Invoke-V18_47CR2Top20RiskEventAutoFetch
+Invoke-V18_48ATop20OptionsDataCollector
 exit 0
