@@ -53,6 +53,11 @@ param(
     [switch]$ApplyFixableCurrentWarningReducer,
     [switch]$RunResidualActionWarningResolver,
     [switch]$ApplyResidualActionWarningResolver,
+    [switch]$RunFactorGovernanceRegistry,
+    [switch]$RunTop20PriorityTracker,
+    [switch]$RunTop20EventEarningsRisk,
+    [switch]$RunTop20EventCoverageRepair,
+    [switch]$RunTop20RiskEventAutoFetch,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -72,6 +77,11 @@ $Script14E = Join-Path $Root "scripts\v18\v18_14E_current_daily_with_forward_tra
 $Run15B = Join-Path $Root "scripts\v18\run_v18_15B_current_daily_with_manual_feedback.ps1"
 $Run16F = Join-Path $Root "scripts\v18\run_v18_16F_current_daily_with_rolling_universe_scan.ps1"
 $Run19A = Join-Path $Root "scripts\v18\run_v18_19A_daily_readability_refactor.ps1"
+$Run47A = Join-Path $Root "scripts\v18\run_v18_47A_factor_governance_registry.ps1"
+$Run47B = Join-Path $Root "scripts\v18\run_v18_47B_top20_priority_tracker.ps1"
+$Run47C = Join-Path $Root "scripts\v18\run_v18_47C_top20_event_earnings_risk_layer.ps1"
+$Run47CR1 = Join-Path $Root "scripts\v18\run_v18_47C_R1_event_source_coverage_repair.ps1"
+$Run47CR2 = Join-Path $Root "scripts\v18\run_v18_47C_R2_top20_90d_risk_event_auto_fetcher.ps1"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
 if (-not (Test-Path $Run13D)) { throw "Missing V18.13D wrapper: $Run13D" }
@@ -83,6 +93,11 @@ if ($RunForwardTracker -and -not (Test-Path $Script14E)) { throw "Missing V18.14
 if ($RunManualFeedback -and -not (Test-Path $Run15B)) { throw "Missing V18.15B wrapper: $Run15B" }
 if ($RunUniverseRollingScan -and -not (Test-Path $Run16F)) { throw "Missing V18.16F wrapper: $Run16F" }
 if (-not (Test-Path $Run19A)) { throw "Missing V18.19A wrapper: $Run19A" }
+if ($RunFactorGovernanceRegistry -and -not (Test-Path $Run47A)) { throw "Missing V18.47A wrapper: $Run47A" }
+if ($RunTop20PriorityTracker -and -not (Test-Path $Run47B)) { throw "Missing V18.47B wrapper: $Run47B" }
+if ($RunTop20EventEarningsRisk -and -not (Test-Path $Run47C)) { throw "Missing V18.47C wrapper: $Run47C" }
+if ($RunTop20EventCoverageRepair -and -not (Test-Path $Run47CR1)) { throw "Missing V18.47C-R1 wrapper: $Run47CR1" }
+if ($RunTop20RiskEventAutoFetch -and -not (Test-Path $Run47CR2)) { throw "Missing V18.47C-R2 wrapper: $Run47CR2" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
 $ManualModeExplicit = (
@@ -602,6 +617,76 @@ function Invoke-V18_19AReadabilityRefresh {
     }
 }
 
+function Invoke-V18_47AFactorGovernanceRegistry {
+    if ($RunFactorGovernanceRegistry) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.47A factor governance registry"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run47A -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_47A_FACTOR_GOVERNANCE_REGISTRY_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_47A_FACTOR_GOVERNANCE_REGISTRY_PATH: $(Join-Path $Root 'outputs\v18\factor_governance\V18_47A_FACTOR_GOVERNANCE_REGISTRY.csv')"
+        Write-Host "V18_47A_FACTOR_GOVERNANCE_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_FACTOR_GOVERNANCE_REGISTRY.md')"
+    }
+}
+
+function Invoke-V18_47BTop20PriorityTracker {
+    if ($RunTop20PriorityTracker) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.47B Top20 priority tracker"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run47B -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_47B_TOP20_PRIORITY_TRACKER_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_47B_TOP20_PRIORITY_TRACKER_PATH: $(Join-Path $Root 'outputs\v18\tracking\V18_47B_TOP20_PRIORITY_TRACKER.csv')"
+        Write-Host "V18_47B_TOP20_PRIORITY_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_TOP20_PRIORITY_TRACKER.md')"
+    }
+}
+
+function Invoke-V18_47CTop20EventEarningsRisk {
+    if ($RunTop20EventEarningsRisk) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.47C Top20 event / earnings risk layer"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run47C -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_47C_TOP20_EVENT_EARNINGS_RISK_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_47C_TOP20_EVENT_EARNINGS_RISK_PATH: $(Join-Path $Root 'outputs\v18\event_risk\V18_47C_TOP20_EVENT_EARNINGS_RISK.csv')"
+        Write-Host "V18_47C_TOP20_EVENT_EARNINGS_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_TOP20_EVENT_EARNINGS_RISK.md')"
+    }
+}
+
+function Invoke-V18_47CR1Top20EventCoverageRepair {
+    if ($RunTop20EventCoverageRepair) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.47C-R1 event source coverage repair"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run47CR1 -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_47C_R1_EVENT_SOURCE_COVERAGE_REPAIR_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_47C_R1_EVENT_SOURCE_COVERAGE_AUDIT_PATH: $(Join-Path $Root 'outputs\v18\event_risk\V18_47C_R1_EVENT_SOURCE_COVERAGE_AUDIT.csv')"
+        Write-Host "V18_47C_R1_EVENT_SOURCE_COVERAGE_REPORT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_47C_R1_EVENT_SOURCE_COVERAGE_REPAIR_REPORT.md')"
+    }
+}
+
+function Invoke-V18_47CR2Top20RiskEventAutoFetch {
+    if ($RunTop20RiskEventAutoFetch) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.47C-R2 Top20 90-day risk event auto fetcher"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run47CR2 -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_47C_R2_TOP20_RISK_EVENT_AUTO_FETCH_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_47C_R2_TOP20_RISK_EVENT_CACHE_PATH: $(Join-Path $Root 'outputs\v18\event_risk\V18_47C_R2_TOP20_90D_RISK_EVENT_CACHE.csv')"
+        Write-Host "V18_47C_R2_TOP20_RISK_EVENT_REPORT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_47C_R2_TOP20_90D_RISK_EVENT_AUTO_FETCH_REPORT.md')"
+    }
+}
+
 $Mode = "READ_CENTER_REFRESH_ONLY"
 if ($ValidateOnly) {
     $Mode = "VALIDATE_ONLY"
@@ -634,6 +719,11 @@ if ($RunUniverseRollingScan) {
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run16F @Args16F
     $DelegateExit = $LASTEXITCODE
     Invoke-V18_19AReadabilityRefresh
+    Invoke-V18_47AFactorGovernanceRegistry
+    Invoke-V18_47BTop20PriorityTracker
+    Invoke-V18_47CTop20EventEarningsRisk
+    Invoke-V18_47CR1Top20EventCoverageRepair
+    Invoke-V18_47CR2Top20RiskEventAutoFetch
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -659,6 +749,11 @@ if ($RunManualFeedback) {
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run15B @Args15B
     $DelegateExit = $LASTEXITCODE
     Invoke-V18_19AReadabilityRefresh
+    Invoke-V18_47AFactorGovernanceRegistry
+    Invoke-V18_47BTop20PriorityTracker
+    Invoke-V18_47CTop20EventEarningsRisk
+    Invoke-V18_47CR1Top20EventCoverageRepair
+    Invoke-V18_47CR2Top20RiskEventAutoFetch
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -817,8 +912,18 @@ if ($RunForwardTracker) {
     & $Python $Script14E --root $Root --mode $Mode --forward-tracker-run RAN
     $ExitCode = $LASTEXITCODE
     Invoke-V18_19AReadabilityRefresh
+    Invoke-V18_47AFactorGovernanceRegistry
+    Invoke-V18_47BTop20PriorityTracker
+    Invoke-V18_47CTop20EventEarningsRisk
+    Invoke-V18_47CR1Top20EventCoverageRepair
+    Invoke-V18_47CR2Top20RiskEventAutoFetch
     exit $ExitCode
 }
 
 Invoke-V18_19AReadabilityRefresh
+Invoke-V18_47AFactorGovernanceRegistry
+Invoke-V18_47BTop20PriorityTracker
+Invoke-V18_47CTop20EventEarningsRisk
+Invoke-V18_47CR1Top20EventCoverageRepair
+Invoke-V18_47CR2Top20RiskEventAutoFetch
 exit 0

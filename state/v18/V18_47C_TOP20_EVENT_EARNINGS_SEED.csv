@@ -1,0 +1,21 @@
+ticker,company_name,rank,tracking_tier,manual_next_earnings_date,manual_event_date,manual_event_type,manual_event_risk_level,manual_event_reason,source_note,last_reviewed_date,active
+KEYS,,1,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+VRT,,2,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+ICHR,,3,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+NVDA,,4,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+D,,5,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+AMKR,,6,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+GOOGL,,7,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+FIX,,8,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+MCHP,,9,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+LITE,,10,TIER_2_IMPORTANT,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+CARR,,11,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+ENTG,,12,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+CRWV,,13,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+ETR,,14,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+COHU,,15,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+GEV,,16,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+FN,,17,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+ETN,,18,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+HUBB,,19,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
+POWL,,20,TIER_3_OCCASIONAL,,,,UNKNOWN_REVIEW,,Fill local earnings/event date manually; set active TRUE after review.,2026-05-28,FALSE
