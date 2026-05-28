@@ -59,6 +59,11 @@ param(
     [switch]$RunTop20EventCoverageRepair,
     [switch]$RunTop20RiskEventAutoFetch,
     [switch]$RunTop20OptionsDataCollector,
+    [switch]$RunTop20OptionsRiskRadar,
+    [switch]$RunFactorWeightBuySellBacktest,
+    [switch]$RunSimulationPolicyWeightEngine,
+    [switch]$RunDualBookActionPlanner,
+    [switch]$RunRealTradeUploadLedger,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -84,6 +89,11 @@ $Run47C = Join-Path $Root "scripts\v18\run_v18_47C_top20_event_earnings_risk_lay
 $Run47CR1 = Join-Path $Root "scripts\v18\run_v18_47C_R1_event_source_coverage_repair.ps1"
 $Run47CR2 = Join-Path $Root "scripts\v18\run_v18_47C_R2_top20_90d_risk_event_auto_fetcher.ps1"
 $Run48A = Join-Path $Root "scripts\v18\run_v18_48A_top20_options_data_collector.ps1"
+$Run48B = Join-Path $Root "scripts\v18\run_v18_48B_options_risk_radar.ps1"
+$Run49A = Join-Path $Root "scripts\v18\run_v18_49A_factor_weight_buy_sell_policy_backtest.ps1"
+$Run49B = Join-Path $Root "scripts\v18\run_v18_49B_simulation_policy_weight_engine.ps1"
+$Run49C = Join-Path $Root "scripts\v18\run_v18_49C_dual_book_buy_sell_action_planner.ps1"
+$Run49D = Join-Path $Root "scripts\v18\run_v18_49D_real_trade_upload_ledger.ps1"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
 if (-not (Test-Path $Run13D)) { throw "Missing V18.13D wrapper: $Run13D" }
@@ -101,13 +111,20 @@ if ($RunTop20EventEarningsRisk -and -not (Test-Path $Run47C)) { throw "Missing V
 if ($RunTop20EventCoverageRepair -and -not (Test-Path $Run47CR1)) { throw "Missing V18.47C-R1 wrapper: $Run47CR1" }
 if ($RunTop20RiskEventAutoFetch -and -not (Test-Path $Run47CR2)) { throw "Missing V18.47C-R2 wrapper: $Run47CR2" }
 if ($RunTop20OptionsDataCollector -and -not (Test-Path $Run48A)) { throw "Missing V18.48A wrapper: $Run48A" }
+if ($RunTop20OptionsRiskRadar -and -not (Test-Path $Run48B)) { throw "Missing V18.48B wrapper: $Run48B" }
+if ($RunFactorWeightBuySellBacktest -and -not (Test-Path $Run49A)) { throw "Missing V18.49A wrapper: $Run49A" }
+if ($RunSimulationPolicyWeightEngine -and -not (Test-Path $Run49B)) { throw "Missing V18.49B wrapper: $Run49B" }
+if ($RunDualBookActionPlanner -and -not (Test-Path $Run49C)) { throw "Missing V18.49C wrapper: $Run49C" }
+if ($RunRealTradeUploadLedger -and -not (Test-Path $Run49D)) { throw "Missing V18.49D wrapper: $Run49D" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
 $ManualModeExplicit = (
     $FullDaily -or $ReadCenterRefreshOnly -or $ValidateOnly -or
     $RunUniverseRollingScan -or $RunForwardTracker -or $RunManualFeedback -or
     $RunFullUniverseFactorTechnicalRecompute -or $ApplyFullUniverseRecomputedCandidates -or
-    $RunCandidateTopFullCanonicalSync -or $ApplyCandidateTopFullCanonicalSync
+    $RunCandidateTopFullCanonicalSync -or $ApplyCandidateTopFullCanonicalSync -or
+    $RunTop20OptionsRiskRadar -or $RunFactorWeightBuySellBacktest -or
+    $RunSimulationPolicyWeightEngine -or $RunDualBookActionPlanner -or $RunRealTradeUploadLedger
 )
 $ApplyRefreshModePreset = $RefreshModeExplicit -or -not $ManualModeExplicit
 if ($ApplyRefreshModePreset) {
@@ -704,6 +721,78 @@ function Invoke-V18_48ATop20OptionsDataCollector {
     }
 }
 
+function Invoke-V18_48BTop20OptionsRiskRadar {
+    if ($RunTop20OptionsRiskRadar) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.48B Top20 options risk radar"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run48B -Root $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_48B_TOP20_OPTIONS_RISK_RADAR_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_48B_TOP20_OPTIONS_RISK_RADAR_PATH: $(Join-Path $Root 'outputs\v18\options\V18_48B_TOP20_OPTIONS_RISK_RADAR.csv')"
+        Write-Host "V18_48B_TOP20_OPTIONS_RISK_RADAR_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_TOP20_OPTIONS_RISK_RADAR.md')"
+    }
+}
+
+function Invoke-V18_49AFactorWeightBuySellBacktest {
+    if ($RunFactorWeightBuySellBacktest) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.49A factor weight buy/sell policy backtest"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run49A -ProjectRoot $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_49A_FACTOR_WEIGHT_BUY_SELL_BACKTEST_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_49A_FACTOR_WEIGHT_BUY_SELL_BACKTEST_PATH: $(Join-Path $Root 'outputs\v18\factor_backtest\V18_49A_POLICY_PERFORMANCE_SUMMARY.csv')"
+        Write-Host "V18_49A_FACTOR_WEIGHT_BUY_SELL_BACKTEST_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_FACTOR_WEIGHT_BUY_SELL_POLICY_BACKTEST.md')"
+    }
+}
+
+function Invoke-V18_49BSimulationPolicyWeightEngine {
+    if ($RunSimulationPolicyWeightEngine) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.49B simulation policy weight engine"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run49B -ProjectRoot $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_49B_SIMULATION_POLICY_WEIGHT_ENGINE_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_49B_SIMULATION_POLICY_WEIGHT_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_49B_SIMULATION_POLICY_WEIGHT_SNAPSHOT.csv')"
+        Write-Host "V18_49B_SIMULATION_POLICY_WEIGHT_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_SIMULATION_POLICY_WEIGHT.md')"
+    }
+}
+
+function Invoke-V18_49CDualBookActionPlanner {
+    if ($RunDualBookActionPlanner) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.49C dual-book buy/sell action planner"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run49C -ProjectRoot $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_49C_DUAL_BOOK_ACTION_PLANNER_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_49C_SIMULATION_ACTION_PLAN_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_49C_SIMULATION_ACTION_PLAN.csv')"
+        Write-Host "V18_49C_REAL_POSITION_ADVICE_PLAN_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_49C_REAL_POSITION_ADVICE_PLAN.csv')"
+        Write-Host "V18_49C_DUAL_BOOK_ACTION_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_DUAL_BOOK_ACTION_PLAN.md')"
+    }
+}
+
+function Invoke-V18_49DRealTradeUploadLedger {
+    if ($RunRealTradeUploadLedger) {
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.49D real trade upload ledger"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run49D -ProjectRoot $Root -WriteCurrent -CreateTemplate
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_49D_REAL_TRADE_UPLOAD_LEDGER_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_49D_REAL_TRADE_UPLOAD_AUDIT_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_49D_REAL_TRADE_UPLOAD_AUDIT.csv')"
+        Write-Host "V18_49D_REAL_POSITION_BOOK_REBUILT_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_49D_REAL_POSITION_BOOK_REBUILT.csv')"
+        Write-Host "V18_49D_CURRENT_REAL_TRADE_UPLOAD_STATUS_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_REAL_TRADE_UPLOAD_STATUS.md')"
+    }
+}
+
 $Mode = "READ_CENTER_REFRESH_ONLY"
 if ($ValidateOnly) {
     $Mode = "VALIDATE_ONLY"
@@ -721,6 +810,61 @@ else {
 
 Write-Host "REFRESH_MODE: $RefreshMode"
 Write-Host "REFRESH_MODE_PRESET_APPLIED: $($ApplyRefreshModePreset.ToString().ToUpper())"
+
+if ($RunTop20OptionsRiskRadar -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_48B_OPTIONS_RISK_RADAR_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY: TRUE"
+    Invoke-V18_48BTop20OptionsRiskRadar
+    exit 0
+}
+
+if ($RunFactorWeightBuySellBacktest -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_49A_FACTOR_WEIGHT_BUY_SELL_BACKTEST_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY: TRUE"
+    Invoke-V18_49AFactorWeightBuySellBacktest
+    exit 0
+}
+
+if ($RunSimulationPolicyWeightEngine -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_49B_SIMULATION_POLICY_WEIGHT_ENGINE_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY: TRUE"
+    Invoke-V18_49BSimulationPolicyWeightEngine
+    exit 0
+}
+
+if ($RunDualBookActionPlanner -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_49C_DUAL_BOOK_ACTION_PLANNER_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY: TRUE"
+    Invoke-V18_49CDualBookActionPlanner
+    exit 0
+}
+
+if ($RunRealTradeUploadLedger -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_49D_REAL_TRADE_UPLOAD_LEDGER_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY_MANUAL_UPLOAD_WORKFLOW: TRUE"
+    Invoke-V18_49DRealTradeUploadLedger
+    exit 0
+}
 
 if ($RunUniverseRollingScan) {
     Write-Host "DELEGATING_TO: V18.16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN"
@@ -742,6 +886,11 @@ if ($RunUniverseRollingScan) {
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
     Invoke-V18_48ATop20OptionsDataCollector
+    Invoke-V18_48BTop20OptionsRiskRadar
+    Invoke-V18_49AFactorWeightBuySellBacktest
+    Invoke-V18_49BSimulationPolicyWeightEngine
+    Invoke-V18_49CDualBookActionPlanner
+    Invoke-V18_49DRealTradeUploadLedger
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -773,6 +922,11 @@ if ($RunManualFeedback) {
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
     Invoke-V18_48ATop20OptionsDataCollector
+    Invoke-V18_48BTop20OptionsRiskRadar
+    Invoke-V18_49AFactorWeightBuySellBacktest
+    Invoke-V18_49BSimulationPolicyWeightEngine
+    Invoke-V18_49CDualBookActionPlanner
+    Invoke-V18_49DRealTradeUploadLedger
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -937,6 +1091,11 @@ if ($RunForwardTracker) {
     Invoke-V18_47CR1Top20EventCoverageRepair
     Invoke-V18_47CR2Top20RiskEventAutoFetch
     Invoke-V18_48ATop20OptionsDataCollector
+    Invoke-V18_48BTop20OptionsRiskRadar
+    Invoke-V18_49AFactorWeightBuySellBacktest
+    Invoke-V18_49BSimulationPolicyWeightEngine
+    Invoke-V18_49CDualBookActionPlanner
+    Invoke-V18_49DRealTradeUploadLedger
     exit $ExitCode
 }
 
@@ -947,4 +1106,9 @@ Invoke-V18_47CTop20EventEarningsRisk
 Invoke-V18_47CR1Top20EventCoverageRepair
 Invoke-V18_47CR2Top20RiskEventAutoFetch
 Invoke-V18_48ATop20OptionsDataCollector
+Invoke-V18_48BTop20OptionsRiskRadar
+Invoke-V18_49AFactorWeightBuySellBacktest
+Invoke-V18_49BSimulationPolicyWeightEngine
+Invoke-V18_49CDualBookActionPlanner
+Invoke-V18_49DRealTradeUploadLedger
 exit 0

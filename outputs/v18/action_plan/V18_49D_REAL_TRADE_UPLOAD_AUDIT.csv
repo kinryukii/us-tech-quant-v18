@@ -1,0 +1,1 @@
+run_date,source_file,source_row_number,trade_date,ticker,side,shares,price,fees,account,currency,validation_status,validation_reason,ledger_eligible,position_rebuild_eligible
