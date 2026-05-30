@@ -1,0 +1,17 @@
+STATUS: OK_V18_19A_R1_STABLE_SNAPSHOT_READY
+SNAPSHOT_NAME: V18_19A_R1_stable_daily_readability_refactor
+SNAPSHOT_PATH: D:\us-tech-quant\archive\stable\V18_19A_R1_stable_daily_readability_refactor_20260519_171556
+COPIED_FILE_COUNT: 27
+COPY_FAIL_COUNT: 0
+MISSING_CRITICAL_COUNT: 0
+VALIDATION_FAIL_COUNT: 0
+AUTO_TRADE: DISABLED
+AUTO_SELL: DISABLED
+OFFICIAL_DECISION_IMPACT: NONE
+DAILY_TRUST_LEVEL: MEDIUM
+READ_FIRST: D:\us-tech-quant\outputs\v18\ops\V18_19A_R1_READ_FIRST.txt
+SNAPSHOT_REPORT: D:\us-tech-quant\outputs\v18\ops\V18_19A_R1_CURRENT_STABLE_SNAPSHOT_REPORT.md
+MANIFEST: D:\us-tech-quant\archive\stable\V18_19A_R1_stable_daily_readability_refactor_20260519_171556\MANIFEST.csv
+VALIDATION: D:\us-tech-quant\archive\stable\V18_19A_R1_stable_daily_readability_refactor_20260519_171556\VALIDATION.csv
+README: D:\us-tech-quant\archive\stable\V18_19A_R1_stable_daily_readability_refactor_20260519_171556\README_V18_19A_R1_STABLE_SNAPSHOT.md
+RESTORE_SCRIPT: D:\us-tech-quant\archive\stable\V18_19A_R1_stable_daily_readability_refactor_20260519_171556\RESTORE_V18_19A_R1.ps1

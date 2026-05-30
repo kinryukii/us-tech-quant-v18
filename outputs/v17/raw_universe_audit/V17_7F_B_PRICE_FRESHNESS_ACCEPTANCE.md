@@ -1,10 +1,10 @@
 ﻿# V17.7F-B RAW105 Price Freshness Acceptance
 
-Generated: 2026-05-27 22:48:33
+Generated: 2026-05-30 22:36:02
 
 ## 1. Main Conclusion
 
-PRICE_FRESHNESS_ACCEPTANCE_STATUS: WARN_REVIEW_OR_REJECT_PRESENT
+PRICE_FRESHNESS_ACCEPTANCE_STATUS: OK_ACCEPT_DYNAMIC_NON_MAX
 
 本报告判断 V17.7F 中唯一 non-max-date ticker 是否影响正式 daily 操作建议。
 
@@ -15,17 +15,16 @@ PRICE_FRESHNESS_ACCEPTANCE_STATUS: WARN_REVIEW_OR_REJECT_PRESENT
 | RAW_TICKER_COUNT | 105 |
 | PRICE_REFRESH_OK_COUNT | 105 |
 | PRICE_REFRESH_FAIL_COUNT | 0 |
-| MAX_LATEST_PRICE_DATE | 2026-05-27 |
-| LATEST_DATE_ACCEPT_COUNT | 104 |
+| MAX_LATEST_PRICE_DATE | 2026-05-29 |
+| LATEST_DATE_ACCEPT_COUNT | 105 |
 | NON_MAX_ACCEPT_COUNT | 0 |
-| REVIEW_COUNT | 1 |
+| REVIEW_COUNT | 0 |
 | REJECT_COUNT | 0 |
 
 ## 3. Non Max / Review Rows
 
 | ticker | latest_price_date | latest_close | latest_volume | semantic_layer | in_main_compute | in_second_stage | acceptance_status |
 |---|---:|---:|---:|---|---|---|---|
-| PSTG | 2026-05-26 | 88.3499984741211 | 5108386.0 | MAIN_COMPUTE_UNIVERSE | True | False | REVIEW_NON_MAX_DATE_IN_MAIN_COMPUTE |
 
 ## 4. Interpretation
 

@@ -846,6 +846,13 @@ function Invoke-V18_50CDailyOperatorReadabilityLock {
     if ($RunDailyOperatorReadabilityLock) {
         Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair
         Write-Host ""
+        Write-Host "STEP FINAL: run V18.50A daily operator action entry before V18.50C readability lock"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50A -ProjectRoot $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_50A_DAILY_OPERATOR_ACTION_ENTRY_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host ""
         Write-Host "STEP FINAL: run V18.50C daily operator readability and source audit lock"
         & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50C -ProjectRoot $Root
         if ($LASTEXITCODE -ne 0) {

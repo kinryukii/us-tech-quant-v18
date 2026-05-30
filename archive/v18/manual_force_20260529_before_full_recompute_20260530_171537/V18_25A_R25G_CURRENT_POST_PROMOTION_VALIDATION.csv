@@ -1,0 +1,6 @@
+﻿validation_item,status,expected_value,actual_value,reason
+current_ranked_candidates_exists,PASS,TRUE,TRUE,
+current_row_count_equals_preview,PASS,250,250,
+r25f_targets_present_after,PASS,93,93,
+current_duplicate_tickers_after,PASS,0,0,
+current_rank_score_columns_after,PASS,rank+score,rank=True;score=composite_candidate_score,

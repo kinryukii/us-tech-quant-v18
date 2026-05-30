@@ -1,12 +1,12 @@
 {
   "force_same_day_promotion": false,
   "last_core_promotion_date": "",
-  "last_daily_min_scan_count": "67",
+  "last_daily_min_scan_count": "68",
   "last_promotion_date": "2026-05-21",
-  "last_run_date": "2026-05-27",
+  "last_run_date": "2026-05-30",
   "last_today_scan_count": "318",
-  "last_total_universe_count": "335",
+  "last_total_universe_count": "336",
   "same_day_core_promotion_count": 0,
   "same_day_promotion_guard": true,
-  "same_day_run_count": 7
+  "same_day_run_count": 1
 }

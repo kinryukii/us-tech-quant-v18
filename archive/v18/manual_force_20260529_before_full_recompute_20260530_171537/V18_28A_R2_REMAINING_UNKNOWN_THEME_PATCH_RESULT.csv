@@ -1,0 +1,16 @@
+﻿ticker,found_in_theme_map,primary_theme_before,primary_theme_after,manual_review_required_before,manual_review_required_after,patched,skipped_reason,notes
+BLTE,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+TEVA,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+COGT,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+RSP,TRUE,UNKNOWN,OTHER,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch. Non-single-stock instrument; exclude or separately bucket in single-stock factor backtests.
+INSM,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+WVE,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+PSIX,TRUE,UNKNOWN,POWER_INFRASTRUCTURE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+RERE,TRUE,UNKNOWN,ECOMMERCE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+STG,TRUE,UNKNOWN,CONSUMER,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+RBLX,TRUE,UNKNOWN,INTERNET_PLATFORM,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+OLMA,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+ARGT,TRUE,UNKNOWN,OTHER,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch. Non-single-stock instrument; exclude or separately bucket in single-stock factor backtests.
+APG,TRUE,UNKNOWN,INDUSTRIAL,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.
+ALM,TRUE,UNKNOWN,OTHER,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch. Consider adding MATERIALS or CRITICAL_MINERALS as a future primary_theme.
+NAMS,TRUE,UNKNOWN,HEALTHCARE,TRUE,FALSE,TRUE,,V18.28A-R2 controlled remaining-UNKNOWN manual theme patch; no external fetch.

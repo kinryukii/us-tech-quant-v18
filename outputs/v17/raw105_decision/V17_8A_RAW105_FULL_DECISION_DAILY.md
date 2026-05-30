@@ -1,6 +1,6 @@
 # V17.8A RAW105 Full Decision Daily
 
-Generated: 2026-05-27 22:22:57
+Generated: 2026-05-30 22:36:07
 
 ## 1. Main Conclusion
 
@@ -54,4 +54,4 @@ FINAL_ACTION: BUY_CANDIDATES_REQUIRE_MANUAL_CONFIRMATION
 - Worth-review watch CSV: D:\us-tech-quant\outputs\v17\raw105_decision\v17_8A_today_watch_candidates.csv
 - Summary: D:\us-tech-quant\outputs\v17\raw105_decision\V17_8A_RAW105_FULL_DECISION_DAILY.md
 - Read first: D:\us-tech-quant\outputs\v17\raw105_decision\V17_8A_READ_FIRST.txt
-- Latest manual daily source: D:\us-tech-quant\outputs\v17\manual_daily\V17_7G_R1_DYNAMIC_RAW105_MANUAL_DAILY_20260527_222202.txt
+- Latest manual daily source: D:\us-tech-quant\outputs\v17\manual_daily\V17_7G_R1_DYNAMIC_RAW105_MANUAL_DAILY_20260530_223458.txt

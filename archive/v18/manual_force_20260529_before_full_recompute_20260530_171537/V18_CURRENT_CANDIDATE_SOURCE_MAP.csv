@@ -1,0 +1,9 @@
+source_file,row_count,unique_ticker_count,matches_latest_freeze,source_role,selected_for_full,selected_for_top,notes
+outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv,318,318,TRUE,FULL_CURRENT_CANDIDATE_SOURCE,TRUE,FALSE,
+outputs/v18/candidates/V18_RESTORED_RANKED_CANDIDATES_FROM_R29C_SNAPSHOT.csv,252,252,FALSE,OTHER_CANDIDATE_EVIDENCE,FALSE,FALSE,ticker set is subset of freeze
+outputs/v18/candidates/V18_CURRENT_FULL_RANKED_CANDIDATES.csv,318,318,TRUE,FREEZE_MATCHED_CANDIDATE_EVIDENCE,FALSE,FALSE,
+outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv,20,20,FALSE,TOP_DISPLAY_CANDIDATE_SOURCE,FALSE,TRUE,ticker set is subset of freeze
+outputs/v18/candidates/V18_25A_R27J_CURRENT_RANKED_CANDIDATES_PREVIEW.csv,252,252,FALSE,OTHER_CANDIDATE_EVIDENCE,FALSE,FALSE,ticker set is subset of freeze
+outputs/v18/candidates/V18_25A_R25F_CURRENT_RANKED_CANDIDATES_PREVIEW.csv,250,250,FALSE,OTHER_CANDIDATE_EVIDENCE,FALSE,FALSE,ticker set is subset of freeze
+outputs/v18/factor_pack/V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv,252,252,FALSE,FACTOR_PACK_EVIDENCE,FALSE,FALSE,ticker set is subset of freeze
+outputs/v18/technical_timing/V18_6A_CURRENT_TECHNICAL_TIMING.csv,252,252,FALSE,TECHNICAL_TIMING_EVIDENCE,FALSE,FALSE,ticker set is subset of freeze

@@ -1,0 +1,18 @@
+﻿V18 CURRENT OFFICIAL DAILY COMMAND
+
+CURRENT_TARGET:
+D:\us-tech-quant\scripts\v18\run_v18_7D_official_daily_fast_main_with_technical.ps1
+
+DAILY_COMMAND:
+powershell -NoProfile -ExecutionPolicy Bypass -File "D:\us-tech-quant\scripts\v18\run_v18_current_official_daily.ps1"
+
+CURRENT_VERSION:
+V18.7D fast official daily with technical
+
+LAST_STABLE_SNAPSHOT:
+D:\us-tech-quant\archive\stable\V18_7D_R2_stable_fast_official_daily_with_technical_20260516_174922
+
+EXPECTED:
+TECH_FRESH_ROWS: 105
+TECH_STALE_ROWS: 0
+OFFICIAL_DECISION_IMPACT: NONE

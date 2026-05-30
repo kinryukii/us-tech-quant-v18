@@ -1,2 +1,2 @@
 run_date,simulation_policy_style,primary_policy_id,policy_confidence,simulation_action_row_count,paper_buy_candidate_count,paper_add_review_count,paper_reduce_review_count,paper_exit_review_count,real_position_book_found,real_advice_row_count,real_new_buy_review_count,real_add_review_count,real_reduce_review_count,real_sell_review_count,official_ranking_changed,factor_weights_changed,real_trade_execution_allowed,broker_api_used,order_execution_used
-2026-05-30T22:52:33+09:00,SIM_BALANCED,BASELINE_TOP20,LOW,20,3,0,0,0,FALSE,20,0,0,0,0,FALSE,FALSE,FALSE,FALSE,FALSE
+2026-05-31T03:05:47+09:00,SIM_BALANCED,BASELINE_TOP20,LOW,20,3,0,0,0,FALSE,20,0,0,0,0,FALSE,FALSE,FALSE,FALSE,FALSE

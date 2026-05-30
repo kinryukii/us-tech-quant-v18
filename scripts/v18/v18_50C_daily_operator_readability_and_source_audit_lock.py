@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Iterable, Sequence
 
 
-PATCH_VERSION = "V18.50C"
-PATCH_NAME = "DAILY_OPERATOR_READABILITY_AND_SOURCE_AUDIT_LOCK"
+PATCH_VERSION = "V18.50C-R1"
+PATCH_NAME = "COMMAND_CENTER_ACTION_PACKET_SEQUENCE_FIX"
 SOURCE_GATE_REQUIRED_PATCH_VERSION = "V18.50B-R2"
 
 READ50B = "outputs/v18/ops/V18_50B_R2_READ_FIRST.txt"
@@ -19,6 +19,7 @@ UNIVERSE_META = "outputs/v18/universe/V18_CURRENT_UNIVERSE_ROLLING_STATE.csv"
 RECOMMENDATION_META = "outputs/v18/recommendations/V18_CURRENT_RECOMMENDATION_TIERS.csv"
 ACTION_PACKET = "outputs/v18/action_plan/V18_50A_DAILY_OPERATOR_ACTION_PACKET.csv"
 ACTION_SUMMARY = "outputs/v18/action_plan/V18_50A_DAILY_OPERATOR_ACTION_SUMMARY.csv"
+ACTION_READ_FIRST = "outputs/v18/ops/V18_50A_READ_FIRST.txt"
 
 OUT_READ_FIRST = "outputs/v18/ops/V18_50C_READ_FIRST.txt"
 OUT_SUMMARY = "outputs/v18/ops/V18_50C_DAILY_OPERATOR_READABILITY_SUMMARY.csv"
@@ -69,6 +70,10 @@ READ_FIRST_ORDER = [
     "CURRENT_HOMEPAGE_CN_WRITTEN",
     "ACTION_PACKET_FOUND",
     "ACTION_PACKET_ROW_COUNT",
+    "ACTION_PACKET_REVALIDATED_BEFORE_REPORT",
+    "COMMAND_CENTER_SEQUENCE_OK",
+    "ACTION_PACKET_REVALIDATION_SOURCE",
+    "REQUIRED_SEQUENCE",
     "PAPER_BUY_COUNT",
     "PAPER_WATCH_COUNT",
     "PAPER_SKIP_POLICY_LIMIT_COUNT",
@@ -306,6 +311,8 @@ def render_report(
         f"- 生成时间: `{now_iso()}`",
         f"- 报告状态: `{values['STATUS']}`",
         f"- Source gate: `{values['SOURCE_GATE_STATUS']}` / OK=`{values['SOURCE_GATE_OK']}`",
+        f"- Required sequence: `{values['REQUIRED_SEQUENCE']}`",
+        f"- Action packet revalidated before report: `{values['ACTION_PACKET_REVALIDATED_BEFORE_REPORT']}`",
         "",
         "## 1. 每日 source-chain 状态",
         "",
@@ -344,6 +351,8 @@ def render_report(
         "## 4. V18.50A action packet 摘要",
         "",
         f"- action packet found: `{values['ACTION_PACKET_FOUND']}`",
+        f"- action packet revalidated before report: `{values['ACTION_PACKET_REVALIDATED_BEFORE_REPORT']}`",
+        f"- revalidation source: `{values['ACTION_PACKET_REVALIDATION_SOURCE']}`",
         f"- action packet rows: `{values['ACTION_PACKET_ROW_COUNT']}`",
         f"- PAPER_BUY: `{values['PAPER_BUY_COUNT']}`",
         f"- PAPER_WATCH: `{values['PAPER_WATCH_COUNT']}`",
@@ -412,6 +421,7 @@ def render_report(
 
 def run(root: Path) -> int:
     read50b = read_kv(root / READ50B)
+    read50a = read_kv(root / ACTION_READ_FIRST)
     source_ok = source_gate_ok(read50b)
     top20, _ = read_csv(root / CURRENT_TOP20)
     action_packet, _ = read_csv(root / ACTION_PACKET)
@@ -428,6 +438,13 @@ def run(root: Path) -> int:
     status_by_ticker = index_by_ticker(status_rows)
     top20_report_rows = build_top20_rows(top20_sorted, status_by_ticker, action_by_ticker, names)
     counts = action_counts(action_packet)
+    action_packet_revalidated = (
+        bool(action_packet)
+        and read50a.get("STATUS") == "PASS"
+        and read50a.get("PATCH_VERSION") == "V18.50A"
+        and read50a.get("DAILY_OPERATOR_ACTION_ENTRY_SOURCE_OK") == "TRUE"
+        and read50a.get("DAILY_OPERATOR_ACTION_ENTRY_SOURCE_BLOCKED_REASON") == "NONE"
+    )
 
     current_top20_source_ok = (
         source_ok
@@ -439,6 +456,8 @@ def run(root: Path) -> int:
     warnings: list[str] = []
     if not source_ok:
         warnings.append("source-chain 未通过 V18.50B-R2 锁定 gate，本报告不可作为 source-safe 日报。")
+    if not action_packet_revalidated:
+        warnings.append("V18.50A action packet 未确认在报告前完成 source-safe revalidation。")
     if optional_missing:
         warnings.append(f"可选风险报告缺失 {optional_missing} 个，标记为 WARN_OPTIONAL_REPORT_MISSING。")
     if counts["PAPER_BUY_COUNT"] == 0:
@@ -451,7 +470,7 @@ def run(root: Path) -> int:
     report_written = "FALSE"
     current_written = "FALSE"
     values = {
-        "STATUS": "PASS" if source_ok and current_top20_source_ok else "WARN_V18_50C_SOURCE_GATE_NOT_READY",
+        "STATUS": "PASS" if source_ok and current_top20_source_ok and action_packet_revalidated else "WARN_V18_50C_SOURCE_GATE_NOT_READY",
         "PATCH_VERSION": PATCH_VERSION,
         "PATCH_NAME": PATCH_NAME,
         "SOURCE_GATE_REQUIRED_PATCH_VERSION": SOURCE_GATE_REQUIRED_PATCH_VERSION,
@@ -466,13 +485,17 @@ def run(root: Path) -> int:
         "CURRENT_HOMEPAGE_CN_WRITTEN": current_written,
         "ACTION_PACKET_FOUND": bool_text(bool(action_packet)),
         "ACTION_PACKET_ROW_COUNT": str(len(action_packet)),
+        "ACTION_PACKET_REVALIDATED_BEFORE_REPORT": bool_text(action_packet_revalidated),
+        "COMMAND_CENTER_SEQUENCE_OK": bool_text(source_ok and action_packet_revalidated),
+        "ACTION_PACKET_REVALIDATION_SOURCE": ACTION_READ_FIRST,
+        "REQUIRED_SEQUENCE": "V18.50B-R2 -> V18.50A -> V18.50C",
         "PAPER_BUY_COUNT": str(counts["PAPER_BUY_COUNT"]),
         "PAPER_WATCH_COUNT": str(counts["PAPER_WATCH_COUNT"]),
         "PAPER_SKIP_POLICY_LIMIT_COUNT": str(counts["PAPER_SKIP_POLICY_LIMIT_COUNT"]),
         "REAL_POSITION_DATA_MISSING_COUNT": str(counts["REAL_POSITION_DATA_MISSING_COUNT"]),
         "OPTIONAL_RISK_REPORTS_FOUND_COUNT": str(optional_found),
         "OPTIONAL_RISK_REPORTS_MISSING_COUNT": str(optional_missing),
-        "DAILY_OPERATOR_REPORT_USABLE": bool_text(source_ok and current_top20_source_ok),
+        "DAILY_OPERATOR_REPORT_USABLE": bool_text(source_ok and current_top20_source_ok and action_packet_revalidated),
         **SAFETY_FIELDS,
     }
 
@@ -492,7 +515,7 @@ def run(root: Path) -> int:
     write_text(root / OUT_BRIEF, brief)
     values["TOP20_REPORT_WRITTEN"] = "TRUE"
     values["CURRENT_HOMEPAGE_CN_WRITTEN"] = "TRUE"
-    values["DAILY_OPERATOR_REPORT_USABLE"] = bool_text(source_ok and current_top20_source_ok)
+    values["DAILY_OPERATOR_REPORT_USABLE"] = bool_text(source_ok and current_top20_source_ok and action_packet_revalidated)
 
     write_csv(root / OUT_SUMMARY, [values], READ_FIRST_ORDER)
     write_text(root / OUT_READ_FIRST, "\n".join(f"{key}: {values.get(key, '')}" for key in READ_FIRST_ORDER) + "\n")

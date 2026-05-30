@@ -1,8 +1,10 @@
 # V18.50C 每日操作员中文首页
 
-- 生成时间: `2026-05-30T22:57:57`
+- 生成时间: `2026-05-31T03:05:48`
 - 报告状态: `PASS`
 - Source gate: `PASS` / OK=`TRUE`
+- Required sequence: `V18.50B-R2 -> V18.50A -> V18.50C`
+- Action packet revalidated before report: `TRUE`
 
 ## 1. 每日 source-chain 状态
 
@@ -57,6 +59,8 @@
 ## 4. V18.50A action packet 摘要
 
 - action packet found: `TRUE`
+- action packet revalidated before report: `TRUE`
+- revalidation source: `outputs/v18/ops/V18_50A_READ_FIRST.txt`
 - action packet rows: `31`
 - PAPER_BUY: `3`
 - PAPER_WATCH: `0`
