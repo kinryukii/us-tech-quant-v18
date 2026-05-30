@@ -13,7 +13,7 @@
 | COVERAGE_SHORTFALL_COUNT | 0 | How many names were not scanned versus target. | A shortfall leaves some names less recently refreshed. |
 | DAILY_THRESHOLD_COVERAGE_SOURCE | outputs/v18/ops/V18_CURRENT_ROLLING_UNIVERSE_SCAN_READ_FIRST.txt | Source used for daily threshold coverage. | Fresh V18.16J/V18.16F evidence is preferred over stale V18.16H audits. |
 | DAILY_THRESHOLD_COVERAGE_SOURCE_STATUS | OK_FRESH_DAILY_SCAN_SOURCE | Freshness/provenance for daily threshold source. | Fallback or stale sources are reported explicitly. |
-| DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME | 2026-05-27T22:48:39 | Filesystem modified time for selected coverage source. | Newest valid daily-threshold evidence is selected. |
+| DAILY_THRESHOLD_COVERAGE_SOURCE_MODIFIED_TIME | 2026-05-30T22:38:02 | Filesystem modified time for selected coverage source. | Newest valid daily-threshold evidence is selected. |
 | DAILY_THRESHOLD_COVERAGE_SOURCE_SELECTION_REASON | Valid current-run read-first daily threshold evidence. | Why this daily-threshold source was selected. | Malformed newer candidates are skipped. |
 | TRUE_5DAY_UNIQUE_COVERAGE_MET | FALSE | Separate true five-day unique universe coverage status. | FALSE caps trust below HIGH even if daily threshold is met. |
 | PRICE_FRESHNESS_MODE | LOCAL_CACHE_ONLY_SAFE_MODE | Current price refresh used cache-only or cache-backed mode. | Cache-only mode is usable but not ideal for freshness. |

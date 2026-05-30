@@ -35,7 +35,7 @@ READ_ONLY: TRUE
 | 20 | ALAB | -53.325714 | NO_TRADE_REVIEW_ONLY | TECH_TIMING_OVERHEAT_AVOID_CHASE | 2026-05-27 | 306.14 |
 
 ## DATA_SOURCE_AUDIT
-- scanned_input_count: 150
+- scanned_input_count: 163
 - selected_for_ranking_count: 2
 - ranking_source_files: 2
 

@@ -1,26 +1,26 @@
 # V18.34B Daily Output Freshness Guard
 
 - STATUS: `WARN_V18_34B_DAILY_OUTPUT_FRESHNESS_REVIEW_NEEDED`
-- GENERATED_AT: `2026-05-27T22:58:24`
+- GENERATED_AT: `2026-05-30T22:38:02`
 - FRESHNESS_ROUND_CONSISTENT: `FALSE`
-- MAX_KEY_FILE_GAP_HOURS: `71.07`
+- MAX_KEY_FILE_GAP_HOURS: `142.73`
 
 ## Required Files
 | file | exists | modified | age_hours |
 | --- | --- | --- | ---: |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md` | TRUE | 2026-05-27T22:58:24 | 0.00 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_RUNBOOK_CN.md` | TRUE | 2026-05-25T00:27:29 | 70.52 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_CONTEXT_CONSISTENCY.md` | TRUE | 2026-05-24T23:54:21 | 71.07 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_TRADE_READINESS.md` | TRUE | 2026-05-27T12:59:03 | 9.99 |
-| `D:\us-tech-quant\outputs\v18\ops\V18_PROJECT_CONTEXT_COMPACT.md` | TRUE | 2026-05-24T23:54:21 | 71.07 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md` | TRUE | 2026-05-30T22:38:02 | 0.00 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_RUNBOOK_CN.md` | TRUE | 2026-05-25T00:27:29 | 142.18 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_CONTEXT_CONSISTENCY.md` | TRUE | 2026-05-24T23:54:21 | 142.73 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_DAILY_TRADE_READINESS.md` | TRUE | 2026-05-27T12:59:03 | 81.65 |
+| `D:\us-tech-quant\outputs\v18\ops\V18_PROJECT_CONTEXT_COMPACT.md` | TRUE | 2026-05-24T23:54:21 | 142.73 |
 
 ## Optional Files
 | file | exists | modified | age_hours |
 | --- | --- | --- | ---: |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_STORAGE_CLEANUP.md` | TRUE | 2026-05-25T00:50:54 | 70.12 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_FREEZE_COVERAGE_REPAIR.md` | TRUE | 2026-05-24T23:54:13 | 71.07 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_ACCOUNT_AWARE_MANUAL_TRADE_PLAN.md` | TRUE | 2026-05-24T18:28:41 | 76.50 |
-| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_MANUAL_ACCOUNT_STATE_GUIDE.md` | TRUE | 2026-05-24T18:28:38 | 76.50 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_STORAGE_CLEANUP.md` | TRUE | 2026-05-25T00:50:54 | 141.79 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_FREEZE_COVERAGE_REPAIR.md` | TRUE | 2026-05-24T23:54:13 | 142.73 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_ACCOUNT_AWARE_MANUAL_TRADE_PLAN.md` | TRUE | 2026-05-24T18:28:41 | 148.16 |
+| `D:\us-tech-quant\outputs\v18\read_center\V18_CURRENT_MANUAL_ACCOUNT_STATE_GUIDE.md` | TRUE | 2026-05-24T18:28:38 | 148.16 |
 
 ## Extracted Fields
 - candidate_count: `252`
@@ -34,8 +34,8 @@
 - `AUTO_SELL`: `DISABLED`
 - `OFFICIAL_DECISION_IMPACT`: `NONE`
 - `FORBIDDEN_MODIFIED`: `FALSE`
-- `DAILY_TRUST_LEVEL`: `LOW`
-- `V18_33A_RUN_ID`: `V18_33A_20260527_225824`
+- `DAILY_TRUST_LEVEL`: `MEDIUM`
+- `V18_33A_RUN_ID`: `V18_33A_20260530_223802`
 - `V18_33B_RUN_ID`: `UNKNOWN`
 - storage_repo_size_mb: `845.20`
 
@@ -49,8 +49,10 @@
 ## Warnings
 - WARN: V18_CURRENT_DAILY_OPERATOR_RUNBOOK_CN.md older than 36h
 - WARN: V18_CURRENT_CONTEXT_CONSISTENCY.md older than 36h
+- WARN: V18_CURRENT_DAILY_TRADE_READINESS.md older than 36h
 - WARN: V18_PROJECT_CONTEXT_COMPACT.md older than 36h
-- WARN: max modified-time gap among key files is 71.07h
+- WARN: max modified-time gap among key files is 142.73h
+- WARN: daily trust level is MEDIUM
 - WARN: account state is template/manual
 - WARN: allowed trade candidates are 0
 

@@ -1,25 +1,25 @@
 # V18.4B Factor Outcome Summary and Promotion Rules
 
 - V18_4B_STATUS: `OK_PROMOTION_RULES_UPDATED_NO_PROMOTION`
-- RUN_TIME: `2026-05-27 22:23:08`
-- TRACKER_TOTAL_ROWS: `525`
-- SNAPSHOT_DATE_COUNT: `5`
-- LATEST_SNAPSHOT_PRICE_DATE: `2026-05-26`
+- RUN_TIME: `2026-05-30 22:36:17`
+- TRACKER_TOTAL_ROWS: `630`
+- SNAPSHOT_DATE_COUNT: `6`
+- LATEST_SNAPSHOT_PRICE_DATE: `2026-05-29`
 
 ## Current Decision Context
 
 - FINAL_ACTION: `BUY_CANDIDATES_REQUIRE_MANUAL_CONFIRMATION`
 - BUY_PERMISSION: `UNKNOWN`
 - SELECTED_FACTOR: `F002`
-- FACTOR_PACK_OVERLAP_NAMES: `CRWV`
+- FACTOR_PACK_OVERLAP_NAMES: `NONE`
 
 ## Completed Forward Observations
 
 | horizon | completed_count |
 |---:|---:|
-| 1obs | 420 |
-| 3obs | 210 |
-| 5obs | 0 |
+| 1obs | 525 |
+| 3obs | 315 |
+| 5obs | 105 |
 | 10obs | 0 |
 | 20obs | 0 |
 
@@ -27,29 +27,29 @@
 
 | group | horizon | completed | avg % | median % | win rate % | min n | eval |
 |---|---:|---:|---:|---:|---:|---:|---|
-| factor_top10 | 1obs | 40 | 3.2124 | 1.8987 | 57.5000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| factor_top10 | 3obs | 20 | 4.8425 | 2.4923 | 55.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| factor_top10 | 5obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
+| factor_top10 | 1obs | 50 | 2.8749 | 1.7936 | 58.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top10 | 3obs | 30 | 11.6499 | 5.6221 | 70.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top10 | 5obs | 10 | 15.6540 | 6.9451 | 70.0000 | 20 | WATCH_DATA_INSUFFICIENT |
 | factor_top10 | 10obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | factor_top10 | 20obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
-| factor_top30 | 1obs | 121 | 1.7006 | 0.5668 | 57.8512 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| factor_top30 | 3obs | 61 | 2.3301 | 1.7035 | 55.7377 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| factor_top30 | 5obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
+| factor_top30 | 1obs | 151 | 2.0007 | 0.6073 | 58.2781 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top30 | 3obs | 91 | 5.8605 | 3.1421 | 63.7363 | 40 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_top30 | 5obs | 30 | 12.9718 | 9.1619 | 70.0000 | 40 | WATCH_DATA_INSUFFICIENT |
 | factor_top30 | 10obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
 | factor_top30 | 20obs | 0 | NA | NA | NA | 40 | NO_COMPLETED_OBS_YET |
-| official_review | 1obs | 40 | 4.1712 | 1.8457 | 62.5000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| official_review | 3obs | 20 | 7.9614 | 5.8203 | 65.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| official_review | 5obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
+| official_review | 1obs | 50 | 4.9162 | 1.8457 | 64.0000 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| official_review | 3obs | 30 | 14.3460 | 8.3318 | 73.3333 | 20 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| official_review | 5obs | 10 | 26.0713 | 15.5522 | 80.0000 | 20 | WATCH_DATA_INSUFFICIENT |
 | official_review | 10obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
 | official_review | 20obs | 0 | NA | NA | NA | 20 | NO_COMPLETED_OBS_YET |
-| factor_pack_overlap | 1obs | 14 | -0.6094 | -0.2107 | 50.0000 | 8 | NEUTRAL_KEEP_WATCHING |
-| factor_pack_overlap | 3obs | 10 | 4.5496 | 0.7508 | 50.0000 | 8 | KEEP_WATCHING_POSITIVE |
-| factor_pack_overlap | 5obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
+| factor_pack_overlap | 1obs | 15 | -0.3396 | 0.7047 | 53.3333 | 8 | NEUTRAL_KEEP_WATCHING |
+| factor_pack_overlap | 3obs | 13 | 11.2379 | 3.0116 | 61.5385 | 8 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| factor_pack_overlap | 5obs | 4 | 33.0815 | 30.6645 | 75.0000 | 8 | WATCH_DATA_INSUFFICIENT |
 | factor_pack_overlap | 10obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
 | factor_pack_overlap | 20obs | 0 | NA | NA | NA | 8 | NO_COMPLETED_OBS_YET |
-| v18_3c_overlap | 1obs | 8 | 9.1004 | 2.2489 | 62.5000 | 6 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
-| v18_3c_overlap | 3obs | 4 | 14.6252 | 10.3380 | 50.0000 | 6 | WATCH_DATA_INSUFFICIENT |
-| v18_3c_overlap | 5obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |
+| v18_3c_overlap | 1obs | 11 | 11.0580 | 2.8495 | 72.7273 | 6 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| v18_3c_overlap | 3obs | 6 | 33.5578 | 31.8242 | 66.6667 | 6 | POSITIVE_EARLY_SIGNAL_NOT_PROMOTABLE_YET |
+| v18_3c_overlap | 5obs | 2 | 66.1521 | 66.1521 | 100.0000 | 6 | WATCH_DATA_INSUFFICIENT |
 | v18_3c_overlap | 10obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |
 | v18_3c_overlap | 20obs | 0 | NA | NA | NA | 6 | NO_COMPLETED_OBS_YET |
 

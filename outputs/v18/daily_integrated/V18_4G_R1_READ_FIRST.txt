@@ -1,6 +1,6 @@
 ﻿V18.4G-R1 FINAL DAILY FACTOR AUDIT
 
-生成时间: 2026-05-27 22:24:13
+生成时间: 2026-05-30 22:37:24
 
 STATUS: OK_FINAL_DAILY_FACTOR_AUDIT_READY
 
@@ -30,7 +30,7 @@ CURRENT_SELECTED_FACTOR: F002
 FORWARD_COVERED_COUNT: 6
 FORWARD_MISSING_COUNT: 0
 EXPANDED_FORWARD_SNAPSHOT_ROWS: 105
-BEST_FACTOR_OUTPUT_FILE: D:\us-tech-quant\outputs\v18\factor_pack\V18_CURRENT_RAW105_FACTOR_PACK_RANKING.csv
+BEST_FACTOR_OUTPUT_FILE: D:\us-tech-quant\outputs\v18\factor_pack\V18_3D_RAW105_FACTOR_PACK_RANKING.csv
 
 === IMPORTANT FILES ===
 CURRENT_FINAL_DAILY: D:\us-tech-quant\outputs\v18\daily_integrated\V18_CURRENT_FINAL_DAILY.md
@@ -39,7 +39,7 @@ FACTOR_PACK_AUDIT: D:\us-tech-quant\outputs\v18\factor_audit\V18_4D_CURRENT_FACT
 FACTOR_OUTPUT_AUDIT: D:\us-tech-quant\outputs\v18\factor_audit\V18_4E_CURRENT_FACTOR_OUTPUT_FORWARD_AUDIT.md
 FORWARD_COVERAGE_AUDIT: D:\us-tech-quant\outputs\v18\factor_audit\V18_4F_CURRENT_FORWARD_FACTOR_COVERAGE.md
 EXPANDED_FACTOR_SNAPSHOT: D:\us-tech-quant\state\v18\V18_4F_CURRENT_WORLDQUANT_FACTOR_FORWARD_SNAPSHOT.csv
-LOG_DIR: D:\us-tech-quant\outputs\v18\ops\V18_4G_R1_20260527_222413
+LOG_DIR: D:\us-tech-quant\outputs\v18\ops\V18_4G_R1_20260530_223724
 
 === OFFICIAL IMPACT ===
 F006-F011 official decision impact remains NONE unless promotion rules activate after enough forward outcomes.

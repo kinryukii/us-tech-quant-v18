@@ -2,7 +2,7 @@
 
 ## 今日状态
 - 总状态: WARN_V18_41A_DAILY_CLEAN_OPERATOR_PIPELINE_REVIEW_NEEDED
-- 今日信号日期: 2026-05-27
+- 今日信号日期: 2026-05-29
 - 最新 freeze 数量: 318
 - 当前 full candidate 数量: 318
 - 当前 top candidate 数量: 20

@@ -1,8 +1,8 @@
 # V18.35D 全总池真实因子/技术/排名重算
 
-- STATUS: `WARN_V18_35D_FULL_UNIVERSE_RECOMPUTE_REVIEW_NEEDED`
-- RUN_ID: `V18_35D_20260527_234138`
-- GENERATED_AT: `2026-05-27T23:41:38`
+- STATUS: `FAIL_V18_35D_FULL_UNIVERSE_RECOMPUTE_FAILED`
+- RUN_ID: `V18_35D_20260530_221348`
+- GENERATED_AT: `2026-05-30T22:13:48`
 
 ## 说明
 这不是单纯把 ticker 放进列表，而是对全部 total universe ticker 尝试真实计算。
@@ -21,23 +21,24 @@
 - price unavailable excluded count: `5`
 - price unavailable excluded tickers: `CDTX, CFLT, COG, JFROG, MPW`
 - current price refresh blocking failed ticker count: `0`
-- targeted stale retry attempted/success/still stale: `18` / `0` / `18`
-- targeted stale retry still stale tickers: `AGX, ALM, BW, HTZ, HUT, MOH, MTSI, MTZ, OLPX, PLUG, PUMP, SITM, STM, TSEM, TTMI, TWLO, VIAV, WOLF`
+- targeted stale retry attempted/success/still stale: `0` / `0` / `0`
+- targeted stale retry still stale tickers: ``
 - 总池数量: `323`
 - 实际尝试计算数量: `323`
 - price data available/missing: `318` / `5`
-- factor success/failure: `318` / `5`
-- technical success/failure: `318` / `5`
-- ranking merge success/failure: `318` / `5`
-- rank eligible/ineligible: `318` / `5`
+- factor success/failure: `317` / `6`
+- technical success/failure: `317` / `6`
+- ranking merge success/failure: `317` / `6`
+- rank eligible/ineligible: `317` / `6`
 - apply executed: `TRUE`
-- backup path: `D:\us-tech-quant\archive\v18\full_universe_recompute_backups\V18_35D_20260527_234138`
+- backup path: `NONE`
 - expected freeze not expanded yet: `FALSE`
 
 ## Failure Buckets
 | bucket | count |
 | --- | ---: |
 | `UNAVAILABLE_PRICE_DATA_EXCLUDED` | 5 |
+| `PRICE_HISTORY_INSUFFICIENT` | 1 |
 
 ## Failed Ticker Samples
 | ticker | bucket | reason |
@@ -47,30 +48,31 @@
 | `COG` | `UNAVAILABLE_PRICE_DATA_EXCLUDED` | yfinance returned empty data |
 | `JFROG` | `UNAVAILABLE_PRICE_DATA_EXCLUDED` | yfinance returned empty data |
 | `MPW` | `UNAVAILABLE_PRICE_DATA_EXCLUDED` | yfinance returned empty data |
+| `TQQQ` | `PRICE_HISTORY_INSUFFICIENT` | price history rows 2 < 120 |
 
 ## Top 20 Recomputed Candidates
 | rank | ticker | score | latest_price_date |
 | ---: | --- | ---: | --- |
-| 1 | `KEYS` | 57.456 | 2026-05-26 |
-| 2 | `VRT` | 57.4 | 2026-05-26 |
-| 3 | `ICHR` | 56.64 | 2026-05-26 |
-| 4 | `NVDA` | 54.62 | 2026-05-26 |
-| 5 | `D` | 53.916 | 2026-05-26 |
-| 6 | `AMKR` | 53.592 | 2026-05-26 |
-| 7 | `GOOGL` | 53.476 | 2026-05-26 |
-| 8 | `FIX` | 53.096 | 2026-05-26 |
-| 9 | `MCHP` | 52.448 | 2026-05-26 |
-| 10 | `LITE` | 52.332 | 2026-05-26 |
-| 11 | `VIAV` | 51.800559 | 2026-05-21 |
-| 12 | `CARR` | 51.684 | 2026-05-26 |
-| 13 | `ENTG` | 51.572 | 2026-05-26 |
-| 14 | `SITM` | 51.403528 | 2026-05-21 |
-| 15 | `CRWV` | 50.924 | 2026-05-26 |
-| 16 | `ETR` | 50.544 | 2026-05-26 |
-| 17 | `TSEM` | 50.428133 | 2026-05-21 |
-| 18 | `COHU` | 50.428 | 2026-05-26 |
-| 19 | `HUT` | 49.710963 | 2026-05-20 |
-| 20 | `GEV` | 49.668 | 2026-05-26 |
+| 1 | `VIAV` | 54.718958 | 2026-05-29 |
+| 2 | `BW` | 53.81616 | 2026-05-29 |
+| 3 | `AEHR` | 52.78576 | 2026-05-29 |
+| 4 | `INTC` | 52.707467 | 2026-05-29 |
+| 5 | `SITM` | 50.963459 | 2026-05-29 |
+| 6 | `FORM` | 50.70911 | 2026-05-29 |
+| 7 | `TSEM` | 50.644541 | 2026-05-29 |
+| 8 | `LITE` | 50.488231 | 2026-05-29 |
+| 9 | `WOLF` | 49.698107 | 2026-05-29 |
+| 10 | `BE` | 49.565227 | 2026-05-29 |
+| 11 | `POWL` | 49.46505 | 2026-05-29 |
+| 12 | `ACLS` | 48.727715 | 2026-05-29 |
+| 13 | `AMKR` | 48.306825 | 2026-05-29 |
+| 14 | `MTZ` | 48.293852 | 2026-05-29 |
+| 15 | `VECO` | 46.907178 | 2026-05-29 |
+| 16 | `PUMP` | 46.334602 | 2026-05-29 |
+| 17 | `ICHR` | 46.293189 | 2026-05-29 |
+| 18 | `VRT` | 46.267654 | 2026-05-29 |
+| 19 | `COHR` | 46.189931 | 2026-05-29 |
+| 20 | `TTMI` | 45.941409 | 2026-05-29 |
 
 ## Operator Next Action
 - 若 rank_ineligible 仍较多，先补 price_cache/full history，再重跑本步骤。

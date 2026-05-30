@@ -18,7 +18,8 @@ from typing import Iterable, Sequence
 AUTO_TRADE = "DISABLED"
 AUTO_SELL = "DISABLED"
 
-RANKED = "outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv"
+RANKED = "outputs/v18/candidates/V18_35D_FULL_UNIVERSE_RECOMPUTED_RANKED_CANDIDATES.csv"
+CURRENT_RANKED_ALIAS = "outputs/v18/candidates/V18_CURRENT_RANKED_CANDIDATES.csv"
 TOPN = "outputs/v18/candidates/V18_CURRENT_TOP_RANKED_CANDIDATES.csv"
 READ35D = "outputs/v18/ops/V18_35D_READ_FIRST.txt"
 OUT_AUDIT = "outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_AUDIT.csv"
@@ -43,6 +44,10 @@ SUMMARY_FIELDS = [
     "stale_topn_count",
     "stale_topn_tickers",
     "topn_current_ready",
+    "full_universe_price_refresh_complete",
+    "top20_price_refresh_complete",
+    "full_universe_stale_row_count",
+    "top20_stale_row_count",
     "full_price_refresh_complete",
     "full_price_refresh_incomplete_reason",
     "full_ranking_recompute_complete",
@@ -201,7 +206,9 @@ def build(root: Path, refresh_mode: str) -> tuple[dict[str, object], list[dict[s
     stale_top_tickers = ", ".join(clean(row.get("ticker")).upper() for row in stale_top_rows if clean(row.get("ticker")))
 
     recompute_complete = full_recompute_complete(ranked_rows)
-    price_complete = bool(ranked_rows) and stale_ranked == 0 and bool(max_date)
+    full_universe_stale_count = stale_ranked
+    full_universe_price_complete = bool(ranked_rows) and full_universe_stale_count == 0 and bool(max_date)
+    price_complete = full_universe_price_complete
     invalid_pseudo_count = to_int(read35d.get("INVALID_PSEUDO_TICKER_COUNT"))
     yfinance_failed_count = to_int(read35d.get("YFINANCE_FAILED_TICKER_COUNT"))
     yfinance_failed_count_raw = to_int(read35d.get("YFINANCE_FAILED_TICKER_COUNT_RAW"))
@@ -232,7 +239,9 @@ def build(root: Path, refresh_mode: str) -> tuple[dict[str, object], list[dict[s
     fresh_top = sum(1 for row in annotated_top if row.get("freshness_status") == "FRESH_LATEST_PRICE_DATE")
     stale_top_rows = [row for row in annotated_top if row.get("stale_price_data_flag") == "TRUE"]
     stale_top_tickers = ", ".join(clean(row.get("ticker")).upper() for row in stale_top_rows if clean(row.get("ticker")))
-    price_complete = bool(ranked_rows) and len(annotated_top) == 20 and len(stale_top_rows) == 0 and current_price_blocking_failed_count == 0
+    top20_stale_count = len(stale_top_rows)
+    top20_price_complete = bool(ranked_rows) and len(annotated_top) == 20 and top20_stale_count == 0 and current_price_blocking_failed_count == 0
+    price_complete = full_universe_price_complete and top20_price_complete
     incomplete_reason = "NONE" if price_complete else incomplete_reason
     if stale_top_rows:
         trust = "MEDIUM" if fresh_top > 0 else "LOW"
@@ -267,6 +276,10 @@ def build(root: Path, refresh_mode: str) -> tuple[dict[str, object], list[dict[s
         "stale_topn_count": len(stale_top_rows),
         "stale_topn_tickers": stale_top_tickers,
         "topn_current_ready": "TRUE" if len(annotated_top) == 20 and not stale_top_rows else "FALSE",
+        "full_universe_price_refresh_complete": "TRUE" if full_universe_price_complete else "FALSE",
+        "top20_price_refresh_complete": "TRUE" if top20_price_complete else "FALSE",
+        "full_universe_stale_row_count": full_universe_stale_count,
+        "top20_stale_row_count": top20_stale_count,
         "full_price_refresh_complete": "TRUE" if price_complete else "FALSE",
         "full_price_refresh_incomplete_reason": incomplete_reason,
         "full_ranking_recompute_complete": "TRUE" if recompute_complete else "FALSE",
@@ -329,8 +342,8 @@ def render_report(summary: dict[str, object]) -> str:
 
 def run(root: Path, refresh_mode: str) -> int:
     summary, ranked_rows, ranked_fields, top_rows, top_fields, stale_excluded = build(root, refresh_mode)
-    write_csv(root / RANKED, ranked_rows, ranked_fields)
-    write_csv(root / TOPN, top_rows, top_fields)
+    if summary.get("full_ranking_recompute_complete") == "TRUE" and summary.get("topn_current_ready") == "TRUE":
+        write_csv(root / CURRENT_RANKED_ALIAS, ranked_rows, ranked_fields)
     write_csv(root / OUT_STALE_TOPN_EXCLUDED, stale_excluded, ranked_fields)
     write_csv(root / OUT_AUDIT, [summary], SUMMARY_FIELDS)
     write_text(root / OUT_READ_FIRST, render_read_first(summary))

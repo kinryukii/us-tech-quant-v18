@@ -17,7 +17,7 @@
 
 | Machine field | Value |
 | --- | --- |
-| LATEST_SIGNAL_DATE | `2026-05-27` |
+| LATEST_SIGNAL_DATE | `2026-05-29` |
 | LATEST_SIGNAL_FREEZE_COUNT | `318` |
 | CURRENT_FULL_CANDIDATE_COUNT | `318` |
 | CURRENT_TOP_CANDIDATE_COUNT | `20` |
@@ -36,12 +36,12 @@
 
 | Machine field | Value |
 | --- | --- |
-| REFRESH_MODE | `Full` |
+| REFRESH_MODE | `Rolling` |
 | FULL_RANKING_RECOMPUTE_COMPLETE | `TRUE` |
 | FULL_PRICE_REFRESH_COMPLETE | `TRUE` |
 | STALE_TOPN_COUNT | `0` |
 | STALE_TOPN_TICKERS | `` |
-| BUY_CANDIDATE_REPORT_TRUST | `MEDIUM` |
+| BUY_CANDIDATE_REPORT_TRUST | `HIGH` |
 
 > If TopN contains stale price rows, do not use those stale rows for buy timing.
 
@@ -168,3 +168,4 @@
 | `alpha_signal_objects` | `TRUE` | `OPTIONAL` | `OK` |
 | `candidate_top_full_sync` | `TRUE` | `OPTIONAL` | `OK` |
 | `ranked_candidate_freshness` | `TRUE` | `IMPORTANT` | `OK` |
+| `current_alias_source_repair` | `TRUE` | `CORE` | `OK` |

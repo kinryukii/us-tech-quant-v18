@@ -9,15 +9,15 @@ No official ranking weights, buy/sell permissions, real positions, broker APIs, 
 | source_name | found | usable | row_count | source_path |
 | --- | --- | --- | --- | --- |
 | current_top20 | TRUE | TRUE | 20 | D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv |
-| ranked_candidates | TRUE | TRUE | 318 | D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv |
+| ranked_candidates | TRUE | TRUE | 317 | D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv |
 | candidate_forward_tracker | TRUE | TRUE | 57 | D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv |
-| factor_forward_tracker | TRUE | TRUE | 630 | D:\us-tech-quant\state\v18\forward_outcome\V18_4A_FACTOR_FORWARD_TRACKER.csv |
-| factor_pack | TRUE | TRUE | 318 | D:\us-tech-quant\outputs\v18\factor_pack\V18_35D_FULL_UNIVERSE_FACTOR_PACK_RANKING.csv |
-| technical_timing | TRUE | TRUE | 318 | D:\us-tech-quant\outputs\v18\technical_timing\V18_35D_FULL_UNIVERSE_TECHNICAL_TIMING.csv |
+| factor_forward_tracker | TRUE | TRUE | 525 | D:\us-tech-quant\state\v18\forward_outcome\V18_4A_FACTOR_FORWARD_TRACKER.csv |
+| factor_pack | TRUE | TRUE | 317 | D:\us-tech-quant\outputs\v18\factor_pack\V18_35D_FULL_UNIVERSE_FACTOR_PACK_RANKING.csv |
+| technical_timing | TRUE | TRUE | 317 | D:\us-tech-quant\outputs\v18\technical_timing\V18_35D_FULL_UNIVERSE_TECHNICAL_TIMING.csv |
 | event_risk | TRUE | TRUE | 20 | D:\us-tech-quant\outputs\v18\event_risk\V18_47C_TOP20_EVENT_EARNINGS_RISK.csv |
 | options_risk | TRUE | TRUE | 20 | D:\us-tech-quant\outputs\v18\options\V18_48B_TOP20_OPTIONS_RISK_RADAR.csv |
 | priority_tracker | TRUE | TRUE | 20 | D:\us-tech-quant\outputs\v18\tracking\V18_47B_TOP20_PRIORITY_TRACKER.csv |
-| factor_shadow_outcome | TRUE | TRUE | 1695 | D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv |
+| factor_shadow_outcome | TRUE | TRUE | 1510 | D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv |
 
 ## Policy Grid
 | policy_id | entry_rule | exit_rule | position_size_rule |
@@ -34,19 +34,19 @@ No official ranking weights, buy/sell permissions, real positions, broker APIs, 
 ## Performance Summary
 | policy_id | selected_trade_count | completed_trade_count | avg_return_5d | avg_return_20d | evidence_quality | comparison_basis_status | recommendation_label |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| BASELINE_TOP20 | 141 | 20 | 0.070176 | UNKNOWN | LOW | COMPARISON_BASIS_LIMITED | SIMULATION_CANDIDATE_BALANCED_LOW_EVIDENCE |
-| FACTOR_HEAVY | 106 | 15 | 0.049191 | UNKNOWN | LOW | COMPARISON_BASIS_LIMITED | SIMULATION_CANDIDATE_BALANCED_LOW_EVIDENCE |
-| TECHNICAL_HEAVY | 106 | 15 | 0.049191 | UNKNOWN | LOW | COMPARISON_BASIS_LIMITED | SIMULATION_CANDIDATE_BALANCED_LOW_EVIDENCE |
-| PULLBACK_ENTRY | 29 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
-| EVENT_FILTERED | 12 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
-| OPTIONS_RISK_FILTERED | 8 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
-| DEFENSIVE | 7 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
-| AGGRESSIVE_TEST | 171 | 25 | 0.038750 | UNKNOWN | LOW | COMPARISON_BASIS_LIMITED | SIMULATION_CANDIDATE_BALANCED_LOW_EVIDENCE |
+| BASELINE_TOP20 | 121 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| FACTOR_HEAVY | 91 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| TECHNICAL_HEAVY | 91 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| PULLBACK_ENTRY | 0 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| EVENT_FILTERED | 0 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| OPTIONS_RISK_FILTERED | 0 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| DEFENSIVE | 0 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
+| AGGRESSIVE_TEST | 146 | 0 | UNKNOWN | UNKNOWN | INSUFFICIENT | INSUFFICIENT_MATCHED_EVIDENCE | INSUFFICIENT_EVIDENCE |
 
 ## Best Policy / Simulation Style
 | recommended_for_simulation | recommended_policy_id | recommended_sim_style | confidence_level | evidence_quality | reason |
 | --- | --- | --- | --- | --- | --- |
-| TRUE | BASELINE_TOP20 | SIM_BALANCED | LOW | LOW | Best available completed-horizon average return among eligible research policies: 0.070176; COMPARISON_BASIS_LIMITED; LOW_EVIDENCE_NOT_READY_FOR_POLICY_WEIGHTING. Cautious simulation policy testing only. |
+| FALSE | NONE | SIM_EXIT_VALIDATION | LOW | INSUFFICIENT | Insufficient completed local forward-return evidence. |
 
 ## Evidence Limitations
 Missing or limited sources: NONE. Forward returns use local cached forward tracker data when available; missing forward prices are not fabricated.

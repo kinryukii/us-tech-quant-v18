@@ -35,6 +35,7 @@ CURRENT_TOP = d35.CURRENT_TOP
 CURRENT_FACTOR = d35.CURRENT_FACTOR
 CURRENT_TECH = d35.CURRENT_TECH
 CURRENT_REPORT = "outputs/v18/read_center/V18_CURRENT_ONLINE_BACKFILL_CANDIDATE_BRIDGE.md"
+CURRENT_ALIAS_WRITE_DISABLED_BY = "V18_50B_R2_SOLE_CURRENT_TOP20_WRITER_ENFORCEMENT"
 
 D_STATUS = d35.OUT_STATUS
 D_FAILURES = d35.OUT_FAILURES
@@ -217,8 +218,10 @@ def recompute_full_universe(root: Path) -> tuple[list[dict[str, object]], list[d
     top_set_before = ticker_set(top_current)
     freeze_set = latest_freeze(freeze_rows)
     universe_idx = index_by_ticker(universe_rows)
-    factor_idx = index_by_ticker(factor_current)
-    tech_idx = index_by_ticker(tech_current)
+    # V18.50B-R2: legacy/current factor and technical files are reference-only here.
+    # They must not seed rows that could later be promoted to current aliases.
+    factor_idx: dict[str, dict[str, str]] = {}
+    tech_idx: dict[str, dict[str, str]] = {}
     if not factor_fields:
         factor_fields = ["factor_pack_rank", "ticker", "factor_pack_score", "latest_price_date", "latest_close"]
     if not tech_fields:
@@ -230,18 +233,12 @@ def recompute_full_universe(root: Path) -> tuple[list[dict[str, object]], list[d
 
     for ticker in universe:
         evidence = [UNIVERSE]
-        existing_factor = factor_idx.get(ticker)
-        existing_tech = tech_idx.get(ticker)
+        existing_factor = None
+        existing_tech = None
         prices: list[dict[str, object]] = []
         price_error = ""
         price_source = ""
 
-        if existing_factor:
-            factor_rows.append(dict(existing_factor))
-            evidence.append(CURRENT_FACTOR)
-        if existing_tech:
-            tech_rows.append(dict(existing_tech))
-            evidence.append(CURRENT_TECH)
         if not existing_factor or not existing_tech:
             cache_path = root / PRICE_CACHE / f"{ticker}.csv"
             prices, price_error = d35.load_prices(cache_path)
@@ -588,30 +585,7 @@ def main() -> int:
     current_full_after = len(ticker_set(current_full))
     top_after = 20 if e_ranked else 0
     if args.apply_online_backfilled_recomputed_candidates and not fails:
-        preconditions = [
-            bool(universe),
-            len(e_status) == len(universe),
-            all(r.get("calculation_attempted") == "TRUE" for r in e_status),
-            duplicate_count == 0,
-            len(e_ranked) >= len(d_ranked),
-            len(e_ranked) >= 303,
-            len(e_ranked[:20]) == 20,
-        ]
-        if all(preconditions):
-            try:
-                backup_dir = root / "archive/v18/online_backfill_candidate_bridge_backups" / run_id
-                backup_files(root, backup_dir, [CURRENT_RANKED, CURRENT_FULL, CURRENT_TOP, CURRENT_FACTOR, CURRENT_TECH])
-                backup_path = str(backup_dir)
-                write_csv(root / CURRENT_FULL, e_ranked, d35.RANK_FIELDS)
-                write_csv(root / CURRENT_RANKED, e_ranked, d35.RANK_FIELDS)
-                write_csv(root / CURRENT_TOP, e_ranked[:20], d35.RANK_FIELDS)
-                current_full_after = len(e_ranked)
-                top_after = len(e_ranked[:20])
-                applied = True
-            except Exception as exc:
-                fails.append(f"write/backup operation failed in apply mode: {type(exc).__name__}")
-        else:
-            fails.append("apply preconditions not met")
+        warnings.append("current candidate alias apply disabled by V18.50B-R2; sidecar outputs only")
 
     new_not_freeze = [r for r in bridge if truth(r.get("in_v18_35e_online_recomputed_candidates")) and not truth(r.get("in_latest_freeze_252"))]
     newly_backfilled = [r for r in bridge if r.get("adoption_bucket") == "NEWLY_BACKFILLED_AND_RECOMPUTED"]
@@ -648,6 +622,9 @@ def main() -> int:
         "current_full_candidate_count_before": len(ticker_set(current_full)),
         "current_full_candidate_count_after": current_full_after,
         "current_top_candidate_count_after": top_after,
+        "v18_35e_direct_current_write_disabled": "TRUE",
+        "v18_35e_raw105_current_factor_reuse_blocked_from_current_alias": "TRUE",
+        "current_alias_write_disabled_by": CURRENT_ALIAS_WRITE_DISABLED_BY,
         "new_recomputed_not_in_freeze_count": len(new_not_freeze),
         "newly_backfilled_and_recomputed_count": len(newly_backfilled),
         "still_uncomputed_after_backfill_count": len(remaining),
@@ -680,7 +657,9 @@ def main() -> int:
         "online_backfill_failure_count", "recomputed_rank_eligible_after_backfill_count",
         "recomputed_rank_ineligible_after_backfill_count", "latest_signal_freeze_count",
         "current_full_candidate_count_before", "current_full_candidate_count_after",
-        "current_top_candidate_count_after", "new_recomputed_not_in_freeze_count",
+        "current_top_candidate_count_after", "v18_35e_direct_current_write_disabled",
+        "v18_35e_raw105_current_factor_reuse_blocked_from_current_alias",
+        "current_alias_write_disabled_by", "new_recomputed_not_in_freeze_count",
         "newly_backfilled_and_recomputed_count", "still_uncomputed_after_backfill_count",
         "next_freeze_ready_candidate_count", "expected_freeze_not_expanded_yet",
         "duplicate_ticker_count", "backup_path", "warning_count", "fail_count",

@@ -4,13 +4,13 @@
 - Audit rows: 318
 - Promotions: 0
 - Demotions: 127
-- Unchanged: 96
+- Unchanged: 97
 - Same-day guard: TRUE
 - Core promotion allowed this run: TRUE
-- Core Daily count: 44
-- Candidate count: 147
+- Core Daily count: 45
+- Candidate count: 146
 - Watchlist count: 0
-- Research count: 17
+- Research count: 18
 
 ## Notable Changes
 

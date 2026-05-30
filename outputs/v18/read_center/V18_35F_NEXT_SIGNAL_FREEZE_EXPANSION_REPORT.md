@@ -1,8 +1,8 @@
 # V18.35F 下一次信号冻结扩展
 
 - STATUS: `OK_V18_35F_NEXT_SIGNAL_FREEZE_EXPANSION_READY`
-- RUN_ID: `V18_35F_20260527_175227`
-- SIGNAL_DATE: `2026-05-27`
+- RUN_ID: `V18_35F_20260529_150234`
+- SIGNAL_DATE: `2026-05-29`
 
 ## 说明
 V18.35E 已经把 recomputed full candidates 接管到 318，但 latest signal freeze 仍是 252。V18.35F 的作用是把新的 318 候选写成下一次 signal freeze 批次，让后续 V18.35A、forward tracker 和日报使用 318 freeze 口径。

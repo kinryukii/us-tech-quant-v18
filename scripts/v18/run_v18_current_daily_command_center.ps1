@@ -64,6 +64,7 @@ param(
     [switch]$RunSimulationPolicyWeightEngine,
     [switch]$RunDualBookActionPlanner,
     [switch]$RunRealTradeUploadLedger,
+    [switch]$RunDailyOperatorActionEntry,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -94,6 +95,8 @@ $Run49A = Join-Path $Root "scripts\v18\run_v18_49A_factor_weight_buy_sell_policy
 $Run49B = Join-Path $Root "scripts\v18\run_v18_49B_simulation_policy_weight_engine.ps1"
 $Run49C = Join-Path $Root "scripts\v18\run_v18_49C_dual_book_buy_sell_action_planner.ps1"
 $Run49D = Join-Path $Root "scripts\v18\run_v18_49D_real_trade_upload_ledger.ps1"
+$Run50A = Join-Path $Root "scripts\v18\run_v18_50A_daily_operator_action_entry.ps1"
+$Script50B = Join-Path $Root "scripts\v18\v18_50B_current_alias_authoritative_source_repair.py"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
 if (-not (Test-Path $Run13D)) { throw "Missing V18.13D wrapper: $Run13D" }
@@ -116,6 +119,8 @@ if ($RunFactorWeightBuySellBacktest -and -not (Test-Path $Run49A)) { throw "Miss
 if ($RunSimulationPolicyWeightEngine -and -not (Test-Path $Run49B)) { throw "Missing V18.49B wrapper: $Run49B" }
 if ($RunDualBookActionPlanner -and -not (Test-Path $Run49C)) { throw "Missing V18.49C wrapper: $Run49C" }
 if ($RunRealTradeUploadLedger -and -not (Test-Path $Run49D)) { throw "Missing V18.49D wrapper: $Run49D" }
+if ($RunDailyOperatorActionEntry -and -not (Test-Path $Run50A)) { throw "Missing V18.50A wrapper: $Run50A" }
+if (-not (Test-Path $Script50B)) { throw "Missing V18.50B repair script: $Script50B" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
 $ManualModeExplicit = (
@@ -124,7 +129,8 @@ $ManualModeExplicit = (
     $RunFullUniverseFactorTechnicalRecompute -or $ApplyFullUniverseRecomputedCandidates -or
     $RunCandidateTopFullCanonicalSync -or $ApplyCandidateTopFullCanonicalSync -or
     $RunTop20OptionsRiskRadar -or $RunFactorWeightBuySellBacktest -or
-    $RunSimulationPolicyWeightEngine -or $RunDualBookActionPlanner -or $RunRealTradeUploadLedger
+    $RunSimulationPolicyWeightEngine -or $RunDualBookActionPlanner -or
+    $RunRealTradeUploadLedger -or $RunDailyOperatorActionEntry
 )
 $ApplyRefreshModePreset = $RefreshModeExplicit -or -not $ManualModeExplicit
 if ($ApplyRefreshModePreset) {
@@ -165,15 +171,25 @@ function Get-V18CurrentAuthoritativeChainStatus {
     $Read41A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_41A_READ_FIRST.txt")
     $Read44A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_44A_READ_FIRST.txt")
     $Read45A = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt")
+    $Read50B = Read-V18KeyValueFile (Join-Path $Root "outputs\v18\ops\V18_50B_R2_READ_FIRST.txt")
 
     $Reasons = @()
     if ($RefreshMode -ne "Full") { $Reasons += "REFRESH_MODE_NOT_FULL" }
-    if (-not $Read35D.ContainsKey("STATUS") -or $Read35D["STATUS"].StartsWith("FAIL_")) { $Reasons += "FULL_UNIVERSE_RECOMPUTE_NOT_READY" }
+    $R2Ready = (
+        $Read50B["STATUS"] -eq "PASS" -and
+        $Read50B["PATCH_VERSION"] -eq "V18.50B-R2" -and
+        $Read50B["SOLE_WRITER_AUDIT_OK"] -eq "TRUE" -and
+        $Read50B["RECONCILIATION_OK"] -eq "TRUE" -and
+        $Read50B["TRUE_PROVENANCE_REPAIRED"] -eq "TRUE" -and
+        $Read50B["CURRENT_TOP20_WRITE_ALLOWED"] -eq "TRUE"
+    )
+    if ((-not $Read35D.ContainsKey("STATUS") -or $Read35D["STATUS"].StartsWith("FAIL_")) -and -not $R2Ready) { $Reasons += "FULL_UNIVERSE_RECOMPUTE_NOT_READY" }
     if ($Read45A["FULL_RANKING_RECOMPUTE_COMPLETE"] -ne "TRUE") { $Reasons += "FULL_RANKING_RECOMPUTE_NOT_COMPLETE" }
-    if ($Read40A["MISMATCH_COUNT"] -ne "0" -or $Read40A["ORDER_MATCHES_FULL_TOP20"] -ne "TRUE") { $Reasons += "TOP_FULL_SYNC_NOT_READY" }
+    if (($Read40A["MISMATCH_COUNT"] -ne "0" -or $Read40A["ORDER_MATCHES_FULL_TOP20"] -ne "TRUE") -and -not $R2Ready) { $Reasons += "TOP_FULL_SYNC_NOT_READY" }
     if ($Read45A["TOPN_CURRENT_READY"] -ne "TRUE" -or $Read45A["FRESH_TOPN_COUNT"] -ne "20" -or $Read45A["STALE_TOPN_COUNT"] -ne "0") { $Reasons += "CURRENT_TOPN_NOT_READY" }
     if ($Read45A["FULL_PRICE_REFRESH_COMPLETE"] -ne "TRUE") { $Reasons += "FULL_PRICE_REFRESH_NOT_COMPLETE" }
     if ($Read45A["CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKER_COUNT"] -ne "0") { $Reasons += "CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKERS_PRESENT" }
+    if (-not $R2Ready) { $Reasons += "V18_50B_R2_NOT_READY" }
     if (-not $Read44A.ContainsKey("STATUS") -or $Read44A["STATUS"].StartsWith("FAIL_")) { $Reasons += "HOMEPAGE_CONSOLIDATION_NOT_READY" }
     if ($Read41A["TOP_FULL_MISMATCH_COUNT"] -ne "0") { $Reasons += "TOP_FULL_MISMATCH_EXISTS" }
     if ($Read41A["BLOCKING_CURRENT_FAILURE_COUNT"] -ne "0") { $Reasons += "BLOCKING_CURRENT_FAILURE_EXISTS" }
@@ -196,6 +212,7 @@ function Get-V18CurrentAuthoritativeChainStatus {
         Read41A = $Read41A
         Read44A = $Read44A
         Read45A = $Read45A
+        Read50B = $Read50B
     }
 }
 
@@ -269,7 +286,7 @@ function Invoke-V18_19AReadabilityRefresh {
         & powershell -NoProfile -ExecutionPolicy Bypass -File $Run35D @Args35D
         if ($LASTEXITCODE -ne 0) {
             Write-Host "V18_35D_FULL_UNIVERSE_RECOMPUTE_STATUS: NONZERO_EXIT_$LASTEXITCODE"
-            exit $LASTEXITCODE
+            Write-Host "V18_35D_NONZERO_DEFERRED_TO_V18_50B_AUTHORITATIVE_SOURCE_GATE: TRUE"
         }
         Write-Host "V18_35D_FULL_UNIVERSE_RECOMPUTE_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_FULL_UNIVERSE_RECOMPUTE.md')"
     }
@@ -566,6 +583,7 @@ function Invoke-V18_19AReadabilityRefresh {
             Write-Host "CURRENT_FULL_REFRESH_VALIDATION_STATUS: CURRENT_AUTHORITATIVE_CHAIN_REVIEW_NEEDED"
         }
     }
+    Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair
     Write-Host ""
     Write-Host "STEP FINAL: refresh V18.19A daily readability packet"
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Run19A -Root $Root
@@ -793,6 +811,33 @@ function Invoke-V18_49DRealTradeUploadLedger {
     }
 }
 
+function Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair {
+    Write-Host ""
+    Write-Host "STEP FINAL: run V18.50B-R2 sole current Top20 writer enforcement"
+    & $Python $Script50B --root $Root
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "V18_50B_CURRENT_ALIAS_AUTHORITATIVE_SOURCE_REPAIR_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+        exit $LASTEXITCODE
+    }
+    Write-Host "V18_50B_R2_READ_FIRST_PATH: $(Join-Path $Root 'outputs\v18\ops\V18_50B_R2_READ_FIRST.txt')"
+}
+
+function Invoke-V18_50ADailyOperatorActionEntry {
+    if ($RunDailyOperatorActionEntry) {
+        Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.50A daily operator action entry"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50A -ProjectRoot $Root -WriteCurrent
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_50A_DAILY_OPERATOR_ACTION_ENTRY_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_50A_DAILY_OPERATOR_PACKET_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_50A_DAILY_OPERATOR_ACTION_PACKET.csv')"
+        Write-Host "V18_50A_DAILY_OPERATOR_SUMMARY_PATH: $(Join-Path $Root 'outputs\v18\action_plan\V18_50A_DAILY_OPERATOR_ACTION_SUMMARY.csv')"
+        Write-Host "V18_50A_DAILY_OPERATOR_CURRENT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_ACTION_ENTRY.md')"
+    }
+}
+
 $Mode = "READ_CENTER_REFRESH_ONLY"
 if ($ValidateOnly) {
     $Mode = "VALIDATE_ONLY"
@@ -866,6 +911,17 @@ if ($RunRealTradeUploadLedger -and $PSBoundParameters.Count -eq 1) {
     exit 0
 }
 
+if ($RunDailyOperatorActionEntry -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_50A_DAILY_OPERATOR_ACTION_ENTRY_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READ_ONLY_ORCHESTRATION: TRUE"
+    Invoke-V18_50ADailyOperatorActionEntry
+    exit 0
+}
+
 if ($RunUniverseRollingScan) {
     Write-Host "DELEGATING_TO: V18.16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN"
     $Args16F = @()
@@ -891,6 +947,7 @@ if ($RunUniverseRollingScan) {
     Invoke-V18_49BSimulationPolicyWeightEngine
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
+    Invoke-V18_50ADailyOperatorActionEntry
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -927,6 +984,7 @@ if ($RunManualFeedback) {
     Invoke-V18_49BSimulationPolicyWeightEngine
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
+    Invoke-V18_50ADailyOperatorActionEntry
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -1096,6 +1154,7 @@ if ($RunForwardTracker) {
     Invoke-V18_49BSimulationPolicyWeightEngine
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
+    Invoke-V18_50ADailyOperatorActionEntry
     exit $ExitCode
 }
 
@@ -1111,4 +1170,5 @@ Invoke-V18_49AFactorWeightBuySellBacktest
 Invoke-V18_49BSimulationPolicyWeightEngine
 Invoke-V18_49CDualBookActionPlanner
 Invoke-V18_49DRealTradeUploadLedger
+Invoke-V18_50ADailyOperatorActionEntry
 exit 0

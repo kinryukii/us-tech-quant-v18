@@ -60,6 +60,7 @@ INPUTS = [
     ("alpha_signal_objects", "outputs/v18/read_center/V18_CURRENT_ALPHA_SIGNAL_OBJECTS.md", "alpha signal objects", "OPTIONAL"),
     ("candidate_top_full_sync", "outputs/v18/read_center/V18_CURRENT_CANDIDATE_TOP_FULL_CANONICAL_SYNC.md", "candidate top/full canonical sync", "OPTIONAL"),
     ("ranked_candidate_freshness", "outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt", "ranked candidate freshness audit", "IMPORTANT"),
+    ("current_alias_source_repair", "outputs/v18/ops/V18_50B_R2_READ_FIRST.txt", "V18.50B-R2 sole Top20 writer enforcement", "CORE"),
 ]
 
 SUMMARY_FIELDS = [
@@ -76,7 +77,8 @@ SUMMARY_FIELDS = [
     "topn_effective", "topn_close_gap_count", "topn_score_spread",
     "refresh_mode", "full_ranking_recompute_complete", "full_price_refresh_complete",
     "freshness_topn_stale_count", "freshness_topn_stale_tickers", "buy_candidate_report_trust",
-    "current_authoritative_chain_ready",
+    "current_authoritative_chain_ready", "homepage_source_ok",
+    "v18_50b_status",
     "single_ticker", "single_ticker_found", "single_ticker_rank", "single_ticker_score",
     "warning_classification_row_count", "file_checklist_row_count",
     "missing_optional_count", "nonblocking_warning_count", "old_homepage_candidate_count_mismatch",
@@ -367,8 +369,18 @@ def status_level(status: str) -> str:
 def current_authoritative_chain_status(root: Path, daily: dict[str, str], freshness: dict[str, str]) -> tuple[bool, str]:
     read35d, _ = parse_read_first(root / "outputs/v18/ops/V18_35D_READ_FIRST.txt")
     read40a, _ = parse_read_first(root / "outputs/v18/ops/V18_40A_READ_FIRST.txt")
+    read50b, _ = parse_read_first(root / "outputs/v18/ops/V18_50B_R2_READ_FIRST.txt")
     reasons: list[str] = []
-    if read35d.get("STATUS", "").startswith("FAIL_") or not read35d.get("STATUS"):
+    r2_pass = (
+        read50b.get("STATUS") == "PASS"
+        and read50b.get("PATCH_VERSION") == "V18.50B-R2"
+        and read50b.get("SOLE_WRITER_AUDIT_OK") == "TRUE"
+        and read50b.get("RECONCILIATION_OK") == "TRUE"
+        and read50b.get("TRUE_PROVENANCE_REPAIRED") == "TRUE"
+        and read50b.get("CURRENT_TOP20_WRITE_ALLOWED") == "TRUE"
+        and read50b.get("HOMEPAGE_SOURCE_OK") == "TRUE"
+    )
+    if (read35d.get("STATUS", "").startswith("FAIL_") or not read35d.get("STATUS")) and not r2_pass:
         reasons.append("FULL_UNIVERSE_RECOMPUTE_NOT_READY")
     if freshness.get("FULL_RANKING_RECOMPUTE_COMPLETE") != "TRUE":
         reasons.append("FULL_RANKING_RECOMPUTE_NOT_COMPLETE")
@@ -382,12 +394,23 @@ def current_authoritative_chain_status(root: Path, daily: dict[str, str], freshn
         reasons.append("CURRENT_TOPN_NOT_READY")
     if int_value(freshness.get("CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKER_COUNT")) != 0:
         reasons.append("CURRENT_PRICE_REFRESH_BLOCKING_FAILED_TICKERS_PRESENT")
-    if read40a.get("MISMATCH_COUNT") != "0" or read40a.get("ORDER_MATCHES_FULL_TOP20") != "TRUE":
+    if (read40a.get("MISMATCH_COUNT") != "0" or read40a.get("ORDER_MATCHES_FULL_TOP20") != "TRUE") and not r2_pass:
         reasons.append("TOP_FULL_SYNC_NOT_READY")
     if int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) != 0:
         reasons.append("TOP_FULL_MISMATCH_EXISTS")
     if int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) != 0:
         reasons.append("BLOCKING_CURRENT_FAILURE_EXISTS")
+    if (
+        read50b.get("STATUS") != "PASS"
+        or read50b.get("PATCH_VERSION") != "V18.50B-R2"
+        or read50b.get("SOLE_WRITER_AUDIT_OK") != "TRUE"
+        or read50b.get("CURRENT_TOP20_ALIAS_WRITTEN") != "TRUE"
+        or read50b.get("CURRENT_TOP20_WRITE_ALLOWED") != "TRUE"
+        or read50b.get("V18_35D_TOP20_MATCH_CURRENT_TOP20") != "TRUE"
+        or read50b.get("TRUE_PROVENANCE_REPAIRED") != "TRUE"
+        or read50b.get("RECONCILIATION_OK") != "TRUE"
+    ):
+        reasons.append("V18_50B_R2_SOLE_TOP20_WRITER_ENFORCEMENT_NOT_READY")
     if (
         daily.get("TRADING_EXECUTION_ALLOWED") != "FALSE"
         or daily.get("AUTO_TRADE") != AUTO_TRADE
@@ -577,7 +600,7 @@ def build_read_first(summary: dict[str, object]) -> str:
         "expected_remaining_action_required_count", "topn_effective", "topn_close_gap_count",
         "topn_score_spread", "refresh_mode", "full_ranking_recompute_complete", "full_price_refresh_complete",
         "freshness_topn_stale_count", "freshness_topn_stale_tickers", "buy_candidate_report_trust",
-        "current_authoritative_chain_ready",
+        "current_authoritative_chain_ready", "homepage_source_ok", "v18_50b_status",
         "single_ticker", "single_ticker_found", "single_ticker_rank",
         "single_ticker_score", "warning_classification_row_count", "file_checklist_row_count",
         "old_homepage_candidate_count", "old_homepage_candidate_count_mismatch",
@@ -665,6 +688,8 @@ def main() -> int:
             "old_homepage_candidate_count_suppression_blocked_reason": "CURRENT_AUTHORITATIVE_CHAIN_NOT_READY",
             "old_homepage_candidate_count_source": "",
             "current_authoritative_chain_ready": "FALSE",
+            "homepage_source_ok": "FALSE",
+            "v18_50b_status": "",
             "official_decision_impact": OFFICIAL_DECISION_IMPACT,
             "ranking_logic_changed": "FALSE",
             "factor_weights_changed": "FALSE",
@@ -681,6 +706,7 @@ def main() -> int:
     topn, _ = parse_read_first(root / "outputs/v18/ops/V18_CURRENT_TOPN_RANKING_EXPLAINER_READ_FIRST.txt")
     single, _ = parse_read_first(root / "outputs/v18/ops/V18_42A_READ_FIRST.txt")
     freshness, _ = parse_read_first(root / "outputs/v18/ops/V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt")
+    source_repair, _ = parse_read_first(root / "outputs/v18/ops/V18_50B_R2_READ_FIRST.txt")
     current_authoritative_ready, current_authoritative_blocked_reason = current_authoritative_chain_status(root, daily, freshness)
     checklist = file_checklist(root)
     topn_ready, topn_blocking_reason = topn_current_status(topn, checklist, args.require_topn_current)
@@ -744,6 +770,8 @@ def main() -> int:
         "freshness_topn_stale_tickers": freshness.get("STALE_TOPN_TICKERS", ""),
         "buy_candidate_report_trust": freshness.get("BUY_CANDIDATE_REPORT_TRUST", ""),
         "current_authoritative_chain_ready": "TRUE" if current_authoritative_ready else "FALSE",
+        "homepage_source_ok": source_repair.get("HOMEPAGE_SOURCE_OK", "FALSE"),
+        "v18_50b_status": source_repair.get("STATUS", ""),
         "single_ticker": single.get("TICKER", ""),
         "single_ticker_found": bool_text(single.get("TICKER_FOUND")),
         "single_ticker_rank": single.get("TARGET_RANK", ""),
@@ -775,6 +803,11 @@ def main() -> int:
         args.write_current
         and not v41_status.startswith("FAIL_")
         and current_topn_ready == "TRUE"
+        and source_repair.get("STATUS") == "PASS"
+        and source_repair.get("PATCH_VERSION") == "V18.50B-R2"
+        and source_repair.get("SOLE_WRITER_AUDIT_OK") == "TRUE"
+        and source_repair.get("HOMEPAGE_SOURCE_OK") == "TRUE"
+        and current_authoritative_ready
         and int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) == 0
         and int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) == 0
     )
@@ -784,6 +817,16 @@ def main() -> int:
         skipped_reason = "V18_41A_STATUS_FAIL"
     elif current_topn_ready != "TRUE":
         skipped_reason = current_topn_blocking_reason
+    elif source_repair.get("STATUS") != "PASS":
+        skipped_reason = "V18_50B_R2_STATUS_NOT_PASS"
+    elif source_repair.get("PATCH_VERSION") != "V18.50B-R2":
+        skipped_reason = "V18_50B_R2_READ_FIRST_NOT_CURRENT"
+    elif source_repair.get("SOLE_WRITER_AUDIT_OK") != "TRUE":
+        skipped_reason = "V18_50B_R2_SOLE_WRITER_AUDIT_NOT_OK"
+    elif source_repair.get("HOMEPAGE_SOURCE_OK") != "TRUE":
+        skipped_reason = "V18_50B_R2_HOMEPAGE_SOURCE_NOT_OK"
+    elif not current_authoritative_ready:
+        skipped_reason = current_authoritative_blocked_reason
     elif int_value(daily.get("TOP_FULL_MISMATCH_COUNT")) != 0:
         skipped_reason = "TOP_FULL_MISMATCH_EXISTS"
     elif int_value(daily.get("BLOCKING_CURRENT_FAILURE_COUNT")) != 0:

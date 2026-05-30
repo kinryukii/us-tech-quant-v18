@@ -1,1 +1,2 @@
 ﻿run_id,ticker,v18_35d_failure_bucket,v18_35d_failure_reason,attempted,provider,download_row_count,validation_status,validation_reason,latest_available_date,staging_csv,cache_csv,cache_backup_path
+V18_35E_20260530_222519,TQQQ,PRICE_HISTORY_INSUFFICIENT,price history rows 2 < 120,FALSE,NONE,0,NOT_ATTEMPTED,UseYFinanceForCandidateBridgeBackfill was not passed,,,,

@@ -1,2 +1,2 @@
 snapshot_date,ticker_count,low_risk_count,medium_risk_count,high_risk_count,extreme_risk_count,unknown_review_count,normal_review_count,small_size_reference_count,no_chase_reference_count,no_new_buys_reference_count,reduce_risk_review_count,average_options_risk_score,median_options_risk_score,good_liquidity_contract_count,ok_liquidity_contract_count,thin_liquidity_contract_count,unusable_liquidity_contract_count
-2026-05-28,20,0,11,9,0,0,0,11,9,0,0,45.41,45.62,98,122,151,7
+2026-05-30,20,0,12,8,0,0,0,12,8,0,0,45.60,46.25,88,113,110,2

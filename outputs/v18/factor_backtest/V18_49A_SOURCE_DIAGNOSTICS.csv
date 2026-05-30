@@ -1,11 +1,11 @@
 source_name,source_path,found,usable,row_count,notes
 current_top20,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_TOP_RANKED_CANDIDATES.csv,TRUE,TRUE,20,LOCAL_SOURCE_ONLY_NO_NETWORK
-ranked_candidates,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv,TRUE,TRUE,318,LOCAL_SOURCE_ONLY_NO_NETWORK
+ranked_candidates,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATES.csv,TRUE,TRUE,317,LOCAL_SOURCE_ONLY_NO_NETWORK
 candidate_forward_tracker,D:\us-tech-quant\outputs\v18\candidates\V18_CURRENT_RANKED_CANDIDATE_FORWARD_TRACKER.csv,TRUE,TRUE,57,LOCAL_SOURCE_ONLY_NO_NETWORK
-factor_forward_tracker,D:\us-tech-quant\state\v18\forward_outcome\V18_4A_FACTOR_FORWARD_TRACKER.csv,TRUE,TRUE,630,LOCAL_SOURCE_ONLY_NO_NETWORK
-factor_pack,D:\us-tech-quant\outputs\v18\factor_pack\V18_35D_FULL_UNIVERSE_FACTOR_PACK_RANKING.csv,TRUE,TRUE,318,LOCAL_SOURCE_ONLY_NO_NETWORK
-technical_timing,D:\us-tech-quant\outputs\v18\technical_timing\V18_35D_FULL_UNIVERSE_TECHNICAL_TIMING.csv,TRUE,TRUE,318,LOCAL_SOURCE_ONLY_NO_NETWORK
+factor_forward_tracker,D:\us-tech-quant\state\v18\forward_outcome\V18_4A_FACTOR_FORWARD_TRACKER.csv,TRUE,TRUE,525,LOCAL_SOURCE_ONLY_NO_NETWORK
+factor_pack,D:\us-tech-quant\outputs\v18\factor_pack\V18_35D_FULL_UNIVERSE_FACTOR_PACK_RANKING.csv,TRUE,TRUE,317,LOCAL_SOURCE_ONLY_NO_NETWORK
+technical_timing,D:\us-tech-quant\outputs\v18\technical_timing\V18_35D_FULL_UNIVERSE_TECHNICAL_TIMING.csv,TRUE,TRUE,317,LOCAL_SOURCE_ONLY_NO_NETWORK
 event_risk,D:\us-tech-quant\outputs\v18\event_risk\V18_47C_TOP20_EVENT_EARNINGS_RISK.csv,TRUE,TRUE,20,LOCAL_SOURCE_ONLY_NO_NETWORK
 options_risk,D:\us-tech-quant\outputs\v18\options\V18_48B_TOP20_OPTIONS_RISK_RADAR.csv,TRUE,TRUE,20,LOCAL_SOURCE_ONLY_NO_NETWORK
 priority_tracker,D:\us-tech-quant\outputs\v18\tracking\V18_47B_TOP20_PRIORITY_TRACKER.csv,TRUE,TRUE,20,LOCAL_SOURCE_ONLY_NO_NETWORK
-factor_shadow_outcome,D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv,TRUE,TRUE,1695,LOCAL_SOURCE_ONLY_NO_NETWORK
+factor_shadow_outcome,D:\us-tech-quant\state\v18\factor_shadow_outcome_tracker.csv,TRUE,TRUE,1510,LOCAL_SOURCE_ONLY_NO_NETWORK

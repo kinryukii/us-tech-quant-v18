@@ -29,6 +29,7 @@ DANGEROUS_TOKENS = (
 
 SUMMARY_FIELDS = ("metric", "value")
 AUDIT_FIELDS = ("component", "source_file", "alias_file", "exists", "copied", "row_count", "parse_status", "status_value", "note")
+LEGACY_TOP20_SIDECAR = "V18_14B_LEGACY_TOP_RANKED_CANDIDATES.csv"
 
 
 def ensure_dir(path: Path) -> None:
@@ -166,7 +167,9 @@ def build(root: Path, mode: str) -> Tuple[Dict[str, str], int]:
         ("V18_CURRENT_READ_FIRST", d_read_first, read_dir / "V18_CURRENT_READ_FIRST.txt"),
         ("V18_CURRENT_DAILY_COMMAND_CENTER", d_main, read_dir / "V18_CURRENT_DAILY_COMMAND_CENTER.md"),
         ("V18_CURRENT_UNIFIED_DAILY_WITH_RANKED_CANDIDATES", c_main, read_dir / "V18_CURRENT_UNIFIED_DAILY_WITH_RANKED_CANDIDATES.md"),
-        ("V18_CURRENT_RANKED_CANDIDATES", b_csv, candidates_dir / "V18_CURRENT_TOP_RANKED_CANDIDATES.csv"),
+        # V18.50B-R2 owns V18_CURRENT_TOP_RANKED_CANDIDATES.csv exclusively.
+        # Keep this legacy V18.14B snapshot as a sidecar so standalone runs cannot contaminate current Top20.
+        ("V18_14B_LEGACY_TOP_RANKED_CANDIDATES", b_csv, candidates_dir / LEGACY_TOP20_SIDECAR),
         ("V18_CURRENT_FULL_DAILY_MODE_VALIDATION_READ_FIRST", a14_read_first, ops_dir / "V18_CURRENT_FULL_DAILY_MODE_VALIDATION_READ_FIRST.txt"),
     ]
 
@@ -190,7 +193,7 @@ def build(root: Path, mode: str) -> Tuple[Dict[str, str], int]:
             "row_count": str(row_count),
             "parse_status": parse_status or ("OK_TEXT" if dst.exists() else "MISSING"),
             "status_value": note,
-            "note": "CURRENT_ALIAS",
+            "note": "LEGACY_TOP20_SIDECAR_NOT_CURRENT_ALIAS" if component == "V18_14B_LEGACY_TOP_RANKED_CANDIDATES" else "CURRENT_ALIAS",
         })
 
     candidate_rows, candidate_fields, candidate_parse = read_csv(candidates_dir / "V18_CURRENT_TOP_RANKED_CANDIDATES.csv")
@@ -271,6 +274,8 @@ def build(root: Path, mode: str) -> Tuple[Dict[str, str], int]:
         "TOP_5_TICKERS": top_5,
         "TODAY_MAIN_READ": rel(root, read_dir / "V18_CURRENT_DAILY_COMMAND_CENTER.md"),
         "TODAY_RANKED_CANDIDATES_CSV": rel(root, candidates_dir / "V18_CURRENT_TOP_RANKED_CANDIDATES.csv"),
+        "V18_14B_DIRECT_CURRENT_TOP20_WRITE_DISABLED": "TRUE",
+        "V18_14B_LEGACY_TOP20_SIDECAR": rel(root, candidates_dir / LEGACY_TOP20_SIDECAR),
         "OFFICIAL_DECISION_IMPACT": OFFICIAL_DECISION_IMPACT,
         "AUTO_TRADE": AUTO_TRADE,
         "AUTO_SELL": AUTO_SELL,
@@ -299,6 +304,8 @@ def build(root: Path, mode: str) -> Tuple[Dict[str, str], int]:
         "TOP_5_TICKERS",
         "TODAY_MAIN_READ",
         "TODAY_RANKED_CANDIDATES_CSV",
+        "V18_14B_DIRECT_CURRENT_TOP20_WRITE_DISABLED",
+        "V18_14B_LEGACY_TOP20_SIDECAR",
         "OFFICIAL_DECISION_IMPACT",
         "AUTO_TRADE",
         "AUTO_SELL",

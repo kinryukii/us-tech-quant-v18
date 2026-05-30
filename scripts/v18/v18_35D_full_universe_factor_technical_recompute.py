@@ -43,6 +43,7 @@ OUT_CURRENT_REPORT = "outputs/v18/read_center/V18_CURRENT_FULL_UNIVERSE_RECOMPUT
 OUT_READ_FIRST = "outputs/v18/ops/V18_35D_READ_FIRST.txt"
 OUT_SOURCE_AUDIT = "outputs/v18/ops/V18_46A_UNIVERSE_SOURCE_AUDIT.csv"
 QUARANTINE = "state/v18/excluded_or_unavailable_tickers.csv"
+AUTHORITATIVE_RECOMPUTE_SOURCE = "V18_35D_PRICE_HISTORY_RECOMPUTE"
 
 STATUS_FIELDS = [
     "ticker", "in_total_universe", "in_current_full_candidates_before", "in_current_top_candidates_before",
@@ -52,6 +53,9 @@ STATUS_FIELDS = [
     "technical_calculation_success", "ranking_merge_attempted", "ranking_merge_success", "factor_score",
     "technical_timing_score", "recomputed_composite_score", "recomputed_rank", "rank_eligible",
     "calculation_status", "failure_bucket", "failure_reason", "evidence_sources",
+    "factor_source_true", "technical_source_true", "score_source_true",
+    "factor_recomputed_by_v18_35d", "factor_reused_from_raw105", "legacy_factor_pack_used",
+    "authoritative_row_ok", "authoritative_row_block_reason",
     "raw_universe_token_count", "sanitized_universe_count", "invalid_pseudo_ticker_count",
     "invalid_pseudo_tickers", "yfinance_failed_ticker_count", "yfinance_failed_tickers",
     "yfinance_failed_ticker_count_raw", "price_unavailable_excluded_count",
@@ -72,6 +76,9 @@ RANK_FIELDS = [
     "audit_only_source_files", "score_source_status", "score_source_files", "score_source_columns",
     "latest_price_date", "latest_close", "technical_status", "event_risk_status", "overheat_status",
     "pullback_status", "execution_status", "final_action", "reason",
+    "factor_source_true", "technical_source_true", "score_source_true",
+    "factor_recomputed_by_v18_35d", "factor_reused_from_raw105", "legacy_factor_pack_used",
+    "authoritative_row_ok", "authoritative_row_block_reason",
 ]
 
 
@@ -313,6 +320,45 @@ def percentile_score(value: float, lo: float, hi: float, invert: bool = False) -
     return round(100.0 - score if invert else score, 6)
 
 
+
+def apply_force_latest_to_prices(prices: list[dict[str, object]], force_price: dict[str, str] | None) -> list[dict[str, object]]:
+    if not force_price:
+        return prices
+
+    latest_date = str(force_price.get("latest_price_date", "")).strip()
+    latest_close = str(force_price.get("latest_close", "")).strip()
+    if not latest_date or not latest_close:
+        return prices
+
+    out = [dict(row) for row in prices]
+    if not out:
+        return out
+
+    # If the date already exists, update its close. If not, append a close-only synthetic final bar.
+    # We only have latest close from force yfinance output, so open/high/low are set to close and volume is carried forward.
+    for row in out:
+        if str(row.get("date", "")).strip() == latest_date:
+            row["close"] = latest_close
+            row["open"] = row.get("open") or latest_close
+            row["high"] = row.get("high") or latest_close
+            row["low"] = row.get("low") or latest_close
+            row["force_price_overlay"] = "TRUE"
+            return sorted(out, key=lambda r: str(r.get("date", "")))
+
+    last = dict(out[-1])
+    synthetic = {
+        "date": latest_date,
+        "open": latest_close,
+        "high": latest_close,
+        "low": latest_close,
+        "close": latest_close,
+        "volume": last.get("volume", "0") or "0",
+        "force_price_overlay": "TRUE",
+    }
+    out.append(synthetic)
+    return sorted(out, key=lambda r: str(r.get("date", "")))
+
+
 def factor_row(ticker: str, prices: list[dict[str, object]], fields: Sequence[str]) -> dict[str, object]:
     closes = [float(r["close"]) for r in prices]
     vols = [float(r["volume"]) for r in prices]
@@ -518,6 +564,32 @@ def make_report(summary: dict[str, object], failure_counts: Counter, failures: l
     return "\n".join(lines) + "\n"
 
 
+
+def load_force_latest_prices(root: Path) -> dict[str, dict[str, str]]:
+    force_path = root / "outputs" / "v18" / "price" / "V18_CURRENT_FORCE_YFINANCE_LATEST_PRICES.csv"
+    if not force_path.exists():
+        return {}
+
+    rows, _ = read_csv(force_path)
+    force: dict[str, dict[str, str]] = {}
+
+    for row in rows:
+        ticker = str(row.get("ticker", "")).strip().upper()
+        status = str(row.get("manual_fetch_status", "")).strip().upper()
+        latest_date = str(row.get("manual_latest_price_date", "")).strip()
+        latest_close = str(row.get("manual_latest_close", "")).strip()
+
+        if ticker and status == "OK" and latest_date and latest_close:
+            force[ticker] = {
+                "latest_price_date": latest_date,
+                "latest_close": latest_close,
+                "latest_price": latest_close,
+                "price_data_source": "FORCE_YFINANCE_LATEST",
+            }
+
+    return force
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=r"D:\us-tech-quant")
@@ -537,6 +609,7 @@ def main() -> int:
     freeze_rows, _ = read_csv(root / FREEZE)
     scan_plan, _ = read_csv(root / SCAN_PLAN)
     rolling_ledger, _ = read_csv(root / ROLLING_LEDGER)
+    force_latest_prices = load_force_latest_prices(root)
 
     universe, raw_universe_tokens, source_audit_rows, source_rejected_tokens = load_universe_tokens(root, universe_rows, universe_fields)
     invalid_pseudo_tickers: list[str] = []
@@ -591,17 +664,20 @@ def main() -> int:
         targeted_retry = ticker in targeted_stale_retry_tickers
         existing_factor_original = factor_idx.get(ticker)
         existing_tech_original = tech_idx.get(ticker)
-        existing_factor = None if targeted_retry else existing_factor_original
-        existing_tech = None if targeted_retry else existing_tech_original
+        existing_factor = None
+        existing_tech = None
+        factor_source_true = ""
+        technical_source_true = ""
+        factor_recomputed_by_v18_35d = "FALSE"
+        factor_reused_from_raw105 = "FALSE"
+        legacy_factor_pack_used = "FALSE"
 
-        if existing_factor:
-            frow = dict(existing_factor)
-            factor_rows.append(frow)
-            evidence.append(evidence_factor)
-        if existing_tech:
-            trow = dict(existing_tech)
-            tech_rows.append(trow)
-            evidence.append(evidence_tech)
+        # FORCE_SCORE_RECOMPUTE_R3: force-covered tickers must recompute factor/technical rows from price history.
+        force_price_for_ticker = force_latest_prices.get(str(ticker).strip().upper())
+        if force_price_for_ticker:
+            existing_factor = None
+            existing_tech = None
+            evidence.append("FORCE_YFINANCE_LATEST_SCORE_RECOMPUTE_R3")
 
         if targeted_retry or not existing_factor or not existing_tech:
             cache_path = root / PRICE_CACHE / f"{ticker}.csv"
@@ -614,6 +690,10 @@ def main() -> int:
                 if yf_error:
                     yfinance_failed_errors[ticker] = yf_error
             if prices:
+                force_price_for_ticker = force_latest_prices.get(str(ticker).strip().upper())
+                if force_price_for_ticker:
+                    prices = apply_force_latest_to_prices(prices, force_price_for_ticker)
+                    price_source = "LOCAL_PRICE_CACHE_PLUS_FORCE_YFINANCE_LATEST_CLOSE"
                 evidence.append(price_source)
                 if len(prices) >= 120:
                     if not existing_factor:
@@ -621,6 +701,8 @@ def main() -> int:
                             frow = factor_row(ticker, prices, factor_fields)
                             factor_rows.append(frow)
                             existing_factor = {k: str(v) for k, v in frow.items()}
+                            factor_source_true = AUTHORITATIVE_RECOMPUTE_SOURCE
+                            factor_recomputed_by_v18_35d = "TRUE"
                         except Exception as exc:
                             price_error = f"factor calculation error: {type(exc).__name__}"
                     if not existing_tech:
@@ -628,6 +710,7 @@ def main() -> int:
                             trow = technical_row(ticker, prices, tech_fields)
                             tech_rows.append(trow)
                             existing_tech = {k: str(v) for k, v in trow.items()}
+                            technical_source_true = AUTHORITATIVE_RECOMPUTE_SOURCE
                         except Exception as exc:
                             price_error = f"technical calculation error: {type(exc).__name__}"
                 if targeted_retry:
@@ -639,13 +722,9 @@ def main() -> int:
             elif targeted_retry:
                 targeted_stale_retry_still_stale.add(ticker)
 
-        if targeted_retry:
-            if not existing_factor and existing_factor_original:
-                factor_rows.append(dict(existing_factor_original))
-                existing_factor = existing_factor_original
-            if not existing_tech and existing_tech_original:
-                tech_rows.append(dict(existing_tech_original))
-                existing_tech = existing_tech_original
+        if existing_factor_original and not existing_factor:
+            factor_reused_from_raw105 = "FALSE"
+            legacy_factor_pack_used = "FALSE"
 
         fscore = (existing_factor or {}).get("factor_pack_score", "")
         tscore = (existing_tech or {}).get("technical_timing_score", "")
@@ -654,6 +733,13 @@ def main() -> int:
 
         latest_date = (existing_factor or {}).get("latest_price_date") or (existing_tech or {}).get("price_date") or (prices[-1]["date"] if prices else (universe_idx.get(ticker, {}).get("latest_price_date", "")))
         latest_close = (existing_factor or {}).get("latest_close") or (existing_tech or {}).get("close") or (prices[-1]["close"] if prices else (universe_idx.get(ticker, {}).get("last_close", "")))
+
+        # FORCE_PRICE_INGEST_R2: override stale latest price fields before row construction.
+        force_price = force_latest_prices.get(str(ticker).strip().upper())
+        if force_price:
+            latest_date = force_price["latest_price_date"]
+            latest_close = force_price["latest_close"]
+            price_source = "LOCAL_PRICE_CACHE_PLUS_FORCE_YFINANCE_LATEST_CLOSE"
         history_count = len(prices) if prices else ""
         history_start = prices[0]["date"] if prices else ""
         history_end = prices[-1]["date"] if prices else ""
@@ -684,6 +770,20 @@ def main() -> int:
             calc_status = "CALCULATION_FAILED"
             reason = "unknown computation failure"
 
+        score_source_true = ";".join(x for x in (factor_source_true, technical_source_true) if x)
+        authoritative_row_ok = (
+            rank_ok
+            and factor_recomputed_by_v18_35d == "TRUE"
+            and factor_reused_from_raw105 == "FALSE"
+            and legacy_factor_pack_used == "FALSE"
+            and factor_source_true == AUTHORITATIVE_RECOMPUTE_SOURCE
+            and technical_source_true == AUTHORITATIVE_RECOMPUTE_SOURCE
+        )
+        authoritative_block_reason = "NONE" if authoritative_row_ok else (
+            "LEGACY_FACTOR_REUSED" if factor_reused_from_raw105 == "TRUE" or legacy_factor_pack_used == "TRUE"
+            else "AUTHORITATIVE_PRICE_HISTORY_RECOMPUTE_INCOMPLETE"
+        )
+
         status_rows.append({
             "ticker": ticker,
             "in_total_universe": "TRUE",
@@ -713,6 +813,14 @@ def main() -> int:
             "failure_bucket": bucket,
             "failure_reason": reason,
             "evidence_sources": ";".join(dict.fromkeys(evidence)),
+            "factor_source_true": factor_source_true,
+            "technical_source_true": technical_source_true,
+            "score_source_true": score_source_true,
+            "factor_recomputed_by_v18_35d": factor_recomputed_by_v18_35d,
+            "factor_reused_from_raw105": factor_reused_from_raw105,
+            "legacy_factor_pack_used": legacy_factor_pack_used,
+            "authoritative_row_ok": str(authoritative_row_ok).upper(),
+            "authoritative_row_block_reason": authoritative_block_reason,
             "raw_universe_token_count": "",
             "sanitized_universe_count": "",
             "invalid_pseudo_ticker_count": "",
@@ -729,7 +837,7 @@ def main() -> int:
             "_overheat_status": (existing_tech or {}).get("gamma_squeeze_risk_label") or (existing_tech or {}).get("overheat_penalty", ""),
         })
 
-    ranked_status_rows = [r for r in status_rows if r["rank_eligible"] == "TRUE"]
+    ranked_status_rows = [r for r in status_rows if r["rank_eligible"] == "TRUE" and r["authoritative_row_ok"] == "TRUE"]
     ranked_status_rows.sort(key=lambda r: float(r["recomputed_composite_score"]), reverse=True)
     for i, row in enumerate(ranked_status_rows, 1):
         row["recomputed_rank"] = i
@@ -741,10 +849,10 @@ def main() -> int:
             "ticker": row["ticker"],
             "composite_candidate_score": row["recomputed_composite_score"],
             "ranking_source_policy": "V18_35D_FULL_UNIVERSE_RECOMPUTE",
-            "primary_score_source_files": f"{OUT_FACTOR};{OUT_TECH}",
+            "primary_score_source_files": row["score_source_true"],
             "audit_only_source_files": "NONE",
             "score_source_status": "OK_RECOMPUTED_FACTOR_TECHNICAL",
-            "score_source_files": f"{OUT_FACTOR};{OUT_TECH}",
+            "score_source_files": row["score_source_true"],
             "score_source_columns": "factor_pack_score;technical_timing_score",
             "latest_price_date": row["latest_price_date"],
             "latest_close": row["_latest_close"],
@@ -755,6 +863,14 @@ def main() -> int:
             "execution_status": "REVIEW_ONLY",
             "final_action": "WAIT_PULLBACK_REVIEW_ONLY" if "LOWER" in str(row["_pullback_status"]).upper() else "REVIEW_ONLY",
             "reason": "V18.35D recomputed from existing factor/technical formulas; no fake scores.",
+            "factor_source_true": row["factor_source_true"],
+            "technical_source_true": row["technical_source_true"],
+            "score_source_true": row["score_source_true"],
+            "factor_recomputed_by_v18_35d": row["factor_recomputed_by_v18_35d"],
+            "factor_reused_from_raw105": row["factor_reused_from_raw105"],
+            "legacy_factor_pack_used": row["legacy_factor_pack_used"],
+            "authoritative_row_ok": row["authoritative_row_ok"],
+            "authoritative_row_block_reason": row["authoritative_row_block_reason"],
         })
 
     for row in status_rows:
@@ -850,7 +966,6 @@ def main() -> int:
             backup_path = str(backup_dir)
             write_csv(root / CURRENT_FULL, ranked_rows, RANK_FIELDS)
             write_csv(root / CURRENT_RANKED, ranked_rows, RANK_FIELDS)
-            write_csv(root / CURRENT_TOP, ranked_rows[:20], RANK_FIELDS)
             applied = True
         else:
             fail_reasons.append("apply preconditions not met")

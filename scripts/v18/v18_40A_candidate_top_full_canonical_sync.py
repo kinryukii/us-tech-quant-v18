@@ -278,15 +278,8 @@ def run(root: Path, apply: bool) -> int:
         if (root / TOP).exists():
             shutil.copy2(root / TOP, backup_dir / "V18_CURRENT_TOP_RANKED_CANDIDATES.csv")
         backup_path = backup_dir.as_posix()
-        fields = full_fields or list(canonical[0].keys() if canonical else [])
-        write_csv(root / TOP, canonical, fields)
-        reread_top, _ = read_csv(root / TOP)
-        metrics, diff_rows = compare(reread_top, canonical)
-        if int(metrics["mismatch_count"]) == 0 and metrics["order_matches_full_top20"] == "TRUE":
-            status = "OK_V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_FIXED"
-        else:
-            status = "FAIL_V18_40A_CANDIDATE_TOP_FULL_CANONICAL_SYNC_FAILED"
-            fail_count = 1
+        status = "WARN_V18_40A_CURRENT_TOP_ALIAS_WRITE_DISABLED_BY_V18_50B_R2"
+        warning_count = 1
 
     preview_fields = full_fields or list(canonical[0].keys() if canonical else [])
     write_csv(root / OUT_PREVIEW, canonical, preview_fields)

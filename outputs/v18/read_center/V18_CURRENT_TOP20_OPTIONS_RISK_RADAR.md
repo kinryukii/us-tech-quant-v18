@@ -11,20 +11,19 @@ V18.48B is a read-only options risk-reference layer based on V18.48A option snap
 ## Top20 options risk distribution
 | ticker_count | low_risk_count | medium_risk_count | high_risk_count | extreme_risk_count | unknown_review_count |
 | --- | --- | --- | --- | --- | --- |
-| 20 | 0 | 11 | 9 | 0 | 0 |
+| 20 | 0 | 12 | 8 | 0 | 0 |
 
 ## HIGH options risk tickers
 | ticker | rank | overall_options_risk_score | expected_move_level | liquidity_risk_level | options_risk_reason |
 | --- | --- | --- | --- | --- | --- |
-| FIX | 3 | 51.25 | EXTREME | MEDIUM | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=MEDIUM;EARNINGS_OPTIONS=LOW |
-| LITE | 4 | 56.25 | EXTREME | MEDIUM | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=MEDIUM;EARNINGS_OPTIONS=LOW |
-| AMKR | 7 | 52.50 | EXTREME | LOW | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=LOW;EARNINGS_OPTIONS=LOW |
-| ENTG | 8 | 56.00 | EXTREME | HIGH | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=HIGH;EARNINGS_OPTIONS=MEDIUM |
-| ICHR | 13 | 61.00 | EXTREME | HIGH | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=HIGH;EARNINGS_OPTIONS=MEDIUM |
-| CRWV | 14 | 55.56 | EXTREME | LOW | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=LOW;EARNINGS_OPTIONS=UNKNOWN |
+| ICHR | 3 | 61.00 | EXTREME | HIGH | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=HIGH;EARNINGS_OPTIONS=MEDIUM |
+| AMKR | 6 | 52.50 | EXTREME | LOW | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=LOW;EARNINGS_OPTIONS=LOW |
+| FIX | 8 | 56.00 | EXTREME | HIGH | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=HIGH;EARNINGS_OPTIONS=MEDIUM |
+| LITE | 10 | 56.25 | EXTREME | MEDIUM | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=MEDIUM;EARNINGS_OPTIONS=LOW |
+| ENTG | 12 | 51.25 | EXTREME | MEDIUM | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=MEDIUM;EARNINGS_OPTIONS=LOW |
+| CRWV | 13 | 55.56 | EXTREME | LOW | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=LOW;EARNINGS_OPTIONS=UNKNOWN |
 | COHU | 15 | 56.00 | EXTREME | HIGH | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=HIGH;EARNINGS_OPTIONS=MEDIUM |
 | FN | 17 | 52.50 | EXTREME | LOW | EXPECTED_MOVE=EXTREME;IV=EXTREME;SKEW=LOW;LIQUIDITY=LOW;EARNINGS_OPTIONS=LOW |
-| POWL | 20 | 51.25 | EXTREME | MEDIUM | EXPECTED_MOVE=EXTREME;IV=HIGH;SKEW=LOW;LIQUIDITY=MEDIUM;EARNINGS_OPTIONS=LOW |
 
 ## EXTREME options risk tickers
 | ticker | rank | overall_options_risk_score | expected_move_level | liquidity_risk_level | options_risk_reason |
@@ -38,29 +37,29 @@ V18.48B is a read-only options risk-reference layer based on V18.48A option snap
 | liquidity_risk_level | count |
 | --- | --- |
 | HIGH | 7 |
-| LOW | 6 |
-| MEDIUM | 7 |
+| LOW | 7 |
+| MEDIUM | 6 |
 
 ## Expected move observations
 | ticker | expected_move_pct_near | expected_move_pct_mid | expected_move_pct_far | expected_move_level |
 | --- | --- | --- | --- | --- |
-| KEYS | UNKNOWN | 0.0912 | 0.1358 | HIGH |
-| VRT | 0.0858 | 0.1702 | 0.1933 | EXTREME |
-| FIX | UNKNOWN | 0.1288 | 0.1879 | EXTREME |
-| LITE | 0.1311 | 0.2434 | 0.2750 | EXTREME |
-| NVDA | 0.0476 | 0.0952 | 0.1143 | HIGH |
-| GEV | 0.0638 | 0.1103 | 0.1510 | HIGH |
-| AMKR | UNKNOWN | 0.1683 | 0.2459 | EXTREME |
-| ENTG | UNKNOWN | 0.1386 | 0.1957 | EXTREME |
-| MCHP | 0.0749 | 0.0847 | 0.1585 | HIGH |
-| ICHR | UNKNOWN | 0.1695 | 0.2936 | EXTREME |
-| CRWV | 0.1148 | 0.2160 | 0.2556 | EXTREME |
-| COHU | UNKNOWN | 0.1538 | 0.1847 | EXTREME |
-| HUBB | UNKNOWN | 0.0712 | 0.0972 | HIGH |
-| FN | UNKNOWN | 0.1637 | 0.2368 | EXTREME |
-| CARR | 0.0357 | 0.1402 | 0.1093 | HIGH |
-| ETN | 0.0500 | 0.0990 | 0.1163 | HIGH |
-| POWL | UNKNOWN | 0.1593 | 0.2315 | EXTREME |
+| KEYS | UNKNOWN | UNKNOWN | 0.1271 | EXTREME |
+| VRT | 0.1053 | 0.1582 | 0.1903 | EXTREME |
+| ICHR | UNKNOWN | UNKNOWN | 0.2097 | EXTREME |
+| NVDA | 0.0649 | 0.0971 | 0.1196 | HIGH |
+| AMKR | UNKNOWN | UNKNOWN | 0.2379 | EXTREME |
+| FIX | UNKNOWN | UNKNOWN | 0.1843 | EXTREME |
+| MCHP | 0.0940 | 0.0724 | 0.1548 | HIGH |
+| LITE | 0.1485 | 0.1985 | 0.2607 | EXTREME |
+| CARR | 0.0681 | 0.1552 | 0.1104 | HIGH |
+| ENTG | UNKNOWN | UNKNOWN | 0.1989 | EXTREME |
+| CRWV | 0.1502 | 0.2230 | 0.2593 | EXTREME |
+| COHU | UNKNOWN | UNKNOWN | 0.1744 | EXTREME |
+| GEV | 0.0783 | 0.1116 | 0.1440 | HIGH |
+| FN | UNKNOWN | UNKNOWN | 0.2423 | EXTREME |
+| ETN | 0.0599 | 0.0931 | 0.1118 | HIGH |
+| HUBB | UNKNOWN | UNKNOWN | 0.1131 | HIGH |
+| POWL | UNKNOWN | UNKNOWN | 0.2299 | EXTREME |
 
 ## Earnings/options risk observations
 | ticker | days_to_earnings | earnings_options_risk_score | earnings_options_risk_level |

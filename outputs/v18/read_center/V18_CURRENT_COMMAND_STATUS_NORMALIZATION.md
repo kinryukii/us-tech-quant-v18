@@ -1,6 +1,6 @@
 # V18.38C-R1 命令中心状态归一化报告
 
-生成时间: 2026-05-27T17:52:31
+生成时间: 2026-05-29T15:02:39
 
 ## 1. 今日总判定
 - 总状态: WARN_V18_38C_R1_COMMAND_STATUS_NORMALIZATION_REVIEW_NEEDED
@@ -20,8 +20,8 @@
 - V18_37C_READ_FIRST.txt [CURRENT_CRITICAL]: OK_READY - OK status with read-only safety contract intact
 
 ## 3. 历史旧问题与当前问题的区分
-- HISTORICAL_LEGACY 数量: 244
-- UNKNOWN_LEGACY 数量: 50
+- HISTORICAL_LEGACY 数量: 261
+- UNKNOWN_LEGACY 数量: 61
 - 这些旧问题会写入 detail 和 summary，但不会让 DAILY_RUN_USABLE 变成 FALSE。
 - V18_10B_R3_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_REPORT_STALE_WARN - Legacy source is stale or has no current generated date
 - V18_10C_R2_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_REPORT_STALE_WARN - Legacy source is stale or has no current generated date
@@ -43,7 +43,7 @@
 - V18_13D_R1_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_REPORT_STALE_WARN - Legacy source is stale or has no current generated date
 - V18_14A_R1_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_REPORT_STALE_WARN - Legacy source is stale or has no current generated date
 - V18_14A_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_FAIL - Explicit FAIL_ status outside current critical blocking scope
-- 另有 229 项未展开，详见 detail CSV。
+- 另有 271 项未展开，详见 detail CSV。
 
 ## 4. 是否有真正阻断
 - 未发现当前真正阻断。
@@ -65,13 +65,13 @@
 - V18_35C_READ_FIRST.txt [CURRENT_CRITICAL]: REVIEW_NEEDED_NON_BLOCKING - Current WARN_ status needs operator review
 - V18_36A_READ_FIRST.txt [CURRENT_CRITICAL]: DATA_PROVIDER_WARN - Current data provider, yfinance, preflight, or price-cache warning
 - V18_CURRENT_CANDIDATE_SOURCE_DEPENDENCY_REVIEW.md [CURRENT_SUPPORTING]: REPORT_STALE_WARN - Current supporting report does not appear to be generated today
-- V18_CURRENT_CANDIDATE_SOURCE_NORMALIZATION.md [CURRENT_SUPPORTING]: UNKNOWN_REVIEW - No STATUS key found
+- V18_CURRENT_CANDIDATE_SOURCE_NORMALIZATION.md [CURRENT_SUPPORTING]: REPORT_STALE_WARN - Current supporting report does not appear to be generated today
 - V18_CURRENT_CHINESE_DAILY_HOMEPAGE.md [CURRENT_SUPPORTING]: UNKNOWN_REVIEW - No STATUS key found
 - V18_CURRENT_DAILY_OUTPUT_FRESHNESS.md [CURRENT_SUPPORTING]: ACCOUNT_TEMPLATE_WARN - Account template or account-state quality warning
 - V18_CURRENT_DAILY_TRADE_READINESS.md [CURRENT_SUPPORTING]: ACCOUNT_TEMPLATE_WARN - Account template or account-state quality warning
-- V18_CURRENT_FULL_UNIVERSE_RECOMPUTE.md [CURRENT_SUPPORTING]: UNKNOWN_REVIEW - No STATUS key found
+- V18_CURRENT_FULL_UNIVERSE_RECOMPUTE.md [CURRENT_SUPPORTING]: DATA_PROVIDER_WARN - Current data provider, yfinance, preflight, or price-cache warning
 - V18_CURRENT_RESEARCH_EXPERIMENT_REGISTRY.md [CURRENT_SUPPORTING]: ACCOUNT_TEMPLATE_WARN - Account template or account-state quality warning
-- V18_CURRENT_UNIVERSE_TO_CANDIDATE_AUDIT.md [CURRENT_SUPPORTING]: UNKNOWN_REVIEW - No STATUS key found
+- V18_CURRENT_UNIVERSE_TO_CANDIDATE_AUDIT.md [CURRENT_SUPPORTING]: REPORT_STALE_WARN - Current supporting report does not appear to be generated today
 
 ## 7. Forward outcome 状态
 - V18_38A_READ_FIRST.txt [CURRENT_CRITICAL]: EXPECTED_PENDING_FORWARD_OUTCOME - Forward price horizon has not matured
@@ -83,9 +83,10 @@
 - V18_CURRENT_OPERATOR_CLEAN_STATUS.md [UNKNOWN_LEGACY]: EXPECTED_PENDING_FORWARD_OUTCOME - Forward price horizon has not matured
 
 ## 8. 数据源 warning 状态
-- 当前数据源 warning: 1
-- 历史数据源 warning: 128
+- 当前数据源 warning: 2
+- 历史数据源 warning: 132
 - V18_36A_READ_FIRST.txt [CURRENT_CRITICAL]: DATA_PROVIDER_WARN - Current data provider, yfinance, preflight, or price-cache warning
+- V18_CURRENT_FULL_UNIVERSE_RECOMPUTE.md [CURRENT_SUPPORTING]: DATA_PROVIDER_WARN - Current data provider, yfinance, preflight, or price-cache warning
 - V18_10D_R2_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
 - V18_16C_P1_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
 - V18_16C_P2_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
@@ -104,8 +105,7 @@
 - V18_18F_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
 - V18_20F_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
 - V18_20G_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
-- V18_20I_READ_FIRST.txt [HISTORICAL_LEGACY]: LEGACY_DATA_PROVIDER_WARN - Legacy data provider, yfinance, preflight, or price-cache warning
-- 另有 109 项未展开，详见 detail CSV。
+- 另有 114 项未展开，详见 detail CSV。
 
 ## 9. 账户 template warning 状态
 - V18_CURRENT_DAILY_OUTPUT_FRESHNESS.md [CURRENT_SUPPORTING]: ACCOUNT_TEMPLATE_WARN - Account template or account-state quality warning
