@@ -99,7 +99,7 @@ $Run49C = Join-Path $Root "scripts\v18\run_v18_49C_dual_book_buy_sell_action_pla
 $Run49D = Join-Path $Root "scripts\v18\run_v18_49D_real_trade_upload_ledger.ps1"
 $Run50A = Join-Path $Root "scripts\v18\run_v18_50A_daily_operator_action_entry.ps1"
 $Run50C = Join-Path $Root "scripts\v18\run_v18_50C_daily_operator_readability_and_source_audit_lock.ps1"
-$Run50D0 = Join-Path $Root "scripts\v18\run_v18_50D0_simulation_entry_strategy_matrix_scaffold.ps1"
+$Run50D1 = Join-Path $Root "scripts\v18\run_v18_50D1_pullback_10d_20d_research_strategy.ps1"
 $Script50B = Join-Path $Root "scripts\v18\v18_50B_current_alias_authoritative_source_repair.py"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
@@ -125,7 +125,7 @@ if ($RunDualBookActionPlanner -and -not (Test-Path $Run49C)) { throw "Missing V1
 if ($RunRealTradeUploadLedger -and -not (Test-Path $Run49D)) { throw "Missing V18.49D wrapper: $Run49D" }
 if ($RunDailyOperatorActionEntry -and -not (Test-Path $Run50A)) { throw "Missing V18.50A wrapper: $Run50A" }
 if ($RunDailyOperatorReadabilityLock -and -not (Test-Path $Run50C)) { throw "Missing V18.50C wrapper: $Run50C" }
-if ($RunSimulationEntryStrategyMatrix -and -not (Test-Path $Run50D0)) { throw "Missing V18.50D-0 wrapper: $Run50D0" }
+if ($RunSimulationEntryStrategyMatrix -and -not (Test-Path $Run50D1)) { throw "Missing V18.50D-1 wrapper: $Run50D1" }
 if (-not (Test-Path $Script50B)) { throw "Missing V18.50B repair script: $Script50B" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
@@ -868,33 +868,33 @@ function Invoke-V18_50CDailyOperatorReadabilityLock {
     }
 }
 
-function Invoke-V18_50D0SimulationEntryStrategyMatrix {
+function Invoke-V18_50D1SimulationEntryStrategyMatrix {
     if ($RunSimulationEntryStrategyMatrix) {
         Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair
         Write-Host ""
-        Write-Host "STEP FINAL: run V18.50A daily operator action entry before V18.50D-0 strategy matrix"
+        Write-Host "STEP FINAL: run V18.50A daily operator action entry before V18.50D strategy matrix"
         & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50A -ProjectRoot $Root -WriteCurrent
         if ($LASTEXITCODE -ne 0) {
             Write-Host "V18_50A_DAILY_OPERATOR_ACTION_ENTRY_STATUS: NONZERO_EXIT_$LASTEXITCODE"
             exit $LASTEXITCODE
         }
         Write-Host ""
-        Write-Host "STEP FINAL: run V18.50C-R1 readability report before V18.50D-0 strategy matrix"
+        Write-Host "STEP FINAL: run V18.50C-R1 readability report before V18.50D strategy matrix"
         & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50C -ProjectRoot $Root
         if ($LASTEXITCODE -ne 0) {
             Write-Host "V18_50C_DAILY_OPERATOR_READABILITY_LOCK_STATUS: NONZERO_EXIT_$LASTEXITCODE"
             exit $LASTEXITCODE
         }
         Write-Host ""
-        Write-Host "STEP FINAL: run V18.50D-0 simulation entry strategy matrix scaffold"
-        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50D0 -ProjectRoot $Root
+        Write-Host "STEP FINAL: run V18.50D-1 pullback 10d/20d research strategy matrix"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50D1 -ProjectRoot $Root
         if ($LASTEXITCODE -ne 0) {
-            Write-Host "V18_50D0_SIMULATION_ENTRY_STRATEGY_MATRIX_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            Write-Host "V18_50D1_SIMULATION_ENTRY_STRATEGY_MATRIX_STATUS: NONZERO_EXIT_$LASTEXITCODE"
             exit $LASTEXITCODE
         }
-        Write-Host "V18_50D0_READ_FIRST_PATH: $(Join-Path $Root 'outputs\v18\ops\V18_50D0_READ_FIRST.txt')"
-        Write-Host "V18_50D0_MATRIX_PATH: $(Join-Path $Root 'outputs\v18\strategy_research\V18_50D0_SIMULATION_ENTRY_STRATEGY_MATRIX.csv')"
-        Write-Host "V18_50D0_CURRENT_REPORT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_SIMULATION_ENTRY_STRATEGY_MATRIX.md')"
+        Write-Host "V18_50D1_READ_FIRST_PATH: $(Join-Path $Root 'outputs\v18\ops\V18_50D1_READ_FIRST.txt')"
+        Write-Host "V18_50D1_MATRIX_PATH: $(Join-Path $Root 'outputs\v18\strategy_research\V18_50D1_SIMULATION_ENTRY_STRATEGY_MATRIX.csv')"
+        Write-Host "V18_50D1_CURRENT_REPORT_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_SIMULATION_ENTRY_STRATEGY_MATRIX.md')"
     }
 }
 
@@ -995,12 +995,12 @@ if ($RunDailyOperatorReadabilityLock -and $PSBoundParameters.Count -eq 1) {
 
 if ($RunSimulationEntryStrategyMatrix -and $PSBoundParameters.Count -eq 1) {
     Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
-    Write-Host "MODE: V18_50D0_SIMULATION_ENTRY_STRATEGY_MATRIX_ONLY"
+    Write-Host "MODE: V18_50D1_SIMULATION_ENTRY_STRATEGY_MATRIX_ONLY"
     Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
     Write-Host "AUTO_TRADE: DISABLED"
     Write-Host "AUTO_SELL: DISABLED"
     Write-Host "RESEARCH_ONLY: TRUE"
-    Invoke-V18_50D0SimulationEntryStrategyMatrix
+    Invoke-V18_50D1SimulationEntryStrategyMatrix
     exit 0
 }
 
@@ -1031,7 +1031,7 @@ if ($RunUniverseRollingScan) {
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
     Invoke-V18_50CDailyOperatorReadabilityLock
-    Invoke-V18_50D0SimulationEntryStrategyMatrix
+    Invoke-V18_50D1SimulationEntryStrategyMatrix
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -1070,7 +1070,7 @@ if ($RunManualFeedback) {
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
     Invoke-V18_50CDailyOperatorReadabilityLock
-    Invoke-V18_50D0SimulationEntryStrategyMatrix
+    Invoke-V18_50D1SimulationEntryStrategyMatrix
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -1242,7 +1242,7 @@ if ($RunForwardTracker) {
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
     Invoke-V18_50CDailyOperatorReadabilityLock
-    Invoke-V18_50D0SimulationEntryStrategyMatrix
+    Invoke-V18_50D1SimulationEntryStrategyMatrix
     exit $ExitCode
 }
 
@@ -1260,5 +1260,5 @@ Invoke-V18_49CDualBookActionPlanner
 Invoke-V18_49DRealTradeUploadLedger
 Invoke-V18_50ADailyOperatorActionEntry
 Invoke-V18_50CDailyOperatorReadabilityLock
-Invoke-V18_50D0SimulationEntryStrategyMatrix
+Invoke-V18_50D1SimulationEntryStrategyMatrix
 exit 0
