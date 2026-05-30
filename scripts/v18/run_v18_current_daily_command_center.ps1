@@ -65,6 +65,7 @@ param(
     [switch]$RunDualBookActionPlanner,
     [switch]$RunRealTradeUploadLedger,
     [switch]$RunDailyOperatorActionEntry,
+    [switch]$RunDailyOperatorReadabilityLock,
     [switch]$RunUniverseRollingScan,
     [switch]$UseYFinanceForRollingScan,
     [switch]$ForceSameDayPromotion,
@@ -96,6 +97,7 @@ $Run49B = Join-Path $Root "scripts\v18\run_v18_49B_simulation_policy_weight_engi
 $Run49C = Join-Path $Root "scripts\v18\run_v18_49C_dual_book_buy_sell_action_planner.ps1"
 $Run49D = Join-Path $Root "scripts\v18\run_v18_49D_real_trade_upload_ledger.ps1"
 $Run50A = Join-Path $Root "scripts\v18\run_v18_50A_daily_operator_action_entry.ps1"
+$Run50C = Join-Path $Root "scripts\v18\run_v18_50C_daily_operator_readability_and_source_audit_lock.ps1"
 $Script50B = Join-Path $Root "scripts\v18\v18_50B_current_alias_authoritative_source_repair.py"
 
 if (-not (Test-Path $Python)) { throw "Missing Python executable: $Python" }
@@ -120,6 +122,7 @@ if ($RunSimulationPolicyWeightEngine -and -not (Test-Path $Run49B)) { throw "Mis
 if ($RunDualBookActionPlanner -and -not (Test-Path $Run49C)) { throw "Missing V18.49C wrapper: $Run49C" }
 if ($RunRealTradeUploadLedger -and -not (Test-Path $Run49D)) { throw "Missing V18.49D wrapper: $Run49D" }
 if ($RunDailyOperatorActionEntry -and -not (Test-Path $Run50A)) { throw "Missing V18.50A wrapper: $Run50A" }
+if ($RunDailyOperatorReadabilityLock -and -not (Test-Path $Run50C)) { throw "Missing V18.50C wrapper: $Run50C" }
 if (-not (Test-Path $Script50B)) { throw "Missing V18.50B repair script: $Script50B" }
 
 $RefreshModeExplicit = $PSBoundParameters.ContainsKey("RefreshMode")
@@ -130,7 +133,8 @@ $ManualModeExplicit = (
     $RunCandidateTopFullCanonicalSync -or $ApplyCandidateTopFullCanonicalSync -or
     $RunTop20OptionsRiskRadar -or $RunFactorWeightBuySellBacktest -or
     $RunSimulationPolicyWeightEngine -or $RunDualBookActionPlanner -or
-    $RunRealTradeUploadLedger -or $RunDailyOperatorActionEntry
+    $RunRealTradeUploadLedger -or $RunDailyOperatorActionEntry -or
+    $RunDailyOperatorReadabilityLock
 )
 $ApplyRefreshModePreset = $RefreshModeExplicit -or -not $ManualModeExplicit
 if ($ApplyRefreshModePreset) {
@@ -838,6 +842,22 @@ function Invoke-V18_50ADailyOperatorActionEntry {
     }
 }
 
+function Invoke-V18_50CDailyOperatorReadabilityLock {
+    if ($RunDailyOperatorReadabilityLock) {
+        Invoke-V18_50BCurrentAliasAuthoritativeSourceRepair
+        Write-Host ""
+        Write-Host "STEP FINAL: run V18.50C daily operator readability and source audit lock"
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $Run50C -ProjectRoot $Root
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host "V18_50C_DAILY_OPERATOR_READABILITY_LOCK_STATUS: NONZERO_EXIT_$LASTEXITCODE"
+            exit $LASTEXITCODE
+        }
+        Write-Host "V18_50C_READ_FIRST_PATH: $(Join-Path $Root 'outputs\v18\ops\V18_50C_READ_FIRST.txt')"
+        Write-Host "V18_50C_HOMEPAGE_CN_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_50C_DAILY_OPERATOR_HOMEPAGE_CN.md')"
+        Write-Host "V18_CURRENT_HOMEPAGE_CN_PATH: $(Join-Path $Root 'outputs\v18\read_center\V18_CURRENT_DAILY_OPERATOR_HOMEPAGE_CN.md')"
+    }
+}
+
 $Mode = "READ_CENTER_REFRESH_ONLY"
 if ($ValidateOnly) {
     $Mode = "VALIDATE_ONLY"
@@ -922,6 +942,17 @@ if ($RunDailyOperatorActionEntry -and $PSBoundParameters.Count -eq 1) {
     exit 0
 }
 
+if ($RunDailyOperatorReadabilityLock -and $PSBoundParameters.Count -eq 1) {
+    Write-Host "=== V18 CURRENT DAILY COMMAND CENTER START ==="
+    Write-Host "MODE: V18_50C_DAILY_OPERATOR_READABILITY_LOCK_ONLY"
+    Write-Host "OFFICIAL_DECISION_IMPACT: NONE"
+    Write-Host "AUTO_TRADE: DISABLED"
+    Write-Host "AUTO_SELL: DISABLED"
+    Write-Host "READABILITY_ONLY: TRUE"
+    Invoke-V18_50CDailyOperatorReadabilityLock
+    exit 0
+}
+
 if ($RunUniverseRollingScan) {
     Write-Host "DELEGATING_TO: V18.16F_CURRENT_DAILY_WITH_ROLLING_UNIVERSE_SCAN"
     $Args16F = @()
@@ -948,6 +979,7 @@ if ($RunUniverseRollingScan) {
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
+    Invoke-V18_50CDailyOperatorReadabilityLock
     if ($DelegateExit -ne 0) {
         $Read16F = Join-Path $Root "outputs\v18\ops\V18_16F_READ_FIRST.txt"
         $Status16F = ""
@@ -985,6 +1017,7 @@ if ($RunManualFeedback) {
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
+    Invoke-V18_50CDailyOperatorReadabilityLock
     if ($DelegateExit -ne 0 -and $ApplyRefreshModePreset) {
         $FreshnessRead = Join-Path $Root "outputs\v18\ops\V18_CURRENT_RANKED_CANDIDATE_FRESHNESS_READ_FIRST.txt"
         $FreshnessStatus = ""
@@ -1155,6 +1188,7 @@ if ($RunForwardTracker) {
     Invoke-V18_49CDualBookActionPlanner
     Invoke-V18_49DRealTradeUploadLedger
     Invoke-V18_50ADailyOperatorActionEntry
+    Invoke-V18_50CDailyOperatorReadabilityLock
     exit $ExitCode
 }
 
@@ -1171,4 +1205,5 @@ Invoke-V18_49BSimulationPolicyWeightEngine
 Invoke-V18_49CDualBookActionPlanner
 Invoke-V18_49DRealTradeUploadLedger
 Invoke-V18_50ADailyOperatorActionEntry
+Invoke-V18_50CDailyOperatorReadabilityLock
 exit 0

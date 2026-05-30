@@ -5,10 +5,10 @@
 2. Real trade upload ledger checked: TRUE
 3. Real position book found or rebuilt: found=FALSE; rebuilt=TRUE
 4. Real position book state write: FALSE (write requested: FALSE)
-5. Current simulation policy: SIM_EXIT_VALIDATION
+5. Current simulation policy: SIM_BALANCED
 6. Policy confidence: LOW
-7. Paper buy candidates allowed today: 0
-8. Paper buy candidate tickers: NONE
+7. Paper buy candidates allowed today: 3
+8. Paper buy candidate tickers: VIAV, BW, AEHR
 9. Paper add/reduce/exit candidates: add=0; reduce=0; exit=0
 10. Real-position advice available: FALSE
 11. Real-position advice unavailable reason: REAL_POSITION_BOOK_MISSING
@@ -17,40 +17,44 @@
 ## Status Summary
 | section | item | value | details |
 | --- | --- | --- | --- |
-| current_top20_action | Top20 candidate action row | VIAV | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | BW | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | AEHR | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | INTC | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | SITM | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | FORM | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | TSEM | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | LITE | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
-| current_top20_action | Top20 candidate action row | WOLF | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | BE | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | POWL | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | ACLS | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | AMKR | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
-| current_top20_action | Top20 candidate action row | MTZ | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | VECO | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | PUMP | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | ICHR | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
-| current_top20_action | Top20 candidate action row | VRT | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | COHR | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
-| current_top20_action | Top20 candidate action row | TTMI | INHERITED_POLICY=SIM_EXIT_VALIDATION;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | VIAV | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
+| current_top20_action | Top20 candidate action row | BW | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
+| current_top20_action | Top20 candidate action row | AEHR | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
+| current_top20_action | Top20 candidate action row | INTC | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | SITM | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | FORM | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | TSEM | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | LITE | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
+| current_top20_action | Top20 candidate action row | WOLF | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | BE | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | POWL | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | ACLS | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | AMKR | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
+| current_top20_action | Top20 candidate action row | MTZ | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | VECO | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | PUMP | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | ICHR | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED;OPTIONS_RISK_CAUTION_ONLY_NOT_PROMOTED_BY_V18_49B_R1 |
+| current_top20_action | Top20 candidate action row | VRT | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | COHR | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
+| current_top20_action | Top20 candidate action row | TTMI | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;PAPER_BUY_CAP_REACHED_OR_BUYS_DISABLED |
 | status | Daily action entry usable today | TRUE | PASS |
 | source | Current Top20 source authoritative | TRUE | NONE |
 | real_upload | Real trade upload ledger checked | TRUE | WARN_V18_49D_NO_USER_UPLOADS_FOUND |
 | real_upload | Real position book found | FALSE |  |
 | real_upload | Real position book written to state | FALSE | write_requested=FALSE |
-| policy | Current simulation policy | SIM_EXIT_VALIDATION | NONE |
-| policy | Policy confidence | LOW | PASS |
-| simulation | Paper buy candidates allowed today | 0 |  |
+| policy | Current simulation policy | SIM_BALANCED | BASELINE_TOP20 |
+| policy | Policy confidence | LOW | WARN_V18_49B_SOURCE_BACKTEST_LOW_EVIDENCE |
+| simulation | Paper buy candidates allowed today | 3 |  |
 | simulation | Paper add/reduce/exit counts | 0/0/0 | add/reduce/exit |
 | real_advice | Real-position advice available | FALSE | REAL_POSITION_BOOK_MISSING |
 | safety | No execution/broker/order/autotrade | TRUE | broker_api=FALSE;order_execution=FALSE;auto_trade=DISABLED;auto_sell=DISABLED |
 
 ## Paper Buy Candidates
-No paper buy candidates.
+| ticker | rank | simulation_action | event_risk | options_risk | reason |
+| --- | --- | --- | --- | --- | --- |
+| VIAV | 1 | PAPER_BUY_CANDIDATE | UNKNOWN | UNKNOWN | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
+| BW | 2 | PAPER_BUY_CANDIDATE | UNKNOWN | UNKNOWN | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
+| AEHR | 3 | PAPER_BUY_CANDIDATE | UNKNOWN | UNKNOWN | INHERITED_POLICY=SIM_BALANCED;CONFIDENCE=LOW;TOP20_CANDIDATE_WITHIN_POLICY_CAP |
 
 ## Real Advice Preview
 | ticker | rank | real_position_advice | reason |
